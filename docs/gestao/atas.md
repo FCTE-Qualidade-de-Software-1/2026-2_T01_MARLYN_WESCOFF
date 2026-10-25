@@ -4,7 +4,7 @@ As atas ficam na pasta [`atas/`](https://github.com/FCTE-Qualidade-de-Software-1
 
 | Nº | Data | Pauta principal | Arquivo |
 |---|---|---|---|
-| *a registrar* | | | |
+| 01 | *a realizar* | Revisão da Entrega 1: validação das decisões das Fases 1 e 2, gestão e fechamento | [rascunho-ata-revisao-e1.md](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/rascunho-ata-revisao-e1.md) (rascunho) |
 
 <p class="legenda">Tabela 1. Índice das atas. Fonte: pasta `atas/`.</p>
 

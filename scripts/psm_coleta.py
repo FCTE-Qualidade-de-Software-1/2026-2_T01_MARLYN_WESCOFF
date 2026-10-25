@@ -59,8 +59,9 @@ def ler_horas():
     if arquivo.exists():
         with arquivo.open(encoding="utf-8") as f:
             for linha in csv.DictReader(f):
-                if (linha.get("membro") or "").strip():
-                    linha["horas"] = float(linha["horas"].replace(",", "."))
+                valor = (linha.get("horas") or "").strip().replace(",", ".")
+                if (linha.get("membro") or "").strip() and valor:
+                    linha["horas"] = float(valor)
                     linhas.append(linha)
     return linhas
 
