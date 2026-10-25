@@ -37,7 +37,7 @@ flowchart LR
 
 ## Organização da equipe
 
-A equipe tem cinco integrantes (ver [Equipe e contribuição](sobre/equipe.md)). O trabalho é dividido por **característica de qualidade**: cada característica tem um responsável principal, que conduz o desdobramento GQM correspondente, e um revisor, que confere o texto antes da integração. As seções transversais (propósito, partes interessadas, ODS, gestão, artigo e GitPage) são distribuídas entre os integrantes e registradas nas issues.
+A equipe tem quatro integrantes (ver [Equipe e contribuição](sobre/equipe.md)). O trabalho é dividido por **característica de qualidade**: cada característica tem um responsável principal, que conduz o desdobramento GQM correspondente, e um revisor, que confere o texto antes da integração. As seções transversais (propósito, partes interessadas, ODS, gestão, artigo e GitPage) são distribuídas entre os integrantes e registradas nas issues.
 
 As decisões coletivas (escolha do produto, das características, dos critérios de julgamento) são tomadas em reunião e registradas em [atas](gestao/atas.md), com a data, os participantes, as decisões e os encaminhamentos.
 

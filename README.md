@@ -100,10 +100,9 @@ Regras de estilo da disciplina: figuras e tabelas numeradas, com legenda e fonte
 | Integrante | GitHub |
 |---|---|
 | Bernardo Broetto Brun | — |
-| Cadu Motta | — |
-| João Pedro Maciel | — |
-| Maykson Soares | — |
-| Pedro Rocha | — |
+| Carlos Eduardo Deusdara Motta | — |
+| Maykon Junio dos Santos Soares | — |
+| Pedro Goncalves Rocha | — |
 
 ## Referências principais
 

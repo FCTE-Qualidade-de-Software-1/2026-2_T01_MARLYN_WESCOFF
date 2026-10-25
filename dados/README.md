@@ -12,7 +12,7 @@
 | Coluna | Formato | Exemplo |
 |---|---|---|
 | `data` | AAAA-MM-DD | 2026-10-24 |
-| `membro` | Nome como em `docs/sobre/equipe.md` | Pedro Rocha |
+| `membro` | Nome como em `docs/sobre/equipe.md` | Pedro Goncalves Rocha |
 | `issue` | Número da issue, sem `#` (vazio se não houver) | 12 |
 | `atividade` | Texto curto, **sem vírgulas** | Revisão das métricas de G2 |
 | `horas` | Número com ponto decimal | 1.5 |

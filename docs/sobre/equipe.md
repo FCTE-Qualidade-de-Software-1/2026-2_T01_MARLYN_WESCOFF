@@ -5,10 +5,9 @@
 | Integrante | Matrícula | GitHub | Responsabilidade principal na E1 |
 |---|---|---|---|
 | Bernardo Broetto Brun | *a preencher* | *a preencher* | *a preencher* |
-| Cadu Motta | *a preencher* | *a preencher* | *a preencher* |
-| João Pedro Maciel | *a preencher* | *a preencher* | *a preencher* |
-| Maykson Soares | *a preencher* | *a preencher* | *a preencher* |
-| Pedro Rocha | *a preencher* | *a preencher* | *a preencher* |
+| Carlos Eduardo Deusdara Motta | *a preencher* | *a preencher* | *a preencher* |
+| Maykon Junio dos Santos Soares | *a preencher* | *a preencher* | *a preencher* |
+| Pedro Goncalves Rocha | *a preencher* | *a preencher* | *a preencher* |
 
 <p class="legenda">Tabela 1. Integrantes do Grupo Marlyn Wescoff. Fonte: elaboração própria.</p>
 
@@ -19,10 +18,9 @@ A tabela detalha as tarefas de cada integrante e o percentual do esforço total 
 | Integrante | Tarefas realizadas na E1 | Horas | % do esforço |
 |---|---|---:|---:|
 | Bernardo Broetto Brun | *a preencher* | | |
-| Cadu Motta | *a preencher* | | |
-| João Pedro Maciel | *a preencher* | | |
-| Maykson Soares | *a preencher* | | |
-| Pedro Rocha | *a preencher* | | |
+| Carlos Eduardo Deusdara Motta | *a preencher* | | |
+| Maykon Junio dos Santos Soares | *a preencher* | | |
+| Pedro Goncalves Rocha | *a preencher* | | |
 | **Total** | | | **100%** |
 
 <p class="legenda">Tabela 2. Contribuição dos integrantes na Entrega 1. Fonte: `dados/gestao/horas.csv`.</p>
