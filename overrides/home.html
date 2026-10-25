@@ -1,0 +1,160 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+<section class="mw-hero" aria-labelledby="mw-hero-titulo">
+  <canvas class="mw-hero__painel" aria-hidden="true"></canvas>
+  <div class="mw-hero__inner md-grid">
+    <div class="mw-hero__texto">
+      <p class="mw-sobretitulo">FGA0315 · Qualidade de Software 1 · UnB/FCTE · 2026/2 · Turma 01</p>
+      <h1 id="mw-hero-titulo" class="mw-hero__titulo">
+        Avaliação da qualidade do <span class="mw-destaque">Moodle 5.3 LTS</span>
+      </h1>
+      <p class="mw-hero__chamada">
+        Medimos a
+        <span class="mw-digitando" data-palavras="adequação funcional|compatibilidade|flexibilidade">adequação funcional</span><span class="mw-cursor" aria-hidden="true"></span>
+        do Moodle, o ambiente virtual de aprendizagem das universidades, seguindo a ISO/IEC 25040, o modelo da ISO/IEC 25010:2023 e o método GQM.
+      </p>
+      <div class="mw-hero__acoes">
+        <a class="md-button md-button--primary" href="{{ 'fase-1/' | url }}">Começar pela Fase 1</a>
+        <a class="md-button mw-botao-claro" href="{{ 'artigo/artigo-e1.pdf' | url }}">Artigo da E1 (PDF)</a>
+        <a class="md-button mw-botao-claro" href="{{ config.repo_url }}">Repositório</a>
+      </div>
+    </div>
+    <figure class="mw-demo" aria-label="Animação ilustrativa do que será avaliado no Moodle em cada objetivo">
+      <div class="mw-demo__barra" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <span class="mw-demo__url">moodle.local/course/view.php?id=2</span>
+      </div>
+      <div class="mw-demo__abas" role="tablist">
+        <button type="button" role="tab" data-cena="0">G1 · Funcional</button>
+        <button type="button" role="tab" data-cena="1">G2 · Compatibilidade</button>
+        <button type="button" role="tab" data-cena="2">G3 · Flexibilidade</button>
+      </div>
+
+      <div class="mw-demo__cena" data-cena="0" aria-hidden="true">
+        <div class="mw-curso__cabecalho">
+          <b>QS1 · Curso de teste</b>
+          <span>30 estudantes fictícios · tema Boost</span>
+        </div>
+        <ul class="mw-curso__lista">
+          <li><em>Arquivo</em>Plano de ensino.pdf<span class="mw-st"></span></li>
+          <li><em>Tarefa</em>Entrega do relatório (prazo 26/10)<span class="mw-st"></span></li>
+          <li><em>Questionário</em>Avaliação 1 · correção automática<span class="mw-st"></span></li>
+          <li><em>Fórum</em>Dúvidas da disciplina<span class="mw-st"></span></li>
+          <li><em>Notas</em>Livro de notas · média ponderada<span class="mw-st"></span></li>
+          <li><em>Backup</em>Cópia do curso (.mbz)<span class="mw-st"></span></li>
+        </ul>
+        <div class="mw-demo__rodape">M1.1 · M1.2 · M1.3 <span class="mw-demo__contador" data-total="12">0/12 tarefas exercitadas</span></div>
+      </div>
+
+      <div class="mw-demo__cena" data-cena="1" aria-hidden="true">
+        <div class="mw-troca">
+          <div class="mw-troca__no"><b>Moodle 5.3</b><span>núcleo</span></div>
+          <div class="mw-troca__trilho">
+            <span class="mw-ficha" style="--i:0">CSV</span>
+            <span class="mw-ficha mw-volta" style="--i:1">XLSX</span>
+            <span class="mw-ficha" style="--i:2">GIFT</span>
+            <span class="mw-ficha mw-volta" style="--i:3">XML</span>
+            <span class="mw-ficha mw-volta" style="--i:4">iCal</span>
+            <span class="mw-ficha" style="--i:5">.mbz</span>
+            <span class="mw-ficha mw-volta" style="--i:6">REST</span>
+          </div>
+          <div class="mw-troca__no"><b>Sistema acadêmico</b><span>simulado</span></div>
+        </div>
+        <div class="mw-servidor">
+          <span>Apache 2.4</span><span>PostgreSQL 17</span><span>cron</span><span>app vizinha</span>
+        </div>
+        <div class="mw-demo__rodape">M2.1 a M2.4 <span>7 formatos · 6 funções REST · 3 vizinhos</span></div>
+      </div>
+
+      <div class="mw-demo__cena" data-cena="2" aria-hidden="true">
+        <pre class="mw-terminal"><code></code></pre>
+        <div class="mw-ambientes">
+          <span>A1 Windows · Chrome</span><span>A2 Windows · Firefox</span><span>A3 Ubuntu · Firefox</span><span>A4 Android · Chrome</span>
+        </div>
+        <div class="mw-demo__rodape">M3.1 a M3.5 <span>4 ambientes · PHP 8.3 e 8.4 · 6 execuções</span></div>
+      </div>
+      <figcaption>Ilustração do que será medido. Não representa resultados.</figcaption>
+    </figure>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<section class="mw-numeros mw-revelar" aria-label="O projeto em números">
+  <div class="mw-numero"><b data-contar="3">0</b><span>características priorizadas</span></div>
+  <div class="mw-numero"><b data-contar="7">0</b><span>subcaracterísticas avaliadas</span></div>
+  <div class="mw-numero"><b data-contar="11">0</b><span>questões e hipóteses</span></div>
+  <div class="mw-numero"><b data-contar="12">0</b><span>métricas com níveis de pontuação</span></div>
+</section>
+
+<section class="mw-secao mw-revelar" aria-labelledby="mw-fases">
+  <h2 id="mw-fases">Processo de avaliação</h2>
+  <p>As quatro fases da ISO/IEC 25040. A Entrega 1 cobre as Fases 1 e 2.</p>
+  <div class="mw-linha-tempo" role="list" data-concluidas="2">
+    <div class="mw-etapa" role="listitem">
+      <a href="{{ 'fase-1/' | url }}">
+        <small>E1 · 26/10/2026 · concluída</small>
+        <strong>Fase 1 · Estabelecer requisitos</strong>
+        <span>Propósito, partes interessadas, produto, modelo de qualidade, priorização, escopo e ODS.</span>
+      </a>
+    </div>
+    <div class="mw-etapa" role="listitem">
+      <a href="{{ 'fase-2/' | url }}">
+        <small>E1 · 26/10/2026 · concluída</small>
+        <strong>Fase 2 · Especificar a avaliação</strong>
+        <span>Objetivos GQM, questões, hipóteses, métricas, níveis de pontuação e critérios de julgamento.</span>
+      </a>
+    </div>
+    <div class="mw-etapa" role="listitem">
+      <a href="{{ 'fases-3-4/' | url }}">
+        <small>E2 · não iniciada</small>
+        <strong>Fase 3 · Projetar a avaliação</strong>
+        <span>Plano de avaliação, ambiente, massa de dados e cronograma.</span>
+      </a>
+    </div>
+    <div class="mw-etapa" role="listitem">
+      <a href="{{ 'fases-3-4/' | url }}">
+        <small>E2 · não iniciada</small>
+        <strong>Fase 4 · Executar a avaliação</strong>
+        <span>Medições, comparação com critérios, julgamento e ação de melhoria.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="mw-secao mw-revelar" aria-labelledby="mw-caracteristicas">
+  <h2 id="mw-caracteristicas">O que estamos avaliando</h2>
+  <div class="mw-cartoes">
+    <a class="mw-cartao" href="{{ 'fase-2/objetivos-questoes-hipoteses/' | url }}#g1-adequacao-funcional">
+      <small>G1 · prioridade 1 · decisão D1</small>
+      <strong>Adequação funcional</strong>
+      <span>O núcleo cobre e calcula corretamente as tarefas acadêmicas essenciais: entregas, questionários, notas e prazos?</span>
+      <em>Completude · Correção · Pertinência</em>
+    </a>
+    <a class="mw-cartao" href="{{ 'fase-2/objetivos-questoes-hipoteses/' | url }}#g2-compatibilidade">
+      <small>G2 · prioridade 2 · decisão D2</small>
+      <strong>Compatibilidade</strong>
+      <span>O Moodle troca dados com os sistemas vizinhos sem perdas e convive com outras aplicações no mesmo servidor?</span>
+      <em>Interoperabilidade · Coexistência</em>
+    </a>
+    <a class="mw-cartao" href="{{ 'fase-2/objetivos-questoes-hipoteses/' | url }}#g3-flexibilidade">
+      <small>G3 · prioridade 3 · decisão D3</small>
+      <strong>Flexibilidade</strong>
+      <span>A instalação e a atualização 4.5 → 5.3 funcionam pela documentação e os fluxos rodam nos navegadores e no celular?</span>
+      <em>Adaptabilidade · Instalabilidade</em>
+    </a>
+  </div>
+</section>
+
+<section class="mw-secao mw-revelar" aria-labelledby="mw-gqm">
+  <h2 id="mw-gqm">Explore o plano GQM</h2>
+  <p>Selecione um objetivo para ver como ele se desdobra em questões, hipóteses e métricas.</p>
+  <div id="gqm-explorer" class="gqm-explorer" aria-live="polite"></div>
+</section>
+
+<div class="mw-conteudo">
+  {{ page.content }}
+</div>
+{% endblock %}

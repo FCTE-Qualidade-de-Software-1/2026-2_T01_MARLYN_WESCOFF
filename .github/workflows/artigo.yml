@@ -1,0 +1,32 @@
+# Compila o artigo LaTeX (modelo SBC) e disponibiliza o PDF como artefato da execução.
+name: Compilar artigo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "artigo/**"
+      - ".github/workflows/artigo.yml"
+  pull_request:
+    paths:
+      - "artigo/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: artigo
+          root_file: main.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artigo-pdf
+          path: artigo/main.pdf
+          if-no-files-found: error

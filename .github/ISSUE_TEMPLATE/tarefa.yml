@@ -1,0 +1,41 @@
+name: Tarefa
+description: Unidade de trabalho do projeto (base das métricas do PSM/CID)
+title: "[Tarefa] "
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que deve ser feito e qual o produto esperado.
+    validations:
+      required: true
+  - type: dropdown
+    id: fase
+    attributes:
+      label: Fase
+      options:
+        - Fase 1
+        - Fase 2
+        - Fase 3
+        - Fase 4
+        - Artigo
+        - GitPage
+        - Gestão
+    validations:
+      required: true
+  - type: input
+    id: estimativa
+    attributes:
+      label: Estimativa (horas)
+      description: Apenas o número, por exemplo 2 ou 1.5
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critério de pronto
+      description: Como saber que a tarefa está concluída.
+      value: |
+        - [ ] Conteúdo revisado por outro integrante
+        - [ ] GitPage gerada sem erro
+        - [ ] Horas lançadas em dados/gestao/horas.csv
