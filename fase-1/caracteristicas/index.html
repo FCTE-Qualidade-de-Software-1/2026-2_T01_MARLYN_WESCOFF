@@ -1,0 +1,2218 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FGA0315 Qualidade de Software 1 - 2026.2 - T01 - Grupo Marlyn Wescoff - Avaliação da qualidade do Moodle 5.3 LTS">
+      
+      
+        <meta name="author" content="Grupo Marlyn Wescoff">
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/caracteristicas/">
+      
+      
+        <link rel="prev" href="../modelo-de-qualidade/">
+      
+      
+        <link rel="next" href="../escopo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Seleção e priorização - Marlyn Wescoff · Qualidade de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#selecao-e-priorizacao-das-caracteristicas" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Não mostrar isso novamente">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Entrega 1 publicada · Fases 1 e 2 · versão 1.0 de 25/10/2026 ·
+  <a href="../../artigo/artigo-e1.pdf">baixar o artigo (PDF)</a>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Marlyn Wescoff · Qualidade de Software" class="md-header__button md-logo" aria-label="Marlyn Wescoff · Qualidade de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Marlyn Wescoff · Qualidade de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Seleção e priorização
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ativar tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ativar tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ativar tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Ativar tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-2_T01_MARLYN_WESCOFF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../metodologia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Metodologia
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fase 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fase 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../fases-3-4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fases 3 e 4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../gestao/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Gestão do projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sobre/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Sobre
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Marlyn Wescoff · Qualidade de Software" class="md-nav__button md-logo" aria-label="Marlyn Wescoff · Qualidade de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Marlyn Wescoff · Qualidade de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-2_T01_MARLYN_WESCOFF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proposito/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito da avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partes-interessadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitante e partes interessadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produto avaliado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelo-de-qualidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo de qualidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Seleção e priorização
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Seleção e priorização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Método">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ancoras-das-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Âncoras das notas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pesos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resultado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-das-notas-das-selecionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa das notas das selecionadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-de-calculo-exemplo-flexibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memória de cálculo (exemplo: flexibilidade)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-impacto-viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão impacto × viabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trade-offs-discutidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trade-offs discutidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../escopo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escopo e profundidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ODS relacionados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/abstraction-sheets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction sheets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/objetivos-questoes-hipoteses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos, questões e hipóteses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/metricas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/niveis-e-julgamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Níveis de pontuação e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/diagrama-gqm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama GQM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rastreabilidade Fase 1 → Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fases-3-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fases 3 e 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../gestao/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão do projeto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestão do projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/plano-psm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de medição (PSM/CID)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/registro-medicoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de medições
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas de reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sobre/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe e contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/uso-de-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Declaração de uso de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/entregas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entregas e releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Método
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Método">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ancoras-das-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Âncoras das notas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pesos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resultado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-das-notas-das-selecionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa das notas das selecionadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoria-de-calculo-exemplo-flexibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Memória de cálculo (exemplo: flexibilidade)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-impacto-viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visão impacto × viabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trade-offs-discutidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trade-offs discutidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegação" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Início
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/edit/main/docs/fase-1/caracteristicas.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="selecao-e-priorizacao-das-caracteristicas">Seleção e priorização das características<a class="headerlink" href="#selecao-e-priorizacao-das-caracteristicas" title="Permanent link">&para;</a></h1>
+<h2 id="metodo">Método<a class="headerlink" href="#metodo" title="Permanent link">&para;</a></h2>
+<p>A seleção usa um método explícito em quatro passos, para que a escolha não dependa de preferência subjetiva:</p>
+<ol>
+<li><strong>Universo:</strong> as oito características da ISO/IEC 25010:2023, <strong>exceto capacidade de interação</strong> (usabilidade), excluída pela regra da disciplina.</li>
+<li><strong>Notas:</strong> cada característica recebe nota de 1 a 5 em quatro critérios, usando as âncoras da <a href="#ancoras-das-notas">Tabela 1</a>.</li>
+<li><strong>Filtro de viabilidade:</strong> só é elegível a característica com <strong>V ≥ 3</strong> (mensurável com os recursos da equipe) e <strong>R ≥ 2</strong>.</li>
+<li><strong>Matriz ponderada e sensibilidade:</strong> calcula-se a pontuação ponderada em três cenários de pesos; a seleção só é aceita se a ordem das elegíveis não mudar entre os cenários.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Pergunta</th>
+<th>Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>R</strong> Relevância</td>
+<td>Quanto as partes interessadas dependem desta característica?</td>
+<td><a href="../partes-interessadas/">Partes interessadas</a></td>
+</tr>
+<tr>
+<td><strong>K</strong> Risco/impacto</td>
+<td>Qual o dano se a característica falhar na migração?</td>
+<td><a href="../proposito/">Propósito</a> (riscos acadêmico, de integração e operacional)</td>
+</tr>
+<tr>
+<td><strong>V</strong> Viabilidade</td>
+<td>Dá para medir com instalação local, dados fictícios e o prazo da disciplina?</td>
+<td><a href="../produto/#implicacoes-para-a-avaliacao">Implicações para a avaliação</a></td>
+</tr>
+<tr>
+<td><strong>A</strong> Alinhamento</td>
+<td>Quanto o resultado apoia diretamente uma decisão D1–D3?</td>
+<td><a href="../proposito/#decisoes-apoiadas">Decisões apoiadas</a></td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 1. Critérios de priorização. Fonte: elaboração própria.</p>
+
+<h3 id="ancoras-das-notas">Âncoras das notas<a class="headerlink" href="#ancoras-das-notas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Nota</th>
+<th>R Relevância</th>
+<th>K Risco/impacto</th>
+<th>V Viabilidade</th>
+<th>A Alinhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nenhuma parte interessada depende</td>
+<td>Consequência desprezível</td>
+<td>Sem recursos para medir</td>
+<td>Nenhuma decisão apoiada</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dependência indireta</td>
+<td>Incômodo localizado</td>
+<td>Exige recursos indisponíveis (carga, especialistas)</td>
+<td>Apoio indireto</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Uma parte interessada depende</td>
+<td>Compromete parte de uma tarefa</td>
+<td>Mensurável com preparação relevante</td>
+<td>Apoia parcialmente uma decisão</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Várias partes dependem</td>
+<td>Compromete tarefa importante ou exige retrabalho</td>
+<td>Mensurável com os recursos planejados</td>
+<td>Apoia diretamente uma decisão</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Central para a decisora e para os usuários</td>
+<td>Impede tarefa essencial ou corrompe resultado acadêmico</td>
+<td>Mensurável com recursos já disponíveis e procedimento conhecido</td>
+<td>Determina uma decisão prioritária</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 2. Âncoras para atribuir as notas. Fonte: elaboração própria.</p>
+
+<h2 id="pesos">Pesos<a class="headerlink" href="#pesos" title="Permanent link">&para;</a></h2>
+<p>O maior peso vai para a <strong>relevância</strong>, porque o propósito é apoiar a decisão das partes interessadas. Os cenários alternativos testam se a seleção muda quando se dá mais importância à viabilidade ou à relevância.</p>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th style="text-align: right;">Base</th>
+<th style="text-align: right;">Viabilidade maior</th>
+<th style="text-align: right;">Relevância maior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R</td>
+<td style="text-align: right;">0,35</td>
+<td style="text-align: right;">0,25</td>
+<td style="text-align: right;">0,50</td>
+</tr>
+<tr>
+<td>K</td>
+<td style="text-align: right;">0,25</td>
+<td style="text-align: right;">0,20</td>
+<td style="text-align: right;">0,20</td>
+</tr>
+<tr>
+<td>V</td>
+<td style="text-align: right;">0,25</td>
+<td style="text-align: right;">0,40</td>
+<td style="text-align: right;">0,15</td>
+</tr>
+<tr>
+<td>A</td>
+<td style="text-align: right;">0,15</td>
+<td style="text-align: right;">0,15</td>
+<td style="text-align: right;">0,15</td>
+</tr>
+<tr>
+<td><strong>Soma</strong></td>
+<td style="text-align: right;"><strong>1,00</strong></td>
+<td style="text-align: right;"><strong>1,00</strong></td>
+<td style="text-align: right;"><strong>1,00</strong></td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 3. Pesos por cenário. Fonte: elaboração própria.</p>
+
+<p>Cenário Base: <strong>P = 0,35·R + 0,25·K + 0,25·V + 0,15·A</strong>.</p>
+<h2 id="resultado">Resultado<a class="headerlink" href="#resultado" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th style="text-align: right;">R</th>
+<th style="text-align: right;">K</th>
+<th style="text-align: right;">V</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">Base</th>
+<th style="text-align: right;">Viab. maior</th>
+<th style="text-align: right;">Relev. maior</th>
+<th>Elegível</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adequação funcional</strong></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"><strong>4,75</strong></td>
+<td style="text-align: right;">4,60</td>
+<td style="text-align: right;">4,85</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td><strong>Compatibilidade</strong></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;"><strong>4,15</strong></td>
+<td style="text-align: right;">4,15</td>
+<td style="text-align: right;">4,15</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td><strong>Flexibilidade</strong></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>4,00</strong></td>
+<td style="text-align: right;">4,00</td>
+<td style="text-align: right;">4,00</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>Segurança</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3,95</td>
+<td style="text-align: right;">3,50</td>
+<td style="text-align: right;">4,25</td>
+<td>Não (V &lt; 3)</td>
+</tr>
+<tr>
+<td>Eficiência de desempenho</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3,35</td>
+<td style="text-align: right;">3,05</td>
+<td style="text-align: right;">3,55</td>
+<td>Não (V &lt; 3)</td>
+</tr>
+<tr>
+<td>Confiabilidade</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3,35</td>
+<td style="text-align: right;">3,05</td>
+<td style="text-align: right;">3,55</td>
+<td>Não (V &lt; 3)</td>
+</tr>
+<tr>
+<td>Manutenibilidade</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3,10</td>
+<td style="text-align: right;">3,25</td>
+<td style="text-align: right;">3,00</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>Segurança operacional</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1,25</td>
+<td style="text-align: right;">1,40</td>
+<td style="text-align: right;">1,15</td>
+<td>Não</td>
+</tr>
+<tr>
+<td>Capacidade de interação</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Excluída pela regra da disciplina</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 4. Notas, pontuações e elegibilidade. Fonte: elaboração própria.</p>
+
+<p>Entre as elegíveis, a ordem <strong>adequação funcional &gt; compatibilidade &gt; flexibilidade &gt; manutenibilidade</strong> se mantém nos três cenários. São selecionadas as três primeiras.</p>
+<h3 id="justificativa-das-notas-das-selecionadas">Justificativa das notas das selecionadas<a class="headerlink" href="#justificativa-das-notas-das-selecionadas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Justificativa das notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adequação funcional</td>
+<td><strong>R5</strong>: gestão acadêmica, docentes e estudantes dependem das tarefas essenciais. <strong>K5</strong>: uma nota calculada errado compromete o resultado acadêmico. <strong>V4</strong>: mensurável com dados fictícios; não recebe 5 porque o ambiente ainda não está instalado. <strong>A5</strong>: determina D1.</td>
+</tr>
+<tr>
+<td>Compatibilidade</td>
+<td><strong>R4</strong>: integradores e administradores. <strong>K4</strong>: uma exportação de notas com perda obriga retrabalho manual na secretaria. <strong>V4</strong>: formatos e serviços web podem ser exercitados localmente. <strong>A5</strong>: determina D2.</td>
+</tr>
+<tr>
+<td>Flexibilidade</td>
+<td><strong>R4</strong>: administradores e estudantes (acesso pelo celular). <strong>K4</strong>: a mudança da raiz web para <code>public/</code> (desde a 5.1) e os novos requisitos de PHP/PostgreSQL elevam o risco de falha na atualização a partir da 4.5. <strong>V4</strong>: instalação e atualização reproduzíveis em máquina virtual. <strong>A4</strong>: apoia diretamente D3.</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 5. Justificativa das notas. Fonte: elaboração própria.</p>
+
+<h3 id="memoria-de-calculo-exemplo-flexibilidade">Memória de cálculo (exemplo: flexibilidade)<a class="headerlink" href="#memoria-de-calculo-exemplo-flexibilidade" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Cenário</th>
+<th>Cálculo</th>
+<th style="text-align: right;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base</td>
+<td>0,35·4 + 0,25·4 + 0,25·4 + 0,15·4</td>
+<td style="text-align: right;">4,00</td>
+</tr>
+<tr>
+<td>Viabilidade maior</td>
+<td>0,25·4 + 0,20·4 + 0,40·4 + 0,15·4</td>
+<td style="text-align: right;">4,00</td>
+</tr>
+<tr>
+<td>Relevância maior</td>
+<td>0,50·4 + 0,20·4 + 0,15·4 + 0,15·4</td>
+<td style="text-align: right;">4,00</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 6. Exemplo de cálculo. As 24 pontuações da Tabela 4 foram conferidas por script. Fonte: elaboração própria.</p>
+
+<h2 id="visao-impacto-viabilidade">Visão impacto × viabilidade<a class="headerlink" href="#visao-impacto-viabilidade" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>quadrantChart
+    title Impacto (R e K) x viabilidade de medição (V)
+    x-axis Baixa viabilidade --&gt; Alta viabilidade
+    y-axis Baixo impacto --&gt; Alto impacto
+    quadrant-1 Priorizar
+    quadrant-2 Relevante, mas inviável agora
+    quadrant-3 Descartar
+    quadrant-4 Viável, pouco impacto
+    Adequacao funcional: [0.78, 0.95]
+    Compatibilidade: [0.74, 0.78]
+    Flexibilidade: [0.70, 0.74]
+    Seguranca: [0.25, 0.92]
+    Eficiencia: [0.22, 0.72]
+    Confiabilidade: [0.28, 0.70]
+    Manutenibilidade: [0.80, 0.45]
+    Seguranca operacional: [0.30, 0.08]</code></pre>
+<p class="legenda">Figura 1. Posição das características pelo impacto (média de R e K) e pela viabilidade (V). Fonte: elaboração própria a partir da Tabela 4.</p>
+
+<h2 id="trade-offs-discutidos">Trade-offs discutidos<a class="headerlink" href="#trade-offs-discutidos" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Segurança</strong> teria a 2ª maior pontuação sem o filtro (3,95 no cenário Base; 4,25 no de relevância maior). Ela foi excluída porque uma avaliação séria de segurança exigiria testes de intrusão e conhecimento especializado que a equipe não tem no prazo. A decisão <strong>depende do filtro de viabilidade</strong> e é registrada como limitação: os resultados não dizem nada sobre a segurança do Moodle 5.3.</li>
+<li><strong>Eficiência de desempenho e confiabilidade</strong> são relevantes para uma instituição com milhares de usuários, mas exigem ambiente de carga e observação prolongada, fora do alcance da instalação local.</li>
+<li><strong>Manutenibilidade</strong> é elegível e viável (análise estática do código aberto), mas apoia pouco as decisões D1–D3, que são de quem <strong>opera</strong> o Moodle e não de quem o <strong>desenvolve</strong>. Foi deixada de fora para preservar a profundidade das três selecionadas.</li>
+<li><strong>Relação esperada entre as selecionadas:</strong> ampliar a cobertura funcional com plugins tenderia a reduzir a instalabilidade e a compatibilidade. Como o escopo usa só o núcleo, essa relação não poderá ser confirmada; ela será discutida como hipótese no artigo final.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../modelo-de-qualidade/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Modelo de qualidade">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Modelo de qualidade
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../escopo/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Escopo e profundidade">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Escopo e profundidade
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 1 | Versão 1.0 · 25/10/2026
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.action.edit", "content.tabs.link", "content.tooltips", "content.code.copy", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../javascripts/marlyn.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>
