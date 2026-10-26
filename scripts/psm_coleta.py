@@ -119,6 +119,10 @@ def main():
             print(f"| {nome} | {v:.1f} | {v / total * 100:.0f}% |")
 
     destino = RAIZ / "dados" / "gestao" / f"psm-{agora.date().isoformat()}.csv"
+    n = 1
+    while destino.exists() or destino.with_name(f"psm-{agora.date().isoformat()}-{n}.csv").exists():
+        n += 1
+        destino = destino.with_name(f"psm-{agora.date().isoformat()}-{n}.csv")
     if linhas_csv:
         with destino.open("w", encoding="utf-8", newline="") as f:
             escritor = csv.DictWriter(f, fieldnames=list(linhas_csv[0]))
