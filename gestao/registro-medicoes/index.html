@@ -1080,6 +1080,8 @@
       
         
       
+        
+      
     
     
     
@@ -1254,6 +1256,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#indicador-planejado-vs-concluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicador: planejado vs. concluído
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#interpretacao-e-decisoes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1304,7 +1317,35 @@
   <span class="md-ellipsis">
     
   
-    Atas de reunião
+    Atas e decisões
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../termo-consentimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Termo de consentimento
   
 
     
@@ -1336,6 +1377,8 @@
       
         
           
+        
+      
         
       
         
@@ -1512,6 +1555,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/criterios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios de avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1561,6 +1632,17 @@
     <span class="md-ellipsis">
       
         Medições
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicador-planejado-vs-concluido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicador: planejado vs. concluído
       
     </span>
   </a>
@@ -1673,7 +1755,7 @@
 <h2 id="como-gerar-uma-medicao">Como gerar uma medição<a class="headerlink" href="#como-gerar-uma-medicao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>scripts/psm_coleta.py<span class="w"> </span>--repo<span class="w"> </span>FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF
 </code></pre></div>
-<p>O script imprime o resumo em Markdown e grava <code>dados/gestao/psm-AAAA-MM-DD.csv</code>.</p>
+<p>O script imprime o resumo em Markdown e grava <code>dados/gestao/psm-AAAA-MM-DD.csv</code>. O workflow <code>psm-coleta.yml</code> também roda o script toda segunda-feira e versiona o retrato automaticamente.</p>
 <h2 id="medicoes">Medições<a class="headerlink" href="#medicoes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1703,11 +1785,20 @@
 </table>
 <p class="legenda">Tabela 1. Registro das medições do PSM/CID. Fonte: issues e milestones do GitHub e `dados/gestao/horas.csv`, em 26/10/2026.</p>
 
+<h2 id="indicador-planejado-vs-concluido">Indicador: planejado vs. concluído<a class="headerlink" href="#indicador-planejado-vs-concluido" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>xychart-beta
+    title "Sprint 2 - Entrega 1 (26/10/2026)"
+    x-axis ["Planejadas", "Concluídas", "Abertas"]
+    y-axis "Issues" 0 --&gt; 16
+    bar [14, 9, 5]</code></pre>
+<p class="legenda">Figura 1. Issues planejadas, concluídas e abertas na Sprint 2 na medição de 26/10/2026. Fonte: `dados/gestao/psm-2026-10-26.csv`.</p>
+
 <h2 id="interpretacao-e-decisoes">Interpretação e decisões<a class="headerlink" href="#interpretacao-e-decisoes" title="Permanent link">&para;</a></h2>
 <h3 id="medicao-de-26102026-fim-da-sprint-2">Medição de 26/10/2026 (fim da Sprint 2)<a class="headerlink" href="#medicao-de-26102026-fim-da-sprint-2" title="Permanent link">&para;</a></h3>
 <p><strong>Calendário e Progresso.</strong> As 9 issues de revisão das Fases 1 e 2, do artigo e da GitPage foram concluídas. As 5 abertas (#9 a #12 e #14) são de registro e fechamento: contribuição, declaração de IA, horas, atas e release. A diferença entre planejado e concluído (36%) passa o critério de 10% do fim da sprint. A causa é que as tarefas de registro ficaram para o fim, depois das revisões, e não atraso no conteúdo da avaliação.</p>
 <ul>
 <li><strong>Decisão:</strong> concluir as issues de registro antes da release E1. A partir da E2, abrir essas tarefas no início da sprint e não no fim.</li>
+<li><strong>Acompanhamento:</strong> as 5 issues de registro foram concluídas em 26/10/2026, antes da criação da release E1; ao fim da sprint, 14 de 14 issues estavam fechadas.</li>
 </ul>
 <p><strong>Recursos e Custos.</strong> O esforço estimado das issues da sprint soma 20,5 h, mas os integrantes não lançaram as horas reais em <code>dados/gestao/horas.csv</code>, então a razão R/E e o custo não puderam ser calculados. Para a tabela de contribuição, a equipe registrou que o esforço da E1 foi dividido igualmente (20% por integrante).</p>
 <ul>
@@ -1771,13 +1862,13 @@
         
         
           
-          <a href="../atas/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Atas de reunião">
+          <a href="../atas/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Atas e decisões">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Atas de reunião
+                Atas e decisões
               </div>
             </div>
             <div class="md-footer__button md-icon">
