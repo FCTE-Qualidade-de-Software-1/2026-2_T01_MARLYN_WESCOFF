@@ -100,7 +100,7 @@ Regras de estilo da disciplina: figuras e tabelas numeradas, com legenda e fonte
 | Integrante | Matrícula | GitHub |
 |---|---|---|
 | Bernardo Broetto Brun | 241010950 | [@Bercacos](https://github.com/Bercacos) |
-| Carlos Eduardo Deusdara Motta | 241025194 | — |
+| Carlos Eduardo Deusdara Motta | 241025194 | [@cadumotta](https://github.com/cadumotta) |
 | João Pedro Sampaio Maciel | 211039528 | [@jopesmp](https://github.com/jopesmp) |
 | Maykon Junio dos Santos Soares | 211030863 | [@maykonjuso](https://github.com/maykonjuso) |
 | Pedro Goncalves Rocha | 241025363 | [@pedrogrocha13](https://github.com/pedrogrocha13) |
