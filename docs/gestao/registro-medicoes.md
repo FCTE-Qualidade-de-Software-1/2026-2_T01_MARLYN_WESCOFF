@@ -8,7 +8,7 @@ Cada medição é um retrato datado gerado por `scripts/psm_coleta.py` e guardad
 python3 scripts/psm_coleta.py --repo FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF
 ```
 
-O script imprime o resumo em Markdown e grava `dados/gestao/psm-AAAA-MM-DD.csv`.
+O script imprime o resumo em Markdown e grava `dados/gestao/psm-AAAA-MM-DD.csv`. O workflow `psm-coleta.yml` também roda o script toda segunda-feira e versiona o retrato automaticamente.
 
 ## Medições
 
@@ -18,6 +18,18 @@ O script imprime o resumo em Markdown e grava `dados/gestao/psm-AAAA-MM-DD.csv`.
 
 <p class="legenda">Tabela 1. Registro das medições do PSM/CID. Fonte: issues e milestones do GitHub e `dados/gestao/horas.csv`, em 26/10/2026.</p>
 
+## Indicador: planejado vs. concluído
+
+```mermaid
+xychart-beta
+    title "Sprint 2 - Entrega 1 (26/10/2026)"
+    x-axis ["Planejadas", "Concluídas", "Abertas"]
+    y-axis "Issues" 0 --> 16
+    bar [14, 9, 5]
+```
+
+<p class="legenda">Figura 1. Issues planejadas, concluídas e abertas na Sprint 2 na medição de 26/10/2026. Fonte: `dados/gestao/psm-2026-10-26.csv`.</p>
+
 ## Interpretação e decisões
 
 ### Medição de 26/10/2026 (fim da Sprint 2)
@@ -25,6 +37,7 @@ O script imprime o resumo em Markdown e grava `dados/gestao/psm-AAAA-MM-DD.csv`.
 **Calendário e Progresso.** As 9 issues de revisão das Fases 1 e 2, do artigo e da GitPage foram concluídas. As 5 abertas (#9 a #12 e #14) são de registro e fechamento: contribuição, declaração de IA, horas, atas e release. A diferença entre planejado e concluído (36%) passa o critério de 10% do fim da sprint. A causa é que as tarefas de registro ficaram para o fim, depois das revisões, e não atraso no conteúdo da avaliação.
 
 - **Decisão:** concluir as issues de registro antes da release E1. A partir da E2, abrir essas tarefas no início da sprint e não no fim.
+- **Acompanhamento:** as 5 issues de registro foram concluídas em 26/10/2026, antes da criação da release E1; ao fim da sprint, 14 de 14 issues estavam fechadas.
 
 **Recursos e Custos.** O esforço estimado das issues da sprint soma 20,5 h, mas os integrantes não lançaram as horas reais em `dados/gestao/horas.csv`, então a razão R/E e o custo não puderam ser calculados. Para a tabela de contribuição, a equipe registrou que o esforço da E1 foi dividido igualmente (20% por integrante).
 

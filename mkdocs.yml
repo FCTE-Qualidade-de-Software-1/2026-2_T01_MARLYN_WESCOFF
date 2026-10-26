@@ -124,13 +124,15 @@ nav:
       - gestao/index.md
       - Plano de medição (PSM/CID): gestao/plano-psm.md
       - Registro de medições: gestao/registro-medicoes.md
-      - Atas de reunião: gestao/atas.md
+      - Atas e decisões: gestao/atas.md
+      - Termo de consentimento: gestao/termo-consentimento.md
   - Sobre:
       - sobre/index.md
       - Equipe e contribuição: sobre/equipe.md
       - Declaração de uso de IA: sobre/uso-de-ia.md
       - Referências: sobre/referencias.md
       - Entregas e releases: sobre/entregas.md
+      - Critérios de avaliação: sobre/criterios.md
 
 validation:
   links:

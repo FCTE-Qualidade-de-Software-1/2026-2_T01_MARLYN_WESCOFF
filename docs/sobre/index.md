@@ -10,3 +10,4 @@ O grupo leva o nome de **Marlyn Wescoff** (1922–2008), uma das seis programado
 | [Declaração de uso de IA](uso-de-ia.md) | Ferramentas de IA usadas, tarefas e como a equipe conferiu |
 | [Referências](referencias.md) | Normas, guias, documentação do Moodle e material da disciplina |
 | [Entregas e releases](entregas.md) | Versões entregues e o que cada uma contém |
+| [Critérios de avaliação](criterios.md) | Onde cada critério da rubrica é atendido |

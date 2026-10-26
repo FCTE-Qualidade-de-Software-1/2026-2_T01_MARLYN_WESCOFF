@@ -116,6 +116,10 @@ flowchart TB
 
 <p class="legenda">Tabela 5. Dependências do Moodle 5.3 LTS e configuração de referência. Fonte: Moodle (2026); configuração proposta pela equipe.</p>
 
+![Página oficial "Moodle 5.3" no site moodledev.io, mostrando a data de lançamento de 5 de outubro de 2026 e os requisitos de servidor: atualização a partir do Moodle 4.4, PHP mínimo 8.3.0 com suporte a 8.4, extensão sodium obrigatória, max_input_vars maior ou igual a 5000, apenas PHP de 64 bits e PostgreSQL 17 como versão mínima](../assets/evidencias/moodle-5-3-release.png){ width="760" loading="lazy" }
+
+<p class="legenda">Figura 2. Evidência dos requisitos do Moodle 5.3 LTS usados na Tabela 5. Fonte: Moodle (2026), página <a href="https://moodledev.io/general/releases/5.3">moodledev.io/general/releases/5.3</a>, capturada em 25/10/2026.</p>
+
 A configuração de referência é uma **proposta** e será confirmada na Fase 3, com o registro das versões efetivamente instaladas. Os dados usados serão fictícios (usuários, cursos e notas gerados para o teste).
 
 ## Implicações para a avaliação
