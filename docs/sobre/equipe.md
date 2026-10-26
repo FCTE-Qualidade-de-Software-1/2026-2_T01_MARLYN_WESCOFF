@@ -1,17 +1,17 @@
 # Equipe e contribuição
 
 !!! warning "Rascunho para conferência da equipe"
-    A divisão de responsabilidades abaixo é uma **proposta** para a Entrega 1 e deve ser confirmada na reunião de revisão ([rascunho da ata](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/rascunho-ata-revisao-e1.md)). Matrícula, GitHub, horas e percentuais são preenchidos por cada integrante. Remova este aviso depois de conferir.
+    A divisão de responsabilidades abaixo é uma **proposta** para a Entrega 1 e deve ser confirmada na reunião de revisão ([rascunho da ata](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/rascunho-ata-revisao-e1.md)). Horas e percentuais são preenchidos a partir de `dados/gestao/horas.csv`; o GitHub de Carlos ainda precisa ser confirmado. Remova este aviso depois de conferir.
 
 ## Integrantes
 
 | Integrante | Matrícula | GitHub | Responsabilidade principal na E1 | Revisa |
 |---|---|---|---|---|
-| Bernardo Broetto Brun | *a preencher* | *a preencher* | Fase 1: propósito e partes interessadas; Fase 2: G1 (adequação funcional) | G2 |
-| Carlos Eduardo Deusdara Motta | *a preencher* | *a preencher* | Fase 1: produto, modelo de qualidade e escopo; Fase 2: G2 (compatibilidade); atas | G3 |
-| João Pedro Sampaio Maciel | 211039528 | *a preencher* | Fase 1: ODS; Fase 2: abstraction sheets, diagrama GQM e rastreabilidade | GitPage |
-| Maykon Junio dos Santos Soares | *a preencher* | *a preencher* | Metodologia, gestão PSM/CID, GitPage, artigo LaTeX, release | Artigo (consolidação) |
-| Pedro Goncalves Rocha | *a preencher* | *a preencher* | Fase 1: matriz de priorização; Fase 2: G3 (flexibilidade) | G1 e artigo |
+| Bernardo Broetto Brun | 241010950 | [Bercacos](https://github.com/Bercacos) | Fase 1: propósito e partes interessadas; Fase 2: G1 (adequação funcional) | G2 |
+| Carlos Eduardo Deusdara Motta | 241025194 | *a confirmar* | Fase 1: produto, modelo de qualidade e escopo; Fase 2: G2 (compatibilidade); atas | G3 |
+| João Pedro Sampaio Maciel | 211039528 | [jopesmp](https://github.com/jopesmp) | Fase 1: ODS; Fase 2: abstraction sheets, diagrama GQM e rastreabilidade | GitPage |
+| Maykon Junio dos Santos Soares | 211030863 | [maykonjuso](https://github.com/maykonjuso) | Metodologia, gestão PSM/CID, GitPage, artigo LaTeX, release | Artigo (consolidação) |
+| Pedro Goncalves Rocha | 241025363 | [pedrogrocha13](https://github.com/pedrogrocha13) | Fase 1: matriz de priorização; Fase 2: G3 (flexibilidade) | G1 e artigo |
 
 <p class="legenda">Tabela 1. Integrantes do Grupo Marlyn Wescoff e divisão de responsabilidades na Entrega 1. Fonte: elaboração própria.</p>
 
