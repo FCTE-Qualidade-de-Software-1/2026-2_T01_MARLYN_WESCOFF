@@ -101,6 +101,7 @@ Regras de estilo da disciplina: figuras e tabelas numeradas, com legenda e fonte
 |---|---|
 | Bernardo Broetto Brun | — |
 | Carlos Eduardo Deusdara Motta | — |
+| João Pedro Sampaio Maciel | — |
 | Maykon Junio dos Santos Soares | — |
 | Pedro Goncalves Rocha | — |
 

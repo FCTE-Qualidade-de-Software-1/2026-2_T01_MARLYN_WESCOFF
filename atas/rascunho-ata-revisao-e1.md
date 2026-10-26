@@ -6,7 +6,7 @@
 |---|---|
 | Data e horário | [AAAA-MM-DD, HHhMM–HHhMM] |
 | Local | [Presencial / Online (ferramenta)] |
-| Participantes | [ ] Bernardo Broetto Brun · [ ] Carlos Eduardo Deusdara Motta · [ ] Maykon Junio dos Santos Soares · [ ] Pedro Goncalves Rocha |
+| Participantes | [ ] Bernardo Broetto Brun · [ ] Carlos Eduardo Deusdara Motta · [ ] João Pedro Sampaio Maciel · [ ] Maykon Junio dos Santos Soares · [ ] Pedro Goncalves Rocha |
 | Ausentes | [ ] |
 | Responsável pela ata | Carlos Eduardo Deusdara Motta |
 
@@ -52,7 +52,7 @@ Preencher depois de rodar `python3 scripts/psm_coleta.py --repo FCTE-Qualidade-d
 |---|---|---|---|
 | Revisar propósito, partes interessadas e G1 | Bernardo Broetto Brun | 26/10/2026 | #1, #4 |
 | Revisar produto, modelo, escopo e G2; registrar esta ata | Carlos Eduardo Deusdara Motta | 26/10/2026 | #2, #5, #12 |
-| Revisar priorização, ODS e G3 | Pedro Goncalves Rocha | 26/10/2026 | #3, #6 |
-| Revisar GQM e artigo; consolidar horas e PSM; criar a release | Maykon Junio dos Santos Soares | 26/10/2026 | #7, #8, #9, #11, #14 |
-| Revisar a GitPage | Bernardo Broetto Brun | 26/10/2026 | #13 |
+| Revisar a priorização e G3 | Pedro Goncalves Rocha | 26/10/2026 | #3, #6 |
+| Revisar ODS, abstraction sheets, diagrama GQM, rastreabilidade e GitPage | João Pedro Sampaio Maciel | 26/10/2026 | #3, #7, #13 |
+| Revisar o artigo; consolidar horas e PSM; criar a release | Maykon Junio dos Santos Soares | 26/10/2026 | #8, #9, #11, #14 |
 | Lançar as próprias horas e preencher a declaração de IA | Todos | 26/10/2026 | #10, #11 |
