@@ -98,7 +98,7 @@
               </button>
             
             
-  Entrega 1 publicada · Fases 1 e 2 · versão 1.0 de 25/10/2026 ·
+  Entrega 1 publicada · Fases 1 e 2 · versão 1.1 de 26/10/2026 ·
   <a href="../../artigo/artigo-e1.pdf">baixar o artigo (PDF)</a>
 
           </div>
@@ -1253,6 +1253,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#interpretacao-e-decisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação e decisões
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpretação e decisões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#medicao-de-26102026-fim-da-sprint-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medição de 26/10/2026 (fim da Sprint 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1539,6 +1567,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#interpretacao-e-decisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação e decisões
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpretação e decisões">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#medicao-de-26102026-fim-da-sprint-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medição de 26/10/2026 (fim da Sprint 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1617,7 +1673,7 @@
 <h2 id="como-gerar-uma-medicao">Como gerar uma medição<a class="headerlink" href="#como-gerar-uma-medicao" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>scripts/psm_coleta.py<span class="w"> </span>--repo<span class="w"> </span>FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF
 </code></pre></div>
-<p>O script imprime o resumo em Markdown (para colar abaixo) e grava <code>dados/gestao/psm-AAAA-MM-DD.csv</code>.</p>
+<p>O script imprime o resumo em Markdown e grava <code>dados/gestao/psm-AAAA-MM-DD.csv</code>.</p>
 <h2 id="medicoes">Medições<a class="headerlink" href="#medicoes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1625,34 +1681,42 @@
 <th>Data</th>
 <th>Sprint</th>
 <th>Planejado vs. concluído</th>
-<th>Razão de esforço (R/E)</th>
+<th>Esforço (R/E)</th>
 <th>Custo realizado</th>
 <th>Tempo de ciclo (mediana)</th>
 <th>Issues paradas</th>
-<th>Interpretação</th>
-<th>Decisão</th>
+<th>Dados</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>a registrar</em></td>
-<td>Sprint 2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>26/10/2026</td>
+<td>Sprint 2 – Entrega 1</td>
+<td>9 de 14 (64%)</td>
+<td>não calculado: 20,5 h estimadas; horas reais não registradas</td>
+<td>não calculado</td>
+<td>0,5 dia</td>
+<td>nenhuma</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/gestao/psm-2026-10-26.csv"><code>psm-2026-10-26.csv</code></a></td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 1. Registro das medições do PSM/CID. Fonte: issues do GitHub e `dados/gestao/horas.csv`.</p>
+<p class="legenda">Tabela 1. Registro das medições do PSM/CID. Fonte: issues e milestones do GitHub e `dados/gestao/horas.csv`, em 26/10/2026.</p>
 
-<div class="admonition warning">
-<p class="admonition-title">Pendência da equipe</p>
-<p>A primeira medição deve ser gerada depois que as issues da Entrega 1 forem cadastradas nos milestones e as horas forem lançadas em <code>dados/gestao/horas.csv</code>. Nenhum valor deve ser preenchido nesta tabela sem o arquivo de dados correspondente no repositório.</p>
-</div>
+<h2 id="interpretacao-e-decisoes">Interpretação e decisões<a class="headerlink" href="#interpretacao-e-decisoes" title="Permanent link">&para;</a></h2>
+<h3 id="medicao-de-26102026-fim-da-sprint-2">Medição de 26/10/2026 (fim da Sprint 2)<a class="headerlink" href="#medicao-de-26102026-fim-da-sprint-2" title="Permanent link">&para;</a></h3>
+<p><strong>Calendário e Progresso.</strong> As 9 issues de revisão das Fases 1 e 2, do artigo e da GitPage foram concluídas. As 5 abertas (#9 a #12 e #14) são de registro e fechamento: contribuição, declaração de IA, horas, atas e release. A diferença entre planejado e concluído (36%) passa o critério de 10% do fim da sprint. A causa é que as tarefas de registro ficaram para o fim, depois das revisões, e não atraso no conteúdo da avaliação.</p>
+<ul>
+<li><strong>Decisão:</strong> concluir as issues de registro antes da release E1. A partir da E2, abrir essas tarefas no início da sprint e não no fim.</li>
+</ul>
+<p><strong>Recursos e Custos.</strong> O esforço estimado das issues da sprint soma 20,5 h, mas os integrantes não lançaram as horas reais em <code>dados/gestao/horas.csv</code>, então a razão R/E e o custo não puderam ser calculados. Para a tabela de contribuição, a equipe registrou que o esforço da E1 foi dividido igualmente (20% por integrante).</p>
+<ul>
+<li><strong>Decisão:</strong> na E2, cada integrante registra as horas ao fechar cada issue (campo do modelo de issue e <code>horas.csv</code>). A medição de R/E passa a ser feita na metade e no fim de cada sprint.</li>
+</ul>
+<p><strong>Desempenho dos Processos.</strong> A mediana do tempo de ciclo foi de 0,5 dia e não houve issue parada por mais de 3 dias. O valor baixo reflete que as issues de revisão foram abertas e fechadas na reta final da entrega. Por isso, ele não representa o tempo real gasto nas tarefas.</p>
+<ul>
+<li><strong>Decisão:</strong> na E2, abrir as issues no planejamento da sprint, para que o tempo de ciclo meça a duração real do trabalho.</li>
+</ul>
 
 
 
@@ -1730,7 +1794,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 1 | Versão 1.0 · 25/10/2026
+      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 1 | Versão 1.1 · 26/10/2026
     </div>
   
   
