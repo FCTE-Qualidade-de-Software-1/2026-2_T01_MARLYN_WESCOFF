@@ -1,8 +1,5 @@
 # Equipe e contribuição
 
-!!! warning "Rascunho para conferência da equipe"
-    A divisão de responsabilidades abaixo é uma **proposta** para a Entrega 1 e deve ser confirmada na reunião de revisão ([rascunho da ata](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/rascunho-ata-revisao-e1.md)). Horas e percentuais são preenchidos a partir de `dados/gestao/horas.csv`. Remova este aviso depois de conferir.
-
 ## Integrantes
 
 | Integrante | Matrícula | GitHub | Responsabilidade principal na E1 | Revisa |
@@ -17,19 +14,15 @@
 
 ## Tabela de contribuição – Entrega 1
 
-A tabela detalha as tarefas de cada integrante e o percentual do esforço total da entrega (soma = 100%). Horas e percentuais são calculados a partir de [`dados/gestao/horas.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/gestao/horas.csv) pelo script `scripts/psm_coleta.py`. A mesma tabela aparece no Apêndice A do artigo.
+A tabela detalha as tarefas de cada integrante e o percentual do esforço total da entrega (soma = 100%). A equipe dividiu o trabalho da Entrega 1 de forma igual entre os cinco integrantes, por isso cada um tem 20%. As horas individuais não foram registradas na E1 (ver [Registro de medições](../gestao/registro-medicoes.md)); a partir da E2, o percentual será calculado pelas horas lançadas em `dados/gestao/horas.csv`. A mesma tabela aparece no Apêndice A do artigo.
 
 | Integrante | Tarefas realizadas na E1 | Horas | % do esforço |
 |---|---|---:|---:|
-| Bernardo Broetto Brun | Primeira versão da Fase 1; propósito e partes interessadas; objetivo G1, questões, hipóteses e métricas M1.1–M1.3; revisão de G2 | *a preencher* | *a preencher* |
-| Carlos Eduardo Deusdara Motta | Primeira versão da Fase 1; produto, diagrama de contexto, modelo de qualidade e escopo; objetivo G2 e métricas M2.1–M2.4; atas; revisão de G3 | *a preencher* | *a preencher* |
-| João Pedro Sampaio Maciel | Primeira versão da Fase 1; ODS (metas, indicadores e relação com as métricas); abstraction sheets; diagrama GQM e rastreabilidade Fase 1 → Fase 2; revisão da GitPage | *a preencher* | *a preencher* |
-| Maykon Junio dos Santos Soares | Primeira versão da Fase 1; migração para o repositório da disciplina; GitPage; metodologia; plano de medição PSM/CID; artigo LaTeX; release | *a preencher* | *a preencher* |
-| Pedro Goncalves Rocha | Primeira versão da Fase 1; matriz de priorização e análise de sensibilidade; objetivo G3 e métricas M3.1–M3.5; revisão de G1 e do artigo | *a preencher* | *a preencher* |
-| **Total** | | | **100%** |
+| Bernardo Broetto Brun | Primeira versão da Fase 1; propósito e partes interessadas; objetivo G1, questões, hipóteses e métricas M1.1–M1.3; revisão de G2 | — | 20% |
+| Carlos Eduardo Deusdara Motta | Primeira versão da Fase 1; produto, diagrama de contexto, modelo de qualidade e escopo; objetivo G2 e métricas M2.1–M2.4; atas; revisão de G3 | — | 20% |
+| João Pedro Sampaio Maciel | Primeira versão da Fase 1; ODS (metas, indicadores e relação com as métricas); abstraction sheets; diagrama GQM e rastreabilidade Fase 1 → Fase 2; revisão da GitPage | — | 20% |
+| Maykon Junio dos Santos Soares | Primeira versão da Fase 1; migração para o repositório da disciplina; GitPage; metodologia; plano de medição PSM/CID; artigo LaTeX; release | — | 20% |
+| Pedro Goncalves Rocha | Primeira versão da Fase 1; matriz de priorização e análise de sensibilidade; objetivo G3 e métricas M3.1–M3.5; revisão de G1 e do artigo | — | 20% |
+| **Total** | | — | **100%** |
 
-<p class="legenda">Tabela 2. Contribuição dos integrantes na Entrega 1. Fonte: `dados/gestao/horas.csv`.</p>
-
-### Como calcular o percentual
-
-`% do integrante = horas do integrante ÷ soma das horas de todos × 100`. O script `scripts/psm_coleta.py` imprime essa tabela ao final da execução.
+<p class="legenda">Tabela 2. Contribuição dos integrantes na Entrega 1. Fonte: divisão de esforço registrada pela equipe.</p>
