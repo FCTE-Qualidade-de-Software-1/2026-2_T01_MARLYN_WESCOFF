@@ -160,7 +160,113 @@ Observação: na E1, a release foi publicada em 25/10/2026 às 23h26 (horário d
 
 ## Desempenho dos Processos
 
-Seção preenchida na issue #22 (medidas B1 a B4).
+### B1. Cycle time e lead time
+
+| Campo | Definição |
+|---|---|
+| Identificador | B1 |
+| Categoria de informação | Desempenho dos Processos |
+| Necessidade de informação | Quanto tempo a equipe leva para concluir uma tarefa? O tempo de resposta é previsível? Há tarefas paradas? |
+| Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
+| Entidades relevantes | Issues concluídas (definição de pronto) e issues abertas |
+| Atributos | Data de criação, data do primeiro movimento para "Em Progresso", data de fechamento, data da última atualização |
+| Medidas básicas | `tc` = data de criação; `ti` = data do primeiro movimento para "Em Progresso" no board (na falta, `tc`); `tf` = data de fechamento; `tu` = data da última atualização |
+| Método de medição | Leitura automática das datas pela API do GitHub e do histórico do board |
+| Tipo de método | Objetivo |
+| Escala e tipo de escala | Inteiros maiores ou iguais a 1; razão |
+| Unidade de medida | Dias corridos |
+| Função de medição | `Cycle time = tf - ti + 1`; `Lead time = tf - tc + 1`; mediana, percentil 80 (P80) e percentil 90 (P90) por semana e por entrega; `Idade = hoje - tu` para issues abertas |
+| Medida derivada | Cycle time e lead time de cada issue; mediana, P80 e P90; idade das issues abertas |
+| Modelo de análise | Cycle time alto indica tarefa grande demais, bloqueada ou dependente de agenda externa (entrevistas, acesso a ambiente, retorno da docente). Distância grande entre lead time e cycle time indica issue que espera muito no backlog |
+| Indicador | Histograma de cycle time com as linhas da mediana, do P80 e do P90; lista de issues paradas |
+| Critérios de decisão | **Issue com cycle time acima da média em mais de 10%**: a causa é investigada na reunião seguinte (PSM CID, Parte 2, 8.5). **Mediana crescente por duas semanas seguidas**: o WIP é reduzido e as tarefas seguintes são divididas. **Mediana maior que 5 dias** numa entrega: as issues da semana seguinte são divididas. **Issue aberta sem atualização há mais de 3 dias**: o responsável informa o bloqueio na issue ou a tarefa é dividida |
+| Procedimento de coleta | Extração pelos scripts da Etapa 4; a idade das issues abertas também sai no retrato semanal (`psm_coleta.py`) |
+| Procedimento de análise | Na reunião semanal, pelo responsável pela gestão PSM/CID da semana |
+
+<p class="legenda">Tabela 7. Construto da medida B1, cycle time e lead time. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 2, seção 8.5, e do <a href="../../gestao/plano-psm/">Plano de medição</a> da E1.</p>
+
+Os dois últimos critérios vêm do plano de medição da E1 e foram mantidos para preservar a comparação entre as entregas. Na E1, o cycle time não é calculado, porque as datas das issues não refletem o trabalho (Diagnóstico, lacuna L3).
+
+### B2. Velocidade e aceleração
+
+| Campo | Definição |
+|---|---|
+| Identificador | B2 |
+| Categoria de informação | Desempenho dos Processos |
+| Necessidade de informação | A capacidade de produção da equipe é estável e suficiente para concluir o escopo restante até o próximo marco? |
+| Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
+| Entidades relevantes | Iterações (semanas) e issues concluídas em cada uma |
+| Atributos | Pontos de tamanho das issues concluídas; semana de conclusão |
+| Medidas básicas | `P(s)` = soma dos pontos das issues concluídas na semana `s`; `B` = soma dos pontos das issues abertas do milestone; `S` = semanas inteiras até o prazo do milestone |
+| Método de medição | Contagem automática a partir das issues fechadas e das labels `tamanho/` |
+| Tipo de método | Objetivo, sobre um tamanho atribuído de forma subjetiva |
+| Escala e tipo de escala | Reais maiores ou iguais a 0; razão |
+| Unidade de medida | Pontos por semana |
+| Função de medição | `V(s)` = média móvel de `P` nas últimas 3 semanas (ou nas disponíveis, se forem menos); `Aceleração(s) = (V(s) - V(s - 1)) / V(s - 1)`; `Semanas restantes = B / V(s)` |
+| Medida derivada | Velocidade média, aceleração e projeção de semanas restantes |
+| Modelo de análise | Projeção de semanas restantes maior que `S` indica que o escopo não cabe no prazo com o ritmo atual |
+| Indicador | Gráfico de colunas de pontos concluídos por semana, com a linha da média móvel e a projeção |
+| Critérios de decisão | **Variação da velocidade maior que 10%**, para mais ou para menos: analisada na reunião semanal ou na retrospectiva (PSM CID, Parte 2, 8.10). **Semanas restantes maior que `S`**: decisão de escopo (cortar, simplificar ou redistribuir issues), justificada com a projeção |
+| Procedimento de coleta | Extração pelos scripts da Etapa 4, a cada semana |
+| Procedimento de análise | Na reunião semanal; a projeção é revista em cada decisão de escopo |
+
+<p class="legenda">Tabela 8. Construto da medida B2, velocidade e aceleração. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 2, seção 8.10.</p>
+
+Limitação: a disciplina tem poucas semanas até a E2, então a média móvel usa no máximo 3 semanas e a série é curta. Os pontos de tamanho são atribuídos pela estimativa de horas da issue (P até 2 h, M até 5 h, G acima de 5 h), e não por consenso da equipe.
+
+### B3. Frequência de entregas
+
+| Campo | Definição |
+|---|---|
+| Identificador | B3 |
+| Categoria de informação | Desempenho dos Processos |
+| Necessidade de informação | Com que cadência a equipe consolida produtos de trabalho na `main`? O trabalho se concentra na véspera dos marcos? |
+| Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
+| Entidades relevantes | Releases (marcos) e pull requests mergeados na `main` |
+| Atributos | Data de publicação da release; data de merge de cada pull request; linhas alteradas |
+| Medidas básicas | `R` = número de releases no período; `D(r)` = dias entre a release `r - 1` (ou o início da disciplina) e a release `r`; `M(d)` = pull requests mergeados na `main` no dia `d`; `L(d)` = linhas alteradas na `main` no dia `d` |
+| Método de medição | Leitura automática das releases, dos pull requests e do `git log` |
+| Tipo de método | Objetivo |
+| Escala e tipo de escala | Inteiros maiores ou iguais a 0; razão |
+| Unidade de medida | Releases; dias; pull requests por semana; percentual |
+| Função de medição | `Duração da release = D(r)`; `Frequência = R / semanas do período`; `Concentração(r)` = linhas alteradas nos 2 dias anteriores à release `r`, divididas pelas linhas alteradas desde a release anterior, vezes 100 |
+| Medida derivada | Duração e frequência das releases; merges por semana; concentração de véspera |
+| Modelo de análise | Semanas sem merge seguidas de concentração alta na véspera indicam o "pico de véspera": risco de qualidade e de revisão insuficiente |
+| Indicador | Linha do tempo das releases e dos merges por semana, com os marcos da disciplina; tabela de concentração por entrega |
+| Critérios de decisão | **Semana sem nenhum merge na `main`** antes de um marco: a causa é registrada na reunião seguinte. **Concentração maior que 50%** numa entrega: decisão de gestão para a entrega seguinte (por exemplo, prazo interno de congelamento 3 dias antes do marco) (PSM CID, Parte 2, 8.9) |
+| Procedimento de coleta | Extração pelos scripts da Etapa 4 |
+| Procedimento de análise | Na primeira reunião depois de cada marco |
+
+<p class="legenda">Tabela 9. Construto da medida B3, frequência de entregas. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 2, seção 8.9.</p>
+
+A "concentração" é uma medida derivada acrescentada pela equipe, porque o projeto tem poucas releases (uma por marco) e a frequência sozinha não mostra a distribuição do trabalho. Na E1, todo o conteúdo entrou na `main` em 25/10/2026, véspera do prazo (Diagnóstico, seção 2); como o conteúdo foi migrado de outro repositório, esse valor mede a consolidação, e não a produção.
+
+### B4. Retrabalho e não conformidades
+
+| Campo | Definição |
+|---|---|
+| Identificador | B4 |
+| Categoria de informação | Desempenho dos Processos |
+| Necessidade de informação | Quanto esforço vai para corrigir trabalho já dado como pronto? A revisão interna encontra os problemas antes da entrega? |
+| Conceito mensurável | Efetividade do processo, adaptada do conceito de defeito contido e escapado do PSM CID (*Functional Correctness*) |
+| Entidades relevantes | Pull requests, issues e apontamentos da docente em cada entrega e ponto de controle |
+| Atributos | Revisões de PR, eventos de reabertura, labels `retrabalho` e `apontamento-docente` |
+| Medidas básicas | `Reabertas` = issues com evento `reopened`; `Contidas` = não conformidades encontradas em revisão interna: revisões de PR com estado "Changes requested" mais issues com `retrabalho` e sem `apontamento-docente`; `Escapadas` = não conformidades apontadas pela docente, uma issue por apontamento, com as labels `retrabalho` e `apontamento-docente` |
+| Método de medição | Contagem automática das revisões de PR, dos eventos e das labels pela API do GitHub; o registro das escapadas é manual (uma issue por apontamento, aberta na semana do retorno da docente) |
+| Tipo de método | Objetivo (contagem), sobre uma classificação feita pela equipe |
+| Escala e tipo de escala | Inteiros maiores ou iguais a 0; razão |
+| Unidade de medida | Não conformidades; percentual |
+| Função de medição | `Taxa de escape = Escapadas / (Contidas + Escapadas) x 100`, por entrega |
+| Medida derivada | Taxa de escape por entrega; número de issues reabertas |
+| Modelo de análise | Taxa de escape alta indica que a revisão interna não está encontrando os problemas que a docente encontra |
+| Indicador | Gráfico de colunas contidas x escapadas por entrega, com a taxa de escape |
+| Critérios de decisão | **A taxa de escape deve cair da E1 para a E2.** Se não cair, os PRs da entrega seguinte passam a exigir dois revisores e um checklist da rubrica da fase. **Issue reaberta**: a causa é registrada na própria issue (PSM CID, Parte 2, 8.6) |
+| Procedimento de coleta | Extração pelos scripts da Etapa 4; issues de apontamento abertas pelo responsável pela gestão PSM/CID ao receber o retorno da docente |
+| Procedimento de análise | Na primeira reunião depois de cada retorno da docente |
+
+<p class="legenda">Tabela 10. Construto da medida B4, retrabalho e não conformidades. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 2, seção 8.6.</p>
+
+Limitação: na E1 não houve nenhum registro de não conformidade em revisão interna (Diagnóstico, lacuna L8). A taxa de escape da E1 fica em 100% sempre que houver qualquer apontamento da docente. Esse valor é o ponto de partida da comparação, e não uma medição da qualidade das revisões.
 
 ## Recursos e Custos
 
