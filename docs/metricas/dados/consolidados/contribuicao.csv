@@ -1,0 +1,11 @@
+entrega,membro,commits,linhas,issues,revisoes,horas,horas_registrado,horas_reconstruido,pct_commits,pct_linhas,pct_issues,pct_revisoes,pct_horas,divergencia_pp,historico,fonte,data_extracao,comando_ou_query
+E1,Bernardo Broetto Brun,0,0,1.25,0,0,0,0,0,0,25,,,25,sim,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E1,Carlos Eduardo Deusdara Motta,0,0,0,0,0,0,0,0,0,0,,,0,sim,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E1,João Pedro Sampaio Maciel,0,0,0.25,0,0,0,0,0,0,5,,,5,sim,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E1,Maykon Junio dos Santos Soares,13,6168,3.25,0,0,0,0,100,100,65,,,35,sim,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E1,Pedro Goncalves Rocha,0,0,0.25,0,0,0,0,0,0,5,,,5,sim,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E2,Bernardo Broetto Brun,0,0,0,0,0,0,0,0,0,0,0,,0,nao,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E2,Carlos Eduardo Deusdara Motta,7,2555,8,0,0,0,0,53.85,98.65,100,0,,100,nao,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E2,João Pedro Sampaio Maciel,1,0,0,0,0,0,0,7.69,0,0,0,,7.69,nao,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E2,Maykon Junio dos Santos Soares,0,0,0,0,0,0,0,0,0,0,0,,0,nao,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+E2,Pedro Goncalves Rocha,5,35,0,7,0,0,0,38.46,1.35,0,100,,100,nao,commits.csv; issues.json; prs.json; esforco.csv; docs/sobre/equipe.md,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10

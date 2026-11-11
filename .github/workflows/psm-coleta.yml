@@ -1,6 +1,7 @@
 # Coleta dos dados da gestão PSM/CID.
-# - Todo dia, às 23h30 de Brasília: extrai os dados brutos (scripts/extrair_git.py e scripts/extrair_issues.py)
-#   e grava o retrato diário do quadro, que forma o histórico de Status e Iteração (A2, A3 e B1).
+# - Todo dia, às 23h30 de Brasília: extrai os dados brutos (scripts/extrair_git.py e scripts/extrair_issues.py),
+#   grava o retrato diário do quadro, que forma o histórico de Status e Iteração (A2, A3 e B1), consolida as
+#   medidas (scripts/consolidar_metricas.py) e valida os dados (scripts/validar_dados.py).
 # - Toda segunda-feira, às 9h de Brasília: também gera o retrato semanal de scripts/psm_coleta.py.
 # Commits feitos com o GITHUB_TOKEN não disparam o push do deploy.yml; por isso, quando há commit, o workflow
 # chama a publicação da GitPage por workflow_dispatch.
@@ -42,6 +43,7 @@ jobs:
         run: |
           python3 scripts/extrair_git.py
           python3 scripts/extrair_issues.py --repo ${{ github.repository }}
+          python3 scripts/consolidar_metricas.py
       - name: Gerar o retrato semanal
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 12 * * 1'
         run: python3 scripts/psm_coleta.py --repo ${{ github.repository }} | tee -a "$GITHUB_STEP_SUMMARY"
@@ -50,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/metricas/dados/brutos dados/gestao/psm-*.csv
+          git add docs/metricas/dados/brutos docs/metricas/dados/consolidados dados/gestao/psm-*.csv
           if git diff --cached --quiet; then
             echo "commit=false" >> "$GITHUB_OUTPUT"
           else
@@ -63,3 +65,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main
+      # Depois do commit, para não perder o retrato do dia: um erro de digitação no esforco.csv deixa o
+      # workflow vermelho e avisa a equipe, mas os dados brutos do dia já ficaram versionados.
+      - name: Validar os dados
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 2 * * *'
+        run: python3 scripts/validar_dados.py | tee -a "$GITHUB_STEP_SUMMARY"
