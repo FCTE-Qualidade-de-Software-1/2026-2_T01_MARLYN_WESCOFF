@@ -2,6 +2,8 @@
 
 As Fases 3 e 4 serão desenvolvidas na **Entrega 2**. Esta página registra o que já está decidido e o que depende delas, para manter a rastreabilidade com a [Fase 2](fase-2/index.md).
 
+A execução, os desvios de prazo, o fluxo das tarefas e o esforço necessário para concluir estas fases são acompanhados pelas [métricas de gestão PSM/CID](gestao/index.md).
+
 ## Fase 3: Projetar a avaliação (prevista)
 
 | Item do plano de avaliação | Situação | Insumo da Fase 2 |

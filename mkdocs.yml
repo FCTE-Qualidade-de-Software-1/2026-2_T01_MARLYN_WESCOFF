@@ -7,7 +7,7 @@ repo_name: 2026-2_T01_MARLYN_WESCOFF
 edit_uri: edit/main/docs/
 
 # Versão e data da GitPage. Atualizar a cada entrega ou mudança relevante.
-copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 1 | Versão 1.1 · 26/10/2026"
+copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 2 | Versão 2.0 · 11/11/2026"
 
 theme:
   name: material
@@ -122,12 +122,17 @@ nav:
   - Fase 3:
       - Plano de avaliação: fase-3/plano-de-avaliacao.md
   - Fases 3 e 4: fases-3-4.md
-  - Gestão do projeto:
-      - gestao/index.md
-      - Plano de medição (PSM/CID): gestao/plano-psm.md
-      - Dashboard das métricas: metricas/dashboard.md
-      - Registro de medições: gestao/registro-medicoes.md
-      - Atas e decisões: gestao/atas.md
+  - Gestão do Projeto - Métricas PSM/CID:
+      - Visão geral: gestao/index.md
+      - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
+      - Medidas e limiares: metricas/02-construtos-de-medicao.md
+      - Plano inicial da E1 (histórico): gestao/plano-psm.md
+      - Indicadores e dashboard: metricas/dashboard.md
+      - Decisões de gestão: metricas/03-registro-de-decisoes.md
+      - Medições históricas: gestao/registro-medicoes.md
+      - Atas: gestao/atas.md
+      - Dados brutos: metricas/dados/brutos/README.md
+      - Dados consolidados: metricas/dados/consolidados/README.md
       - Termo de consentimento: gestao/termo-consentimento.md
   - Sobre:
       - sobre/index.md

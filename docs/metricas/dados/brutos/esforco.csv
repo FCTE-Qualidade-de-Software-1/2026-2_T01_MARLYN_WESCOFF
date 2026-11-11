@@ -29,3 +29,4 @@ data,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao
 2026-10-28,Bernardo Broetto Brun,,gestao,,1.5,reconstruido, Facilitação da retrospectiva da E1
 2026-11-11,Bernardo Broetto Brun,gestao,desenvolvimento,#26,4,reconstruido, Implementação e validação dos gráficos PSM/CID
 2026-11-11,Bernardo Broetto Brun,gestao,desenvolvimento,#27,2,reconstruido, Implementação e validação do dashboard PSM/CID
+2026-11-11,Bernardo Broetto Brun,gestao,documentacao,#29,2,reconstruido, Estimativa temporária: integração da gestão PSM/CID na GitPage
