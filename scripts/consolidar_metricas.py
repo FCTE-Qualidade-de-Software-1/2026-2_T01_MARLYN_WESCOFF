@@ -226,8 +226,12 @@ class Dados:
             return ""
         if d <= self.fim_e1:
             return "E1"
-        futuros = sorted((p, c) for c, p in self.prazos.items() if p and p >= d and c != "E1")
-        return futuros[0][1] if futuros else ENTREGA_CORRENTE
+        # E2 e Apresentação podem compartilhar o mesmo prazo. Nesse caso, o trabalho de execução
+        # pertence à E2; "Apresentação" só recebe itens explicitamente vinculados ao milestone.
+        prioridade = {"E2": 0, "PC1": 1, "Apresentação": 2}
+        futuros = sorted((p, prioridade.get(c, 9), c)
+                         for c, p in self.prazos.items() if p and p >= d and c != "E1")
+        return futuros[0][2] if futuros else ENTREGA_CORRENTE
 
     def entrega_da_issue(self, issue):
         return codigo((issue.get("milestone") or {}).get("title")) or self.entrega_por_data(dia(issue["createdAt"]))
