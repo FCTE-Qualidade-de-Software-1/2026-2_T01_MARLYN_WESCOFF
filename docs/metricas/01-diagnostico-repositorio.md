@@ -105,6 +105,6 @@ Registro das ações feitas para tornar o repositório mensurável, sem reescrev
 | 10/11/2026 | `.mailmap` criado e convenção de labels e milestones documentada no `CONTRIBUTING.md` | #18, PR #34 | L12 |
 | 10/11/2026 | Apontamento `esforco.csv` criado, com as atividades da E1 migradas e as horas em branco, à espera da reconstrução | #20, PR #35 | L1 |
 | 10/11/2026 | Fluxo por branch e pull request revisado adotado a partir das issues da gestão PSM/CID | PRs #33 em diante | L2 |
-| Pendente | Project board com os estados do fluxo | #19 | L4 |
+| 10/11/2026 | Project board [Marlyn Wescoff - Gestão PSM/CID](https://github.com/users/cadumotta/projects/1) criado com os estados Backlog, A Fazer, Em Progresso, Em Revisão e Concluído e o campo semanal "Iteração"; as 32 issues foram adicionadas no estado atual. O quadro fica na conta de Carlos porque a organização da disciplina não permite que integrantes criem projetos | #19 | L4 |
 
 <p class="legenda">Tabela 5. Ações de instrumentação do repositório. Fonte: elaborado pelos autores.</p>
