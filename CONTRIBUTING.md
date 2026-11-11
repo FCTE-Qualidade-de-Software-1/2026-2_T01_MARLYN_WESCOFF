@@ -21,6 +21,7 @@ As labels e os milestones alimentam as medidas da gestão PSM/CID. Toda issue re
 | `tamanho/...` | `P` (1 ponto, até 2 h), `M` (3 pontos, mais de 2 h e até 5 h), `G` (8 pontos, mais de 5 h) | Derivado da estimativa da issue; base da velocidade e do burndown |
 | `prioridade/N` | `prioridade/1` (alta) a `prioridade/3` (baixa) | Opcional, para ordenar o backlog |
 | `retrabalho` | — | Produto revisado depois de crítica (revisão interna ou ponto de controle) ou issue reaberta |
+| `apontamento-docente` | — | Não conformidade apontada pela docente num ponto de controle ou entrega; usada junto com `retrabalho` (medida B4) |
 
 Cada milestone corresponde a um marco da disciplina: `E1 - 26/10/2026` (fechado), `PC1`, `E2` e `Apresentação`. Issues abertas sem milestone formam o backlog.
 
