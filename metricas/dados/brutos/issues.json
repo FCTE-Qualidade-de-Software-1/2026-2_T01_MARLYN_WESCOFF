@@ -1,0 +1,1769 @@
+[
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:08:16Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 32,
+  "state": "OPEN",
+  "title": "[PSM/CID] Checklist de aceitação final"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:08:13Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 31,
+  "state": "OPEN",
+  "title": "[PSM/CID] Declaração de uso de IA da gestão PSM/CID"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:08:10Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 30,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 8] Texto da gestão PSM/CID para o artigo"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:08:04Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 29,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 7] Publicar a gestão PSM/CID na GitPage"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:08:01Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 28,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 6] Registro das decisões de gestão"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:56Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 27,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 5] Dashboard das métricas"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:45Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 26,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 5] gerar_graficos.py e figuras dos indicadores"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:43Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 25,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 4] consolidar_metricas.py e validar_dados.py"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:39Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 24,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 4] Scripts de extração: extrair_git.py e extrair_issues.py"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:35Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 23,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 3] Construtos de Recursos e Custos (C1 a C3)"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:27Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 22,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 3] Construtos de Desempenho dos Processos (B1 a B4)"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:07:23Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 21,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 3] Construtos de Calendário e Progresso (A1 a A4) e adaptação da terminologia CID"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:53Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 20,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 2] Apontamento de esforço (esforco.csv) e horas da E1"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:48Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 19,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 2] Project board com os estados do fluxo"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:46Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 18,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 2] Labels, milestones das entregas, tags e .mailmap"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:43Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 17,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 1] Escrever o diagnóstico do repositório"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:38Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "Gestão PSM/CID - Entrega 2",
+   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "dueOn": null
+  },
+  "number": 16,
+  "state": "OPEN",
+  "title": "[PSM/CID - Etapa 1] Extrair os dados brutos do repositório"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": "",
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-11T01:06:34Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcNA",
+    "name": "psm-cid",
+    "description": "Gestão do projeto com métricas PSM/CID",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   }
+  ],
+  "milestone": null,
+  "number": 15,
+  "state": "OPEN",
+  "title": "[PSM/CID] Gestão do projeto com métricas PSM/CID - acompanhamento"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:26:25Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4rbg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Maykon Junio dos Santos Soares** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:08Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6404582254",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfeDhyw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Release E1 criada com o artigo em PDF anexado.",
+    "createdAt": "2026-10-26T02:26:25Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6406857163",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:32Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 14,
+  "state": "CLOSED",
+  "title": "Criar a release E1 com o artigo em PDF"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:16Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4qlQ",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Bernardo Broetto Brun** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:07Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6404582037",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd58UA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Atualização: com a entrada de **João Pedro Sampaio Maciel** na equipe, o responsável sugerido passa a ser **João Pedro Sampaio Maciel**.",
+    "createdAt": "2026-10-26T02:12:58Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406700112",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7mxA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:15Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406727364",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:30Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 13,
+  "state": "CLOSED",
+  "title": "[Revisão] GitPage: navegação, links e visual"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:24:01Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4pkw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Carlos Eduardo Deusdara Motta** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:05Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6404581779",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfeB0BQ",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Ata 01 (11/10/2026, data aproximada) registrada em atas/2026-10-11-ata-01.md e registro de decisões da E1 em docs/gestao/atas.md, incluindo a troca de usabilidade por compatibilidade.",
+    "createdAt": "2026-10-26T02:24:00Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6406829061",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:28Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDs9w",
+    "name": "pendência-da-equipe",
+    "description": "Depende de informação que só a equipe tem",
+    "color": "d93f0b"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 12,
+  "state": "CLOSED",
+  "title": "[Pendência] Registrar as atas das reuniões da Entrega 1"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:21:48Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4ogg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Todos lançam as horas; Maykon Junio dos Santos Soares roda o script e registra a medição** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:04Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6404581506",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfeASkw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Primeira medição do PSM/CID registrada em docs/gestao/registro-medicoes.md (dados em dados/gestao/psm-2026-10-26.csv): 9/14 issues concluídas (64%), tempo de ciclo mediano de 0,5 dia, nenhuma issue parada. As horas reais não foram lançadas na E1; decisão registrada: na E2, lançar as horas ao fechar cada issue.",
+    "createdAt": "2026-10-26T02:21:48Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6406804115",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:26Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDs9w",
+    "name": "pendência-da-equipe",
+    "description": "Depende de informação que só a equipe tem",
+    "color": "d93f0b"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 11,
+  "state": "CLOSED",
+  "title": "[Pendência] Registrar horas e gerar a primeira medição do PSM/CID"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   },
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   },
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   },
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:26:07Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4noA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Todos: cada integrante preenche as próprias linhas** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:02Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6404581280",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfeDUjA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Declaração de uso de IA preenchida no site (docs/sobre/uso-de-ia.md) e no Apêndice B do artigo: ferramenta única, Claude Code (Anthropic), com tarefas e forma de conferência.",
+    "createdAt": "2026-10-26T02:26:07Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6406853772",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:24Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDs9w",
+    "name": "pendência-da-equipe",
+    "description": "Depende de informação que só a equipe tem",
+    "color": "d93f0b"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 10,
+  "state": "CLOSED",
+  "title": "[Pendência] Declaração de uso de IA"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:21:46Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4m0g",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Maykon Junio dos Santos Soares, depois que todos lançarem as horas** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:58:01Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6404581074",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfeAQyg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Tabela de contribuição preenchida no site e no Apêndice A: matrículas, GitHub, tarefas e esforço igual (20% por integrante), conforme registrado pela equipe.",
+    "createdAt": "2026-10-26T02:21:45Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6406803658",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:22Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDs9w",
+    "name": "pendência-da-equipe",
+    "description": "Depende de informação que só a equipe tem",
+    "color": "d93f0b"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 9,
+  "state": "CLOSED",
+  "title": "[Pendência] Preencher equipe e tabela de contribuição"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:13Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4lbg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Maykon Junio dos Santos Soares (revisão cruzada: Pedro Goncalves Rocha)** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:59Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6404580718",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7kwg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:12Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6406726850",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:20Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 8,
+  "state": "CLOSED",
+  "title": "[Revisão] Artigo LaTeX (modelo SBC)"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:11Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4kAg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Maykon Junio dos Santos Soares** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:57Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6404580354",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd57VA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Atualização: com a entrada de **João Pedro Sampaio Maciel** na equipe, o responsável sugerido passa a ser **João Pedro Sampaio Maciel**.",
+    "createdAt": "2026-10-26T02:12:57Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406699860",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7iyA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:10Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406726344",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:18Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 7,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 2 - Abstraction sheets, diagrama GQM e rastreabilidade"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:08Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4jJw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Pedro Goncalves Rocha (revisão: Carlos Eduardo Deusdara Motta)** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:56Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6404580135",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7g8A",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:07Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6406725872",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:16Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 6,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 2 - G3 Flexibilidade"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:06Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4iaA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Carlos Eduardo Deusdara Motta (revisão: Bernardo Broetto Brun)** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:54Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6404579944",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7fDw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:05Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6406725391",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:14Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 5,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 2 - G2 Compatibilidade"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:04Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4hdg",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Bernardo Broetto Brun (revisão: Pedro Goncalves Rocha)** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:53Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6404579702",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7dOw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:03Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6406724923",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:12Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 4,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 2 - G1 Adequação funcional"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:15:01Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4glQ",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Pedro Goncalves Rocha** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:52Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6404579477",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd56QQ",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Atualização: com a entrada de **João Pedro Sampaio Maciel** na equipe, o responsável sugerido passa a ser **Pedro Goncalves Rocha (matriz de priorização) e João Pedro Sampaio Maciel (ODS)**.",
+    "createdAt": "2026-10-26T02:12:55Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406699585",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7bOQ",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:15:00Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406724409",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:09Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 3,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 1 - Priorização das características e ODS"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:14:58Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4fxw",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Carlos Eduardo Deusdara Motta** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:50Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6404579271",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7ZkA",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:14:58Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6406723984",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:07Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 2,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 1 - Produto, modelo de qualidade e escopo"
+ },
+ {
+  "assignees": [],
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-10-26T02:14:56Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfb4e6w",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Responsável sugerido: **Bernardo Broetto Brun** (divisão proposta em docs/sobre/equipe.md e no rascunho da ata, atas/rascunho-ata-revisao-e1.md). Confirmar na reunião de revisão e atribuir a issue no GitHub.",
+    "createdAt": "2026-10-25T22:57:49Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6404579051",
+    "viewerDidAuthor": false
+   },
+   {
+    "id": "IC_kwDOVS_JFM8AAAABfd7X9g",
+    "author": {
+     "login": "maykonjuso"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisão concluída pela equipe, sem alterações pedidas no conteúdo (confirmado por Maykon Junio dos Santos Soares).",
+    "createdAt": "2026-10-26T02:14:56Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6406723574",
+    "viewerDidAuthor": false
+   }
+  ],
+  "createdAt": "2026-10-25T14:26:05Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDsQQ",
+    "name": "revisão",
+    "description": "Revisão do conteúdo da entrega",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAAC_MDscA",
+    "name": "entrega-1",
+    "description": "Entrega 1 (Fases 1 e 2)",
+    "color": "fbca04"
+   }
+  ],
+  "milestone": {
+   "number": 1,
+   "title": "Sprint 2 - Entrega 1",
+   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "dueOn": "2026-10-26T00:00:00Z"
+  },
+  "number": 1,
+  "state": "CLOSED",
+  "title": "[Revisão] Fase 1 - Propósito e partes interessadas"
+ }
+]
