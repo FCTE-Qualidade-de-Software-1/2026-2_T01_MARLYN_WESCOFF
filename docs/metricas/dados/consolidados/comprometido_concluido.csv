@@ -1,0 +1,5 @@
+semana,inicio,fim,entrega,historico,comprometidos,concluidos,pc_pct,diferenca_pct,pc_acumulado_pct,fonte_compromisso,fonte,data_extracao,comando_ou_query
+2026-W43,2026-10-19,2026-10-25,E1,sim,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+2026-W44,2026-10-26,2026-11-01,E2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+2026-W45,2026-11-02,2026-11-08,E2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+2026-W46,2026-11-09,2026-11-15,E2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
