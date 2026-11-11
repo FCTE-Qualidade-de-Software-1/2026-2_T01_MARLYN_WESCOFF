@@ -1,0 +1,7 @@
+# Consolida as identidades dos integrantes no histórico do Git (git shortlog -sne, medida C2).
+# Formato: Nome canônico <e-mail canônico> Nome no commit <e-mail no commit>
+# Ao começar a commitar, cada integrante confere se aparece uma única vez em `git shortlog -sne main`
+# e, se aparecer duplicado (por exemplo, um commit pela interface web), acrescenta uma linha aqui.
+Maykon Junio dos Santos Soares <maykola1331@gmail.com> maykonjuso <maykola1331@gmail.com>
+João Pedro Sampaio Maciel <113356974+jopesmp@users.noreply.github.com> João Pedro S. Maciel <113356974+jopesmp@users.noreply.github.com>
+Carlos Eduardo Deusdara Motta <cadumotta2005@gmail.com> cadumotta <cadumotta2005@gmail.com>
