@@ -16,7 +16,7 @@ Este documento levanta a evidência que o repositório já tem e a que falta, **
 | Branches além da `main` | Só `gh-pages`, gerado pelo deploy da GitPage |
 | Releases e tags | 1 release (`E1`, publicada em 26/10/2026 às 02:26 UTC) e 1 tag leve (`E1`, no commit `172e1af`) |
 | Project board | Nenhum |
-| Eventos de issues | 158: 63 de label, 35 de atribuição, 31 de milestone, 14 de fechamento, 9 de desatribuição, nenhum de reabertura |
+| Eventos de issues | 158: 63 de label, 35 de atribuição, 31 de milestone, 14 de fechamento, 9 de desatribuição, 3 de inscrição e 3 de menção; nenhum de reabertura |
 | Apontamento de horas | `dados/gestao/horas.csv`, com 26 atividades e **todas as horas e datas em branco** |
 | Atas | 1 (ata 01, data aproximada, registrada depois) e a retrospectiva da E1 em PDF, na raiz |
 
