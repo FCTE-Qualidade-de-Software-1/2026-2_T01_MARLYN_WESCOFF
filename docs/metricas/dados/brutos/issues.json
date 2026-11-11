@@ -29,12 +29,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 32,
@@ -71,12 +83,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 31,
@@ -113,12 +137,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 30,
@@ -155,12 +191,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 29,
@@ -197,12 +245,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 28,
@@ -239,12 +299,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 27,
@@ -281,12 +353,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 26,
@@ -323,12 +407,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 25,
@@ -365,12 +461,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 24,
@@ -407,12 +515,24 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 23,
@@ -424,7 +544,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -434,7 +554,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:38Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:27Z",
   "labels": [
@@ -449,16 +569,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 22,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Desempenho dos Processos (B1 a B4)"
  },
  {
@@ -466,7 +598,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -476,7 +608,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:36Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:23Z",
   "labels": [
@@ -491,16 +623,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 21,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Calendário e Progresso (A1 a A4) e adaptação da terminologia CID"
  },
  {
@@ -508,7 +652,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -518,7 +662,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:34Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:53Z",
   "labels": [
@@ -533,16 +677,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 20,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Apontamento de esforço (esforco.csv) e horas da E1"
  },
  {
@@ -550,7 +706,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -560,8 +716,23 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-11T02:37:32Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABlGH9YQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Quadro criado: https://github.com/users/cadumotta/projects/1\n\n- **Estados (campo Status):** Backlog -> A Fazer -> Em Progresso -> Em Revisão -> Concluído.\n- **Campo \"Iteração\":** semanal, de segunda a domingo, com as semanas 2026-W46 a W49.\n- **Issues:** as 32 do repositório estão no quadro.\n  - #1 a #14: Concluído.\n  - Issues com PR aberto (#16, #17, #18, #21, #22) e a #19: Em Revisão.\n  - #15 e #20: Em Progresso.\n  - As demais: Backlog.\n- **Regra de movimentação:** está no README do quadro. Em especial, a issue vai para \"Em Progresso\" quando alguém começa o trabalho, e não só quando fecha.\n- **Diagnóstico:** a criação foi registrada na tabela de ações de instrumentação do PR #36.\n\n**Por que o quadro está na conta do Carlos:** a organização da disciplina não permite que integrantes criem projetos (a API devolve `FORBIDDEN`), e projetos de usuário não podem ser vinculados a um repositório de organização. Por isso, o quadro não aparece na aba Projects do repositório; o link fica aqui e no diagnóstico.\n\nFalta, antes de fechar:\n\n- [ ] Dar acesso de edição ao Pedro e ao Bernardo (Settings do projeto -> Manage access) e deixar o quadro visível para a docente\n- [ ] Ativar nos Workflows do projeto: \"Item closed\" e \"Pull request merged\" -> Concluído, e \"Item added\" -> Backlog\n- [ ] @pedrogrocha13 conferir o quadro e fechar esta issue\n",
+    "createdAt": "2026-11-11T01:37:15Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/19#issuecomment-6784417121"
+   }
+  ],
   "createdAt": "2026-11-11T01:06:48Z",
   "labels": [
    {
@@ -575,16 +746,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 19,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Project board com os estados do fluxo"
  },
  {
@@ -592,7 +775,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -602,7 +785,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:30Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:46Z",
   "labels": [
@@ -617,16 +800,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 18,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Labels, milestones das entregas, tags e .mailmap"
  },
  {
@@ -634,7 +829,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -644,7 +839,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:28Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:43Z",
   "labels": [
@@ -659,16 +854,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 17,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 1] Escrever o diagnóstico do repositório"
  },
  {
@@ -676,7 +883,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -686,7 +893,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:26Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:38Z",
   "labels": [
@@ -701,16 +908,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
    "dueOn": null
   },
   "number": 16,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 1] Extrair os dados brutos do repositório"
  },
  {
@@ -718,7 +937,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -728,7 +947,7 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:37:23Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:34Z",
   "labels": [
@@ -743,11 +962,22 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
    }
   ],
-  "milestone": null,
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
+   "dueOn": null
+  },
   "number": 15,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID] Gestão do projeto com métricas PSM/CID - acompanhamento"
  },
  {
@@ -779,8 +1009,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6404582254",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6404582254"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeDhyw",
@@ -794,8 +1023,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6406857163",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6406857163"
    }
   ],
   "createdAt": "2026-10-25T14:26:32Z",
@@ -805,12 +1033,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 14,
@@ -846,8 +1086,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6404582037",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6404582037"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd58UA",
@@ -861,8 +1100,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406700112",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406700112"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7mxA",
@@ -876,8 +1114,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406727364",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406727364"
    }
   ],
   "createdAt": "2026-10-25T14:26:30Z",
@@ -893,12 +1130,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 13,
@@ -927,8 +1176,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6404581779",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6404581779"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeB0BQ",
@@ -942,8 +1190,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6406829061",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6406829061"
    }
   ],
   "createdAt": "2026-10-25T14:26:28Z",
@@ -959,12 +1206,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 12,
@@ -1000,8 +1259,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6404581506",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6404581506"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeASkw",
@@ -1015,8 +1273,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6406804115",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6406804115"
    }
   ],
   "createdAt": "2026-10-25T14:26:26Z",
@@ -1032,12 +1289,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 11,
@@ -1091,8 +1360,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6404581280",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6404581280"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeDUjA",
@@ -1106,8 +1374,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6406853772",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6406853772"
    }
   ],
   "createdAt": "2026-10-25T14:26:24Z",
@@ -1123,12 +1390,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 10,
@@ -1164,8 +1443,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6404581074",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6404581074"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeAQyg",
@@ -1179,8 +1457,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6406803658",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6406803658"
    }
   ],
   "createdAt": "2026-10-25T14:26:22Z",
@@ -1196,12 +1473,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 9,
@@ -1230,8 +1519,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6404580718",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6404580718"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7kwg",
@@ -1245,8 +1533,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6406726850",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6406726850"
    }
   ],
   "createdAt": "2026-10-25T14:26:20Z",
@@ -1262,12 +1549,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 8,
@@ -1296,8 +1595,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6404580354",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6404580354"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd57VA",
@@ -1311,8 +1609,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406699860",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406699860"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7iyA",
@@ -1326,8 +1623,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406726344",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406726344"
    }
   ],
   "createdAt": "2026-10-25T14:26:18Z",
@@ -1343,12 +1639,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 7,
@@ -1377,8 +1691,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6404580135",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6404580135"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7g8A",
@@ -1392,8 +1705,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6406725872",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6406725872"
    }
   ],
   "createdAt": "2026-10-25T14:26:16Z",
@@ -1409,12 +1721,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 6,
@@ -1443,8 +1773,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6404579944",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6404579944"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7fDw",
@@ -1458,8 +1787,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6406725391",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6406725391"
    }
   ],
   "createdAt": "2026-10-25T14:26:14Z",
@@ -1475,12 +1803,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 5,
@@ -1509,8 +1855,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6404579702",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6404579702"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7dOw",
@@ -1524,8 +1869,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6406724923",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6406724923"
    }
   ],
   "createdAt": "2026-10-25T14:26:12Z",
@@ -1541,12 +1885,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 4,
@@ -1575,8 +1937,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6404579477",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6404579477"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd56QQ",
@@ -1590,8 +1951,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406699585",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406699585"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7bOQ",
@@ -1605,8 +1965,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406724409",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406724409"
    }
   ],
   "createdAt": "2026-10-25T14:26:09Z",
@@ -1622,12 +1981,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 3,
@@ -1656,8 +2033,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6404579271",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6404579271"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7ZkA",
@@ -1671,8 +2047,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6406723984",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6406723984"
    }
   ],
   "createdAt": "2026-10-25T14:26:07Z",
@@ -1688,12 +2063,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 2,
@@ -1722,8 +2115,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6404579051",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6404579051"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7X9g",
@@ -1737,8 +2129,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6406723574",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6406723574"
    }
   ],
   "createdAt": "2026-10-25T14:26:05Z",
@@ -1754,12 +2145,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 1,
