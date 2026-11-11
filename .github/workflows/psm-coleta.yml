@@ -1,31 +1,65 @@
-# Gera um retrato semanal das métricas do PSM/CID a partir das issues e do registro de horas.
+# Coleta dos dados da gestão PSM/CID.
+# - Todo dia, às 23h30 de Brasília: extrai os dados brutos (scripts/extrair_git.py e scripts/extrair_issues.py)
+#   e grava o retrato diário do quadro, que forma o histórico de Status e Iteração (A2, A3 e B1).
+# - Toda segunda-feira, às 9h de Brasília: também gera o retrato semanal de scripts/psm_coleta.py.
+# Commits feitos com o GITHUB_TOKEN não disparam o push do deploy.yml; por isso, quando há commit, o workflow
+# chama a publicação da GitPage por workflow_dispatch.
 name: Coletar métricas do PSM/CID
 
 on:
   schedule:
-    - cron: "0 12 * * 1"
+    - cron: "30 2 * * *"   # diário (23h30 em Brasília)
+    - cron: "0 12 * * 1"   # semanal, segunda-feira (9h em Brasília)
   workflow_dispatch:
 
 permissions:
   contents: write
   issues: read
+  pull-requests: read
+  actions: write
+
+concurrency:
+  group: psm-coleta
+  cancel-in-progress: false
 
 jobs:
   coletar:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Sao_Paulo
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Token pessoal com o escopo read:project: o quadro fica na conta de um integrante.
+      PSM_PROJECT_TOKEN: ${{ secrets.PSM_PROJECT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # histórico completo e tags, para o extrair_git.py
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Rodar a coleta
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extrair os dados brutos
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '30 2 * * *'
+        run: |
+          python3 scripts/extrair_git.py
+          python3 scripts/extrair_issues.py --repo ${{ github.repository }}
+      - name: Gerar o retrato semanal
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 12 * * 1'
         run: python3 scripts/psm_coleta.py --repo ${{ github.repository }} | tee -a "$GITHUB_STEP_SUMMARY"
-      - name: Versionar o retrato
+      - name: Versionar os dados
+        id: versionar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dados/gestao/psm-*.csv
-          git diff --cached --quiet || git commit -m "PSM/CID: retrato automático de $(date +%F)"
-          git push
+          git add docs/metricas/dados/brutos dados/gestao/psm-*.csv
+          if git diff --cached --quiet; then
+            echo "commit=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "PSM/CID: coleta automática de $(date +%F)"
+            git push
+            echo "commit=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publicar a GitPage com os dados novos
+        if: steps.versionar.outputs.commit == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
