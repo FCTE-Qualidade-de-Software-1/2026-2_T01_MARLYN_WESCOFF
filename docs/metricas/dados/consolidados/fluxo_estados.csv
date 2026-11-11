@@ -16,4 +16,4 @@ data,aberta_sem_estado,backlog,a_fazer,em_progresso,em_revisao,concluido,outro,w
 2026-11-08,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
 2026-11-09,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
 2026-11-10,0,10,0,0,0,22,0,0,8,quadro e issues,nao,0,1.14,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
-2026-11-11,0,6,0,0,0,26,0,0,4,quadro e issues,nao,0,1.71,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-11,0,5,0,1,0,26,0,1,4,quadro e issues,nao,0.14,1.71,0.08,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11

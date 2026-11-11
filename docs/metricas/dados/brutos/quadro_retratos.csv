@@ -24,7 +24,7 @@ data,issue,status,iteracao,iteracao_inicio,fonte,data_extracao,comando_ou_query
 2026-11-11,23,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-11,24,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-11,25,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
-2026-11-11,26,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-11,26,Em Progresso,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-11,27,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-11,28,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-11,29,Backlog,,,GitHub GraphQL (projectV2),2026-11-11,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }

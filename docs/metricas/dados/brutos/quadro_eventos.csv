@@ -63,3 +63,4 @@ issue,data_hora,evento,status_anterior,status,fonte,data_extracao,comando_ou_que
 31,2026-11-11T01:36:15Z,status,,Backlog,GitHub GraphQL (timelineItems),2026-11-11,"issues { timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) }"
 32,2026-11-11T01:36:17Z,adicionada,,,GitHub GraphQL (timelineItems),2026-11-11,"issues { timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) }"
 32,2026-11-11T01:36:24Z,status,,Backlog,GitHub GraphQL (timelineItems),2026-11-11,"issues { timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) }"
+26,2026-11-11T03:56:40Z,status,Backlog,Em Progresso,GitHub GraphQL (timelineItems),2026-11-11,"issues { timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) }"
