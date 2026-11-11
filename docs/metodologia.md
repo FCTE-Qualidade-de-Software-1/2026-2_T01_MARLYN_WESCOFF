@@ -30,7 +30,7 @@ flowchart LR
 |---|---|---|---|
 | 1 | Estabelecer o propósito; identificar o tipo de produto; especificar o modelo de qualidade | ISO/IEC 25010:2023; classificação de Pressman e IEEE 1062; matriz de decisão ponderada | [Requisitos de avaliação](fase-1/index.md) |
 | 2 | Selecionar métricas; estabelecer níveis de pontuação; estabelecer critérios de julgamento | GQM (Basili et al., 1994), *abstraction sheets*, medidas da ISO/IEC 25023 | [Especificação da avaliação](fase-2/index.md) |
-| 3 | Produzir o plano de avaliação (método, instruções, recursos, cronograma) | A definir na Entrega 2 | Plano de avaliação |
+| 3 | Produzir o plano de avaliação (método, instruções, recursos, cronograma) | Em andamento | [Plano de avaliação](plano-de-avaliacao.md) |
 | 4 | Obter as medidas; comparar com os critérios; julgar os resultados; executar uma ação de melhoria | A definir na Entrega 2 | Relatório de resultados |
 
 <p class="legenda">Tabela 1. Atividades, técnicas e produtos de cada fase. Fonte: elaboração própria.</p>
