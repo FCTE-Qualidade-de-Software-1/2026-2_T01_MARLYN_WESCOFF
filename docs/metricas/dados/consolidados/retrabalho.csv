@@ -1,5 +1,5 @@
 entrega,reabertas,contidas_revisao,contidas_issues,contidas,escapadas,taxa_escape_pct,historico,fonte,data_extracao,comando_ou_query
-Apresentação,0,0,0,0,0,,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
-E1,0,0,0,0,0,,sim,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
-E2,0,1,0,1,0,0,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
-PC1,0,0,0,0,0,,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-10,python3 scripts/consolidar_metricas.py --data-ref 2026-11-10
+Apresentação,0,1,0,1,0,0,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+E1,0,0,0,0,0,,sim,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+E2,0,0,0,0,0,,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+PC1,0,0,0,0,0,,nao,issues.json; issue_events.jsonl; prs.json; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11

@@ -1,5 +1,137 @@
 [
  {
+  "additions": 2987,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:05:05Z",
+  "createdAt": "2026-11-11T02:58:36Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:05:05Z",
+  "number": 43,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN-09A",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:58:46Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "67fc374b3280360390c9984985cd6d232a1cae6c"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Registro das decisões de gestão (Etapa 6)"
+ },
+ {
+  "additions": 2854,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:47Z",
+  "createdAt": "2026-11-11T02:50:58Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:04:47Z",
+  "number": 42,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7uEA",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:51:07Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "8ae81ef4e630cc2e2d9b00f09959ef692f2548ee"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Consolidação e validação dos dados (Etapa 4)"
+ },
+ {
+  "additions": 1807,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:28Z",
+  "createdAt": "2026-11-11T02:50:51Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:04:28Z",
+  "number": 41,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7rLw",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:51:01Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "ff33ee46007e8a6e9b8ca82076c8394aa428ff75"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Scripts de extração: extrair_git.py e extrair_issues.py (Etapa 4)"
+ },
+ {
+  "additions": 82,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:08Z",
+  "createdAt": "2026-11-11T02:50:46Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-11T03:04:08Z",
+  "number": 40,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7pUQ",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:50:56Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "9665cf3140a8406cacb6ceaa951c3bdfa5730028"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Construtos de Recursos e Custos (C1 a C3) (Etapa 3)"
+ },
+ {
   "additions": 259,
   "author": {
    "id": "U_kgDOBsGwrg",
@@ -7,13 +139,13 @@
    "login": "jopesmp",
    "name": "João Pedro S. Maciel"
   },
-  "closedAt": null,
+  "closedAt": "2026-11-11T02:41:01Z",
   "createdAt": "2026-11-11T02:40:48Z",
   "deletions": 2,
-  "mergedAt": null,
+  "mergedAt": "2026-11-11T02:41:01Z",
   "number": 39,
   "reviews": [],
-  "state": "OPEN",
+  "state": "MERGED",
   "title": "Docs/fase 3 plano de avaliacao"
  },
  {

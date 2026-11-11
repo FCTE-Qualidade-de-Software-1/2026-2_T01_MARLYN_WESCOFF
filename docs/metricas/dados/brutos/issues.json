@@ -47,8 +47,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 32,
   "state": "OPEN",
@@ -102,8 +102,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 31,
   "state": "OPEN",
@@ -157,8 +157,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 30,
   "state": "OPEN",
@@ -212,8 +212,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 29,
   "state": "OPEN",
@@ -235,7 +235,7 @@
    "name": ""
   },
   "body": "### Descrição\n\nÉ a etapa que a especificação cobra textualmente: \"registrar as medições, sua interpretação e as decisões de gestão decorrentes dos resultados\". Criar `docs/metricas/03-registro-de-decisoes.md`, com uma entrada por decisão:\n\n```markdown\n### DG-01 - <título curto da decisão>\n\n- **Data:** AAAA-MM-DD\n- **Medida/indicador que disparou:** <ex.: A2 - Comprometido vs. Concluído, semana 3>\n- **Valor observado x critério:** <ex.: 62% concluído, contra limiar de 90%>\n- **Interpretação:** <causa, não sintoma>\n- **Decisão tomada:** <ação concreta>\n- **Responsável e prazo:** <membro, data>\n- **Evidência da execução:** <link para issue, commit, PR ou ata>\n- **Efeito observado posteriormente:** <preencher na revisão seguinte, com o dado>\n```\n\nMetas:\n\n- Pelo menos **5 decisões**, cobrindo as três categorias.\n- Pelo menos **2 decisões com efeito posterior verificado por dado**.\n- Decisões concretas. \"Redistribuímos as issues #X e #Y de A para B\" vale; \"a equipe vai se esforçar mais\" não vale.\n\nPontos de partida que já existem:\n\n- As decisões de 26/10 em `docs/gestao/registro-medicoes.md`: abrir as issues no início da sprint e lançar as horas ao fechar.\n- A retrospectiva da E1, que está na raiz: C2 \"definir um integrante responsável por liderar\" e C3 \"dividir as responsabilidades em sprints\". Mover o PDF para `atas/` com um nome sem espaços, registrar quem foi definido como líder e citar a retrospectiva como evidência.\n- Os retratos de 02/11 e 09/11, sem nenhum progresso: interpretar e decidir.\n\n**Depende de:** #25\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Pelo menos 5 decisões nas três categorias\n- [ ] Pelo menos 2 com efeito verificado por dado\n- [ ] Retrospectiva movida para `atas/` e referenciada\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
+  "closedAt": "2026-11-11T03:05:07Z",
   "comments": [],
   "createdAt": "2026-11-11T01:08:01Z",
   "labels": [
@@ -267,11 +267,11 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 28,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 6] Registro das decisões de gestão"
  },
  {
@@ -322,8 +322,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 27,
   "state": "OPEN",
@@ -377,8 +377,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 26,
   "state": "OPEN",
@@ -400,7 +400,7 @@
    "name": ""
   },
   "body": "### Descrição\n\nTransformar os brutos nos CSVs consolidados de `docs/metricas/dados/consolidados/`, aplicando as fórmulas dos construtos da Etapa 3. Os consolidados **nunca** são editados à mão.\n\nSaídas de `consolidar_metricas.py`:\n\n- `progresso_diario.csv` (A1), `comprometido_concluido.csv` (A2), `fluxo_estados.csv` (A3)\n- `cycle_time.csv` (B1), `velocidade.csv` (B2), `retrabalho.csv` (B4)\n- `esforco_consolidado.csv` (C1, C3), `contribuicao.csv` (C2)\n\n`validar_dados.py` deve checar:\n\n- datas invertidas e issues fechadas antes de criadas;\n- membros fora da lista oficial (`docs/sobre/equipe.md`);\n- soma de percentuais diferente de 100;\n- linhas de `esforco.csv` sem `tipo_registro`.\n\nRequisitos: idempotentes, `--data-ref`, cabeçalho comentado com a medida de cada função. Decidir se `psm_coleta.py` é incorporado ou mantido, e registrar a decisão.\n\n**Depende de:** #24, #21, #22, #23\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n5\n\n### Critério de pronto\n\n- [ ] Todos os consolidados gerados por script\n- [ ] `validar_dados.py` roda sem erros\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
+  "closedAt": "2026-11-11T03:04:49Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:43Z",
   "labels": [
@@ -432,11 +432,11 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 25,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 4] consolidar_metricas.py e validar_dados.py"
  },
  {
@@ -455,7 +455,7 @@
    "name": ""
   },
   "body": "### Descrição\n\nAutomatizar a extração da Etapa 1 em `scripts/`, em Python, como o `scripts/psm_coleta.py` que já existe.\n\n| Script | Responsabilidade |\n|---|---|\n| `extrair_git.py` | `git log` -> `brutos/commits.csv` (sha, autor canônico via `.mailmap`, data, arquivos, linhas +/-) |\n| `extrair_issues.py` | API do GitHub -> `issues.json`, `issue_events.json`, `prs.json`, `milestones.json` e tabelas normalizadas |\n\nRequisitos:\n\n- Idempotentes, com `--data-ref` para fixar a data de corte.\n- Cabeçalho comentado indicando qual medida (A1 a C3) cada função atende.\n- Cada CSV gerado inclui `fonte`, `data_extracao` e `comando_ou_query`.\n- Reaproveitar a paginação e o uso do `GITHUB_TOKEN` de `psm_coleta.py`.\n- Atualizar o workflow `.github/workflows/psm-coleta.yml` para rodar a nova extração. Commits feitos com `GITHUB_TOKEN` não disparam o deploy da GitPage; avaliar se o workflow deve chamar o deploy.\n\n**Depende de:** #16\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Os dois scripts rodam do zero e geram os brutos\n- [ ] `--data-ref` funciona e rodar duas vezes gera o mesmo resultado\n- [ ] Workflow atualizado\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
+  "closedAt": "2026-11-11T03:04:29Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:39Z",
   "labels": [
@@ -487,11 +487,11 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 24,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 4] Scripts de extração: extrair_git.py e extrair_issues.py"
  },
  {
@@ -510,7 +510,7 @@
    "name": ""
   },
   "body": "### Descrição\n\nPreencher em `docs/metricas/02-construtos-de-medicao.md` a parte de Recursos e Custos, com o template completo do modelo de informação.\n\n| ID | Medida | Medidas e fórmulas | Indicador | Critério de decisão |\n|---|---|---|---|---|\n| C1 | Esforço da equipe (obrigatória) | Horas apontadas por membro, data, fase e tipo; total, por fase, por membro, % por membro | Barras empilhadas por fase + distribuição por membro | Desequilíbrio acima de +/-30% da média por membro: redistribuir; fase acima de 20% do previsto: reavaliar o escopo das seguintes |\n| C2 | Distribuição de contribuição (obrigatória, alimenta a Tabela de Contribuição, AG-C5) | Por membro: commits, linhas alteradas, issues fechadas, revisões de PR, horas; % por dimensão (soma 100%) | Tabela multidimensional + barras | Divergência grande entre dimensões deve ser explicada, não escondida |\n| C3 | Estimado x real (obrigatória) | Acurácia = real / estimado; erro percentual médio; prazo estimado x real | Dispersão com linha de 45 graus ou barras pareadas por fase | Acurácia fora de 0,85 a 1,25: recalibrar as estimativas das fases seguintes com o fator observado (PSM CID, 9.2) |\n\nPontos de atenção:\n\n- Número de commits sozinho é uma medida ruim de contribuição. Declarar essa limitação e usar a visão multidimensional.\n- O custo é declarado em **homem-hora** como medida primária. A monetização é opcional e usa a premissa já adotada em `docs/gestao/plano-psm.md`: R$ 15,00/h, explicitada no texto.\n- A fonte é `esforco.csv`, triangulado com commits e issues fechadas por membro.\n\nBase existente: a seção 2 de `docs/gestao/plano-psm.md` (esforço estimado x realizado).\n\n**Depende de:** #17\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] C1 a C3 com o template completo e limiares declarados\n- [ ] Limitações de commits como proxy e de horas reconstruídas declaradas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
+  "closedAt": "2026-11-11T03:04:10Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:35Z",
   "labels": [
@@ -542,11 +542,11 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 23,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Recursos e Custos (C1 a C3)"
  },
  {
@@ -597,8 +597,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 22,
   "state": "CLOSED",
@@ -652,8 +652,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 21,
   "state": "CLOSED",
@@ -707,8 +707,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 20,
   "state": "CLOSED",
@@ -777,8 +777,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 19,
   "state": "CLOSED",
@@ -832,8 +832,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 18,
   "state": "CLOSED",
@@ -887,8 +887,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 17,
   "state": "CLOSED",
@@ -942,8 +942,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 16,
   "state": "CLOSED",
@@ -991,8 +991,8 @@
   "milestone": {
    "number": 2,
    "title": "E2",
-   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID. Prazo a confirmar no cronograma da disciplina.",
-   "dueOn": null
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 15,
   "state": "CLOSED",
