@@ -5,6 +5,7 @@ As atas ficam na pasta [`atas/`](https://github.com/FCTE-Qualidade-de-Software-1
 | Nº | Data | Pauta principal | Arquivo |
 |---|---|---|---|
 | 01 | 11/10/2026 (aproximada) | Definição do projeto final: escolha do Moodle e características iniciais | [2026-10-11-ata-01.md](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-11-ata-01.md) |
+| Retrospectiva | 28/10/2026 | Retrospectiva da E1 (facilitador: Bernardo; relator: João Pedro): tópicos priorizados C2 "ausência de liderança" e C3 "pouca atenção aos prazos". As decisões decorrentes estão no [Registro de decisões de gestão](../metricas/03-registro-de-decisoes.md) (DG-06 e DG-07) | [2026-10-28-retrospectiva-e1.pdf](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-28-retrospectiva-e1.pdf) |
 
 <p class="legenda">Tabela 1. Índice das atas. Fonte: pasta `atas/`.</p>
 
