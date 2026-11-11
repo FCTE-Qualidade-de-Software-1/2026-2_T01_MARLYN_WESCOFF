@@ -69,7 +69,7 @@ Uma issue fechada sem esses requisitos é reaberta e conta como retrabalho (B4).
 | Medida derivada | Trabalho aberto por dia e desvio percentual em relação à linha ideal |
 | Modelo de análise | Curva de trabalho aberto acima da linha ideal indica atraso; um degrau para cima indica escopo acrescentado ao milestone |
 | Indicador | Gráfico de linhas: trabalho aberto x linha ideal, por milestone, com linhas verticais nos marcos |
-| Critérios de decisão | **Desvio maior que 5%** acima da linha ideal: a causa é analisada na reunião semanal seguinte. **Desvio maior que 10%**: replanejamento do escopo da entrega ou realocação de issues entre integrantes, registrado como decisão de gestão (PSM CID, Parte 2, 8.2) |
+| Critérios de decisão | **Desvio maior que 5%** acima da linha ideal: a causa é analisada na reunião semanal seguinte. **Desvio maior que 10%**: replanejamento do escopo da entrega ou realocação de issues entre integrantes, registrado como decisão de gestão (PSM CID v2.1, Parte 2, seção 8.2) |
 | Procedimento de coleta | Extração diária ou a cada push pelos scripts da Etapa 4; fonte: GitHub Issues; responsável: scripts, sem intervenção manual |
 | Procedimento de análise | Na reunião semanal (segunda-feira), pelo responsável pela gestão PSM/CID da semana, a partir do retrato semanal |
 
@@ -96,7 +96,7 @@ Limitação: na E1, as issues foram criadas e fechadas em lote (ver o Diagnósti
 | Medida derivada | Percentual concluído por semana e acumulado |
 | Modelo de análise | Diferença persistente indica que a equipe se compromete com mais do que consegue fazer, ou que as issues são grandes demais para uma semana |
 | Indicador | Gráfico de colunas comprometido x concluído por semana, com a linha do percentual acumulado |
-| Critérios de decisão | **Diferença maior que 5%** numa semana: a causa é investigada na reunião seguinte. **Diferença maior que 10%**: ação corretiva (reduzir o compromisso da semana seguinte ou dividir as issues grandes), registrada como decisão de gestão (PSM CID, Parte 2, 8.3) |
+| Critérios de decisão | **Diferença maior que 5%** numa semana: a causa é investigada na reunião seguinte. **Diferença maior que 10%**: ação corretiva (reduzir o compromisso da semana seguinte ou dividir as issues grandes), registrada como decisão de gestão (PSM CID v2.1, Parte 2, seção 8.3) |
 | Procedimento de coleta | Retrato automático toda segunda-feira (`psm-coleta.yml`) e extração pelos scripts da Etapa 4 |
 | Procedimento de análise | Na reunião semanal, comparando a semana encerrada com o compromisso registrado no retrato anterior |
 
@@ -123,7 +123,7 @@ Até o board estar em uso (issue #19), o compromisso de cada semana é registrad
 | Medida derivada | WIP médio, throughput e tempo de ciclo aproximado |
 | Modelo de análise | Faixa que se alarga de forma sustentada indica fila naquele estado; faixa de Concluído que não sobe indica parada do fluxo |
 | Indicador | Diagrama de áreas empilhadas por estado ao longo do tempo, com linhas verticais nos marcos |
-| Critérios de decisão | **Variação maior que 10%** na largura ou na inclinação de uma faixa entre duas semanas: análise de causa-raiz na reunião seguinte. Faixa "Em Revisão" crescendo por duas semanas seguidas: revisores redistribuídos (PSM CID, Parte 2, 8.4) |
+| Critérios de decisão | **Variação maior que 10%** na largura ou na inclinação de uma faixa entre duas semanas: análise de causa-raiz na reunião seguinte. Faixa "Em Revisão" crescendo por duas semanas seguidas: revisores redistribuídos (PSM CID v2.1, Parte 2, seção 8.4) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4 a partir do board e de `issue_events.jsonl` |
 | Procedimento de análise | Na reunião semanal, junto com A1 e A2 |
 
@@ -150,7 +150,7 @@ Limitação: antes da criação do board (Diagnóstico, lacuna L4) não há hist
 | Medida derivada | Desvio do marco, em dias (negativo: antes do prazo) |
 | Modelo de análise | Desvio positivo indica entrega atrasada; desvio próximo de zero em todos os marcos, com A1 concentrado no último dia, indica entrega de véspera |
 | Indicador | Tabela planejado x real por marco, com o desvio |
-| Critérios de decisão | **Qualquer desvio positivo** exige registro de decisão de gestão, com causa e ação para o marco seguinte (PSM CID, Parte 1, Tabela 5, linha 1) |
+| Critérios de decisão | **Qualquer desvio positivo** exige registro de decisão de gestão, com causa e ação para o marco seguinte (PSM CID v2.1, Parte 1, Tabela 5, linha 1) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4, a cada release |
 | Procedimento de análise | Na primeira reunião depois de cada marco |
 
