@@ -118,30 +118,79 @@ O projeto segue as quatro fases da ISO/IEC 25040 (Figura~\ref{fig:processo}). A 
 
 A equipe tem cinco integrantes. O trabalho foi dividido por característica de qualidade, com um responsável e um revisor para cada uma; as seções transversais (propósito, partes interessadas, ODS, gestão, artigo e GitPage) foram distribuídas entre os integrantes. As decisões coletivas são registradas em atas no repositório.
 
-O repositório Git da disciplina concentra documentos, dados e o código-fonte deste artigo. Cada tarefa é uma \emph{issue} com estimativa de horas, associada a um \emph{milestone} que representa a sprint; a integração na \texttt{main} é feita por \emph{pull request} revisado por outro integrante. A GitPage, gerada com MkDocs Material a partir da pasta \texttt{docs/}, é publicada automaticamente a cada \emph{push}, e o artigo é compilado por um \emph{workflow} do GitHub Actions. Os diagramas são versionados como texto (Mermaid e TikZ).
+O repositório Git da disciplina concentra documentos, dados e o código-fonte deste artigo. Cada tarefa é uma \emph{issue} com estimativa e marco. Mudanças de conteúdo são submetidas por \emph{pull request}; o autor solicita a revisão de outro integrante e só integra na \texttt{main} depois da aprovação. Pull requests dependentes são revisados e mesclados na ordem do trabalho. A GitPage, gerada com MkDocs Material a partir de \texttt{docs/}, e o artigo são publicados por \emph{workflows} do GitHub Actions.
 
 \subsection{Gestão com PSM/CID}
 
-A especificação do trabalho exige medidas de gestão em três categorias de informação. A Tabela~\ref{tab:psm} resume as medidas escolhidas na Tabela~5 do CID, Parte~1~\cite{psmcid2021}, e seus critérios de decisão. Cada medida foi descrita no template de instância do modelo de informação da Aula~09~\cite{ramos2026aulas}; as instâncias completas, os retratos datados das medições e as decisões de gestão estão na GitPage. Os dados são extraídos das \emph{issues} pela API do GitHub e de um registro de horas por integrante (\texttt{dados/gestao/horas.csv}), por um script versionado no repositório.
+A gestão foi instrumentada pelo PSM, abordagem dirigida por necessidades de informação, e pelo \emph{Continuous Iterative Development Measurement Framework} (PSM CID) v2.1~\cite{psmcid2021}. A terminologia foi adaptada: fase da ISO/IEC 25040 equivale a \emph{capability/epic}; produto de trabalho, a \emph{feature}; \emph{issue}, a \emph{story}; semana ISO, a iteração; e marco da disciplina, a \emph{release}. Uma issue conta como concluída quando seu produto está versionado, o critério de pronto foi atendido e, quando aplicável, o pull request foi aprovado por outro integrante.
+
+Os dados vêm do Git, GitHub Issues, \emph{milestones}, pull requests e Project Board, além do apontamento manual de horas em \texttt{docs/metricas/dados/brutos/esforco.csv}. Scripts versionados preservam os dados brutos, geram os consolidados e produzem indicadores. Os limiares da Tabela~\ref{tab:psm} foram declarados antes da análise da E2; ultrapassá-los exige investigar a causa e registrar uma decisão, não representa automaticamente falha do projeto.
 
 \begin{table}[!ht]
 \centering
 \caption{Medidas do PSM/CID usadas na gestão do projeto.}
 \label{tab:psm}
 \footnotesize
-\begin{tabularx}{\linewidth}{p{2.4cm}p{2.9cm}p{2.6cm}L}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{1.9cm}p{2.5cm}p{2.7cm}p{2.3cm}L}
 \toprule
-\textbf{Categoria} & \textbf{Medida} & \textbf{Função} & \textbf{Critério de decisão} \\
+\textbf{Categoria} & \textbf{Necessidade} & \textbf{Medidas} & \textbf{Indicador} & \textbf{Critério} \\
 \midrule
-Calendário e Progresso & Planejado vs. concluído & $C/P \times 100$ & Menos de 50\% na metade da sprint: redistribuir tarefas; diferença $>10\%$ no fim: registrar causa e replanejar \\
-Recursos e Custos & Esforço estimado vs. realizado & $R/E$; custo $= R \times$ R\$~15,00 & $R/E > 1{,}3$: revisar estimativas e dividir tarefas \\
-Desempenho dos Processos & Tempo de ciclo & mediana$(t_f - t_c)$ & Issue sem atualização há mais de 3 dias: tratar bloqueio \\
+Calendário e Progresso & O escopo cabe no prazo e flui sem gargalo? & A1 burndown; A2 comprometido/concluído; A3 fluxo & Linhas, colunas e áreas & A1 $>5\%$; A2 $>5\%$; faixa A3 $>10\%$ \\
+Desempenho dos Processos & Tempo e capacidade são previsíveis? & B1 cycle time; B2 velocidade & Histograma e média móvel & B1 $>5$ dias; B2 $>10\%$ ou além do prazo \\
+Recursos e Custos & Esforço equilibrado e estimativas confiáveis? & C1 esforço; C2 contribuição; C3 estimado/real & Barras e dispersão & C1 $>\pm30\%$; C2 $>30$ p.p.; C3 fora de 0,85--1,25 \\
 \bottomrule
 \end{tabularx}
 \tabfonte{elaboração própria a partir do PSM/CID~\cite{psmcid2021}.}
 \end{table}
 
-A medição de 26/10/2026, ao fim da Sprint~2, registrou 9 de 14 \emph{issues} concluídas (64\%), tempo de ciclo mediano de 0,5 dia e nenhuma \emph{issue} parada. As cinco abertas eram tarefas de registro e fechamento (contribuição, declaração de IA, horas, atas e release), deixadas para depois das revisões. Como as horas reais não foram lançadas, a razão entre esforço realizado e estimado (20,5~h) não pôde ser calculada. As decisões foram concluir as tarefas de registro antes da release e, na Entrega~2, abrir as \emph{issues} no planejamento da sprint e registrar as horas ao fechar cada uma. Uma segunda medição, no fechamento da sprint, registrou as 14 \emph{issues} concluídas.
+\section{Resultados da gestão PSM/CID}
+\label{sec:resultados-psm}
+
+Na semana 2026-W46, oito das nove issues comprometidas estavam concluídas: 88,89\%, diferença de 11,11\%, fora do limiar de A2 (Figura~\ref{fig:a2-artigo}). O cycle time da E2 apresentou mediana de 1 dia e P80/P90 de 2 dias, dentro do limite de B1 (Figura~\ref{fig:b1-artigo}), mas a amostra inclui tarefas abertas perto da conclusão. Em C2, Carlos concentrou issues concluídas; Pedro, revisões e integração; Bernardo e João, horas reconstruídas. A maior divergência individual foi 100 p.p., portanto exige explicação, não ocultação (Figura~\ref{fig:c2-artigo}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.76\linewidth]{../docs/metricas/graficos/fig-a2-comprometido-concluido.png}
+\caption{Comprometido versus concluído por semana. Fonte: elaboração própria a partir de \texttt{comprometido\_concluido.csv}, extraído em 11/11/2026.}
+\label{fig:a2-artigo}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.76\linewidth]{../docs/metricas/graficos/fig-b1-cycle-time.png}
+\caption{Distribuição do cycle time da E2. Fonte: elaboração própria a partir de \texttt{cycle\_time.csv}, extraído em 11/11/2026.}
+\label{fig:b1-artigo}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=.82\linewidth]{../docs/metricas/graficos/fig-c2-contribuicao.png}
+\caption{Distribuição multidimensional da contribuição. Fonte: elaboração própria a partir de \texttt{contribuicao.csv}, extraído em 11/11/2026.}
+\label{fig:c2-artigo}
+\end{figure}
+
+\begin{table}[!ht]
+\centering
+\caption{Decisões de gestão selecionadas e seus efeitos.}
+\label{tab:decisoes-psm}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{1.1cm}p{3cm}Lp{2.5cm}}
+\toprule
+\textbf{ID} & \textbf{Evidência} & \textbf{Ação} & \textbf{Efeito} \\
+\midrule
+DG-02 & Duas semanas com 0 h & Apontar por sessão e validar automaticamente & Verificar em 17/11 \\
+DG-04 & Velocidade zero nas W44--W45 & Dividir issues \#15--\#32 em blocos & 25 pontos na W46 \\
+DG-05 & E1 sem PR ou revisão registrada & Exigir PR aprovado por outro integrante & Revisões e não conformidade contida \\
+DG-08 & 100\% das linhas nas 48 h finais & Congelar conteúdo três dias antes do marco & Verificar na E2 \\
+\bottomrule
+\end{tabularx}
+\tabfonte{elaboração própria a partir do registro de decisões PSM/CID.}
+\end{table}
+
+\subsection{Ameaças à validade}
+
+As horas da E1 e os primeiros registros da E2 foram reconstruídos após o trabalho e têm erro de memória; mesmo registros contemporâneos sofrem viés de autoapontamento. Commits e linhas medem integração e tamanho da mudança, não esforço intelectual, por isso C2 mantém cinco dimensões. As poucas semanas instrumentadas e a abertura tardia de issues reduzem a validade de tendências de velocidade e cycle time. Os resultados descrevem este projeto e não devem ser generalizados como produtividade individual.
 
 % ======================================================================
 \section{Fase 1: estabelecimento dos requisitos de avaliação}
@@ -485,23 +534,23 @@ As principais limitações são: as necessidades de várias partes interessadas 
 
 \begin{table}[!ht]
 \centering
-\caption{Contribuição dos integrantes na Entrega 1.}
+\caption{Contribuição multidimensional dos integrantes na E2.}
 \label{tab:contribuicao}
-\footnotesize
-\begin{tabularx}{\linewidth}{p{3.3cm}p{1.6cm}Lp{1.3cm}}
+\scriptsize
+\begin{tabularx}{\linewidth}{Lp{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.4cm}}
 \toprule
-\textbf{Integrante} & \textbf{Matrícula} & \textbf{Tarefas realizadas} & \textbf{\% do esforço} \\
+\textbf{Integrante} & \textbf{Commits} & \textbf{Linhas} & \textbf{Issues} & \textbf{Revisões} & \textbf{Horas} & \textbf{Índice C2} \\
 \midrule
-Bernardo Broetto Brun & 241010950 & Primeira versão da Fase 1; propósito e partes interessadas; objetivo G1 e métricas M1.1--M1.3; revisão de G2 & 20\% \\
-Carlos Eduardo Deusdara Motta & 241025194 & Primeira versão da Fase 1; produto, diagrama de contexto, modelo de qualidade e escopo; objetivo G2 e métricas M2.1--M2.4; atas; revisão de G3 & 20\% \\
-João Pedro Sampaio Maciel & 211039528 & Primeira versão da Fase 1; ODS; abstraction sheets; diagrama GQM e rastreabilidade; revisão da GitPage & 20\% \\
-Maykon Junio dos Santos Soares & 211030863 & Primeira versão da Fase 1; migração para o repositório da disciplina; GitPage; metodologia; plano PSM/CID; artigo LaTeX; release & 20\% \\
-Pedro Goncalves Rocha & 241025363 & Primeira versão da Fase 1; matriz de priorização; objetivo G3 e métricas M3.1--M3.5; revisão de G1 e do artigo & 20\% \\
+Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 89,29\% & 17,86\% \\
+Carlos Eduardo Deusdara Motta & 31,82\% & 42,19\% & 66,67\% & 0,00\% & 0,00\% & 28,14\% \\
+João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 10,71\% & 7,55\% \\
+Maykon Junio dos Santos Soares & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% \\
+Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\% \\
 \midrule
-\textbf{Total} & & & \textbf{100\%} \\
+\textbf{Total} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} \\
 \bottomrule
 \end{tabularx}
-\tabfonte{divisão de esforço registrada pela equipe. O trabalho da Entrega~1 foi dividido igualmente entre os cinco integrantes; as horas individuais não foram registradas nesta entrega.}
+\tabfonte{elaboração própria a partir de \texttt{contribuicao.csv}, extraído em 11/11/2026. O índice é a média das cinco participações e totaliza 100\%; as horas são reconstruídas e devem ser substituídas pelos registros reais.}
 \end{table}
 
 \section{Declaração de uso de inteligência artificial}
