@@ -9,4 +9,4 @@ Fecha #
 - [ ] Figuras e tabelas numeradas, com legenda e fonte
 - [ ] Referências citadas aparecem em `docs/sobre/referencias.md`
 - [ ] Uso de IA (se houver) registrado em `docs/sobre/uso-de-ia.md`
-- [ ] Horas lançadas em `dados/gestao/horas.csv`
+- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`

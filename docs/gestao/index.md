@@ -21,5 +21,5 @@ A especificação do trabalho exige medidas em três categorias de informação.
 ## Fontes dos dados
 
 - **Issues e milestones do GitHub:** unidade de trabalho e sprint.
-- **`dados/gestao/horas.csv`:** registro de horas por integrante e por issue.
+- **`docs/metricas/dados/brutos/esforco.csv`:** apontamento de esforço por integrante, fase, tipo de atividade e issue. Substitui `dados/gestao/horas.csv` a partir da E2.
 - **`scripts/psm_coleta.py`:** lê as issues pela API do GitHub e o registro de horas, calcula as três medidas e grava um retrato datado em `dados/gestao/psm-AAAA-MM-DD.csv`.
