@@ -119,9 +119,12 @@ def desenhar_marcos(ax, valores):
         ax.axvline(dia, color=cores[nome], linestyle=":", linewidth=1.5, label=f"Marco {nome}")
 
 
-def salvar(fig, pasta, nome):
+def salvar(fig, pasta, nome, png_artigo=False):
     destino = pasta / nome
     fig.savefig(destino, format="svg", metadata={"Date": None})
+    if png_artigo:
+        fig.savefig(destino.with_suffix(".png"), format="png", dpi=180,
+                    metadata={"Software": "Matplotlib"})
     plt.close(fig)
     # O backend SVG do Matplotlib deixa espaços ao fim das linhas dos paths.
     # Normalizar evita ruído em revisões e mantém `git diff --check` limpo.
@@ -186,7 +189,7 @@ def grafico_a2(entrada, saida, data_ref):
         sem_dados(ax, "O quadro ainda não possui retrato do compromisso semanal. "
                       "As semanas não foram convertidas artificialmente em zero.")
     nota_fonte(fig, arquivo, linhas, data_ref)
-    return salvar(fig, saida, "fig-a2-comprometido-concluido.svg")
+    return salvar(fig, saida, "fig-a2-comprometido-concluido.svg", png_artigo=True)
 
 
 def grafico_a3(entrada, saida, data_ref, datas_marcos):
@@ -237,7 +240,7 @@ def grafico_b1(entrada, saida, data_ref):
         sem_dados(ax, "Não há cycle time não histórico com conclusão registrada.")
     nota_fonte(fig, arquivo, linhas, data_ref,
                "Dados históricos da E1 são excluídos dos percentis conforme o diagnóstico.")
-    return salvar(fig, saida, "fig-b1-cycle-time.svg")
+    return salvar(fig, saida, "fig-b1-cycle-time.svg", png_artigo=True)
 
 
 def grafico_b2(entrada, saida, data_ref):
@@ -308,7 +311,7 @@ def grafico_c2(entrada, saida, data_ref):
         sem_dados(ax, "Não há contribuição da entrega corrente consolidada.")
     nota_fonte(fig, arquivo, linhas, data_ref,
                "Dimensões sem observação, como horas, permanecem ausentes.")
-    return salvar(fig, saida, "fig-c2-contribuicao.svg")
+    return salvar(fig, saida, "fig-c2-contribuicao.svg", png_artigo=True)
 
 
 def grafico_c3(entrada, saida, data_ref):
