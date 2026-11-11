@@ -69,7 +69,7 @@ Uma issue fechada sem esses requisitos é reaberta e conta como retrabalho (B4).
 | Medida derivada | Trabalho aberto por dia e desvio percentual em relação à linha ideal |
 | Modelo de análise | Curva de trabalho aberto acima da linha ideal indica atraso; um degrau para cima indica escopo acrescentado ao milestone |
 | Indicador | Gráfico de linhas: trabalho aberto x linha ideal, por milestone, com linhas verticais nos marcos |
-| Critérios de decisão | **Desvio maior que 5%** acima da linha ideal: a causa é analisada na reunião semanal seguinte. **Desvio maior que 10%**: replanejamento do escopo da entrega ou realocação de issues entre integrantes, registrado como decisão de gestão (PSM CID, Parte 2, 8.2) |
+| Critérios de decisão | **Desvio maior que 5%** acima da linha ideal: a causa é analisada na reunião semanal seguinte. **Desvio maior que 10%**: replanejamento do escopo da entrega ou realocação de issues entre integrantes, registrado como decisão de gestão (PSM CID v2.1, Parte 2, seção 8.2) |
 | Procedimento de coleta | Extração diária ou a cada push pelos scripts da Etapa 4; fonte: GitHub Issues; responsável: scripts, sem intervenção manual |
 | Procedimento de análise | Na reunião semanal (segunda-feira), pelo responsável pela gestão PSM/CID da semana, a partir do retrato semanal |
 
@@ -96,7 +96,7 @@ Limitação: na E1, as issues foram criadas e fechadas em lote (ver o Diagnósti
 | Medida derivada | Percentual concluído por semana e acumulado |
 | Modelo de análise | Diferença persistente indica que a equipe se compromete com mais do que consegue fazer, ou que as issues são grandes demais para uma semana |
 | Indicador | Gráfico de colunas comprometido x concluído por semana, com a linha do percentual acumulado |
-| Critérios de decisão | **Diferença maior que 5%** numa semana: a causa é investigada na reunião seguinte. **Diferença maior que 10%**: ação corretiva (reduzir o compromisso da semana seguinte ou dividir as issues grandes), registrada como decisão de gestão (PSM CID, Parte 2, 8.3) |
+| Critérios de decisão | **Diferença maior que 5%** numa semana: a causa é investigada na reunião seguinte. **Diferença maior que 10%**: ação corretiva (reduzir o compromisso da semana seguinte ou dividir as issues grandes), registrada como decisão de gestão (PSM CID v2.1, Parte 2, seção 8.3) |
 | Procedimento de coleta | Retrato automático toda segunda-feira (`psm-coleta.yml`) e extração pelos scripts da Etapa 4 |
 | Procedimento de análise | Na reunião semanal, comparando a semana encerrada com o compromisso registrado no retrato anterior |
 
@@ -123,7 +123,7 @@ Até o board estar em uso (issue #19), o compromisso de cada semana é registrad
 | Medida derivada | WIP médio, throughput e tempo de ciclo aproximado |
 | Modelo de análise | Faixa que se alarga de forma sustentada indica fila naquele estado; faixa de Concluído que não sobe indica parada do fluxo |
 | Indicador | Diagrama de áreas empilhadas por estado ao longo do tempo, com linhas verticais nos marcos |
-| Critérios de decisão | **Variação maior que 10%** na largura ou na inclinação de uma faixa entre duas semanas: análise de causa-raiz na reunião seguinte. Faixa "Em Revisão" crescendo por duas semanas seguidas: revisores redistribuídos (PSM CID, Parte 2, 8.4) |
+| Critérios de decisão | **Variação maior que 10%** na largura ou na inclinação de uma faixa entre duas semanas: análise de causa-raiz na reunião seguinte. Faixa "Em Revisão" crescendo por duas semanas seguidas: revisores redistribuídos (PSM CID v2.1, Parte 2, seção 8.4) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4 a partir do board e de `issue_events.jsonl` |
 | Procedimento de análise | Na reunião semanal, junto com A1 e A2 |
 
@@ -150,7 +150,7 @@ Limitação: antes da criação do board (Diagnóstico, lacuna L4) não há hist
 | Medida derivada | Desvio do marco, em dias (negativo: antes do prazo) |
 | Modelo de análise | Desvio positivo indica entrega atrasada; desvio próximo de zero em todos os marcos, com A1 concentrado no último dia, indica entrega de véspera |
 | Indicador | Tabela planejado x real por marco, com o desvio |
-| Critérios de decisão | **Qualquer desvio positivo** exige registro de decisão de gestão, com causa e ação para o marco seguinte (PSM CID, Parte 1, Tabela 5, linha 1) |
+| Critérios de decisão | **Qualquer desvio positivo** exige registro de decisão de gestão, com causa e ação para o marco seguinte (PSM CID v2.1, Parte 1, Tabela 5, linha 1) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4, a cada release |
 | Procedimento de análise | Na primeira reunião depois de cada marco |
 
@@ -179,7 +179,7 @@ Observação: na E1, a release foi publicada em 25/10/2026 às 23h26 (horário d
 | Medida derivada | Cycle time e lead time de cada issue; mediana, P80 e P90; idade das issues abertas |
 | Modelo de análise | Cycle time alto indica tarefa grande demais, bloqueada ou dependente de agenda externa (entrevistas, acesso a ambiente, retorno da docente). Distância grande entre lead time e cycle time indica issue que espera muito no backlog |
 | Indicador | Histograma de cycle time com as linhas da mediana, do P80 e do P90; lista de issues paradas |
-| Critérios de decisão | **Issue com cycle time acima da média em mais de 10%**: a causa é investigada na reunião seguinte (PSM CID, Parte 2, 8.5). **Mediana crescente por duas semanas seguidas**: o WIP é reduzido e as tarefas seguintes são divididas. **Mediana maior que 5 dias** numa entrega: as issues da semana seguinte são divididas. **Issue aberta sem atualização há mais de 3 dias**: o responsável informa o bloqueio na issue ou a tarefa é dividida |
+| Critérios de decisão | **Issue com cycle time acima da média em mais de 10%**: a causa é investigada na reunião seguinte (PSM CID v2.1, Parte 2, seção 8.5). **Mediana crescente por duas semanas seguidas**: o WIP é reduzido e as tarefas seguintes são divididas. **Mediana maior que 5 dias** numa entrega: as issues da semana seguinte são divididas. **Issue aberta sem atualização há mais de 3 dias**: o responsável informa o bloqueio na issue ou a tarefa é dividida |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4; a idade das issues abertas também sai no retrato semanal (`psm_coleta.py`) |
 | Procedimento de análise | Na reunião semanal, pelo responsável pela gestão PSM/CID da semana |
 
@@ -202,11 +202,11 @@ Os dois últimos critérios vêm do plano de medição da E1 e foram mantidos pa
 | Tipo de método | Objetivo, sobre um tamanho atribuído de forma subjetiva |
 | Escala e tipo de escala | Reais maiores ou iguais a 0; razão |
 | Unidade de medida | Pontos por semana |
-| Função de medição | `V(s)` = média móvel de `P` nas últimas 3 semanas (ou nas disponíveis, se forem menos); `Aceleração(s) = (V(s) - V(s - 1)) / V(s - 1)`; `Semanas restantes = B / V(s)` |
+| Função de medição | `V(s)` = média móvel de `P` nas últimas 3 semanas (ou nas disponíveis, se forem menos); `Aceleração(s) = (V(s) - V(s - 1)) / V(s - 1)`, não calculada quando `V(s - 1) = 0`; `Semanas restantes = B / V(s)`, registrada como "sem projeção" quando `V(s) = 0` |
 | Medida derivada | Velocidade média, aceleração e projeção de semanas restantes |
 | Modelo de análise | Projeção de semanas restantes maior que `S` indica que o escopo não cabe no prazo com o ritmo atual |
 | Indicador | Gráfico de colunas de pontos concluídos por semana, com a linha da média móvel e a projeção |
-| Critérios de decisão | **Variação da velocidade maior que 10%**, para mais ou para menos: analisada na reunião semanal ou na retrospectiva (PSM CID, Parte 2, 8.10). **Semanas restantes maior que `S`**: decisão de escopo (cortar, simplificar ou redistribuir issues), justificada com a projeção |
+| Critérios de decisão | **Variação da velocidade maior que 10%**, para mais ou para menos: analisada na reunião semanal ou na retrospectiva (PSM CID v2.1, Parte 2, seção 8.10). **Semanas restantes maior que `S`**: decisão de escopo (cortar, simplificar ou redistribuir issues), justificada com a projeção |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4, a cada semana |
 | Procedimento de análise | Na reunião semanal; a projeção é revista em cada decisão de escopo |
 
@@ -229,11 +229,11 @@ Limitação: a disciplina tem poucas semanas até a E2, então a média móvel u
 | Tipo de método | Objetivo |
 | Escala e tipo de escala | Inteiros maiores ou iguais a 0; razão |
 | Unidade de medida | Releases; dias; pull requests por semana; percentual |
-| Função de medição | `Duração da release = D(r)`; `Frequência = R / semanas do período`; `Concentração(r)` = linhas alteradas nos 2 dias anteriores à release `r`, divididas pelas linhas alteradas desde a release anterior, vezes 100 |
+| Função de medição | `Duração da release = D(r)`; `Frequência = R / semanas do período`; `Concentração(r)` = linhas alteradas nas 48 horas anteriores à publicação da release `r`, divididas pelas linhas alteradas desde a release anterior (ou desde o início da disciplina), vezes 100 |
 | Medida derivada | Duração e frequência das releases; merges por semana; concentração de véspera |
 | Modelo de análise | Semanas sem merge seguidas de concentração alta na véspera indicam o "pico de véspera": risco de qualidade e de revisão insuficiente |
 | Indicador | Linha do tempo das releases e dos merges por semana, com os marcos da disciplina; tabela de concentração por entrega |
-| Critérios de decisão | **Semana sem nenhum merge na `main`** antes de um marco: a causa é registrada na reunião seguinte. **Concentração maior que 50%** numa entrega: decisão de gestão para a entrega seguinte (por exemplo, prazo interno de congelamento 3 dias antes do marco) (PSM CID, Parte 2, 8.9) |
+| Critérios de decisão | **Semana sem nenhum merge na `main`** antes de um marco: a causa é registrada na reunião seguinte. **Concentração maior que 50%** numa entrega: decisão de gestão para a entrega seguinte (por exemplo, prazo interno de congelamento 3 dias antes do marco) (PSM CID v2.1, Parte 2, seção 8.9) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4 |
 | Procedimento de análise | Na primeira reunião depois de cada marco |
 
@@ -260,7 +260,7 @@ A "concentração" é uma medida derivada acrescentada pela equipe, porque o pro
 | Medida derivada | Taxa de escape por entrega; número de issues reabertas |
 | Modelo de análise | Taxa de escape alta indica que a revisão interna não está encontrando os problemas que a docente encontra |
 | Indicador | Gráfico de colunas contidas x escapadas por entrega, com a taxa de escape |
-| Critérios de decisão | **A taxa de escape deve cair da E1 para a E2.** Se não cair, os PRs da entrega seguinte passam a exigir dois revisores e um checklist da rubrica da fase. **Issue reaberta**: a causa é registrada na própria issue (PSM CID, Parte 2, 8.6) |
+| Critérios de decisão | **A taxa de escape deve cair da E1 para a E2.** Se não cair, os PRs da entrega seguinte passam a exigir dois revisores e um checklist da rubrica da fase. **Issue reaberta**: a causa é registrada na própria issue (PSM CID v2.1, Parte 2, seção 8.6) |
 | Procedimento de coleta | Extração pelos scripts da Etapa 4; issues de apontamento abertas pelo responsável pela gestão PSM/CID ao receber o retorno da docente |
 | Procedimento de análise | Na primeira reunião depois de cada retorno da docente |
 
