@@ -23,7 +23,7 @@ def fmt(valor, casas=2):
     if valor is None:
         return "sem dado"
     texto = f"{valor:.{casas}f}".replace(".", ",")
-    return texto.rstrip("0").rstrip(",")
+    return texto.rstrip("0").rstrip(",") if casas else texto
 
 
 def pontos(valor):

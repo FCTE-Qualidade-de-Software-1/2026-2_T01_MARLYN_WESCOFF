@@ -6,7 +6,7 @@
 
 | Medida | Valor atual | Limiar de decisão | Situação | Última atualização |
 |---|---:|---|:---:|:---:|
-| A1 — Burndown | 1 pontos abertos; desvio -58,93% | desvio acima da linha ideal ≤ 5% | **Dentro** | 11/11/2026 |
+| A1 — Burndown | 10 pontos abertos; desvio -58,93% | desvio acima da linha ideal ≤ 5% | **Dentro** | 11/11/2026 |
 | A2 — Comprometido × concluído | 8/9 issues; diferença 11,11% | diferença ≤ 5% | **Fora** | 11/11/2026 |
 | A3 — Fluxo cumulativo | WIP atual: 1 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 11/11/2026 |
 | B1 — Cycle time | mediana: 1 dia | mediana ≤ 5 dias | **Dentro** | 11/11/2026 |
