@@ -5,6 +5,8 @@
 
 O plano responde a uma pergunta: **o que cada avaliador faz, em que ordem e com quais recursos, para que duas pessoas diferentes obtenham as mesmas medidas?** Ele cobre as 12 métricas (M1.1 a M3.5) dos objetivos G1 (adequação funcional), G2 (compatibilidade) e G3 (flexibilidade), e alimenta as decisões D1 a D4 do [Propósito](../fase-1/proposito.md).
 
+O progresso deste plano, o tempo de execução das tarefas e o esforço da equipe são monitorados na seção [Gestão do Projeto - Métricas PSM/CID](../gestao/index.md).
+
 ## 1. Método de avaliação
 
 | Aspecto | Definição |

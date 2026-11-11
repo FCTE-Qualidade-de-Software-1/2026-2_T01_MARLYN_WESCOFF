@@ -1,6 +1,6 @@
 # Registro de medições
 
-Cada medição é um retrato datado gerado por `scripts/psm_coleta.py` e guardado em `dados/gestao/`. Para cada retrato, a equipe registra a **interpretação** (comparação com os critérios do [Plano de medição](plano-psm.md)) e a **decisão de gestão** tomada.
+Cada medição é um retrato datado gerado por `scripts/psm_coleta.py` e guardado em `dados/gestao/`. Para cada retrato, a equipe registra a **interpretação** (comparação com os critérios dos [construtos de medição](../metricas/02-construtos-de-medicao.md)) e a **decisão de gestão** tomada. Esta página preserva o histórico; o retrato atual está no [dashboard](../metricas/dashboard.md).
 
 ## Como gerar uma medição
 

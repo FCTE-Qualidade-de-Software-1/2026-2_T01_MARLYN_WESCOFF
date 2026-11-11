@@ -1,4 +1,6 @@
-# Plano de medição (PSM/CID)
+# Plano de medição da Entrega 1 (histórico)
+
+Esta página preserva o plano inicial usado na E1. A especificação vigente, ampliada para as oito medidas obrigatórias e sem repetir este conteúdo, está em [Medidas e limiares PSM/CID](../metricas/02-construtos-de-medicao.md).
 
 Cada medida é descrita no template de instância do modelo de informação (*measurement construct*) da Aula 09: necessidade de informação, entidades, atributos, medidas básicas e derivadas, indicador, modelo de análise e critérios de decisão.
 

@@ -2,6 +2,8 @@
 
 A Fase 1 responde às perguntas que precisam estar resolvidas **antes** de escolher métricas ou coletar dados: por que avaliar, para quem, qual produto, com qual modelo de qualidade e até onde. O resultado desta fase orienta diretamente a [Fase 2](../fase-2/index.md).
 
+O andamento dos artefatos desta fase é acompanhado na seção [Gestão do Projeto - Métricas PSM/CID](../gestao/index.md), que relaciona progresso, processo, esforço e decisões de gestão.
+
 ## Síntese
 
 | Item | Decisão |
