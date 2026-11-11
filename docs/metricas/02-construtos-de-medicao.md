@@ -270,4 +270,85 @@ Limitação: na E1 não houve nenhum registro de não conformidade em revisão i
 
 ## Recursos e Custos
 
-Seção preenchida na issue #23 (medidas C1 a C3).
+O custo é medido em **homem-hora**, a medida primária desta categoria. A monetização é complementar e usa a premissa do [Plano de medição](../gestao/plano-psm.md#custo-da-hora): R$ 15,00 por hora de integrante, uma convenção do projeto para comparar entregas, e não pagamento real. A fonte das três medidas é o apontamento `esforco.csv`, triangulado com os commits, as issues e as revisões de pull request.
+
+### C1. Esforço da equipe
+
+| Campo | Definição |
+|---|---|
+| Identificador | C1 |
+| Categoria de informação | Recursos e Custos |
+| Necessidade de informação | Quanto esforço a equipe está gastando, em que fases e tipos de atividade? O esforço está distribuído entre os integrantes? |
+| Conceito mensurável | Esforço da equipe (*Effort*) |
+| Entidades relevantes | Sessões de trabalho registradas em `esforco.csv`; integrantes de `docs/sobre/equipe.md`; fases e entregas |
+| Atributos | Data, integrante, fase, tipo de atividade, issue, horas e tipo de registro (`registrado` ou `reconstruido`) |
+| Medidas básicas | `h(m, f, t)` = horas da linha do integrante `m`, na fase `f` (1 a 4, ou transversal), no tipo de atividade `t` (real, maior que 0); `Prev(f)` = soma das estimativas, em horas, das issues com a label `fase/f` no milestone da entrega |
+| Método de medição | Registro manual de cada sessão em `esforco.csv`, no mesmo dia, pelo próprio integrante; soma automática pelos scripts da Etapa 4. Linhas sem horas são ignoradas |
+| Tipo de método | Subjetivo no registro (cada integrante anota as próprias horas); objetivo na agregação |
+| Escala e tipo de escala | Reais maiores ou iguais a 0; razão |
+| Unidade de medida | Horas (homem-hora); reais (R$) no custo |
+| Função de medição | `H(m)` = soma de `h(m, f, t)` por integrante; `H(f)` = soma de `h(m, f, t)` por fase; `Total` = soma de `H(m)`; `%H(m) = H(m) / Total x 100`; `Média = Total / número de integrantes`; `Desvio(m) = (H(m) - Média) / Média x 100`; `Desvio(f) = (H(f) - Prev(f)) / Prev(f) x 100`; `Custo = Total x R$ 15,00` |
+| Medida derivada | Esforço total, por fase, por tipo e por integrante; percentual por integrante; desvio em relação à média e ao previsto da fase; custo da entrega |
+| Modelo de análise | Integrante muito acima da média indica concentração de trabalho e risco de dependência de uma pessoa; muito abaixo indica sub-alocação ou falta de registro. Fase acima do previsto indica escopo subestimado, que tende a comprimir as fases seguintes |
+| Indicador | Gráfico de barras empilhadas de horas por fase e tipo de atividade, por entrega; gráfico de barras das horas por integrante, com a linha da média e a faixa de +/-30% |
+| Critérios de decisão | **Integrante com desvio maior que +/-30% da média** na entrega: a distribuição das issues da semana seguinte é revista e o trabalho é redistribuído, registrado como decisão de gestão. **Fase com esforço mais de 20% acima do previsto**: o escopo das fases seguintes é reavaliado (cortar, simplificar ou redistribuir), com justificativa |
+| Procedimento de coleta | Cada integrante registra as horas ao fim de cada sessão de trabalho, com `tipo_registro = registrado`; os scripts da Etapa 4 consolidam o arquivo a cada execução |
+| Procedimento de análise | Na reunião semanal, pelo responsável pela gestão PSM/CID da semana, e no fechamento de cada entrega |
+
+<p class="legenda">Tabela 11. Construto da medida C1, esforço da equipe. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5, e do <a href="../../gestao/plano-psm/">Plano de medição</a> da E1.</p>
+
+Limitação: a E1 não teve nenhuma hora registrada (Diagnóstico, lacuna L1). As horas da E1 são reconstruídas em consenso, depois do fato, e ficam marcadas como `reconstruido`. Elas aparecem separadas das horas `registrado` em todos os indicadores, não entram na média usada como referência e são declaradas nas ameaças à validade do artigo. O registro depende da disciplina de cada integrante: hora não anotada aparece como esforço menor, e não como falta de registro.
+
+### C2. Distribuição de contribuição
+
+| Campo | Definição |
+|---|---|
+| Identificador | C2 |
+| Categoria de informação | Recursos e Custos |
+| Necessidade de informação | Como o trabalho de cada entrega se distribui entre os integrantes? A Tabela de Contribuição do artigo (Apêndice A) é sustentada pelos dados do repositório? |
+| Conceito mensurável | Esforço da equipe, distribuído por integrante (*Effort*) |
+| Entidades relevantes | Integrantes; commits da `main`; issues concluídas; revisões de pull request; sessões de `esforco.csv` |
+| Atributos | Autor canônico do commit (via `.mailmap`), linhas adicionadas e removidas, responsáveis pela issue, autor da revisão, horas |
+| Medidas básicas | Por integrante `m` e por entrega: `Cm` = commits na `main`; `Lm` = linhas adicionadas mais removidas; `Im` = issues concluídas em que `m` é responsável (uma issue com `k` responsáveis vale `1/k` para cada um); `Rm` = revisões de pull request submetidas por `m` em PRs de outra pessoa; `Hm` = horas em `esforco.csv` |
+| Método de medição | Contagem automática pelo `git log` e pela API do GitHub; horas somadas de `esforco.csv`. Commits do robô de coleta (`github-actions`) são excluídos |
+| Tipo de método | Objetivo |
+| Escala e tipo de escala | Reais maiores ou iguais a 0; razão |
+| Unidade de medida | Commits, linhas, issues, revisões e horas; percentual por dimensão |
+| Função de medição | Para cada dimensão `X` em {C, L, I, R, H}: `%X(m) = Xm / soma de X x 100`, de modo que cada dimensão soma 100%; `Divergência(m)` = maior `%X(m)` menos menor `%X(m)`, entre as dimensões com dado |
+| Medida derivada | Percentual de cada integrante em cada uma das cinco dimensões; divergência entre dimensões |
+| Modelo de análise | Nenhuma dimensão sozinha mede contribuição: commits e linhas favorecem quem integra e migra conteúdo; horas dependem do registro; issues dependem da atribuição. Percentuais parecidos nas cinco dimensões indicam distribuição consistente. Divergência alta indica um papel específico (por exemplo, quem integra ou quem revisa) ou falha de registro, e precisa ser explicada |
+| Indicador | Tabela multidimensional integrante x dimensão, com os percentuais; gráfico de barras agrupadas por integrante. A mesma tabela alimenta a Tabela de Contribuição do artigo, com a dimensão horas como principal |
+| Critérios de decisão | **Divergência maior que 30 pontos percentuais** para um integrante: a causa é explicada por escrito na Tabela de Contribuição, e não escondida. **Dimensão cujos percentuais não somam 100%**: a tabela não é publicada até o erro ser corrigido (`validar_dados.py`) |
+| Procedimento de coleta | Extração pelos scripts da Etapa 4 (`extrair_git.py` e `extrair_issues.py`) e consolidação por `consolidar_metricas.py` |
+| Procedimento de análise | No fechamento de cada entrega, antes de montar o Apêndice A do artigo, por toda a equipe |
+
+<p class="legenda">Tabela 12. Construto da medida C2, distribuição de contribuição. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5.</p>
+
+Limitação: o número de commits, sozinho, é uma medida ruim de contribuição. Na E1, o conteúdo foi escrito em outro repositório e migrado em um único commit (Diagnóstico, lacuna L7), então commits e linhas da E1 mostram quem integrou, e não quem escreveu. A E1 também não teve pull request (lacuna L2), e a dimensão revisões fica vazia nessa entrega. Por isso a E1 é apresentada só com as dimensões disponíveis, com essas lacunas citadas na tabela, e a dimensão horas da E1 é reconstruída (lacuna L1).
+
+### C3. Estimado x real
+
+| Campo | Definição |
+|---|---|
+| Identificador | C3 |
+| Categoria de informação | Recursos e Custos |
+| Necessidade de informação | As estimativas de esforço da equipe são precisas o bastante para planejar as próximas fases e entregas? |
+| Conceito mensurável | Acurácia da estimativa (*Estimation Accuracy*) |
+| Entidades relevantes | Issues concluídas com estimativa; fases e entregas |
+| Atributos | Estimativa de horas da issue e horas reais lançadas para a issue |
+| Medidas básicas | `E(i)` = valor do campo "Estimativa (horas)" da issue `i`, preenchido ao abrir a issue; `R(i)` = soma das horas de `esforco.csv` com a issue `i` |
+| Método de medição | Leitura automática do corpo das issues pela API do GitHub e soma das horas de `esforco.csv` por issue |
+| Tipo de método | `E`: subjetivo (estimativa do responsável); `R`: subjetivo no registro, objetivo na agregação |
+| Escala e tipo de escala | Reais maiores que 0; razão |
+| Unidade de medida | Horas; razão adimensional; percentual |
+| Função de medição | `Acurácia(i) = R(i) / E(i)`; `Acurácia(f)` = soma de `R` dividida pela soma de `E` das issues da fase ou da entrega; `EPM` = média, entre as issues, do valor absoluto de `(R(i) - E(i)) / E(i)`, vezes 100 (erro percentual médio); `Fator` = `Acurácia(f)` da fase anterior |
+| Medida derivada | Acurácia por issue, por fase e por entrega; erro percentual médio; fator de recalibração |
+| Modelo de análise | Acurácia acima de 1 indica subestimativa; abaixo de 1, superestimativa. EPM alto com acurácia agregada perto de 1 indica erros que se compensam: a estimativa da entrega acerta, mas a de cada issue não serve para planejar a semana |
+| Indicador | Gráfico de dispersão estimado x real por issue, com a linha de 45 graus; barras pareadas estimado x real por fase |
+| Critérios de decisão | **Acurácia da fase fora da faixa de 0,85 a 1,25**: as estimativas das issues das fases seguintes são multiplicadas pelo fator observado, e a recalibração é registrada como decisão de gestão (PSM CID v2.1, Parte 2, seção 9.2) |
+| Procedimento de coleta | Estimativa no campo da issue, obrigatório no modelo Tarefa; horas em `esforco.csv` com o número da issue; extração e consolidação pelos scripts da Etapa 4 |
+| Procedimento de análise | No fechamento de cada fase e de cada entrega, pelo responsável pela gestão PSM/CID, antes de estimar as issues da fase seguinte |
+
+<p class="legenda">Tabela 13. Construto da medida C3, estimado x real. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5, e Parte 2, seção 9.2.</p>
+
+Limitação: a estimativa vem do campo da issue, e o real, do `esforco.csv`. Issues sem estimativa numérica ou sem horas lançadas com o número da issue ficam fora do cálculo e são listadas à parte, para não distorcer a acurácia. Na E1, as issues somam 20,5 h estimadas (retratos de 26/10/2026), mas as horas reais são reconstruídas (Diagnóstico, lacuna L1) e várias atividades da E1 não têm issue, como a primeira versão da Fase 1. A acurácia da E1 é apresentada só como registro histórico e não é usada como fator de recalibração.
