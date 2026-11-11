@@ -38,4 +38,4 @@ body:
       value: |
         - [ ] Conteúdo revisado por outro integrante
         - [ ] GitPage gerada sem erro
-        - [ ] Horas lançadas em dados/gestao/horas.csv
+        - [ ] Horas lançadas em docs/metricas/dados/brutos/esforco.csv

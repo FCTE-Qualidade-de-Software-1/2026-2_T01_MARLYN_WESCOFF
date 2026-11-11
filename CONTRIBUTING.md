@@ -8,7 +8,7 @@ Guia rápido para os integrantes do Grupo Marlyn Wescoff.
 2. **Crie um branch** a partir da `main`, com prefixo e assunto: `docs/fase-3-ambiente`, `artigo/resultados`, `fix/link-quebrado`.
 3. **Faça commits pequenos**, com mensagem no imperativo e em português, por exemplo "Adiciona as fichas das métricas de G2".
 4. **Abra um pull request** com o modelo do repositório, cite a issue (`Fecha #N`) e peça revisão a outro integrante.
-5. **Depois do merge**, registre as horas em `dados/gestao/horas.csv` e, se usou IA, em `docs/sobre/uso-de-ia.md`.
+5. **Ao fim de cada sessão de trabalho**, registre as horas em `docs/metricas/dados/brutos/esforco.csv` (`tipo_registro = registrado`) e, se usou IA, em `docs/sobre/uso-de-ia.md`.
 
 ## Antes de abrir o pull request
 

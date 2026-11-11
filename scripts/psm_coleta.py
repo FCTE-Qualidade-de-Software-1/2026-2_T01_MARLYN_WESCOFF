@@ -54,7 +54,8 @@ def data(iso):
 
 
 def ler_horas():
-    arquivo = RAIZ / "dados" / "gestao" / "horas.csv"
+    # Apontamento de esforço da E2 em diante (issue #20); horas.csv fica como histórico da E1.
+    arquivo = RAIZ / "docs" / "metricas" / "dados" / "brutos" / "esforco.csv"
     linhas = []
     if arquivo.exists():
         with arquivo.open(encoding="utf-8") as f:
@@ -76,8 +77,9 @@ def main():
     horas = ler_horas()
     horas_por_issue = defaultdict(float)
     for h in horas:
-        if str(h.get("issue", "")).strip().isdigit():
-            horas_por_issue[int(h["issue"])] += h["horas"]
+        num = str(h.get("issue") or "").strip().lstrip("#")
+        if num.isdigit():
+            horas_por_issue[int(num)] += h["horas"]
 
     sprints = defaultdict(list)
     for i in issues:
