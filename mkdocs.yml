@@ -119,6 +119,8 @@ nav:
       - Níveis de pontuação e julgamento: fase-2/niveis-e-julgamento.md
       - Diagrama GQM: fase-2/diagrama-gqm.md
       - Rastreabilidade Fase 1 → Fase 2: fase-2/rastreabilidade.md
+  - Fase 3:
+      - Plano de avaliação: fase-3/plano-de-avaliacao.md
   - Fases 3 e 4: fases-3-4.md
   - Gestão do projeto:
       - gestao/index.md
