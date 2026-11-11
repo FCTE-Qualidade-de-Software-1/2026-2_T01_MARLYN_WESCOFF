@@ -12,7 +12,12 @@ python3 scripts/extrair_git.py --data-ref $D
 GITHUB_TOKEN=$(gh auth token) python3 scripts/extrair_issues.py --data-ref $D
 python3 scripts/consolidar_metricas.py --data-ref $D
 python3 scripts/validar_dados.py --data-ref $D
+python3 scripts/gerar_graficos.py --data-ref $D
 ```
+
+O último comando gera os oito indicadores obrigatórios em `docs/metricas/graficos/`. Lacunas de coleta não
+são transformadas em zero: quando uma medida não possui observações, a figura registra explicitamente
+"sem dados registrados" e preserva a rastreabilidade até este consolidado.
 
 O `validar_dados.py` termina com código 1 quando encontra erro. Ele confere:
 - datas invertidas;
