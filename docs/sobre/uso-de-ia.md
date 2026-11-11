@@ -1,6 +1,6 @@
 # Declaração de uso de IA
 
-A equipe usou uma única ferramenta de IA na Entrega 1: o **Claude Code** (Anthropic), assistente de programação e redação. Nenhum conteúdo foi incorporado sem revisão: cada parte foi conferida por um integrante nas issues de revisão (#1 a #8 e #13) antes de ser considerada concluída. O relatório e o site não usam emojis, figurinhas nem ícones gerados por IA.
+A equipe usou ferramentas de IA como apoio à programação, à redação e à organização das evidências nas Entregas 1 e 2. Nenhum resultado foi aceito apenas por ter sido gerado por IA: os arquivos foram comparados com as fontes do projeto, executados quando aplicável e submetidos à revisão por outro integrante nos pull requests. O relatório e o site não usam emojis, figurinhas nem ícones gerados por IA.
 
 | Data | Ferramenta | Tarefa | Como a equipe conferiu e ajustou | Integrante |
 |---|---|---|---|---|
@@ -10,4 +10,12 @@ A equipe usou uma única ferramenta de IA na Entrega 1: o **Claude Code** (Anthr
 | 25 e 26/10/2026 | Claude Code (Anthropic) | Redação e formatação do artigo em LaTeX (modelo SBC), incluindo os diagramas em TikZ | Leitura completa, conferência das referências e do limite de páginas; revisado na issue #8 | Maykon (uso); Pedro (revisão) |
 | 25 e 26/10/2026 | Claude Code (Anthropic) | Código da GitPage (MkDocs, HTML, CSS e JavaScript), dos workflows e do script de coleta do PSM/CID | Site gerado com `mkdocs build --strict` no GitHub Actions; navegação testada no computador e no celular (issue #13); resultado do script conferido com as issues do GitHub (issue #11) | Maykon (uso); João Pedro (revisão) |
 
-<p class="legenda">Tabela 1. Registro de uso de ferramentas de IA na Entrega 1. Fonte: elaboração própria.</p>
+| 11/11/2026 | Codex (OpenAI) | Implementação do gerador e das oito figuras dos indicadores PSM/CID (issue #26) | Execução dos scripts de consolidação, geração e validação; conferência visual dos oito SVGs, das unidades, fontes, marcos e valores com os CSVs consolidados | Bernardo (uso); revisão solicitada a outro integrante no PR |
+| 11/11/2026 | Codex (OpenAI) | Implementação do dashboard de métricas e da geração automática da tabela-resumo (issue #27) | `mkdocs build --strict`, inspeção da página gerada e comparação dos valores e limiares com os CSVs consolidados | Bernardo (uso); revisão solicitada a outro integrante no PR |
+| 11/11/2026 | Codex (OpenAI) | Integração da gestão PSM/CID à GitPage, incluindo menu, narrativa, links cruzados e rodapé (issue #29) | Construção estrita da GitPage e verificação dos links, da navegação e da ausência de conteúdo duplicado | Bernardo (uso); revisão solicitada a outro integrante no PR |
+| 11/11/2026 | Codex (OpenAI) | Redação do texto PSM/CID e transposição para o artigo SBC, com figuras, decisões, ameaças e contribuição (issue #30) | Compilação do LaTeX, inspeção visual do PDF, conferência das referências e confirmação de 14 páginas de corpo mais apêndices | Bernardo (uso); revisão solicitada a outro integrante no PR |
+| 11/11/2026 | Codex (OpenAI) | Atualização e harmonização desta declaração de uso de IA entre a GitPage e o Apêndice B do artigo (issue #31) | Comparação entre esta página e o texto LaTeX, conferência das tarefas e ferramentas registradas e revisão pelo pull request | Bernardo (uso); revisão solicitada a outro integrante no PR |
+
+<p class="legenda">Tabela 1. Registro de uso de ferramentas de IA nas Entregas 1 e 2. Fonte: elaboração própria.</p>
+
+Esta é a declaração única do projeto. Não há uma segunda cópia em `docs/metricas/DECLARACAO-IA.md`; o Apêndice B do artigo apresenta uma versão compacta desta mesma informação. Cada integrante deve acrescentar nesta tabela apenas os usos que efetivamente realizou, informando a tarefa específica e a forma de conferência e ajuste.

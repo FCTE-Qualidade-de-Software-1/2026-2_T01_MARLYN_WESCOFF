@@ -542,9 +542,9 @@ As principais limitações são: as necessidades de várias partes interessadas 
 \toprule
 \textbf{Integrante} & \textbf{Commits} & \textbf{Linhas} & \textbf{Issues} & \textbf{Revisões} & \textbf{Horas} & \textbf{Índice C2} \\
 \midrule
-Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 89,29\% & 17,86\% \\
+Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 90,63\% & 18,12\% \\
 Carlos Eduardo Deusdara Motta & 31,82\% & 42,19\% & 66,67\% & 0,00\% & 0,00\% & 28,14\% \\
-João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 10,71\% & 7,55\% \\
+João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 9,37\% & 7,28\% \\
 Maykon Junio dos Santos Soares & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% \\
 Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\% \\
 \midrule
@@ -557,25 +557,29 @@ Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\
 \section{Declaração de uso de inteligência artificial}
 \label{ap:ia}
 
-A equipe usou uma única ferramenta de IA na Entrega~1: o Claude Code (Anthropic). A Tabela~\ref{tab:ia} registra as tarefas e como cada uma foi conferida. Nenhum conteúdo foi incorporado sem revisão de um integrante, registrada nas \emph{issues} de revisão (\#1 a \#8 e \#13) do repositório.
+A equipe usou Claude Code (Anthropic) na Entrega~1 e Codex (OpenAI) na gestão PSM/CID da Entrega~2. A Tabela~\ref{tab:ia} apresenta uma versão compacta da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests.
 
 \begin{table}[!ht]
 \centering
-\caption{Uso de ferramentas de IA na Entrega 1 (25 e 26/10/2026).}
+\caption{Uso de ferramentas de IA nas Entregas 1 e 2.}
 \label{tab:ia}
 \footnotesize
 \begin{tabularx}{\linewidth}{p{4.4cm}L}
 \toprule
-\textbf{Tarefa (Claude Code, Anthropic)} & \textbf{Como a equipe conferiu e ajustou} \\
+\textbf{Ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} \\
 \midrule
 Migração da primeira versão da Fase 1 para o repositório da disciplina e revisão do texto & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 \\
 Pesquisa dos requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências \\
 Rascunho do plano GQM, fichas das métricas, níveis e critérios de julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 \\
 Redação e formatação deste artigo em LaTeX & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 \\
 Código da GitPage, dos \emph{workflows} e do script do PSM/CID & Geração do site com verificação estrita, teste de navegação e conferência do script com as \emph{issues}; \emph{issues} \#11 e \#13 \\
+Codex (OpenAI): geração dos indicadores e do dashboard PSM/CID & Execução dos scripts e do validador; inspeção dos gráficos e comparação da tabela-resumo com os consolidados; \emph{issues} \#26 e \#27 \\
+Codex (OpenAI): integração da gestão PSM/CID à GitPage & Construção estrita do site e verificação da navegação, dos links e da ausência de duplicações; \emph{issue} \#29 \\
+Codex (OpenAI): texto PSM/CID e transposição para este artigo & Compilação, inspeção visual, conferência das referências e do limite de páginas; \emph{issue} \#30 \\
+Codex (OpenAI): harmonização da declaração de IA & Comparação desta tabela com a declaração publicada e revisão no pull request; \emph{issue} \#31 \\
 \bottomrule
 \end{tabularx}
-\tabfonte{registro da equipe.}
+\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}.}
 \end{table}
 
 \end{document}

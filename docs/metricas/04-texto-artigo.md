@@ -49,9 +49,9 @@ O índice C2 é a média das cinco participações disponíveis — commits, lin
 
 | Integrante | Commits | Linhas | Issues | Revisões | Horas | Índice C2 |
 |---|---:|---:|---:|---:|---:|---:|
-| Bernardo Broetto Brun | 0,00% | 0,00% | 0,00% | 0,00% | 89,29% | 17,86% |
+| Bernardo Broetto Brun | 0,00% | 0,00% | 0,00% | 0,00% | 90,63% | 18,12% |
 | Carlos Eduardo Deusdara Motta | 31,82% | 42,19% | 66,67% | 0,00% | 0,00% | 28,14% |
-| João Pedro Sampaio Maciel | 22,73% | 4,31% | 0,00% | 0,00% | 10,71% | 7,55% |
+| João Pedro Sampaio Maciel | 22,73% | 4,31% | 0,00% | 0,00% | 9,37% | 7,28% |
 | Maykon Junio dos Santos Soares | 0,00% | 0,00% | 0,00% | 0,00% | 0,00% | 0,00% |
 | Pedro Gonçalves Rocha | 45,45% | 53,50% | 33,33% | 100,00% | 0,00% | 46,46% |
 | **Total** | **100,00%** | **100,00%** | **100,00%** | **100,00%** | **100,00%** | **100,00%** |
