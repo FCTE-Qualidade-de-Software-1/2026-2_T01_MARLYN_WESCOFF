@@ -1,1 +1,364 @@
-[]
+[
+ {
+  "additions": 2987,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:05:05Z",
+  "createdAt": "2026-11-11T02:58:36Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:05:05Z",
+  "number": 43,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN-09A",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:58:46Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "67fc374b3280360390c9984985cd6d232a1cae6c"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Registro das decisões de gestão (Etapa 6)"
+ },
+ {
+  "additions": 2854,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:47Z",
+  "createdAt": "2026-11-11T02:50:58Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:04:47Z",
+  "number": 42,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7uEA",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:51:07Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "8ae81ef4e630cc2e2d9b00f09959ef692f2548ee"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Consolidação e validação dos dados (Etapa 4)"
+ },
+ {
+  "additions": 1807,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:28Z",
+  "createdAt": "2026-11-11T02:50:51Z",
+  "deletions": 204,
+  "mergedAt": "2026-11-11T03:04:28Z",
+  "number": 41,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7rLw",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:51:01Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "ff33ee46007e8a6e9b8ca82076c8394aa428ff75"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Scripts de extração: extrair_git.py e extrair_issues.py (Etapa 4)"
+ },
+ {
+  "additions": 82,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-11T03:04:08Z",
+  "createdAt": "2026-11-11T02:50:46Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-11T03:04:08Z",
+  "number": 40,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXN7pUQ",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-11T02:50:56Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "9665cf3140a8406cacb6ceaa951c3bdfa5730028"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Construtos de Recursos e Custos (C1 a C3) (Etapa 3)"
+ },
+ {
+  "additions": 259,
+  "author": {
+   "id": "U_kgDOBsGwrg",
+   "is_bot": false,
+   "login": "jopesmp",
+   "name": "João Pedro S. Maciel"
+  },
+  "closedAt": "2026-11-11T02:41:01Z",
+  "createdAt": "2026-11-11T02:40:48Z",
+  "deletions": 2,
+  "mergedAt": "2026-11-11T02:41:01Z",
+  "number": 39,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Docs/fase 3 plano de avaliacao"
+ },
+ {
+  "additions": 2444,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:32Z",
+  "createdAt": "2026-11-11T01:29:13Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-11T02:10:31Z",
+  "number": 38,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnr2w",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisado. Sobre os pontos levantados:\n\n- **Concentração de véspera (B3):** a justificativa está suficiente. O texto declara que é uma adaptação da equipe, explica por que a frequência sozinha não basta e já ressalva o efeito da migração na E1.\n- **Quem abre as issues de apontamento da docente (B4):** concordo com a sugestão, a pessoa que estiver com a gestão PSM/CID na semana. Isso vai entrar no registro de decisões (#28) junto com a definição de liderança.\n\nCorreções feitas no commit bf6f402:\n\n- B2: a aceleração divide por `V(s - 1)` e a projeção divide por `V(s)`. Como as semanas de 26/10 a 09/11 não tiveram nenhuma issue concluída, a velocidade é 0 e as duas contas dividiriam por zero. Deixei explícito que a aceleração não é calculada quando `V(s - 1) = 0` e que a projeção fica \"sem projeção\" quando `V(s) = 0`.\n- B3: \"nos 2 dias anteriores à release\" ficava ambíguo quanto à inclusão do dia da release. Troquei por \"nas 48 horas anteriores à publicação da release\" e incluí o início da disciplina como referência para a primeira release.\n- Citações do PSM CID padronizadas como \"PSM CID v2.1, Parte 2, seção 8.x\".\n",
+    "submittedAt": "2026-11-11T02:09:50Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "bf6f40200439002ef7cc2975e386e66deca153b7"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Construtos de Desempenho dos Processos (B1 a B4) (Etapa 3)"
+ },
+ {
+  "additions": 2338,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:26Z",
+  "createdAt": "2026-11-11T01:27:48Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-11T02:10:26Z",
+  "number": 37,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnrDQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisado. Sobre os pontos levantados:\n\n- **Iteração = semana ISO:** de acordo. Fica alinhado ao retrato semanal de segunda-feira e ao campo \"Iteração\" do quadro.\n- **Pontos no burndown (A1) e contagem de issues em A2:** faz sentido. A1 mede o volume de trabalho restante, então o tamanho importa. A2 mede se o compromisso da semana foi cumprido, e a contagem de issues é mais simples de explicar. Quando A1 e A2 divergirem, a diferença de unidade precisa ser citada na interpretação.\n\nCorreção feita no commit ec769ba: as citações dentro das tabelas estavam como \"PSM CID, Parte 2, 8.2\". Padronizei para \"PSM CID v2.1, Parte 2, seção 8.2\", como nas legendas.\n",
+    "submittedAt": "2026-11-11T02:09:48Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "ec769baf25909bd6b0c802dcbcf9e23d4d9d4828"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Construtos de Calendário e Progresso (A1 a A4) e terminologia CID (Etapa 3)"
+ },
+ {
+  "additions": 2171,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:20Z",
+  "createdAt": "2026-11-11T01:26:08Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-11T02:10:20Z",
+  "number": 36,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnqIQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisado. Conferi os números do diagnóstico contra `dados/brutos/` e todos batem: 13 commits de Maykon (5.960 linhas, 5.448 no `d64b70e`), 1 de João Pedro, 4 do robô, semanas W43 a W46, diretórios mais alterados, responsáveis das 14 issues da E1, os 31 comentários da mesma conta e os quatro retratos idênticos.\n\nSobre o tom: está adequado para a docente. O texto é factual, cada afirmação tem fonte e não há juízo sobre pessoas.\n\nÚnica correção, feita no commit aaf0370: a Tabela 1 somava 152 dos 158 eventos. Faltavam 3 de inscrição (`subscribed`) e 3 de menção (`mentioned`).\n",
+    "submittedAt": "2026-11-11T02:09:46Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "aaf037002cab7f4e27f29a5a3b70a2d6fb0fd74d"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Diagnóstico do repositório (Etapa 1)"
+ },
+ {
+  "additions": 62,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:42Z",
+  "createdAt": "2026-11-11T01:24:09Z",
+  "deletions": 20,
+  "mergedAt": "2026-11-11T02:10:42Z",
+  "number": 35,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnn3Q",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Encontrei duas não conformidades:\n\n1. `dados/README.md`: sobrou um trecho solto no fim da seção de reconstrução (` ignoradas por scripts/psm_coleta.py.`), resto da frase que foi movida para a lista de regras.\n2. `esforco.csv`: a linha de João Pedro dizia \"Facilitação e relato da retrospectiva\". Pelo PDF da retrospectiva de 28/10/2026, o facilitador foi Bernardo e o relator foi João Pedro.\n\nAs duas estão corrigidas no commit 592ad8e.\n",
+    "submittedAt": "2026-11-11T02:09:42Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "592ad8e88973c274ce63cad3cc5a326ff196f6b6"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnoiw",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Com o commit 592ad8e, está aprovado. A mudança no `psm_coleta.py` é mínima e continua ignorando as linhas sem horas, e os modelos de issue e PR já apontam para o `esforco.csv`.\n\nComo combinado, este PR não fecha a #20. Ela fica aberta até todos preencherem as horas da E1.\n",
+    "submittedAt": "2026-11-11T02:09:44Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "592ad8e88973c274ce63cad3cc5a326ff196f6b6"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Apontamento de esforço (esforco.csv) e migração das atividades da E1 (Etapa 2)"
+ },
+ {
+  "additions": 23,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:37Z",
+  "createdAt": "2026-11-11T01:22:31Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-11T02:10:37Z",
+  "number": 34,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNns5g",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisado. O `.mailmap` consolida as três identidades que existem hoje na `main`. A convenção de labels e milestones está de acordo com o que foi aplicado nas issues.\n\nCorreção feita no commit f6c7b9b: a tabela de labels do CONTRIBUTING não citava a `apontamento-docente`, criada no #38 e usada em B4.\n",
+    "submittedAt": "2026-11-11T02:09:51Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "f6c7b9ba2148e785c37adf2262c9b6f666d7811d"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Labels, milestones das entregas e .mailmap (Etapa 2)"
+ },
+ {
+  "additions": 2061,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-11T02:10:15Z",
+  "createdAt": "2026-11-11T01:18:06Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-11T02:10:15Z",
+  "number": 33,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABXNnpZQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Revisado. Conferi os arquivos contra o repositório: 18 commits na `main`, 32 issues, 158 eventos, 1 release e 1 tag, e os números batem com o README da pasta.\n\nObservação para a #24: o README registra `%an`, que é o comando que de fato foi usado. Nos scripts de extração vou usar `%aN`, para o `.mailmap` já entregar o nome canônico, e atualizo o README junto.\n",
+    "submittedAt": "2026-11-11T02:09:45Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "5a86a3bf0024485dc9603915a4e9c570ff16ec8f"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Extrai os dados brutos do repositório (Etapa 1)"
+ }
+]

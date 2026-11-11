@@ -1,0 +1,5 @@
+entrega,data,planejado_pontos,concluido_pontos,aberto_pontos,ideal_pontos,desvio_pct,issues_planejadas,issues_concluidas,issues_sem_tamanho,prazo,historico,fonte,data_extracao,comando_ou_query
+E1,2026-10-25,16,16,0,16,-100,14,14,0,2026-10-26,sim,issues.json; issue_events.jsonl; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+E1,2026-10-26,16,16,0,0,0,14,14,0,2026-10-26,sim,issues.json; issue_events.jsonl; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+E2,2026-11-10,35,13,22,35,-37.14,18,8,1,2026-11-18,nao,issues.json; issue_events.jsonl; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+E2,2026-11-11,35,25,10,30.62,-58.93,18,12,1,2026-11-18,nao,issues.json; issue_events.jsonl; milestones.json,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11

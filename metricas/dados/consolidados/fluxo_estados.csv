@@ -1,0 +1,19 @@
+data,aberta_sem_estado,backlog,a_fazer,em_progresso,em_revisao,concluido,outro,wip,throughput,origem_estado,historico,wip_medio_7d,throughput_medio_7d,ct_little_7d,fonte,data_extracao,comando_ou_query
+2026-10-25,0,0,0,0,0,14,0,0,14,issues (criada e fechada),sim,0,14,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-26,0,0,0,0,0,14,0,0,0,issues (criada e fechada),sim,0,7,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-27,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,4.67,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-28,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,3.5,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-29,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,2.8,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-30,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,2.33,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-10-31,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,2,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-01,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-02,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-03,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-04,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-05,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-06,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-07,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-08,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-09,0,0,0,0,0,14,0,0,0,issues (criada e fechada),nao,0,0,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-10,0,10,0,0,0,22,0,0,8,quadro e issues,nao,0,1.14,,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11
+2026-11-11,0,5,0,1,0,26,0,1,4,quadro e issues,nao,0.14,1.71,0.08,issues.json; issue_events.jsonl; quadro_eventos.csv,2026-11-11,python3 scripts/consolidar_metricas.py --data-ref 2026-11-11

@@ -1,0 +1,2899 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FGA0315 Qualidade de Software 1 - 2026.2 - T01 - Grupo Marlyn Wescoff - Avaliação da qualidade do Moodle 5.3 LTS">
+      
+      
+        <meta name="author" content="Grupo Marlyn Wescoff">
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-3/plano-de-avaliacao/">
+      
+      
+        <link rel="prev" href="../../fase-2/rastreabilidade/">
+      
+      
+        <link rel="next" href="../../fases-3-4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Plano de avaliação - Marlyn Wescoff · Qualidade de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plano-de-avaliacao-fase-3" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Não mostrar isso novamente">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  Entrega 1 publicada · Fases 1 e 2 · versão 1.1 de 26/10/2026 ·
+  <a href="../../artigo/artigo-e1.pdf">baixar o artigo (PDF)</a>
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Marlyn Wescoff · Qualidade de Software" class="md-header__button md-logo" aria-label="Marlyn Wescoff · Qualidade de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Marlyn Wescoff · Qualidade de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plano de avaliação
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ativar tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ativar tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ativar tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Ativar tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-2_T01_MARLYN_WESCOFF
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../metodologia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Metodologia
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fase 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fase 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Fase 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../fases-3-4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fases 3 e 4
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../gestao/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Gestão do projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../sobre/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Sobre
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Marlyn Wescoff · Qualidade de Software" class="md-nav__button md-logo" aria-label="Marlyn Wescoff · Qualidade de Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Marlyn Wescoff · Qualidade de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-2_T01_MARLYN_WESCOFF
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/proposito/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito da avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/partes-interessadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitante e partes interessadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Produto avaliado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/modelo-de-qualidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo de qualidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/caracteristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Seleção e priorização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/escopo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escopo e profundidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/ods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ODS relacionados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/abstraction-sheets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Abstraction sheets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/objetivos-questoes-hipoteses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Objetivos, questões e hipóteses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/metricas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Métricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/niveis-e-julgamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Níveis de pontuação e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/diagrama-gqm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama GQM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/rastreabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rastreabilidade Fase 1 → Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de avaliação
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-metodo-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Método de avaliação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Método de avaliação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regras-gerais-para-todos-os-avaliadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras gerais para todos os avaliadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-recursos-e-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Recursos e ambiente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Recursos e ambiente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servidor-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Servidor de referência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambientes-de-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambientes de acesso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-todas-gratuitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas (todas gratuitas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#massa-de-dados-ficticia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Massa de dados fictícia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oraculo-m12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oráculo (M1.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfil-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perfil do avaliador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instrucoes-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Instruções do avaliador
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Instruções do avaliador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g1-adequacao-funcional-m11-m12-m13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G1 – Adequação funcional (M1.1, M1.2, M1.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g2-compatibilidade-m21-a-m24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G2 – Compatibilidade (M2.1 a M2.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g3-flexibilidade-m31-a-m35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G3 – Flexibilidade (M3.1 a M3.5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparacao-do-julgamento-fase-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparação do julgamento (Fase 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-piloto-e-congelamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Piloto e congelamento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-registro-e-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Registro e rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Cronograma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-papeis-proposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Papéis (proposta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Riscos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-consistencia-com-a-fase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Consistência com a Fase 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fases-3-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fases 3 e 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../gestao/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão do projeto
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestão do projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/plano-psm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plano de medição (PSM/CID)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/registro-medicoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de medições
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas e decisões
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/termo-consentimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Termo de consentimento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sobre/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe e contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/uso-de-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Declaração de uso de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referências
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/entregas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entregas e releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/criterios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critérios de avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-metodo-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Método de avaliação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Método de avaliação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regras-gerais-para-todos-os-avaliadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras gerais para todos os avaliadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-recursos-e-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Recursos e ambiente
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Recursos e ambiente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servidor-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Servidor de referência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambientes-de-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambientes de acesso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas-todas-gratuitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ferramentas (todas gratuitas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#massa-de-dados-ficticia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Massa de dados fictícia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oraculo-m12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oráculo (M1.2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfil-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perfil do avaliador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-instrucoes-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Instruções do avaliador
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Instruções do avaliador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g1-adequacao-funcional-m11-m12-m13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G1 – Adequação funcional (M1.1, M1.2, M1.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g2-compatibilidade-m21-a-m24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G2 – Compatibilidade (M2.1 a M2.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g3-flexibilidade-m31-a-m35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G3 – Flexibilidade (M3.1 a M3.5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparacao-do-julgamento-fase-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preparação do julgamento (Fase 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-piloto-e-congelamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Piloto e congelamento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-registro-e-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Registro e rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Cronograma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-papeis-proposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Papéis (proposta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Riscos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-consistencia-com-a-fase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Consistência com a Fase 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegação" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Início
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/edit/main/docs/fase-3/plano-de-avaliacao.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="plano-de-avaliacao-fase-3">Plano de avaliação (Fase 3)<a class="headerlink" href="#plano-de-avaliacao-fase-3" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Rascunho para revisão da equipe</p>
+<p>Este plano parte do que a <a href="../../fase-2/">Fase 2</a> já fixou (métricas, níveis de pontuação e critérios de julgamento) e <strong>não altera nenhum deles</strong>. Os itens marcados com <em>[confirmar]</em> dependem de decisão da equipe ou do cronograma da disciplina. Remova este aviso depois da reunião de revisão e do registro em ata.</p>
+</div>
+<p>O plano responde a uma pergunta: <strong>o que cada avaliador faz, em que ordem e com quais recursos, para que duas pessoas diferentes obtenham as mesmas medidas?</strong> Ele cobre as 12 métricas (M1.1 a M3.5) dos objetivos G1 (adequação funcional), G2 (compatibilidade) e G3 (flexibilidade), e alimenta as decisões D1 a D4 do <a href="../../fase-1/proposito/">Propósito</a>.</p>
+<h2 id="1-metodo-de-avaliacao">1. Método de avaliação<a class="headerlink" href="#1-metodo-de-avaliacao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo</td>
+<td>Avaliação externa, caixa-preta, orientada a tarefas (ver <a href="../../fase-1/escopo/#profundidade">Profundidade</a>)</td>
+</tr>
+<tr>
+<td>Objeto</td>
+<td>Núcleo do Moodle 5.3 <abbr title="Long-Term Support (versão de suporte estendido)">LTS</abbr>, tema Boost, sem plugins de terceiros</td>
+</tr>
+<tr>
+<td>Origem da verdade</td>
+<td>Documentação oficial (docs.moodle.org e moodledev.io) e <strong>oráculo calculado à mão</strong> antes da coleta</td>
+</tr>
+<tr>
+<td>Julgamento</td>
+<td>Níveis e regras de <a href="../../fase-2/niveis-e-julgamento/">Níveis de pontuação e julgamento</a>, congelados antes da coleta</td>
+</tr>
+<tr>
+<td>Repetição</td>
+<td>Instalações e atualizações: 3 execuções cada. Demais métricas: uma execução completa, mais a repetição de qualquer caso que falhar (para separar falha do produto de erro do avaliador)</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 1. Resumo do método. Fonte: elaboração própria.</p>
+
+<h3 id="regras-gerais-para-todos-os-avaliadores">Regras gerais para todos os avaliadores<a class="headerlink" href="#regras-gerais-para-todos-os-avaliadores" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Regra</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1. Critério antes da coleta</td>
+<td>O critério de sucesso de cada caso está escrito antes da execução. Não se ajusta o critério depois de ver o resultado</td>
+</tr>
+<tr>
+<td>R2. Sessão limpa</td>
+<td>Navegador sem extensões, sem cache e sem sessão anterior. Uma conta fictícia por papel (administrador, docente, estudante)</td>
+</tr>
+<tr>
+<td>R3. Só a documentação</td>
+<td>Em M3.3, a única fonte de instruções é a página oficial da 5.3. Qualquer passo descoberto fora dela é registrado, e a execução conta como sem sucesso</td>
+</tr>
+<tr>
+<td>R4. Registrar sempre</td>
+<td>Cada caso gera uma linha no CSV da métrica, com data, avaliador, resultado e nome do arquivo de evidência. Falha também é registrada</td>
+</tr>
+<tr>
+<td>R5. Não resolver no improviso</td>
+<td>Se o caso falhar, anotar a mensagem de erro e a evidência, e seguir para o próximo. Corrigir a configuração só é permitido se o correto estiver na documentação, e o ajuste é registrado</td>
+</tr>
+<tr>
+<td>R6. Conferência por segundo integrante</td>
+<td>Oráculo (M1.2), uma das três repetições de M3.3 e a lista de itens de M3.5 são conferidos por alguém que não os produziu</td>
+</tr>
+<tr>
+<td>R7. Sem dados reais</td>
+<td>Nenhum dado de estudante, docente ou instituição. Endereços de e-mail fictícios usam o domínio reservado <code>example.invalid</code></td>
+</tr>
+<tr>
+<td>R8. Sem e-mail de saída</td>
+<td>A instância não envia mensagens reais (configuração <code>noemailever</code> no <code>config.php</code>)</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 2. Regras gerais de execução. Fonte: elaboração própria.</p>
+
+<h2 id="2-recursos-e-ambiente">2. Recursos e ambiente<a class="headerlink" href="#2-recursos-e-ambiente" title="Permanent link">&para;</a></h2>
+<h3 id="servidor-de-referencia">Servidor de referência<a class="headerlink" href="#servidor-de-referencia" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Especificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Virtualizador</td>
+<td>VirtualBox ou equivalente gratuito <em>[confirmar o que a equipe tem]</em></td>
+</tr>
+<tr>
+<td>Máquina virtual</td>
+<td>Ubuntu 24.04 <abbr title="Long-Term Support (versão de suporte estendido)">LTS</abbr>, 2 vCPU, 4 GB de RAM, 40 GB de disco <em>[confirmar contra os requisitos oficiais da 5.3 em <a href="../../fase-1/produto/">Produto avaliado</a>]</em></td>
+</tr>
+<tr>
+<td>Servidor web</td>
+<td>Apache 2.4, raiz web apontando para a pasta <code>public/</code> do Moodle</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>8.3 e 8.4, em duas instâncias idênticas, mudando apenas a versão (M3.2)</td>
+</tr>
+<tr>
+<td>Banco de dados</td>
+<td>PostgreSQL 17, com um segundo banco de outra aplicação para M2.4</td>
+</tr>
+<tr>
+<td>Moodle</td>
+<td>5.3.x (a versão corretiva exata e o <em>build</em> são registrados na primeira execução) e 4.5.x (origem da atualização)</td>
+</tr>
+<tr>
+<td>Imagem-base</td>
+<td>Um <em>snapshot</em> da VM sem o Moodle, usado para criar a máquina limpa de cada execução de M3.3 e M3.4</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 3. Servidor de referência. Fonte: elaboração própria, a partir de [Produto avaliado](../fase-1/produto.md).</p>
+
+<h3 id="ambientes-de-acesso">Ambientes de acesso<a class="headerlink" href="#ambientes-de-acesso" title="Permanent link">&para;</a></h3>
+<p>Os quatro ambientes A1 a A4 são os de <a href="../../fase-1/escopo/#ambientes-de-acesso">Escopo</a>. Na Fase 3, a equipe preenche a coluna de versões: sistema operacional, versão exata do navegador e resolução. Quem não tem o dispositivo A4 (Android) usa o de outro integrante, e o dono do dispositivo é registrado.</p>
+<h3 id="ferramentas-todas-gratuitas">Ferramentas (todas gratuitas)<a class="headerlink" href="#ferramentas-todas-gratuitas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>curl</code> ou Python 3</td>
+<td>Chamadas <abbr title="Representational State Transfer">REST</abbr> (M2.3) e script de comparação (M2.2)</td>
+</tr>
+<tr>
+<td><code>scripts/compara_registros.py</code></td>
+<td>Comparação campo a campo de M2.2. <strong>A criar nesta fase</strong></td>
+</tr>
+<tr>
+<td>LibreOffice Calc, Thunderbird</td>
+<td>Receptores de CSV/XLSX e de iCal (M2.1)</td>
+</tr>
+<tr>
+<td><code>script</code> (util-linux)</td>
+<td>Log do terminal com carimbos de tempo (M3.3 e M3.4)</td>
+</tr>
+<tr>
+<td><code>sha256sum</code>, consultas SQL de checksum</td>
+<td>Verificação das entidades vizinhas (M2.4) e dos itens de M3.5</td>
+</tr>
+<tr>
+<td>Captura de tela do sistema</td>
+<td>Evidência de cada caso</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 4. Ferramentas. Fonte: elaboração própria.</p>
+
+<h3 id="massa-de-dados-ficticia">Massa de dados fictícia<a class="headerlink" href="#massa-de-dados-ficticia" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Quantidade e regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estudantes</td>
+<td>30 (<code>est01</code> a <code>est30</code>), e-mail <code>estNN@example.invalid</code></td>
+</tr>
+<tr>
+<td>Docente</td>
+<td>1 (<code>docente01</code>)</td>
+</tr>
+<tr>
+<td>Administrador</td>
+<td>1 (<code>admin-aval</code>)</td>
+</tr>
+<tr>
+<td>Cursos</td>
+<td>2: um completo, com as atividades do catálogo T01 a T12, e um vazio, destino da restauração (T12)</td>
+</tr>
+<tr>
+<td>Atividades</td>
+<td>1 tarefa com prazo, 1 questionário (3 questões de múltipla escolha e 2 numéricas), 1 fórum, 1 arquivo de material</td>
+</tr>
+<tr>
+<td>Arquivos de referência de importação</td>
+<td><code>usuarios.csv</code> (30 linhas), <code>questoes.gift</code> (15 questões)</td>
+</tr>
+<tr>
+<td>Dados de comparação</td>
+<td>Arquivos congelados em <code>dados/avaliacao/M2.1/referencia/</code> antes da primeira troca</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 5. Massa de dados fictícia. Fonte: elaboração própria.</p>
+
+<p>A massa é gerada por um script versionado (<code>scripts/gera_massa.py</code>, <strong>a criar</strong>) e não digitada à mão, para que as três instalações de M3.3 comecem do mesmo conjunto e M3.5 compare "antes" e "depois" sem ruído.</p>
+<h3 id="oraculo-m12">Oráculo (M1.2)<a class="headerlink" href="#oraculo-m12" title="Permanent link">&para;</a></h3>
+<p>O oráculo é a planilha <code>dados/avaliacao/M1.2/oraculo.csv</code>, com <strong>20 casos</strong>: 10 de pontuação de questionário, 6 de agregação ponderada e 4 de controle de prazo. Cada linha traz as regras configuradas, as entradas, o valor esperado calculado à mão e a tolerância (0,01 ponto).</p>
+<table>
+<thead>
+<tr>
+<th>caso</th>
+<th>tipo</th>
+<th>regra configurada</th>
+<th>entradas</th>
+<th>esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q-01</td>
+<td>questionário</td>
+<td>3 questões de 1,0 ponto, nota máxima 3,0</td>
+<td>estudante acerta 2 de 3</td>
+<td>2,00</td>
+</tr>
+<tr>
+<td>A-01</td>
+<td>agregação</td>
+<td>P1 com peso 40 e P2 com peso 60</td>
+<td>P1 = 7,5; P2 = 8,0</td>
+<td>7,80</td>
+</tr>
+<tr>
+<td>P-01</td>
+<td>prazo</td>
+<td>data limite às 23:59 do dia D</td>
+<td>envio às 23:58 de D</td>
+<td>aceito</td>
+</tr>
+<tr>
+<td>P-02</td>
+<td>prazo</td>
+<td>data limite às 23:59 do dia D</td>
+<td>envio às 00:01 de D+1</td>
+<td>bloqueado</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 6. Exemplos de linhas do oráculo (a lista completa de 20 casos é produzida e conferida por um segundo integrante antes da coleta). Fonte: elaboração própria.</p>
+
+<h3 id="perfil-do-avaliador">Perfil do avaliador<a class="headerlink" href="#perfil-do-avaliador" title="Permanent link">&para;</a></h3>
+<p>Os avaliadores são os integrantes da equipe. Pré-requisitos: usar o terminal Linux básico (para G2 e G3), ler a documentação oficial do Moodle e seguir o roteiro sem interpretá-lo. Quem executa G3 faz antes <strong>uma instalação de treino</strong> descartada. Como a equipe não recruta participantes externos, a coleta <strong>não envolve entrevistas nem pessoas fora do grupo</strong>, e o <a href="../../gestao/termo-consentimento/">Termo de consentimento</a> só será usado se isso mudar.</p>
+<h2 id="3-instrucoes-do-avaliador">3. Instruções do avaliador<a class="headerlink" href="#3-instrucoes-do-avaliador" title="Permanent link">&para;</a></h2>
+<p>Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definição, fonte) continua em <a href="../../fase-2/metricas/">Métricas</a>; aqui está <strong>como executar</strong>.</p>
+<h3 id="g1-adequacao-funcional-m11-m12-m13">G1 – Adequação funcional (M1.1, M1.2, M1.3)<a class="headerlink" href="#g1-adequacao-funcional-m11-m12-m13" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Subir uma instância 5.3 <strong>limpa</strong>, pelo procedimento oficial, e criar as contas fictícias da massa de dados.</li>
+<li>Abrir <code>dados/avaliacao/M1.1/execucoes.csv</code> e executar T01 a T12 <strong>na ordem do catálogo</strong>, com o papel indicado em cada tarefa.</li>
+<li>Para cada tarefa, registrar: concluída (sim/não), função usada, <strong>contorno necessário</strong> (sim/não, e o passo extra), captura de tela do resultado.</li>
+<li>Comparar cada passo com a página oficial da função. Qualquer passo fora dela é contorno (M1.3).</li>
+<li>Configurar o questionário e o livro de notas com os valores do oráculo, registrar as respostas fictícias e anotar o valor exibido. Aceitar a diferença até 0,01 ponto.</li>
+<li>Nos quatro casos de prazo, tentar o envio no horário do oráculo e anotar se foi aceito ou bloqueado.</li>
+<li>Calcular <code>M1.1 = 1 − Tf/12</code>, <code>M1.2 = Cc/20</code> e <code>M1.3 = 1 − Tc/12</code> com a planilha <code>dados/avaliacao/calculos.csv</code>.</li>
+</ol>
+<h3 id="g2-compatibilidade-m21-a-m24">G2 – Compatibilidade (M2.1 a M2.4)<a class="headerlink" href="#g2-compatibilidade-m21-a-m24" title="Permanent link">&para;</a></h3>
+<p><strong>M2.1 e M2.2 (formatos e integridade)</strong></p>
+<ol>
+<li>Para cada um dos 7 formatos (F1 a F7), seguir a direção da <a href="../../fase-2/metricas/#m21-intercambialidade-de-formatos-de-dados">Fase 2</a>: importar o arquivo de referência ou exportar e abrir no receptor indicado.</li>
+<li>Registrar <code>conclui</code> (sim/não) e <code>aceito pelo receptor</code> (sim/não). Só conta como sucesso se as duas forem "sim".</li>
+<li>Rodar <code>scripts/compara_registros.py</code> entre a referência e o destino. Só espaços em branco são normalizados.</li>
+<li>Guardar entrada, saída e relatório em <code>dados/avaliacao/M2.1/</code> e <code>M2.2/</code>.</li>
+</ol>
+<p><strong>M2.3 (serviços web)</strong></p>
+<ol>
+<li>Habilitar serviços web e o protocolo <abbr title="Representational State Transfer">REST</abbr>. Criar o serviço externo com as <strong>6 funções</strong> da Fase 2, o usuário de integração e o token.</li>
+<li>Chamar cada função com parâmetros conhecidos e salvar a resposta JSON em <code>dados/avaliacao/M2.3/</code>.</li>
+<li>Conta como sucesso: HTTP 200, sem campo <code>exception</code> e valores iguais aos da interface. <strong>O token nunca é versionado</strong>; usar variável de ambiente e remover o valor dos arquivos salvos.</li>
+</ol>
+<p><strong>M2.4 (coexistência)</strong></p>
+<ol>
+<li>Criar as 3 entidades vizinhas: aplicação estática em outro <em>virtual host</em>, banco de outra aplicação no mesmo PostgreSQL e tarefa agendada de outro usuário.</li>
+<li>Registrar o estado de referência: <em>hash</em> do conteúdo da aplicação (E1), <em>checksum</em> das tabelas (E2) e horário esperado da execução (E3).</li>
+<li>Executar as 4 operações (instalação, cron, backup de curso, atualização). Antes, durante e depois de cada uma, repetir as verificações e registrar em <code>verificacoes.csv</code>.</li>
+<li>Uma verificação falha marca a entidade como afetada.</li>
+</ol>
+<h3 id="g3-flexibilidade-m31-a-m35">G3 – Flexibilidade (M3.1 a M3.5)<a class="headerlink" href="#g3-flexibilidade-m31-a-m35" title="Permanent link">&para;</a></h3>
+<p><strong>M3.1 (ambientes de acesso)</strong></p>
+<ol>
+<li>Em cada ambiente A1 a A4, abrir sessão limpa e executar T02, T03, T04, T05, T06, T08, T09 e T11, com as mesmas contas.</li>
+<li>Registrar versão do sistema e do navegador, resultado (igual ao de A1 ou diferente) e captura de tela. Reportar o <strong>menor</strong> valor entre os quatro.</li>
+</ol>
+<p><strong>M3.2 (versões de PHP)</strong></p>
+<ol>
+<li>Montar duas instâncias idênticas, uma com PHP 8.3 e outra com 8.4. Abrir a página "Verificação de ambiente" do Moodle e guardar a captura.</li>
+<li>Executar T01 a T12 nas duas, usando o mesmo formulário de M1.1. Reportar o <strong>menor</strong> valor.</li>
+</ol>
+<p><strong>M3.3, M3.4 e M3.5 (instalação, tempo e preservação)</strong></p>
+<ol>
+<li>Para cada uma das <strong>6 execuções</strong> (3 instalações limpas, 3 atualizações 4.5 → 5.3), criar uma VM nova a partir da imagem-base.</li>
+<li>Iniciar o registro com <code>script</code> (log e tempos). O relógio de M3.4 começa no primeiro comando do procedimento, <strong>com o código já baixado</strong>.</li>
+<li>Seguir somente a página oficial de instalação ou atualização da 5.3. Cada passo extra e cada passo repetido por falha é anotado.</li>
+<li>A execução termina no <strong>primeiro login do administrador</strong>. Conta como sucesso se a verificação de ambiente passou sem erro, o login funcionou e não houve passo fora da documentação.</li>
+<li>Nas 3 atualizações, antes de atualizar: popular a 4.5 com a massa de dados e rodar as consultas de M3.5. Depois da atualização, repetir as consultas e a exportação de notas e comparar os <strong>40 itens</strong> da lista congelada.</li>
+<li>Um segundo integrante executa ao menos uma das três repetições de M3.3.</li>
+</ol>
+<h3 id="preparacao-do-julgamento-fase-4">Preparação do julgamento (Fase 4)<a class="headerlink" href="#preparacao-do-julgamento-fase-4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Calcular cada métrica na planilha de cálculos e aplicar os níveis de pontuação da Fase 2.</li>
+<li>Aplicar as regras métrica → questão → objetivo, e comparar com as hipóteses H1.1 a H3.4 (confirmada ou refutada).</li>
+<li>Escolher a <strong>ação de melhoria (D4)</strong> entre os resultados com nota 1 ou 2, de acordo com o tipo de problema encontrado: protótipo (fluxo), alteração de código (falha técnica objetiva), modelo técnico (documentação frágil) ou processo (problema recorrente). A justificativa cita a métrica e a evidência.</li>
+</ol>
+<h2 id="4-piloto-e-congelamento">4. Piloto e congelamento<a class="headerlink" href="#4-piloto-e-congelamento" title="Permanent link">&para;</a></h2>
+<p>Antes da coleta oficial, uma <strong>execução piloto</strong> de instalação limpa calibra o que a Fase 2 deixou em aberto.</p>
+<table>
+<thead>
+<tr>
+<th>O que o piloto resolve</th>
+<th>Resultado esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Limites de tempo de M3.4 (valores candidatos)</td>
+<td>Limites confirmados ou ajustados, <strong>congelados em ata</strong> antes da primeira execução oficial</td>
+</tr>
+<tr>
+<td>Lista dos 40 itens de M3.5</td>
+<td>Lista final em <code>dados/avaliacao/M3.5/itens.csv</code></td>
+</tr>
+<tr>
+<td>Clareza dos roteiros</td>
+<td>Passos ambíguos reescritos neste plano</td>
+</tr>
+<tr>
+<td>Tempo real por métrica</td>
+<td>Cronograma corrigido</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 7. Finalidade do piloto. Fonte: elaboração própria.</p>
+
+<p>O piloto <strong>não</strong> entra no cálculo das métricas. Depois do congelamento, qualquer mudança em critério ou limite é registrada em ata com o motivo.</p>
+<h2 id="5-registro-e-rastreabilidade">5. Registro e rastreabilidade<a class="headerlink" href="#5-registro-e-rastreabilidade" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>dados/avaliacao/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── M1.1/execucoes.csv         # também usado por M1.3 e M3.2
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── M1.2/oraculo.csv
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── M2.1/referencia/           # arquivos de entrada congelados
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── M2.1/ M2.2/ M2.3/ M2.4/
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── M3.1/ M3.2/ M3.3/ M3.4/ M3.5/
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── calculos.csv               # valores, notas e julgamento
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>└── evidencias/                # capturas, logs, vídeos (nome = ID do caso)
+</code></pre></div>
+<ul>
+<li>Nome de evidência: <code>&lt;métrica&gt;_&lt;caso&gt;_&lt;AAAA-MM-DD&gt;_&lt;iniciais&gt;.png</code>.</li>
+<li>Toda linha de CSV aponta para o arquivo de evidência correspondente (critério F4-C2: ligação direta entre dado bruto e métrica).</li>
+<li>Gravações de tela, quando feitas, mostram só dados fictícios.</li>
+</ul>
+<h2 id="6-cronograma">6. Cronograma<a class="headerlink" href="#6-cronograma" title="Permanent link">&para;</a></h2>
+<p>A data da Entrega 2 vem do cronograma publicado no Aprender 3 e <strong>não está nos documentos do repositório</strong> <em>[confirmar]</em>. Abaixo, uma proposta em semanas a partir de 11/11/2026, que deve ser ajustada à data real.</p>
+<table>
+<thead>
+<tr>
+<th>Semana</th>
+<th>Atividade</th>
+<th>Saída</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1 (11–16/11)</td>
+<td>Revisão e aprovação deste plano em ata; criar a imagem-base da VM; escrever <code>gera_massa.py</code> e <code>compara_registros.py</code></td>
+<td>Plano aprovado; VM e scripts prontos</td>
+</tr>
+<tr>
+<td>S2 (17–23/11)</td>
+<td>Piloto de instalação; congelar limites de M3.4 e lista de M3.5; conferir o oráculo</td>
+<td>Atas de congelamento</td>
+</tr>
+<tr>
+<td>S3 (24–30/11)</td>
+<td>Coleta de G1 e G2 (instância limpa 5.3; formatos; <abbr title="Representational State Transfer">REST</abbr>; vizinhança)</td>
+<td>CSVs de M1.x e M2.x</td>
+</tr>
+<tr>
+<td>S4 (1–7/12)</td>
+<td>Coleta de G3 (6 execuções, PHP 8.3/8.4, ambientes A1–A4)</td>
+<td>CSVs de M3.x</td>
+</tr>
+<tr>
+<td>S5 (8–14/12)</td>
+<td>Cálculo, julgamento, ação de melhoria e 2ª versão do artigo</td>
+<td>Resultados e conclusão</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 8. Proposta de cronograma. Datas a confirmar com o cronograma da disciplina. Fonte: elaboração própria.</p>
+
+<p>As 6 execuções de G3 são o trecho mais demorado e <strong>não podem ficar para a última semana</strong>. Se a E2 for antes do previsto, a ordem de corte é: reduzir de 3 para 2 repetições de M3.3 <strong>apenas com registro em ata</strong> da perda de poder estatístico, e nunca pular o piloto.</p>
+<h2 id="7-papeis-proposta">7. Papéis (proposta)<a class="headerlink" href="#7-papeis-proposta" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Integrante</th>
+<th>Papel na Fase 3 e na Fase 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bernardo Broetto Brun</td>
+<td>Roteiro e coleta de G1; conferência cruzada de G2</td>
+</tr>
+<tr>
+<td>Carlos Eduardo Deusdara Motta</td>
+<td>Roteiro e coleta de G2; scripts de comparação e vizinhança; atas</td>
+</tr>
+<tr>
+<td>João Pedro Sampaio Maciel</td>
+<td>Massa de dados e oráculo; ambientes A1–A4 e M3.1; rastreabilidade plano ↔ Fase 2</td>
+</tr>
+<tr>
+<td>Maykon Junio dos Santos Soares</td>
+<td>Imagem-base da VM; <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>; consolidação do artigo e da GitPage</td>
+</tr>
+<tr>
+<td>Pedro Goncalves Rocha</td>
+<td>Roteiro e coleta de G3 (M3.2 a M3.5); congelamento dos limites de M3.4</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 9. Proposta de papéis. A confirmar na reunião, com um responsável por issue. Fonte: elaboração própria.</p>
+
+<h2 id="8-riscos">8. Riscos<a class="headerlink" href="#8-riscos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Risco</th>
+<th>Efeito</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Máquina de algum integrante não roda a VM</td>
+<td>Atraso em G3</td>
+<td>Escolher dois integrantes executores da VM; os demais revisam</td>
+</tr>
+<tr>
+<td>Instalação falha por erro do avaliador e não do produto</td>
+<td>Nota injusta em M3.3</td>
+<td>R5 e R6: repetir com o segundo integrante antes de julgar</td>
+</tr>
+<tr>
+<td>Instalação 4.5 → 5.3 exige passo não documentado</td>
+<td>Sucesso zero em M3.3 para atualização</td>
+<td>É resultado válido, não erro: registrar o passo e julgar pelo critério da Fase 2</td>
+</tr>
+<tr>
+<td>Dispositivo Android indisponível</td>
+<td>M3.1 incompleto</td>
+<td>Usar emulador somente se registrado em ata como desvio</td>
+</tr>
+<tr>
+<td>Horas não lançadas</td>
+<td>R/E e custo continuam zerados no <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></td>
+<td>Lançar horas ao fechar cada issue (decisão de gestão da E1)</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 10. Riscos do plano. Fonte: elaboração própria.</p>
+
+<h2 id="9-consistencia-com-a-fase-2">9. Consistência com a Fase 2<a class="headerlink" href="#9-consistencia-com-a-fase-2" title="Permanent link">&para;</a></h2>
+<p>Cada uma das 12 métricas da Fase 2 aparece abaixo com método, recursos principais, evidência e semana de coleta. Os responsáveis estão na <a href="#7-papeis-proposta">seção 7</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Método (seção 3)</th>
+<th>Recursos principais</th>
+<th>Evidência</th>
+<th>Semana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1.1</td>
+<td>Execução T01–T12</td>
+<td>Instância 5.3, contas fictícias</td>
+<td><code>M1.1/execucoes.csv</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M1.2</td>
+<td>Casos do oráculo</td>
+<td>Oráculo, questionário e livro de notas</td>
+<td><code>M1.2/oraculo.csv</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M1.3</td>
+<td>Mesma execução de M1.1</td>
+<td>Documentação oficial</td>
+<td><code>M1.1/execucoes.csv</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M2.1</td>
+<td>7 formatos</td>
+<td>LibreOffice, Thunderbird, 2ª instância</td>
+<td><code>M2.1/</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M2.2</td>
+<td>Comparação campo a campo</td>
+<td><code>compara_registros.py</code></td>
+<td><code>M2.2/</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M2.3</td>
+<td>6 funções <abbr title="Representational State Transfer">REST</abbr></td>
+<td><code>curl</code>/Python, token</td>
+<td><code>M2.3/</code></td>
+<td>S3</td>
+</tr>
+<tr>
+<td>M2.4</td>
+<td>3 entidades × 4 operações</td>
+<td>Apache, PostgreSQL, <code>cron</code></td>
+<td><code>M2.4/verificacoes.csv</code></td>
+<td>S3–S4</td>
+</tr>
+<tr>
+<td>M3.1</td>
+<td>8 tarefas × A1–A4</td>
+<td>4 ambientes de acesso</td>
+<td><code>M3.1/</code></td>
+<td>S4</td>
+</tr>
+<tr>
+<td>M3.2</td>
+<td>T01–T12 × PHP 8.3/8.4</td>
+<td>2 instâncias</td>
+<td><code>M3.2/</code></td>
+<td>S4</td>
+</tr>
+<tr>
+<td>M3.3</td>
+<td>6 execuções</td>
+<td>VM da imagem-base, <code>script</code></td>
+<td><code>M3.3/execucoes.csv</code></td>
+<td>S4</td>
+</tr>
+<tr>
+<td>M3.4</td>
+<td>Tempos das mesmas 6</td>
+<td>Log com tempos</td>
+<td><code>M3.4/</code></td>
+<td>S4</td>
+</tr>
+<tr>
+<td>M3.5</td>
+<td>40 itens antes/depois</td>
+<td>Consultas SQL, massa de dados</td>
+<td><code>M3.5/</code></td>
+<td>S4</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 11. Rastreabilidade entre as métricas da Fase 2 e o plano da Fase 3. Fonte: elaboração própria.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../../fase-2/rastreabilidade/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Rastreabilidade Fase 1 → Fase 2">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Rastreabilidade Fase 1 → Fase 2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../fases-3-4/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Fases 3 e 4">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Fases 3 e 4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 1 | Versão 1.1 · 26/10/2026
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "search.highlight", "search.suggest", "search.share", "content.action.edit", "content.tabs.link", "content.tooltips", "content.code.copy", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../javascripts/marlyn.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>

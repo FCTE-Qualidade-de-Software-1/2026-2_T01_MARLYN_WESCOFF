@@ -14,6 +14,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nConferir no repositório, antes da entrega, e marcar **apenas** o que estiver verificado.\n\n**Requisito da especificação (Seção 2)**\n- [ ] As três categorias têm ao menos uma medida especificada e medida\n- [ ] As evidências estão no repositório (commits, issues, milestones, dashboard)\n- [ ] Medições, interpretação e decisões de gestão estão registradas\n\n**Conformidade PSM**\n- [ ] Cada medida tem o construto completo\n- [ ] Os critérios de decisão foram definidos antes da análise\n- [ ] Há ao menos uma medida derivada por categoria\n- [ ] A terminologia CID foi adaptada e a adaptação está documentada\n\n**Rastreabilidade**\n- [ ] Todo gráfico rastreia até um CSV versionado\n- [ ] Todo CSV consolidado é gerado por script reexecutável\n- [ ] Os dados reconstruídos estão marcados como tal\n- [ ] `validar_dados.py` roda sem erros\n\n**Rubrica**\n- [ ] GitPage atualizada, com versão e data no rodapé e links funcionais (F2-C10, AG-C4)\n- [ ] Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2)\n- [ ] Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5)\n- [ ] Declaração de uso de IA específica (AG-C3)\n- [ ] Sem emojis, ícones ou figurinhas no conteúdo\n- [ ] Coerência com as Fases 1 e 2 já entregues (F2-C11)\n\n**Depende de:** #29, #30, #31\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Todos os itens acima verificados, ou pendências registradas como issue\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:08:16Z",
@@ -29,13 +30,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 32,
   "state": "OPEN",
@@ -56,6 +69,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nManter a declaração de uso de IA (critérios AG-C3 e F2-C9) para todo o trabalho de gestão PSM/CID: ferramenta, tarefa específica e como a equipe conferiu e ajustou o resultado.\n\nDecidir se ela fica em `docs/metricas/DECLARACAO-IA.md` ou se continua concentrada em `docs/sobre/uso-de-ia.md`, a página já publicada e citada no Apêndice B do artigo. A recomendação é uma única declaração, para evitar divergência. Cada integrante informa o que usou nas suas issues.\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Declaração atualizada com todas as tarefas da gestão PSM/CID\n- [ ] Coerente com o Apêndice B do artigo\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:08:13Z",
@@ -71,13 +85,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 31,
   "state": "OPEN",
@@ -98,6 +124,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nProduzir `docs/metricas/04-texto-artigo.md`, pronto para transpor ao LaTeX (modelo SBC, limite de 15 páginas, então **enxuto**), e transpor para `artigo/main.tex`:\n\n1. **Metodologia (1 a 1,5 página):** modelo PSM/CID adotado, adaptação da terminologia, as três categorias e uma tabela compacta \"Categoria -> Necessidade de informação -> Medida -> Indicador -> Critério de decisão\".\n2. **Resultados (cerca de 1 página):** 2 ou 3 figuras (sugestão: A2, B1 e C2) e a tabela-resumo das decisões de gestão.\n3. **Ameaças à validade:** dados reconstruídos, viés de autoapontamento de horas, commit como proxy de esforço e amostra pequena de iterações.\n4. **Apêndice:** Tabela de Contribuição derivada de C2, totalizando 100%. Ela não conta no limite de páginas.\n\nAs figuras são citadas no texto (\"ver Figura 3\"), e o PSM CID Framework v2.1 entra nas referências.\n\nAtenção: `artigo/main.tex`, linha 121, diz que \"a integração na main é feita por pull request revisado por outro integrante\". Ajustar o texto ao fluxo que a equipe realmente usa.\n\n**Depende de:** #28, #26\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] `04-texto-artigo.md` escrito\n- [ ] Seções transpostas para `main.tex`, compilando e dentro de 15 páginas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:08:10Z",
@@ -113,13 +140,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 30,
   "state": "OPEN",
@@ -140,6 +179,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nA GitPage é avaliada em três critérios (F2-C10, F3-C7 e AG-C4). Garantir:\n\n- Seção \"Gestão do Projeto - Métricas PSM/CID\" no menu principal (`mkdocs.yml`), integrando ou substituindo as páginas atuais de `docs/gestao/`, sem conteúdo duplicado.\n- Narrativa para leitor externo: objetivo da medição -> medidas -> indicadores -> decisões.\n- Links funcionando para o repositório, as releases e tags, os CSVs e os scripts.\n- Rodapé com versão e data da última atualização (o `copyright` do `mkdocs.yml` ainda diz \"Entrega 1 | Versão 1.1 · 26/10/2026\").\n- Links cruzados entre as páginas das Fases 1 a 4 e a página de métricas.\n- Sem emojis, ícones ou figurinhas.\n\n**Depende de:** #27, #28\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Seção no menu, com narrativa e links cruzados\n- [ ] `mkdocs build --strict` sem avisos\n- [ ] Rodapé com versão e data atualizadas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:08:04Z",
@@ -155,13 +195,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 29,
   "state": "OPEN",
@@ -182,7 +234,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nÉ a etapa que a especificação cobra textualmente: \"registrar as medições, sua interpretação e as decisões de gestão decorrentes dos resultados\". Criar `docs/metricas/03-registro-de-decisoes.md`, com uma entrada por decisão:\n\n```markdown\n### DG-01 - <título curto da decisão>\n\n- **Data:** AAAA-MM-DD\n- **Medida/indicador que disparou:** <ex.: A2 - Comprometido vs. Concluído, semana 3>\n- **Valor observado x critério:** <ex.: 62% concluído, contra limiar de 90%>\n- **Interpretação:** <causa, não sintoma>\n- **Decisão tomada:** <ação concreta>\n- **Responsável e prazo:** <membro, data>\n- **Evidência da execução:** <link para issue, commit, PR ou ata>\n- **Efeito observado posteriormente:** <preencher na revisão seguinte, com o dado>\n```\n\nMetas:\n\n- Pelo menos **5 decisões**, cobrindo as três categorias.\n- Pelo menos **2 decisões com efeito posterior verificado por dado**.\n- Decisões concretas. \"Redistribuímos as issues #X e #Y de A para B\" vale; \"a equipe vai se esforçar mais\" não vale.\n\nPontos de partida que já existem:\n\n- As decisões de 26/10 em `docs/gestao/registro-medicoes.md`: abrir as issues no início da sprint e lançar as horas ao fechar.\n- A retrospectiva da E1, que está na raiz: C2 \"definir um integrante responsável por liderar\" e C3 \"dividir as responsabilidades em sprints\". Mover o PDF para `atas/` com um nome sem espaços, registrar quem foi definido como líder e citar a retrospectiva como evidência.\n- Os retratos de 02/11 e 09/11, sem nenhum progresso: interpretar e decidir.\n\n**Depende de:** #25\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Pelo menos 5 decisões nas três categorias\n- [ ] Pelo menos 2 com efeito verificado por dado\n- [ ] Retrospectiva movida para `atas/` e referenciada\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T03:05:07Z",
   "comments": [],
   "createdAt": "2026-11-11T01:08:01Z",
   "labels": [
@@ -197,16 +250,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 28,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 6] Registro das decisões de gestão"
  },
  {
@@ -224,6 +289,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nCriar `docs/metricas/dashboard.md`, publicado na GitPage, com:\n\n- uma tabela-resumo: medida | valor atual | limiar de decisão | situação (dentro ou fora) | última atualização;\n- os gráficos agrupados pelas três categorias (Calendário e Progresso, Desempenho dos Processos, Recursos e Custos), numerados, com legenda e fonte;\n- links para os CSVs e para os scripts que os geraram.\n\nSe a tabela-resumo puder ser gerada pelo script, melhor, porque assim não depende de edição manual.\n\n**Depende de:** #26\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Dashboard publicado e linkado no menu\n- [ ] Tabela-resumo coerente com os consolidados\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:07:56Z",
@@ -239,13 +305,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 27,
   "state": "OPEN",
@@ -266,6 +344,7 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\nCriar `scripts/gerar_graficos.py`: consolidados -> figuras em `docs/metricas/graficos/`. No mínimo um indicador por medida obrigatória: A1, A2, A3, B1, B2, C1, C2 e C3.\n\nRegras de apresentação (AG-C2):\n\n- Título, eixos rotulados com unidade, legenda e nota de fonte: `Fonte: elaborado pelos autores a partir de <arquivo>.csv, extraído em <data>`.\n- SVG ou PNG com pelo menos 150 dpi, nomeados `fig-<id-medida>-<nome>.svg`.\n- Paleta consistente entre todos os gráficos, sem depender só de cor para distinguir séries.\n- Linhas verticais dos marcos (E1, PC1, E2) nos gráficos temporais.\n- Sem emojis ou ícones.\n\n**Depende de:** #25\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Figuras das 8 medidas obrigatórias geradas pelo script\n- [ ] Todas com título, eixos, legenda e fonte\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
   "closedAt": null,
   "comments": [],
   "createdAt": "2026-11-11T01:07:45Z",
@@ -281,13 +360,25 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 26,
   "state": "OPEN",
@@ -308,7 +399,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nTransformar os brutos nos CSVs consolidados de `docs/metricas/dados/consolidados/`, aplicando as fórmulas dos construtos da Etapa 3. Os consolidados **nunca** são editados à mão.\n\nSaídas de `consolidar_metricas.py`:\n\n- `progresso_diario.csv` (A1), `comprometido_concluido.csv` (A2), `fluxo_estados.csv` (A3)\n- `cycle_time.csv` (B1), `velocidade.csv` (B2), `retrabalho.csv` (B4)\n- `esforco_consolidado.csv` (C1, C3), `contribuicao.csv` (C2)\n\n`validar_dados.py` deve checar:\n\n- datas invertidas e issues fechadas antes de criadas;\n- membros fora da lista oficial (`docs/sobre/equipe.md`);\n- soma de percentuais diferente de 100;\n- linhas de `esforco.csv` sem `tipo_registro`.\n\nRequisitos: idempotentes, `--data-ref`, cabeçalho comentado com a medida de cada função. Decidir se `psm_coleta.py` é incorporado ou mantido, e registrar a decisão.\n\n**Depende de:** #24, #21, #22, #23\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n5\n\n### Critério de pronto\n\n- [ ] Todos os consolidados gerados por script\n- [ ] `validar_dados.py` roda sem erros\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T03:04:49Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:43Z",
   "labels": [
@@ -323,16 +415,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 25,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 4] consolidar_metricas.py e validar_dados.py"
  },
  {
@@ -350,7 +454,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nAutomatizar a extração da Etapa 1 em `scripts/`, em Python, como o `scripts/psm_coleta.py` que já existe.\n\n| Script | Responsabilidade |\n|---|---|\n| `extrair_git.py` | `git log` -> `brutos/commits.csv` (sha, autor canônico via `.mailmap`, data, arquivos, linhas +/-) |\n| `extrair_issues.py` | API do GitHub -> `issues.json`, `issue_events.json`, `prs.json`, `milestones.json` e tabelas normalizadas |\n\nRequisitos:\n\n- Idempotentes, com `--data-ref` para fixar a data de corte.\n- Cabeçalho comentado indicando qual medida (A1 a C3) cada função atende.\n- Cada CSV gerado inclui `fonte`, `data_extracao` e `comando_ou_query`.\n- Reaproveitar a paginação e o uso do `GITHUB_TOKEN` de `psm_coleta.py`.\n- Atualizar o workflow `.github/workflows/psm-coleta.yml` para rodar a nova extração. Commits feitos com `GITHUB_TOKEN` não disparam o deploy da GitPage; avaliar se o workflow deve chamar o deploy.\n\n**Depende de:** #16\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Os dois scripts rodam do zero e geram os brutos\n- [ ] `--data-ref` funciona e rodar duas vezes gera o mesmo resultado\n- [ ] Workflow atualizado\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T03:04:29Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:39Z",
   "labels": [
@@ -365,16 +470,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 24,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 4] Scripts de extração: extrair_git.py e extrair_issues.py"
  },
  {
@@ -392,7 +509,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nPreencher em `docs/metricas/02-construtos-de-medicao.md` a parte de Recursos e Custos, com o template completo do modelo de informação.\n\n| ID | Medida | Medidas e fórmulas | Indicador | Critério de decisão |\n|---|---|---|---|---|\n| C1 | Esforço da equipe (obrigatória) | Horas apontadas por membro, data, fase e tipo; total, por fase, por membro, % por membro | Barras empilhadas por fase + distribuição por membro | Desequilíbrio acima de +/-30% da média por membro: redistribuir; fase acima de 20% do previsto: reavaliar o escopo das seguintes |\n| C2 | Distribuição de contribuição (obrigatória, alimenta a Tabela de Contribuição, AG-C5) | Por membro: commits, linhas alteradas, issues fechadas, revisões de PR, horas; % por dimensão (soma 100%) | Tabela multidimensional + barras | Divergência grande entre dimensões deve ser explicada, não escondida |\n| C3 | Estimado x real (obrigatória) | Acurácia = real / estimado; erro percentual médio; prazo estimado x real | Dispersão com linha de 45 graus ou barras pareadas por fase | Acurácia fora de 0,85 a 1,25: recalibrar as estimativas das fases seguintes com o fator observado (PSM CID, 9.2) |\n\nPontos de atenção:\n\n- Número de commits sozinho é uma medida ruim de contribuição. Declarar essa limitação e usar a visão multidimensional.\n- O custo é declarado em **homem-hora** como medida primária. A monetização é opcional e usa a premissa já adotada em `docs/gestao/plano-psm.md`: R$ 15,00/h, explicitada no texto.\n- A fonte é `esforco.csv`, triangulado com commits e issues fechadas por membro.\n\nBase existente: a seção 2 de `docs/gestao/plano-psm.md` (esforço estimado x realizado).\n\n**Depende de:** #17\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] C1 a C3 com o template completo e limiares declarados\n- [ ] Limitações de commits como proxy e de horas reconstruídas declaradas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T03:04:10Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:35Z",
   "labels": [
@@ -407,16 +525,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 23,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Recursos e Custos (C1 a C3)"
  },
  {
@@ -424,7 +554,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -434,7 +564,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nPreencher em `docs/metricas/02-construtos-de-medicao.md` a parte de Desempenho dos Processos, com o template completo do modelo de informação. Ver a issue de Calendário e Progresso para a lista de campos.\n\n| ID | Medida | Medidas e fórmulas | Indicador | Critério de decisão | PSM CID |\n|---|---|---|---|---|---|\n| B1 | Cycle time e lead time (obrigatória) | Início = primeiro movimento para \"Em Progresso\" (na falta, a criação); CT = conclusão - início + 1; lead time a partir da criação; mediana, P80 e P90 | Histograma com linhas de percentil | Investigar outlier acima da média em mais de 10%; CT crescente: reduzir WIP e o tamanho das tarefas | 8.5 |\n| B2 | Velocidade e aceleração (obrigatória) | V média = concluídos / iterações (média móvel de 3 a 4); aceleração = (V atual - V ref) / V ref; iterações restantes = backlog / V média | Barras por semana + média móvel | Variação de +/-10%: analisar na retrospectiva; usar a projeção para justificar decisões de escopo | 8.10 |\n| B3 | Frequência de entregas (complementar) | Duração das releases; frequência = releases / período | Linha do tempo de tags x marcos | Intervalo maior que o planejado indica pico de véspera. Analisar sem maquiar | 8.9 |\n| B4 | Retrabalho e não conformidades (complementar) | Reabertas; contidas (revisão interna); escapadas (apontadas no ponto de controle); taxa de escape = escapadas / (contidas + escapadas) | Barras contidas x escapadas por entrega | A taxa de escape deve cair entre E1 e E2; se não cair, reforçar a revisão por pares | 8.6 |\n\nPara B4, definir **como** as não conformidades serão registradas: label `retrabalho`, issue por apontamento da professora no ponto de controle, comentário de revisão.\n\nBase existente: a seção 3 de `docs/gestao/plano-psm.md` (tempo de ciclo).\n\n**Depende de:** #17\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] B1 a B4 com o template completo e limiares declarados\n- [ ] Procedimento de registro das não conformidades definido\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:38Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:27Z",
   "labels": [
@@ -449,16 +580,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 22,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Desempenho dos Processos (B1 a B4)"
  },
  {
@@ -466,7 +609,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -476,7 +619,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nCriar `docs/metricas/02-construtos-de-medicao.md` e preencher a parte de Calendário e Progresso. Cada medida usa o template completo do modelo de informação (PSM/ISO 15939): necessidade de informação, conceito mensurável, entidades, atributos, medidas básicas, método, tipo de método, escala, unidade, função, medida derivada, modelo de análise, indicador, critérios de decisão, procedimentos de coleta e de análise.\n\nO documento também precisa de:\n\n- **Objetivo de medição:** acompanhar a execução do projeto de avaliação quanto a progresso, eficiência de processo e consumo de recursos, para permitir decisões de gestão tempestivas que assegurem as entregas nos marcos da disciplina.\n- **Tabela de adaptação da terminologia CID** (critério F2-C12): Capability/Epic = fase do processo de avaliação; Feature = produto de trabalho; Story = issue; Task = item de checklist da issue; Sprint = semana de trabalho; Release = tag de entrega (E1, PC1, E2, Apresentação); Backlog = issues abertas sem marco; Defeito = não conformidade em revisão interna ou no ponto de controle; Retrabalho = issue reaberta ou produto revisado após crítica.\n- **Definição de \"pronto\"** usada para contar um item como concluído.\n\nMedidas (os limiares precisam ser declarados **antes** da análise):\n\n| ID | Medida | Indicador | Critério de decisão | PSM CID |\n|---|---|---|---|---|\n| A1 | Burndown da entrega (obrigatória) | Trabalho aberto x linha ideal, por marco | Desvio > 5%: análise na reunião seguinte; > 10%: replanejar escopo ou realocar | Parte 2, 8.2 |\n| A2 | Comprometido x concluído (obrigatória) | Colunas por semana + linha de % acumulado | Diferença > 5%: investigar a causa; > 10%: ação corretiva | 8.3 |\n| A3 | Fluxo cumulativo (obrigatória) | Áreas empilhadas por estado; WIP, throughput, CT = WIP/TH (Lei de Little) | Variação > 10% na largura ou inclinação de uma faixa: causa-raiz | 8.4 |\n| A4 | Conclusão de marcos (complementar) | Tabela planejado x real | Qualquer desvio positivo exige registro de decisão | ICM linha 1 |\n\nBase existente: a seção 1 de `docs/gestao/plano-psm.md` (planejado x concluído) já tem um construto que pode ser ampliado.\n\n**Depende de:** #17\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Objetivo de medição, tabela de terminologia e definição de pronto escritos\n- [ ] A1 a A4 com o template completo e limiares declarados\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:36Z",
   "comments": [],
   "createdAt": "2026-11-11T01:07:23Z",
   "labels": [
@@ -491,16 +635,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 21,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 3] Construtos de Calendário e Progresso (A1 a A4) e adaptação da terminologia CID"
  },
  {
@@ -508,7 +664,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -518,7 +674,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nCriar `docs/metricas/dados/brutos/esforco.csv`, **único arquivo de preenchimento manual**, e organizar a reconstrução das horas da E1.\n\nFormato:\n\n```csv\ndata,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao\n2026-10-08,<membro>,1,reuniao,#12,1.5,registrado,Definição de características de qualidade\n2026-10-09,<membro>,1,documentacao,#15,2.0,reconstruido,Estimado na retrospectiva de 20/10\n```\n\n- `tipo_atividade`: `reuniao | pesquisa | documentacao | coleta | analise | artigo | gestao | revisao`\n- `tipo_registro`: `registrado` (anotado no dia) ou `reconstruido` (estimado depois, em consenso da equipe)\n\nPassos:\n\n1. Migrar as atividades já listadas em `dados/gestao/horas.csv`, que tem as horas em branco.\n2. Marcar uma reunião curta em que cada integrante reconstrói as próprias horas da E1. Tudo da E1 entra como `reconstruido`, e essa limitação vai para as ameaças à validade.\n3. A partir daqui, cada um registra as horas no dia (`registrado`), ao concluir cada sessão de trabalho.\n4. Decidir com quem cuida dos scripts (Etapa 4) se `horas.csv` é descontinuado e se `scripts/psm_coleta.py` passa a ler `esforco.csv`.\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] `esforco.csv` criado e versionado\n- [ ] Horas da E1 reconstruídas por todos os integrantes e marcadas como `reconstruido`\n- [ ] Regra de registro diário combinada e documentada no README de `dados/`\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:34Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:53Z",
   "labels": [
@@ -533,16 +690,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 20,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Apontamento de esforço (esforco.csv) e horas da E1"
  },
  {
@@ -550,7 +719,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -560,8 +729,24 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
-  "comments": [],
+  "body": "### Descrição\n\nCriar um GitHub Project para o repositório com as colunas `Backlog -> A Fazer -> Em Progresso -> Em Revisão -> Concluído`. Ele é a fonte do fluxo cumulativo (A3) e do início real do tempo de ciclo (B1).\n\n- Adicionar todas as issues abertas, com o estado correto.\n- Combinar com a equipe: toda issue passa por \"Em Progresso\" quando alguém começa a trabalhar nela, e não só quando fecha.\n- Registrar no diagnóstico que o histórico de estados começa na data de criação do board. Antes dela, o fluxo cumulativo usa só \"criada -> fechada\".\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Board criado, ligado ao repositório e com as issues abertas\n- [ ] Regra de movimentação combinada e registrada (ata ou diagnóstico)\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:32Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABlGH9YQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Quadro criado: https://github.com/users/cadumotta/projects/1\n\n- **Estados (campo Status):** Backlog -> A Fazer -> Em Progresso -> Em Revisão -> Concluído.\n- **Campo \"Iteração\":** semanal, de segunda a domingo, com as semanas 2026-W46 a W49.\n- **Issues:** as 32 do repositório estão no quadro.\n  - #1 a #14: Concluído.\n  - Issues com PR aberto (#16, #17, #18, #21, #22) e a #19: Em Revisão.\n  - #15 e #20: Em Progresso.\n  - As demais: Backlog.\n- **Regra de movimentação:** está no README do quadro. Em especial, a issue vai para \"Em Progresso\" quando alguém começa o trabalho, e não só quando fecha.\n- **Diagnóstico:** a criação foi registrada na tabela de ações de instrumentação do PR #36.\n\n**Por que o quadro está na conta do Carlos:** a organização da disciplina não permite que integrantes criem projetos (a API devolve `FORBIDDEN`), e projetos de usuário não podem ser vinculados a um repositório de organização. Por isso, o quadro não aparece na aba Projects do repositório; o link fica aqui e no diagnóstico.\n\nFalta, antes de fechar:\n\n- [ ] Dar acesso de edição ao Pedro e ao Bernardo (Settings do projeto -> Manage access) e deixar o quadro visível para a docente\n- [ ] Ativar nos Workflows do projeto: \"Item closed\" e \"Pull request merged\" -> Concluído, e \"Item added\" -> Backlog\n- [ ] @pedrogrocha13 conferir o quadro e fechar esta issue\n",
+    "createdAt": "2026-11-11T01:37:15Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/19#issuecomment-6784417121"
+   }
+  ],
   "createdAt": "2026-11-11T01:06:48Z",
   "labels": [
    {
@@ -575,16 +760,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 19,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Project board com os estados do fluxo"
  },
  {
@@ -592,7 +789,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -602,7 +799,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nFazer o retrofit mínimo para o repositório ficar mensurável, **sem reescrever a história**.\n\n- **Labels:** `fase/1`, `fase/2`, `fase/3`, `fase/4`; `tipo/documentacao`, `tipo/coleta`, `tipo/analise`, `tipo/artigo`, `tipo/gestao`; `prioridade/1`, `prioridade/2`, `prioridade/3`; `retrabalho`; `tamanho/P` (=1), `tamanho/M` (=3), `tamanho/G` (=8). Aplicar às issues existentes, inclusive às fechadas #1 a #14.\n- **Milestones:** criar `E1 - 26/10/2026`, `PC1`, `E2` e `Apresentação` com as datas do cronograma da disciplina. Fechar a \"Sprint 2 - Entrega 1\" e vincular as issues aos marcos.\n- **Tags:** a tag `E1` já existe. Conferir se aponta para o commit entregue e criar as tags anotadas que faltarem (`git tag -a <tag> <sha> -m \"...\"`).\n- **.mailmap:** consolidar as identidades de cada integrante a partir de `git shortlog -sne --all`. Commits feitos pela interface web aparecem com e-mail `noreply`.\n\nRegistrar cada ação na seção \"Ações de instrumentação\" do diagnóstico.\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Labels criadas e aplicadas\n- [ ] Milestones das entregas criados, com datas\n- [ ] Tags das entregas conferidas\n- [ ] `.mailmap` versionado e `git shortlog -sne` sem identidades duplicadas\n- [ ] Ações registradas no diagnóstico\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:30Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:46Z",
   "labels": [
@@ -617,16 +815,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 18,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 2] Labels, milestones das entregas, tags e .mailmap"
  },
  {
@@ -634,7 +844,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -644,7 +854,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nEscrever `docs/metricas/01-diagnostico-repositorio.md` com o inventário do que existe de evidência e do que falta, **antes** de definir as medidas.\n\nConteúdo obrigatório:\n\n1. Tabela \"Fonte de dados x disponibilidade x medida que ela habilita\" (commits, issues, eventos, milestones, PRs, releases, board, apontamento de horas, atas).\n2. Lista explícita de **lacunas**. Para cada uma, registrar a decisão: (a) corrigir via retrofit, (b) usar medida substituta ou (c) declarar limitação.\n3. Retrato numérico do repositório na data da análise: período, total de commits, commits por autor e por semana, issues abertas e fechadas, milestones, PRs e tags.\n4. Seção \"Ações de instrumentação\", preenchida com o que for feito nas issues da Etapa 2.\n\nLacunas já identificadas na revisão de 10/11/2026 (conferir e completar):\n\n- `dados/gestao/horas.csv` tem todas as horas e datas em branco, por isso R/E e custo dão 0 em todos os retratos.\n- O repositório não tem nenhum pull request: todos os commits foram direto na `main`. O artigo (`artigo/main.tex`, linha 121) diz que a integração é feita por PR revisado.\n- Não há project board, então não existe histórico de transição de estado.\n- O milestone \"Sprint 1\" citado em `docs/gestao/plano-psm.md` não existe no GitHub. A \"Sprint 2 - Entrega 1\" continua aberta, com prazo vencido.\n- As issues #1 a #14 foram fechadas entre 02:14 e 02:26 de 26/10. O tempo de ciclo de 0,5 dia não representa o trabalho real.\n- Os retratos `psm-2026-10-26-2/3`, `psm-2026-11-02` e `psm-2026-11-09` são idênticos: não houve atividade registrada entre 26/10 e 09/11.\n- A retrospectiva da E1 está na raiz (`RETROSPECTIVA MARLYN WESCOFF.pdf`) e nenhuma página a referencia.\n- As issues não têm labels de fase, tipo ou prioridade.\n\nLacuna é resultado: quando não houver evidência, registrar a lacuna e não preencher com estimativa.\n\n**Depende de:** #16\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Tabela de fontes, lacunas com decisão e retrato numérico preenchidos\n- [ ] Seção \"Ações de instrumentação\" atualizada com as issues da Etapa 2\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:28Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:43Z",
   "labels": [
@@ -659,16 +870,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 17,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 1] Escrever o diagnóstico do repositório"
  },
  {
@@ -676,7 +899,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -686,7 +909,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "### Descrição\n\nGerar a saída crua das ferramentas em `docs/metricas/dados/brutos/`, **sem edição manual**. Esses arquivos são a origem de todos os indicadores.\n\nArquivos esperados:\n\n- `issues.json`, `issue_events.json` (necessário para o fluxo cumulativo e para detectar reaberturas), `prs.json`, `milestones.json`\n- `commits.csv` (sha, autor, data, arquivos, linhas adicionadas e removidas)\n- lista de releases e tags\n\nComandos de apoio:\n\n```bash\ngh issue list --state all --limit 500 --json number,title,state,createdAt,closedAt,labels,assignees,milestone,comments > docs/metricas/dados/brutos/issues.json\ngh pr list --state all --limit 500 --json number,title,state,createdAt,mergedAt,closedAt,reviews,additions,deletions,author > docs/metricas/dados/brutos/prs.json\ngh api repos/:owner/:repo/milestones?state=all > docs/metricas/dados/brutos/milestones.json\ngh api repos/:owner/:repo/issues/events --paginate > docs/metricas/dados/brutos/issue_events.json\ngh release list ; git tag --list --format='%(refname:short) %(creatordate:short)'\ngit log --reverse --date=short --pretty='%ad %an %s'\ngit shortlog -sne --all\ngit log --date=format:'%Y-W%V' --pretty='%ad' | sort | uniq -c\n```\n\nRegra de integridade: todo arquivo tem a origem declarada (`fonte`, `data_extracao`, `comando_ou_query`). Nos JSON, essa informação fica num `README.md` da pasta `brutos/`.\n\nEsta extração manual serve para destravar o diagnóstico. Depois, os scripts da Etapa 4 passam a fazer a extração.\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Arquivos brutos versionados em `docs/metricas/dados/brutos/`\n- [ ] `brutos/README.md` com fonte, data de extração e comando de cada arquivo\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
+  "closedAt": "2026-11-11T02:37:26Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:38Z",
   "labels": [
@@ -701,16 +925,28 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 2,
-   "title": "Gestão PSM/CID - Entrega 2",
-   "description": "Seção 2 da especificação: gestão do projeto com métricas PSM/CID (Etapas 1 a 8).",
-   "dueOn": null
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
   },
   "number": 16,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 1] Extrair os dados brutos do repositório"
  },
  {
@@ -718,7 +954,7 @@
    {
     "id": "U_kgDOB6x8lA",
     "login": "cadumotta",
-    "name": "",
+    "name": null,
     "databaseId": 128744596
    }
   ],
@@ -728,7 +964,8 @@
    "login": "cadumotta",
    "name": ""
   },
-  "closedAt": null,
+  "body": "Acompanhamento da Seção 2 da especificação do trabalho final: **Gestão do Projeto com métricas PSM/CID**.\n\n> Durante a execução do trabalho, a equipe deve aplicar e registrar métricas de acompanhamento do seu projeto baseadas no modelo PSM/CID, nas categorias Desempenho dos Processos, Calendário e Progresso e Recursos e Custos. As evidências devem estar documentadas no repositório Git da equipe, com uso de commits, issues, milestones e dashboards conforme necessário.\n\nO objetivo não é ter métricas bonitas: é demonstrar o ciclo completo do PSM, **necessidade de informação -> medida -> indicador -> interpretação -> decisão de gestão registrada**. Um indicador sem decisão associada não pontua.\n\n## Regras de integridade dos dados\n\n1. Não inventar números. Todo valor de gráfico sai de um arquivo versionado.\n2. Todo dado tem a origem declarada (`fonte`, `data_extracao`, `comando_ou_query`).\n3. Distinguir dado medido de dado reconstruído (`tipo_registro = reconstruido`) e citar a limitação nas ameaças à validade.\n4. Lacuna é resultado: registrar a lacuna em vez de preencher com estimativa.\n5. Toda transformação de dado bruto em indicador fica em script versionado e reexecutável (`scripts/`).\n6. Manter a declaração de uso de IA atualizada.\n\n## Estrutura alvo\n\n```\ndocs/metricas/\n├── 01-diagnostico-repositorio.md\n├── 02-construtos-de-medicao.md\n├── 03-registro-de-decisoes.md\n├── 04-texto-artigo.md\n├── dashboard.md\n├── dados/brutos/        # saída crua; esforco.csv é o único arquivo manual\n├── dados/consolidados/  # gerados por script\n└── graficos/\nscripts/  extrair_git.py, extrair_issues.py, consolidar_metricas.py, gerar_graficos.py, validar_dados.py\n.mailmap\n```\n\nO que já existe e deve ser reaproveitado: `docs/gestao/plano-psm.md` (3 construtos), `docs/gestao/registro-medicoes.md` (interpretação e decisões de 26/10), `scripts/psm_coleta.py`, `dados/gestao/` e `docs/sobre/uso-de-ia.md`.\n\n## Ordem de execução\n\nO trabalho é feito em três blocos seguidos, na ordem das dependências. Cada bloco começa quando o anterior estiver mergeado na `main`.\n\n**Bloco 1 - Carlos (@cadumotta), cerca de 16 h: diagnóstico, instrumentação e construtos A e B**\n\n- [ ] 1. #16 Extrair os dados brutos do repositório (2 h)\n- [ ] 2. #18 Labels, milestones das entregas, tags e .mailmap (2 h)\n- [ ] 3. #19 Project board com os estados do fluxo (1 h)\n- [ ] 4. #20 Apontamento de esforço e horas da E1 (2 h); todos preenchem as próprias horas\n- [ ] 5. #17 Diagnóstico do repositório (3 h)\n- [ ] 6. #21 Construtos de Calendário e Progresso (A1 a A4) e terminologia CID (3 h)\n- [ ] 7. #22 Construtos de Desempenho dos Processos (B1 a B4) (3 h)\n\n**Bloco 2 - Pedro (@pedrogrocha13), cerca de 15 h: construtos C, scripts e decisões**\n\n- [ ] 8. #23 Construtos de Recursos e Custos (C1 a C3) (3 h)\n- [ ] 9. #24 Scripts de extração: extrair_git.py e extrair_issues.py (4 h)\n- [ ] 10. #25 consolidar_metricas.py e validar_dados.py (5 h)\n- [ ] 11. #28 Registro das decisões de gestão (3 h)\n\n**Bloco 3 - Bernardo (@Bercacos), cerca de 14 h: indicadores, publicação e artigo**\n\n- [ ] 12. #26 gerar_graficos.py e figuras dos indicadores (4 h)\n- [ ] 13. #27 Dashboard das métricas (2 h)\n- [ ] 14. #30 Texto da gestão PSM/CID para o artigo (4 h)\n- [ ] 15. #31 Declaração de uso de IA da gestão PSM/CID (1 h)\n- [ ] 16. #29 Publicar a gestão PSM/CID na GitPage (2 h)\n- [ ] 17. #32 Checklist de aceitação final (1 h)\n\n## Fluxo de trabalho\n\n- Uma branch por issue, criada a partir da `main` atualizada (por exemplo, `psm/16-dados-brutos`).\n- Pull request para a `main` com \"Fecha #N\" no corpo e revisão de outro integrante.\n- Ao fechar cada issue, lançar as horas no apontamento de esforço.\n\nCada issue segue o modelo Tarefa (descrição, fase, estimativa e critério de pronto), está no milestone \"E2\" e indica de quais outras depende.\n\n",
+  "closedAt": "2026-11-11T02:37:23Z",
   "comments": [],
   "createdAt": "2026-11-11T01:06:34Z",
   "labels": [
@@ -743,11 +980,22 @@
     "name": "entrega-2",
     "description": "Entrega 2 (Fases 3 e 4)",
     "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
    }
   ],
-  "milestone": null,
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-18T00:00:00Z"
+  },
   "number": 15,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID] Gestão do projeto com métricas PSM/CID - acompanhamento"
  },
  {
@@ -765,6 +1013,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nDepois das revisões, criar a release da Entrega 1 (premissa 10 e produtos de trabalho da E1). A página de entregas já aponta para a tag `E1`, que ainda não existe.\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Todas as outras issues deste milestone fechadas\n- [ ] PDF atualizado em `docs/artigo/artigo-e1.pdf`\n- [ ] Release criada com a tag `E1` e o PDF anexado: `gh release create E1 docs/artigo/artigo-e1.pdf --title \"Entrega 1\" --notes \"Fases 1 e 2\"`\n- [ ] Release enviada no Moodle dentro do prazo, com o link da versão\n",
   "closedAt": "2026-10-26T02:26:25Z",
   "comments": [
    {
@@ -779,8 +1028,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6404582254",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6404582254"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeDhyw",
@@ -794,8 +1042,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6406857163",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/14#issuecomment-6406857163"
    }
   ],
   "createdAt": "2026-10-25T14:26:32Z",
@@ -805,12 +1052,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 14,
@@ -832,6 +1091,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nNavegar pelo site como leitor externo, no computador e no celular, nos modos claro e escuro.\n\n- Site: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/\n- Rubrica: Critério 11 da Fase 1 e F2-C10\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Menu claro; seções Fase 1 e Fase 2 completas\n- [ ] Links funcionando (artigo em PDF, repositório, dados, atas)\n- [ ] Rodapé com versão e data; atualizar `copyright` em `mkdocs.yml` e o aviso em `overrides/main.html` a cada versão\n- [ ] Página inicial e animações funcionando bem no celular\n- [ ] Sem emojis ou figurinhas\n- [ ] `mkdocs build --strict` sem erros antes de cada push\n",
   "closedAt": "2026-10-26T02:15:16Z",
   "comments": [
    {
@@ -846,8 +1106,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6404582037",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6404582037"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd58UA",
@@ -861,8 +1120,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406700112",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406700112"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7mxA",
@@ -876,8 +1134,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406727364",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/13#issuecomment-6406727364"
    }
   ],
   "createdAt": "2026-10-25T14:26:30Z",
@@ -893,12 +1150,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 13,
@@ -913,6 +1182,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nA premissa 4 pede atas das reuniões no repositório. A pasta `atas/` só tem o modelo.\n\n- Modelo: `atas/modelo-ata.md`\n- Índice: `docs/gestao/atas.md` (https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/gestao/atas/)\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Uma ata por reunião já feita (`atas/AAAA-MM-DD-ata-NN.md`), com participantes, decisões e encaminhamentos\n- [ ] Registrar a decisão de trocar a característica usabilidade (proibida pela rubrica) por compatibilidade\n- [ ] Índice de atas atualizado na GitPage\n",
   "closedAt": "2026-10-26T02:24:01Z",
   "comments": [
    {
@@ -927,8 +1197,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6404581779",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6404581779"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeB0BQ",
@@ -942,8 +1211,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6406829061",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/12#issuecomment-6406829061"
    }
   ],
   "createdAt": "2026-10-25T14:26:28Z",
@@ -959,12 +1227,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 12,
@@ -986,6 +1266,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nA premissa 3 exige registrar as medições do PSM/CID, sua interpretação e as decisões de gestão. O plano está pronto, mas ainda não há dados.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/gestao/plano-psm/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/gestao/registro-medicoes/\n- Arquivos: `dados/gestao/horas.csv`, `scripts/psm_coleta.py`, `docs/gestao/registro-medicoes.md`\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Cada integrante lança as horas da E1 em `dados/gestao/horas.csv` (data, membro, issue, atividade sem vírgula, horas)\n- [ ] Conferir as datas das sprints e o custo de R$ 15,00/h em `docs/gestao/plano-psm.md`\n- [ ] Todas as issues da E1 no milestone \"Sprint 2 - Entrega 1\", com estimativa\n- [ ] Rodar `python3 scripts/psm_coleta.py --repo FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF` e versionar o CSV gerado\n- [ ] Preencher a tabela do Registro de medições com interpretação e decisão\n",
   "closedAt": "2026-10-26T02:21:48Z",
   "comments": [
    {
@@ -1000,8 +1281,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6404581506",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6404581506"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeASkw",
@@ -1015,8 +1295,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6406804115",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/11#issuecomment-6406804115"
    }
   ],
   "createdAt": "2026-10-25T14:26:26Z",
@@ -1032,12 +1311,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 11,
@@ -1077,6 +1368,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nA rubrica avalia a declaração de uso de IA (Critério 10 da Fase 1, F2-C9, AG-C3): ferramenta + tarefa + quando + como a equipe conferiu e ajustou. Hoje a página e o Apêndice B estão com \"a preencher\".\n\n- Página: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/sobre/uso-de-ia/\n- Arquivos: `docs/sobre/uso-de-ia.md` e Apêndice B de `artigo/main.tex`\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Cada integrante registra os próprios usos de IA na tabela\n- [ ] Apêndice B do artigo resume a tabela\n- [ ] Nenhum emoji, figurinha ou ícone no relatório e na GitPage\n",
   "closedAt": "2026-10-26T02:26:07Z",
   "comments": [
    {
@@ -1091,8 +1383,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6404581280",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6404581280"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeDUjA",
@@ -1106,8 +1397,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6406853772",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/10#issuecomment-6406853772"
    }
   ],
   "createdAt": "2026-10-25T14:26:24Z",
@@ -1123,12 +1413,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 10,
@@ -1150,6 +1452,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nA tabela de contribuição é obrigatória (premissa 13 e critério AG-C5) e está com campos \"a preencher\".\n\n- Página: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/sobre/equipe/\n- Arquivos: `docs/sobre/equipe.md`; Apêndice A de `artigo/main.tex`; nomes também em `README.md` e no `\\author` do artigo\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [x] Nomes completos dos quatro integrantes atualizados (site, README e artigo)\n- [ ] Matrícula e usuário do GitHub de cada integrante\n- [ ] Tarefas de cada integrante descritas de forma específica\n- [ ] Horas e percentual de esforço (soma = 100%), calculados a partir de `dados/gestao/horas.csv`\n- [ ] Mesma tabela no site e no Apêndice A do artigo\n\n",
   "closedAt": "2026-10-26T02:21:46Z",
   "comments": [
    {
@@ -1164,8 +1467,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6404581074",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6404581074"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfeAQyg",
@@ -1179,8 +1481,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6406803658",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/9#issuecomment-6406803658"
    }
   ],
   "createdAt": "2026-10-25T14:26:22Z",
@@ -1196,12 +1497,24 @@
     "name": "pendência-da-equipe",
     "description": "Depende de informação que só a equipe tem",
     "color": "d93f0b"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 9,
@@ -1216,6 +1529,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nLer o artigo inteiro e revisar estrutura, português e referências.\n\n- PDF: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/artigo/artigo-e1.pdf\n- Fonte: `artigo/main.tex` e `artigo/referencias.bib`\n- Rubrica: Critério 8 (organização), Critério 9 (português, estilo e padronização); premissas 7, 8, 9, 12 e 13 da especificação\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Seções exigidas na E1 presentes: Introdução, Referencial teórico, Metodologia, Fase 1, Fase 2\n- [ ] Todas as figuras e tabelas têm número, legenda, fonte e são citadas no texto\n- [ ] Referências conferidas (autores, títulos, datas de acesso)\n- [ ] Link do repositório presente no artigo\n- [ ] Máximo de 15 páginas (hoje: 14)\n- [ ] Depois das alterações: compilar (`cd artigo && latexmk -pdf main.tex`) e copiar para `docs/artigo/artigo-e1.pdf`\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:13Z",
   "comments": [
    {
@@ -1230,8 +1544,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6404580718",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6404580718"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7kwg",
@@ -1245,8 +1558,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6406726850",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/8#issuecomment-6406726850"
    }
   ],
   "createdAt": "2026-10-25T14:26:20Z",
@@ -1262,12 +1574,24 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 8,
@@ -1282,6 +1606,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nConferir a consistência geral do plano GQM.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/abstraction-sheets/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/diagrama-gqm/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/rastreabilidade/\n- Rubrica: F2-C6 (diagrama GQM), F2-C11 (consistência entre Fases 1 e 2), F2-C12 (terminologia)\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Fatores de variação das abstraction sheets fazem sentido\n- [ ] Diagrama GQM do site, explorador interativo e Figura 4 do artigo batem com as tabelas (11 questões, 12 métricas)\n- [ ] Matriz de rastreabilidade sem lacunas\n- [ ] Nenhum termo técnico fora de contexto\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:11Z",
   "comments": [
    {
@@ -1296,8 +1621,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6404580354",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6404580354"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd57VA",
@@ -1311,8 +1635,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406699860",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406699860"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7iyA",
@@ -1326,8 +1649,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406726344",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/7#issuecomment-6406726344"
    }
   ],
   "createdAt": "2026-10-25T14:26:18Z",
@@ -1343,12 +1665,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 7,
@@ -1363,6 +1703,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nRevisar o objetivo G3, as questões Q3.1 a Q3.4, as hipóteses e as métricas M3.1 a M3.5.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/objetivos-questoes-hipoteses/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/metricas/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/niveis-e-julgamento/\n- Rubrica: F2-C1 a F2-C5\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] A equipe tem como montar os ambientes A1 a A4 (Windows/Chrome, Windows/Firefox, Ubuntu/Firefox, Android/Chrome)\n- [ ] É viável montar as duas instâncias com PHP 8.3 e 8.4 e as 6 execuções de instalação/atualização (máquina virtual ou contêiner)\n- [ ] Limites de tempo de M3.4 (15/30/60 min) aceitos como candidatos, a calibrar no piloto da Fase 3\n- [ ] Os 40 itens de verificação de M3.5 fazem sentido\n- [ ] Definir o responsável por G3 e anotar na página de equipe\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:08Z",
   "comments": [
    {
@@ -1377,8 +1718,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6404580135",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6404580135"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7g8A",
@@ -1392,8 +1732,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6406725872",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/6#issuecomment-6406725872"
    }
   ],
   "createdAt": "2026-10-25T14:26:16Z",
@@ -1409,12 +1748,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 6,
@@ -1429,6 +1786,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nRevisar o objetivo G2, as questões Q2.1 a Q2.4, as hipóteses e as métricas M2.1 a M2.4.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/objetivos-questoes-hipoteses/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/metricas/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/niveis-e-julgamento/\n- Rubrica: F2-C1 a F2-C5\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Os 7 formatos (CSV usuários, CSV e XLSX notas, GIFT, Moodle XML, iCal, .mbz) existem no núcleo do Moodle 5.3\n- [ ] As 6 funções REST existem na 5.3 (conferir na documentação de web services ou em Administração > Servidor > Serviços web > Documentação da API)\n- [ ] O teste de coexistência (aplicação web, banco e cron vizinhos) é viável para a equipe\n- [ ] Níveis de pontuação de M2.1 a M2.4 aceitos pela equipe\n- [ ] Definir o responsável por G2 e anotar na página de equipe\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:06Z",
   "comments": [
    {
@@ -1443,8 +1801,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6404579944",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6404579944"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7fDw",
@@ -1458,8 +1815,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6406725391",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/5#issuecomment-6406725391"
    }
   ],
   "createdAt": "2026-10-25T14:26:14Z",
@@ -1475,12 +1831,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 5,
@@ -1495,6 +1869,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nRevisar o objetivo G1, as questões Q1.1 a Q1.3, as hipóteses e as métricas M1.1 a M1.3.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/objetivos-questoes-hipoteses/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/metricas/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-2/niveis-e-julgamento/\n- Rubrica: F2-C1 a F2-C5\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Objetivo G1 segue o template (analisar / propósito / com respeito a / ponto de vista / contexto)\n- [ ] Questões não são as próprias métricas reescritas\n- [ ] Cada hipótese é numérica e plausível\n- [ ] Fichas de M1.1, M1.2 e M1.3 completas e coletáveis (definição, fórmula, fonte, coleta, escala, responsável)\n- [ ] M1.3 não mede usabilidade (ver nota na página de métricas)\n- [ ] Níveis de pontuação de M1.1 a M1.3 aceitos pela equipe\n- [ ] Definir o responsável por G1 e anotar na página de equipe\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:04Z",
   "comments": [
    {
@@ -1509,8 +1884,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6404579702",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6404579702"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7dOw",
@@ -1524,8 +1898,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6406724923",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/4#issuecomment-6406724923"
    }
   ],
   "createdAt": "2026-10-25T14:26:12Z",
@@ -1541,12 +1914,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 4,
@@ -1561,6 +1952,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nValidar em grupo as notas da matriz de priorização e a relação com o ODS 4.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/caracteristicas/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/ods/\n- Arquivos: `docs/fase-1/caracteristicas.md`, `docs/fase-1/ods.md`; seções 4.5 e 4.7 do artigo (Tabela 5)\n- Rubrica: Critério 5 (seleção e priorização; usabilidade não pode entrar) e Critério 7 (ODS)\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Notas R, K, V e A de cada característica discutidas e aceitas pela equipe (registrar na ata)\n- [ ] Se alguma nota mudar, recalcular as três colunas de pontuação (site e Tabela 5 do artigo) e conferir se a ordem continua a mesma\n- [ ] Justificativas e trade-offs (segurança, eficiência, confiabilidade, manutenibilidade) revisados\n- [ ] Metas 4.3, 4.4 e 4.a e indicadores 4.3.1, 4.4.1 e 4.a.1 conferidos em https://brasil.un.org/pt-br/sdgs/4\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:15:01Z",
   "comments": [
    {
@@ -1575,8 +1967,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6404579477",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6404579477"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd56QQ",
@@ -1590,8 +1981,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406699585",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406699585"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7bOQ",
@@ -1605,8 +1995,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406724409",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/3#issuecomment-6406724409"
    }
   ],
   "createdAt": "2026-10-25T14:26:09Z",
@@ -1622,12 +2011,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 3,
@@ -1642,6 +2049,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nRevisar a descrição do produto, o modelo de qualidade adaptado e o escopo.\n\n- Páginas: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/produto/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/modelo-de-qualidade/ · https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/escopo/\n- Arquivos: `docs/fase-1/produto.md`, `docs/fase-1/modelo-de-qualidade.md`, `docs/fase-1/escopo.md`; seções 4.3, 4.4 e 4.6 do artigo\n- Rubrica: Critério 3 (tipo de produto e descrição), Critério 4 (modelo e diagrama), Critério 6 (escopo)\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Requisitos do Moodle 5.3 conferidos na fonte oficial (https://moodledev.io/general/releases/5.3): PHP 8.3+, sodium, PostgreSQL 17+, atualização a partir da 4.4\n- [ ] Mudança da raiz web para `public/` (desde a 5.1) conferida em https://docs.moodle.org/501/en/Upgrade_overview\n- [ ] Classificação Pressman / IEEE 1062 (COTS) revisada\n- [ ] Diagrama de contexto (site e Figura 2 do artigo) correto e legível\n- [ ] Modelo adaptado (Figura 1 do site e Figura 3 do artigo) e Tabela de subcaracterísticas revisados\n- [ ] Catálogo de 12 tarefas (T01-T12) e ambientes A1-A4 fazem sentido e são viáveis para a equipe\n- [ ] Itens fora do escopo e limites de validade revisados\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:14:58Z",
   "comments": [
    {
@@ -1656,8 +2064,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6404579271",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6404579271"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7ZkA",
@@ -1671,8 +2078,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6406723984",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/2#issuecomment-6406723984"
    }
   ],
   "createdAt": "2026-10-25T14:26:07Z",
@@ -1688,12 +2094,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 2,
@@ -1708,6 +2132,7 @@
    "login": "maykonjuso",
    "name": "Maykon Júnio"
   },
+  "body": "### Descrição\n\nRevisar as páginas de propósito e de partes interessadas da Fase 1.\n\n- Página: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/proposito/\n- Página: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/fase-1/partes-interessadas/\n- Arquivos: `docs/fase-1/proposito.md`, `docs/fase-1/partes-interessadas.md`; seções 4.1 e 4.2 de `artigo/main.tex`\n- Rubrica: Critério 1 (propósito e uso pretendido) e Critério 2 (requisitante e partes interessadas)\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] O cenário (IES avaliando a atualização para o Moodle 5.3 LTS) faz sentido para a equipe\n- [ ] As decisões D1 a D4 estão claras e cada uma tem um decisor\n- [ ] A ligação entre o julgamento (atende / atende com ressalvas / não atende) e a ação do decisor está clara\n- [ ] O requisitante (docente e Coordenação de TI) e o ponto de vista dos objetivos GQM estão coerentes\n- [ ] As necessidades marcadas como hipotéticas (H) foram conferidas; se alguém conversou com docentes, estudantes ou TI, registrar aqui\n- [ ] Texto revisado (português, clareza) no site e no artigo\n- [ ] Horas lançadas em `dados/gestao/horas.csv`\n",
   "closedAt": "2026-10-26T02:14:56Z",
   "comments": [
    {
@@ -1722,8 +2147,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6404579051",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6404579051"
    },
    {
     "id": "IC_kwDOVS_JFM8AAAABfd7X9g",
@@ -1737,8 +2161,7 @@
     "isMinimized": false,
     "minimizedReason": "",
     "reactionGroups": [],
-    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6406723574",
-    "viewerDidAuthor": false
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/1#issuecomment-6406723574"
    }
   ],
   "createdAt": "2026-10-25T14:26:05Z",
@@ -1754,12 +2177,30 @@
     "name": "entrega-1",
     "description": "Entrega 1 (Fases 1 e 2)",
     "color": "fbca04"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
    }
   ],
   "milestone": {
    "number": 1,
-   "title": "Sprint 2 - Entrega 1",
-   "description": "Revisão da Fase 1, Fase 2, artigo, GitPage e release E1",
+   "title": "E1 - 26/10/2026",
+   "description": "Entrega 1: Fases 1 e 2, artigo e GitPage. Antes chamado Sprint 2 - Entrega 1.",
    "dueOn": "2026-10-26T00:00:00Z"
   },
   "number": 1,
