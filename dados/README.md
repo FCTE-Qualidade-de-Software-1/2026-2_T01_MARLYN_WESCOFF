@@ -38,8 +38,6 @@ A E1 não teve registro de horas no dia. As atividades listadas antes em `gestao
 
 Essas horas são estimativas feitas depois. A limitação é declarada nas ameaças à validade do artigo e não pode ser apresentada como medição.
 
- ignoradas por `scripts/psm_coleta.py`.
-
 ## Dados de participantes
 
 Se houver entrevistas ou testes com pessoas, os nomes são substituídos por códigos (P1, P2, ...). Gravações e termos de consentimento assinados não são versionados em repositório público; a forma de acesso é combinada com a docente.
