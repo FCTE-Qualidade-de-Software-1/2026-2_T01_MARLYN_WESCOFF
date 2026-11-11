@@ -1,7 +1,7 @@
 """Extrai os dados brutos do GitHub para a gestão PSM/CID (issue #24).
 
 Gera, em docs/metricas/dados/brutos/:
-  issues.json          -> A1, A2, A4, B1, B2, B4, C2 (issues fechadas por integrante), C3 (estimativa)
+  issues.json          -> A1, A2, A4, B1, B2, B4, C2 (issues fechadas por integrante), C3 (estimativa no corpo)
   issue_events.jsonl   -> A1 (fechamentos e reaberturas), A3 (criada/fechada antes do quadro), B4 (reaberturas)
   prs.json             -> B1 (tempo de revisão), B3 (merges por semana), B4 (revisões CHANGES_REQUESTED), C2
   milestones.json      -> A1, A2, A4 (prazo de cada marco)
@@ -25,7 +25,7 @@ do quadro só é gravado quando a data de corte é hoje, porque a API não devol
 
 Formato: issues.json, prs.json e releases.json seguem a saída do `gh ... --json` (GraphQL); milestones.json é a
 resposta crua da API REST; issue_events.jsonl guarda só os campos usados pelas medidas (a resposta completa
-passa de 1,7 MB). O campo viewerDidAuthor do gh foi omitido, porque depende de quem executa o script.
+passa de 1,7 MB). O campo body foi acrescentado, porque a estimativa de horas da issue (C3) fica no corpo. O campo viewerDidAuthor do gh foi omitido, porque depende de quem executa o script.
 """
 
 import argparse
@@ -124,7 +124,7 @@ query($owner: String!, $name: String!, $cursor: String) {
     issues(first: 50, after: $cursor, orderBy: {field: CREATED_AT, direction: DESC}) {
       pageInfo { hasNextPage endCursor }
       nodes {
-        number title state createdAt closedAt
+        number title body state createdAt closedAt
         %s
         assignees(first: 20) { nodes { id login name databaseId } }
         labels(first: 50) { nodes { id name description color } }
@@ -147,6 +147,7 @@ def extrair_issues(owner, nome, token, corte):
         saida.append({
             "assignees": i["assignees"]["nodes"],
             "author": autor_gh(i["author"]),
+            "body": i["body"],
             "closedAt": i["closedAt"] if fechada else None,
             "comments": [{"id": c["id"], "author": {"login": (c["author"] or {}).get("login", "ghost")},
                           "authorAssociation": c["authorAssociation"], "body": c["body"],

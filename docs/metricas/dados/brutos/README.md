@@ -15,7 +15,7 @@ Para ler o quadro, defina também `PSM_PROJECT_TOKEN` com um token que tenha o e
 
 | Arquivo | Fonte | Conteúdo | Script e comando ou consulta |
 |---|---|---|---|
-| `issues.json` | GitHub Issues | Issues abertas e fechadas, com labels, responsáveis, milestone e comentários | `extrair_issues.py`: consulta GraphQL equivalente a `gh issue list --state all --json number,title,state,createdAt,closedAt,labels,assignees,milestone,comments,author` |
+| `issues.json` | GitHub Issues | Issues abertas e fechadas, com labels, responsáveis, milestone e comentários | `extrair_issues.py`: consulta GraphQL equivalente a `gh issue list --state all --json number,title,body,state,createdAt,closedAt,labels,assignees,milestone,comments,author` (o `body` traz a estimativa de horas, usada em C3) |
 | `issue_events.jsonl` | GitHub Issues (eventos) | Um evento por linha (fechamento, reabertura, label, milestone, atribuição, merge), de issues e de PRs | `extrair_issues.py`: `GET /repos/{repo}/issues/events`, só com os campos `id`, `event`, `created_at`, `actor`, `issue`, `label`, `milestone`, `assignee` e `commit_id` |
 | `prs.json` | GitHub Pull Requests | Pull requests, com as revisões e o estado de cada uma (`APPROVED`, `CHANGES_REQUESTED`, `COMMENTED`) | `extrair_issues.py`: consulta GraphQL equivalente a `gh pr list --state all --json number,title,state,createdAt,mergedAt,closedAt,reviews,additions,deletions,author` |
 | `milestones.json` | GitHub Milestones | Milestones, com prazo e contagem de issues | `extrair_issues.py`: `GET /repos/{repo}/milestones?state=all` |
