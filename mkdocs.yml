@@ -125,6 +125,7 @@ nav:
   - Gestão do projeto:
       - gestao/index.md
       - Plano de medição (PSM/CID): gestao/plano-psm.md
+      - Dashboard das métricas: metricas/dashboard.md
       - Registro de medições: gestao/registro-medicoes.md
       - Atas e decisões: gestao/atas.md
       - Termo de consentimento: gestao/termo-consentimento.md

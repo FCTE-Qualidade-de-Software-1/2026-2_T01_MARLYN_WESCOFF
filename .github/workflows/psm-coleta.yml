@@ -47,6 +47,7 @@ jobs:
           python3 scripts/extrair_issues.py --repo ${{ github.repository }}
           python3 scripts/consolidar_metricas.py
           python3 scripts/gerar_graficos.py
+          python3 scripts/gerar_dashboard.py
       - name: Gerar o retrato semanal
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 12 * * 1'
         run: python3 scripts/psm_coleta.py --repo ${{ github.repository }} | tee -a "$GITHUB_STEP_SUMMARY"
@@ -55,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/metricas/dados/brutos docs/metricas/dados/consolidados docs/metricas/graficos dados/gestao/psm-*.csv
+          git add docs/metricas/dados/brutos docs/metricas/dados/consolidados docs/metricas/graficos docs/metricas/dashboard.md dados/gestao/psm-*.csv
           if git diff --cached --quiet; then
             echo "commit=false" >> "$GITHUB_OUTPUT"
           else
