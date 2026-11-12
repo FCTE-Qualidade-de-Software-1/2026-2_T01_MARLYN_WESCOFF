@@ -1,5 +1,107 @@
 [
  {
+  "additions": 30416,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:52:59Z",
+  "createdAt": "2026-11-11T11:39:33Z",
+  "deletions": 115,
+  "mergedAt": "2026-11-11T11:52:59Z",
+  "number": 49,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Psm/32 checklist entrega"
+ },
+ {
+  "additions": 30345,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:52:43Z",
+  "createdAt": "2026-11-11T11:26:04Z",
+  "deletions": 115,
+  "mergedAt": "2026-11-11T11:52:43Z",
+  "number": 48,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Psm/31 declaracao ia"
+ },
+ {
+  "additions": 30324,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:52:17Z",
+  "createdAt": "2026-11-11T11:16:40Z",
+  "deletions": 109,
+  "mergedAt": "2026-11-11T11:52:17Z",
+  "number": 47,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Psm/30 texto artigo"
+ },
+ {
+  "additions": 30229,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:51:55Z",
+  "createdAt": "2026-11-11T10:47:37Z",
+  "deletions": 90,
+  "mergedAt": "2026-11-11T11:51:55Z",
+  "number": 46,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[PSM/CID - Etapa 7] Publicar a gestão PSM/CID na GitPage"
+ },
+ {
+  "additions": 30111,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:51:32Z",
+  "createdAt": "2026-11-11T10:36:21Z",
+  "deletions": 65,
+  "mergedAt": "2026-11-11T11:51:32Z",
+  "number": 45,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Psm/27 dashboard"
+ },
+ {
+  "additions": 29885,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-11T11:51:02Z",
+  "createdAt": "2026-11-11T04:13:50Z",
+  "deletions": 65,
+  "mergedAt": "2026-11-11T11:51:02Z",
+  "number": 44,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Gera os indicadores gráficos do PSM/CID"
+ },
+ {
   "additions": 2987,
   "author": {
    "id": "U_kgDOC5MJug",

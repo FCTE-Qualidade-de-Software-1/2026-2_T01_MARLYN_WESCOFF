@@ -1,19 +1,19 @@
 # Dashboard das métricas PSM/CID
 
-> Retrato gerado automaticamente em **11/11/2026** a partir dos dados consolidados. Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos registros reais quando disponíveis.
+> Retrato gerado automaticamente em **12/11/2026** a partir dos dados consolidados. Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos registros reais quando disponíveis.
 
 ## Tabela-resumo
 
 | Medida | Valor atual | Limiar de decisão | Situação | Última atualização |
 |---|---:|---|:---:|:---:|
-| A1 — Burndown | 10 pontos abertos; desvio -58,93% | desvio acima da linha ideal ≤ 5% | **Dentro** | 11/11/2026 |
-| A2 — Comprometido × concluído | 8/9 issues; diferença 11,11% | diferença ≤ 5% | **Fora** | 11/11/2026 |
-| A3 — Fluxo cumulativo | WIP atual: 1 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 11/11/2026 |
-| B1 — Cycle time | mediana: 1 dia | mediana ≤ 5 dias | **Dentro** | 11/11/2026 |
-| B2 — Velocidade | projeção: 1,2 semanas; prazo: 1 semana | projeção ≤ semanas até o prazo | **Fora** | 11/11/2026 |
-| C1 — Esforço | maior desvio individual: 355,88% | desvio individual entre −30% e +30% | **Fora** | 11/11/2026 |
-| C2 — Contribuição | maior divergência: 100 p.p. | divergência ≤ 30 p.p. | **Fora** | 11/11/2026 |
-| C3 — Estimado × real | acurácia agregada: 1 | acurácia entre 0,85 e 1,25 | **Dentro** | 11/11/2026 |
+| A1 — Burndown | 10 pontos abertos; desvio -46,43% | desvio acima da linha ideal ≤ 5% | **Dentro** | 12/11/2026 |
+| A2 — Comprometido × concluído | 8/9 issues; diferença 11,11% | diferença ≤ 5% | **Fora** | 12/11/2026 |
+| A3 — Fluxo cumulativo | WIP atual: 1 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 12/11/2026 |
+| B1 — Cycle time | mediana: 1 dia | mediana ≤ 5 dias | **Dentro** | 12/11/2026 |
+| B2 — Velocidade | projeção: 1,2 semanas; prazo: 1 semana | projeção ≤ semanas até o prazo | **Fora** | 12/11/2026 |
+| C1 — Esforço | maior desvio individual: 355,88% | desvio individual entre −30% e +30% | **Fora** | 12/11/2026 |
+| C2 — Contribuição | maior divergência: 100 p.p. | divergência ≤ 30 p.p. | **Fora** | 12/11/2026 |
+| C3 — Estimado × real | acurácia agregada: 1 | acurácia entre 0,85 e 1,25 | **Dentro** | 12/11/2026 |
 
 <p class="legenda">Tabela 1. Situação das medidas obrigatórias. Fonte: elaborado pelos autores a partir dos CSVs consolidados e dos limiares dos <a href="02-construtos-de-medicao/">construtos de medição</a>.</p>
 
