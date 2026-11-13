@@ -1,5 +1,5 @@
 semana,inicio,fim,issues_concluidas,pontos_concluidos,velocidade_media_3s,aceleracao_pct,backlog_pontos,semanas_ate_prazo,semanas_restantes,prs_mergeados,linhas_alteradas_main,historico,fonte,data_extracao,comando_ou_query
-2026-W43,2026-10-19,2026-10-25,14,16,,,0,4,,0,6168,sim,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-12,python3 scripts/consolidar_metricas.py --data-ref 2026-11-12
-2026-W44,2026-10-26,2026-11-01,0,0,0,,0,3,sem projeção,0,0,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-12,python3 scripts/consolidar_metricas.py --data-ref 2026-11-12
-2026-W45,2026-11-02,2026-11-08,0,0,0,,0,2,sem projeção,0,0,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-12,python3 scripts/consolidar_metricas.py --data-ref 2026-11-12
-2026-W46,2026-11-09,2026-11-15,12,25,8.33,,10,1,1.2,17,37211,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-12,python3 scripts/consolidar_metricas.py --data-ref 2026-11-12
+2026-W43,2026-10-19,2026-10-25,14,16,,,0,4,,0,6168,sim,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
+2026-W44,2026-10-26,2026-11-01,0,0,0,,0,3,sem projeção,0,0,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
+2026-W45,2026-11-02,2026-11-08,0,0,0,,0,2,sem projeção,0,0,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
+2026-W46,2026-11-09,2026-11-15,12,25,8.33,,10,1,1.2,17,37211,nao,issues.json; issue_events.jsonl; milestones.json; prs.json; commits.csv,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
