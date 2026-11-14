@@ -38,7 +38,7 @@ Observações:
 - **Todo o conteúdo da E1 entrou na `main` em um único dia** (25/10/2026, entre 10h34 e 23h34), na véspera do prazo. Desde então, os únicos commits são o PDF da retrospectiva e os retratos automáticos.
 - A primeira versão da Fase 1 foi escrita no repositório original da equipe ([Bercacos/Qualidade-de-Software---Marlyn-Wescoff](https://github.com/Bercacos/Qualidade-de-Software---Marlyn-Wescoff)), que tem 3 commits de Bernardo, de 19/10/2026. Esse conteúdo foi migrado para o repositório da disciplina no commit `d64b70e`, de Maykon, com 5.448 linhas. Por isso, **commits e linhas não mostram quem escreveu o quê na E1**.
 - Os diretórios mais alterados pelos integrantes foram `docs/` (12 commits), a raiz (9), `artigo/` (8) e `dados/` (6).
-- Os commits têm mensagem no imperativo e em português, como pede o `CONTRIBUTING.md`, mas nenhum cita uma issue.
+- Os commits têm mensagem no imperativo e em português, como pede o guia de contribuição da equipe (hoje, a página [Processo de trabalho](../gestao/processo-de-trabalho.md)), mas nenhum cita uma issue.
 
 ## 3. Issues e milestones
 
@@ -102,7 +102,7 @@ Registro das ações feitas para tornar o repositório mensurável, sem reescrev
 | 10/11/2026 | Extração dos dados brutos para `docs/metricas/dados/brutos/`, com fonte e comando de cada arquivo | #16, PR #33 | Base de todas |
 | 10/11/2026 | Labels de fase, tipo, tamanho, prioridade e retrabalho criadas e aplicadas às issues #1 a #32 | #18, PR #34 | L6 |
 | 10/11/2026 | Milestone `Sprint 2 - Entrega 1` renomeado para `E1 - 26/10/2026` e fechado; `Gestão PSM/CID - Entrega 2` renomeado para `E2`; `PC1` e `Apresentação` criados (prazos a preencher) | #18, PR #34 | L5 |
-| 10/11/2026 | `.mailmap` criado e convenção de labels e milestones documentada no `CONTRIBUTING.md` | #18, PR #34 | L12 |
+| 10/11/2026 | `.mailmap` criado e convenção de labels e milestones documentada no `CONTRIBUTING.md` (hoje, a página [Processo de trabalho](../gestao/processo-de-trabalho.md)) | #18, PR #34 | L12 |
 | 10/11/2026 | Apontamento `esforco.csv` criado, com as atividades da E1 migradas e as horas em branco, à espera da reconstrução | #20, PR #35 | L1 |
 | 10/11/2026 | Fluxo por branch e pull request revisado adotado a partir das issues da gestão PSM/CID | PRs #33 em diante | L2 |
 | 10/11/2026 | Project board [Marlyn Wescoff - Gestão PSM/CID](https://github.com/users/cadumotta/projects/1) criado com os estados Backlog, A Fazer, Em Progresso, Em Revisão e Concluído e o campo semanal "Iteração"; as 32 issues foram adicionadas no estado atual. O quadro fica na conta de Carlos porque a organização da disciplina não permite que integrantes criem projetos | #19 | L4 |
