@@ -1,5 +1,5 @@
 entrega,tag,prazo,publicada_em,desvio_dias,inicio_periodo,duracao_dias,linhas_periodo,linhas_48h,concentracao_pct,prs_mergeados_periodo,historico,fonte,data_extracao,comando_ou_query
-E1,E1,2026-10-26,2026-10-25T23:26:23-03:00,-1,2026-10-25T10:34:29-03:00,0.5,5962,5962,100,0,sim,releases.json; milestones.json; commits.csv; prs.json,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
-Apresentação,,2026-11-18,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
-E2,,2026-11-18,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
-PC1,,2026-10-19,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-13,python3 scripts/consolidar_metricas.py --data-ref 2026-11-13
+E1,E1,2026-10-26,2026-10-25T23:26:23-03:00,-1,2026-10-25T10:34:29-03:00,0.5,5962,5962,100,0,sim,releases.json; milestones.json; commits.csv; prs.json,2026-11-14,python3 scripts/consolidar_metricas.py --data-ref 2026-11-14
+Apresentação,,2026-11-18,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-14,python3 scripts/consolidar_metricas.py --data-ref 2026-11-14
+E2,,2026-11-18,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-14,python3 scripts/consolidar_metricas.py --data-ref 2026-11-14
+PC1,,2026-10-19,,,,,,,,,nao,releases.json; milestones.json; commits.csv; prs.json,2026-11-14,python3 scripts/consolidar_metricas.py --data-ref 2026-11-14

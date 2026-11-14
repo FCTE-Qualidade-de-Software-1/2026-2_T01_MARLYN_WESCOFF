@@ -1661,7 +1661,7 @@ z
    </g>
   </g>
   <g id="text_23">
-   <!-- Fonte: elaborado pelos autores a partir de cycle_time.csv, extraído em 2026-11-13. Dados históricos da E1 são excluídos dos percentis conforme o diagnóstico. -->
+   <!-- Fonte: elaborado pelos autores a partir de cycle_time.csv, extraído em 2026-11-14. Dados históricos da E1 são excluídos dos percentis conforme o diagnóstico. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -2102,7 +2102,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(3927.375 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(3991 0)"/>
     <use xlink:href="#DejaVuSans-14" transform="translate(4027.078125 0)"/>
-    <use xlink:href="#DejaVuSans-16" transform="translate(4090.703125 0)"/>
+    <use xlink:href="#DejaVuSans-17" transform="translate(4090.703125 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4154.328125 0)"/>
     <use xlink:href="#DejaVuSans-3" transform="translate(4186.109375 0)"/>
     <use xlink:href="#DejaVuSans-27" transform="translate(4217.890625 0)"/>
