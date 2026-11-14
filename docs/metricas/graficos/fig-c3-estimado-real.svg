@@ -1424,7 +1424,7 @@ z
    </g>
   </g>
   <g id="text_18">
-   <!-- Fonte: elaborado pelos autores a partir de esforco_consolidado.csv, extraído em 2026-11-13. -->
+   <!-- Fonte: elaborado pelos autores a partir de esforco_consolidado.csv, extraído em 2026-11-14. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -1736,7 +1736,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4404.15625 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4467.78125 0)"/>
     <use xlink:href="#DejaVuSans-14" transform="translate(4503.859375 0)"/>
-    <use xlink:href="#DejaVuSans-16" transform="translate(4567.484375 0)"/>
+    <use xlink:href="#DejaVuSans-17" transform="translate(4567.484375 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4631.109375 0)"/>
    </g>
   </g>
