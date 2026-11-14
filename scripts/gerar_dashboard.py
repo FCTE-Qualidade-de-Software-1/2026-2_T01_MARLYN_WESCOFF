@@ -3,6 +3,8 @@
 import csv
 from pathlib import Path
 
+from consolidar_metricas import CUSTO_HORA
+
 
 RAIZ = Path(__file__).resolve().parent.parent
 CONSOLIDADOS = RAIZ / "docs" / "metricas" / "dados" / "consolidados"
@@ -80,7 +82,8 @@ def gerar_linhas():
         ("B2 — Velocidade", f"projeção: {fmt(projecao)} semanas; prazo: {fmt(prazo)} semana",
          "projeção ≤ semanas até o prazo", projecao is not None and prazo is not None and projecao <= prazo,
          data_br),
-        ("C1 — Esforço", f"maior desvio individual: {fmt(maior_desvio)}%",
+        ("C1 — Esforço", f"maior desvio individual: {fmt(maior_desvio)}%; "
+         f"custo realizado: {reais(numero(total.get('custo_rs')) if total else None)}",
          "desvio individual entre −30% e +30%", maior_desvio is not None and maior_desvio <= 30,
          data_br),
         ("C2 — Contribuição", f"maior divergência: {fmt(divergencia)} p.p.",
@@ -89,6 +92,31 @@ def gerar_linhas():
          "acurácia entre 0,85 e 1,25", acuracia is not None and 0.85 <= acuracia <= 1.25,
          data_br),
     ], data_br
+
+
+def reais(valor):
+    if valor is None:
+        return "sem dado"
+    inteiro, centavos = f"{valor:,.2f}".split(".")
+    return f"R$ {inteiro.replace(',', '.')},{centavos}"
+
+
+def tabela_custos():
+    """C1 (Tabela 11): custo estimado x realizado por entrega e tipo de registro (custo da hora: Tabela 14)."""
+    totais = [linha for linha in ler("esforco_consolidado.csv") if linha["nivel"] == "total"]
+    linhas = ["| Entrega | Registro das horas | Horas estimadas | Custo estimado | Horas realizadas | Custo realizado |",
+              "|---|---|---:|---:|---:|---:|"]
+    for t in sorted(totais, key=lambda linha: (linha["entrega"], linha["tipo_registro"])):
+        linhas.append(f"| {t['entrega']} | {t['tipo_registro']} | {fmt(numero(t.get('previsto_h')), 1)} h | "
+                      f"{reais(numero(t.get('custo_estimado_rs')))} | {fmt(numero(t.get('horas')), 1)} h | "
+                      f"{reais(numero(t.get('custo_rs')))} |")
+    legenda = ('<p class="legenda">Tabela 2. Custo estimado e realizado por entrega, a '
+               f'{reais(CUSTO_HORA)} por hora (estagiário; ver a '
+               '<a href="02-construtos-de-medicao/#custo-da-hora">Tabela 14 dos construtos</a>). '
+               'As horas estimadas são a soma das estimativas das issues da entrega. Fonte: elaborado pelos '
+               'autores a partir de <a href="dados/consolidados/esforco_consolidado.csv">'
+               'esforco_consolidado.csv</a>.</p>\n')
+    return "\n".join(linhas) + "\n\n" + legenda
 
 
 def figura(numero_figura, titulo, arquivo, csv):
@@ -125,6 +153,7 @@ def main():
         figura(4, "B1 — Distribuição do cycle time", "fig-b1-cycle-time.svg", "cycle_time.csv"),
         figura(5, "B2 — Velocidade e média móvel", "fig-b2-velocidade.svg", "velocidade.csv"),
         "## Recursos e Custos\n",
+        tabela_custos(),
         figura(6, "C1 — Esforço da equipe por integrante", "fig-c1-esforco.svg", "esforco_consolidado.csv"),
         figura(7, "C2 — Distribuição multidimensional da contribuição", "fig-c2-contribuicao.svg", "contribuicao.csv"),
         figura(8, "C3 — Esforço estimado versus realizado", "fig-c3-estimado-real.svg", "esforco_consolidado.csv"),
