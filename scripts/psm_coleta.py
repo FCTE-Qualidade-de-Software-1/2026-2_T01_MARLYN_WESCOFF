@@ -22,7 +22,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-CUSTO_HORA = 15.00
+CUSTO_HORA = 14.77  # estagiário; docs/metricas/02-construtos-de-medicao.md, Tabela 14 (DG-09)
 LIMITE_DIAS_PARADA = 3
 RAIZ = Path(__file__).resolve().parent.parent
 

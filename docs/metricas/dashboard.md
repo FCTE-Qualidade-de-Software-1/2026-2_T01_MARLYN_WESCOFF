@@ -11,7 +11,7 @@
 | A3 — Fluxo cumulativo | WIP atual: 1 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 14/11/2026 |
 | B1 — Cycle time | mediana: 1 dia | mediana ≤ 5 dias | **Dentro** | 14/11/2026 |
 | B2 — Velocidade | projeção: 1,2 semanas; prazo: 1 semana | projeção ≤ semanas até o prazo | **Fora** | 14/11/2026 |
-| C1 — Esforço | maior desvio individual: 355,88% | desvio individual entre −30% e +30% | **Fora** | 14/11/2026 |
+| C1 — Esforço | maior desvio individual: 355,88%; custo realizado: R$ 251,09 | desvio individual entre −30% e +30% | **Fora** | 14/11/2026 |
 | C2 — Contribuição | maior divergência: 100 p.p. | divergência ≤ 30 p.p. | **Fora** | 14/11/2026 |
 | C3 — Estimado × real | acurácia agregada: 1 | acurácia entre 0,85 e 1,25 | **Dentro** | 14/11/2026 |
 
@@ -54,6 +54,13 @@ A situação indica se o valor atual permanece dentro do limiar de decisão. Um 
 <p class="legenda">Figura 5. B2 — Velocidade e média móvel. Fonte: elaborado pelos autores a partir de <a href="dados/consolidados/velocidade.csv">velocidade.csv</a>.</p>
 
 ## Recursos e Custos
+
+| Entrega | Registro das horas | Horas estimadas | Custo estimado | Horas realizadas | Custo realizado |
+|---|---|---:|---:|---:|---:|
+| E1 | reconstruido | 20,5 h | R$ 302,78 | 57 h | R$ 841,89 |
+| E2 | reconstruido | 45 h | R$ 664,65 | 17 h | R$ 251,09 |
+
+<p class="legenda">Tabela 2. Custo estimado e realizado por entrega, a R$ 14,77 por hora (estagiário; ver a <a href="02-construtos-de-medicao/#custo-da-hora">Tabela 14 dos construtos</a>). As horas estimadas são a soma das estimativas das issues da entrega. Fonte: elaborado pelos autores a partir de <a href="dados/consolidados/esforco_consolidado.csv">esforco_consolidado.csv</a>.</p>
 
 ### Figura 6. C1 — Esforço da equipe por integrante
 

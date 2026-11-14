@@ -124,6 +124,7 @@ nav:
   - Fases 3 e 4: fases-3-4.md
   - Gestão do Projeto - Métricas PSM/CID:
       - Visão geral: gestao/index.md
+      - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
