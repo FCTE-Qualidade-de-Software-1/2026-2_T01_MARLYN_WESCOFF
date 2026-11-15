@@ -54,4 +54,19 @@ O script tem quatro etapas. A separação entre elas existe para não contaminar
 
 - O script assume que as extensões do PHP fazem parte da imagem-base, e não do procedimento medido em M3.3. Se o roteiro de G3 decidir o contrário, rode a etapa `base` sem as extensões e registre a decisão em ata.
 - O `max_input_vars = 5000` exigido pelo Moodle é aplicado só pela etapa `instancia`. Nas execuções de M3.3, ele entra apenas se a página oficial de instalação mandar.
-- O script foi testado do zero em um contêiner `ubuntu:24.04` em 15/11/2026: etapa `base`, três instâncias (5.3 com PHP 8.3, 5.3 com PHP 8.4 e 4.5 com PHP 8.3) respondendo à página de login, cron executado sem erro e `codigo` extraindo uma cópia limpa. Versões obtidas: Apache 2.4.58, PHP 8.3.36 e 8.4.27, PostgreSQL 17.12, Moodle 5.3+ (Build 20261111) e 4.5.15+ (Build 20261111). A validação final em uma VM limpa, com systemd, ainda deve ser feita e registrada antes do piloto.
+## Teste do script
+
+Em 15/11/2026, o script foi executado do zero em uma **VM limpa** (QEMU/KVM, imagem cloud oficial do Ubuntu Server 24.04, 2 vCPU, 4 GB de RAM, 40 GB de disco, com systemd), sem nenhuma intervenção manual.
+
+| Verificação | Resultado |
+|---|---|
+| Etapa `base` | Concluída em cerca de 2 minutos |
+| Três instâncias (5.3 com PHP 8.3, 5.3 com PHP 8.4, 4.5 com PHP 8.3) e etapa `codigo` | Concluídas em cerca de 4 minutos |
+| Serviços (Apache, PostgreSQL 17, PHP-FPM 8.3 e 8.4, cron) | Ativos e habilitados, e voltam sozinhos após dois reinícios |
+| Página de login das três instâncias | HTTP 200 antes e depois dos reinícios |
+| Cron do Moodle | Tarefas agendadas executadas a cada minuto |
+| `noemailever` e credenciais | Presente no `config.php`; pasta de segredos com permissão 700 e arquivos com 600, só para o root |
+
+<p class="legenda">Tabela 3. Resultado do teste em VM limpa. Fonte: elaboração própria.</p>
+
+Versões obtidas: Ubuntu 24.04.5 LTS (kernel 6.8), Apache 2.4.58, PHP 8.3.36 e 8.4.27, PostgreSQL 17.12, Moodle 5.3+ (Build 20261111) e 4.5.15+ (Build 20261111). Cada integrante ainda registra as versões da própria VM com a etapa `versoes`, porque as versões corretivas mudam com o tempo.
