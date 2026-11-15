@@ -149,6 +149,25 @@ Recursos e Custos & Esforço equilibrado e estimativas confiáveis? & C1 esforç
 
 Na semana 2026-W46, oito das nove issues comprometidas estavam concluídas: 88,89\%, diferença de 11,11\%, fora do limiar de A2 (Figura~\ref{fig:a2-artigo}). O cycle time da E2 apresentou mediana de 1 dia e P80/P90 de 2 dias, dentro do limite de B1 (Figura~\ref{fig:b1-artigo}), mas a amostra inclui tarefas abertas perto da conclusão. Em C2, Carlos concentrou issues concluídas; Pedro, revisões e integração; Bernardo e João, horas reconstruídas. A maior divergência individual foi 100 p.p., portanto exige explicação, não ocultação (Figura~\ref{fig:c2-artigo}).
 
+Em Recursos e Custos, o esforço foi convertido pelo custo de referência de R\$~14,77 por hora. Esse valor corresponde ao custo mensal convencionado de R\$~1.950,00 para um estagiário de desenvolvimento (bolsa de R\$~1.500,00 acrescida de 30\% de custos adicionais), dividido por 132 horas mensais; trata-se de uma base comparativa, e não de pagamento real. A Tabela~\ref{tab:custos-entrega} apresenta o estimado e o realizado por entrega.
+
+\begin{table}[!ht]
+\centering
+\caption{Custo estimado e realizado por entrega.}
+\label{tab:custos-entrega}
+\scriptsize
+\begin{tabularx}{\linewidth}{Lp{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}}
+\toprule
+\textbf{Entrega} & \textbf{Horas estimadas} & \textbf{Custo estimado} & \textbf{Horas realizadas} & \textbf{Custo realizado} \\
+\midrule
+E1  & 20,5 h & R\$ 302,78   & 57 h & R\$ 841,89 \\
+E2  & 110 h  & R\$ 1.624,70 & 14 h & R\$ 206,78 \\
+PC2 & 18 h   & R\$ 265,86   & 3 h  & R\$ 44,31 \\
+\bottomrule
+\end{tabularx}
+\tabfonte{elaboração própria a partir de \texttt{esforco\_consolidado.csv}; custo de R\$~14,77/h calculado na Tabela~14 dos construtos de medição e valores conferidos na Tabela~2 do dashboard PSM/CID, em 15/11/2026.}
+\end{table}
+
 \begin{center}
 \captionsetup{font=scriptsize}
 \begin{minipage}[t]{.32\linewidth}
@@ -517,12 +536,32 @@ A Figura~\ref{fig:gqm} mostra a hierarquia completa nos três níveis do GQM. To
 \end{figure}
 
 % ======================================================================
+\section{Fase 3: projeto da avaliação}
+\label{sec:fase3}
+
+\subsection{Método e ambiente}
+
+A avaliação foi projetada como externa, de caixa-preta e orientada a tarefas, sobre o núcleo do Moodle 5.3 LTS com o tema Boost e sem plugins de terceiros. Os critérios de sucesso e os níveis de julgamento da Fase~2 são congelados antes da coleta. Instalações e atualizações têm três execuções cada; nos demais casos faz-se uma execução completa e repete-se qualquer falha para separar defeito do produto de erro do avaliador. Cada caso gera um registro com data, avaliador, resultado e evidência, e um segundo integrante confere o oráculo, uma execução de M3.3 e a lista de preservação de M3.5.
+
+O servidor de referência é uma máquina virtual Ubuntu 24.04 LTS, com 2~vCPU, 4~GB de RAM e 40~GB de disco, Apache~2.4, PostgreSQL~17 e duas instâncias equivalentes com PHP~8.3 e 8.4. Avaliam-se o Moodle~5.3.x e a atualização a partir da versão~4.5.x; um único \emph{snapshot} sem Moodle origina as máquinas limpas. O acesso cobre Windows/Chrome, Windows/Firefox, Ubuntu/Firefox e Android/Chrome. As ferramentas auxiliares incluem \texttt{curl} ou Python para REST, LibreOffice e Thunderbird como receptores, \texttt{script} para logs temporais e \texttt{sha256sum} e consultas SQL para verificação de integridade.
+
+\subsection{Massa de dados e oráculo}
+
+A massa fictícia e reproduzível contém 30 estudantes, um docente, um administrador e dois cursos. O curso principal reúne as 12 tarefas do catálogo e atividades de tarefa, questionário, fórum e arquivo; o segundo curso recebe a restauração. Também são congelados arquivos de importação e comparação, sem dados pessoais reais e com e-mails no domínio reservado \texttt{example.invalid}. A geração por script evita variação entre as instalações e entre as medições anteriores e posteriores à atualização.
+
+O oráculo de M1.2 possui 20 casos calculados manualmente antes da coleta: 10 de pontuação de questionário, 6 de agregação ponderada e 4 de controle de prazo. Cada linha registra configuração, entradas, resultado esperado e tolerância de 0,01 ponto. Para as demais métricas, a documentação oficial e os arquivos de referência congelados funcionam como origem da verdade; qualquer passo não documentado é registrado como contorno, sem ajuste posterior do critério.
+
+\subsection{Cronograma de execução}
+
+O plano organiza a Fase~3 e a coleta em cinco semanas. De 11 a 16/11, a equipe revisa o plano, prepara a imagem-base e os scripts; de 17 a 23/11, executa o piloto e congela os limites de M3.4, a lista de 40 itens de M3.5 e o oráculo. De 24 a 30/11, coleta G1 e G2; de 1 a 7/12, coleta G3, incluindo as seis instalações/atualizações e os ambientes de acesso; de 8 a 14/12, calcula os resultados, aplica o julgamento, seleciona a ação de melhoria e consolida a segunda versão do artigo. O piloto não entra nos resultados, e qualquer alteração posterior de critério é registrada em ata.
+
+% ======================================================================
 \section{Considerações parciais}
 \label{sec:consideracoes}
 
-Esta entrega estabeleceu os requisitos da avaliação do Moodle 5.3 LTS e especificou como ela será feita. A Fase~1 definiu o propósito (apoiar a decisão de migração), os requisitantes e as partes interessadas, o tipo de produto, o modelo de qualidade adaptado, a priorização por método explícito, o escopo e a relação com o ODS~4. A Fase~2 desdobrou as três características priorizadas em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis de pontuação e critérios de julgamento ligados às decisões do requisitante.
+Esta entrega estabeleceu os requisitos da avaliação do Moodle 5.3 LTS e especificou como ela será feita. A Fase~1 definiu o propósito (apoiar a decisão de migração), os requisitantes e as partes interessadas, o tipo de produto, o modelo de qualidade adaptado, a priorização por método explícito, o escopo e a relação com o ODS~4. A Fase~2 desdobrou as três características priorizadas em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis de pontuação e critérios de julgamento ligados às decisões do requisitante. A Fase~3 transformou essa especificação em um plano reprodutível, com método, ambiente, massa fictícia, oráculo e cronograma de coleta.
 
-As principais limitações são: as necessidades de várias partes interessadas são hipóteses não validadas por entrevistas; a instalação local não representa uma instalação institucional; a exclusão da segurança depende do filtro de viabilidade; e os limites de tempo de M3.4 ainda precisam ser calibrados. Na Entrega~2, a equipe produzirá o plano de avaliação (Fase~3), com ambiente, massa de dados, oráculo e cronograma; executará as medições e o julgamento (Fase~4); e implementará ao menos uma ação de melhoria justificada pelas evidências.
+As principais limitações são: as necessidades de várias partes interessadas são hipóteses não validadas por entrevistas; a instalação local não representa uma instalação institucional; a exclusão da segurança depende do filtro de viabilidade; e os limites de tempo de M3.4 ainda precisam ser calibrados no piloto. Na Fase~4, a equipe executará as medições e o julgamento e implementará ao menos uma ação de melhoria justificada pelas evidências.
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
