@@ -9,14 +9,1478 @@
    }
   ],
   "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nFechar a declaração de uso de IA com os usos da semana, conferir os critérios da Fase 3, da Fase 4 e da avaliação geral e publicar a release E2 com o PDF do artigo até 22/11, 23h59.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Declaração de IA completa\r\n- [ ] Checklist da rubrica conferido\r\n- [ ] Release E2 publicada com o PDF\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:20Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 78,
+  "state": "OPEN",
+  "title": "[Gestão] Declaração de IA final, release E2 e revisão pela rubrica"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nAtualizar a Tabela de Contribuição (Apêndice A e `docs/sobre/equipe.md`) com as tarefas de cada integrante e o percentual de esforço somando 100% (critério AG-C5), a partir de `contribuicao.csv` e das horas registradas.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Tarefas de cada integrante descritas\r\n- [ ] Percentuais somando 100%, com a fonte\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:17Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 77,
+  "state": "OPEN",
+  "title": "[Artigo] Tabela de contribuição da E2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nConsolidar no artigo a Fase 4, os resultados, as relações entre as características, a ação de melhoria e a conclusão, a partir dos parágrafos de cada coletor, dentro do limite de 15 páginas.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Seções exigidas na E2 presentes\r\n- [ ] PDF com no máximo 15 páginas, sem contar a tabela de contribuição\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:14Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 76,
+  "state": "OPEN",
+  "title": "[Artigo] Fase 4, resultados e conclusão"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nPublicar os resultados da Fase 4 na GitPage: métricas, notas, julgamento, relações entre as características e ação de melhoria, com links para os dados brutos.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nGitPage\r\n\r\n### Estimativa (horas)\r\n\r\n2\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Tabelas e figuras numeradas, com legenda e fonte\r\n- [ ] Links para `dados/avaliacao/`\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:11Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 75,
+  "state": "OPEN",
+  "title": "[GitPage] Página de resultados da Fase 4"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   },
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nEscolher a ação de melhoria entre os resultados com nota 1 ou 2, pelo tipo de problema (protótipo, alteração de código, modelo técnico ou processo), justificar com a métrica e a evidência e executá-la (entrega obrigatória da E2).\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Ação justificada por métrica e evidência\r\n- [ ] Ação executada e versionada no repositório\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:07Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO045w",
+    "name": "tipo/analise",
+    "description": "Análise de dados e julgamento",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0_aA",
+    "name": "tamanho/G",
+    "description": "Tamanho grande: 8 pontos (mais de 5 h)",
+    "color": "8a8a8a"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 74,
+  "state": "OPEN",
+  "title": "[Fase 4] Ação de melhoria (D4)"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nDiscutir as relações entre adequação funcional, compatibilidade e flexibilidade com base nos resultados, com as evidências, as limitações e os casos em que os dados não permitem estabelecer relação (premissa 1 da especificação).\r\n\r\nPrazo: 21/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n2\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Relações apoiadas em resultados da Fase 4\r\n- [ ] Limitações e casos sem relação declarados\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:05Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO045w",
+    "name": "tipo/analise",
+    "description": "Análise de dados e julgamento",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 73,
+  "state": "OPEN",
+  "title": "[Fase 4] Relações entre as características avaliadas"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nPreencher `dados/avaliacao/calculos.csv`, aplicar os níveis de pontuação da Fase 2, as regras métrica, questão e objetivo, e confirmar ou refutar as hipóteses H1.1 a H3.4.\r\n\r\nPrazo: 21/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 12 métricas calculadas e pontuadas\r\n- [ ] Hipóteses confirmadas ou refutadas com a evidência\r\n- [ ] Julgamento de G1, G2 e G3 respondendo às decisões D1 a D3\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:11:02Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO045w",
+    "name": "tipo/analise",
+    "description": "Análise de dados e julgamento",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 72,
+  "state": "OPEN",
+  "title": "[Fase 4] Cálculo, níveis de pontuação e julgamento de G1 a G3"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nExecutar as 6 execuções do plano (3 instalações limpas e 3 atualizações 4.5 para 5.3), cada uma em VM nova, com log e tempo (`script`), e a comparação dos 40 itens de M3.5 nas atualizações. Uma das execuções é feita por Bernardo (regra R6).\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 6 execuções registradas em `dados/avaliacao/M3.3/execucoes.csv`\r\n- [ ] Tempos de M3.4 e comparação de M3.5 registrados\r\n- [ ] Uma execução feita por Bernardo\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:59Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0_aA",
+    "name": "tamanho/G",
+    "description": "Tamanho grande: 8 pontos (mais de 5 h)",
+    "color": "8a8a8a"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 71,
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de G3: M3.3, M3.4 e M3.5"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nM3.1: executar as 8 tarefas nos ambientes A1 a A4, registrando sistema, navegador e resolução. M3.2: executar T01 a T12 nas instâncias com PHP 8.3 e 8.4.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 4 ambientes registrados com versões\r\n- [ ] T01 a T12 nas duas versões de PHP\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:55Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0_aA",
+    "name": "tamanho/G",
+    "description": "Tamanho grande: 8 pontos (mais de 5 h)",
+    "color": "8a8a8a"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 70,
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de G3: M3.1 e M3.2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nExecutar as 6 funções REST de M2.3 (o token nunca é versionado) e as 3 entidades x 4 operações de M2.4, registrando em `dados/avaliacao/M2.3/` e `M2.4/verificacoes.csv`.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 6 funções com resposta salva e sem token\r\n- [ ] Verificações antes, durante e depois de cada operação\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:51Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 69,
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de G2: M2.3 e M2.4"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nExecutar os 7 formatos (F1 a F7) de M2.1 e a comparação de M2.2 com `compara_registros.py`, guardando entrada, saída e relatório em `dados/avaliacao/M2.1/` e `M2.2/`.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 7 formatos registrados com conclui e aceito pelo receptor\r\n- [ ] Relatórios de comparação versionados\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:48Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 68,
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de G2: M2.1 e M2.2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nExecutar o roteiro de G1 do plano: tarefas T01 a T12, casos do oráculo e casos de prazo. Registrar cada caso em `dados/avaliacao/M1.1/execucoes.csv` e `M1.2/`, com evidência nomeada pela regra da seção 5.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n5\r\n\r\n### Critério de pronto\r\n\r\n- [ ] T01 a T12 e os 20 casos registrados, inclusive as falhas\r\n- [ ] Cada linha aponta para a evidência\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:45Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 67,
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de G1: M1.1, M1.2 e M1.3"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nExecutar a instalação piloto da seção 4 do plano, que não entra no cálculo, para confirmar os limites de tempo de M3.4 e a lista dos 40 itens de M3.5. Congelar os dois em ata antes da primeira execução oficial e ajustar os roteiros ambíguos.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Limites de M3.4 e `dados/avaliacao/M3.5/itens.csv` congelados em ata\r\n- [ ] Roteiros ajustados no plano, se necessário\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:42Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 66,
+  "state": "OPEN",
+  "title": "[Fase 4] Piloto de instalação e congelamento de M3.4 e M3.5"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nCriar `scripts/compara_registros.py` para a comparação campo a campo de M2.2 (só espaços em branco normalizados) e congelar os arquivos de entrada dos 7 formatos em `dados/avaliacao/M2.1/referencia/` antes da primeira troca.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Script testado com um par de arquivos conhecido\r\n- [ ] Arquivos de referência congelados e versionados\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:38Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 65,
+  "state": "OPEN",
+  "title": "[Fase 4] compara_registros.py e arquivos de referência de M2.1"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nProduzir `dados/avaliacao/M1.2/oraculo.csv` com os 20 casos da seção 2 do plano (10 de questionário, 6 de agregação e 4 de prazo), com o valor esperado calculado à mão e a tolerância de 0,01 ponto. A conferência é feita pelo Carlos (regra R6).\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 20 casos com regra, entradas, esperado e tolerância\r\n- [ ] Conferido por Carlos, registrado na issue\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:35Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 64,
+  "state": "OPEN",
+  "title": "[Fase 4] Oráculo de M1.2 com os 20 casos"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nCriar `scripts/gera_massa.py` com a massa de dados fictícia da Tabela 5 do plano (30 estudantes, docente, administrador, 2 cursos, atividades) e os arquivos `usuarios.csv` e `questoes.gift`, sem nenhum dado real (regra R7).\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Massa gerada por script, sem digitação manual\r\n- [ ] `usuarios.csv` (30 linhas) e `questoes.gift` (15 questões) versionados\r\n- [ ] E-mails no domínio `example.invalid`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:32Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 63,
+  "state": "OPEN",
+  "title": "[Fase 4] gera_massa.py e arquivos de referência"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nScript versionado que monta o servidor de referência da seção 2 do plano da Fase 3 (Ubuntu 24.04, Apache 2.4, PHP 8.3 e 8.4, PostgreSQL 17, Moodle 5.3 e 4.5), para cada integrante montar o próprio ambiente igual. Incluir as instruções de uso e o snapshot da imagem-base sem o Moodle.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n5\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Script testado do zero em uma VM limpa\r\n- [ ] Instruções de uso na GitPage\r\n- [ ] Versões instaladas registradas\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:29Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO04UA",
+    "name": "tipo/coleta",
+    "description": "Coleta de dados da avaliação",
+    "color": "1d76db"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 62,
+  "state": "OPEN",
+  "title": "[Fase 4] Script de preparação do servidor de avaliação"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nRoteiro da apresentação de 18/11, feita pela GitPage, sem slides: ordem das páginas, quem apresenta cada parte e o tempo de cada um.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Roteiro com páginas, apresentador e tempo\r\n- [ ] Roteiro compartilhado com a equipe antes de 18/11\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:25Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 61,
+  "state": "OPEN",
+  "title": "[Gestão] Roteiro da apresentação do PC2 pela GitPage"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nAtualizar a versão e a data do rodapé (`mkdocs.yml`), que hoje dizem \"Entrega 2, Versão 2.0, 11/11/2026\", e a situação das entregas na página inicial e no README.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGitPage\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Rodapé com a versão e a data do PC2\r\n- [ ] Situação das entregas atualizada\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:21Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 60,
+  "state": "OPEN",
+  "title": "[GitPage] Rodapé e página inicial na versão do PC2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nRegistrar no registro de decisões o desvio do marco PC1 (A4): a equipe não apresentou no ponto de controle de 19/10 e ficou sem o retorno da docente. Interpretar a causa e registrar a decisão tomada para a E2.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Entrada DG-10 no formato das demais\r\n- [ ] Valor observado e critério de A4\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:17Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 59,
+  "state": "OPEN",
+  "title": "[Gestão] DG-10: PC1 não apresentado"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nCriar o milestone PC2 (15/11), ajustar o prazo da E2 para 22/11, fechar os milestones PC1 e Apresentação, fechar as issues #26, #27 e #29 a #32 (PRs já mergeados) e conferir que as issues novas estão no quadro com a Iteração correta.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Milestones PC2 e E2 com os prazos corretos; PC1 e Apresentação fechados\r\n- [ ] Issues do bloco 3 fechadas com o PR de referência\r\n- [ ] Issues novas no quadro com Iteração\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:14Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 58,
+  "state": "OPEN",
+  "title": "[Gestão] Milestones, issues concluídas e quadro do PC2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nAtualizar `docs/sobre/uso-de-ia.md` e o Apêndice B do artigo com todos os usos de IA desde a E1, com ferramenta, tarefa e como a equipe conferiu (critério AG-C3). Cada integrante informa os próprios usos.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Uma linha por uso, com ferramenta, tarefa e conferência\r\n- [ ] GitPage e Apêndice B iguais\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:11Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 57,
+  "state": "OPEN",
+  "title": "[Gestão] Declaração de uso de IA atualizada para o PC2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nAcrescentar ao artigo a seção da Fase 3 (método, ambiente, massa de dados, oráculo e cronograma, resumidos do plano) e, nos resultados da gestão PSM/CID, o custo estimado x realizado por entrega ao custo da hora de R$ 14,77 (Tabela 14 dos construtos e Tabela 2 do dashboard).\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Seção da Fase 3 coerente com o plano final\r\n- [ ] Custo estimado e realizado com a fonte do custo da hora\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:07Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO001Q",
+    "name": "fase/3",
+    "description": "Fase 3 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 56,
+  "state": "OPEN",
+  "title": "[Artigo] Seção da Fase 3 e custo estimado x realizado em Recursos e Custos"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nO PDF atual tem 15 páginas, o limite da disciplina. Condensar as seções das Fases 1 e 2 de `artigo/main.tex` para abrir espaço para as Fases 3 e 4, sem perder os elementos cobrados na rubrica. Compilar a versão entregue no PC2.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] PDF com no máximo 15 páginas, sem contar a tabela de contribuição\r\n- [ ] Fases 1 e 2 mantêm os elementos da rubrica\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:04Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 55,
+  "state": "OPEN",
+  "title": "[Artigo] Condensar as Fases 1 e 2 e compilar a versão do PC2"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nSubstituir a página desatualizada `docs/fases-3-4.md` por uma página da Fase 4 com o plano de execução: quem coleta cada métrica, em que dia, com qual evidência e em qual pasta de `dados/avaliacao/`, a partir do cronograma do plano da Fase 3. Ajustar o menu do `mkdocs.yml`.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] As 12 métricas com responsável, data e evidência\r\n- [ ] `fases-3-4.md` removido ou substituído e menu ajustado\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:10:00Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 54,
+  "state": "OPEN",
+  "title": "[Fase 4] Plano de execução da Fase 4 na GitPage"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nRegistrar em `atas/` a reunião em que a equipe aprova o plano da Fase 3: cronograma, responsáveis, uso de um servidor por integrante e manutenção das 6 execuções de M3.3 a M3.5. Incluir a ata no índice de `docs/gestao/atas.md`.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 3\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Ata em `atas/AAAA-MM-DD-ata-NN.md`, no modelo do repositório\r\n- [ ] Ata listada em `docs/gestao/atas.md`\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:09:57Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO001Q",
+    "name": "fase/3",
+    "description": "Fase 3 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 53,
+  "state": "OPEN",
+  "title": "[Fase 3] Ata da reunião de aprovação do plano de avaliação"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\r\n\r\nFechar `docs/fase-3/plano-de-avaliacao.md` para a entrega do PC2: reescrever o cronograma (seção 6) para o período de 16 a 22/11, resolver todos os itens marcados com *[confirmar]* (virtualizador, especificação da VM, papéis) e remover o aviso de rascunho. As 6 execuções de M3.3 a M3.5 ficam mantidas. Cada integrante usa o próprio servidor, montado pelo script de preparação (issue do servidor).\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 3\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Cronograma de 16 a 22/11, com responsável por métrica\r\n- [ ] Nenhum *[confirmar]* restante e aviso de rascunho removido\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-14T21:09:54Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO001Q",
+    "name": "fase/3",
+    "description": "Fase 3 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 52,
+  "state": "OPEN",
+  "title": "[Fase 3] Finalizar o plano de avaliação"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
    "id": "U_kgDOB6x8lA",
    "is_bot": false,
    "login": "cadumotta",
    "name": ""
   },
   "body": "### Descrição\n\nConferir no repositório, antes da entrega, e marcar **apenas** o que estiver verificado.\n\n**Requisito da especificação (Seção 2)**\n- [ ] As três categorias têm ao menos uma medida especificada e medida\n- [ ] As evidências estão no repositório (commits, issues, milestones, dashboard)\n- [ ] Medições, interpretação e decisões de gestão estão registradas\n\n**Conformidade PSM**\n- [ ] Cada medida tem o construto completo\n- [ ] Os critérios de decisão foram definidos antes da análise\n- [ ] Há ao menos uma medida derivada por categoria\n- [ ] A terminologia CID foi adaptada e a adaptação está documentada\n\n**Rastreabilidade**\n- [ ] Todo gráfico rastreia até um CSV versionado\n- [ ] Todo CSV consolidado é gerado por script reexecutável\n- [ ] Os dados reconstruídos estão marcados como tal\n- [ ] `validar_dados.py` roda sem erros\n\n**Rubrica**\n- [ ] GitPage atualizada, com versão e data no rodapé e links funcionais (F2-C10, AG-C4)\n- [ ] Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2)\n- [ ] Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5)\n- [ ] Declaração de uso de IA específica (AG-C3)\n- [ ] Sem emojis, ícones ou figurinhas no conteúdo\n- [ ] Coerência com as Fases 1 e 2 já entregues (F2-C11)\n\n**Depende de:** #29, #30, #31\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Todos os itens acima verificados, ou pendências registradas como issue\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:12:06Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWfJQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #49, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #32\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:12:05Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/32#issuecomment-6884269861"
+   }
+  ],
   "createdAt": "2026-11-11T01:08:16Z",
   "labels": [
    {
@@ -48,10 +1512,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 32,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID] Checklist de aceitação final"
  },
  {
@@ -70,8 +1534,23 @@
    "name": ""
   },
   "body": "### Descrição\n\nManter a declaração de uso de IA (critérios AG-C3 e F2-C9) para todo o trabalho de gestão PSM/CID: ferramenta, tarefa específica e como a equipe conferiu e ajustou o resultado.\n\nDecidir se ela fica em `docs/metricas/DECLARACAO-IA.md` ou se continua concentrada em `docs/sobre/uso-de-ia.md`, a página já publicada e citada no Apêndice B do artigo. A recomendação é uma única declaração, para evitar divergência. Cada integrante informa o que usou nas suas issues.\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Declaração atualizada com todas as tarefas da gestão PSM/CID\n- [ ] Coerente com o Apêndice B do artigo\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:12:03Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWdQQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #48, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #31\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:12:03Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/31#issuecomment-6884269377"
+   }
+  ],
   "createdAt": "2026-11-11T01:08:13Z",
   "labels": [
    {
@@ -103,10 +1582,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 31,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID] Declaração de uso de IA da gestão PSM/CID"
  },
  {
@@ -125,8 +1604,23 @@
    "name": ""
   },
   "body": "### Descrição\n\nProduzir `docs/metricas/04-texto-artigo.md`, pronto para transpor ao LaTeX (modelo SBC, limite de 15 páginas, então **enxuto**), e transpor para `artigo/main.tex`:\n\n1. **Metodologia (1 a 1,5 página):** modelo PSM/CID adotado, adaptação da terminologia, as três categorias e uma tabela compacta \"Categoria -> Necessidade de informação -> Medida -> Indicador -> Critério de decisão\".\n2. **Resultados (cerca de 1 página):** 2 ou 3 figuras (sugestão: A2, B1 e C2) e a tabela-resumo das decisões de gestão.\n3. **Ameaças à validade:** dados reconstruídos, viés de autoapontamento de horas, commit como proxy de esforço e amostra pequena de iterações.\n4. **Apêndice:** Tabela de Contribuição derivada de C2, totalizando 100%. Ela não conta no limite de páginas.\n\nAs figuras são citadas no texto (\"ver Figura 3\"), e o PSM CID Framework v2.1 entra nas referências.\n\nAtenção: `artigo/main.tex`, linha 121, diz que \"a integração na main é feita por pull request revisado por outro integrante\". Ajustar o texto ao fluxo que a equipe realmente usa.\n\n**Depende de:** #28, #26\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] `04-texto-artigo.md` escrito\n- [ ] Seções transpostas para `main.tex`, compilando e dentro de 15 páginas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:12:01Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWbHA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #47, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #30\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:12:00Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/30#issuecomment-6884268828"
+   }
+  ],
   "createdAt": "2026-11-11T01:08:10Z",
   "labels": [
    {
@@ -158,10 +1652,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 30,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 8] Texto da gestão PSM/CID para o artigo"
  },
  {
@@ -180,8 +1674,23 @@
    "name": ""
   },
   "body": "### Descrição\n\nA GitPage é avaliada em três critérios (F2-C10, F3-C7 e AG-C4). Garantir:\n\n- Seção \"Gestão do Projeto - Métricas PSM/CID\" no menu principal (`mkdocs.yml`), integrando ou substituindo as páginas atuais de `docs/gestao/`, sem conteúdo duplicado.\n- Narrativa para leitor externo: objetivo da medição -> medidas -> indicadores -> decisões.\n- Links funcionando para o repositório, as releases e tags, os CSVs e os scripts.\n- Rodapé com versão e data da última atualização (o `copyright` do `mkdocs.yml` ainda diz \"Entrega 1 | Versão 1.1 · 26/10/2026\").\n- Links cruzados entre as páginas das Fases 1 a 4 e a página de métricas.\n- Sem emojis, ícones ou figurinhas.\n\n**Depende de:** #27, #28\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Seção no menu, com narrativa e links cruzados\n- [ ] `mkdocs build --strict` sem avisos\n- [ ] Rodapé com versão e data atualizadas\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:11:58Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWZDA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #46, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #29\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:11:57Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/29#issuecomment-6884268300"
+   }
+  ],
   "createdAt": "2026-11-11T01:08:04Z",
   "labels": [
    {
@@ -213,10 +1722,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 29,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 7] Publicar a gestão PSM/CID na GitPage"
  },
  {
@@ -268,7 +1777,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 28,
   "state": "CLOSED",
@@ -290,8 +1799,23 @@
    "name": ""
   },
   "body": "### Descrição\n\nCriar `docs/metricas/dashboard.md`, publicado na GitPage, com:\n\n- uma tabela-resumo: medida | valor atual | limiar de decisão | situação (dentro ou fora) | última atualização;\n- os gráficos agrupados pelas três categorias (Calendário e Progresso, Desempenho dos Processos, Recursos e Custos), numerados, com legenda e fonte;\n- links para os CSVs e para os scripts que os geraram.\n\nSe a tabela-resumo puder ser gerada pelo script, melhor, porque assim não depende de edição manual.\n\n**Depende de:** #26\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Dashboard publicado e linkado no menu\n- [ ] Tabela-resumo coerente com os consolidados\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:11:56Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWXEA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #45, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #27\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:11:55Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/27#issuecomment-6884267792"
+   }
+  ],
   "createdAt": "2026-11-11T01:07:56Z",
   "labels": [
    {
@@ -323,10 +1847,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 27,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 5] Dashboard das métricas"
  },
  {
@@ -345,8 +1869,23 @@
    "name": ""
   },
   "body": "### Descrição\n\nCriar `scripts/gerar_graficos.py`: consolidados -> figuras em `docs/metricas/graficos/`. No mínimo um indicador por medida obrigatória: A1, A2, A3, B1, B2, C1, C2 e C3.\n\nRegras de apresentação (AG-C2):\n\n- Título, eixos rotulados com unidade, legenda e nota de fonte: `Fonte: elaborado pelos autores a partir de <arquivo>.csv, extraído em <data>`.\n- SVG ou PNG com pelo menos 150 dpi, nomeados `fig-<id-medida>-<nome>.svg`.\n- Paleta consistente entre todos os gráficos, sem depender só de cor para distinguir séries.\n- Linhas verticais dos marcos (E1, PC1, E2) nos gráficos temporais.\n- Sem emojis ou ícones.\n\n**Depende de:** #25\n\nIssue de acompanhamento: #15\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Figuras das 8 medidas obrigatórias geradas pelo script\n- [ ] Todas com título, eixos, legenda e fonte\n- [ ] Revisado por outro integrante\n- [ ] Horas lançadas no apontamento de esforço\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-14T21:11:53Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABmlWVYg",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Concluída no PR #44, mergeado em 11/11/2026. A issue não fechou sozinha porque o PR usava \"Fecha #26\", e o GitHub só reconhece palavras-chave em inglês.",
+    "createdAt": "2026-11-14T21:11:53Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/26#issuecomment-6884267362"
+   }
+  ],
   "createdAt": "2026-11-11T01:07:45Z",
   "labels": [
    {
@@ -378,10 +1917,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 26,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[PSM/CID - Etapa 5] gerar_graficos.py e figuras dos indicadores"
  },
  {
@@ -433,7 +1972,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 25,
   "state": "CLOSED",
@@ -488,7 +2027,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 24,
   "state": "CLOSED",
@@ -543,7 +2082,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 23,
   "state": "CLOSED",
@@ -598,7 +2137,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 22,
   "state": "CLOSED",
@@ -653,7 +2192,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 21,
   "state": "CLOSED",
@@ -708,7 +2247,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 20,
   "state": "CLOSED",
@@ -778,7 +2317,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 19,
   "state": "CLOSED",
@@ -833,7 +2372,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 18,
   "state": "CLOSED",
@@ -888,7 +2427,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 17,
   "state": "CLOSED",
@@ -943,7 +2482,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 16,
   "state": "CLOSED",
@@ -992,7 +2531,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-18T00:00:00Z"
+   "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 15,
   "state": "CLOSED",
