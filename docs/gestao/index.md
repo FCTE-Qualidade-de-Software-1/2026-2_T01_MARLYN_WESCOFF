@@ -54,6 +54,6 @@ As [medições históricas](registro-medicoes.md) preservam os retratos anterior
 - A [Fase 1](../fase-1/index.md) define propósito, partes interessadas, produto e escopo.
 - A [Fase 2](../fase-2/index.md) especifica as métricas de qualidade do produto.
 - A [Fase 3](../fase-3/plano-de-avaliacao.md) planeja a execução e os recursos necessários.
-- A [Fase 4](../fases-3-4.md#fase-4-executar-a-avaliacao-prevista) obtém as medidas do produto, julga os objetivos e executa a ação de melhoria.
+- A [Fase 4](../fase-4/plano-de-execucao.md) obtém as medidas do produto, julga os objetivos e executa a ação de melhoria.
 
 As métricas PSM/CID acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.
