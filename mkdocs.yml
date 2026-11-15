@@ -121,7 +121,8 @@ nav:
       - Rastreabilidade Fase 1 → Fase 2: fase-2/rastreabilidade.md
   - Fase 3:
       - Plano de avaliação: fase-3/plano-de-avaliacao.md
-  - Fases 3 e 4: fases-3-4.md
+  - Fase 4:
+      - Plano de execução: fase-4/plano-de-execucao.md
   - Gestão do Projeto - Métricas PSM/CID:
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
