@@ -50,6 +50,8 @@ O progresso deste plano, o tempo de execução das tarefas e o esforço da equip
 
 <p class="legenda">Tabela 3. Servidor de referência. Fonte: elaboração própria, a partir de [Produto avaliado](../fase-1/produto.md).</p>
 
+O servidor é montado pelo script `scripts/preparar_servidor.sh`, conforme [Preparação do servidor](preparacao-do-servidor.md).
+
 ### Ambientes de acesso
 
 Os quatro ambientes A1 a A4 são os de [Escopo](../fase-1/escopo.md#ambientes-de-acesso). Na Fase 3, a equipe preenche a coluna de versões: sistema operacional, versão exata do navegador e resolução. Quem não tem o dispositivo A4 (Android) usa o de outro integrante, e o dono do dispositivo é registrado.
