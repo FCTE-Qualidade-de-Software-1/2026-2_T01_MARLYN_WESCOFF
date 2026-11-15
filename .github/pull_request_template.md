@@ -1,6 +1,6 @@
 ## O que muda
 
-Fecha #
+Closes #
 
 ## Conferência
 

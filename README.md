@@ -12,6 +12,9 @@ Avaliação da qualidade de produto do **Moodle 5.3 LTS**, sistema de gestão da
 | **GitPage** | <https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/> |
 | **Artigo da Entrega 1 (PDF)** | [`docs/artigo/artigo-e1.pdf`](docs/artigo/artigo-e1.pdf) · [na GitPage](https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/artigo/artigo-e1.pdf) |
 | **Releases** | [Releases do repositório](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/releases) |
+| **Quadro de tarefas (GitHub Projects)** | <https://github.com/users/cadumotta/projects/1> (fica na conta de um integrante, porque a organização da disciplina não permite criar projetos) |
+| **Issues e milestones** | [Issues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues) · [Milestones](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/milestones) |
+| **Dashboard das métricas PSM/CID** | <https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/metricas/dashboard/> (atualizado todo dia pelo GitHub Actions) |
 | **Docente** | Profa. Cristiane Soares Ramos |
 
 ## O que está sendo avaliado
@@ -85,18 +88,6 @@ python3 scripts/psm_coleta.py --repo FCTE-Qualidade-de-Software-1/2026-2_T01_MAR
 ```
 
 Lê as issues e milestones pela API do GitHub e o apontamento de esforço `docs/metricas/dados/brutos/esforco.csv`, imprime o resumo das três medidas e grava um retrato em `dados/gestao/psm-AAAA-MM-DD.csv`.
-
-## Como contribuir
-
-O guia completo está em [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-
-1. Abra uma issue com o modelo **Tarefa** (com estimativa de horas) e associe ao milestone da entrega.
-2. Crie um branch, por exemplo `docs/fase-2-compatibilidade`.
-3. Abra um pull request e peça revisão a outro integrante.
-4. Ao fim de cada sessão de trabalho, registre as horas em `docs/metricas/dados/brutos/esforco.csv` e, se usou IA, em `docs/sobre/uso-de-ia.md`.
-
-Regras de estilo da disciplina: figuras e tabelas numeradas, com legenda e fonte; referências cruzadas; sem emojis, figurinhas ou ícones no relatório e na GitPage.
 
 ## Equipe
 

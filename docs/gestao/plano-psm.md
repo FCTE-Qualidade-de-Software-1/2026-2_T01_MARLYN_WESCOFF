@@ -8,6 +8,9 @@ Cada medida é descrita no template de instância do modelo de informação (*me
 
 Para a categoria Recursos e Custos, a equipe adota um **custo de referência de R$ 15,00 por hora** de integrante, valor aproximado da hora de um estágio de 30 h semanais em desenvolvimento de software. O valor é uma convenção do projeto para comparar entregas e não representa pagamento real; se a equipe adotar outra fonte, o valor será corrigido aqui e em `scripts/psm_coleta.py`.
 
+!!! note "Valor substituído em 14/11/2026"
+    Esta premissa, usada na E1, não tinha fonte. A partir de 14/11/2026, o custo da hora é R$ 14,77, calculado a partir da remuneração de um estagiário, com fontes, na [Tabela 14 dos Construtos de medição](../metricas/02-construtos-de-medicao.md#custo-da-hora). A mudança está registrada na [DG-09](../metricas/03-registro-de-decisoes.md#dg-09-custo-da-hora-com-fonte).
+
 ## 1. Planejado vs. concluído (Calendário e Progresso)
 
 | Campo do template | Definição |

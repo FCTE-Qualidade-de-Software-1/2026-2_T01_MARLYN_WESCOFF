@@ -42,7 +42,7 @@ EQUIPE = RAIZ / "docs" / "sobre" / "equipe.md"
 BRASILIA = timezone(timedelta(hours=-3))
 
 PONTOS = {"tamanho/P": 1, "tamanho/M": 3, "tamanho/G": 8}
-CUSTO_HORA = 15.00            # docs/gestao/plano-psm.md, seção "Custo da hora"
+CUSTO_HORA = 14.77            # estagiário; docs/metricas/02-construtos-de-medicao.md, Tabela 14 (DG-09)
 LIMITE_PARADA_DIAS = 3        # B1, critério mantido do plano da E1
 ENTREGA_CORRENTE = "E2"       # entrega de quem não tem prazo definido depois da E1
 STATUS = {"backlog": "backlog", "a fazer": "a_fazer", "em progresso": "em_progresso",
@@ -532,7 +532,8 @@ def c1_c3_esforco(dd):
     def linha(entrega, tipo, nivel, chave, **campos):
         base = {"entrega": entrega, "tipo_registro": tipo, "nivel": nivel, "chave": chave, "horas": "",
                 "percentual": "", "desvio_pct": "", "previsto_h": "", "estimado_h": "", "acuracia": "",
-                "erro_pct": "", "custo_rs": "", "observacao": "", "historico": dd.historico(entrega)}
+                "erro_pct": "", "custo_rs": "", "custo_estimado_rs": "", "observacao": "",
+                "historico": dd.historico(entrega)}
         base.update({k: num(v) if isinstance(v, float) else v for k, v in campos.items()})
         linhas.append(base)
 
@@ -577,7 +578,11 @@ def c1_c3_esforco(dd):
             linha(entrega, tipo, "issue", f"#{n}", horas=r, estimado_h=e, acuracia=r / e if e else None,
                   erro_pct=abs(r - e) / e * 100 if e else None,
                   observacao="" if e else "sem estimativa numérica: fora da acurácia")
+        # C1: custo estimado da entrega = soma das estimativas de todas as issues do milestone x custo da hora
+        previsto_entrega = sum(estimativa(i) or 0 for i in dd.issues if dd.entrega_da_issue(i) == entrega)
         linha(entrega, tipo, "total", "total", horas=total, custo_rs=total * CUSTO_HORA,
+              previsto_h=previsto_entrega or None,
+              custo_estimado_rs=previsto_entrega * CUSTO_HORA if previsto_entrega else None,
               estimado_h=soma_e or None, acuracia=soma_r / soma_e if soma_e else None,
               erro_pct=statistics.mean(erros) if erros else None,
               observacao="acurácia e erro percentual médio só com as issues que têm estimativa e horas")
@@ -668,7 +673,7 @@ def gravar(nome, linhas, fonte, data_ref, campos_vazios):
 
 CAMPOS_VAZIOS = {
     "esforco_consolidado.csv": ["entrega", "tipo_registro", "nivel", "chave", "horas", "percentual", "desvio_pct",
-                                "previsto_h", "estimado_h", "acuracia", "erro_pct", "custo_rs", "observacao",
+                                "previsto_h", "estimado_h", "acuracia", "erro_pct", "custo_rs", "custo_estimado_rs", "observacao",
                                 "historico"],
 }
 

@@ -270,7 +270,7 @@ Limitação: na E1 não houve nenhum registro de não conformidade em revisão i
 
 ## Recursos e Custos
 
-O custo é medido em **homem-hora**, a medida primária desta categoria. A monetização é complementar e usa a premissa do [Plano de medição](../gestao/plano-psm.md#custo-da-hora): R$ 15,00 por hora de integrante, uma convenção do projeto para comparar entregas, e não pagamento real. A fonte das três medidas é o apontamento `esforco.csv`, triangulado com os commits, as issues e as revisões de pull request.
+O custo é medido em **homem-hora**, a medida primária desta categoria. A monetização é complementar e usa o custo da hora de um estagiário, R$ 14,77, calculado na Tabela 14, no fim desta seção. A fonte das três medidas é o apontamento `esforco.csv`, triangulado com os commits, as issues e as revisões de pull request.
 
 ### C1. Esforço da equipe
 
@@ -287,7 +287,7 @@ O custo é medido em **homem-hora**, a medida primária desta categoria. A monet
 | Tipo de método | Subjetivo no registro (cada integrante anota as próprias horas); objetivo na agregação |
 | Escala e tipo de escala | Reais maiores ou iguais a 0; razão |
 | Unidade de medida | Horas (homem-hora); reais (R$) no custo |
-| Função de medição | `H(m)` = soma de `h(m, f, t)` por integrante; `H(f)` = soma de `h(m, f, t)` por fase; `Total` = soma de `H(m)`; `%H(m) = H(m) / Total x 100`; `Média = Total / número de integrantes`; `Desvio(m) = (H(m) - Média) / Média x 100`; `Desvio(f) = (H(f) - Prev(f)) / Prev(f) x 100`; `Custo = Total x R$ 15,00` |
+| Função de medição | `H(m)` = soma de `h(m, f, t)` por integrante; `H(f)` = soma de `h(m, f, t)` por fase; `Total` = soma de `H(m)`; `%H(m) = H(m) / Total x 100`; `Média = Total / número de integrantes`; `Desvio(m) = (H(m) - Média) / Média x 100`; `Desvio(f) = (H(f) - Prev(f)) / Prev(f) x 100`; `Custo = Total x R$ 14,77`; `Custo estimado = Prev x R$ 14,77`, com `Prev` = soma das estimativas das issues da entrega |
 | Medida derivada | Esforço total, por fase, por tipo e por integrante; percentual por integrante; desvio em relação à média e ao previsto da fase; custo da entrega |
 | Modelo de análise | Integrante muito acima da média indica concentração de trabalho e risco de dependência de uma pessoa; muito abaixo indica sub-alocação ou falta de registro. Fase acima do previsto indica escopo subestimado, que tende a comprimir as fases seguintes |
 | Indicador | Gráfico de barras empilhadas de horas por fase e tipo de atividade, por entrega; gráfico de barras das horas por integrante, com a linha da média e a faixa de +/-30% |
@@ -352,3 +352,19 @@ Limitação: o número de commits, sozinho, é uma medida ruim de contribuição
 <p class="legenda">Tabela 13. Construto da medida C3, estimado x real. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5, e Parte 2, seção 9.2.</p>
 
 Limitação: a estimativa vem do campo da issue, e o real, do `esforco.csv`. Issues sem estimativa numérica ou sem horas lançadas com o número da issue ficam fora do cálculo e são listadas à parte, para não distorcer a acurácia. Na E1, as issues somam 20,5 h estimadas (retratos de 26/10/2026), mas as horas reais são reconstruídas (Diagnóstico, lacuna L1) e várias atividades da E1 não têm issue, como a primeira versão da Fase 1. A acurácia da E1 é apresentada só como registro histórico e não é usada como fator de recalibração.
+
+### Custo da hora
+
+O custo em reais converte o esforço de C1 e de C3 com um valor de referência por hora de integrante. Como a equipe é formada por estudantes, a referência é a remuneração de um estagiário de desenvolvimento (Tabela 14). O valor é uma convenção para comparar o custo estimado com o realizado e as entregas entre si; ele não representa pagamento real.
+
+| Item | Valor | Fonte |
+|---|---|---|
+| Bolsa mensal de estágio | R$ 1.500,00 | Ponto médio da faixa de R$ 1.000,00 a R$ 2.000,00 do [Glassdoor: salário de estagiário de TI em Brasília](https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-estagiario-de-ti-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,25.htm), consultado em 14/11/2026 |
+| Custos adicionais (30%) | R$ 450,00 | Aproximação para auxílio-transporte, seguro contra acidentes pessoais e recesso remunerado, obrigatórios no estágio ([Lei 11.788/2008](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm), arts. 9º, 12 e 13), com o percentual de encargos sugerido pela [DevMedia](https://www.devmedia.com.br/quanto-vale-o-servico-de-um-programador-aprenda-a-cobrar-pelo-seu-trabalho/37214) para o custo de um programador |
+| Custo mensal | R$ 1.950,00 | Soma das linhas anteriores |
+| Horas por mês | 132 h | 6 h por dia x 22 dias úteis, limite da jornada de estágio no ensino superior ([Lei 11.788/2008](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm), art. 10, inciso II) |
+| **Custo da hora** | **R$ 14,77** | R$ 1.950,00 / 132 h |
+
+<p class="legenda">Tabela 14. Cálculo do custo da hora de integrante. Fonte: elaborado pelos autores a partir da Lei 11.788/2008, do Glassdoor e da DevMedia.</p>
+
+O valor substitui, a partir de 14/11/2026, a premissa de R$ 15,00 por hora do plano da E1, que não tinha fonte (Registro de decisões, DG-09). O custo estimado de uma entrega é a soma das estimativas das issues do milestone vezes o custo da hora; o custo realizado é a soma das horas de `esforco.csv` vezes o mesmo valor.
