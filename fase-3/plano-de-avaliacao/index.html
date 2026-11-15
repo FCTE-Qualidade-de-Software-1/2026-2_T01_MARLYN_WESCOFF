@@ -2696,19 +2696,23 @@
 </tr>
 <tr>
 <td>Cursos</td>
-<td>2: um completo, com as atividades do catálogo T01 a T12, e um vazio, destino da restauração (T12)</td>
+<td>3: um completo (<code>AVAL-CAT</code>), com as atividades do catálogo T01 a T12; um vazio (<code>AVAL-REST</code>), destino da restauração (T12); e o do oráculo (<code>AVAL-ORACULO</code>), com as configurações de M1.2</td>
 </tr>
 <tr>
 <td>Atividades do catálogo</td>
-<td>1 tarefa com data de entrega e data limite, 1 questionário (3 questões de múltipla escolha e 2 numéricas), 1 fórum, 1 arquivo de material</td>
+<td>2 tarefas (uma dentro do prazo, para T04, e uma com a data limite vencida, para T05), 1 questionário (3 questões de múltipla escolha e 2 numéricas), 1 fórum com 1 tópico e 3 respostas, 1 arquivo de material</td>
+</tr>
+<tr>
+<td>Dados já lançados</td>
+<td>3 itens de nota com as notas dos 30 estudantes, 10 envios na tarefa aberta e 6 eventos de calendário, para F2, F3 e F6 de M2.1 e para a comparação de M3.5</td>
 </tr>
 <tr>
 <td>Configurações do oráculo (M1.2)</td>
 <td>Os questionários, os itens e categorias do livro de notas e as atividades com prazo de cada caso de <code>dados/avaliacao/M1.2/oraculo.csv</code> (Q-01 a Q-10, A-01 a A-06, P-01 a P-04), com as quantidades de questões, os pesos e o crédito parcial definidos em cada linha</td>
 </tr>
 <tr>
-<td>Arquivos de referência de importação</td>
-<td><code>usuarios.csv</code> (30 linhas) e <code>questoes.gift</code> (15 questões), usados em F1 e F4 de M2.1</td>
+<td>Arquivos de referência</td>
+<td><code>usuarios.csv</code> (30 linhas) e <code>questoes.gift</code> (15 questões), usados em F1 e F4 de M2.1; <code>notas.csv</code> e <code>eventos.csv</code>, referências de F2, F3 e F6</td>
 </tr>
 <tr>
 <td>Dados de comparação</td>
@@ -2718,7 +2722,7 @@
 </table>
 <p class="legenda">Tabela 6. Massa de dados fictícia. Fonte: elaboração própria.</p>
 
-<p>A massa é gerada pelo script versionado <code>scripts/gera_massa.py</code> e não digitada à mão, para que todos os servidores e as três atualizações de M3.3 comecem do mesmo conjunto e M3.5 compare "antes" e "depois" sem ruído. As questões dos questionários do oráculo são criadas pelo script no banco de questões do curso; os arquivos <code>usuarios.csv</code> e <code>questoes.gift</code> continuam separados porque são as entradas congeladas de M2.1.</p>
+<p>A massa é gerada pelo script versionado <code>scripts/gera_massa.py</code> e não digitada à mão, para que todos os servidores e as três atualizações de M3.3 comecem do mesmo conjunto e M3.5 compare "antes" e "depois" sem ruído. As questões dos questionários do oráculo são criadas pelo script no banco de questões de cada questionário; os arquivos de referência continuam separados porque são as entradas congeladas de M2.1. Os arquivos, as partes da massa (<code>contas</code>, <code>catalogo</code> e <code>oraculo</code>) e qual parte usar em cada métrica estão em <code>dados/avaliacao/massa/README.md</code>.</p>
 <h3 id="oraculo-m12">Oráculo (M1.2)<a class="headerlink" href="#oraculo-m12" title="Permanent link">&para;</a></h3>
 <p>O oráculo é a planilha <code>dados/avaliacao/M1.2/oraculo.csv</code>, com <strong>20 casos</strong>: 10 de pontuação de questionário, 6 de agregação ponderada e 4 de controle de prazo. Cada linha traz a regra configurada, as entradas, o cálculo manual, o valor esperado, a tolerância (0,01 ponto) e o critério de comparação. A planilha é produzida por Bernardo e conferida por Carlos antes da coleta de G1 (regra R6; ata 02, D6).</p>
 <table>
@@ -2771,12 +2775,12 @@
 <h3 id="antes-de-qualquer-coleta-todos-os-avaliadores">Antes de qualquer coleta (todos os avaliadores)<a class="headerlink" href="#antes-de-qualquer-coleta-todos-os-avaliadores" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Montar o próprio servidor com <code>scripts/preparar_servidor.sh</code> (etapas <code>base</code> e <code>instancia</code>), seguindo a página de preparação do servidor da issue #62.</li>
-<li>Rodar <code>scripts/gera_massa.py</code> na instância que será usada.</li>
+<li>Aplicar a massa na instância que será usada, com as partes indicadas para a métrica: <code>sudo python3 scripts/gera_massa.py aplicar --moodle /var/www/&lt;instância&gt; --php php&lt;versão&gt; --partes &lt;partes&gt;</code> (ver <code>dados/avaliacao/massa/README.md</code>).</li>
 <li>Rodar a etapa <code>versoes</code> e versionar o resultado em <code>dados/avaliacao/ambiente/versoes-&lt;iniciais&gt;.txt</code>, acrescentando o virtualizador e a versão dele.</li>
 </ol>
 <h3 id="g1-adequacao-funcional-m11-m12-m13">G1 – Adequação funcional (M1.1, M1.2, M1.3)<a class="headerlink" href="#g1-adequacao-funcional-m11-m12-m13" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Usar a instância <code>m53php83</code>, recém-criada pelo script, com a massa de dados aplicada.</li>
+<li>Usar a instância <code>m53php83</code>, recém-criada pelo script, com as partes <code>contas</code> e <code>oraculo</code> da massa aplicadas (T01 a T12 criam o próprio curso).</li>
 <li>Abrir <code>dados/avaliacao/M1.1/execucoes.csv</code> e executar T01 a T12 <strong>na ordem do catálogo</strong>, com o papel indicado em cada tarefa.</li>
 <li>Para cada tarefa, registrar: concluída (sim/não), função usada, <strong>contorno necessário</strong> (sim/não, e o passo extra), captura de tela do resultado.</li>
 <li>Comparar cada passo com a página oficial da função. Qualquer passo fora dela é contorno (M1.3).</li>
