@@ -1,0 +1,34 @@
+// Questões da massa de dados da avaliação do Moodle 5.3 (gerado por scripts/gera_massa.py).
+// Referência de F4 (importação GIFT) de M2.1. Não editar à mão.
+
+$CATEGORY: $course$/top/AVAL-F4
+
+::ME01::Qual norma define o modelo de qualidade de produto da série SQuaRE? { =ISO/IEC 25010 ~ISO/IEC 25040 ~ISO 9001 ~ISO/IEC 12207 }
+
+::ME02::Qual destas é uma característica de qualidade de produto da ISO/IEC 25010? { =Compatibilidade ~Rentabilidade ~Popularidade ~Velocidade de escrita }
+
+::ME03::No método GQM, o que vem depois do objetivo? { =Questões ~Métricas ~Hipóteses de negócio ~Requisitos }
+
+::ME04::Qual é a capital do Brasil? { =Brasília ~Rio de Janeiro ~São Paulo ~Salvador }
+
+::ME05::Quantos minutos tem uma hora? { =60 ~100 ~30 ~90 }
+
+::ME06::Qual destes é um sistema de gestão da aprendizagem? { =Moodle ~PostgreSQL ~Apache ~Git }
+
+::ME07::Qual linguagem é usada no núcleo do Moodle? { =PHP ~COBOL ~Fortran ~Pascal }
+
+::ME08::Qual alternativa é um número primo? { =7 ~9 ~15 ~21 }
+
+::ME09::Qual opção descreve melhor um teste de caixa-preta? { =Teste baseado só em entradas e saídas ~%50%Teste baseado em entradas, saídas e no código ~Inspeção do código-fonte ~Revisão da arquitetura }
+
+::ME10::Qual banco de dados é usado no servidor de referência da avaliação? { =PostgreSQL 17 ~%50%PostgreSQL de versão não informada ~SQLite ~Planilha }
+
+::NU01::Quanto é 12 x 12? {#144}
+
+::NU02::Quanto é 7,5 x 4? {#30}
+
+::NU03::Qual é a média de 6, 8 e 10? {#8}
+
+::NU04::Quantos dias tem uma semana? {#7}
+
+::NU05::Qual é o valor de pi com duas casas decimais? {#3.14:0.005}

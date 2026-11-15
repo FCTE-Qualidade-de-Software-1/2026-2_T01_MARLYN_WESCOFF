@@ -15,8 +15,7 @@ A equipe usou ferramentas de IA como apoio à programação, à redação e à o
 | 11/11/2026 | Codex (OpenAI) | Integração da gestão PSM/CID à GitPage, incluindo menu, narrativa, links cruzados e rodapé (issue #29) | Construção estrita da GitPage e verificação dos links, da navegação e da ausência de conteúdo duplicado | Bernardo (uso); revisão solicitada a outro integrante no PR |
 | 11/11/2026 | Codex (OpenAI) | Redação do texto PSM/CID e transposição para o artigo SBC, com figuras, decisões, ameaças e contribuição (issue #30) | Compilação do LaTeX, inspeção visual do PDF, conferência das referências e confirmação de 14 páginas de corpo mais apêndices | Bernardo (uso); revisão solicitada a outro integrante no PR |
 | 11/11/2026 | Codex (OpenAI) | Atualização e harmonização desta declaração de uso de IA entre a GitPage e o Apêndice B do artigo (issue #31) | Comparação entre esta página e o texto LaTeX, conferência das tarefas e ferramentas registradas e revisão pelo pull request | Bernardo (uso); revisão solicitada a outro integrante no PR |
-| 15/11/2026 | Codex (OpenAI) | Inclusão da seção da Fase 3 e dos custos estimados e realizados por entrega no artigo (issue #56) | Comparação com o plano final da Fase 3, com a Tabela 14 dos construtos e com a Tabela 2 do dashboard; compilação LaTeX e inspeção visual do PDF | Bernardo (uso); revisão solicitada a outro integrante no PR |
-| 15/11/2026 | Codex (OpenAI) | Atualização da declaração de IA do PC2 e sincronização com o Apêndice B (issue #57) | Levantamento dos usos versionados desde a E1, comparação linha a linha entre a GitPage e o artigo, construção estrita do site e compilação LaTeX | Bernardo (uso); revisão solicitada a outro integrante no PR |
+
 
 <p class="legenda">Tabela 1. Registro de uso de ferramentas de IA nas Entregas 1 e 2. Fonte: elaboração própria.</p>
 
