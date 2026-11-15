@@ -557,29 +557,32 @@ Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\
 \section{Declaração de uso de inteligência artificial}
 \label{ap:ia}
 
-A equipe usou Claude Code (Anthropic) na Entrega~1 e Codex (OpenAI) na gestão PSM/CID da Entrega~2. A Tabela~\ref{tab:ia} apresenta uma versão compacta da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests.
+A equipe usou Claude Code (Anthropic) na Entrega~1 e Codex (OpenAI) na gestão PSM/CID, na GitPage e no artigo da Entrega~2. A Tabela~\ref{tab:ia} reproduz os usos, as tarefas e as formas de conferência da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests. Até 15/11/2026, Maykon e Bernardo haviam informado usos; Carlos, João Pedro e Pedro ainda precisavam registrar os próprios usos ou confirmar que não utilizaram IA.
 
 \begin{table}[!ht]
 \centering
 \caption{Uso de ferramentas de IA nas Entregas 1 e 2.}
 \label{tab:ia}
-\footnotesize
-\begin{tabularx}{\linewidth}{p{4.4cm}L}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{3.7cm}Lp{2.8cm}}
 \toprule
-\textbf{Ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} \\
+\textbf{Data, ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} & \textbf{Integrante} \\
 \midrule
-Migração da primeira versão da Fase 1 para o repositório da disciplina e revisão do texto & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 \\
-Pesquisa dos requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências \\
-Rascunho do plano GQM, fichas das métricas, níveis e critérios de julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 \\
-Redação e formatação deste artigo em LaTeX & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 \\
-Código da GitPage, dos \emph{workflows} e do script do PSM/CID & Geração do site com verificação estrita, teste de navegação e conferência do script com as \emph{issues}; \emph{issues} \#11 e \#13 \\
-Codex (OpenAI): geração dos indicadores e do dashboard PSM/CID & Execução dos scripts e do validador; inspeção dos gráficos e comparação da tabela-resumo com os consolidados; \emph{issues} \#26 e \#27 \\
-Codex (OpenAI): integração da gestão PSM/CID à GitPage & Construção estrita do site e verificação da navegação, dos links e da ausência de duplicações; \emph{issue} \#29 \\
-Codex (OpenAI): texto PSM/CID e transposição para este artigo & Compilação, inspeção visual, conferência das referências e do limite de páginas; \emph{issue} \#30 \\
-Codex (OpenAI): harmonização da declaração de IA & Comparação desta tabela com a declaração publicada e revisão no pull request; \emph{issue} \#31 \\
+25/10/2026; Claude Code: migração e revisão da Fase~1 & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
+25/10/2026; Claude Code: requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências & Maykon (uso); Carlos (revisão, \emph{issue} \#2) \\
+25/10/2026; Claude Code: plano GQM, métricas, níveis e julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
+25--26/10/2026; Claude Code: redação, LaTeX e diagramas do artigo & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 & Maykon (uso); Pedro (revisão) \\
+25--26/10/2026; Claude Code: GitPage, \emph{workflows} e script PSM/CID & Construção estrita, testes de navegação e comparação do script com as \emph{issues}; \emph{issues} \#11 e \#13 & Maykon (uso); João Pedro (revisão) \\
+11/11/2026; Codex: gerador e oito figuras PSM/CID (\#26) & Execução dos scripts; conferência visual dos SVGs e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: dashboard e tabela-resumo (\#27) & Construção estrita, inspeção da página e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: integração PSM/CID à GitPage (\#29) & Construção estrita e verificação de links, navegação e duplicações & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: texto PSM/CID no artigo (\#30) & Compilação, inspeção visual e conferência das referências e do limite de páginas & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: harmonização da declaração de IA (\#31) & Comparação da GitPage com o LaTeX e conferência das tarefas e ferramentas & Bernardo (uso); revisão solicitada no PR \\
+15/11/2026; Codex: Fase~3 e custos no artigo (\#56) & Comparação com o plano, os construtos e o dashboard; compilação e inspeção do PDF & Bernardo (uso); revisão solicitada no PR \\
+15/11/2026; Codex: declaração do PC2 e Apêndice~B (\#57) & Levantamento dos usos, comparação entre GitPage e artigo, construção estrita e compilação & Bernardo (uso); revisão solicitada no PR \\
 \bottomrule
 \end{tabularx}
-\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}.}
+\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}; mesmos usos, tarefas e formas de conferência.}
 \end{table}
 
 \end{document}
