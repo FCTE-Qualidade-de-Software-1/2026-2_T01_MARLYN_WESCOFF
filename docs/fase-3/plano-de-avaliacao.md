@@ -61,6 +61,8 @@ Não há um servidor compartilhado: **cada integrante monta o próprio servidor*
 
 <p class="legenda">Tabela 4. Instâncias montadas pelo script e métricas que usam cada uma. Fonte: elaboração própria.</p>
 
+O servidor é montado pelo script `scripts/preparar_servidor.sh`, conforme [Preparação do servidor](preparacao-do-servidor.md).
+
 ### Ambientes de acesso
 
 Os quatro ambientes A1 a A4 são os de [Escopo](../fase-1/escopo.md#ambientes-de-acesso). Antes da primeira tarefa, o avaliador registra em `dados/avaliacao/M3.1/ambientes.csv` o sistema operacional, a versão exata do navegador, a resolução da tela e o dono do dispositivo. Quem não tem o dispositivo A4 (Android) usa o de outro integrante, e o dono do dispositivo é registrado.
