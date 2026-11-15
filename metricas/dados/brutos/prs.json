@@ -1,5 +1,71 @@
 [
  {
+  "additions": 209,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-15T00:03:43Z",
+  "createdAt": "2026-11-14T19:40:53Z",
+  "deletions": 136,
+  "mergedAt": "2026-11-15T00:03:43Z",
+  "number": 51,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYBH7pg",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-14T19:41:01Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "c3ae549589b49000065f56e894191c07b4923cb1"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "Horas da E1 na DG-02, custo da hora de estagiário e página Processo de trabalho"
+ },
+ {
+  "additions": 9,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-14T20:00:39Z",
+  "createdAt": "2026-11-14T18:59:37Z",
+  "deletions": 5,
+  "mergedAt": null,
+  "number": 50,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYA852Q",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-14T18:59:46Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "f0e0b1a71612b53aff479d6589bf1468b846cd99"
+    }
+   }
+  ],
+  "state": "CLOSED",
+  "title": "Alinha a DG-02 às horas da E1 reconstruídas por atividade"
+ },
+ {
   "additions": 30416,
   "author": {
    "id": "U_kgDOCzMkKA",
