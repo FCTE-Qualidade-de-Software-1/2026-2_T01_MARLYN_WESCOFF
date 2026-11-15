@@ -89,15 +89,16 @@ Os quatro ambientes A1 a A4 são os de [Escopo](../fase-1/escopo.md#ambientes-de
 | Estudantes | 30 (`est01` a `est30`), e-mail `estNN@example.invalid` |
 | Docente | 1 (`docente01`) |
 | Administrador | 1 (`admin-aval`, criado pelo script de preparação) |
-| Cursos | 2: um completo, com as atividades do catálogo T01 a T12, e um vazio, destino da restauração (T12) |
-| Atividades do catálogo | 1 tarefa com data de entrega e data limite, 1 questionário (3 questões de múltipla escolha e 2 numéricas), 1 fórum, 1 arquivo de material |
+| Cursos | 3: um completo (`AVAL-CAT`), com as atividades do catálogo T01 a T12; um vazio (`AVAL-REST`), destino da restauração (T12); e o do oráculo (`AVAL-ORACULO`), com as configurações de M1.2 |
+| Atividades do catálogo | 2 tarefas (uma dentro do prazo, para T04, e uma com a data limite vencida, para T05), 1 questionário (3 questões de múltipla escolha e 2 numéricas), 1 fórum com 1 tópico e 3 respostas, 1 arquivo de material |
+| Dados já lançados | 3 itens de nota com as notas dos 30 estudantes, 10 envios na tarefa aberta e 6 eventos de calendário, para F2, F3 e F6 de M2.1 e para a comparação de M3.5 |
 | Configurações do oráculo (M1.2) | Os questionários, os itens e categorias do livro de notas e as atividades com prazo de cada caso de `dados/avaliacao/M1.2/oraculo.csv` (Q-01 a Q-10, A-01 a A-06, P-01 a P-04), com as quantidades de questões, os pesos e o crédito parcial definidos em cada linha |
-| Arquivos de referência de importação | `usuarios.csv` (30 linhas) e `questoes.gift` (15 questões), usados em F1 e F4 de M2.1 |
+| Arquivos de referência | `usuarios.csv` (30 linhas) e `questoes.gift` (15 questões), usados em F1 e F4 de M2.1; `notas.csv` e `eventos.csv`, referências de F2, F3 e F6 |
 | Dados de comparação | Arquivos congelados em `dados/avaliacao/M2.1/referencia/` antes da primeira troca |
 
 <p class="legenda">Tabela 6. Massa de dados fictícia. Fonte: elaboração própria.</p>
 
-A massa é gerada pelo script versionado `scripts/gera_massa.py` e não digitada à mão, para que todos os servidores e as três atualizações de M3.3 comecem do mesmo conjunto e M3.5 compare "antes" e "depois" sem ruído. As questões dos questionários do oráculo são criadas pelo script no banco de questões do curso; os arquivos `usuarios.csv` e `questoes.gift` continuam separados porque são as entradas congeladas de M2.1.
+A massa é gerada pelo script versionado `scripts/gera_massa.py` e não digitada à mão, para que todos os servidores e as três atualizações de M3.3 comecem do mesmo conjunto e M3.5 compare "antes" e "depois" sem ruído. As questões dos questionários do oráculo são criadas pelo script no banco de questões de cada questionário; os arquivos de referência continuam separados porque são as entradas congeladas de M2.1. Os arquivos, as partes da massa (`contas`, `catalogo` e `oraculo`) e qual parte usar em cada métrica estão em `dados/avaliacao/massa/README.md`.
 
 ### Oráculo (M1.2)
 
@@ -123,12 +124,12 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 ### Antes de qualquer coleta (todos os avaliadores)
 
 1. Montar o próprio servidor com `scripts/preparar_servidor.sh` (etapas `base` e `instancia`), seguindo a página de preparação do servidor da issue #62.
-2. Rodar `scripts/gera_massa.py` na instância que será usada.
+2. Aplicar a massa na instância que será usada, com as partes indicadas para a métrica: `sudo python3 scripts/gera_massa.py aplicar --moodle /var/www/<instância> --php php<versão> --partes <partes>` (ver `dados/avaliacao/massa/README.md`).
 3. Rodar a etapa `versoes` e versionar o resultado em `dados/avaliacao/ambiente/versoes-<iniciais>.txt`, acrescentando o virtualizador e a versão dele.
 
 ### G1 – Adequação funcional (M1.1, M1.2, M1.3)
 
-1. Usar a instância `m53php83`, recém-criada pelo script, com a massa de dados aplicada.
+1. Usar a instância `m53php83`, recém-criada pelo script, com as partes `contas` e `oraculo` da massa aplicadas (T01 a T12 criam o próprio curso).
 2. Abrir `dados/avaliacao/M1.1/execucoes.csv` e executar T01 a T12 **na ordem do catálogo**, com o papel indicado em cada tarefa.
 3. Para cada tarefa, registrar: concluída (sim/não), função usada, **contorno necessário** (sim/não, e o passo extra), captura de tela do resultado.
 4. Comparar cada passo com a página oficial da função. Qualquer passo fora dela é contorno (M1.3).
