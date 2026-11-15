@@ -1209,6 +1209,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1264,6 +1268,62 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gestao/processo-de-trabalho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Processo de trabalho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/users/cadumotta/projects/1" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quadro de tarefas (GitHub Projects)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1554,6 +1614,17 @@
     <span class="md-ellipsis">
       
         C3. Estimado x real
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custo-da-hora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custo da hora
       
     </span>
   </a>
@@ -2277,6 +2348,17 @@
     <span class="md-ellipsis">
       
         C3. Estimado x real
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custo-da-hora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custo da hora
       
     </span>
   </a>
@@ -3158,7 +3240,7 @@
 
 <p>Limitação: na E1 não houve nenhum registro de não conformidade em revisão interna (Diagnóstico, lacuna L8). A taxa de escape da E1 fica em 100% sempre que houver qualquer apontamento da docente. Esse valor é o ponto de partida da comparação, e não uma medição da qualidade das revisões.</p>
 <h2 id="recursos-e-custos">Recursos e Custos<a class="headerlink" href="#recursos-e-custos" title="Permanent link">&para;</a></h2>
-<p>O custo é medido em <strong>homem-hora</strong>, a medida primária desta categoria. A monetização é complementar e usa a premissa do <a href="../../gestao/plano-psm/#custo-da-hora">Plano de medição</a>: R$ 15,00 por hora de integrante, uma convenção do projeto para comparar entregas, e não pagamento real. A fonte das três medidas é o apontamento <code>esforco.csv</code>, triangulado com os commits, as issues e as revisões de pull request.</p>
+<p>O custo é medido em <strong>homem-hora</strong>, a medida primária desta categoria. A monetização é complementar e usa o custo da hora de um estagiário, R$ 14,77, calculado na Tabela 14, no fim desta seção. A fonte das três medidas é o apontamento <code>esforco.csv</code>, triangulado com os commits, as issues e as revisões de pull request.</p>
 <h3 id="c1-esforco-da-equipe">C1. Esforço da equipe<a class="headerlink" href="#c1-esforco-da-equipe" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -3214,7 +3296,7 @@
 </tr>
 <tr>
 <td>Função de medição</td>
-<td><code>H(m)</code> = soma de <code>h(m, f, t)</code> por integrante; <code>H(f)</code> = soma de <code>h(m, f, t)</code> por fase; <code>Total</code> = soma de <code>H(m)</code>; <code>%H(m) = H(m) / Total x 100</code>; <code>Média = Total / número de integrantes</code>; <code>Desvio(m) = (H(m) - Média) / Média x 100</code>; <code>Desvio(f) = (H(f) - Prev(f)) / Prev(f) x 100</code>; <code>Custo = Total x R$ 15,00</code></td>
+<td><code>H(m)</code> = soma de <code>h(m, f, t)</code> por integrante; <code>H(f)</code> = soma de <code>h(m, f, t)</code> por fase; <code>Total</code> = soma de <code>H(m)</code>; <code>%H(m) = H(m) / Total x 100</code>; <code>Média = Total / número de integrantes</code>; <code>Desvio(m) = (H(m) - Média) / Média x 100</code>; <code>Desvio(f) = (H(f) - Prev(f)) / Prev(f) x 100</code>; <code>Custo = Total x R$ 14,77</code>; <code>Custo estimado = Prev x R$ 14,77</code>, com <code>Prev</code> = soma das estimativas das issues da entrega</td>
 </tr>
 <tr>
 <td>Medida derivada</td>
@@ -3417,6 +3499,47 @@
 <p class="legenda">Tabela 13. Construto da medida C3, estimado x real. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5, e Parte 2, seção 9.2.</p>
 
 <p>Limitação: a estimativa vem do campo da issue, e o real, do <code>esforco.csv</code>. Issues sem estimativa numérica ou sem horas lançadas com o número da issue ficam fora do cálculo e são listadas à parte, para não distorcer a acurácia. Na E1, as issues somam 20,5 h estimadas (retratos de 26/10/2026), mas as horas reais são reconstruídas (Diagnóstico, lacuna L1) e várias atividades da E1 não têm issue, como a primeira versão da Fase 1. A acurácia da E1 é apresentada só como registro histórico e não é usada como fator de recalibração.</p>
+<h3 id="custo-da-hora">Custo da hora<a class="headerlink" href="#custo-da-hora" title="Permanent link">&para;</a></h3>
+<p>O custo em reais converte o esforço de C1 e de C3 com um valor de referência por hora de integrante. Como a equipe é formada por estudantes, a referência é a remuneração de um estagiário de desenvolvimento (Tabela 14). O valor é uma convenção para comparar o custo estimado com o realizado e as entregas entre si; ele não representa pagamento real.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Valor</th>
+<th>Fonte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bolsa mensal de estágio</td>
+<td>R$ 1.500,00</td>
+<td>Ponto médio da faixa de R$ 1.000,00 a R$ 2.000,00 do <a href="https://www.glassdoor.com.br/Sal%C3%A1rios/bras%C3%ADlia-estagiario-de-ti-sal%C3%A1rio-SRCH_IL.0,8_IM1010_KO9,25.htm">Glassdoor: salário de estagiário de TI em Brasília</a>, consultado em 14/11/2026</td>
+</tr>
+<tr>
+<td>Custos adicionais (30%)</td>
+<td>R$ 450,00</td>
+<td>Aproximação para auxílio-transporte, seguro contra acidentes pessoais e recesso remunerado, obrigatórios no estágio (<a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm">Lei 11.788/2008</a>, arts. 9º, 12 e 13), com o percentual de encargos sugerido pela <a href="https://www.devmedia.com.br/quanto-vale-o-servico-de-um-programador-aprenda-a-cobrar-pelo-seu-trabalho/37214">DevMedia</a> para o custo de um programador</td>
+</tr>
+<tr>
+<td>Custo mensal</td>
+<td>R$ 1.950,00</td>
+<td>Soma das linhas anteriores</td>
+</tr>
+<tr>
+<td>Horas por mês</td>
+<td>132 h</td>
+<td>6 h por dia x 22 dias úteis, limite da jornada de estágio no ensino superior (<a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm">Lei 11.788/2008</a>, art. 10, inciso II)</td>
+</tr>
+<tr>
+<td><strong>Custo da hora</strong></td>
+<td><strong>R$ 14,77</strong></td>
+<td>R$ 1.950,00 / 132 h</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 14. Cálculo do custo da hora de integrante. Fonte: elaborado pelos autores a partir da Lei 11.788/2008, do Glassdoor e da DevMedia.</p>
+
+<p>O valor substitui, a partir de 14/11/2026, a premissa de R$ 15,00 por hora do plano da E1, que não tinha fonte (Registro de decisões, DG-09). O custo estimado de uma entrega é a soma das estimativas das issues do milestone vezes o custo da hora; o custo realizado é a soma das horas de <code>esforco.csv</code> vezes o mesmo valor.</p>
 
 
 
