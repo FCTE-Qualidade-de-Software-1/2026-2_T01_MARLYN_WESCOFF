@@ -10,4 +10,4 @@ T08,Estudante,sim,responder questionário e receber nota automática,não,,M1.1_
 T09,Docente e estudante,sim,abrir fórum e responder a uma discussão,não,,M1.1_T09_2026-11-15_BBB.png,Tópico criado pelo docente e resposta publicada pelo estudante est01.
 T10,Docente,sim,configurar categorias e pesos no livro de notas,não,,M1.1_T10_2026-11-15_BBB.png,Categoria T10 criada com peso ajustado de 50,0%.
 T11,Estudante,sim,consultar a própria nota final,não,,M1.1_T11_2026-11-15_BBB.png,Relatório do usuário exibiu Course total de 18,00/110 (16,36%).
-T12,,,,,,,
+T12,Docente/Administrador,sim,fazer backup do curso e restaurá-lo como novo curso,não,,M1.1_T12_2026-11-15_BBB.png,Backup restaurado como novo curso Curso T12 Restaurado copy 1 com atividades preservadas.
