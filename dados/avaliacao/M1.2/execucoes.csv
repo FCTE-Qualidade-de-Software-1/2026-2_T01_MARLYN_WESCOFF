@@ -1,6 +1,6 @@
 caso,tipo,executado,resultado_observado,esperado,tolerancia,conforme,evidencia,observacoes
 Q-01,questionario,sim,2.00,2.00,0.01,sim,M1.2_Q-01_2026-11-16_BBB.png,Nota exibida 2,00/3,00; diferença 0,00.
-Q-02,questionario,, ,8.00,0.01,,,Pendente de execução no Moodle.
+Q-02,questionario,sim,8.00,8.00,0.01,sim,M1.2_Q-02_2026-11-16_BBB.png,Nota exibida 8,00/10,00; diferença 0,00.
 Q-03,questionario,, ,4.00,0.01,,,Pendente de execução no Moodle.
 Q-04,questionario,, ,7.00,0.01,,,Pendente de execução no Moodle.
 Q-05,questionario,, ,7.00,0.01,,,Pendente de execução no Moodle.
