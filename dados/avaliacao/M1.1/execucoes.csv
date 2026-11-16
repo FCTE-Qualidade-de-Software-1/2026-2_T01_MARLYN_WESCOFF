@@ -5,7 +5,7 @@ T03,Docente,sim,criar tarefa com data de entrega e data limite,não,,M1.1_T03_20
 T04,Estudante,sim,enviar arquivo para tarefa dentro do prazo,não,,M1.1_T04_2026-11-15_BBB.png,Envio submetido para avaliação 22 horas e 1 minuto antes do prazo.
 T05,Estudante,sim,tentar enviar arquivo após a data limite,não,,M1.1_T05_2026-11-15_BBB.png,Tarefa vencida; envio não disponível e atividade indicada como atrasada.
 T06,Docente,sim,corrigir tarefa com nota e comentário,não,,M1.1_T06_2026-11-15_BBB.png,Envio de est01 corrigido com nota 8,00 e comentário de feedback.
-T07,,,,,,,
+T07,Docente,sim,criar questionário com questões de múltipla escolha e numérica,não,,M1.1_T07_2026-11-15_BBB.png,Questionário criado com duas questões e total de 2 pontos.
 T08,,,,,,,
 T09,,,,,,,
 T10,,,,,,,
