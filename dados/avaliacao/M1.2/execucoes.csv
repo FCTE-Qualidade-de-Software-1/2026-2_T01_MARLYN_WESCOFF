@@ -17,5 +17,5 @@ A-05,agregacao,sim,8.00,8.00,0.01,sim,M1.2_A-05_2026-11-16_BBB.png,N1=5,00; N2=7
 A-06,agregacao,sim,8.99,8.99,0.01,sim,M1.2_A-06_2026-11-16_BBB.png,Questionários=8,50; tarefas=9,20; total ponderado exibido 8,99.
 P-01,prazo,sim,bloqueado,aceito,0.01,não,M1.2_P-01_2026-11-16_BBB.png,Execução no dia seguinte à data D; janela original já expirada e envio bloqueado.
 P-02,prazo,sim,bloqueado,bloqueado,0.01,sim,M1.2_P-02_2026-11-16_BBB.png,Atividade vencida e sem submissão disponível; estado observado bloqueado.
-P-03,prazo,, ,aceito_com_atraso,0.01,,,Pendente de execução no Moodle.
+P-03,prazo,sim,aceito_com_atraso,aceito_com_atraso,0.01,sim,M1.2_P-03_2026-11-16_BBB.png,Envio aceito com atraso de 9 horas e 34 minutos.
 P-04,prazo,, ,bloqueado,0.01,,,Pendente de execução no Moodle.
