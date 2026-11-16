@@ -1564,6 +1564,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#dg-10-pc1-nao-apresentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DG-10 - PC1 não apresentado
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2170,6 +2181,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#dg-10-pc1-nao-apresentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DG-10 - PC1 não apresentado
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2397,6 +2419,14 @@
 <td>Custo da hora de estagiário (R$ 14,77), com fonte, e custo estimado x realizado no dashboard</td>
 <td>Verificado: E1 com R$ 841,89 realizados contra R$ 302,78 estimados</td>
 </tr>
+<tr>
+<td>DG-10</td>
+<td>15/11/2026</td>
+<td>Calendário e Progresso</td>
+<td>A4 e B4</td>
+<td>Apresentar o PC2 pela GitPage, com roteiro, e registrar os apontamentos da docente como issues</td>
+<td>A verificar em 18/11/2026</td>
+</tr>
 </tbody>
 </table>
 <p class="legenda">Tabela 1. Resumo das decisões de gestão. Fonte: elaborado pelos autores a partir de <code>dados/consolidados/</code>, dos retratos de <code>dados/gestao/</code> e da retrospectiva da E1.</p>
@@ -2480,6 +2510,17 @@
 <li><strong>Evidência da execução:</strong> <a href="https://github.com/users/cadumotta/projects/1">quadro do projeto</a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/34">PR #34</a> e <a href="../02-construtos-de-medicao/">Construtos de medição</a>, Tabela 2.</li>
 <li><strong>Efeito observado posteriormente:</strong> a verificar em 17/11/2026, pelo percentual concluído da W47 em <code>comprometido_concluido.csv</code>. Depende do retrato diário do quadro, que precisa do token <code>PSM_PROJECT_TOKEN</code> no workflow.</li>
 </ul>
+<h3 id="dg-10-pc1-nao-apresentado">DG-10 - PC1 não apresentado<a class="headerlink" href="#dg-10-pc1-nao-apresentado" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Data:</strong> 2026-11-15</li>
+<li><strong>Medida que disparou:</strong> A4 Conclusão de marcos, no marco PC1, e B4 Retrabalho e não conformidades, pela falta de apontamentos da docente antes da E1.</li>
+<li><strong>Valor observado x critério:</strong> o milestone <code>PC1</code> tem prazo em 19/10/2026 e não tem release nem issues (<code>milestones.json</code>, <code>entregas.csv</code>). A equipe não apresentou no ponto de controle e ficou sem o retorno da docente sobre a Fase 1. Sem data real, o desvio de A4 não pode ser calculado, e o marco conta como não cumprido. O critério de A4 exige registro de decisão para qualquer desvio positivo. Em B4, a E1 tem 0 apontamentos da docente antes da entrega (<code>retrabalho.csv</code>), então a taxa de escape da E1 não pode ser comparada com a revisão interna.</li>
+<li><strong>Interpretação:</strong> a primeira versão da Fase 1 só teve commits em 19/10/2026, no próprio dia do ponto de controle, no repositório inicial da equipe (<a href="../01-diagnostico-repositorio/">Diagnóstico</a>, seção 2). Não havia uma versão revisada para apresentar. A retrospectiva da E1 registra a "impossibilidade de apresentação no ponto de controle 1" e prioriza a "pouca atenção aos prazos" (C3) e a "ausência de liderança" (C2), as mesmas causas da concentração de véspera na E1 (DG-08). O efeito foi entregar a E1 sem nenhuma validação externa.</li>
+<li><strong>Decisão tomada:</strong> apresentar o PC2 em 18/11/2026 pela GitPage, com roteiro preparado antes (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/61">issue #61</a>), e usar o retorno da docente antes da E2. Cada apontamento vira uma issue com as labels <code>retrabalho</code> e <code>apontamento-docente</code> (B4), no milestone <code>E2</code>, como define a DG-06. O PC2 passa a ter milestone com prazo, para que A4 seja medido também nos pontos de controle.</li>
+<li><strong>Responsável e prazo:</strong> Carlos (roteiro, issue #61), até 18/11/2026; Bernardo (issues dos apontamentos, DG-06), até 19/11/2026; Pedro (milestone <code>PC2</code>, issue #58), em 14/11/2026.</li>
+<li><strong>Evidência da execução:</strong> <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/milestone/5">milestone PC2</a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/61">issue #61</a> e <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-28-retrospectiva-e1.pdf">retrospectiva da E1</a>, página 1.</li>
+<li><strong>Efeito observado posteriormente:</strong> a verificar em 18/11/2026, pela apresentação do PC2, e em 19/11/2026, pelo número de issues <code>apontamento-docente</code> abertas no milestone <code>E2</code> (<code>retrabalho.csv</code>).</li>
+</ul>
 <h2 id="desempenho-dos-processos">Desempenho dos Processos<a class="headerlink" href="#desempenho-dos-processos" title="Permanent link">&para;</a></h2>
 <h3 id="dg-03-abrir-as-issues-no-planejamento">DG-03 - Abrir as issues no planejamento<a class="headerlink" href="#dg-03-abrir-as-issues-no-planejamento" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2543,6 +2584,11 @@
 <td>Fechamento do bloco 2</td>
 <td>Cycle time com início pelo quadro (DG-03)</td>
 <td>B1, <code>cycle_time.csv</code></td>
+</tr>
+<tr>
+<td>18/11 e 19/11/2026</td>
+<td>Apresentação do PC2 e apontamentos da docente registrados (DG-10)</td>
+<td>A4 e B4, <code>retrabalho.csv</code></td>
 </tr>
 <tr>
 <td>Entrega da E2</td>
@@ -2629,7 +2675,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 2 | Versão 2.0 · 11/11/2026
+      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Ponto de controle 2 | Versão 2.1 · 16/11/2026
     </div>
   
   
