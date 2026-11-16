@@ -13,7 +13,7 @@ A-01,agregacao,sim,7.80,7.80,0.01,sim,M1.2_A-01_2026-11-16_BBB.png,P1=7,50; P2=8
 A-02,agregacao,sim,8.00,8.00,0.01,sim,M1.2_A-02_2026-11-16_BBB.png,N1=6,00; N2=8,00; N3=10,00; total exibido 8,00; diferença 0,00.
 A-03,agregacao,sim,7.90,7.90,0.01,sim,M1.2_A-03_2026-11-16_BBB.png,N1=9,00; N2=7,00; N3=8,00; total exibido 7,90; diferença 0,00.
 A-04,agregacao,sim,53.00,7.57,0.01,não,M1.2_A-04_2026-11-16_BBB.png,Entradas 18 e 35 configuradas; Moodle exibiu 53,00 em vez de 7,57 após conversão esperada.
-A-05,agregacao,, ,8.00,0.01,,,Pendente de execução no Moodle.
+A-05,agregacao,sim,8.00,8.00,0.01,sim,M1.2_A-05_2026-11-16_BBB.png,N1=5,00; N2=7,00; N3=8,00; N4=9,00; menor descartada; total 8,00.
 A-06,agregacao,, ,8.99,0.01,,,Pendente de execução no Moodle.
 P-01,prazo,, ,aceito,0.01,,,Pendente de execução no Moodle.
 P-02,prazo,, ,bloqueado,0.01,,,Pendente de execução no Moodle.
