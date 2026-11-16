@@ -37,3 +37,9 @@ data,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao
 2026-11-11,Bernardo Broetto Brun,gestao,revisao,#32,1,reconstruido, Verificação final de conformidade PSM/CID e da rubrica
 2026-11-15,Bernardo Broetto Brun,gestao,documentacao,#57,1,registrado, Atualização da declaração de IA do PC2 e sincronização com o Apêndice B
 2026-11-15,Bernardo Broetto Brun,4,documentacao,#64,3,registrado, Produção e validação manual dos 20 casos do oráculo de M1.2
+2026-11-15,Carlos Eduardo Deusdara Motta,3,gestao,#53,0.5,registrado,Ata 02 da reunião de aprovação do plano da Fase 3
+2026-11-15,Carlos Eduardo Deusdara Motta,4,documentacao,#54,1.5,registrado,Plano de execução da Fase 4 na GitPage
+2026-11-15,Carlos Eduardo Deusdara Motta,gestao,gestao,#61,0.5,registrado,Roteiro da apresentação do PC2
+2026-11-15,Carlos Eduardo Deusdara Motta,4,coleta,#65,1.5,registrado,compara_registros.py e congela_referencia.py com testes
+2026-11-15,Carlos Eduardo Deusdara Motta,4,coleta,#68,1.5,registrado,Formulário e roteiro da coleta de M2.1 e M2.2
+2026-11-15,Carlos Eduardo Deusdara Motta,4,analise,#72,1.5,registrado,Planilha de cálculos e script de julgamento de G1 a G3

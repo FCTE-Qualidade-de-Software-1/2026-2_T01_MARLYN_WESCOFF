@@ -11,8 +11,8 @@ coletores a partir dos CSVs de cada métrica:
                              M3.5  perda_nao_academica (1 item não acadêmico) | perda_academica
 
 Regras aplicadas, sem nenhuma alteração (docs/fase-2/niveis-e-julgamento.md):
-  - níveis de pontuação da Tabela 2, comparando o valor com 2 casas decimais, como na tabela
-    (por exemplo, 11/12 = 0,9167 vira 0,92 e recebe nota 3);
+  - níveis de pontuação da Tabela 2: a nota 4 exige o valor exato de 1,00; os demais degraus comparam o
+    valor com 2 casas decimais, como na tabela (por exemplo, 11/12 = 0,9167 vira 0,92 e recebe nota 3);
   - questão: nota da métrica; Q3.3 = mínimo(nota de M3.3, nota de M3.4);
   - objetivo: pior caso (Tabela 4): todas >= 3 Atende; nenhuma 1 e alguma 2 Atende com ressalvas;
     alguma 1 Não atende;
@@ -91,25 +91,26 @@ def nota(metrica, valor, retentativas=None, condicoes=()):
             if valor <= minutos and r <= r_max:
                 return n
         return 1
-    v = duas_casas(valor)
+    exato = valor >= 1.0  # a nota 4 exige 1,00 exato, sem arredondar
+    v = duas_casas(valor)  # os demais degraus usam 2 casas, como a Tabela 2
     if metrica == "M1.2":
         if "nota_final_errada" in condicoes:
             return 1
-        if v >= 1.0:
+        if exato:
             return 4
         return 2 if v >= 0.95 and "so_prazo" in condicoes else 1
     if metrica == "M2.4":
-        if v >= 1.0:
+        if exato:
             return 4
         return 2 if v >= 0.66 and "recuperacao_sem_intervencao" in condicoes else 1
     if metrica == "M3.5":
         if "perda_academica" in condicoes:
             return 1
-        if v >= 1.0:
+        if exato:
             return 4
         return 2 if v >= 0.975 and "perda_nao_academica" in condicoes else 1
     n3, n2 = NIVEIS[metrica]
-    if v >= 1.0:
+    if exato:
         return 4
     if v >= n3:
         return 3

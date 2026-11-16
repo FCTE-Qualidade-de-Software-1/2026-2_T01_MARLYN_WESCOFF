@@ -51,6 +51,17 @@ class NiveisPorContagem(unittest.TestCase):
                 self.assertEqual(cj.nota("M2.2", valor), n)
 
 
+    def test_nota_4_exige_valor_exato(self):
+        """Revisão do PR #86: 0,995 não pode virar 1,00 e ganhar nota 4."""
+        self.assertEqual(cj.nota("M2.2", 199 / 200), 3)
+        self.assertEqual(cj.nota("M3.2", 0.996), 3)
+        self.assertEqual(cj.nota("M3.5", 199 / 200, None, {"perda_nao_academica"}), 2)
+        self.assertEqual(cj.nota("M1.2", 199 / 200, condicoes={"so_prazo"}), 2)
+        self.assertEqual(cj.nota("M2.2", 1.0), 4)
+        metricas, _, _ = cj.calcula([linha("M2.2", 199, 200)] + [linha(m) for m in cj.HIPOTESES if m != "M2.2"])
+        self.assertEqual((metricas["M2.2"]["nota"], metricas["M2.2"]["resultado_hipotese"]), (3, "refutada"))
+
+
 class RegrasEspeciais(unittest.TestCase):
     def test_m12_sem_nota_3(self):
         self.assertEqual(cj.nota("M1.2", 1.0), 4)
