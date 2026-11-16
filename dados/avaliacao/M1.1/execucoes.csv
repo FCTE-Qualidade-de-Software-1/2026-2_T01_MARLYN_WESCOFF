@@ -3,7 +3,7 @@ T01,Administrador,sim,criar curso e matricular estudantes e docente,não,,M1.1_T
 T02,Docente,sim,publicar material (arquivo),não,,M1.1_T02_2026-11-15_BBB.png,Material T02 publicado no curso T01-T12.
 T03,Docente,sim,criar tarefa com data de entrega e data limite,não,,M1.1_T03_2026-11-15_BBB.png,Tarefa T03 criada com abertura em 15/11, vencimento em 16/11 e cut-off em 17/11/2026.
 T04,Estudante,sim,enviar arquivo para tarefa dentro do prazo,não,,M1.1_T04_2026-11-15_BBB.png,Envio submetido para avaliação 22 horas e 1 minuto antes do prazo.
-T05,,,,,,,
+T05,Estudante,sim,tentar enviar arquivo após a data limite,não,,M1.1_T05_2026-11-15_BBB.png,Tarefa vencida; envio não disponível e atividade indicada como atrasada.
 T06,,,,,,,
 T07,,,,,,,
 T08,,,,,,,
