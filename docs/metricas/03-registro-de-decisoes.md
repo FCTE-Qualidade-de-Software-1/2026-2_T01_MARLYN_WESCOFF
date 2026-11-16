@@ -17,6 +17,7 @@ Este documento registra as decisões de gestão tomadas a partir das medidas do 
 | DG-07 | 10/11/2026 | Calendário e Progresso | Retrospectiva da E1, tópico C3; A2 | Iteração semanal no quadro e blocos com milestone | A verificar em 17/11/2026 |
 | DG-08 | 10/11/2026 | Desempenho dos Processos | B3 e A4 | Congelamento interno 3 dias antes de cada marco | A verificar na entrega da E2 |
 | DG-09 | 14/11/2026 | Recursos e Custos | C1 e C3 | Custo da hora de estagiário (R$ 14,77), com fonte, e custo estimado x realizado no dashboard | Verificado: E1 com R$ 841,89 realizados contra R$ 302,78 estimados |
+| DG-10 | 15/11/2026 | Calendário e Progresso | A4 e B4 | Apresentar o PC2 pela GitPage, com roteiro, e registrar os apontamentos da docente como issues | A verificar em 18/11/2026 |
 
 <p class="legenda">Tabela 1. Resumo das decisões de gestão. Fonte: elaborado pelos autores a partir de <code>dados/consolidados/</code>, dos retratos de <code>dados/gestao/</code> e da retrospectiva da E1.</p>
 
@@ -100,6 +101,17 @@ Consequência para as medidas da E1 (`esforco_consolidado.csv`, linhas com `hist
 - **Evidência da execução:** [quadro do projeto](https://github.com/users/cadumotta/projects/1), [PR #34](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/34) e [Construtos de medição](02-construtos-de-medicao.md), Tabela 2.
 - **Efeito observado posteriormente:** a verificar em 17/11/2026, pelo percentual concluído da W47 em `comprometido_concluido.csv`. Depende do retrato diário do quadro, que precisa do token `PSM_PROJECT_TOKEN` no workflow.
 
+### DG-10 - PC1 não apresentado
+
+- **Data:** 2026-11-15
+- **Medida que disparou:** A4 Conclusão de marcos, no marco PC1, e B4 Retrabalho e não conformidades, pela falta de apontamentos da docente antes da E1.
+- **Valor observado x critério:** o milestone `PC1` tem prazo em 19/10/2026 e não tem release nem issues (`milestones.json`, `entregas.csv`). A equipe não apresentou no ponto de controle e ficou sem o retorno da docente sobre a Fase 1. Sem data real, o desvio de A4 não pode ser calculado, e o marco conta como não cumprido. O critério de A4 exige registro de decisão para qualquer desvio positivo. Em B4, a E1 tem 0 apontamentos da docente antes da entrega (`retrabalho.csv`), então a taxa de escape da E1 não pode ser comparada com a revisão interna.
+- **Interpretação:** a primeira versão da Fase 1 só teve commits em 19/10/2026, no próprio dia do ponto de controle, no repositório inicial da equipe ([Diagnóstico](01-diagnostico-repositorio.md), seção 2). Não havia uma versão revisada para apresentar. A retrospectiva da E1 registra a "impossibilidade de apresentação no ponto de controle 1" e prioriza a "pouca atenção aos prazos" (C3) e a "ausência de liderança" (C2), as mesmas causas da concentração de véspera na E1 (DG-08). O efeito foi entregar a E1 sem nenhuma validação externa.
+- **Decisão tomada:** apresentar o PC2 em 18/11/2026 pela GitPage, com roteiro preparado antes ([issue #61](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/61)), e usar o retorno da docente antes da E2. Cada apontamento vira uma issue com as labels `retrabalho` e `apontamento-docente` (B4), no milestone `E2`, como define a DG-06. O PC2 passa a ter milestone com prazo, para que A4 seja medido também nos pontos de controle.
+- **Responsável e prazo:** Carlos (roteiro, issue #61), até 18/11/2026; Bernardo (issues dos apontamentos, DG-06), até 19/11/2026; Pedro (milestone `PC2`, issue #58), em 14/11/2026.
+- **Evidência da execução:** [milestone PC2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/milestone/5), [issue #61](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/61) e [retrospectiva da E1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-28-retrospectiva-e1.pdf), página 1.
+- **Efeito observado posteriormente:** a verificar em 18/11/2026, pela apresentação do PC2, e em 19/11/2026, pelo número de issues `apontamento-docente` abertas no milestone `E2` (`retrabalho.csv`).
+
 ## Desempenho dos Processos
 
 ### DG-03 - Abrir as issues no planejamento
@@ -143,6 +155,7 @@ Consequência para as medidas da E1 (`esforco_consolidado.csv`, linhas com `hist
 | 17/11/2026 | Primeira semana com compromisso no quadro (DG-07) | A2, `comprometido_concluido.csv` |
 | 17/11/2026 | Ritmo da W47 (DG-04) | B2, `velocidade.csv` |
 | Fechamento do bloco 2 | Cycle time com início pelo quadro (DG-03) | B1, `cycle_time.csv` |
+| 18/11 e 19/11/2026 | Apresentação do PC2 e apontamentos da docente registrados (DG-10) | A4 e B4, `retrabalho.csv` |
 | Entrega da E2 | Concentração de véspera e desvio do marco (DG-08) | B3 e A4, `entregas.csv` |
 
 <p class="legenda">Tabela 2. Próximas verificações de efeito. Fonte: elaborado pelos autores.</p>
