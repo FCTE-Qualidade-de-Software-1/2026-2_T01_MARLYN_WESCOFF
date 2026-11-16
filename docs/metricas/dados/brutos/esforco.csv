@@ -28,6 +28,7 @@ data,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao
 2026-10-24,Pedro Goncalves Rocha,2,revisao,#6,2,reconstruido, Revisão do objetivo G3
 2026-10-25,Pedro Goncalves Rocha,,revisao,#8,2,reconstruido, Revisão cruzada do artigo
 2026-10-25,Pedro Goncalves Rocha,,reuniao,,1,reconstruido, Reunião de revisão da E1
+2026-11-14,Pedro Goncalves Rocha,gestao,gestao,#58,2,registrado, Milestones do PC2 e da E2 e detalhamento das issues #52 a #78 e do quadro
 2026-10-28,Bernardo Broetto Brun,,gestao,,1.5,reconstruido, Facilitação da retrospectiva da E1
 2026-11-11,Bernardo Broetto Brun,gestao,desenvolvimento,#26,4,reconstruido, Implementação e validação dos gráficos PSM/CID
 2026-11-11,Bernardo Broetto Brun,gestao,desenvolvimento,#27,2,reconstruido, Implementação e validação do dashboard PSM/CID
@@ -35,6 +36,7 @@ data,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao
 2026-11-11,Bernardo Broetto Brun,gestao,documentacao,#30,5,reconstruido, Texto PSM/CID e transposição para o artigo
 2026-11-11,Bernardo Broetto Brun,gestao,documentacao,#31,1,reconstruido, Atualização e harmonização da declaração de uso de IA
 2026-11-11,Bernardo Broetto Brun,gestao,revisao,#32,1,reconstruido, Verificação final de conformidade PSM/CID e da rubrica
+2026-11-15,Pedro Goncalves Rocha,gestao,documentacao,#60,2,registrado, Rodapé e página inicial da GitPage e tabela de entregas na versão do PC2
 2026-11-15,Bernardo Broetto Brun,gestao,documentacao,#57,1,registrado, Atualização da declaração de IA do PC2 e sincronização com o Apêndice B
 2026-11-15,Bernardo Broetto Brun,4,documentacao,#64,3,registrado, Produção e validação manual dos 20 casos do oráculo de M1.2
 2026-11-15,Carlos Eduardo Deusdara Motta,3,gestao,#53,0.5,registrado,Ata 02 da reunião de aprovação do plano da Fase 3
@@ -43,3 +45,5 @@ data,membro,fase,tipo_atividade,issue,horas,tipo_registro,observacao
 2026-11-15,Carlos Eduardo Deusdara Motta,4,coleta,#65,1.5,registrado,compara_registros.py e congela_referencia.py com testes
 2026-11-15,Carlos Eduardo Deusdara Motta,4,coleta,#68,1.5,registrado,Formulário e roteiro da coleta de M2.1 e M2.2
 2026-11-15,Carlos Eduardo Deusdara Motta,4,analise,#72,1.5,registrado,Planilha de cálculos e script de julgamento de G1 a G3
+2026-11-15,Bernardo Broetto Brun,3,documentacao,#56,3,registrado, Seção da Fase 3 e custos estimados e realizados no artigo
+2026-11-15,Pedro Goncalves Rocha,gestao,documentacao,#59,2,registrado, Registro da DG-10 (PC1 não apresentado)
