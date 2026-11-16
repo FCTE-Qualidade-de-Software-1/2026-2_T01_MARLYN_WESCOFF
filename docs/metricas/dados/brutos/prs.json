@@ -1,5 +1,534 @@
 [
  {
+  "additions": 15,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-16T04:50:43Z",
+  "createdAt": "2026-11-16T04:32:49Z",
+  "deletions": 9,
+  "mergedAt": "2026-11-16T04:50:43Z",
+  "number": 101,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJDgIg",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-16T04:32:57Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "7d05355593ae48a6fa28ff6dfc89e83a9eff7add"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJJxpQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferido e aprovado.\n\n- **Versões e datas:** o rodapé, a linha do tempo da página inicial (Fase 3 concluída no PC2, Fase 4 em andamento) e as tabelas de entregas no README e em `entregas.md` batem com os milestones (PC1 em 19/10, PC2 em 15/11, E2 em 22/11).\n- **Links:** o de `fase-3/preparacao-do-servidor.md` existe na `main`. O da DG-10 funciona com o #100, que entra antes deste.\n- **Merge e build:** testei o merge depois do #100, sem conflito no `esforco.csv`; o `mkdocs build --strict` passou.\n",
+    "submittedAt": "2026-11-16T04:50:40Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "82fc0c82f5569fd3810fd7e0c1567b083b9c80de"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[GitPage] Rodapé e página inicial na versão do PC2"
+ },
+ {
+  "additions": 15,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-16T04:50:38Z",
+  "createdAt": "2026-11-16T04:32:42Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-16T04:50:38Z",
+  "number": 100,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJDeMw",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-16T04:32:51Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "ebc935705ed29aaa4354dfed2e6a2d9585cc58a3"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJJvgg",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferido e aprovado.\n\n- **PC1:** o milestone `PC1` (prazo em 19/10) não tem issues nem release. Os commits da primeira versão da Fase 1 no repositório inicial são de 19/10, como diz a interpretação.\n- **Links:** o do milestone PC2 (`/milestone/5`), o da #61 e o da retrospectiva abrem certo.\n- **Horas:** as linhas da #58 e da #59 no `esforco.csv` seguem o formato do arquivo.\n- **Merge e build:** o merge de teste com a `main`, junto com o #101, não teve conflito; o `mkdocs build --strict` passou e o `validar_dados.py` deu 0 erros.\n",
+    "submittedAt": "2026-11-16T04:50:35Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "ece7d3e39892121a6fe1277b8c149f2767707f56"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Gestão] DG-10: PC1 não apresentado"
+ },
+ {
+  "additions": 601,
+  "author": {
+   "id": "U_kgDOBsGwrg",
+   "is_bot": false,
+   "login": "jopesmp",
+   "name": "João Pedro S. Maciel"
+  },
+  "closedAt": "2026-11-16T04:12:43Z",
+  "createdAt": "2026-11-16T04:12:31Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-16T04:12:43Z",
+  "number": 99,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Declara o uso de IA de João Pedro na GitPage e no Apêndice B"
+ },
+ {
+  "additions": 34,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-16T02:54:06Z",
+  "deletions": 0,
+  "mergedAt": null,
+  "number": 98,
+  "reviews": [],
+  "state": "OPEN",
+  "title": "docs: registrar coleta parcial de G1 no Moodle"
+ },
+ {
+  "additions": 19,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-16T02:51:59Z",
+  "createdAt": "2026-11-16T02:47:31Z",
+  "deletions": 4,
+  "mergedAt": "2026-11-16T02:51:59Z",
+  "number": 97,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYIfByQ",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-16T02:47:40Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "30a36d227644e0a87119fc4f47aedee62950e998"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Gestão] Declaração de uso de IA de Pedro e Carlos"
+ },
+ {
+  "additions": 17,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-16T02:38:29Z",
+  "createdAt": "2026-11-16T02:36:46Z",
+  "deletions": 5,
+  "mergedAt": "2026-11-16T02:38:29Z",
+  "number": 95,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYIbcUw",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-16T02:36:56Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "9f2b73e371b93f0bb22509f80e4b6d5eed4f27f6"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Artigo] Restaura a declaração de IA e inclui a Fase 3 no resumo"
+ },
+ {
+  "additions": 1,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T02:36:21Z",
+  "createdAt": "2026-11-16T02:33:55Z",
+  "deletions": 41,
+  "mergedAt": null,
+  "number": 93,
+  "reviews": [],
+  "state": "CLOSED",
+  "title": "Reverte o PR #79 (Fase 3 e custos no artigo)"
+ },
+ {
+  "additions": 1,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T04:53:00Z",
+  "createdAt": "2026-11-16T02:09:32Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-16T04:53:00Z",
+  "number": 92,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 3] Local da reunião na ata 02"
+ },
+ {
+  "additions": 3,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": "2026-11-16T04:33:10Z",
+  "createdAt": "2026-11-16T01:38:23Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-16T04:33:10Z",
+  "number": 91,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYIIweA",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-16T01:38:31Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "545675eae1ed578ff0bdba81ef8842ee7492f4b1"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJDjeQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferi no GitHub e aprovo.\n\n- **Milestones:** PC2 vence em 15/11 e E2 em 22/11; PC1 e Apresentação estão fechados.\n- **Issues:** as 27 issues #52 a #78 foram criadas em 14/11. As do bloco 3 (#26, #27 e #29 a #32) foram fechadas em 14/11.\n- **Quadro:** as 18 issues #15 a #32 estão em \"Concluído\". Na Iteração, 9 issues do PC2 estão em W46 e 18 da E2 em W47, como o texto diz.\n- **Merge e build:** o merge de teste com a `main` atual não teve conflito, e o `mkdocs build --strict` passou sem avisos.\n\nA linha sobre o salto no fluxo cumulativo em 14/11 é uma boa ressalva: deixa claro que a mudança de Status não corresponde a trabalho feito naquele dia.\n",
+    "submittedAt": "2026-11-16T04:33:06Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "545675eae1ed578ff0bdba81ef8842ee7492f4b1"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Gestão] Milestones, issues concluídas e quadro do PC2"
+ },
+ {
+  "additions": 3703,
+  "author": {
+   "id": "U_kgDOBsGwrg",
+   "is_bot": false,
+   "login": "jopesmp",
+   "name": "João Pedro S. Maciel"
+  },
+  "closedAt": "2026-11-15T22:42:04Z",
+  "createdAt": "2026-11-15T22:41:54Z",
+  "deletions": 6,
+  "mergedAt": "2026-11-15T22:42:04Z",
+  "number": 90,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Fase4/63 gera massa"
+ },
+ {
+  "additions": 124,
+  "author": {
+   "id": "U_kgDOBsGwrg",
+   "is_bot": false,
+   "login": "jopesmp",
+   "name": "João Pedro S. Maciel"
+  },
+  "closedAt": "2026-11-15T21:10:36Z",
+  "createdAt": "2026-11-15T21:07:50Z",
+  "deletions": 76,
+  "mergedAt": "2026-11-15T21:10:36Z",
+  "number": 89,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 3] Finalizar o plano de avaliação"
+ },
+ {
+  "additions": 346,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-11-15T21:54:41Z",
+  "createdAt": "2026-11-15T18:48:32Z",
+  "deletions": 77,
+  "mergedAt": "2026-11-15T21:54:41Z",
+  "number": 88,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Condensa as Fases 1 e 2 do artigo e adiciona o script do servidor de avaliação"
+ },
+ {
+  "additions": 31,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-15T23:16:36Z",
+  "createdAt": "2026-11-15T18:02:37Z",
+  "deletions": 17,
+  "mergedAt": "2026-11-15T23:16:36Z",
+  "number": 87,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "Fase 4/oraculo m1 2 64"
+ },
+ {
+  "additions": 339,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T04:59:27Z",
+  "createdAt": "2026-11-15T17:31:55Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-16T04:59:27Z",
+  "number": 86,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYIQ9gw",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Carlos, o script está bem estruturado e os testes passam, mas encontrei um problema no arredondamento da nota 4.\n\nProblema: nota() arredonda o valor para duas casas antes de comparar, inclusive para a nota 4. Pela Tabela 2 de Níveis e julgamento, a nota 4 exige 1,00 exato (todos os registros íntegros, todas as tarefas concluídas). Com o arredondamento, um valor como 0,995 vira 1,00 e recebe nota 4.\n\nComo reproduzir:\n\n\nfrom calcula_julgamento import nota, calcula\nnota(\"M2.2\", 199/200)                              # devolve 4, deveria ser 3\nnota(\"M3.5\", 199/200, None, {\"perda_nao_academica\"})  # devolve 4, deveria ser 2\nnota(\"M3.2\", 0.996)                                # devolve 4, deveria ser 3\ncalcula([{\"metrica\": \"M2.2\", \"numerador\": \"199\", \"denominador\": \"200\"}])\n# nota 4 com a hipótese H2.2 \"refutada\": o resultado se contradiz\nIsso pode acontecer de verdade no M2.2. Ele soma os registros dos 7 formatos e deve passar de 200. Nesse caso, um único registro com o acento perdido daria nota 4 em vez de 3 e mudaria o julgamento de G2.\n\nSugestão de correção: decidir a nota 4 com o valor sem arredondar e manter o arredondamento só nos outros níveis. O arredondamento continua necessário para 11/12 = 0,9167 virar 0,92 e ter nota 3, como está na tabela.\n\n\n    exato = valor >= 1.0          # nota 4 exige 1,00 exato, sem arredondar\n    v = duas_casas(valor)\nDepois, troque os if v >= 1.0: return 4 de M1.2, M2.4, M3.5 e da regra geral por if exato: return 4.\n\nTeste para incluir:\n\n\ndef test_nota_4_exige_valor_exato(self):\n    self.assertEqual(nota(\"M2.2\", 199/200), 3)\n    self.assertEqual(nota(\"M3.2\", 0.996), 3)\n    self.assertEqual(nota(\"M3.5\", 199/200, None, {\"perda_nao_academica\"}), 2)\n    self.assertEqual(nota(\"M2.2\", 1.0), 4)\nFora isso, só falta lançar as horas no esforco.csv. Com a correção, eu aprovo.",
+    "submittedAt": "2026-11-16T02:03:48Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "0a497f7013319750cdb8a4b4e5cbb19a739d78b4"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYJNLlQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "",
+    "submittedAt": "2026-11-16T04:59:19Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "bc3776482ff1126d46d49652458d25626cf8be74"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Fase 4] Planilha de cálculos e julgamento automático de G1 a G3"
+ },
+ {
+  "additions": 63,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T01:58:16Z",
+  "createdAt": "2026-11-15T17:29:48Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-16T01:58:16Z",
+  "number": 85,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 4] Preparação da coleta de G2: M2.1 e M2.2"
+ },
+ {
+  "additions": 696,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T01:57:50Z",
+  "createdAt": "2026-11-15T17:28:52Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-16T01:57:49Z",
+  "number": 84,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 4] compara_registros.py e congelamento das referências de M2.1"
+ },
+ {
+  "additions": 69,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-16T01:57:35Z",
+  "createdAt": "2026-11-15T17:24:53Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-16T01:57:35Z",
+  "number": 83,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Gestão] Roteiro da apresentação do PC2 pela GitPage"
+ },
+ {
+  "additions": 65,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-15T22:03:01Z",
+  "createdAt": "2026-11-15T17:23:55Z",
+  "deletions": 32,
+  "mergedAt": "2026-11-15T22:03:01Z",
+  "number": 82,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 4] Plano de execução da Fase 4 na GitPage"
+ },
+ {
+  "additions": 60,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-15T21:55:24Z",
+  "createdAt": "2026-11-15T17:22:36Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-15T21:55:24Z",
+  "number": 81,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "[Fase 3] Ata da reunião de aprovação do plano de avaliação"
+ },
+ {
+  "additions": 21,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-15T23:16:38Z",
+  "createdAt": "2026-11-15T15:39:18Z",
+  "deletions": 15,
+  "mergedAt": "2026-11-15T23:16:38Z",
+  "number": 80,
+  "reviews": [],
+  "state": "MERGED",
+  "title": "docs(gestao): atualiza declaração de uso de IA do PC2"
+ },
+ {
+  "additions": 41,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-16T02:32:58Z",
+  "createdAt": "2026-11-15T13:43:26Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-16T02:32:58Z",
+  "number": 79,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABYIZLZA",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferi os números, o texto e o PDF gerado pelo CI. Aprovo, com três sugestões que não impedem o merge.\n\n**O que conferi**\n\n- **Tabela de custos:** os valores batem com a Tabela 2 do dashboard (E1 57 h / R$ 841,89; E2 14 h / R$ 206,78; PC2 3 h / R$ 44,31). O custo da hora bate com a Tabela 14 dos construtos: R$ 1.950,00 / 132 h = R$ 14,77.\n- **Fase 3 em relação às outras fontes:**\n  - os ambientes Windows/Chrome, Windows/Firefox, Ubuntu/Firefox e Android/Chrome correspondem a A1 a A4 do Escopo;\n  - a VM de 2 vCPU, 4 GB e 40 GB corresponde ao plano final;\n  - as 6 execuções, o oráculo de 20 casos e o cronograma de 16 a 22/11 correspondem à ata 02.\n- **Numeração:** a tabela nova vira a Tabela 2, mas todas as referências do texto usam `\\ref`, então nada ficou com número errado.\n- **PDF do CI:** tem **14 páginas** (o atual da `main` tem 13), dentro do limite de 15. A descrição do PR fala em 17 páginas; vale corrigir para não confundir quem ler.\n\n**Sugestões**\n\n1. **Interpretar a tabela de custos.** Hoje ela aparece sem leitura. A E1 realizou 57 h contra 20,5 h estimadas, 2,8 vezes. Uma frase ligando isso à DG-09 resolve: as estimativas da E1 cobriam só as 14 issues de revisão, e a primeira versão da Fase 1 foi feita sem issue. A rubrica cobra a interpretação e a decisão, e não só o número.\n2. **Servidor único ou um por integrante.** A subseção \"Método e ambiente\" fala em \"o servidor de referência\", no singular, e o cronograma diz que cada integrante coleta no próprio servidor (decisão D3 da ata 02). Algo como \"cada integrante monta o servidor de referência com o mesmo script\" deixa as duas partes coerentes.\n3. **Valores de E2 e PC2 parciais.** Esses números são parciais em 15/11 e vão mudar até a entrega, por exemplo com as horas que entram no #86. Vale deixar anotado na #76/#78 que a tabela precisa ser atualizada no fechamento da E2.\n",
+    "submittedAt": "2026-11-16T02:30:10Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "d35c022f46006fe2de67376cef5e7bb666e5423c"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Artigo] Fase 3 e custo estimado x realizado por entrega"
+ },
+ {
   "additions": 209,
   "author": {
    "id": "U_kgDOC5MJug",
