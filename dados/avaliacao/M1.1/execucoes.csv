@@ -2,7 +2,7 @@ tarefa,papel,concluida,funcao_usada,contorno_necessario,passo_extra,evidencia,ob
 T01,Administrador,sim,criar curso e matricular estudantes e docente,não,,M1.1_T01_2026-11-15_BBB.png,Curso T01-T12 criado; est01 matriculado como Student e docente01 como Teacher.
 T02,Docente,sim,publicar material (arquivo),não,,M1.1_T02_2026-11-15_BBB.png,Material T02 publicado no curso T01-T12.
 T03,Docente,sim,criar tarefa com data de entrega e data limite,não,,M1.1_T03_2026-11-15_BBB.png,Tarefa T03 criada com abertura em 15/11, vencimento em 16/11 e cut-off em 17/11/2026.
-T04,,,,,,,
+T04,Estudante,sim,enviar arquivo para tarefa dentro do prazo,não,,M1.1_T04_2026-11-15_BBB.png,Envio submetido para avaliação 22 horas e 1 minuto antes do prazo.
 T05,,,,,,,
 T06,,,,,,,
 T07,,,,,,,
