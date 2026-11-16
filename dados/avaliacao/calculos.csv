@@ -1,0 +1,13 @@
+metrica,questao,objetivo,formula,numerador,denominador,valor_direto,retentativas,condicao,fonte,observacao
+M1.1,Q1.1,G1,1 - Tf/Tt (numerador = tarefas concluídas; denominador = 12),,12,,,,dados/avaliacao/M1.1/execucoes.csv,
+M1.2,Q1.2,G1,Cc/Ct (denominador = 20 casos do oráculo),,20,,,,dados/avaliacao/M1.2/,
+M1.3,Q1.3,G1,1 - Tc/Tt (numerador = tarefas sem contorno; denominador = 12),,12,,,,dados/avaliacao/M1.1/execucoes.csv,
+M2.1,Q2.1,G2,Fs/Ft (denominador = 7 formatos),,7,,,,dados/avaliacao/M2.1/execucoes.csv,
+M2.2,Q2.2,G2,Rc/Rt (soma dos 7 formatos),,,,,,dados/avaliacao/M2.2/resumo.csv,
+M2.3,Q2.3,G2,Ws/Wt (denominador = 6 funções REST),,6,,,,dados/avaliacao/M2.3/,
+M2.4,Q2.4,G2,Ec/Et (denominador = 3 entidades vizinhas),,3,,,,dados/avaliacao/M2.4/verificacoes.csv,
+M3.1,Q3.1,G3,min(1 - Tfa/Tta) no pior ambiente (denominador = 8 tarefas),,8,,,,dados/avaliacao/M3.1/,
+M3.2,Q3.2,G3,min(1 - Tfp/Ttp) na pior versão de PHP (denominador = 12 tarefas),,12,,,,dados/avaliacao/M3.2/,
+M3.3,Q3.3,G3,Ps/Pt (denominador = 6 execuções),,6,,,,dados/avaliacao/M3.3/execucoes.csv,
+M3.4,Q3.3,G3,mediana(tfim - tinício) em minutos; R = retentativas,,,,,,dados/avaliacao/M3.4/,
+M3.5,Q3.4,G3,Ip/It (denominador = 40 itens),,40,,,,dados/avaliacao/M3.5/,
