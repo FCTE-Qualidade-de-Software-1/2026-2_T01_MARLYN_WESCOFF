@@ -106,5 +106,7 @@ Registro das ações feitas para tornar o repositório mensurável, sem reescrev
 | 10/11/2026 | Apontamento `esforco.csv` criado, com as atividades da E1 migradas e as horas em branco, à espera da reconstrução | #20, PR #35 | L1 |
 | 10/11/2026 | Fluxo por branch e pull request revisado adotado a partir das issues da gestão PSM/CID | PRs #33 em diante | L2 |
 | 10/11/2026 | Project board [Marlyn Wescoff - Gestão PSM/CID](https://github.com/users/cadumotta/projects/1) criado com os estados Backlog, A Fazer, Em Progresso, Em Revisão e Concluído e o campo semanal "Iteração"; as 32 issues foram adicionadas no estado atual. O quadro fica na conta de Carlos porque a organização da disciplina não permite que integrantes criem projetos | #19 | L4 |
+| 14/11/2026 | Milestone `PC2` criado com prazo em 15/11/2026; prazo do `E2` preenchido com 22/11/2026; `PC1` e `Apresentação` fechados, porque as apresentações não geram entrega no repositório. Issues #52 a #78 criadas com responsável, milestone, estimativa e Iteração (W46 para o PC2, W47 para a E2); issues #26, #27 e #29 a #32 fechadas com o PR que as concluiu (#44 a #49) | #58 | L5 |
+| 14/11/2026 | No quadro, as 18 issues fechadas #15 a #32 estavam em Backlog, Em Progresso ou Em Revisão e foram movidas para Concluído. Essas mudanças de Status têm data de 14/11/2026 e aparecem no fluxo cumulativo (A3) como um salto nesse dia, sem corresponder a trabalho feito nele | #58 | L4 |
 
 <p class="legenda">Tabela 5. Ações de instrumentação do repositório. Fonte: elaborado pelos autores.</p>
