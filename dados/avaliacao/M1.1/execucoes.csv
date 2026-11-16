@@ -9,5 +9,5 @@ T07,Docente,sim,criar questionário com questões de múltipla escolha e numéri
 T08,Estudante,sim,responder questionário e receber nota automática,não,,M1.1_T08_2026-11-15_BBB.png,Tentativa concluída com 2,00/2,00 e nota 10,00/10,00.
 T09,Docente e estudante,sim,abrir fórum e responder a uma discussão,não,,M1.1_T09_2026-11-15_BBB.png,Tópico criado pelo docente e resposta publicada pelo estudante est01.
 T10,Docente,sim,configurar categorias e pesos no livro de notas,não,,M1.1_T10_2026-11-15_BBB.png,Categoria T10 criada com peso ajustado de 50,0%.
-T11,,,,,,,
+T11,Estudante,sim,consultar a própria nota final,não,,M1.1_T11_2026-11-15_BBB.png,Relatório do usuário exibiu Course total de 18,00/110 (16,36%).
 T12,,,,,,,
