@@ -49,8 +49,6 @@ This paper reports the first two phases of a product quality evaluation of Moodl
 Este artigo relata as duas primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A execução do projeto é acompanhada com medidas do PSM/CID.
 \end{resumo}
 
-{\small\tableofcontents}
-
 % ======================================================================
 \section{Introdução}
 \label{sec:intro}
@@ -61,7 +59,7 @@ Em 05/10/2026 foi lançado o Moodle 5.3, nova versão de suporte estendido (LTS)
 
 Este trabalho avalia a qualidade de produto do Moodle 5.3 LTS para apoiar essa decisão. A avaliação segue o processo da ISO/IEC 25040~\cite{iso25040}, adota o modelo de qualidade da ISO/IEC 25010:2023~\cite{iso25010} e especifica as medições com o método GQM~\cite{basili1994gqm}. O projeto foi conduzido pelo Grupo Marlyn Wescoff na disciplina Qualidade de Software~1 da FCTE/UnB~\cite{ramos2026trabalho}.
 
-Esta primeira versão do artigo cobre as Fases~1 e~2 do processo. A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia de desenvolvimento do projeto; a Seção~\ref{sec:fase1}, o estabelecimento dos requisitos de avaliação (Fase~1); a Seção~\ref{sec:fase2}, a especificação da avaliação (Fase~2); e a Seção~\ref{sec:consideracoes}, as considerações parciais. O Apêndice~\ref{ap:contribuicao} traz a tabela de contribuição da equipe e o Apêndice~\ref{ap:ia}, a declaração de uso de IA.
+A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia do projeto; a Seção~\ref{sec:resultados-psm}, os resultados da gestão; as Seções~\ref{sec:fase1} e~\ref{sec:fase2}, as Fases~1 e~2; e a Seção~\ref{sec:consideracoes}, as considerações parciais. Os apêndices trazem a contribuição da equipe e a declaração de uso de IA.
 
 % ======================================================================
 \section{Referencial teórico}
@@ -69,21 +67,15 @@ Esta primeira versão do artigo cobre as Fases~1 e~2 do processo. A Seção~\ref
 
 \subsection{Série SQuaRE e o modelo de qualidade da ISO/IEC 25010:2023}
 
-A série ISO/IEC 25000, conhecida como SQuaRE (\textit{Systems and software Quality Requirements and Evaluation}), organiza em divisões as normas de gestão da qualidade (2500n), modelos de qualidade (2501n), medição (2502n), requisitos (2503n) e avaliação (2504n)~\cite{ramos2026aulas}. A ISO/IEC 25010:2023 define o modelo de qualidade de produto com nove características: adequação funcional, eficiência de desempenho, compatibilidade, capacidade de interação, confiabilidade, segurança, manutenibilidade, flexibilidade e segurança operacional~\cite{iso25010}. Em relação à edição de 2011, a revisão renomeou \emph{portabilidade} para \emph{flexibilidade}, incluiu a subcaracterística \emph{escalabilidade} e renomeou \emph{usabilidade} para \emph{capacidade de interação}.
+A série ISO/IEC 25000 (SQuaRE) organiza em divisões as normas de gestão da qualidade (2500n), modelos (2501n), medição (2502n), requisitos (2503n) e avaliação (2504n)~\cite{ramos2026aulas}. A ISO/IEC 25010:2023 define nove características de qualidade de produto: adequação funcional, eficiência de desempenho, compatibilidade, capacidade de interação, confiabilidade, segurança, manutenibilidade, flexibilidade e segurança operacional~\cite{iso25010}. Em relação à edição de 2011, \emph{portabilidade} passou a \emph{flexibilidade}, com a nova subcaracterística \emph{escalabilidade}, e \emph{usabilidade} passou a \emph{capacidade de interação}. A ISO/IEC 25023 propõe, para cada subcaracterística, medidas na forma de razões entre contagens~\cite{iso25023}.
 
-As medidas de qualidade de produto são descritas na ISO/IEC 25023, que propõe, para cada subcaracterística, medidas na forma de razões entre contagens, como a cobertura de implementação funcional e a intercambialidade de formatos de dados~\cite{iso25023}.
+\subsection{Processo de avaliação e tipo de produto}
 
-\subsection{Processo de avaliação da ISO/IEC 25040}
-
-A ISO/IEC 25040 organiza a avaliação em quatro fases~\cite{iso25040,ramos2026aulas}: (1)~\emph{estabelecer os requisitos de avaliação}, definindo propósito, tipo de produto e modelo de qualidade; (2)~\emph{especificar a avaliação}, selecionando métricas, níveis de pontuação e critérios de julgamento; (3)~\emph{projetar a avaliação}, produzindo o plano com método, recursos e cronograma; e (4)~\emph{executar a avaliação}, obtendo as medidas, comparando-as com os critérios e julgando os resultados. O detalhamento deve permitir que a avaliação seja repetível e reprodutível.
-
-\subsection{Classificação do tipo de produto}
-
-A Fase~1 exige identificar o tipo de produto. Pressman~\cite{pressman2002} classifica o software por domínio de aplicação (sistema, tempo real, comercial, científico, embarcado, aplicações web, entre outros). A IEEE~1062~\cite{ieee1062} distingue o software COTS (\textit{Commercial Off-The-Shelf}), igual para todos os clientes; o MOTS (\textit{Modified Off-The-Shelf}), um produto-padrão adaptado a clientes; e o software totalmente desenvolvido sob encomenda.
+A ISO/IEC 25040 organiza a avaliação em quatro fases~\cite{iso25040,ramos2026aulas}: (1)~\emph{estabelecer os requisitos}, definindo propósito, tipo de produto e modelo de qualidade; (2)~\emph{especificar}, selecionando métricas, níveis de pontuação e critérios de julgamento; (3)~\emph{projetar}, produzindo o plano com método, recursos e cronograma; e (4)~\emph{executar}, obtendo as medidas e julgando os resultados, de forma repetível e reprodutível. Para o tipo de produto, Pressman~\cite{pressman2002} classifica o software por domínio de aplicação, e a IEEE~1062~\cite{ieee1062} distingue o software COTS, igual para todos os clientes, do MOTS, adaptado a clientes, e do desenvolvido sob encomenda.
 
 \subsection{Goal--Question--Metric}
 
-O GQM, proposto por Basili, Caldiera e Rombach~\cite{basili1994gqm}, parte do princípio de que a medição deve ser orientada a objetivos. Ele tem três níveis: o \emph{conceitual} (objetivo de medição), o \emph{operacional} (questões que caracterizam o objetivo) e o \emph{quantitativo} (métricas que respondem às questões). O objetivo é descrito por um template com cinco elementos: \emph{analisar} um objeto, \emph{para o propósito de} entender, melhorar ou controlar, \emph{com respeito a} um foco de qualidade, \emph{do ponto de vista de} quem deseja a avaliação, \emph{no contexto de} um ambiente. As \emph{abstraction sheets} registram foco de qualidade, hipóteses de \textit{baseline}, fatores de variação e seu impacto, e apoiam a formulação de hipóteses para cada questão~\cite{ramos2026aulas}.
+O GQM~\cite{basili1994gqm} orienta a medição a objetivos em três níveis: \emph{conceitual} (objetivo), \emph{operacional} (questões) e \emph{quantitativo} (métricas). O objetivo segue um template de cinco elementos: \emph{analisar} um objeto, \emph{para o propósito de} entender, melhorar ou controlar, \emph{com respeito a} um foco de qualidade, \emph{do ponto de vista de} quem deseja a avaliação, \emph{no contexto de} um ambiente. As \emph{abstraction sheets} registram foco de qualidade, hipóteses de \textit{baseline} e fatores de variação~\cite{ramos2026aulas}.
 
 \subsection{PSM e o guia CID}
 
@@ -199,13 +191,13 @@ As horas da E1 e os primeiros registros da E2 foram reconstruídos após o traba
 
 \subsection{Propósito e uso pretendido}
 
-O cenário é o de uma instituição pública de ensino superior que já usa o Moodle e analisa a atualização para a 5.3 LTS. O cenário é inspirado no uso do Moodle em universidades brasileiras, mas nenhuma instituição solicitou formalmente a avaliação. A avaliação deve produzir evidências sobre três riscos: \emph{acadêmico} (tarefas essenciais falharem ou produzirem resultados errados), \emph{de integração} (perda de dados nas trocas com sistemas vizinhos ou interferência em serviços do mesmo servidor) e \emph{operacional} (falha na instalação ou atualização, ou nos navegadores e dispositivos usados). A Tabela~\ref{tab:decisoes} relaciona esses riscos às decisões apoiadas.
+O cenário é o de uma instituição pública de ensino superior que já usa o Moodle e analisa a atualização para a 5.3 LTS; ele é inspirado em universidades brasileiras, mas nenhuma instituição solicitou formalmente a avaliação. A avaliação produz evidências sobre três riscos: \emph{acadêmico} (tarefas essenciais falharem ou darem resultado errado), \emph{de integração} (perda de dados nas trocas ou interferência em serviços do mesmo servidor) e \emph{operacional} (falha na instalação, na atualização ou nos ambientes de acesso). A Tabela~\ref{tab:decisoes} liga esses riscos às decisões apoiadas. Cada objetivo de medição termina em \emph{atende}, \emph{atende com ressalvas} ou \emph{não atende}, que correspondem a prosseguir com a migração, prosseguir com mitigação ou não prosseguir sem correção documentada (Seção~\ref{sec:julgamento}).
 
 \begin{table}[!ht]
 \centering
 \caption{Decisões apoiadas pela avaliação.}
 \label{tab:decisoes}
-\footnotesize
+\scriptsize
 \begin{tabularx}{\linewidth}{p{0.6cm}Lp{2.6cm}p{2.4cm}}
 \toprule
 \textbf{ID} & \textbf{Decisão} & \textbf{Quem decide} & \textbf{Característica} \\
@@ -219,17 +211,15 @@ D4 & Escolher a ação de melhoria da Entrega~2 & Equipe avaliadora e docente & 
 \tabfonte{elaboração própria.}
 \end{table}
 
-Cada objetivo de medição termina em um julgamento de três níveis --- \emph{atende}, \emph{atende com ressalvas} ou \emph{não atende} --- que corresponde, respectivamente, a prosseguir com a migração, prosseguir com ações de mitigação ou não prosseguir sem correção documentada (Seção~\ref{sec:julgamento}).
-
 \subsection{Requisitante e partes interessadas}
 
-A avaliação tem dois requisitantes: a \emph{docente da disciplina}, que define regras, prazos e critérios (inclusive a exclusão da usabilidade), e a \emph{Coordenação de TI} da instituição, papel de comprador e operador no cenário, que toma as decisões D1--D3 e é o ponto de vista dos objetivos GQM. A Tabela~\ref{tab:stakeholders} resume as demais partes interessadas. As necessidades marcadas com (H) foram derivadas da documentação do Moodle e da experiência dos integrantes como usuários, sem entrevistas, e serão tratadas como hipóteses.
+A avaliação tem dois requisitantes: a \emph{docente da disciplina}, que define regras, prazos e critérios (inclusive a exclusão da usabilidade), e a \emph{Coordenação de TI}, comprador e operador no cenário, que toma as decisões D1--D3 e é o ponto de vista dos objetivos GQM. A Tabela~\ref{tab:stakeholders} resume as partes interessadas; as necessidades marcadas com (H) vêm da documentação e da experiência dos integrantes, sem entrevistas, e são tratadas como hipóteses.
 
 \begin{table}[!ht]
 \centering
 \caption{Partes interessadas, critério de sucesso e influência na avaliação.}
 \label{tab:stakeholders}
-\footnotesize
+\scriptsize
 \begin{tabularx}{\linewidth}{p{3.1cm}LL}
 \toprule
 \textbf{Parte interessada (papel)} & \textbf{Critério de sucesso} & \textbf{Influência na avaliação} \\
@@ -249,9 +239,7 @@ Comunidade Moodle (fornecedora) & Relatos reproduzíveis de defeitos & Fornece d
 
 \subsection{Tipo de produto e descrição estruturada}
 
-O Moodle é uma aplicação web cliente-servidor, um monolito modular em PHP extensível por plugins, distribuído sob GPLv3. Na classificação de Pressman, enquadra-se como aplicação web de sistema de informação; na IEEE~1062, é um produto \textbf{COTS}, que pode se tornar MOTS quando a instituição instala plugins e customizações~\cite{pressman2002,ieee1062}. Por isso, a avaliação usa apenas o núcleo, com o tema padrão Boost, para que os resultados não dependam de customizações locais.
-
-Os módulos relevantes são cursos e matrículas, usuários (incluindo o cadastro em lote por CSV), tarefa (\texttt{mod\_assign}), questionário e banco de questões (\texttt{mod\_quiz}), fórum, recurso, livro de notas, calendário, backup e restauração, serviços web REST, instalação/atualização pela linha de comando e tarefas agendadas~\cite{hunt2012moodle}. As interfaces são a interface web, a API REST, os arquivos de importação e exportação (CSV, XLSX, GIFT, Moodle XML, iCal, \texttt{.mbz}), a linha de comando e o acesso ao banco de dados e ao diretório \texttt{moodledata}. A Figura~\ref{fig:contexto} mostra o contexto da instalação de referência.
+O Moodle é uma aplicação web cliente-servidor, um monolito modular em PHP extensível por plugins, sob GPLv3. Para Pressman, é uma aplicação web de sistema de informação; na IEEE~1062, um produto \textbf{COTS}, que se torna MOTS quando a instituição instala plugins e customizações~\cite{pressman2002,ieee1062}. Por isso, a avaliação usa apenas o núcleo, com o tema Boost. Os módulos relevantes são cursos e matrículas, usuários (com cadastro em lote por CSV), tarefa, questionário e banco de questões, fórum, recurso, livro de notas, calendário, backup e restauração, serviços web REST, instalação pela linha de comando e tarefas agendadas~\cite{hunt2012moodle}; as interfaces são a web, a API REST, os arquivos de troca (CSV, XLSX, GIFT, Moodle XML, iCal, \texttt{.mbz}), a linha de comando, o banco de dados e o diretório \texttt{moodledata} (Figura~\ref{fig:contexto}).
 
 \begin{figure}[!ht]
 \centering
@@ -286,57 +274,30 @@ Os módulos relevantes são cursos e matrículas, usuários (incluindo o cadastr
 \label{fig:contexto}
 \end{figure}
 
-\textbf{Implicações para a avaliação.} Com a instalação local e dados fictícios, é possível medir cobertura e correção das tarefas essenciais, trocas de dados por arquivos e serviços web, coexistência com outra aplicação no mesmo servidor, instalação e atualização 4.5 $\rightarrow$ 5.3 e execução nos ambientes de acesso selecionados. Não é possível medir comportamento sob carga, integração com sistemas institucionais reais, compatibilidade com plugins de terceiros, uso ao longo de um semestre nem conformidade legal. Essas limitações influenciam diretamente a priorização.
+\textbf{Implicações.} A instalação local com dados fictícios permite medir cobertura e correção das tarefas essenciais, trocas por arquivos e serviços web, coexistência no mesmo servidor, instalação e atualização 4.5 $\rightarrow$ 5.3 e execução nos ambientes de acesso; não permite medir comportamento sob carga, integração com sistemas institucionais reais, plugins de terceiros, uso ao longo de um semestre nem conformidade legal. Essas limitações orientam a priorização.
 
 \subsection{Modelo de qualidade adaptado}
 
-O modelo da ISO/IEC 25010:2023 foi adaptado por quatro regras: (A1)~manter apenas o que apoia uma decisão D1--D3; (A2)~excluir capacidade de interação, por regra da disciplina; (A3)~manter apenas subcaracterísticas mensuráveis na instalação local; e (A4)~reinterpretar cada subcaracterística no vocabulário de um LMS. A Figura~\ref{fig:modelo} mostra o modelo resultante e a Tabela~\ref{tab:subcar}, a interpretação de cada subcaracterística.
-
-\begin{figure}[!ht]
-\centering
-\begin{tikzpicture}[
-  raiz/.style={draw, rounded corners, fill=blue!12, align=center, font=\footnotesize\bfseries, minimum width=4.2cm},
-  car/.style={draw, rounded corners, fill=orange!12, align=center, font=\scriptsize\bfseries, minimum width=3.2cm, minimum height=0.8cm},
-  sub/.style={draw, rounded corners, fill=white, align=center, font=\scriptsize, minimum width=2.4cm},
-  fora/.style={draw, dashed, rounded corners, text=gray, align=center, font=\tiny},
-  seta/.style={-{Stealth}, semithick}]
-\node[raiz] (q) {Qualidade de produto -- Moodle 5.3 LTS\\(ISO/IEC 25010:2023)};
-\node[car, below=0.7cm of q, xshift=-4.3cm] (af) {1. Adequação funcional\\{\tiny risco acadêmico -- D1}};
-\node[car, below=0.7cm of q] (co) {2. Compatibilidade\\{\tiny risco de integração -- D2}};
-\node[car, below=0.7cm of q, xshift=4.3cm] (fl) {3. Flexibilidade\\{\tiny risco operacional -- D3}};
-\foreach \n in {af,co,fl} \draw[seta] (q) -- (\n);
-\node[sub, below=0.4cm of af] (af1) {Completude funcional};
-\node[sub, below=0.15cm of af1] (af2) {Correção funcional};
-\node[sub, below=0.15cm of af2] (af3) {Pertinência funcional};
-\node[sub, below=0.4cm of co] (co1) {Interoperabilidade};
-\node[sub, below=0.15cm of co1] (co2) {Coexistência};
-\node[sub, below=0.4cm of fl] (fl1) {Adaptabilidade};
-\node[sub, below=0.15cm of fl1] (fl2) {Instalabilidade};
-\node[fora, below=0.15cm of fl2] (fl3) {Escalabilidade e\\substituibilidade (fora)};
-\node[fora, below=0.15cm of co2, text width=3.2cm] (out) {Fora: capacidade de interação (A2); eficiência, confiabilidade, segurança, manutenibilidade e segurança operacional (priorização)};
-\foreach \a/\b in {af/af1,af1/af2,af2/af3,co/co1,co1/co2,fl/fl1,fl1/fl2} \draw[semithick] (\a) -- (\b);
-\draw[semithick, dashed] (fl2) -- (fl3);
-\end{tikzpicture}
-\caption{Modelo de qualidade adaptado, com a prioridade, o risco e a decisão de cada característica. Fonte: elaboração própria a partir de~\cite{iso25010}.}
-\label{fig:modelo}
-\end{figure}
+O modelo da ISO/IEC 25010:2023 foi adaptado por quatro regras: (A1)~manter apenas o que apoia uma decisão D1--D3; (A2)~excluir capacidade de interação, por regra da disciplina; (A3)~manter apenas subcaracterísticas mensuráveis na instalação local, o que retira escalabilidade e substituibilidade; e (A4)~reinterpretar cada subcaracterística no vocabulário de um LMS. A Tabela~\ref{tab:subcar} mostra o modelo resultante; as demais características saem pela priorização.
 
 \begin{table}[!ht]
 \centering
-\caption{Subcaracterísticas mantidas e sua interpretação no Moodle.}
+\caption{Modelo de qualidade adaptado: características, risco, decisão e interpretação das subcaracterísticas.}
 \label{tab:subcar}
-\footnotesize
-\begin{tabularx}{\linewidth}{p{3.1cm}L}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{2.5cm}p{2.6cm}L}
 \toprule
-\textbf{Subcaracterística} & \textbf{Interpretação no Moodle} \\
+\textbf{Característica} & \textbf{Subcaracterística} & \textbf{Interpretação no Moodle} \\
 \midrule
-Completude funcional & O núcleo oferece funções para todas as tarefas do catálogo de tarefas essenciais \\
-Correção funcional & Notas, agregações e prazos produzem o resultado esperado pelas regras configuradas \\
-Pertinência funcional & As funções levam ao objetivo da tarefa sem exigir contornos \\
-Interoperabilidade & Troca de dados por arquivos e serviços REST, com dados utilizáveis pelo receptor \\
-Coexistência & Operação no mesmo servidor que outra aplicação e outro banco, sem prejudicá-los \\
-Adaptabilidade & Fluxos essenciais funcionam nos navegadores, no celular e nas versões de PHP previstas \\
-Instalabilidade & Instalação limpa e atualização 4.5 $\rightarrow$ 5.3 concluem, em tempo razoável e preservando dados \\
+\multirow{3}{2.5cm}{Adequação funcional (risco acadêmico, D1)} & Completude funcional & O núcleo oferece funções para todas as tarefas do catálogo \\
+ & Correção funcional & Notas, agregações e prazos dão o resultado esperado pelas regras configuradas \\
+ & Pertinência funcional & As funções levam ao objetivo da tarefa sem contornos \\
+\midrule
+\multirow{2}{2.5cm}{Compatibilidade (integração, D2)} & Interoperabilidade & Troca por arquivos e REST, com dados utilizáveis pelo receptor \\
+ & Coexistência & Operação no mesmo servidor que outra aplicação e outro banco, sem prejudicá-los \\
+\midrule
+\multirow{2}{2.5cm}{Flexibilidade (operacional, D3)} & Adaptabilidade & Fluxos essenciais funcionam nos navegadores, no celular e nas versões de PHP previstas \\
+ & Instalabilidade & Instalação limpa e atualização 4.5 $\rightarrow$ 5.3 concluem, em tempo razoável e preservando dados \\
 \bottomrule
 \end{tabularx}
 \tabfonte{elaboração própria a partir de~\cite{iso25010,iso25023}.}
@@ -344,13 +305,13 @@ Instalabilidade & Instalação limpa e atualização 4.5 $\rightarrow$ 5.3 concl
 
 \subsection{Seleção e priorização das características}
 
-As oito características restantes (todas, exceto capacidade de interação) receberam notas de 1 a 5 em quatro critérios, com âncoras definidas para cada nota: \textbf{R}~relevância para as partes interessadas, \textbf{K}~risco/impacto de uma falha, \textbf{V}~viabilidade de medição e \textbf{A}~alinhamento às decisões. Foram consideradas elegíveis as características com $V \geq 3$ e $R \geq 2$. A pontuação do cenário base é $P = 0{,}35R + 0{,}25K + 0{,}25V + 0{,}15A$; dois cenários alternativos (viabilidade maior: 0,25/0,20/0,40/0,15; relevância maior: 0,50/0,20/0,15/0,15) testam a sensibilidade. A Tabela~\ref{tab:prior} mostra o resultado.
+As oito características restantes receberam notas de 1 a 5, com âncoras definidas, em quatro critérios: \textbf{R}~relevância para as partes interessadas, \textbf{K}~risco/impacto de uma falha, \textbf{V}~viabilidade de medição e \textbf{A}~alinhamento às decisões. São elegíveis as que têm $V \geq 3$ e $R \geq 2$. A pontuação base é $P = 0{,}35R + 0{,}25K + 0{,}25V + 0{,}15A$; dois cenários alternativos (viabilidade maior: 0,25/0,20/0,40/0,15; relevância maior: 0,50/0,20/0,15/0,15) testam a sensibilidade (Tabela~\ref{tab:prior}).
 
 \begin{table}[!ht]
 \centering
 \caption{Matriz de priorização (notas, pontuações nos três cenários e elegibilidade).}
 \label{tab:prior}
-\footnotesize
+\scriptsize
 \begin{tabular}{lcccccccl}
 \toprule
 \textbf{Característica} & \textbf{R} & \textbf{K} & \textbf{V} & \textbf{A} & \textbf{Base} & \textbf{Viab.} & \textbf{Relev.} & \textbf{Elegível} \\
@@ -368,15 +329,15 @@ Segurança operacional & 1 & 1 & 2 & 1 & 1,25 & 1,40 & 1,15 & Não \\
 \tabfonte{elaboração própria. As pontuações foram conferidas por script.}
 \end{table}
 
-A ordem das elegíveis (adequação funcional $>$ compatibilidade $>$ flexibilidade $>$ manutenibilidade) é a mesma nos três cenários; foram selecionadas as três primeiras. A flexibilidade recebeu $K=4$ porque a mudança da raiz web para \texttt{public/} e os novos requisitos de PHP e PostgreSQL aumentam o risco de falha na atualização. Os principais \emph{trade-offs} são: (i)~a \emph{segurança} teria a segunda maior pontuação sem o filtro de viabilidade, mas exigiria testes de intrusão fora do alcance da equipe, o que é registrado como limitação; (ii)~\emph{eficiência} e \emph{confiabilidade} exigiriam ambiente de carga e observação prolongada; e (iii)~a \emph{manutenibilidade} é viável por análise estática, mas apoia pouco decisões de quem opera, e não de quem desenvolve, o Moodle.
+A ordem das elegíveis (adequação funcional $>$ compatibilidade $>$ flexibilidade $>$ manutenibilidade) é a mesma nos três cenários; foram selecionadas as três primeiras. A flexibilidade recebeu $K=4$ porque a raiz web em \texttt{public/} e os novos requisitos de PHP e PostgreSQL aumentam o risco na atualização. \emph{Trade-offs}: (i)~a \emph{segurança} seria a segunda sem o filtro de viabilidade, mas exigiria testes de intrusão fora do alcance da equipe (limitação registrada); (ii)~\emph{eficiência} e \emph{confiabilidade} exigiriam carga e observação prolongada; (iii)~a \emph{manutenibilidade} é viável, mas apoia pouco quem opera o Moodle.
 
 \subsection{Escopo, profundidade e limites de validade}
 
-Os objetos de avaliação são o núcleo do Moodle 5.3 LTS; um catálogo de 12 tarefas essenciais (criar curso e matricular, publicar material, criar e enviar tarefa, tentar envio após o prazo, corrigir, criar e responder questionário, usar fórum, configurar e consultar o livro de notas, fazer backup e restaurar); 7 formatos de arquivo e 6 funções REST; um servidor compartilhado com uma aplicação vizinha; 4 ambientes de acesso (Windows com Chrome e com Firefox, Ubuntu com Firefox, Android com Chrome) e 2 versões de PHP; e os procedimentos oficiais de instalação e atualização. A avaliação é externa, predominantemente caixa-preta e orientada a tarefas. Ficam fora a capacidade de interação, as características não priorizadas, escalabilidade e substituibilidade, plugins de terceiros, o aplicativo móvel, integrações LTI/SCORM/SSO e a instalação institucional em produção. Os resultados valerão apenas para a versão 5.3.x registrada, a configuração de referência e os ambientes testados.
+Os objetos de avaliação são o núcleo do Moodle 5.3 LTS; um catálogo de 12 tarefas essenciais (criar curso e matricular, publicar material, criar e enviar tarefa, enviar após o prazo, corrigir, criar e responder questionário, usar fórum, configurar e consultar notas, fazer backup e restaurar); 7 formatos de arquivo e 6 funções REST; um servidor compartilhado com uma aplicação vizinha; 4 ambientes de acesso (Windows com Chrome e Firefox, Ubuntu com Firefox, Android com Chrome) e 2 versões de PHP; e os procedimentos oficiais de instalação e atualização. A avaliação é externa, caixa-preta e orientada a tarefas. Ficam fora as características não priorizadas, plugins de terceiros, o aplicativo móvel, LTI/SCORM/SSO e a instalação em produção. Os resultados valem só para a versão 5.3.x registrada, a configuração de referência e os ambientes testados.
 
 \subsection{Objetivos de Desenvolvimento Sustentável}
 
-A avaliação relaciona-se ao ODS~4, Educação de qualidade~\cite{onu_ods4}. A meta~4.3 (acesso igualitário à educação superior de qualidade; indicador 4.3.1) relaciona-se à cobertura e à correção das tarefas essenciais (M1.1 e M1.2); a meta~4.4 (habilidades relevantes, inclusive em TIC; indicador 4.4.1), de forma indireta, à troca de conteúdos entre cursos (M2.1); e a meta~4.a (ambientes de aprendizagem eficazes; indicador 4.a.1, acesso a internet e computadores para fins pedagógicos), à adaptabilidade a ambientes de acesso e à taxa de sucesso de instalação (M3.1 e M3.3), que reduzem barreiras técnicas para instituições com poucos recursos. Os indicadores oficiais não serão calculados; as métricas locais representam contribuições potenciais, e o funcionamento em celulares não comprova acessibilidade, que pertence à capacidade de interação.
+A avaliação relaciona-se ao ODS~4, Educação de qualidade~\cite{onu_ods4}: a meta~4.3 (indicador 4.3.1, acesso à educação superior de qualidade) à cobertura e à correção das tarefas essenciais (M1.1, M1.2); a meta~4.4 (indicador 4.4.1, habilidades em TIC), indiretamente, à troca de conteúdos entre cursos (M2.1); e a meta~4.a (indicador 4.a.1, ambientes de aprendizagem eficazes) à adaptabilidade e ao sucesso de instalação (M3.1, M3.3), que reduzem barreiras para instituições com poucos recursos. Os indicadores oficiais não são calculados, e funcionar no celular não comprova acessibilidade.
 
 % ======================================================================
 \section{Fase 2: especificação da avaliação}
@@ -384,7 +345,7 @@ A avaliação relaciona-se ao ODS~4, Educação de qualidade~\cite{onu_ods4}. A 
 
 \subsection{Objetivos, questões e hipóteses}
 
-Cada característica priorizada gerou um objetivo de medição. Os três objetivos compartilham o objeto (Moodle 5.3 LTS na instalação de referência), o propósito (\emph{entender}) e o ponto de vista (Coordenação de TI), o que garante a rastreabilidade com a Fase~1. As hipóteses vêm das \emph{abstraction sheets} elaboradas pela equipe, que também registraram fatores de variação, como a versão corretiva 5.3.x, a codificação de caracteres dos arquivos CSV e a experiência do avaliador com Linux. A Tabela~\ref{tab:gqm} apresenta os objetivos, as questões e as hipóteses.
+Cada característica priorizada gerou um objetivo de medição, com o mesmo objeto, propósito (\emph{entender}) e ponto de vista (Coordenação de TI), o que garante a rastreabilidade com a Fase~1. As hipóteses vêm das \emph{abstraction sheets}, que também registram fatores de variação, como a versão corretiva 5.3.x, a codificação dos arquivos CSV e a experiência do avaliador com Linux (Tabela~\ref{tab:gqm}).
 
 \begin{table}[!ht]
 \centering
@@ -419,7 +380,7 @@ Q3.4 & A atualização 4.5 $\rightarrow$ 5.3 preserva os dados acadêmicos? & H3
 
 \subsection{Métricas}
 
-As métricas foram derivadas das medidas da ISO/IEC 25023~\cite{iso25023} e seguem a forma de razão, com escala de 0 a 1 em que valores maiores são melhores, exceto M3.4 (tempo). Todas usam método objetivo, com critério de sucesso definido antes da coleta, para atender às propriedades de simplicidade, objetividade, facilidade de coleta e validade~\cite{ramos2026aulas}. A Tabela~\ref{tab:metricas} resume as métricas; a ficha completa de cada uma (definição, medidas básicas, fonte, procedimento de coleta, escala e responsável) está na GitPage.
+As métricas derivam da ISO/IEC 25023~\cite{iso25023} e são razões de 0 a 1 em que maior é melhor, exceto M3.4 (tempo). Todas usam método objetivo, com critério de sucesso definido antes da coleta~\cite{ramos2026aulas}. A Tabela~\ref{tab:metricas} as resume; a ficha completa de cada uma está na GitPage.
 
 \begin{table}[!ht]
 \centering
@@ -450,7 +411,7 @@ M3.5 & Preservação de dados & $I_p/I_t$ & Definida pela equipe & $I_t=40$ iten
 \subsection{Níveis de pontuação e critérios de julgamento}
 \label{sec:julgamento}
 
-Cada métrica é convertida em uma nota de 1 a 4: \textbf{4}~Excelente (nenhuma ação), \textbf{3}~Bom (desvio pequeno com contorno conhecido), \textbf{2}~Insuficiente (exige ação antes da migração) e \textbf{1}~Crítico (impede a tarefa ou corrompe dados). A Tabela~\ref{tab:niveis} define as faixas. M1.2, M2.4 e M3.5 não têm nível~3, pois uma nota final errada, um serviço vizinho afetado ou um envio perdido não são desvios pequenos. Os limites de M3.4 são candidatos e serão calibrados em um piloto na Fase~3, antes da coleta.
+Cada métrica vira uma nota de 1 a 4: \textbf{4}~Excelente (nenhuma ação), \textbf{3}~Bom (desvio pequeno com contorno conhecido), \textbf{2}~Insuficiente (exige ação antes da migração) e \textbf{1}~Crítico (impede a tarefa ou corrompe dados), com as faixas da Tabela~\ref{tab:niveis}. M1.2, M2.4 e M3.5 não têm nível~3, pois nota errada, serviço vizinho afetado ou envio perdido não são desvios pequenos. Os limites de M3.4 são calibrados no piloto da Fase~3.
 
 \begin{table}[!ht]
 \centering
@@ -482,7 +443,7 @@ A nota de cada questão é a nota de sua métrica; em Q3.3, é o mínimo entre M
 
 \subsection{Diagrama GQM}
 
-A Figura~\ref{fig:gqm} mostra a hierarquia completa nos três níveis do GQM. Toda métrica responde a uma questão, toda questão tem hipótese e todo objetivo deriva de uma característica priorizada e de uma decisão da Fase~1.
+A Figura~\ref{fig:gqm} mostra a hierarquia nos três níveis: toda métrica responde a uma questão, toda questão tem hipótese e todo objetivo deriva de uma característica priorizada e de uma decisão da Fase~1.
 
 \begin{figure}[!ht]
 \centering
@@ -520,9 +481,7 @@ A Figura~\ref{fig:gqm} mostra a hierarquia completa nos três níveis do GQM. To
 \section{Considerações parciais}
 \label{sec:consideracoes}
 
-Esta entrega estabeleceu os requisitos da avaliação do Moodle 5.3 LTS e especificou como ela será feita. A Fase~1 definiu o propósito (apoiar a decisão de migração), os requisitantes e as partes interessadas, o tipo de produto, o modelo de qualidade adaptado, a priorização por método explícito, o escopo e a relação com o ODS~4. A Fase~2 desdobrou as três características priorizadas em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis de pontuação e critérios de julgamento ligados às decisões do requisitante.
-
-As principais limitações são: as necessidades de várias partes interessadas são hipóteses não validadas por entrevistas; a instalação local não representa uma instalação institucional; a exclusão da segurança depende do filtro de viabilidade; e os limites de tempo de M3.4 ainda precisam ser calibrados. Na Entrega~2, a equipe produzirá o plano de avaliação (Fase~3), com ambiente, massa de dados, oráculo e cronograma; executará as medições e o julgamento (Fase~4); e implementará ao menos uma ação de melhoria justificada pelas evidências.
+A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar. As Fases~3 e~4 completam esta avaliação com o plano, a execução das medições, o julgamento e a ação de melhoria.
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
@@ -557,29 +516,21 @@ Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\
 \section{Declaração de uso de inteligência artificial}
 \label{ap:ia}
 
-A equipe usou Claude Code (Anthropic) na Entrega~1 e Codex (OpenAI) na gestão PSM/CID da Entrega~2. A Tabela~\ref{tab:ia} apresenta uma versão compacta da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests.
+
 
 \begin{table}[!ht]
 \centering
 \caption{Uso de ferramentas de IA nas Entregas 1 e 2.}
 \label{tab:ia}
-\footnotesize
-\begin{tabularx}{\linewidth}{p{4.4cm}L}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{3.7cm}Lp{2.8cm}}
 \toprule
-\textbf{Ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} \\
+\textbf{Data, ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} & \textbf{Integrante} \\
 \midrule
-Migração da primeira versão da Fase 1 para o repositório da disciplina e revisão do texto & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 \\
-Pesquisa dos requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências \\
-Rascunho do plano GQM, fichas das métricas, níveis e critérios de julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 \\
-Redação e formatação deste artigo em LaTeX & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 \\
-Código da GitPage, dos \emph{workflows} e do script do PSM/CID & Geração do site com verificação estrita, teste de navegação e conferência do script com as \emph{issues}; \emph{issues} \#11 e \#13 \\
-Codex (OpenAI): geração dos indicadores e do dashboard PSM/CID & Execução dos scripts e do validador; inspeção dos gráficos e comparação da tabela-resumo com os consolidados; \emph{issues} \#26 e \#27 \\
-Codex (OpenAI): integração da gestão PSM/CID à GitPage & Construção estrita do site e verificação da navegação, dos links e da ausência de duplicações; \emph{issue} \#29 \\
-Codex (OpenAI): texto PSM/CID e transposição para este artigo & Compilação, inspeção visual, conferência das referências e do limite de páginas; \emph{issue} \#30 \\
-Codex (OpenAI): harmonização da declaração de IA & Comparação desta tabela com a declaração publicada e revisão no pull request; \emph{issue} \#31 \\
+
 \bottomrule
 \end{tabularx}
-\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}.}
+\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}; mesmos usos, tarefas e formas de conferência.}
 \end{table}
 
 \end{document}
