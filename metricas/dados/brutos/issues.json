@@ -2,6 +2,80 @@
  {
   "assignees": [
    {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\n\nRegistrar na declaração de uso de IA (GitPage e Apêndice B do artigo) os usos de Pedro e Carlos, que ainda constavam como pendentes, e restaurar na GitPage as linhas de 15/11/2026 perdidas no merge `adddaa2`.\n\nPrazo: 15/11/2026.\n\n### Fase\n\nGestão\n\n### Critério de pronto\n\n- [ ] Usos de Pedro e Carlos com data, ferramenta, tarefa e conferência\n- [ ] GitPage e Apêndice B com os mesmos usos\n- [ ] `mkdocs build --strict` sem erros e artigo com no máximo 15 páginas\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n",
+  "closedAt": "2026-11-16T02:52:01Z",
+  "comments": [],
+  "createdAt": "2026-11-16T02:47:09Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 96,
+  "state": "CLOSED",
+  "title": "[Gestão] Declarar o uso de IA de Pedro e Carlos"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOC5MJug",
+    "login": "pedrogrocha13",
+    "name": "Pedro Gonçalves Rocha",
+    "databaseId": 194185658
+   }
+  ],
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "body": "### Descrição\n\nA tabela da declaração de uso de IA do artigo (Apêndice B) ficou vazia na resolução de conflito do merge `adddaa2` (PR #87), que descartou as versões do PR #80 e do PR #88. O resumo, o abstract e o roteiro da introdução também ainda citam só as Fases 1 e 2.\n\nPrazo: 15/11/2026.\n\n### Fase\n\nArtigo\n\n### Critério de pronto\n\n- [ ] Tabela do Apêndice B com as linhas do PR #80 e do PR #88\n- [ ] Resumo, abstract e introdução citam a Fase 3\n- [ ] Artigo compila no workflow `artigo.yml` com no máximo 15 páginas\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n",
+  "closedAt": "2026-11-16T02:38:31Z",
+  "comments": [],
+  "createdAt": "2026-11-16T02:36:23Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   }
+  ],
+  "milestone": {
+   "number": 5,
+   "title": "PC2",
+   "description": "Ponto de controle 2: Fase 3 finalizada, plano da Fase 4 e artigo atualizado. Entrega até 15/11/2026, 23h59; apresentação em 18/11/2026.",
+   "dueOn": "2026-11-15T00:00:00Z"
+  },
+  "number": 94,
+  "state": "CLOSED",
+  "title": "[Artigo] Restaurar a declaração de IA apagada no merge do #87"
+ },
+ {
+  "assignees": [
+   {
     "id": "U_kgDOCzMkKA",
     "login": "Bercacos",
     "name": "Bernardo Broetto Brun",
@@ -785,7 +859,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nProduzir `dados/avaliacao/M1.2/oraculo.csv` com os 20 casos da seção 2 do plano (10 de questionário, 6 de agregação e 4 de prazo), com o valor esperado calculado à mão e a tolerância de 0,01 ponto. A conferência é feita pelo Carlos (regra R6).\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 20 casos com regra, entradas, esperado e tolerância\r\n- [ ] Conferido por Carlos, registrado na issue\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T23:16:38Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:35Z",
   "labels": [
@@ -821,7 +895,7 @@
    "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 64,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Oráculo de M1.2 com os 20 casos"
  },
  {
@@ -895,7 +969,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nScript versionado que monta o servidor de referência da seção 2 do plano da Fase 3 (Ubuntu 24.04, Apache 2.4, PHP 8.3 e 8.4, PostgreSQL 17, Moodle 5.3 e 4.5), para cada integrante montar o próprio ambiente igual. Incluir as instruções de uso e o snapshot da imagem-base sem o Moodle.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n5\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Script testado do zero em uma VM limpa\r\n- [ ] Instruções de uso na GitPage\r\n- [ ] Versões instaladas registradas\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T21:54:44Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:29Z",
   "labels": [
@@ -931,7 +1005,7 @@
    "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 62,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Script de preparação do servidor de avaliação"
  },
  {
@@ -950,7 +1024,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nRoteiro da apresentação de 18/11, feita pela GitPage, sem slides: ordem das páginas, quem apresenta cada parte e o tempo de cada um.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Roteiro com páginas, apresentador e tempo\r\n- [ ] Roteiro compartilhado com a equipe antes de 18/11\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-16T01:57:36Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:25Z",
   "labels": [
@@ -980,7 +1054,7 @@
    "dueOn": "2026-11-22T00:00:00Z"
   },
   "number": 61,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Gestão] Roteiro da apresentação do PC2 pela GitPage"
  },
  {
@@ -999,7 +1073,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nAtualizar a versão e a data do rodapé (`mkdocs.yml`), que hoje dizem \"Entrega 2, Versão 2.0, 11/11/2026\", e a situação das entregas na página inicial e no README.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGitPage\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Rodapé com a versão e a data do PC2\r\n- [ ] Situação das entregas atualizada\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-16T04:50:45Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:21Z",
   "labels": [
@@ -1029,7 +1103,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 60,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[GitPage] Rodapé e página inicial na versão do PC2"
  },
  {
@@ -1048,7 +1122,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nRegistrar no registro de decisões o desvio do marco PC1 (A4): a equipe não apresentou no ponto de controle de 19/10 e ficou sem o retorno da docente. Interpretar a causa e registrar a decisão tomada para a E2.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Entrada DG-10 no formato das demais\r\n- [ ] Valor observado e critério de A4\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-16T04:50:39Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:17Z",
   "labels": [
@@ -1078,7 +1152,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 59,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Gestão] DG-10: PC1 não apresentado"
  },
  {
@@ -1097,7 +1171,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nCriar o milestone PC2 (15/11), ajustar o prazo da E2 para 22/11, fechar os milestones PC1 e Apresentação, fechar as issues #26, #27 e #29 a #32 (PRs já mergeados) e conferir que as issues novas estão no quadro com a Iteração correta.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Milestones PC2 e E2 com os prazos corretos; PC1 e Apresentação fechados\r\n- [ ] Issues do bloco 3 fechadas com o PR de referência\r\n- [ ] Issues novas no quadro com Iteração\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-16T04:33:11Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:14Z",
   "labels": [
@@ -1127,7 +1201,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 58,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Gestão] Milestones, issues concluídas e quadro do PC2"
  },
  {
@@ -1146,7 +1220,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nAtualizar `docs/sobre/uso-de-ia.md` e o Apêndice B do artigo com todos os usos de IA desde a E1, com ferramenta, tarefa e como a equipe conferiu (critério AG-C3). Cada integrante informa os próprios usos.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Uma linha por uso, com ferramenta, tarefa e conferência\r\n- [ ] GitPage e Apêndice B iguais\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T23:16:40Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:11Z",
   "labels": [
@@ -1176,7 +1250,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 57,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Gestão] Declaração de uso de IA atualizada para o PC2"
  },
  {
@@ -1195,7 +1269,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nAcrescentar ao artigo a seção da Fase 3 (método, ambiente, massa de dados, oráculo e cronograma, resumidos do plano) e, nos resultados da gestão PSM/CID, o custo estimado x realizado por entrega ao custo da hora de R$ 14,77 (Tabela 14 dos construtos e Tabela 2 do dashboard).\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Seção da Fase 3 coerente com o plano final\r\n- [ ] Custo estimado e realizado com a fonte do custo da hora\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-16T02:33:00Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:07Z",
   "labels": [
@@ -1231,7 +1305,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 56,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Artigo] Seção da Fase 3 e custo estimado x realizado em Recursos e Custos"
  },
  {
@@ -1250,7 +1324,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nO PDF atual tem 15 páginas, o limite da disciplina. Condensar as seções das Fases 1 e 2 de `artigo/main.tex` para abrir espaço para as Fases 3 e 4, sem perder os elementos cobrados na rubrica. Compilar a versão entregue no PC2.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] PDF com no máximo 15 páginas, sem contar a tabela de contribuição\r\n- [ ] Fases 1 e 2 mantêm os elementos da rubrica\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T21:54:42Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:04Z",
   "labels": [
@@ -1280,7 +1354,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 55,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Artigo] Condensar as Fases 1 e 2 e compilar a versão do PC2"
  },
  {
@@ -1299,7 +1373,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nSubstituir a página desatualizada `docs/fases-3-4.md` por uma página da Fase 4 com o plano de execução: quem coleta cada métrica, em que dia, com qual evidência e em qual pasta de `dados/avaliacao/`, a partir do cronograma do plano da Fase 3. Ajustar o menu do `mkdocs.yml`.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] As 12 métricas com responsável, data e evidência\r\n- [ ] `fases-3-4.md` removido ou substituído e menu ajustado\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T22:03:02Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:00Z",
   "labels": [
@@ -1335,7 +1409,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 54,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Plano de execução da Fase 4 na GitPage"
  },
  {
@@ -1354,7 +1428,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nRegistrar em `atas/` a reunião em que a equipe aprova o plano da Fase 3: cronograma, responsáveis, uso de um servidor por integrante e manutenção das 6 execuções de M3.3 a M3.5. Incluir a ata no índice de `docs/gestao/atas.md`.\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 3\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Ata em `atas/AAAA-MM-DD-ata-NN.md`, no modelo do repositório\r\n- [ ] Ata listada em `docs/gestao/atas.md`\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T21:55:25Z",
   "comments": [],
   "createdAt": "2026-11-14T21:09:57Z",
   "labels": [
@@ -1390,7 +1464,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 53,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 3] Ata da reunião de aprovação do plano de avaliação"
  },
  {
@@ -1409,7 +1483,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nFechar `docs/fase-3/plano-de-avaliacao.md` para a entrega do PC2: reescrever o cronograma (seção 6) para o período de 16 a 22/11, resolver todos os itens marcados com *[confirmar]* (virtualizador, especificação da VM, papéis) e remover o aviso de rascunho. As 6 execuções de M3.3 a M3.5 ficam mantidas. Cada integrante usa o próprio servidor, montado pelo script de preparação (issue do servidor).\r\n\r\nPrazo: 15/11/2026.\r\n\r\n### Fase\r\n\r\nFase 3\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Cronograma de 16 a 22/11, com responsável por métrica\r\n- [ ] Nenhum *[confirmar]* restante e aviso de rascunho removido\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-15T21:10:37Z",
   "comments": [],
   "createdAt": "2026-11-14T21:09:54Z",
   "labels": [
@@ -1445,7 +1519,7 @@
    "dueOn": "2026-11-15T00:00:00Z"
   },
   "number": 52,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 3] Finalizar o plano de avaliação"
  },
  {
