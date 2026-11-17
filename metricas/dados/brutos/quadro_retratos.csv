@@ -245,3 +245,62 @@ data,issue,status,iteracao,iteracao_inicio,fonte,data_extracao,comando_ou_query
 2026-11-16,76,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-16,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-16,77,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-16,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-16,78,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-16,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,1,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,2,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,3,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,4,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,5,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,6,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,7,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,8,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,9,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,10,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,11,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,12,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,13,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,14,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,15,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,16,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,17,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,18,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,19,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,20,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,21,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,22,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,23,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,24,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,25,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,26,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,27,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,28,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,29,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,30,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,31,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,32,Concluído,,,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,52,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,53,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,54,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,55,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,56,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,57,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,58,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,59,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,60,A Fazer,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,61,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,62,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,63,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,64,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,65,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,66,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,67,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,68,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,69,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,70,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,71,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,72,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,73,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,74,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,75,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,76,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,77,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-17,78,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-17,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
