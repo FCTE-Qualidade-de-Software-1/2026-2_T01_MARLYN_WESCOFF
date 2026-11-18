@@ -1810,7 +1810,7 @@ L 733.32 50.112
    </g>
   </g>
   <g id="text_24">
-   <!-- Fonte: elaborado pelos autores a partir de comprometido_concluido.csv, extraído em 2026-11-17. -->
+   <!-- Fonte: elaborado pelos autores a partir de comprometido_concluido.csv, extraído em 2026-11-18. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -1999,7 +1999,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4647.125 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4710.75 0)"/>
     <use xlink:href="#DejaVuSans-14" transform="translate(4746.828125 0)"/>
-    <use xlink:href="#DejaVuSans-1a" transform="translate(4810.453125 0)"/>
+    <use xlink:href="#DejaVuSans-1b" transform="translate(4810.453125 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4874.078125 0)"/>
    </g>
   </g>
