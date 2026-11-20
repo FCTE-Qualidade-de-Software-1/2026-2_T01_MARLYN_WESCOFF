@@ -1,0 +1,21 @@
+caso,tipo,executado,resultado_observado,esperado,tolerancia,conforme,evidencia,observacoes
+Q-01,questionario,, ,2.00,0.01,,,Pendente de execução no Moodle.
+Q-02,questionario,, ,8.00,0.01,,,Pendente de execução no Moodle.
+Q-03,questionario,, ,4.00,0.01,,,Pendente de execução no Moodle.
+Q-04,questionario,, ,7.00,0.01,,,Pendente de execução no Moodle.
+Q-05,questionario,, ,7.00,0.01,,,Pendente de execução no Moodle.
+Q-06,questionario,, ,7.50,0.01,,,Pendente de execução no Moodle.
+Q-07,questionario,, ,8.33,0.01,,,Pendente de execução no Moodle.
+Q-08,questionario,, ,7.50,0.01,,,Pendente de execução no Moodle.
+Q-09,questionario,, ,8.50,0.01,,,Pendente de execução no Moodle.
+Q-10,questionario,, ,9.50,0.01,,,Pendente de execução no Moodle.
+A-01,agregacao,, ,7.80,0.01,,,Pendente de execução no Moodle.
+A-02,agregacao,, ,8.00,0.01,,,Pendente de execução no Moodle.
+A-03,agregacao,, ,7.90,0.01,,,Pendente de execução no Moodle.
+A-04,agregacao,, ,7.57,0.01,,,Pendente de execução no Moodle.
+A-05,agregacao,, ,8.00,0.01,,,Pendente de execução no Moodle.
+A-06,agregacao,, ,8.99,0.01,,,Pendente de execução no Moodle.
+P-01,prazo,, ,aceito,0.01,,,Pendente de execução no Moodle.
+P-02,prazo,, ,bloqueado,0.01,,,Pendente de execução no Moodle.
+P-03,prazo,, ,aceito_com_atraso,0.01,,,Pendente de execução no Moodle.
+P-04,prazo,, ,bloqueado,0.01,,,Pendente de execução no Moodle.

@@ -1,0 +1,13 @@
+tarefa,papel,concluida,funcao_usada,contorno_necessario,passo_extra,evidencia,observacoes
+T01,Administrador,sim,criar curso e matricular estudantes e docente,não,,M1.1_T01_2026-11-15_BBB.png,Curso T01-T12 criado; est01 matriculado como Student e docente01 como Teacher.
+T02,Docente,sim,publicar material (arquivo),não,,M1.1_T02_2026-11-15_BBB.png,Material T02 publicado no curso T01-T12.
+T03,Docente,sim,criar tarefa com data de entrega e data limite,não,,M1.1_T03_2026-11-15_BBB.png,Tarefa T03 criada com abertura em 15/11, vencimento em 16/11 e cut-off em 17/11/2026.
+T04,Estudante,sim,enviar arquivo para tarefa dentro do prazo,não,,M1.1_T04_2026-11-15_BBB.png,Envio submetido para avaliação 22 horas e 1 minuto antes do prazo.
+T05,Estudante,sim,tentar enviar arquivo após a data limite,não,,M1.1_T05_2026-11-15_BBB.png,Tarefa vencida; envio não disponível e atividade indicada como atrasada.
+T06,Docente,sim,corrigir tarefa com nota e comentário,não,,M1.1_T06_2026-11-15_BBB.png,Envio de est01 corrigido com nota 8,00 e comentário de feedback.
+T07,Docente,sim,criar questionário com questões de múltipla escolha e numérica,não,,M1.1_T07_2026-11-15_BBB.png,Questionário criado com duas questões e total de 2 pontos.
+T08,Estudante,sim,responder questionário e receber nota automática,não,,M1.1_T08_2026-11-15_BBB.png,Tentativa concluída com 2,00/2,00 e nota 10,00/10,00.
+T09,Docente e estudante,sim,abrir fórum e responder a uma discussão,não,,M1.1_T09_2026-11-15_BBB.png,Tópico criado pelo docente e resposta publicada pelo estudante est01.
+T10,Docente,sim,configurar categorias e pesos no livro de notas,não,,M1.1_T10_2026-11-15_BBB.png,Categoria T10 criada com peso ajustado de 50,0%.
+T11,Estudante,sim,consultar a própria nota final,não,,M1.1_T11_2026-11-15_BBB.png,Relatório do usuário exibiu Course total de 18,00/110 (16,36%).
+T12,Docente/Administrador,sim,fazer backup do curso e restaurá-lo como novo curso,não,,M1.1_T12_2026-11-15_BBB.png,Backup restaurado como novo curso Curso T12 Restaurado copy 1 com atividades preservadas.
