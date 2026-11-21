@@ -2,6 +2,1330 @@
  {
   "assignees": [
    {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item C1 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `overrides/home.html` (\"E2 · 22/11/2026\"), `docs/index.md`, Fase 3 (seção 6), Fase 4 (Tabelas 2 e 3), artigo (seção 7.3) e milestone E2 no GitHub.\n\n**O que está errado:** O prazo da E2 passou para terça, 24/11/2026, 23h59.\n\n**Como corrigir:** Refazer o cronograma real: o que foi coletado de 18 a 20/11, o que ainda falta e a nova data do julgamento. Atualizar as datas na GitPage, no artigo e no milestone, e registrar em ata a mudança de prazo e de cronograma.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:24Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 123,
+  "state": "OPEN",
+  "title": "[Correção C1] Novo prazo da E2 (24/11) e cronograma real"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B5 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-3/plano-de-avaliacao.md`, seção \"Preparação do julgamento\"; `docs/fase-4/plano-de-execucao.md`, seção \"Do dado ao julgamento\".\n\n**O que está errado:** Falta a fase de interpretação do GQM (Aula 08, slides 54 a 61): organizar os dados por questão e objetivo, com tabelas e gráficos; fazer uma sessão de feedback em que a equipe interpreta os dados; e escrever o relatório com conclusões e ações. Também falta o plano de análise (slide 46): como os dados serão apresentados.\n\n**Como corrigir:** Acrescentar o passo \"Sessão de interpretação\": cada coletor apresenta os dados da sua questão, a equipe responde às questões, compara com as hipóteses e decide a ação. Dizer em que formato os resultados serão mostrados (uma tabela por objetivo e um gráfico das notas por questão). Ligar à ação de melhoria (#74).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 4\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:20Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO001Q",
+    "name": "fase/3",
+    "description": "Fase 3 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO045w",
+    "name": "tipo/analise",
+    "description": "Análise de dados e julgamento",
+    "color": "5319e7"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 122,
+  "state": "OPEN",
+  "title": "[Correção B5] Sessão de interpretação e plano de análise do GQM"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A2b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** Slide 13 da apresentação (gestão).\n\n**O que está errado:** O slide vai da categoria direto à medida e ao valor, sem mostrar a necessidade de informação nem o indicador.\n\n**Como corrigir:** Para a apresentação final: uma coluna \"Necessidade de informação\" antes da medida e o modelo de informação da Aula 09 em miniatura. Deixar explícito no título que é **gestão do projeto**, separada da avaliação do produto.\n\n**Fazer depois de:** #116 (correção A2)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:17Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 121,
+  "state": "OPEN",
+  "title": "[Correção A2b] Slide de gestão com necessidade de informação e modelo de informação"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A1b-ap da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\nParte da correção A1b; relacionada à #77.\n\n**Onde:** `artigo/main.tex`, Apêndice A.\n\n**O que está errado:** O Apêndice A usa o \"Índice C2\", que é uma medida do PSM.\n\n**Como corrigir:** O Apêndice A continua, porque a tabela de contribuição é obrigatória, mas como uma tabela simples do que cada um fez, sem o nome \"C2\" e sem as dimensões do PSM. Fazer junto com a tabela de contribuição da E2 (#77).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:13Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 120,
+  "state": "OPEN",
+  "title": "[Correção A1b] Apêndice A como tabela de contribuição simples"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item C4 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/gestao/roteiro-apresentacao-pc2.md`; `docs/metricas/04-texto-artigo.md`.\n\n**O que está errado:** O roteiro diz \"sem slides\" e traz outra ordem de apresentadores. O texto para o artigo deixa de valer depois da correção A1.\n\n**Como corrigir:** Marcar as duas páginas como histórico ou tirá-las do menu.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:10Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 119,
+  "state": "OPEN",
+  "title": "[Correção C4] Roteiro do PC2 e texto antigo do artigo como histórico"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B9 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/metricas/02-construtos-de-medicao.md`.\n\n**O que está errado:** O PSM classifica a análise em estimativa, viabilidade e desempenho (Aula 09, slide 13), e as fichas não dizem qual tipo cada medida apoia.\n\n**Como corrigir:** Acrescentar a linha \"Tipo de análise\" em cada ficha. Por exemplo: C3 é estimativa; A1 e B2, viabilidade; B1, desempenho.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:07Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 118,
+  "state": "OPEN",
+  "title": "[Correção B9] Tipo de análise nas fichas do PSM"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B3 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** Menu (`mkdocs.yml`), título do dashboard, `README.md`, `docs/index.md` e índices das Fases 1 a 4; fichas da Fase 2 e tabela de métricas do artigo.\n\n**O que está errado:** \"Métricas PSM/CID\": \"métrica\" é o termo do GQM; o PSM fala em medidas e indicadores. Na outra direção, as fichas da Fase 2 e a tabela de métricas do artigo usam \"medidas básicas\", termo do PSM e da ISO 15939.\n\n**Como corrigir:** Renomear para \"Gestão do projeto (PSM/CID)\" e \"Dashboard dos indicadores de gestão\". Nas fichas GQM e na tabela de métricas do artigo, trocar \"Medidas básicas\" por \"Elementos de medida\" (termo da ISO/IEC 25023). Combinar com o Bernardo (A1) e o Maykon (A3b), que mexem nos mesmos arquivos do artigo e da Fase 2.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:42:02Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 117,
+  "state": "OPEN",
+  "title": "[Correção B3] Medidas e indicadores no vocabulário do PSM"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A2 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/gestao/index.md`, seção \"1. Objetivo da medição\" e coluna \"Pergunta de gestão\" da Tabela 1; `docs/metricas/02-construtos-de-medicao.md`, seção \"Objetivo de medição\".\n\n**O que está errado:** Usamos a estrutura do GQM (objetivo e pergunta) para descrever o PSM. No PSM, o ponto de partida é a necessidade de informação (riscos, problemas e falta de informação; Aula 09, slides 5 e 6). Por isso a professora viu os dois \"objetivos\" como se fossem a mesma coisa.\n\n**Como corrigir:** Trocar \"Objetivo da medição\" por \"Necessidades de informação\", listadas por categoria, e \"Pergunta de gestão\" por \"Necessidade de informação\". Na página de construtos, trocar o bloco \"Objetivo de medição\" pela lista de necessidades que levaram às categorias. Seguir a ordem do modelo de informação: necessidade → categoria → conceito mensurável → medidas → indicador → critério de decisão → decisão.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:59Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 116,
+  "state": "OPEN",
+  "title": "[Correção A2] Necessidades de informação no lugar de objetivo e pergunta no PSM"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item C2 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/metodologia.md`.\n\n**O que está errado:** A Tabela 1 diz que a Fase 3 está \"Em andamento\" e que a técnica da Fase 4 é \"A definir\". O texto fala em \"sprint\", mas a gestão usa a semana ISO, e em `dados/gestao/horas.csv`, mas o apontamento real é `docs/metricas/dados/brutos/esforco.csv`.\n\n**Como corrigir:** Atualizar a situação das fases e a técnica da Fase 4, trocar \"sprint\" por semana e o caminho do apontamento. A seção \"Gestão com PSM/CID\" deve deixar claro que é gestão do projeto, e não avaliação do produto.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:56Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 115,
+  "state": "OPEN",
+  "title": "[Correção C2] Metodologia atualizada"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B8 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-1/produto.md`.\n\n**O que está errado:** A Aula 07 (slide 10) pede, na descrição do produto: principais usuários, nível de conhecimento exigido (informática e domínio), funções que merecem mais dedicação, massa de dados disponível e requisitos de hardware e software. Faltam o nível de conhecimento e a massa de dados.\n\n**Como corrigir:** Acrescentar uma tabela curta \"Checklist da Aula 07\" com cada item e a resposta, ou o link para a Fase 3 no caso da massa de dados e do hardware.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:53Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 114,
+  "state": "OPEN",
+  "title": "[Correção B8] Checklist da Aula 07 na descrição do produto"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B4 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `overrides/home.html`, cartões \"O que estamos avaliando\"; `docs/index.md`, item 1 da \"Leitura rápida\".\n\n**O que está errado:** Os objetivos G1 a G3 aparecem escritos como perguntas (\"O núcleo cobre e calcula…?\"), o que mistura objetivo e questão, justamente os níveis que a professora quer ver separados.\n\n**Como corrigir:** Escrever cada cartão como objetivo (\"Entender a adequação funcional do núcleo para a decisão D1\") e listar as questões embaixo. Na Leitura rápida, chamar as três perguntas de \"decisões\".\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:50Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 113,
+  "state": "OPEN",
+  "title": "[Correção B4] Objetivos da página inicial escritos como objetivos"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A3c da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/fase-3/plano-de-avaliacao.md`, seções 3 e 9; `docs/fase-4/plano-de-execucao.md`, Tabela 1.\n\n**O que está errado:** As instruções e as tabelas de rastreabilidade também vão de G direto para M.\n\n**Como corrigir:** Acrescentar a coluna \"Questão\" na tabela de rastreabilidade da Fase 3 e na Tabela 1 da Fase 4, e citar as questões no título de cada bloco de instruções. Exemplo: \"G1 – Q1.1 a Q1.3 (M1.1 a M1.3)\". Seguir as ligações Q → M da correção A3b.\n\n**Fazer depois de:** #108 (correção A3b)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 3\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:46Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO001Q",
+    "name": "fase/3",
+    "description": "Fase 3 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO02ew",
+    "name": "fase/4",
+    "description": "Fase 4 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 112,
+  "state": "OPEN",
+  "title": "[Correção A3c] Coluna Questão nos planos das Fases 3 e 4"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOBsGwrg",
+    "login": "jopesmp",
+    "name": "João Pedro S. Maciel",
+    "databaseId": 113356974
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A3 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** Slide 6 da apresentação e a fala da Fase 2.\n\n**O que está errado:** Fomos do objetivo direto para as métricas: o slide lista G1 → M1.1, M1.2, M1.3 sem nenhuma questão.\n\n**Como corrigir:** Mostrar a árvore completa G → Q → M, com as hipóteses, como no diagrama GQM do artigo. Na fala, ler pelo menos uma questão de cada objetivo antes de citar a métrica. Usar as questões reescritas pelo Maykon (A3b).\n\n**Fazer depois de:** #108 (correção A3b)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:43Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 111,
+  "state": "OPEN",
+  "title": "[Correção A3] Apresentação do GQM com a árvore G, Q e M"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B2 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-2/abstraction-sheets.md` e as fichas das métricas da Fase 2.\n\n**O que está errado:** A Aula 08 (slide 38) pede para identificar os fatores que influenciam os resultados e definir esses fatores também como métricas. Os fatores de variação (versão 5.3.x, codificação do CSV, experiência do avaliador, recursos da VM) só aparecem como texto.\n\n**Como corrigir:** Criar uma tabela curta de \"medidas de contexto\" com o fator, o que se registra e onde: versão corretiva, codificação do arquivo, anos de experiência do avaliador com Linux, RAM da VM. Na Fase 4, essa tabela explica as hipóteses refutadas.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:39Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 110,
+  "state": "OPEN",
+  "title": "[Correção B2] Medidas de contexto para os fatores de variação"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B1 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** Hipóteses H1.3, H2.1, H3.1 e H3.3, na Fase 2 e na tabela de objetivos do artigo.\n\n**O que está errado:** Essas hipóteses usam o mesmo número do limite da nota 3 (por exemplo, M1.3 ≥ 0,92), então hipótese e critério de julgamento parecem a mesma coisa. Na Aula 08, a hipótese é a resposta esperada à questão (o baseline); o critério de julgamento é a régua de aceitação da Aula 07.\n\n**Como corrigir:** Escrever cada hipótese como resposta à questão, com o valor esperado. Exemplo: \"esperamos que só a restauração de backup exija contorno (11 de 12)\". Acrescentar na Fase 2 e no artigo uma frase que separe hipótese (o que esperamos) de nível/critério (o que aceitamos). Se o valor esperado mudar, avisar o Carlos (#72), porque o script confere as hipóteses.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:36Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 109,
+  "state": "OPEN",
+  "title": "[Correção B1] Hipóteses como resposta esperada, separadas do critério"
+ },
+ {
+  "assignees": [
+   {
+    "id": "MDQ6VXNlcjg5NTk2NjIz",
+    "login": "maykonjuso",
+    "name": "Maykon Júnio",
+    "databaseId": 89596623
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A3b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/fase-2/objetivos-questoes-hipoteses.md`, `docs/fase-2/diagrama-gqm.md`, explorador em `docs/javascripts/marlyn.js`; no artigo, a tabela de objetivos, questões e hipóteses e o diagrama GQM.\n\n**O que está errado:** Cada questão tem exatamente uma métrica e repete o nome dela (Q1.1 Cobertura → M1.1 Cobertura), o que dá a impressão de que as questões foram escritas a partir das métricas. Na Aula 08 (slides 33, 34 e 38), a questão caracteriza o objeto em relação ao foco, e as métricas refinam a questão: uma questão pode ter várias métricas, e uma métrica pode servir a várias questões.\n\n**Como corrigir:** Reescrever as questões como perguntas sobre o objeto, sem citar o nome da métrica. Onde fizer sentido, ligar uma questão a mais de uma métrica: Q1.1 com M1.1 e M1.3; Q2.2 com M2.1 e M2.2; Q3.3 com M3.3 e M3.4 (já é assim). Atualizar o Mermaid, o explorador, a tabela e o diagrama do artigo. A regra \"nota da questão = mínimo das notas das suas métricas\" continua valendo; avisar o Carlos para ajustar `scripts/calcula_julgamento.py` (#72).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:32Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO00Pw",
+    "name": "fase/2",
+    "description": "Fase 2 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 108,
+  "state": "OPEN",
+  "title": "[Correção A3b] Questões do GQM sobre o objeto, com ligações Q para M"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item C3 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/sobre/criterios.md`.\n\n**O que está errado:** Os números de seção do artigo estão errados (a página diz \"Seção 4.1\", hoje é 5.1, e depois da correção A1 volta a ser 4.x). Faltam as tabelas de critérios da Fase 3 e da Fase 4.\n\n**Como corrigir:** Atualizar depois da reestruturação do artigo (correção A1) e acrescentar as tabelas de critérios das Fases 3 e 4.\n\n**Fazer depois de:** #102 (correção A1)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:27Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO03FA",
+    "name": "tipo/documentacao",
+    "description": "Produto de trabalho em documento ou GitPage",
+    "color": "0075ca"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 107,
+  "state": "OPEN",
+  "title": "[Correção C3] Critérios de avaliação com as seções novas do artigo"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item C5 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`, tabela de decisões de gestão (DG-04).\n\n**O que está errado:** O artigo diz \"25 pontos na W46\", e o registro de decisões diz 13.\n\n**Como corrigir:** O trecho some junto com a seção 4 (correção A1). Se algum trecho for mantido, usar 13.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:25Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 106,
+  "state": "OPEN",
+  "title": "[Correção C5] Valor da DG-04 no artigo"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B7 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `artigo/main.tex`, seção 5.3; `docs/fase-1/produto.md`, tabela \"Tipo de produto\".\n\n**O que está errado:** \"Aplicação web de sistema de informação\" não está na tabela de Pressman da Aula 07 (slide 12): básico, tempo real, comercial, científico e de engenharia, embarcado, computador pessoal e inteligência artificial.\n\n**Como corrigir:** Usar uma categoria da tabela, com justificativa. A mais próxima é \"comercial\": organiza dados para operações e decisões administrativas. Comentar a ressalva de que o Moodle é livre, e não vendido.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:21Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 105,
+  "state": "OPEN",
+  "title": "[Correção B7] Tipo de produto pela tabela da Aula 07"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item B6 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `artigo/main.tex`, seção 2.2.\n\n**O que está errado:** \"Repetível e reprodutível\" aparece como característica da Fase 4. Na Aula 07 (slide 15), é a exigência do nível de detalhe da **especificação** (Fase 2). A Fase 4 também deixa de fora \"comparar com critérios\".\n\n**Como corrigir:** Fase 2: \"com detalhe suficiente para que a avaliação seja repetível e reprodutível\". Fase 4: \"obter as medidas, comparar com os critérios e julgar os resultados\".\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:18Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 104,
+  "state": "OPEN",
+  "title": "[Correção B6] Repetível e reprodutível na fase certa"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A1b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`, tabela de partes interessadas, linha da docente.\n\n**O que está errado:** A linha diz \"Exige GQM e PSM\", mas o PSM não influencia a avaliação do produto.\n\n**Como corrigir:** Escrever \"Exclui usabilidade; exige GQM\". A parte do Apêndice A deste mesmo apontamento está em outra issue, junto com a #77.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:14Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO0zDA",
+    "name": "fase/1",
+    "description": "Fase 1 do processo de avaliação (ISO/IEC 25040)",
+    "color": "c5def5"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 103,
+  "state": "OPEN",
+  "title": "[Correção A1b] Partes interessadas sem PSM no artigo"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOCzMkKA",
+    "login": "Bercacos",
+    "name": "Bernardo Broetto Brun",
+    "databaseId": 187900968
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "body": "### Descrição\n\n**Item A1 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`: abstract e resumo (frase final), roteiro da Introdução, seção 2.4 \"PSM e o guia CID\", seção 3.3 \"Gestão com PSM/CID\" e Tabela 1, e a seção 4 inteira (custos, 3 figuras, tabela de decisões DG e ameaças da gestão).\n\n**O que está errado:** O artigo relata a **avaliação do Moodle**. A gestão PSM/CID é interna ao grupo e não faz parte desse relato.\n\n**Como corrigir:** Remover todos esses trechos. Na seção 3, manter só o processo da ISO/IEC 25040, a organização da equipe e as ferramentas. Tirar `mcgarry2002psm` e `psmcid2021` do `.bib` se não forem mais citados. Renumerar as referências cruzadas e conferir o limite de 15 páginas. A gestão continua documentada só na GitPage.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-20T15:41:10Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO05cQ",
+    "name": "tipo/artigo",
+    "description": "Artigo LaTeX",
+    "color": "006b75"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO09Tw",
+    "name": "tamanho/M",
+    "description": "Tamanho médio: 3 pontos (mais de 2 h e até 5 h)",
+    "color": "bdbdbd"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-22T00:00:00Z"
+  },
+  "number": 102,
+  "state": "OPEN",
+  "title": "[Correção A1] Remover a gestão PSM/CID do artigo"
+ },
+ {
+  "assignees": [
+   {
     "id": "U_kgDOC5MJug",
     "login": "pedrogrocha13",
     "name": "Pedro Gonçalves Rocha",
