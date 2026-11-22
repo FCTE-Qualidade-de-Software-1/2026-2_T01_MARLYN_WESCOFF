@@ -1037,6 +1037,7 @@ L 633.079251 146.919273
 L 650.665348 146.919273
 L 668.251444 63.019636
 L 685.83754 63.019636
+L 703.423636 63.019636
 " clip-path="url(#pf1fa0f74cc)" style="fill: none; stroke: #38b2ac; stroke-width: 2; stroke-linecap: square"/>
     <defs>
      <path id="mf77e10dfff" d="M -3 3
@@ -1059,6 +1060,7 @@ z
      <use xlink:href="#mf77e10dfff" x="650.665348" y="146.919273" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
      <use xlink:href="#mf77e10dfff" x="668.251444" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
      <use xlink:href="#mf77e10dfff" x="685.83754" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
+     <use xlink:href="#mf77e10dfff" x="703.423636" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_31">
@@ -1074,6 +1076,7 @@ L 633.079251 283.514335
 L 650.665348 292.936909
 L 668.251444 302.359484
 L 685.83754 311.749789
+L 703.423636 321.172364
 " clip-path="url(#pf1fa0f74cc)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #38b2ac; stroke-width: 1.5"/>
     <defs>
      <path id="m9d0fa2505c" d="M -3 3
@@ -1095,6 +1098,7 @@ L 3 3
      <use xlink:href="#m9d0fa2505c" x="650.665348" y="292.936909" style="fill: #38b2ac; stroke: #38b2ac"/>
      <use xlink:href="#m9d0fa2505c" x="668.251444" y="302.359484" style="fill: #38b2ac; stroke: #38b2ac"/>
      <use xlink:href="#m9d0fa2505c" x="685.83754" y="311.749789" style="fill: #38b2ac; stroke: #38b2ac"/>
+     <use xlink:href="#m9d0fa2505c" x="703.423636" y="321.172364" style="fill: #38b2ac; stroke: #38b2ac"/>
     </g>
    </g>
    <g id="line2d_32">
@@ -1918,7 +1922,7 @@ L 432.11375 310.1575
    </g>
   </g>
   <g id="text_31">
-   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-21. Linhas ideais aparecem somente quando o milestone possui prazo. -->
+   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-22. Linhas ideais aparecem somente quando o milestone possui prazo. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -2252,7 +2256,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4216.734375 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4280.359375 0)"/>
     <use xlink:href="#DejaVuSans-15" transform="translate(4316.4375 0)"/>
-    <use xlink:href="#DejaVuSans-14" transform="translate(4380.0625 0)"/>
+    <use xlink:href="#DejaVuSans-15" transform="translate(4380.0625 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4443.6875 0)"/>
     <use xlink:href="#DejaVuSans-3" transform="translate(4475.46875 0)"/>
     <use xlink:href="#DejaVuSans-2f" transform="translate(4507.25 0)"/>
