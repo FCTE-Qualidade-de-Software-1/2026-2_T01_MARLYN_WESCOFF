@@ -109,13 +109,21 @@ class Julgamento(unittest.TestCase):
         _, questoes, _ = cj.calcula(linhas + [linha(m) for m in cj.HIPOTESES if m not in ("M3.3", "M3.4")])
         self.assertEqual(questoes["Q3.3"], 3)
 
-    def test_planilha_versionada_ainda_pendente(self):
+    def test_planilha_versionada_valida(self):
+        """A planilha tem as 12 métricas e cada uma está pendente ou tem nota de 1 a 4 (a coleta é parcial)."""
         with open(RAIZ / "dados" / "avaliacao" / "calculos.csv", encoding="utf-8-sig") as f:
             linhas = list(csv.DictReader(f))
         self.assertEqual(sorted(l["metrica"] for l in linhas), sorted(cj.HIPOTESES))
         metricas, _, objetivos = cj.calcula(linhas)
-        self.assertTrue(all(m["resultado_hipotese"] == "pendente" for m in metricas.values()))
-        self.assertTrue(all(o["julgamento"] == "incompleto" for o in objetivos.values()))
+        for m in metricas.values():
+            with self.subTest(metrica=m["metrica"]):
+                if m["resultado_hipotese"] == "pendente":
+                    self.assertIsNone(m["nota"])
+                else:
+                    self.assertIn(m["nota"], (1, 2, 3, 4))
+                    self.assertIn(m["resultado_hipotese"], ("confirmada", "refutada"))
+        self.assertTrue(all(o["julgamento"] in ("Atende", "Atende com ressalvas", "Não atende", "incompleto")
+                            for o in objetivos.values()))
 
 
 if __name__ == "__main__":
