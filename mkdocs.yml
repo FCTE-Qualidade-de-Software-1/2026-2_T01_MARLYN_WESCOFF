@@ -121,6 +121,9 @@ nav:
       - Rastreabilidade Fase 1 → Fase 2: fase-2/rastreabilidade.md
   - Fase 3:
       - Plano de avaliação: fase-3/plano-de-avaliacao.md
+      - Preparação do servidor: fase-3/preparacao-do-servidor.md
+  - Fase 4:
+      - Plano de execução: fase-4/plano-de-execucao.md
   - Gestão do Projeto - Métricas PSM/CID:
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
@@ -133,6 +136,7 @@ nav:
       - Checklist de conformidade: metricas/05-checklist-entrega.md
       - Medições históricas: gestao/registro-medicoes.md
       - Atas: gestao/atas.md
+      - Retrospectiva da E1: gestao/retrospectiva-e1.md
       - Dados brutos: metricas/dados/brutos/README.md
       - Dados consolidados: metricas/dados/consolidados/README.md
       - Termo de consentimento: gestao/termo-consentimento.md
