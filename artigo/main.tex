@@ -19,6 +19,8 @@
 \sloppy
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcommand{\tabfonte}[1]{\par\vspace{2pt}{\footnotesize Fonte: #1}}
+% Marca de conteúdo da Fase 4 ainda sem dado (#76). Nenhuma pode sobrar na versão entregue.
+\newcommand{\pend}[1][pendente]{\textcolor{red}{\textbf{[#1]}}}
 \renewcommand{\arraystretch}{1.15}
 
 \title{Avaliação da Qualidade de Produto do Moodle 5.3 LTS:\\
@@ -46,7 +48,7 @@ This paper reports the first three phases of a product quality evaluation of Moo
 \end{abstract}
 
 \begin{resumo}
-Este artigo relata as três primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A Fase~3 projeta a avaliação, com ambiente, massa de dados fictícia, oráculo e cronograma. A execução do projeto é acompanhada com medidas do PSM/CID.
+Este artigo relata as três primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A Fase~3 projeta a avaliação, com ambiente, massa de dados fictícia, oráculo e cronograma. A execução do projeto é acompanhada com medidas do PSM/CID. \pend[resumo: incluir a Fase~4 e os julgamentos]
 \end{resumo}
 
 % ======================================================================
@@ -517,10 +519,72 @@ O oráculo de M1.2 possui 20 casos calculados manualmente antes da coleta: 10 de
 O cronograma foi comprimido para a semana anterior à Entrega~2 (ata~02). Em 16 e 17/11, a equipe monta os servidores pelo script de preparação, gera a massa de dados, confere o oráculo, prepara o script de comparação e executa o piloto, que congela os limites de M3.4 e a lista de 40 itens de M3.5. De 18 a 20/11, as 12 métricas são coletadas em paralelo, cada integrante no próprio servidor; em 21/11, os valores são convertidos em notas e no julgamento de G1 a G3; em 22/11, a equipe executa a ação de melhoria e consolida a segunda versão do artigo. O piloto não entra nos resultados, e qualquer alteração posterior de critério é registrada em ata.
 
 % ======================================================================
-\section{Considerações parciais}
+\section{Fase 4: execução da avaliação e resultados}
+\label{sec:fase4}
+
+% Seção consolidada a partir dos parágrafos de cada coletor (#76). Cada [pendente] em vermelho é
+% substituído pelo dado da métrica, a partir de dados/avaliacao/<métrica>/ e de
+% scripts/calcula_julgamento.py. Responsáveis: M1.x Bernardo (#67), M2.1/M2.2 Carlos (#68),
+% M2.3/M2.4 Maykon (#69, coletado), M3.1/M3.2 João Pedro (#70), M3.3 a M3.5 Pedro (#71),
+% relações Bernardo (#73), ação de melhoria João Pedro e Pedro (#74).
+
+\subsection{Execução da coleta}
+
+A coleta seguiu o plano da Fase~3 sem alterar métricas, níveis ou critérios. Cada integrante coletou em um servidor montado pelo mesmo script de preparação, e as diferenças entre servidores foram registradas como medidas de contexto (versão do Moodle e do PHP, recursos, fuso e experiência do avaliador). M2.3 e M2.4 foram coletadas em 22/11/2026 em um contêiner Ubuntu~24.04 com Moodle~5.3.1+, PHP~8.3.37 e PostgreSQL~17.12, com mais recursos que a VM prevista (12~vCPU e 13~GB), o que reduz a chance de disputa por memória em M2.4. \pend[servidor, datas e desvios de M1.x, M2.1/M2.2, M3.x]
+
+\subsection{Resultados das medições}
+
+A Tabela~\ref{tab:resultados} reúne o valor, a nota e o resultado da hipótese de cada métrica. As evidências (CSVs, respostas JSON e \emph{logs}) estão em \texttt{dados/avaliacao/} no repositório.
+
+\begin{table}[!ht]
+\centering
+\caption{Resultados das métricas, notas e hipóteses.}
+\label{tab:resultados}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{2.6cm}p{1.3cm}p{0.6cm}p{1.3cm}L}
+\toprule
+Métrica & Valor & Nota & Hipótese & Observação \\
+\midrule
+M1.1 Cobertura & \pend & & H1.1 & \\
+M1.2 Correção & \pend & & H1.2 & \\
+M1.3 Pertinência & \pend & & H1.3 & \\
+M2.1 Intercâmbio & \pend & & H2.1 & \\
+M2.2 Integridade & \pend & & H2.2 & \\
+M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & 6 funções com HTTP 200, sem exceção e com os valores da massa \\
+M2.4 Coexistência & 2/3 = 0,67 & 2 & refutada & E1 sem resposta em 1 de 52 amostras na instalação; voltou sem intervenção \\
+M3.1 Acesso & \pend & & H3.1 & \\
+M3.2 PHP & \pend & & H3.2 & \\
+M3.3 Instalação & \pend & & H3.3 & \\
+M3.4 Tempo & \pend & & H3.3 & \\
+M3.5 Preservação & \pend & & H3.4 & \\
+\bottomrule
+\end{tabularx}
+\tabfonte{elaboração própria, a partir de \texttt{dados/avaliacao/calculos.csv}.}
+\end{table}
+
+\textbf{G2 -- Compatibilidade.} As seis funções REST responderam corretamente a um cliente externo com permissões mínimas (M2.3 = 1,00). Na primeira tentativa, duas funções vieram incompletas, porque faltavam ao usuário de integração uma capacidade e um parâmetro documentados. O Moodle avisou da falta, em vez de devolver dados errados, e o ajuste, registrado, é o que uma integração real precisa prever. Em M2.4, o banco e a tarefa agendada das aplicações vizinhas não mudaram em nenhuma das quatro operações (instalação, cron, backup e atualização 4.5~$\rightarrow$~5.3). Já a aplicação web vizinha ficou sem resposta por cerca de 2~s durante a instalação. A causa é o reinício do Apache (\texttt{restart}) que o procedimento de instalação faz para publicar o novo \emph{virtual host}; na atualização, a troca da raiz web com \texttt{reload} não afetou a vizinha. H2.4 foi refutada pela forma de instalar no servidor compartilhado, e não pelo Moodle, que não alterou nenhuma vizinha. \pend[M2.1 e M2.2; nota de Q2.1 e Q2.2]
+
+\textbf{G1 -- Adequação funcional.} \pend[M1.1 a M1.3]
+
+\textbf{G3 -- Flexibilidade.} \pend[M3.1 a M3.5]
+
+\subsection{Julgamento dos objetivos}
+
+Pelas regras da Seção~\ref{sec:julgamento}, a nota de cada questão é o mínimo das notas de suas métricas, e o objetivo segue o pior caso. Com Q2.3~=~4 e Q2.4~=~2, G2 é, no máximo, \textbf{atende com ressalvas}. Essa é a decisão para D2 se M2.1 e M2.2 não tiverem nota~1: prosseguir, com a mitigação de publicar \emph{virtual hosts} com \texttt{reload}. \pend[julgamento de G1, G2 e G3 e ação para D1 a D3]
+
+\subsection{Relações entre as características avaliadas}
+
+M2.4 mostra uma relação entre compatibilidade e instalabilidade: a interrupção da vizinha não veio do Moodle em operação, mas do procedimento de instalação. Uma instalação que reinicia o servidor web compartilhado (flexibilidade/instalabilidade) prejudica a coexistência (compatibilidade). Por isso, M2.4 e M3.3 devem ser lidas juntas na decisão sobre o procedimento de migração (D3). \pend[demais relações (\#73)]
+
+\subsection{Ação de melhoria}
+
+Uma candidata surgiu de M2.4: trocar o reinício do Apache por \texttt{reload} na publicação de novos \emph{virtual hosts} do script de preparação e medir de novo a coexistência na instalação. \pend[ação escolhida, execução e medição antes e depois (\#74)]
+
+% ======================================================================
+\section{Conclusão}
 \label{sec:consideracoes}
 
-A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. A Fase~3 transformou essa especificação em um plano reprodutível, com método, ambiente, massa fictícia, oráculo e cronograma de coleta. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar no piloto. A Fase~4 completa a avaliação com a execução das medições, o julgamento e a ação de melhoria.
+A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. A Fase~3 transformou essa especificação em um plano reprodutível, com método, ambiente, massa fictícia, oráculo e cronograma de coleta. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar no piloto. A Fase~4 completa a avaliação com a execução das medições, o julgamento e a ação de melhoria. \pend[conclusão: julgamento de G1 a G3, resposta às decisões D1 a D4, limitações da execução e trabalhos futuros]
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
