@@ -61,6 +61,9 @@ watch:
   - overrides
   - includes
 
+hooks:
+  - hooks/historico.py
+
 plugins:
   - search:
       lang: pt
@@ -124,6 +127,7 @@ nav:
       - Preparação do servidor: fase-3/preparacao-do-servidor.md
   - Fase 4:
       - Plano de execução: fase-4/plano-de-execucao.md
+      - Árvore GQM de resultados: fase-4/arvore-gqm-resultados.md
   - Gestão do Projeto - Métricas PSM/CID:
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md

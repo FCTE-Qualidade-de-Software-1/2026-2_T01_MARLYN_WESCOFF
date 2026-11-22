@@ -55,7 +55,7 @@ A coleta só começa quando a preparação de que ela depende estiver mergeada n
 
 1. Cada coletor registra os casos no CSV da métrica, inclusive as falhas (regra R4 do plano), e envia um parágrafo de resultado para o artigo.
 2. Em 21/11, os valores entram em `dados/avaliacao/calculos.csv`. Cada métrica recebe a nota pelos [níveis de pontuação](../fase-2/niveis-e-julgamento.md#niveis-de-pontuacao-por-metrica) congelados na Fase 2.
-3. As notas viram o julgamento das questões e dos objetivos pelas [regras de julgamento](../fase-2/niveis-e-julgamento.md#regras-de-julgamento), e cada hipótese H1.1 a H3.4 é confirmada ou refutada.
+3. As notas viram o julgamento das questões e dos objetivos pelas [regras de julgamento](../fase-2/niveis-e-julgamento.md#regras-de-julgamento), e cada hipótese H1.1 a H3.4 é confirmada ou refutada. A [Árvore GQM de resultados](arvore-gqm-resultados.md) mostra esse caminho das métricas aos objetivos e é gerada de novo com `python3 scripts/gera_arvore_resultados.py` sempre que `calculos.csv` mudar (o teste do PR avisa se ela ficar desatualizada).
 4. O julgamento de G1, G2 e G3 responde às decisões D1 a D3 do [Propósito](../fase-1/proposito.md). Um resultado com nota 1 ou 2 é candidato à ação de melhoria (D4).
 
 Os critérios não mudam depois de conhecer os resultados (regra R1). Qualquer desvio do plano durante a coleta é registrado em ata, com o motivo.
