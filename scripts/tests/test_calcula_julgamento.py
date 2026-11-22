@@ -104,6 +104,24 @@ class Julgamento(unittest.TestCase):
         self.assertEqual(cj.julga_objetivo([4, 2, 1]), "Não atende")
         self.assertEqual(cj.julga_objetivo([4, None]), "incompleto")
 
+    def test_q11_e_q22_usam_duas_metricas(self):
+        """Issue #108: Q1.1 = mínimo(M1.1, M1.3) e Q2.2 = mínimo(M2.1, M2.2)."""
+        linhas = [linha("M1.1", 12, 12), linha("M1.3", 9, 12), linha("M2.1", 5, 7), linha("M2.2", 100, 100)]
+        _, questoes, _ = cj.calcula(linhas + [linha(m) for m in cj.HIPOTESES
+                                              if m not in ("M1.1", "M1.3", "M2.1", "M2.2")])
+        self.assertEqual(questoes["Q1.1"], 2)
+        self.assertEqual(questoes["Q1.3"], 2)
+        self.assertEqual(questoes["Q2.1"], 2)
+        self.assertEqual(questoes["Q2.2"], 2)
+
+    def test_hipotese_separada_da_nota(self):
+        """Issue #109: 12 de 12 sem contorno dá nota 4 a M1.3 e refuta H1.3, que espera 11 de 12."""
+        metricas, _, _ = cj.calcula([linha("M1.3", 12, 12)] + [linha(m) for m in cj.HIPOTESES if m != "M1.3"])
+        self.assertEqual(metricas["M1.3"]["nota"], 4)
+        self.assertEqual(metricas["M1.3"]["resultado_hipotese"], "refutada")
+        metricas, _, _ = cj.calcula([linha("M1.3", 11, 12)] + [linha(m) for m in cj.HIPOTESES if m != "M1.3"])
+        self.assertEqual(metricas["M1.3"]["resultado_hipotese"], "confirmada")
+
     def test_q33_e_o_minimo_de_m33_e_m34(self):
         linhas = [linha("M3.3", 6, 6), linha("M3.4", valor=25, r=0)]
         _, questoes, _ = cj.calcula(linhas + [linha(m) for m in cj.HIPOTESES if m not in ("M3.3", "M3.4")])

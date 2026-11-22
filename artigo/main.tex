@@ -364,34 +364,34 @@ A avaliação relaciona-se ao ODS~4, Educação de qualidade~\cite{onu_ods4}: a 
 
 \subsection{Objetivos, questões e hipóteses}
 
-Cada característica priorizada gerou um objetivo de medição, com o mesmo objeto, propósito (\emph{entender}) e ponto de vista (Coordenação de TI), o que garante a rastreabilidade com a Fase~1. As hipóteses vêm das \emph{abstraction sheets}, que também registram fatores de variação, como a versão corretiva 5.3.x, a codificação dos arquivos CSV e a experiência do avaliador com Linux (Tabela~\ref{tab:gqm}).
+Cada característica priorizada gerou um objetivo de medição, com o mesmo objeto, propósito (\emph{entender}) e ponto de vista (Coordenação de TI), o que garante a rastreabilidade com a Fase~1. As questões perguntam sobre o objeto, e não sobre a métrica; cada uma é refinada por uma ou mais métricas, e M1.3 e M2.1 servem a duas questões. As hipóteses vêm das \emph{abstraction sheets} e são a resposta esperada a cada questão (o \textit{baseline}); a régua de aceitação são os níveis e o critério de julgamento da Seção~\ref{sec:julgamento}, definidos à parte. As \emph{abstraction sheets} também registram fatores de variação, que viraram medidas de contexto anotadas em cada coleta: versão corretiva 5.3.x, codificação dos arquivos, experiência do avaliador com Linux e recursos da VM (Tabela~\ref{tab:gqm}).
 
 \begin{table}[!ht]
 \centering
 \caption{Objetivos de medição, questões e hipóteses.}
 \label{tab:gqm}
 \scriptsize
-\begin{tabularx}{\linewidth}{p{0.75cm}Lp{4.3cm}}
+\begin{tabularx}{\linewidth}{p{1.1cm}Lp{4.6cm}}
 \toprule
 \multicolumn{3}{p{\dimexpr\linewidth-2\tabcolsep}}{\textbf{G1.} \emph{Analisar} o núcleo do Moodle 5.3 LTS \emph{para o propósito de} entender \emph{com respeito à} adequação funcional das tarefas acadêmicas essenciais \emph{do ponto de vista da} Coordenação de TI \emph{no contexto da} decisão de adoção/atualização (D1), em instalação local com dados fictícios.} \\
 \midrule
-Q1.1 & Em que medida as funções do núcleo cobrem as tarefas essenciais do catálogo? & H1.1: as 12 tarefas são cobertas ($M1.1 = 1{,}00$) \\
-Q1.2 & Os resultados calculados (notas, agregação, prazos) correspondem aos esperados? & H1.2: todos os casos iguais ao oráculo ($M1.2 = 1{,}00$) \\
-Q1.3 & As funções permitem concluir as tarefas sem contornos? & H1.3: no máximo 1 contorno ($M1.3 \geq 0{,}92$) \\
+Q1.1\newline{\tiny M1.1, M1.3} & O núcleo, sem plugins, dá conta das tarefas acadêmicas essenciais? & H1.1: sim; função para as 12 tarefas e só uma com contorno \\
+Q1.2\newline{\tiny M1.2} & O Moodle calcula notas e controla prazos como a instituição espera? & H1.2: sim; todos os casos iguais ao oráculo \\
+Q1.3\newline{\tiny M1.3} & Docentes e gestão fazem as tarefas pelo caminho previsto, sem improvisar? & H1.3: quase sempre; só a restauração de backup exige contorno (11 de 12) \\
 \midrule
 \multicolumn{3}{p{\dimexpr\linewidth-2\tabcolsep}}{\textbf{G2.} \emph{Analisar} o núcleo do Moodle 5.3 LTS e suas interfaces de troca de dados \emph{para o propósito de} entender \emph{com respeito à} compatibilidade (interoperabilidade e coexistência) \emph{do ponto de vista da} Coordenação de TI \emph{no contexto da} decisão sobre as integrações (D2), com sistemas externos simulados.} \\
 \midrule
-Q2.1 & Em que medida os formatos de arquivo são exportados e importados com sucesso? & H2.1: ao menos 6 de 7 formatos ($M2.1 \geq 0{,}85$) \\
-Q2.2 & Os dados trocados chegam íntegros ao outro lado? & H2.2: todos os registros íntegros ($M2.2 = 1{,}00$) \\
-Q2.3 & As funções REST selecionadas atendem corretamente a um cliente externo? & H2.3: 6 de 6 funções ($M2.3 = 1{,}00$) \\
-Q2.4 & O Moodle opera no mesmo servidor que outras aplicações sem prejudicá-las? & H2.4: nenhuma entidade afetada ($M2.4 = 1{,}00$) \\
+Q2.1\newline{\tiny M2.1} & A instituição leva dados para o Moodle e os tira dele nos arquivos que os outros sistemas usam? & H2.1: sim, com no máximo uma exceção (6 ou 7 de 7 formatos) \\
+Q2.2\newline{\tiny M2.1, M2.2} & Os dados chegam ao outro sistema como saíram? & H2.2: sim; todos os registros iguais (risco: acentuação no CSV) \\
+Q2.3\newline{\tiny M2.3} & Um sistema externo consulta e altera dados pelos serviços web, sem intervenção manual? & H2.3: sim; as 6 funções sem erro \\
+Q2.4\newline{\tiny M2.4} & O Moodle divide o servidor com outras aplicações sem atrapalhá-las? & H2.4: sim; nenhuma das 3 entidades afetada \\
 \midrule
 \multicolumn{3}{p{\dimexpr\linewidth-2\tabcolsep}}{\textbf{G3.} \emph{Analisar} o Moodle 5.3 LTS e seus procedimentos oficiais de instalação e atualização \emph{para o propósito de} entender \emph{com respeito à} flexibilidade (adaptabilidade e instalabilidade) \emph{do ponto de vista da} Coordenação de TI \emph{no contexto da} definição do procedimento de migração (D3), em máquina virtual de referência.} \\
 \midrule
-Q3.1 & Os fluxos essenciais funcionam em todos os ambientes de acesso previstos? & H3.1: pior ambiente com $M3.1 \geq 0{,}875$ \\
-Q3.2 & O Moodle se comporta da mesma forma nas versões de PHP suportadas? & H3.2: sem diferença entre 8.3 e 8.4 ($M3.2 = 1{,}00$) \\
-Q3.3 & Instalação limpa e atualização concluem com êxito e em tempo razoável? & H3.3: ao menos uma atualização falha na 1ª tentativa por causa de \texttt{public/} ($M3.3 \geq 0{,}83$); instalação limpa em até 15~min \\
-Q3.4 & A atualização 4.5 $\rightarrow$ 5.3 preserva os dados acadêmicos? & H3.4: todos os itens preservados ($M3.5 = 1{,}00$) \\
+Q3.1\newline{\tiny M3.1} & Estudantes e docentes usam o Moodle nos computadores e celulares que já têm? & H3.1: quase todos; desktops 8 de 8, Android com no máximo uma falha \\
+Q3.2\newline{\tiny M3.2} & A TI pode escolher a versão de PHP suportada sem mudar o comportamento? & H3.2: sim; mesmo resultado com PHP 8.3 e 8.4 \\
+Q3.3\newline{\tiny M3.3, M3.4} & A TI instala e atualiza seguindo só a documentação oficial, em tempo previsível? & H3.3: sim, com um tropeço; uma atualização falha na primeira tentativa por causa de \texttt{public/} (5 de 6); instalação limpa em menos de 15~min \\
+Q3.4\newline{\tiny M3.5} & A atualização 4.5 $\rightarrow$ 5.3 mantém os dados acadêmicos existentes? & H3.4: sim; os 40 itens iguais \\
 \bottomrule
 \end{tabularx}
 \tabfonte{elaboração própria, com o template de objetivo de medição de~\cite{ramos2026aulas}.}
@@ -458,11 +458,11 @@ M3.5 Preservação & 1,00 & -- & $\geq 0{,}975$, item não acadêmico & perda de
 \tabfonte{elaboração própria. Os limites são decisões da equipe, não valores normativos.}
 \end{table}
 
-A nota de cada questão é a nota de sua métrica; em Q3.3, é o mínimo entre M3.3 e M3.4. O julgamento do objetivo usa o pior caso entre suas questões, porque uma falha grave em uma subcaracterística não é compensada por bons resultados em outra: se todas as questões têm nota $\geq 3$, o objetivo \textbf{atende} e a decisão correspondente pode prosseguir; se nenhuma tem nota~1 e ao menos uma tem nota~2, \textbf{atende com ressalvas} e a decisão prossegue com ações de mitigação; se alguma tem nota~1, \textbf{não atende} e a falha torna-se candidata à ação de melhoria (D4). Na Fase~4, cada valor também será comparado à hipótese da questão, e hipóteses refutadas serão explicadas pelos fatores de variação das \emph{abstraction sheets}.
+A nota de cada questão é o mínimo das notas de suas métricas (Q1.1: M1.1 e M1.3; Q2.2: M2.1 e M2.2; Q3.3: M3.3 e M3.4). O julgamento do objetivo usa o pior caso entre suas questões, porque uma falha grave em uma subcaracterística não é compensada por bons resultados em outra: se todas as questões têm nota $\geq 3$, o objetivo \textbf{atende} e a decisão correspondente pode prosseguir; se nenhuma tem nota~1 e ao menos uma tem nota~2, \textbf{atende com ressalvas} e a decisão prossegue com ações de mitigação; se alguma tem nota~1, \textbf{não atende} e a falha torna-se candidata à ação de melhoria (D4). Na Fase~4, cada valor também é comparado à hipótese da questão, independentemente da nota: 12 de 12 tarefas sem contorno, por exemplo, refutariam H1.3 e dariam nota~4 a M1.3. Hipóteses refutadas são explicadas pelas medidas de contexto.
 
 \subsection{Diagrama GQM}
 
-A Figura~\ref{fig:gqm} mostra a hierarquia nos três níveis: toda métrica responde a uma questão, toda questão tem hipótese e todo objetivo deriva de uma característica priorizada e de uma decisão da Fase~1.
+A Figura~\ref{fig:gqm} mostra a hierarquia nos três níveis: toda métrica refina ao menos uma questão, toda questão tem hipótese e todo objetivo deriva de uma característica priorizada e de uma decisão da Fase~1.
 
 \begin{figure}[!ht]
 \centering
@@ -472,21 +472,21 @@ A Figura~\ref{fig:gqm} mostra a hierarquia nos três níveis: toda métrica resp
   m/.style={draw, rounded corners, fill=green!7, font=\tiny, align=center, minimum width=2.4cm, minimum height=0.48cm},
   lv/.style={font=\scriptsize\itshape, text=gray, anchor=east}]
 \matrix[row sep=0.06cm, column sep=0.8cm] (mx) {
- & \node[q] (q11) {Q1.1 Cobertura}; & \node[m] (m11) {M1.1 Cobertura funcional}; \\
- \node[g] (g1) {G1\\Adequação\\funcional}; & \node[q] (q12) {Q1.2 Correção}; & \node[m] (m12) {M1.2 Correção funcional}; \\
- & \node[q] (q13) {Q1.3 Sem contorno}; & \node[m] (m13) {M1.3 Pertinência}; \\[0.15cm]
- & \node[q] (q21) {Q2.1 Formatos}; & \node[m] (m21) {M2.1 Intercâmbio}; \\
- \node[g] (g2) {G2\\Compatibilidade}; & \node[q] (q22) {Q2.2 Integridade}; & \node[m] (m22) {M2.2 Integridade}; \\
- & \node[q] (q23) {Q2.3 Serviços web}; & \node[m] (m23) {M2.3 Conectividade REST}; \\
- & \node[q] (q24) {Q2.4 Coexistência}; & \node[m] (m24) {M2.4 Coexistência}; \\[0.15cm]
- & \node[q] (q31) {Q3.1 Ambientes de acesso}; & \node[m] (m31) {M3.1 Adaptab. acesso}; \\
- \node[g] (g3) {G3\\Flexibilidade}; & \node[q] (q32) {Q3.2 Versões de PHP}; & \node[m] (m32) {M3.2 Adaptab. PHP}; \\
- & \node[q] (q33) {Q3.3 Instalação}; & \node[m] (m33) {M3.3 Sucesso -- M3.4 Tempo}; \\
- & \node[q] (q34) {Q3.4 Preservação}; & \node[m] (m35) {M3.5 Preservação}; \\
+ & \node[q] (q11) {Q1.1 Tarefas atendidas}; & \node[m] (m11) {M1.1 Cobertura funcional}; \\
+ \node[g] (g1) {G1\\Adequação\\funcional}; & \node[q] (q12) {Q1.2 Notas e prazos}; & \node[m] (m12) {M1.2 Correção funcional}; \\
+ & \node[q] (q13) {Q1.3 Sem improviso}; & \node[m] (m13) {M1.3 Pertinência}; \\[0.15cm]
+ & \node[q] (q21) {Q2.1 Entrada e saída}; & \node[m] (m21) {M2.1 Intercâmbio}; \\
+ \node[g] (g2) {G2\\Compatibilidade}; & \node[q] (q22) {Q2.2 Dados como saíram}; & \node[m] (m22) {M2.2 Integridade}; \\
+ & \node[q] (q23) {Q2.3 Sistema externo}; & \node[m] (m23) {M2.3 Conectividade REST}; \\
+ & \node[q] (q24) {Q2.4 Servidor dividido}; & \node[m] (m24) {M2.4 Coexistência}; \\[0.15cm]
+ & \node[q] (q31) {Q3.1 Dispositivos}; & \node[m] (m31) {M3.1 Adaptab. acesso}; \\
+ \node[g] (g3) {G3\\Flexibilidade}; & \node[q] (q32) {Q3.2 Escolha do PHP}; & \node[m] (m32) {M3.2 Adaptab. PHP}; \\
+ & \node[q] (q33) {Q3.3 Instalar e atualizar}; & \node[m] (m33) {M3.3 Sucesso -- M3.4 Tempo}; \\
+ & \node[q] (q34) {Q3.4 Dados mantidos}; & \node[m] (m35) {M3.5 Preservação}; \\
 };
 \foreach \g/\qs in {g1/{q11,q12,q13}, g2/{q21,q22,q23,q24}, g3/{q31,q32,q33,q34}}
   \foreach \q in \qs \draw[-{Stealth}] (\g.east) -- (\q.west);
-\foreach \q/\m in {q11/m11,q12/m12,q13/m13,q21/m21,q22/m22,q23/m23,q24/m24,q31/m31,q32/m32,q33/m33,q34/m35}
+\foreach \q/\m in {q11/m11,q11/m13,q12/m12,q13/m13,q21/m21,q22/m21,q22/m22,q23/m23,q24/m24,q31/m31,q32/m32,q33/m33,q34/m35}
   \draw[-{Stealth}] (\q) -- (\m);
 \node[font=\scriptsize\bfseries, above=0.15cm of g1 |- q11.north] {Conceitual};
 \node[font=\scriptsize\bfseries, above=0.15cm of q11] {Operacional};

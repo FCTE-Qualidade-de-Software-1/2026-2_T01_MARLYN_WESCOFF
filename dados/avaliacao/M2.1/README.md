@@ -36,7 +36,7 @@ O caminho de cada função na interface segue a documentação oficial da 5.3 (r
 
 Para cada formato:
 
-1. Preencher `data`, `avaliador`, `conclui`, `aceito_receptor`, `sucesso` e os nomes dos arquivos na linha do formato em `execucoes.csv`. Uma falha também é registrada, com a mensagem de erro em `observacao` (R4 e R5).
+1. Preencher `data`, `avaliador`, `conclui`, `aceito_receptor`, `sucesso` e os nomes dos arquivos na linha do formato em `execucoes.csv`. Uma falha também é registrada, com a mensagem de erro em `observacao` (R4 e R5). Em `codificacao`, anotar a saída de `file -bi` do arquivo trocado (medida de contexto da Fase 2).
 2. Guardar os arquivos de entrada e de saída em `dados/avaliacao/M2.1/` e a captura em `dados/avaliacao/evidencias/`, com o nome `M2.1_<formato>_<AAAA-MM-DD>_<iniciais>.png`.
 3. Rodar a comparação:
 

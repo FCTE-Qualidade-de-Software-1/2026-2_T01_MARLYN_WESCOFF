@@ -23,6 +23,8 @@ Cada integrante coleta no próprio servidor, montado pelo mesmo script de prepar
 
 <p class="legenda">Tabela 1. Responsável, prazo, evidência e pasta de cada métrica. Fonte: elaboração própria, a partir do plano da Fase 3 e da ata 02.</p>
 
+Antes da primeira coleta, cada avaliador preenche uma linha de `dados/avaliacao/contexto.csv` com as [medidas de contexto](../fase-2/abstraction-sheets.md#medidas-de-contexto) do próprio servidor (versão exata do Moodle e do PHP, RAM, vCPU, fuso e anos de experiência com Linux). Elas não entram no julgamento, mas explicam diferenças entre servidores e hipóteses refutadas.
+
 As evidências seguem o nome da seção 5 do plano da Fase 3, `<métrica>_<caso>_<AAAA-MM-DD>_<iniciais>.png`, e ficam em `dados/avaliacao/evidencias/`. Toda linha de CSV aponta para o arquivo de evidência correspondente.
 
 ## Preparação (até 17/11)

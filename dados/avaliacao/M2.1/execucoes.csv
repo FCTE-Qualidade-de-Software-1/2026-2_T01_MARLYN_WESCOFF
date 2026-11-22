@@ -1,8 +1,8 @@
-formato,descricao,direcao,operacao,receptor,data,avaliador,conclui,aceito_receptor,sucesso,arquivo_entrada,arquivo_saida,evidencia,observacao
-F1,CSV de usuários,importação,Carregar usuarios.csv (30 estudantes) na instância,Moodle 5.3 (lista de usuários),,,,,,,,,
-F2,CSV de notas,exportação,Exportar o livro de notas do curso completo como texto (CSV),LibreOffice Calc,,,,,,,,,
-F3,XLSX de notas,exportação,Exportar o livro de notas do curso completo como planilha Excel,LibreOffice Calc,,,,,,,,,
-F4,GIFT de questões,importação,Importar questoes.gift (15 questões) no banco de questões do curso completo,Moodle 5.3 (banco de questões),,,,,,,,,
-F5,Moodle XML de questões,exportação e reimportação,Exportar as questões em Moodle XML e reimportar no curso vazio,Moodle 5.3 (segundo curso),,,,,,,,,
-F6,iCal do calendário,exportação,Exportar os 6 eventos do calendário do curso em iCal,Thunderbird,,,,,,,,,
-F7,Backup .mbz,backup e restauração,Fazer o backup do curso completo e restaurar no curso vazio,Moodle 5.3 (curso restaurado),,,,,,,,,
+formato,descricao,direcao,operacao,receptor,data,avaliador,conclui,aceito_receptor,sucesso,arquivo_entrada,arquivo_saida,evidencia,observacao,codificacao
+F1,CSV de usuários,importação,Carregar usuarios.csv (30 estudantes) na instância,Moodle 5.3 (lista de usuários),,,,,,,,,,
+F2,CSV de notas,exportação,Exportar o livro de notas do curso completo como texto (CSV),LibreOffice Calc,,,,,,,,,,
+F3,XLSX de notas,exportação,Exportar o livro de notas do curso completo como planilha Excel,LibreOffice Calc,,,,,,,,,,
+F4,GIFT de questões,importação,Importar questoes.gift (15 questões) no banco de questões do curso completo,Moodle 5.3 (banco de questões),,,,,,,,,,
+F5,Moodle XML de questões,exportação e reimportação,Exportar as questões em Moodle XML e reimportar no curso vazio,Moodle 5.3 (segundo curso),,,,,,,,,,
+F6,iCal do calendário,exportação,Exportar os 6 eventos do calendário do curso em iCal,Thunderbird,,,,,,,,,,
+F7,Backup .mbz,backup e restauração,Fazer o backup do curso completo e restaurar no curso vazio,Moodle 5.3 (curso restaurado),,,,,,,,,,
