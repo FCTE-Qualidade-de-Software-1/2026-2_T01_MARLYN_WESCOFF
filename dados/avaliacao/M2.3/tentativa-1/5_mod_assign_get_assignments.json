@@ -1,0 +1,21 @@
+{
+  "funcao": "mod_assign_get_assignments",
+  "parametros": {
+    "courseids": [
+      2
+    ]
+  },
+  "http": 200,
+  "data_hora": "2026-11-22T20:27:45-03:00",
+  "resposta": {
+    "courses": [],
+    "warnings": [
+      {
+        "item": "course",
+        "itemid": 2,
+        "warningcode": "2",
+        "message": "User is not enrolled or does not have requested capability"
+      }
+    ]
+  }
+}

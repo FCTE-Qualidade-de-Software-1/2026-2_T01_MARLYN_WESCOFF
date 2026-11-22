@@ -1,0 +1,7 @@
+funcao,parametros,data_hora,avaliador,http,exception,coerente,sucesso,arquivo,conferencia
+core_webservice_get_site_info,{},2026-11-22T20:27:44-03:00,MS,200,não,sim,sim,1_core_webservice_get_site_info.json,username = integracao: ok; as 6 funções aparecem no serviço: ok; release 5.3: ok
+core_user_get_users_by_field,"{""field"": ""username"", ""values"": [""est01""]}",2026-11-22T20:27:44-03:00,MS,200,não,não,não,2_core_user_get_users_by_field.json,username = est01: ok; firstname = Estudante: ok; lastname = 01: ok; email = est01@example.invalid: diferente; idnumber = AVAL-EST01: ok
+core_course_get_courses_by_field,"{""field"": ""shortname"", ""value"": ""AVAL-CAT""}",2026-11-22T20:27:44-03:00,MS,200,não,sim,sim,3_core_course_get_courses_by_field.json,shortname = AVAL-CAT: ok; fullname igual ao da massa: ok
+core_enrol_get_enrolled_users,"{""courseid"": 2}",2026-11-22T20:27:45-03:00,MS,200,não,sim,sim,4_core_enrol_get_enrolled_users.json,31 matriculados (30 estudantes e o docente): ok; mesmos usernames da massa: ok
+mod_assign_get_assignments,"{""courseids"": [2]}",2026-11-22T20:27:45-03:00,MS,200,não,não,não,5_mod_assign_get_assignments.json,as 2 tarefas da massa: diferente
+gradereport_user_get_grade_items,"{""courseid"": 2, ""userid"": 3}",2026-11-22T20:27:45-03:00,MS,200,não,sim,sim,6_gradereport_user_get_grade_items.json,Avaliação 1 = 10.00 (obtido: 10): ok; Avaliação 2 = 6.00 (obtido: 6): ok; Participação = 7.50 (obtido: 7.5): ok

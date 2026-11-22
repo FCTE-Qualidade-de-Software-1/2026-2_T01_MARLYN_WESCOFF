@@ -4,8 +4,8 @@ M1.2,Q1.2,G1,Cc/Ct (denominador = 20 casos do oráculo),,20,,,,dados/avaliacao/M
 M1.3,Q1.3,G1,1 - Tc/Tt (numerador = tarefas sem contorno; denominador = 12),,12,,,,dados/avaliacao/M1.1/execucoes.csv,
 M2.1,Q2.1,G2,Fs/Ft (denominador = 7 formatos),,7,,,,dados/avaliacao/M2.1/execucoes.csv,
 M2.2,Q2.2,G2,Rc/Rt (soma dos 7 formatos),,,,,,dados/avaliacao/M2.2/resumo.csv,
-M2.3,Q2.3,G2,Ws/Wt (denominador = 6 funções REST),,6,,,,dados/avaliacao/M2.3/,
-M2.4,Q2.4,G2,Ec/Et (denominador = 3 entidades vizinhas),,3,,,,dados/avaliacao/M2.4/verificacoes.csv,
+M2.3,Q2.3,G2,Ws/Wt (denominador = 6 funções REST),6,6,,,,dados/avaliacao/M2.3/resultados.csv,"Tentativa 2, após ajuste documentado de configuração do cliente (tentativa 1 em M2.3/tentativa-1/: 4/6)"
+M2.4,Q2.4,G2,Ec/Et (denominador = 3 entidades vizinhas),2,3,,,recuperacao_sem_intervencao,dados/avaliacao/M2.4/verificacoes.csv,E1 afetada: 1 de 52 amostras sem resposta durante a instalação (restart do Apache pelo script de preparação); voltou sozinha
 M3.1,Q3.1,G3,min(1 - Tfa/Tta) no pior ambiente (denominador = 8 tarefas),,8,,,,dados/avaliacao/M3.1/,
 M3.2,Q3.2,G3,min(1 - Tfp/Ttp) na pior versão de PHP (denominador = 12 tarefas),,12,,,,dados/avaliacao/M3.2/,
 M3.3,Q3.3,G3,Ps/Pt (denominador = 6 execuções),,6,,,,dados/avaliacao/M3.3/execucoes.csv,
