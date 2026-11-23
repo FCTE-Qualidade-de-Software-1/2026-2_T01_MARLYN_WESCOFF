@@ -410,7 +410,7 @@ As métricas derivam da ISO/IEC 25023~\cite{iso25023} e são razões de 0 a 1 em
 \scriptsize
 \begin{tabularx}{\linewidth}{p{0.65cm}p{2.25cm}p{1.9cm}p{2.6cm}L}
 \toprule
-\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Medidas básicas e fonte} \\
+\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Elementos de medida e fonte} \\
 \midrule
 M1.1 & Cobertura funcional & $1 - T_f/T_t$ & Functional implementation coverage & $T_t=12$ tarefas; $T_f$ sem função ou com falha; formulário de execução \\
 M1.2 & Correção funcional & $C_c/C_t$ & Correctness & $C_t=20$ casos (questionário, agregação, prazo); oráculo calculado à mão \\
@@ -595,23 +595,21 @@ A avaliação desdobrou Adequação Funcional, Compatibilidade e Flexibilidade e
 
 \begin{table}[!ht]
 \centering
-\caption{Contribuição multidimensional dos integrantes na E2.}
+\caption{Contribuição de cada integrante.}
 \label{tab:contribuicao}
 \scriptsize
-\begin{tabularx}{\linewidth}{Lp{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.4cm}}
+\begin{tabularx}{\linewidth}{p{3.1cm}L}
 \toprule
-\textbf{Integrante} & \textbf{Commits} & \textbf{Linhas} & \textbf{Issues} & \textbf{Revisões} & \textbf{Horas} & \textbf{Índice C2} \\
+\textbf{Integrante} & \textbf{O que fez} \\
 \midrule
-Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 91,18\% & 18,23\% \\
-Carlos Eduardo Deusdara Motta & 31,82\% & 42,19\% & 66,67\% & 0,00\% & 0,00\% & 28,14\% \\
-João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 8,82\% & 7,17\% \\
-Maykon Junio dos Santos Soares & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% \\
-Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\% \\
-\midrule
-\textbf{Total} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} \\
+Bernardo Broetto Brun & Fase 1 (propósito e partes interessadas) e G1 da Fase 2; liderança da E2; gráficos, dashboard e publicação da gestão; Fase 3 no artigo; oráculo de M1.2 e coleta de M1.1 e M1.3; responsável por M1.2; correções do PC2 no artigo; declaração de IA e revisão pela rubrica \\
+Carlos Eduardo Deusdara Motta & Fase 1 (produto, modelo e escopo) e G2 da Fase 2; extração de dados, labels, milestones, apontamento de esforço e construtos A e B da gestão; ata 02 e plano de execução da Fase 4; roteiro do PC2; comparação de registros e referências de M2.1; planilha e julgamento automático; responsável por M2.1 e M2.2 \\
+João Pedro Sampaio Maciel & ODS, \emph{abstraction sheets}, diagrama GQM e rastreabilidade (Fase 2); plano de avaliação da Fase 3; gerador da massa de dados; responsável por M3.1 e M3.2 \\
+Maykon Junio dos Santos Soares & Metodologia, GitPage e artigo LaTeX; script de preparação do servidor; coleta de M2.3 e M2.4; correções do GQM do PC2; automação das coletas da Fase 4, ação de melhoria e consolidação da Fase 4 no artigo e na GitPage \\
+Pedro Goncalves Rocha & Matriz de priorização (Fase 1) e G3 da Fase 2; construtos C, scripts de extração, consolidação e registro de decisões da gestão; custo da hora e processo de trabalho; milestones e quadro do PC2; responsável por M3.3 a M3.5 \\
 \bottomrule
 \end{tabularx}
-\tabfonte{elaboração própria a partir de \texttt{contribuicao.csv}, extraído em 11/11/2026. O índice é a média das cinco participações e totaliza 100\%; as horas são reconstruídas e devem ser substituídas pelos registros reais.}
+\tabfonte{elaboração própria a partir dos \emph{pull requests}, das \emph{issues} e de \texttt{docs/sobre/equipe.md}; horas e indicadores de contribuição estão no dashboard da GitPage.}
 \end{table}
 
 \section{Declaração de uso de inteligência artificial}
@@ -651,6 +649,7 @@ A equipe usou Claude Code (Anthropic) nas Entregas~1 e~2, Claude (Anthropic) no 
 15/11/2026; Claude: plano final da Fase~3 (\#52; PR \#89) & Comparação com a ata~02, o script do servidor (\#62) e o oráculo (\#64); construção estrita e \emph{merge} de teste & João Pedro (uso) \\
 15/11/2026; Claude: \texttt{gera\_massa.py}, arquivos de referência e testes (\#63; PR \#90) & Massa aplicada no Moodle 4.5.16 local; 20 casos do oráculo, notas e importações GIFT e CSV conferidos; funções conferidas no código da 5.3.1 & João Pedro (uso) \\
 16/11/2026; Claude: registro destes usos na GitPage e neste apêndice & Comparação linha a linha entre a GitPage e o LaTeX; construção estrita e compilação & João Pedro (uso) \\
+22 e 23/11/2026; Claude Code: correções do GQM, servidor de avaliação, execução automatizada das coletas da Fase 4 (Playwright, API do Moodle, \texttt{faketime}, contêineres), ação de melhoria, GitPage e Fase 4 do artigo & Instrumentos depurados em instância descartável; tentativas descartadas guardadas; resultados conferidos contra oráculo, referências e critérios da Fase 2; decisões de interpretação deixadas para a equipe & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (conferência das métricas no PR) \\
 \bottomrule
 \end{tabularx}
 \tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}; mesmos usos, tarefas e formas de conferência.}

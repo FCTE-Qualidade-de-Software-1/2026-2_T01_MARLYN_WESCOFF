@@ -131,14 +131,14 @@ nav:
       - Resultados e julgamento: fase-4/resultados.md
       - Árvore GQM de resultados: fase-4/arvore-gqm-resultados.md
       - Ação de melhoria: fase-4/acao-de-melhoria.md
-  - Gestão do Projeto - Métricas PSM/CID:
+  - Gestão do projeto (PSM/CID):
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
       - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
-      - Indicadores e dashboard: metricas/dashboard.md
+      - Dashboard dos indicadores de gestão: metricas/dashboard.md
       - Decisões de gestão: metricas/03-registro-de-decisoes.md
       - Checklist de conformidade: metricas/05-checklist-entrega.md
       - Medições históricas: gestao/registro-medicoes.md

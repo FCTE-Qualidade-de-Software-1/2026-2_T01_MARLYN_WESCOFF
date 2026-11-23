@@ -1,5 +1,8 @@
 # Texto da gestão PSM/CID para o artigo
 
+!!! note "Histórico"
+    Página mantida só como registro da Entrega 1 e do Ponto de controle 2. Ela não descreve o estado atual do projeto e não aparece no menu; o conteúdo atual está na [Fase 4](../fase-4/index.md) e na [Gestão do projeto](../gestao/index.md).
+
 Este texto é a versão enxuta transposta para `artigo/main.tex`. Os valores têm data de corte em 11/11/2026 e são rastreáveis aos CSVs consolidados.
 
 ## Metodologia de gestão com PSM/CID

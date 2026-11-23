@@ -135,7 +135,7 @@ def main():
                       f"**{'Dentro' if dentro else 'Fora'}** | {atualizacao} |")
 
     partes = [
-        "# Dashboard das métricas PSM/CID\n",
+        "# Dashboard dos indicadores de gestão (PSM/CID)\n",
         f"> Retrato gerado automaticamente em **{data}** a partir dos dados consolidados. "
         "Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos "
         "registros reais quando disponíveis.\n",

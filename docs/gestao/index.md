@@ -1,14 +1,18 @@
-# Gestão do Projeto - Métricas PSM/CID
+# Gestão do projeto (PSM/CID)
 
 Esta seção explica, para um leitor externo, como a equipe acompanha o projeto de avaliação do Moodle 5.3 LTS. O modelo adotado é o **PSM** (*Practical Software and Systems Measurement*), complementado pelo **CID** (*Continuous Iterative Development Measurement Framework*). Cada medida parte de uma necessidade de informação, produz um indicador verificável e apoia uma decisão de gestão.
 
-## 1. Objetivo da medição
+## 1. Necessidades de informação
 
-O objetivo é acompanhar a execução do projeto quanto a **calendário e progresso**, **desempenho dos processos** e **recursos e custos**, permitindo identificar desvios antes dos marcos PC1, E1, E2 e Apresentação. O [diagnóstico do repositório](../metricas/01-diagnostico-repositorio.md) registra as limitações encontradas; os [construtos de medição](../metricas/02-construtos-de-medicao.md) definem previamente como cada valor é calculado e interpretado.
+No PSM, a medição parte das necessidades de informação da equipe (riscos, problemas e falta de informação), e não de um objetivo GQM. A ordem seguida é a do modelo de informação: **necessidade → categoria → conceito mensurável → medidas → indicador → critério de decisão → decisão**. As necessidades que levaram às três categorias são:
+
+- **Calendário e Progresso:** o trabalho comprometido será concluído até cada marco (PC1, E1, PC2, E2 e Apresentação)? Algum marco está em risco?
+- **Desempenho dos Processos:** as tarefas atravessam o quadro em tempo previsível? A revisão encontra problemas antes da docente?
+- **Recursos e Custos:** o esforço está distribuído entre os integrantes? As estimativas de horas são confiáveis? O [diagnóstico do repositório](../metricas/01-diagnostico-repositorio.md) registra as limitações encontradas; os [construtos de medição](../metricas/02-construtos-de-medicao.md) definem previamente como cada valor é calculado e interpretado.
 
 ## 2. Medidas
 
-| Categoria de informação | Pergunta de gestão | Medidas obrigatórias |
+| Categoria de informação | Necessidade de informação | Medidas obrigatórias |
 |---|---|---|
 | Calendário e Progresso | O trabalho comprometido será concluído no prazo e está fluindo pelo quadro? | A1 Burndown; A2 Comprometido × concluído; A3 Fluxo cumulativo |
 | Desempenho dos Processos | A equipe conclui tarefas em tempo previsível e com capacidade suficiente? | B1 Cycle time; B2 Velocidade |
@@ -16,7 +20,7 @@ O objetivo é acompanhar a execução do projeto quanto a **calendário e progre
 
 <p class="legenda">Tabela 1. Medidas obrigatórias da gestão do projeto. Fonte: elaborado pelos autores a partir dos construtos PSM/CID adotados.</p>
 
-As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de [Construtos de medição](../metricas/02-construtos-de-medicao.md). Essa especificação separa as métricas de gestão das métricas de qualidade do produto definidas na [Fase 2](../fase-2/index.md): as primeiras acompanham a execução do projeto; as segundas avaliam o Moodle.
+As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de [Construtos de medição](../metricas/02-construtos-de-medicao.md). Essa especificação separa as medidas e os indicadores da gestão do projeto (PSM) das métricas de qualidade do produto definidas pelo GQM na [Fase 2](../fase-2/index.md): os primeiros acompanham a execução do projeto; as segundas avaliam o Moodle.
 
 ## 3. Indicadores
 
@@ -56,4 +60,4 @@ As [medições históricas](registro-medicoes.md) preservam os retratos anterior
 - A [Fase 3](../fase-3/plano-de-avaliacao.md) planeja a execução e os recursos necessários.
 - A [Fase 4](../fase-4/plano-de-execucao.md) obtém as medidas do produto, julga os objetivos e executa a ação de melhoria.
 
-As métricas PSM/CID acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.
+As medidas e os indicadores PSM/CID acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.
