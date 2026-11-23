@@ -52,6 +52,18 @@ Julgamento pelo critério congelado: G1 não atende; G2 não atende; G3 atende. 
 
 Observação: a regra R1 proíbe ajustar o critério depois de ver o resultado. Se a equipe escolher a opção B, o artigo e a GitPage devem manter o resultado pelo critério congelado e apresentar a opção B como análise de sensibilidade (é o que já fazem hoje).
 
+## 4. Conferência de M3.1 e M3.2 e desvios a aprovar (proposta de João Pedro)
+
+João Pedro conferiu M3.1 e M3.2 em 23/11, sobre a versão do PR #133 (detalhes nos READMEs de `M3.1/` e `M3.2/`). Os resultados se mantêm: M3.1 = 8/8 e M3.2 = 12/12. Desvios a aprovar:
+
+| Nº | Métrica | Desvio do plano da Fase 3 | Efeito no resultado | Decisão da equipe |
+|---|---|---|---|---|
+| V1 | M3.1 e M3.2 | Coleta executada por Maykon, e não pelo responsável; o responsável conferiu (R6) | Nenhum | |
+| V2 | M3.1 | A4 é um Android emulado (Chromium com perfil Pixel 7); o plano só aceita emulador registrado em ata | Q3.1 vale para o navegador móvel emulado; falta confirmar num aparelho | |
+| V3 | M3.2 | T01, T07, T10 e T12 executadas pela API, com a página resultante aberta pela interface | Mede o código do servidor nas duas versões de PHP, mas não o formulário dessas 4 tarefas | |
+| V4 | M3.2 | Instâncias `m32php83` e `m32php84` com a massa `contas,catalogo` | Nenhum: as duas instâncias são iguais, exceto pelo PHP | |
+| V5 | M3.2 | Sem a captura de T09 no PHP 8.4 | O resultado de T09 no PHP 8.4 se apoia só no registro do script; repetir, se a instância existir | |
+
 ## Encaminhamentos
 
 | Tarefa | Responsável | Prazo | Issue/PR |

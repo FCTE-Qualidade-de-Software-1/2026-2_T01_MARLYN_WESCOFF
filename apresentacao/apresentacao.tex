@@ -65,6 +65,31 @@
 \end{tikzpicture}\\[0.2em]
 {\scriptsize Cada questão tem hipótese (resposta esperada), separada do critério de julgamento (o que se aceita).}
 \end{frame}
+\note{Ler uma questão de cada objetivo antes da métrica: ``Q1.2: notas e prazos saem como a instituição espera? Medimos com M1.2, os 20 casos do oráculo.'' ``Q2.2: os dados chegam como saíram? Medimos com M2.1 e M2.2.'' ``Q3.1: funciona nos dispositivos dos usuários? Medimos com M3.1, as 8 tarefas nos 4 ambientes.''}
+
+\begin{frame}{Fase 2 \textperiodcentered{} Hipóteses: a resposta esperada por questão}
+\scriptsize
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Questão} & \textbf{Hipótese (resposta esperada)} & \textbf{Métrica} \\
+\midrule
+Q1.1 O núcleo dá conta das tarefas? & H1.1 Sim: 12 de 12, só uma com contorno & M1.1, M1.3 \\
+Q1.2 Notas e prazos saem certos? & H1.2 Sim: os 20 casos iguais ao oráculo & M1.2 \\
+Q1.3 As tarefas saem sem improviso? & H1.3 Quase sempre: 11 de 12 sem contorno & M1.3 \\
+\midrule
+Q2.1 Os dados entram e saem por arquivo? & H2.1 Sim: 6 ou 7 dos 7 formatos & M2.1 \\
+Q2.2 Os dados chegam como saíram? & H2.2 Sim: registros iguais à referência & M2.1, M2.2 \\
+Q2.3 Um sistema externo usa o Moodle? & H2.3 Sim: 6 de 6 funções & M2.3 \\
+Q2.4 Divide o servidor sem atrapalhar? & H2.4 Sim: 3 de 3 vizinhas intactas & M2.4 \\
+\midrule
+Q3.1 Funciona nos dispositivos? & H3.1 Quase todos: Android falha em no máximo 1 & M3.1 \\
+Q3.2 A TI pode escolher o PHP? & H3.2 Sim: mesmo resultado em 8.3 e 8.4 & M3.2 \\
+Q3.3 Instala e atualiza pela documentação? & H3.3 Sim, com uma falha na 1ª atualização & M3.3, M3.4 \\
+Q3.4 A atualização mantém os dados? & H3.4 Sim: 40 de 40 itens & M3.5 \\
+\bottomrule
+\end{tabular}\\[0.5em]
+O critério de julgamento (o que se aceita) é separado e está no próximo slide.
+\end{frame}
 
 \begin{frame}{Fase 2 \textperiodcentered{} Níveis de pontuação e critério de julgamento}
 \begin{columns}[T]

@@ -23,6 +23,8 @@
 | Licença e modelo de negócio | GNU GPL v3; código aberto com parceiros de hospedagem ([Tipo de produto](#tipo-de-produto)) |
 | Tipo de produto | WebApp de sistema de informação; COTS que pode virar MOTS ([Tipo de produto](#tipo-de-produto)) |
 | Domínio e usuários | Educação; estudantes, docentes, gestão acadêmica, administradores e integradores ([Partes interessadas](partes-interessadas.md)) |
+| Nível de conhecimento exigido | Informática: estudantes e docentes usam só o navegador e o envio de arquivos (nível básico); administradores precisam de Linux, Apache, PHP e PostgreSQL (nível avançado). Domínio: docentes precisam conhecer a avaliação acadêmica (pesos, prazos e agregação de notas), e integradores, os formatos dos sistemas vizinhos ([Partes interessadas](partes-interessadas.md)) |
+| Funções que merecem mais dedicação | As 12 tarefas do [catálogo de tarefas essenciais](escopo.md#recorte-operacional-catalogo-de-tarefas-essenciais), com prioridade para o cálculo de notas e o controle de prazos; depois, a troca de dados com os sistemas vizinhos e a atualização 4.5 → 5.3, na ordem das [características priorizadas](caracteristicas.md#resultado) |
 | Arquitetura e componentes | Cliente-servidor, monolito modular em PHP; módulos na [Descrição estruturada](#descricao-estruturada) |
 | Interfaces externas | Arquivos (CSV, XLSX, GIFT, Moodle XML, iCal, `.mbz`) e serviços web REST ([Descrição estruturada](#descricao-estruturada)) |
 | Plataforma de software | PHP 8.3 ou 8.4, PostgreSQL 17, Apache 2.4 com a raiz em `public/` ([Plano de avaliação](../fase-3/plano-de-avaliacao.md#2-recursos-e-ambiente)) |

@@ -63,4 +63,4 @@ As duas notas 1 vêm da comparação, e não de cálculo errado ou de dado perdi
 - Três tentativas de M3.3 foram descartadas por erro do procedimento ou do instrumento, todas guardadas no repositório.
 - O Android foi emulado, e não testado num aparelho; o tempo de M3.4 é de um procedimento automatizado, não de uma pessoa.
 - No A2, três tarefas passaram só na repetição, por falha do controle do Firefox.
-- As conferências por segundo integrante (regra R6) ficaram para a revisão dos pull requests.
+- As conferências por segundo integrante (regra R6) ficaram para a revisão dos pull requests. M3.1 e M3.2 foram conferidas pelo responsável em 23/11/2026; a captura de T09 no PHP 8.4 não foi gravada, e esse resultado se apoia só no registro do script ([M3.2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M3.2/README.md)).

@@ -1,8 +1,25 @@
 # Coleta de M3.1 (adaptabilidade a ambientes de acesso)
 
-Coleta da issue #70, feita em 22/11/2026 na instância `m53php83` do servidor de avaliação (Moodle 5.3.1+, PHP 8.3, massa `contas,catalogo`). Responsável: João Pedro. A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe, e o João Pedro confere na revisão do pull request.
+Coleta da issue #70, feita em 22/11/2026 na instância `m53php83` do servidor de avaliação (Moodle 5.3.1+, PHP 8.3, massa `contas,catalogo`). Responsável pela métrica e conferência: João Pedro. Execução: Maykon, com os scripts versionados citados abaixo.
 
 **Resultado: os quatro ambientes concluíram as 8 tarefas (8/8), com o mesmo resultado de A1. M3.1 = 1,00 no pior ambiente (nota 4). H3.1 confirmada (o Android emulado não falhou em nenhuma).**
+
+## Conferência (regra R6)
+
+Conferida por João Pedro, responsável pela métrica, em 23/11/2026, sobre a versão do pull request #133:
+
+| Verificação | Resultado |
+|---|---|
+| Linhas de `execucoes.csv` | 35: 8 tarefas em A1, A3 e A4, 8 em A2 na primeira tentativa e 3 repetições em A2 |
+| Evidências citadas que existem em `../evidencias/` | 35 de 35 |
+| Captura x linha do CSV (amostra: A4/T05 e A2/T09 na repetição) | Iguais: tarefa vencida sem botão de envio; resposta do `est02` publicada |
+| User agent de cada linha x ambiente de `ambientes.csv` | Coerentes nos 4 ambientes |
+| Ordem da Fase 2 (M3.1 depois de M1.1) | Cumprida: M1.1 em 15/11, M3.1 em 22/11 |
+| Resultado | M3.1 = 8/8 no pior ambiente, confirmado |
+
+<p class="legenda">Tabela 1. Conferência de M3.1. Fonte: elaboração própria.</p>
+
+Desvios que precisam ser aprovados na ata 03: o A4 é um Android **emulado**, e o plano da Fase 3 só aceita emulador registrado em ata; e a coleta foi executada pelo Maykon, e não pelo responsável. As iniciais `JPSM` nos nomes das evidências seguem o responsável pela métrica, e não quem executou.
 
 ## Como foi executado
 
