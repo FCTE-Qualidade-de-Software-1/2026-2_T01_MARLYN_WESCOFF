@@ -48,7 +48,7 @@ This paper reports the first three phases of a product quality evaluation of Moo
 \end{abstract}
 
 \begin{resumo}
-Este artigo relata as três primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A Fase~3 projeta a avaliação, com ambiente, massa de dados fictícia, oráculo e cronograma. A execução do projeto é acompanhada com medidas do PSM/CID. \pend[resumo: incluir a Fase~4 e os julgamentos]
+Este artigo relata as quatro fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A Fase~3 projeta a avaliação, com ambiente, massa de dados fictícia, oráculo e cronograma. A execução do projeto é acompanhada com medidas do PSM/CID. Na Fase~4, as medições mostraram que a Flexibilidade atende e que Adequação Funcional e Compatibilidade não atendem pelo critério congelado, por diferenças de exibição e representação; uma ação de melhoria no procedimento de servidor eliminou a interferência em aplicações vizinhas.
 \end{resumo}
 
 % ======================================================================
@@ -61,7 +61,7 @@ Em 05/10/2026 foi lançado o Moodle 5.3, nova versão de suporte estendido (LTS)
 
 Este trabalho avalia a qualidade de produto do Moodle 5.3 LTS para apoiar essa decisão. A avaliação segue o processo da ISO/IEC 25040~\cite{iso25040}, adota o modelo de qualidade da ISO/IEC 25010:2023~\cite{iso25010} e especifica as medições com o método GQM~\cite{basili1994gqm}. O projeto foi conduzido pelo Grupo Marlyn Wescoff na disciplina Qualidade de Software~1 da FCTE/UnB~\cite{ramos2026trabalho}.
 
-A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia do projeto; a Seção~\ref{sec:resultados-psm}, os resultados da gestão; as Seções~\ref{sec:fase1}, \ref{sec:fase2} e~\ref{sec:fase3}, as Fases~1 a~3; e a Seção~\ref{sec:consideracoes}, as considerações parciais. Os apêndices trazem a contribuição da equipe e a declaração de uso de IA.
+A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia do projeto; a Seção~\ref{sec:resultados-psm}, os resultados da gestão; as Seções~\ref{sec:fase1} a~\ref{sec:fase4}, as Fases~1 a~4; e a Seção~\ref{sec:consideracoes}, a conclusão. Os apêndices trazem a contribuição da equipe e a declaração de uso de IA.
 
 % ======================================================================
 \section{Referencial teórico}
@@ -522,69 +522,67 @@ O cronograma foi comprimido para a semana anterior à Entrega~2 (ata~02). Em 16 
 \section{Fase 4: execução da avaliação e resultados}
 \label{sec:fase4}
 
-% Seção consolidada a partir dos parágrafos de cada coletor (#76). Cada [pendente] em vermelho é
-% substituído pelo dado da métrica, a partir de dados/avaliacao/<métrica>/ e de
-% scripts/calcula_julgamento.py. Responsáveis: M1.x Bernardo (#67), M2.1/M2.2 Carlos (#68),
-% M2.3/M2.4 Maykon (#69, coletado), M3.1/M3.2 João Pedro (#70), M3.3 a M3.5 Pedro (#71),
-% relações Bernardo (#73), ação de melhoria João Pedro e Pedro (#74).
-
 \subsection{Execução da coleta}
 
-A coleta seguiu o plano da Fase~3 sem alterar métricas, níveis ou critérios. Cada integrante coletou em um servidor montado pelo mesmo script de preparação, e as diferenças entre servidores foram registradas como medidas de contexto (versão do Moodle e do PHP, recursos, fuso e experiência do avaliador). M2.3 e M2.4 foram coletadas em 22/11/2026 em um contêiner Ubuntu~24.04 com Moodle~5.3.1+, PHP~8.3.37 e PostgreSQL~17.12, com mais recursos que a VM prevista (12~vCPU e 13~GB), o que reduz a chance de disputa por memória em M2.4. \pend[servidor, datas e desvios de M1.x, M2.1/M2.2, M3.x]
+A coleta seguiu o plano da Fase~3 sem alterar métricas, níveis ou critérios, de 15 a 22/11/2026. M1.1 e M1.3 foram coletadas pela interface em 15/11; as demais métricas foram executadas em 22/11 num servidor montado pelo script de preparação (contêiner Ubuntu~24.04, Moodle~5.3.1+ e 4.5.16+, PHP~8.3.37 e 8.4.28, PostgreSQL~17.12), com automação por scripts versionados: Playwright na interface (M3.1 e parte de M3.2), a API do próprio Moodle (M1.2, F4, F5 e F7 de M2.1 e parte de M3.2), \texttt{faketime} nos casos de prazo e contêineres novos da imagem-base em cada execução de M3.3. Cada desvio, cada tentativa descartada e o motivo estão no README de cada métrica, em \texttt{dados/avaliacao/}. Os principais desvios foram: A2 (Firefox no Windows) não coletado e A4 com Android emulado; receptor de F6 substituído por validação estrutural; e tempo de M3.4 medido sobre um procedimento automatizado.
 
 \subsection{Resultados das medições}
 
-A Tabela~\ref{tab:resultados} reúne o valor, a nota e o resultado da hipótese de cada métrica. As evidências (CSVs, respostas JSON e \emph{logs}) estão em \texttt{dados/avaliacao/} no repositório.
+A Tabela~\ref{tab:resultados} reúne valor, nota e hipótese de cada métrica.
 
 \begin{table}[!ht]
 \centering
 \caption{Resultados das métricas, notas e hipóteses.}
 \label{tab:resultados}
 \scriptsize
-\begin{tabularx}{\linewidth}{p{2.6cm}p{1.3cm}p{0.6cm}p{1.3cm}L}
+\begin{tabularx}{\linewidth}{p{2.45cm}p{1.8cm}p{0.45cm}p{1.2cm}L}
 \toprule
 Métrica & Valor & Nota & Hipótese & Observação \\
 \midrule
-M1.1 Cobertura & \pend & & H1.1 & \\
-M1.2 Correção & \pend & & H1.2 & \\
-M1.3 Pertinência & \pend & & H1.3 & \\
-M2.1 Intercâmbio & \pend & & H2.1 & \\
-M2.2 Integridade & \pend & & H2.2 & \\
-M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & 6 funções com HTTP 200, sem exceção e com os valores da massa \\
-M2.4 Coexistência & 2/3 = 0,67 & 2 & refutada & E1 sem resposta em 1 de 52 amostras na instalação; voltou sem intervenção \\
-M3.1 Acesso & \pend & & H3.1 & \\
-M3.2 PHP & \pend & & H3.2 & \\
-M3.3 Instalação & \pend & & H3.3 & \\
-M3.4 Tempo & \pend & & H3.3 & \\
-M3.5 Preservação & \pend & & H3.4 & \\
+M1.1 Cobertura & 12/12 = 1,00 & 4 & confirmada & as 12 tarefas com função do núcleo \\
+M1.2 Correção & 19/20 = 0,95 & 1 & refutada & A-04: exibe 53,00 de 70 (75,71\%); oráculo espera 7,57 \\
+M1.3 Pertinência & 12/12 = 1,00 & 4 & refutada* & nenhum contorno \\
+M2.1 Intercâmbio & 7/7 = 1,00 & 4 & confirmada & F2 e F3 na segunda tentativa válida \\
+M2.2 Integridade & 97/132 = 0,73 & 1 & refutada & estrito; por valor, 132/132 \\
+M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & HTTP 200, sem exceção, valores da massa \\
+M2.4 Coexistência & 2/3 = 0,67 & 2 & refutada & E1 sem resposta em 1 de 52 amostras na instalação \\
+M3.1 Acesso & 8/8 = 1,00 & 4 & confirmada & A1, A3 e A4; A2 não coletado \\
+M3.2 PHP & 12/12 = 1,00 & 4 & confirmada & 8.3 e 8.4 iguais, mesmos avisos no log \\
+M3.3 Instalação & 6/6 = 1,00 & 4 & refutada* & nenhuma falha por \texttt{public/} \\
+M3.4 Tempo & 1,18 min; R = 0 & 4 & confirmada & tempo de procedimento automatizado \\
+M3.5 Preservação & 40/40 = 1,00 & 4 & confirmada & nas 3 atualizações \\
 \bottomrule
 \end{tabularx}
-\tabfonte{elaboração própria, a partir de \texttt{dados/avaliacao/calculos.csv}.}
+\tabfonte{elaboração própria, a partir de \texttt{dados/avaliacao/calculos.csv}. *Refutada pelo valor esperado exato: H1.3 esperava 11 de 12 e H3.3, uma falha na atualização.}
 \end{table}
 
-\textbf{G2 -- Compatibilidade.} As seis funções REST responderam corretamente a um cliente externo com permissões mínimas (M2.3 = 1,00). Na primeira tentativa, duas funções vieram incompletas, porque faltavam ao usuário de integração uma capacidade e um parâmetro documentados. O Moodle avisou da falta, em vez de devolver dados errados, e o ajuste, registrado, é o que uma integração real precisa prever. Em M2.4, o banco e a tarefa agendada das aplicações vizinhas não mudaram em nenhuma das quatro operações (instalação, cron, backup e atualização 4.5~$\rightarrow$~5.3). Já a aplicação web vizinha ficou sem resposta por cerca de 2~s durante a instalação. A causa é o reinício do Apache (\texttt{restart}) que o procedimento de instalação faz para publicar o novo \emph{virtual host}; na atualização, a troca da raiz web com \texttt{reload} não afetou a vizinha. H2.4 foi refutada pela forma de instalar no servidor compartilhado, e não pelo Moodle, que não alterou nenhuma vizinha. \pend[M2.1 e M2.2; nota de Q2.1 e Q2.2]
+\textbf{G1 -- Adequação funcional.} O núcleo cobriu as 12 tarefas do catálogo sem contorno (M1.1 e M1.3 = 1,00): a restauração de backup, que a equipe esperava exigir passos extras, concluiu pelo caminho previsto. Em M1.2, 19 dos 20 casos do oráculo deram o resultado esperado: questionários com pesos e crédito parcial, médias ponderadas, descarte da menor nota e prazos (aceito, bloqueado e aceito com atraso). A exceção é o A-04: o Moodle soma corretamente 53 de 70 pontos, mas exibe o total em pontos e em porcentagem (75,71\%), e a soma natural não oferece a escala de 0 a 10 que o oráculo previa.
 
-\textbf{G1 -- Adequação funcional.} \pend[M1.1 a M1.3]
+\textbf{G2 -- Compatibilidade.} Os sete formatos foram trocados (M2.1 = 1,00) e as seis funções REST responderam corretamente a um cliente com permissões mínimas (M2.3 = 1,00). A exportação de notas parou na primeira tentativa com a mensagem ``grades/gradesneedregrading'', que mostra o identificador em vez do texto; pelo caminho da interface, que recalcula o livro de notas, funcionou. Em M2.2, os dados chegaram íntegros, mas a comparação estrita do plano conta como divergentes 30 registros do XLSX (o número \texttt{10.0} contra o texto \texttt{10.00}) e 5 questões numéricas do GIFT (sintaxe estendida, mesma resposta): 0,73 pelo critério, 1,00 por valor. Em M2.4, banco e tarefa agendada vizinhos não mudaram; a aplicação web vizinha ficou sem resposta por cerca de 2~s durante a instalação, pelo \texttt{restart} do Apache feito pelo procedimento.
 
-\textbf{G3 -- Flexibilidade.} \pend[M3.1 a M3.5]
+\textbf{G3 -- Flexibilidade.} As oito tarefas de acesso funcionaram no Chrome do Windows, no Firefox do Ubuntu e no Android emulado (M3.1), e as 12 tarefas tiveram o mesmo resultado em PHP~8.3 e 8.4, sem depreciações no log (M3.2). As seis execuções de M3.3 concluíram seguindo só a documentação, em pouco mais de um minuto e sem retentativas, e as três atualizações preservaram os 40 itens (M3.5). O tropeço esperado na raiz \texttt{public/} não ocorreu; o real foi a documentação do servidor web dividida: o bloco da página ``Apache'' não traz o \texttt{DirectoryIndex} exigido em ``Configuring the Router'', e sem ele a raiz do site dá 404, o que descartou a primeira tentativa de M3.3.
 
 \subsection{Julgamento dos objetivos}
 
-Pelas regras da Seção~\ref{sec:julgamento}, a nota de cada questão é o mínimo das notas de suas métricas, e o objetivo segue o pior caso. Com Q2.3~=~4 e Q2.4~=~2, G2 é, no máximo, \textbf{atende com ressalvas}. Essa é a decisão para D2 se M2.1 e M2.2 não tiverem nota~1: prosseguir, com a mitigação de publicar \emph{virtual hosts} com \texttt{reload}. \pend[julgamento de G1, G2 e G3 e ação para D1 a D3]
+Pelo critério congelado, \textbf{G3 atende} (todas as questões com nota~4) e a migração pode seguir com o procedimento documentado (D3). \textbf{G1 e G2 não atendem}, cada um por uma nota~1 que vem da comparação, e não de dado perdido ou de cálculo errado: Q1.2 pelo A-04 e Q2.2 pela comparação textual. Numa análise de sensibilidade, se o A-04 for tratado como diferença de escala (75,71\% = 7,57) e M2.2 for comparada por valor, \textbf{G1 atende} e \textbf{G2 atende com ressalvas} (Q2.4~=~2). Como mudar o critério depois da coleta contraria a regra R1, a equipe registra os dois resultados, e a recomendação à Coordenação de TI é: prosseguir com a adoção (D1), conferindo a exibição de totais em soma natural; manter as integrações (D2), publicando \emph{virtual hosts} com \texttt{reload}; e migrar com o procedimento documentado (D3), lendo ``Configuring the Router''.
 
 \subsection{Relações entre as características avaliadas}
 
-M2.4 mostra uma relação entre compatibilidade e instalabilidade: a interrupção da vizinha não veio do Moodle em operação, mas do procedimento de instalação. Uma instalação que reinicia o servidor web compartilhado (flexibilidade/instalabilidade) prejudica a coexistência (compatibilidade). Por isso, M2.4 e M3.3 devem ser lidas juntas na decisão sobre o procedimento de migração (D3). \pend[demais relações (\#73)]
+Os dados sustentam uma relação: compatibilidade e instalabilidade se cruzam no servidor compartilhado. A falha de coexistência (M2.4) não veio do Moodle em operação, mas do procedimento de instalação, e a configuração incompleta do roteador afetou ao mesmo tempo a instalação (M3.3) e o acesso às páginas (\texttt{/my/} com 404). Também há relação entre correção e interoperabilidade na forma de exibir números: o mesmo valor aparece como 53,00, 75,71\% ou \texttt{10.0}, conforme a tela ou o formato. Os dados não permitem relacionar adaptabilidade e adequação funcional, porque todas as tarefas funcionaram em todos os ambientes e versões coletados.
 
 \subsection{Ação de melhoria}
 
-Uma candidata surgiu de M2.4: trocar o reinício do Apache por \texttt{reload} na publicação de novos \emph{virtual hosts} do script de preparação e medir de novo a coexistência na instalação. \pend[ação escolhida, execução e medição antes e depois (\#74)]
+O problema escolhido foi o procedimento de publicação no servidor compartilhado, por ter a menor nota de G2 ligada ao produto em operação (M2.4~=~2), atingir todos os servidores montados pelo script e ter correção objetiva e verificável. A ação, incorporada ao script de preparação (entrega técnica do repositório), troca o \texttt{restart} por \texttt{reload}, configura o roteador como em ``Configuring the Router'' e só envia ao PHP-FPM arquivos \texttt{.php} que existem. Medida com os mesmos instrumentos, a vizinha passou de 1 falha em 52 amostras para 0 em 44 durante a instalação, a raiz e \texttt{/my/} passaram de 404 para redirecionamento ao login, e a verificação do roteador do Moodle deixou de acusar erro.
+
+\subsection{Dificuldades e limitações}
+
+A coleta automatizada exigiu depurar o próprio instrumento: três tentativas de M3.3 foram descartadas (procedimento sem \texttt{DirectoryIndex}, verificação de login e um \texttt{pipefail} que transformava sucesso em falha), todas guardadas no repositório. Ficaram sem resposta o ambiente A2, o Android em aparelho real e o tempo de instalação por uma pessoa (M3.4); as conferências da regra R6 passam para a revisão dos \emph{pull requests}.
 
 % ======================================================================
 \section{Conclusão}
 \label{sec:consideracoes}
 
-A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. A Fase~3 transformou essa especificação em um plano reprodutível, com método, ambiente, massa fictícia, oráculo e cronograma de coleta. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar no piloto. A Fase~4 completa a avaliação com a execução das medições, o julgamento e a ação de melhoria. \pend[conclusão: julgamento de G1 a G3, resposta às decisões D1 a D4, limitações da execução e trabalhos futuros]
+A avaliação desdobrou Adequação Funcional, Compatibilidade e Flexibilidade em 3 objetivos, 11 questões e 12 métricas, executou as medições num servidor reproduzível e julgou os objetivos por critérios fixados antes da coleta. O Moodle 5.3 LTS mostrou-se flexível (G3 atende): instala, atualiza preservando os dados e funciona nos ambientes e versões de PHP coletados. Em adequação funcional e compatibilidade, as funções e os dados se comportaram como esperado, e as duas notas~1 vêm de diferenças de exibição e representação (A-04 e M2.2), que a equipe registra com análise de sensibilidade em vez de reinterpretar o critério. Os problemas que afetam o requisitante estão no entorno: a documentação dividida do roteador e o reinício do servidor compartilhado, este corrigido e verificado na ação de melhoria. Como trabalhos futuros ficam o ambiente A2, o Android em aparelho real, a medição de M3.4 com administradores e a proposta de unificar a configuração do Apache na documentação oficial do Moodle.
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
