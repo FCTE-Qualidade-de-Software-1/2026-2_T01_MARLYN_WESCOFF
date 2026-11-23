@@ -6,6 +6,7 @@
 // Uso:
 //   PW_CORE=<caminho do playwright-core> node scripts/m31_tarefas.js <A1|A3|A4> <estudante> [url]
 //   A1: Chrome do Windows por CDP (CDP_URL, padrão http://127.0.0.1:9333), iniciado antes
+//   A2: Firefox do Windows pelo WebDriver BiDi (scripts/firefox_windows.sh; TMPDIR numa pasta do Windows)
 //   A3: Firefox (build do Playwright) no Ubuntu do WSL
 //   A4: Chromium com o perfil "Pixel 7" do Playwright (Android emulado; não é um aparelho real)
 // Senha das contas da massa: MASSA_SENHA (padrão Aval#2026, fictícia e pública, ver massa/README.md).
@@ -206,6 +207,10 @@ async function navegador() {
     const b = await pw.chromium.connectOverCDP(process.env.CDP_URL || "http://127.0.0.1:9333");
     return { b, opcoes: { viewport: { width: 1366, height: 768 } } };
   }
+  if (amb === "A2") {  // Firefox do Windows pelo WebDriver BiDi (ponte scripts/firefox_windows.sh)
+    const b = await pw.firefox.launch({ channel: "moz-firefox", executablePath: path.join(__dirname, "firefox_windows.sh") });
+    return { b, opcoes: { viewport: { width: 1366, height: 768 } } };
+  }
   if (amb === "A3") return { b: await pw.firefox.launch(), opcoes: { viewport: { width: 1366, height: 768 } } };
   if (amb === "A4") return { b: await pw.chromium.launch(), opcoes: { ...pw.devices["Pixel 7"] } };
   // Outros nomes (por exemplo, php83 e php84 em M3.2): Chromium de computador, como navegador de referência.
@@ -216,9 +221,13 @@ async function navegador() {
   const { b, opcoes } = await navegador();
   const userid = Number(process.env.USERID);
   const linhas = [], estado = {};
-  for (const t of Object.keys(TAREFAS)) {
+  // TAREFAS=T02,T08 repete só essas tarefas (seção 1 do plano: repete-se qualquer falha uma vez).
+  // A repetição grava "repetição" no resultado e um sufixo _rep na captura.
+  const so = process.env.TAREFAS ? process.env.TAREFAS.split(",") : null;
+  const rep = so ? "_rep" : "";
+  for (const t of Object.keys(TAREFAS).filter((x) => !so || so.includes(x))) {
     const c = { docente: await b.newContext(opcoes), estudante: await b.newContext(opcoes), userid, estado };
-    const evid = `${PREFIXO}_${t}_${amb}_${DATA}_${INIC}.png`;
+    const evid = `${PREFIXO}_${t}_${amb}_${DATA}_${INIC}${rep}.png`;
     let ok = false, obs = "", p;
     try {
       [p, ok, obs] = await TAREFAS[t](c);
@@ -229,7 +238,7 @@ async function navegador() {
     if (p) await p.screenshot({ path: path.join(EVID, evid), fullPage: false }).catch(() => {});
     const quando = new Date().toISOString();
     linhas.push([amb, t, t === "T02" || t === "T03" || t === "T06" ? "docente01" : t === "T09" ? `docente01 e ${estudante}` : estudante,
-      quando, ok ? "sim" : "não", obs, evid]);
+      quando, ok ? "sim" : "não", (so ? "repetição: " : "") + obs, evid]);
     console.log(`${amb} ${t} ${ok ? "ok " : "NÃO"} ${obs}`);
     await c.docente.close(); await c.estudante.close();
   }

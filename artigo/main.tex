@@ -524,7 +524,7 @@ O cronograma foi comprimido para a semana anterior à Entrega~2 (ata~02). Em 16 
 
 \subsection{Execução da coleta}
 
-A coleta seguiu o plano da Fase~3 sem alterar métricas, níveis ou critérios, de 15 a 22/11/2026. M1.1 e M1.3 foram coletadas pela interface em 15/11; as demais métricas foram executadas em 22/11 num servidor montado pelo script de preparação (contêiner Ubuntu~24.04, Moodle~5.3.1+ e 4.5.16+, PHP~8.3.37 e 8.4.28, PostgreSQL~17.12), com automação por scripts versionados: Playwright na interface (M3.1 e parte de M3.2), a API do próprio Moodle (M1.2, F4, F5 e F7 de M2.1 e parte de M3.2), \texttt{faketime} nos casos de prazo e contêineres novos da imagem-base em cada execução de M3.3. Cada desvio, cada tentativa descartada e o motivo estão no README de cada métrica, em \texttt{dados/avaliacao/}. Os principais desvios foram: A2 (Firefox no Windows) não coletado e A4 com Android emulado; receptor de F6 substituído por validação estrutural; e tempo de M3.4 medido sobre um procedimento automatizado.
+A coleta seguiu o plano da Fase~3 sem alterar métricas, níveis ou critérios, de 15 a 22/11/2026. M1.1 e M1.3 foram coletadas pela interface em 15/11; as demais métricas foram executadas em 22/11 num servidor montado pelo script de preparação (contêiner Ubuntu~24.04, Moodle~5.3.1+ e 4.5.16+, PHP~8.3.37 e 8.4.28, PostgreSQL~17.12), com automação por scripts versionados: Playwright na interface (M3.1 e parte de M3.2), a API do próprio Moodle (M1.2, F4, F5 e F7 de M2.1 e parte de M3.2), \texttt{faketime} nos casos de prazo e contêineres novos da imagem-base em cada execução de M3.3. Cada desvio, cada tentativa descartada e o motivo estão no README de cada métrica, em \texttt{dados/avaliacao/}. Os principais desvios foram: A4 com Android emulado e A2 com o Firefox do Windows controlado por WebDriver BiDi; receptor de F6 substituído por validação estrutural; e tempo de M3.4 medido sobre um procedimento automatizado.
 
 \subsection{Resultados das medições}
 
@@ -546,7 +546,7 @@ M2.1 Intercâmbio & 7/7 = 1,00 & 4 & confirmada & F2 e F3 na segunda tentativa v
 M2.2 Integridade & 97/132 = 0,73 & 1 & refutada & estrito; por valor, 132/132 \\
 M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & HTTP 200, sem exceção, valores da massa \\
 M2.4 Coexistência & 2/3 = 0,67 & 2 & refutada & E1 sem resposta em 1 de 52 amostras na instalação \\
-M3.1 Acesso & 8/8 = 1,00 & 4 & confirmada & A1, A3 e A4; A2 não coletado \\
+M3.1 Acesso & 8/8 = 1,00 & 4 & confirmada & 4 ambientes; A4 emulado \\
 M3.2 PHP & 12/12 = 1,00 & 4 & confirmada & 8.3 e 8.4 iguais, mesmos avisos no log \\
 M3.3 Instalação & 6/6 = 1,00 & 4 & refutada* & nenhuma falha por \texttt{public/} \\
 M3.4 Tempo & 1,18 min; R = 0 & 4 & confirmada & tempo de procedimento automatizado \\
@@ -560,7 +560,7 @@ M3.5 Preservação & 40/40 = 1,00 & 4 & confirmada & nas 3 atualizações \\
 
 \textbf{G2 -- Compatibilidade.} Os sete formatos foram trocados (M2.1 = 1,00) e as seis funções REST responderam corretamente a um cliente com permissões mínimas (M2.3 = 1,00). A exportação de notas parou na primeira tentativa com a mensagem ``grades/gradesneedregrading'', que mostra o identificador em vez do texto; pelo caminho da interface, que recalcula o livro de notas, funcionou. Em M2.2, os dados chegaram íntegros, mas a comparação estrita do plano conta como divergentes 30 registros do XLSX (o número \texttt{10.0} contra o texto \texttt{10.00}) e 5 questões numéricas do GIFT (sintaxe estendida, mesma resposta): 0,73 pelo critério, 1,00 por valor. Em M2.4, banco e tarefa agendada vizinhos não mudaram; a aplicação web vizinha ficou sem resposta por cerca de 2~s durante a instalação, pelo \texttt{restart} do Apache feito pelo procedimento.
 
-\textbf{G3 -- Flexibilidade.} As oito tarefas de acesso funcionaram no Chrome do Windows, no Firefox do Ubuntu e no Android emulado (M3.1), e as 12 tarefas tiveram o mesmo resultado em PHP~8.3 e 8.4, sem depreciações no log (M3.2). As seis execuções de M3.3 concluíram seguindo só a documentação, em pouco mais de um minuto e sem retentativas, e as três atualizações preservaram os 40 itens (M3.5). O tropeço esperado na raiz \texttt{public/} não ocorreu; o real foi a documentação do servidor web dividida: o bloco da página ``Apache'' não traz o \texttt{DirectoryIndex} exigido em ``Configuring the Router'', e sem ele a raiz do site dá 404, o que descartou a primeira tentativa de M3.3.
+\textbf{G3 -- Flexibilidade.} As oito tarefas de acesso funcionaram no Chrome e no Firefox do Windows, no Firefox do Ubuntu e no Android emulado (M3.1), e as 12 tarefas tiveram o mesmo resultado em PHP~8.3 e 8.4, sem depreciações no log (M3.2). As seis execuções de M3.3 concluíram seguindo só a documentação, em pouco mais de um minuto e sem retentativas, e as três atualizações preservaram os 40 itens (M3.5). O tropeço esperado na raiz \texttt{public/} não ocorreu; o real foi a documentação do servidor web dividida: o bloco da página ``Apache'' não traz o \texttt{DirectoryIndex} exigido em ``Configuring the Router'', e sem ele a raiz do site dá 404, o que descartou a primeira tentativa de M3.3.
 
 \subsection{Julgamento dos objetivos}
 
@@ -576,13 +576,13 @@ O problema escolhido foi o procedimento de publicação no servidor compartilhad
 
 \subsection{Dificuldades e limitações}
 
-A coleta automatizada exigiu depurar o próprio instrumento: três tentativas de M3.3 foram descartadas (procedimento sem \texttt{DirectoryIndex}, verificação de login e um \texttt{pipefail} que transformava sucesso em falha), todas guardadas no repositório. Ficaram sem resposta o ambiente A2, o Android em aparelho real e o tempo de instalação por uma pessoa (M3.4); as conferências da regra R6 passam para a revisão dos \emph{pull requests}.
+A coleta automatizada exigiu depurar o próprio instrumento: três tentativas de M3.3 foram descartadas (procedimento sem \texttt{DirectoryIndex}, verificação de login e um \texttt{pipefail} que transformava sucesso em falha), todas guardadas no repositório. Ficaram sem resposta o Android em aparelho real e o tempo de instalação por uma pessoa (M3.4); as conferências da regra R6 passam para a revisão dos \emph{pull requests}.
 
 % ======================================================================
 \section{Conclusão}
 \label{sec:consideracoes}
 
-A avaliação desdobrou Adequação Funcional, Compatibilidade e Flexibilidade em 3 objetivos, 11 questões e 12 métricas, executou as medições num servidor reproduzível e julgou os objetivos por critérios fixados antes da coleta. O Moodle 5.3 LTS mostrou-se flexível (G3 atende): instala, atualiza preservando os dados e funciona nos ambientes e versões de PHP coletados. Em adequação funcional e compatibilidade, as funções e os dados se comportaram como esperado, e as duas notas~1 vêm de diferenças de exibição e representação (A-04 e M2.2), que a equipe registra com análise de sensibilidade em vez de reinterpretar o critério. Os problemas que afetam o requisitante estão no entorno: a documentação dividida do roteador e o reinício do servidor compartilhado, este corrigido e verificado na ação de melhoria. Como trabalhos futuros ficam o ambiente A2, o Android em aparelho real, a medição de M3.4 com administradores e a proposta de unificar a configuração do Apache na documentação oficial do Moodle.
+A avaliação desdobrou Adequação Funcional, Compatibilidade e Flexibilidade em 3 objetivos, 11 questões e 12 métricas, executou as medições num servidor reproduzível e julgou os objetivos por critérios fixados antes da coleta. O Moodle 5.3 LTS mostrou-se flexível (G3 atende): instala, atualiza preservando os dados e funciona nos ambientes e versões de PHP coletados. Em adequação funcional e compatibilidade, as funções e os dados se comportaram como esperado, e as duas notas~1 vêm de diferenças de exibição e representação (A-04 e M2.2), que a equipe registra com análise de sensibilidade em vez de reinterpretar o critério. Os problemas que afetam o requisitante estão no entorno: a documentação dividida do roteador e o reinício do servidor compartilhado, este corrigido e verificado na ação de melhoria. Como trabalhos futuros ficam o Android em aparelho real, a medição de M3.4 com administradores e a proposta de unificar a configuração do Apache na documentação oficial do Moodle.
 
 \bibliographystyle{sbc}
 \bibliography{referencias}

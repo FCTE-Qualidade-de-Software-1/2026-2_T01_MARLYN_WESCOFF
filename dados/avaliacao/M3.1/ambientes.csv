@@ -1,5 +1,5 @@
 ambiente,sistema,navegador,versao,resolucao,como_foi_acessado,coletado,observacao
 A1,Windows 10/11 (hospedeiro do WSL),Google Chrome,158.0.8127.36 (headless),1366x768,Chrome do Windows controlado por CDP (Playwright 1.63),sim,Ambiente de referência
-A2,Windows,Mozilla Firefox,-,-,-,não,Firefox não instalado no Windows da máquina compartilhada; a build do Playwright só roda no Linux
+A2,Windows 10/11 (hospedeiro do WSL),Mozilla Firefox,160.0.1 (headless),1366x768,"Firefox oficial extraído do instalador da Mozilla (SHA-256 conferido) em AppData\Local\FirefoxAval, controlado pelo WebDriver BiDi (Playwright 1.63, canal moz-firefox, ponte scripts/firefox_windows.sh)",sim,"T02, T08 e T09 falharam na 1ª tentativa por falha do controle por BiDi (tela de login sem preenchimento; clique não registrado) e passaram na repetição"
 A3,Ubuntu 24.04 (WSL2),Firefox (build do Playwright),155.0,1366x768,Playwright 1.63,sim,
 A4,Android emulado,Chromium com o perfil Pixel 7 do Playwright,user agent Android 14 / Chrome 153 Mobile,412x839 com toque,Emulação de dispositivo (não é um aparelho real),sim,Desvio: sem aparelho Android nem SDK na máquina

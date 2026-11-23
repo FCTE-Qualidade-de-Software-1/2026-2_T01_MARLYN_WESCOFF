@@ -2,16 +2,16 @@
 
 Coleta da issue #70, feita em 22/11/2026 na instância `m53php83` do servidor de avaliação (Moodle 5.3.1+, PHP 8.3, massa `contas,catalogo`). Responsável: João Pedro. A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe, e o João Pedro confere na revisão do pull request.
 
-**Resultado parcial: A1, A3 e A4 concluíram as 8 tarefas (8/8), com o mesmo resultado de A1. M3.1 = 1,00 no pior ambiente coletado (nota 4). A2 (Firefox no Windows) não foi coletado.**
+**Resultado: os quatro ambientes concluíram as 8 tarefas (8/8), com o mesmo resultado de A1. M3.1 = 1,00 no pior ambiente (nota 4). H3.1 confirmada (o Android emulado não falhou em nenhuma).**
 
 ## Como foi executado
 
-`scripts/m31_tarefas.js` executa, pela interface web e com Playwright, as tarefas T02, T03, T04, T05, T06, T08, T09 e T11 do plano da Fase 3. Cada papel usa uma sessão limpa (regra R2), e cada ambiente usa um estudante diferente (A1 `est01`, A3 `est03`, A4 `est04`; `est02` fica para A2), para que envios e tentativas não se misturem. T04 e T06 usam a tarefa criada em T03, porque a tarefa da massa não tem o plugin de comentários. Há uma captura por tarefa em `../evidencias/M3.1_<tarefa>_<ambiente>_2026-11-22_JPSM.png`. Os ambientes estão em [`ambientes.csv`](ambientes.csv), e os resultados, em [`execucoes.csv`](execucoes.csv).
+`scripts/m31_tarefas.js` executa, pela interface web e com Playwright, as tarefas T02, T03, T04, T05, T06, T08, T09 e T11 do plano da Fase 3. Cada papel usa uma sessão limpa (regra R2), e cada ambiente usa um estudante diferente (A1 `est01`, A2 `est02`, A3 `est03`, A4 `est04`), para que envios e tentativas não se misturem. T04 e T06 usam a tarefa criada em T03, porque a tarefa da massa não tem o plugin de comentários. Há uma captura por tarefa em `../evidencias/M3.1_<tarefa>_<ambiente>_2026-11-22_JPSM.png`. Os ambientes estão em [`ambientes.csv`](ambientes.csv), e os resultados, em [`execucoes.csv`](execucoes.csv).
 
 ## Desvios
 
 - **A4 não é um celular real:** é o Chromium com o perfil Pixel 7 (tela de 412 × 839, toque e user agent Android). Para a conclusão sobre celular, vale complementar com um aparelho.
-- **A2 não foi coletado:** não há Firefox no Windows desta máquina. Para completar, basta repetir as 8 tarefas num Windows com Firefox, acessando o servidor de avaliação (cerca de 20 minutos).
+- **A2 (Firefox no Windows):** o Firefox 160.0.1 oficial foi extraído do instalador da Mozilla (SHA-256 conferido com a lista publicada) para `AppData\Local\FirefoxAval`, porque a instalação completa pede administrador. O Playwright controla esse Firefox pelo WebDriver BiDi (canal `moz-firefox`), com a ponte `scripts/firefox_windows.sh`, que converte os caminhos do WSL para o Windows. Na primeira tentativa, T02, T08 e T09 falharam por falha do controle (a tela de login ficou sem preenchimento e um clique não foi registrado; as capturas mostram as páginas normais) e, repetidas uma vez como manda a seção 1 do plano, passaram. As duas tentativas estão em `execucoes.csv` (a repetição tem o prefixo "repetição" e capturas com o sufixo `_rep`).
 
 ## Depuração do instrumento (antes da coleta, numa instância descartável)
 
