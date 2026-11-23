@@ -1,0 +1,41 @@
+item,descricao,valor
+I01,"usuários não excluídos",33
+I02,"usuários com e-mail @example.invalid",32
+I03,"cursos (sem o site)",3
+I04,"categorias de curso",1
+I05,"matrículas em AVAL-CAT",31
+I06,"matrículas em AVAL-ORACULO",6
+I07,"matrículas em AVAL-REST",0
+I08,"atribuições de papel",37
+I09,"módulos de atividade em AVAL-CAT",5
+I10,"módulos de atividade em AVAL-ORACULO",13
+I11,"seções de AVAL-CAT",5
+I12,"tarefas (assign)",4
+I13,"envios de tarefa com status submitted",10
+I14,"envios de texto online",10
+I15,"questionários (quiz)",12
+I16,"tentativas de questionário",0
+I17,questões,74
+I18,fóruns,1
+I19,"discussões de fórum",1
+I20,"posts de fórum",4
+I21,"recursos (resource)",1
+I22,"arquivos de mod_resource (sem diretórios)",1
+I23,"arquivos de envio de tarefa (sem diretórios)",0
+I24,"itens de nota em AVAL-CAT",7
+I25,"itens de nota em AVAL-ORACULO",38
+I26,"categorias de nota em AVAL-ORACULO",9
+I27,"notas com finalgrade em itens manuais de AVAL-CAT",90
+I28,"soma das notas dos itens manuais de AVAL-CAT",674.5
+I29,"eventos de calendário de AVAL-CAT",6
+I30,"módulos de tarefa em AVAL-ORACULO",2
+I31,"nota final de est01 em AVAL-CAT",23.5
+I32,"nota final de est02 em AVAL-CAT",23
+I33,"nota final de est03 em AVAL-CAT",22.5
+I34,"nota final de est04 em AVAL-CAT",22
+I35,"nota final de est05 em AVAL-CAT",21.5
+I36,"nota final de est06 em AVAL-CAT",21
+I37,"nota final de est07 em AVAL-CAT",20.5
+I38,"nota final de est08 em AVAL-CAT",25.5
+I39,"nota final de est09 em AVAL-CAT",19.5
+I40,"nota final de est10 em AVAL-CAT",24.5

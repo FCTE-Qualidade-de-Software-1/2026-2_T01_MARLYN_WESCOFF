@@ -1,13 +1,13 @@
 metrica,questao,objetivo,formula,numerador,denominador,valor_direto,retentativas,condicao,fonte,observacao
-M1.1,Q1.1,G1,1 - Tf/Tt (numerador = tarefas concluídas; denominador = 12),,12,,,,dados/avaliacao/M1.1/execucoes.csv,
-M1.2,Q1.2,G1,Cc/Ct (denominador = 20 casos do oráculo),,20,,,,dados/avaliacao/M1.2/,
-M1.3,Q1.3,G1,1 - Tc/Tt (numerador = tarefas sem contorno; denominador = 12),,12,,,,dados/avaliacao/M1.1/execucoes.csv,
-M2.1,Q2.1,G2,Fs/Ft (denominador = 7 formatos),,7,,,,dados/avaliacao/M2.1/execucoes.csv,
-M2.2,Q2.2,G2,Rc/Rt (soma dos 7 formatos),,,,,,dados/avaliacao/M2.2/resumo.csv,
+M1.1,Q1.1,G1,1 - Tf/Tt (numerador = tarefas concluídas; denominador = 12),12,12,,,,"dados/avaliacao/M1.1/execucoes.csv (PR #98, Bernardo, 15/11/2026)",12 de 12 tarefas concluídas com função do núcleo
+M1.2,Q1.2,G1,Cc/Ct (denominador = 20 casos do oráculo),19,20,,,,dados/avaliacao/M1.2/execucoes.csv,"A-04 não conforme: o Moodle exibe 53,00 de 70 (75,71%) e o oráculo espera 7,57 na escala de 0 a 10; decisão da equipe pendente (ver README de M1.2)"
+M1.3,Q1.3,G1,1 - Tc/Tt (numerador = tarefas sem contorno; denominador = 12),12,12,,,,"dados/avaliacao/M1.1/execucoes.csv, coluna contorno_necessario (PR #98)",nenhuma tarefa exigiu contorno
+M2.1,Q2.1,G2,Fs/Ft (denominador = 7 formatos),7,7,,,,dados/avaliacao/M2.1/execucoes.csv,F2 e F3 concluídos na segunda tentativa válida; F6 com validação estrutural no lugar do Thunderbird
+M2.2,Q2.2,G2,Rc/Rt (soma dos 7 formatos),97,132,,,,dados/avaliacao/M2.2/resumo.csv,"Comparação estrita (só espaços normalizados). Por valor, 132/132: F3 (10.0 x 10.00) e F4 (# =%100%7:0# x #7) divergem só na representação"
 M2.3,Q2.3,G2,Ws/Wt (denominador = 6 funções REST),6,6,,,,dados/avaliacao/M2.3/resultados.csv,"Tentativa 2, após ajuste documentado de configuração do cliente (tentativa 1 em M2.3/tentativa-1/: 4/6)"
 M2.4,Q2.4,G2,Ec/Et (denominador = 3 entidades vizinhas),2,3,,,recuperacao_sem_intervencao,dados/avaliacao/M2.4/verificacoes.csv,E1 afetada: 1 de 52 amostras sem resposta durante a instalação (restart do Apache pelo script de preparação); voltou sozinha
-M3.1,Q3.1,G3,min(1 - Tfa/Tta) no pior ambiente (denominador = 8 tarefas),,8,,,,dados/avaliacao/M3.1/,
-M3.2,Q3.2,G3,min(1 - Tfp/Ttp) na pior versão de PHP (denominador = 12 tarefas),,12,,,,dados/avaliacao/M3.2/,
-M3.3,Q3.3,G3,Ps/Pt (denominador = 6 execuções),,6,,,,dados/avaliacao/M3.3/execucoes.csv,
-M3.4,Q3.3,G3,mediana(tfim - tinício) em minutos; R = retentativas,,,,,,dados/avaliacao/M3.4/,
-M3.5,Q3.4,G3,Ip/It (denominador = 40 itens),,40,,,,dados/avaliacao/M3.5/,
+M3.1,Q3.1,G3,min(1 - Tfa/Tta) no pior ambiente (denominador = 8 tarefas),8,8,,,,dados/avaliacao/M3.1/execucoes.csv,"Pior ambiente entre A1 (Chrome no Windows), A3 (Firefox no Ubuntu) e A4 (Android emulado), todos 8/8; A2 (Firefox no Windows) não coletado"
+M3.2,Q3.2,G3,min(1 - Tfp/Ttp) na pior versão de PHP (denominador = 12 tarefas),12,12,,,,dados/avaliacao/M3.2/,PHP 8.3 e 8.4: 12/12 nas duas; mesmos avisos no log de erros
+M3.3,Q3.3,G3,Ps/Pt (denominador = 6 execuções),6,6,,,,dados/avaliacao/M3.3/execucoes.csv,"Procedimento automatizado, seguindo Installing Moodle/Upgrading e Configuring the Router; tentativas 1 a 3 descartadas por erro do procedimento ou do instrumento (ver README)"
+M3.4,Q3.3,G3,mediana(tfim - tinício) em minutos; R = retentativas,,,1.18,0,,dados/avaliacao/M3.3/execucoes.csv,"Maior das medianas (instalação limpa 1,18 min; atualização 0,90 min); tempo de procedimento automatizado, não de pessoa"
+M3.5,Q3.4,G3,Ip/It (denominador = 40 itens),40,40,,,,dados/avaliacao/M3.5/comparacao.csv,40/40 nas 3 atualizações

@@ -1,0 +1,120 @@
+// question: 6  name: ME01
+::ME01::Qual norma define o modelo de qualidade de produto da série SQuaRE?{
+	=ISO/IEC 25010
+	~ISO/IEC 25040
+	~ISO 9001
+	~ISO/IEC 12207
+}
+
+
+// question: 7  name: ME02
+::ME02::Qual destas é uma característica de qualidade de produto da ISO/IEC 25010?{
+	=Compatibilidade
+	~Rentabilidade
+	~Popularidade
+	~Velocidade de escrita
+}
+
+
+// question: 8  name: ME03
+::ME03::No método GQM, o que vem depois do objetivo?{
+	=Questões
+	~Métricas
+	~Hipóteses de negócio
+	~Requisitos
+}
+
+
+// question: 9  name: ME04
+::ME04::Qual é a capital do Brasil?{
+	=Brasília
+	~Rio de Janeiro
+	~São Paulo
+	~Salvador
+}
+
+
+// question: 10  name: ME05
+::ME05::Quantos minutos tem uma hora?{
+	=60
+	~100
+	~30
+	~90
+}
+
+
+// question: 11  name: ME06
+::ME06::Qual destes é um sistema de gestão da aprendizagem?{
+	=Moodle
+	~PostgreSQL
+	~Apache
+	~Git
+}
+
+
+// question: 12  name: ME07
+::ME07::Qual linguagem é usada no núcleo do Moodle?{
+	=PHP
+	~COBOL
+	~Fortran
+	~Pascal
+}
+
+
+// question: 13  name: ME08
+::ME08::Qual alternativa é um número primo?{
+	=7
+	~9
+	~15
+	~21
+}
+
+
+// question: 14  name: ME09
+::ME09::Qual opção descreve melhor um teste de caixa-preta?{
+	=Teste baseado só em entradas e saídas
+	~%50%Teste baseado em entradas, saídas e no código
+	~Inspeção do código-fonte
+	~Revisão da arquitetura
+}
+
+
+// question: 15  name: ME10
+::ME10::Qual banco de dados é usado no servidor de referência da avaliação?{
+	=PostgreSQL 17
+	~%50%PostgreSQL de versão não informada
+	~SQLite
+	~Planilha
+}
+
+
+// question: 16  name: NU01
+::NU01::Quanto é 12 x 12?{#
+	=%100%144:0#
+}
+
+
+// question: 17  name: NU02
+::NU02::Quanto é 7,5 x 4?{#
+	=%100%30:0#
+}
+
+
+// question: 18  name: NU03
+::NU03::Qual é a média de 6, 8 e 10?{#
+	=%100%8:0#
+}
+
+
+// question: 19  name: NU04
+::NU04::Quantos dias tem uma semana?{#
+	=%100%7:0#
+}
+
+
+// question: 20  name: NU05
+::NU05::Qual é o valor de pi com duas casas decimais?{#
+	=%100%3.14:0.005#
+}
+
+

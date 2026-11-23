@@ -1,0 +1,16 @@
+formato,chave,situacao,campos_divergentes,detalhe
+F4,ME01,identico,,
+F4,ME02,identico,,
+F4,ME03,identico,,
+F4,ME04,identico,,
+F4,ME05,identico,,
+F4,ME06,identico,,
+F4,ME07,identico,,
+F4,ME08,identico,,
+F4,ME09,identico,,
+F4,ME10,identico,,
+F4,NU01,divergente,respostas,respostas: esperado='#144' obtido='# =%100%144:0#'
+F4,NU02,divergente,respostas,respostas: esperado='#30' obtido='# =%100%30:0#'
+F4,NU03,divergente,respostas,respostas: esperado='#8' obtido='# =%100%8:0#'
+F4,NU04,divergente,respostas,respostas: esperado='#7' obtido='# =%100%7:0#'
+F4,NU05,divergente,respostas,respostas: esperado='#3.14:0.005' obtido='# =%100%3.14:0.005#'

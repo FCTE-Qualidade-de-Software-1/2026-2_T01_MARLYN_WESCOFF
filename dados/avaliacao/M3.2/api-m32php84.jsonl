@@ -1,0 +1,4 @@
+{"tarefa":"T01","php":"8.4.28","concluida":"sim","resultado_observado":"curso 6 criado; 4 matrículas (3 estudantes e o docente)","url":"\/course\/view.php?id=6"}
+{"tarefa":"T07","php":"8.4.28","concluida":"sim","resultado_observado":"questionário com 2 questões (múltipla escolha e numérica), soma das notas 10","url":"\/mod\/quiz\/view.php?id=11"}
+{"tarefa":"T10","php":"8.4.28","concluida":"sim","resultado_observado":"categorias com pesos: {\"Provas\":60,\"Trabalhos\":40}","url":"\/grade\/edit\/tree\/index.php?id=6"}
+{"tarefa":"T12","php":"8.4.28","concluida":"sim","resultado_observado":"backup de 9.2 KB restaurado no curso 7; atividades: 2 de 2","url":"\/course\/view.php?id=7"}
