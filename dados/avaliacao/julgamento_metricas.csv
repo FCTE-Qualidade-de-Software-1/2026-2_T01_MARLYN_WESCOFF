@@ -1,13 +1,13 @@
 metrica,valor,nota,hipotese,criterio_hipotese,resultado_hipotese
-M1.1,1.0,4,H1.1,"M1.1 = 1,00",confirmada
-M1.2,0.95,1,H1.2,"M1.2 = 1,00",refutada
-M1.3,1.0,4,H1.3,"M1.3 >= 0,92",confirmada
-M2.1,1.0,4,H2.1,"M2.1 >= 0,85",confirmada
-M2.2,0.7348,1,H2.2,"M2.2 = 1,00",refutada
-M2.3,1.0,4,H2.3,"M2.3 = 1,00",confirmada
-M2.4,0.6667,2,H2.4,"M2.4 = 1,00",refutada
-M3.1,1.0,4,H3.1,"M3.1 >= 0,875 no pior ambiente (conferir também se os 3 desktops concluem tudo)",confirmada
-M3.2,1.0,4,H3.2,"M3.2 = 1,00 nas duas versões",confirmada
-M3.3,1.0,4,H3.3,"M3.3 >= 0,83 (conferir também as 3 limpas e a falha esperada por public/)",confirmada
-M3.4,1.18,4,H3.3,instalação limpa em até 15 min,confirmada
-M3.5,1.0,4,H3.4,"M3.5 = 1,00",confirmada
+M1.1,1.0,4,H1.1,12 de 12 tarefas com função,confirmada
+M1.2,0.95,1,H1.2,todos os casos iguais ao oráculo,refutada
+M1.3,1.0,4,H1.3,11 de 12 tarefas sem contorno (só a restauração de backup),refutada
+M2.1,1.0,4,H2.1,6 ou 7 de 7 formatos,confirmada
+M2.2,0.7348,1,H2.2,todos os registros iguais à referência,refutada
+M2.3,1.0,4,H2.3,6 de 6 funções,confirmada
+M2.4,0.6667,2,H2.4,3 de 3 entidades vizinhas sem efeito,refutada
+M3.1,1.0,4,H3.1,7 ou 8 de 8 no pior ambiente (conferir também se os 3 desktops concluem tudo),confirmada
+M3.2,1.0,4,H3.2,mesmo resultado nas 12 tarefas com PHP 8.3 e 8.4,confirmada
+M3.3,1.0,4,H3.3,5 de 6 (conferir também se as 3 limpas concluem e a falha é por public/),refutada
+M3.4,1.18,4,H3.3,instalação limpa em menos de 15 min,confirmada
+M3.5,1.0,4,H3.4,40 de 40 itens iguais,confirmada
