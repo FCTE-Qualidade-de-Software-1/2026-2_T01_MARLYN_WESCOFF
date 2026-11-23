@@ -1,4 +1,4 @@
-# Dashboard das métricas PSM/CID
+# Dashboard dos indicadores de gestão (PSM/CID)
 
 > Retrato gerado automaticamente em **23/11/2026** a partir dos dados consolidados. Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos registros reais quando disponíveis.
 
