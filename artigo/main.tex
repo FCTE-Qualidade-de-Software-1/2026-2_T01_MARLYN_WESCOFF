@@ -459,43 +459,25 @@ Pedro Goncalves Rocha & Primeira versão da Fase 1; matriz de priorização; obj
 \section{Declaração de uso de inteligência artificial}
 \label{ap:ia}
 
-A equipe usou Claude Code (Anthropic) nas Entregas~1 e~2, Claude (Anthropic) no plano da Fase~3 e na massa de dados, e Codex (OpenAI) na gestão PSM/CID, na GitPage e no artigo da Entrega~2. A Tabela~\ref{tab:ia} reproduz os usos, as tarefas e as formas de conferência da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests. Pedro e Carlos usaram o Claude Code (Anthropic) em todas as suas tarefas, da abertura de \emph{issues} à revisão de \emph{pull requests}. Em todas houve revisão humana: o próprio integrante conferiu cada issue, commit, pull request e comentário antes de publicá-lo, e as mudanças entraram na \texttt{main} por pull request. Todos os integrantes informaram os seus usos.
+A Tabela~\ref{tab:ia} diz qual ferramenta de IA cada integrante usou, para que a usou e como conferiu o resultado. Nenhum resultado foi aceito apenas por ter sido gerado por IA: cada integrante conferiu o que produziu com as fontes do projeto e executou os scripts e testes quando aplicável. Na Entrega~1, a revisão foi registrada nas \emph{issues}; a partir de 10/11/2026, todas as mudanças entraram na \texttt{main} por \emph{pull request} revisado por outro integrante.
 
 \begin{table}[!ht]
 \centering
 \caption{Uso de ferramentas de IA nas Entregas 1 e 2.}
 \label{tab:ia}
 \scriptsize
-\begin{tabularx}{\linewidth}{p{3.7cm}Lp{2.8cm}}
+\begin{tabularx}{\linewidth}{p{1.5cm}p{2cm}LL}
 \toprule
-\textbf{Data, ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} & \textbf{Integrante} \\
+\textbf{Integrante} & \textbf{Ferramenta} & \textbf{Para que usou} & \textbf{Como conferiu} \
 \midrule
-25/10/2026; Claude Code: migração e revisão da Fase~1 & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
-25/10/2026; Claude Code: requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências & Maykon (uso); Carlos (revisão, \emph{issue} \#2) \\
-25/10/2026; Claude Code: plano GQM, métricas, níveis e julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
-25--26/10/2026; Claude Code: redação, LaTeX e diagramas do artigo & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 & Maykon (uso); Pedro (revisão) \\
-25--26/10/2026; Claude Code: GitPage, \emph{workflows} e script PSM/CID & Construção estrita, testes de navegação e comparação do script com as \emph{issues}; \emph{issues} \#11 e \#13 & Maykon (uso); João Pedro (revisão) \\
-11/11/2026; Codex: gerador e oito figuras PSM/CID (\#26) & Execução dos scripts; conferência visual dos SVGs e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
-11/11/2026; Codex: dashboard e tabela-resumo (\#27) & Construção estrita, inspeção da página e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
-11/11/2026; Codex: integração PSM/CID à GitPage (\#29) & Construção estrita e verificação de links, navegação e duplicações & Bernardo (uso); revisão solicitada no PR \\
-11/11/2026; Codex: texto PSM/CID no artigo (\#30) & Compilação, inspeção visual e conferência das referências e do limite de páginas & Bernardo (uso); revisão solicitada no PR \\
-11/11/2026; Codex: harmonização da declaração de IA (\#31) & Comparação da GitPage com o LaTeX e conferência das tarefas e ferramentas & Bernardo (uso); revisão solicitada no PR \\
-15/11/2026; Codex: Fase~3 e custos no artigo (\#56) & Comparação com o plano, os construtos e o dashboard; compilação e inspeção do PDF & Bernardo (uso); revisão solicitada no PR \\
-15/11/2026; Codex: declaração do PC2 e Apêndice~B (\#57) & Levantamento dos usos, comparação entre GitPage e artigo, construção estrita e compilação & Bernardo (uso); revisão solicitada no PR \\
-15/11/2026; Claude Code: condensação das Fases~1 e~2 e script do servidor (\#55 e \#62) & Compilação e conferência das páginas; execução do script do zero em Ubuntu 24.04 & Maykon (uso); revisão no PR \#88 \\
-10/11/2026; Claude Code: revisão dos PRs \#33 a \#38 & Conferência com as \emph{issues} \#16 a \#22 e com os dados do GitHub; alterações pedidas no PR \#35 & Pedro (uso) \\
-10--11/11/2026; Claude Code: construtos C1 a C3, scripts de extração, consolidação e validação e registro de decisões (\#23 a \#25 e \#28) & Execução dos scripts e do validador; comparação com os dados brutos; construção estrita do site & Pedro (uso) \\
-14/11/2026; Claude Code: custo da hora, DG-02, DG-09 e processo de trabalho (PR \#51) & Conferência na Lei 11.788/2008 e na faixa do Glassdoor; consolidados regenerados; construção estrita & Pedro (uso); Bernardo (revisão) \\
-14/11/2026; Claude Code: issues \#52 a \#78, milestones e quadro (\#58) & Tarefas, responsáveis e estimativas definidos pelo integrante; conferência no GitHub & Pedro (uso) \\
-15/11/2026; Claude Code: revisão dos PRs \#79 e \#83 a \#86 e restauração deste apêndice (PR \#95) & Testes e merge de teste com a \texttt{main}; conferência com a Fase~2 e o plano da Fase~3; compilação (14 páginas) & Pedro (uso); Carlos (revisão) \\
-10--11/11/2026; Claude Code: bloco~1 da gestão PSM/CID (\#15 a \#22; PRs \#33 a \#38) & Revisão humana do integrante antes de cada \emph{commit}; PRs revisados por Pedro, com alterações pedidas no \#35 & Carlos (uso); Pedro (revisão) \\
-15--16/11/2026; Claude Code: ata~02, plano da Fase~4, roteiro do PC2 e scripts de M2.2 e do julgamento (\#53, \#54, \#61, \#65, \#68 e \#72) & Revisão humana do integrante; testes automatizados; PRs revisados por outro integrante, com alteração pedida no \#86 & Carlos (uso); Pedro (revisão) \\
-15/11/2026; Claude: plano final da Fase~3 (\#52; PR \#89) & Comparação com a ata~02, o script do servidor (\#62) e o oráculo (\#64); construção estrita e \emph{merge} de teste & João Pedro (uso) \\
-15/11/2026; Claude: \texttt{gera\_massa.py}, arquivos de referência e testes (\#63; PR \#90) & Massa aplicada no Moodle 4.5.16 local; 20 casos do oráculo, notas e importações GIFT e CSV conferidos; funções conferidas no código da 5.3.1 & João Pedro (uso) \\
-16/11/2026; Claude: registro destes usos na GitPage e neste apêndice & Comparação linha a linha entre a GitPage e o LaTeX; construção estrita e compilação & João Pedro (uso) \\
+Bernardo & Codex (OpenAI) & Gráficos e \emph{dashboard} da gestão do projeto, integração da gestão à GitPage, textos do artigo, revisão da rubrica e organização desta declaração & Execução dos scripts, comparação com os CSVs, construção estrita do site e compilação do artigo \
+Carlos & Claude Code (Anthropic) & Gestão do projeto, atas, plano de execução da Fase~4, roteiro do PC2, scripts de comparação de M2.2 e de julgamento e correções apontadas no PC2 & Revisão de cada \emph{commit}, testes automatizados dos scripts e construção estrita do site \
+João Pedro & Claude (Anthropic) & Plano de avaliação da Fase~3, gerador da massa de dados, conferência de M3.1 e M3.2 e \emph{checklist} do produto & Massa conferida numa instância do Moodle; evidências comparadas com os CSVs \
+Maykon & Claude Code (Anthropic) & Fases~1 e~2, artigo em \LaTeX{}, GitPage, script do servidor, correções do GQM, execução automatizada das coletas da Fase~4 e ação de melhoria & Conferência com as normas e as aulas, execução em instâncias descartáveis, comparação com o oráculo e as referências \
+Pedro & Claude Code (Anthropic) & Gestão do projeto, planejamento das \emph{issues} do PC2 e da E2, revisão de \emph{pull requests}, materiais da apresentação do PC2 e vistoria dos conceitos depois do PC2 & Scripts executados e validados, testes e \emph{merges} de teste nas revisões, conferência com as aulas \
 \bottomrule
 \end{tabularx}
-\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}; mesmos usos, tarefas e formas de conferência.}
+\tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}.}
 \end{table}
 
 \end{document}
