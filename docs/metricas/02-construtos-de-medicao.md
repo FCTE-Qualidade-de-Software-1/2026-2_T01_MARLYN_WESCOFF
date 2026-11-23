@@ -48,6 +48,14 @@ Uma issue só conta como **concluída** nas medidas A1, A2, B1 e B2 quando atend
 
 Uma issue fechada sem esses requisitos é reaberta e conta como retrabalho (B4).
 
+## Tipo de análise
+
+O PSM classifica a análise que cada medida apoia em três tipos (Aula 09, slide 13). Cada ficha abaixo diz o tipo na linha "Tipo de análise (PSM)":
+
+- **Estimativa:** prever o esforço, o custo ou o prazo de um trabalho antes de fazê-lo (C3).
+- **Viabilidade:** verificar se o plano ainda é alcançável com os recursos e o tempo que restam (A1 e B2).
+- **Desempenho:** acompanhar o que foi feito em relação ao planejado e a capacidade do processo (A2, A3, A4, B1, B3, B4, C1 e C2).
+
 ## Calendário e Progresso
 
 ### A1. Burndown da entrega
@@ -56,6 +64,7 @@ Uma issue fechada sem esses requisitos é reaberta e conta como retrabalho (B4).
 |---|---|
 | Identificador | A1 |
 | Categoria de informação | Calendário e Progresso |
+| Tipo de análise (PSM) | Viabilidade: o plano da entrega ainda é alcançável com o trabalho que falta? |
 | Necessidade de informação | O trabalho comprometido para a entrega será concluído no prazo? Quais produtos de trabalho estão em risco? |
 | Conceito mensurável | Progresso das unidades de trabalho (*Work Unit Progress*) |
 | Entidades relevantes | Issues do milestone da entrega (E2, PC1, Apresentação) |
@@ -83,6 +92,7 @@ Limitação: na E1, as issues foram criadas e fechadas em lote (ver o Diagnósti
 |---|---|
 | Identificador | A2 |
 | Categoria de informação | Calendário e Progresso |
+| Tipo de análise (PSM) | Desempenho: a equipe entregou o que se comprometeu a entregar na semana? |
 | Necessidade de informação | A equipe entrega o que se compromete a entregar em cada iteração? |
 | Conceito mensurável | Progresso das unidades de trabalho (*Work Unit Progress*) |
 | Entidades relevantes | Issues atribuídas a uma iteração (semana) no board |
@@ -110,6 +120,7 @@ Até o board estar em uso (issue #19), o compromisso de cada semana é registrad
 |---|---|
 | Identificador | A3 |
 | Categoria de informação | Calendário e Progresso |
+| Tipo de análise (PSM) | Desempenho: o trabalho flui pelos estados ou se acumula em filas? |
 | Necessidade de informação | O trabalho flui pelos estados do processo ou se acumula em filas e gargalos? |
 | Conceito mensurável | Progresso das unidades de trabalho e efetividade do processo |
 | Entidades relevantes | Todas as issues do repositório |
@@ -137,6 +148,7 @@ Limitação: antes da criação do board (Diagnóstico, lacuna L4) não há hist
 |---|---|
 | Identificador | A4 |
 | Categoria de informação | Calendário e Progresso |
+| Tipo de análise (PSM) | Desempenho: o marco foi cumprido na data prevista? |
 | Necessidade de informação | Os marcos da disciplina foram atingidos nas datas previstas? |
 | Conceito mensurável | Conclusão de marcos (*Milestone Completion*) |
 | Entidades relevantes | Marcos da disciplina: E1, PC1, E2 e Apresentação |
@@ -166,6 +178,7 @@ Observação: na E1, a release foi publicada em 25/10/2026 às 23h26 (horário d
 |---|---|
 | Identificador | B1 |
 | Categoria de informação | Desempenho dos Processos |
+| Tipo de análise (PSM) | Desempenho: quanto tempo as tarefas levaram e se esse tempo é previsível |
 | Necessidade de informação | Quanto tempo a equipe leva para concluir uma tarefa? O tempo de resposta é previsível? Há tarefas paradas? |
 | Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
 | Entidades relevantes | Issues concluídas (definição de pronto) e issues abertas |
@@ -193,6 +206,7 @@ Os dois últimos critérios vêm do plano de medição da E1 e foram mantidos pa
 |---|---|
 | Identificador | B2 |
 | Categoria de informação | Desempenho dos Processos |
+| Tipo de análise (PSM) | Viabilidade: com o ritmo atual, o escopo restante cabe no prazo? |
 | Necessidade de informação | A capacidade de produção da equipe é estável e suficiente para concluir o escopo restante até o próximo marco? |
 | Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
 | Entidades relevantes | Iterações (semanas) e issues concluídas em cada uma |
@@ -220,6 +234,7 @@ Limitação: a disciplina tem poucas semanas até a E2, então a média móvel u
 |---|---|
 | Identificador | B3 |
 | Categoria de informação | Desempenho dos Processos |
+| Tipo de análise (PSM) | Desempenho: com que cadência o trabalho chega à `main` antes de cada marco |
 | Necessidade de informação | Com que cadência a equipe consolida produtos de trabalho na `main`? O trabalho se concentra na véspera dos marcos? |
 | Conceito mensurável | Eficiência do processo: velocidade (*Process Efficiency: Speed*) |
 | Entidades relevantes | Releases (marcos) e pull requests mergeados na `main` |
@@ -247,6 +262,7 @@ A "concentração" é uma medida derivada acrescentada pela equipe, porque o pro
 |---|---|
 | Identificador | B4 |
 | Categoria de informação | Desempenho dos Processos |
+| Tipo de análise (PSM) | Desempenho: quanto da qualidade dos produtos de trabalho é garantida pela revisão interna |
 | Necessidade de informação | Quanto esforço vai para corrigir trabalho já dado como pronto? A revisão interna encontra os problemas antes da entrega? |
 | Conceito mensurável | Efetividade do processo, adaptada do conceito de defeito contido e escapado do PSM CID (*Functional Correctness*) |
 | Entidades relevantes | Pull requests, issues e apontamentos da docente em cada entrega e ponto de controle |
@@ -278,6 +294,7 @@ O custo é medido em **homem-hora**, a medida primária desta categoria. A monet
 |---|---|
 | Identificador | C1 |
 | Categoria de informação | Recursos e Custos |
+| Tipo de análise (PSM) | Desempenho: quanto esforço foi consumido e como ele se distribui |
 | Necessidade de informação | Quanto esforço a equipe está gastando, em que fases e tipos de atividade? O esforço está distribuído entre os integrantes? |
 | Conceito mensurável | Esforço da equipe (*Effort*) |
 | Entidades relevantes | Sessões de trabalho registradas em `esforco.csv`; integrantes de `docs/sobre/equipe.md`; fases e entregas |
@@ -305,6 +322,7 @@ Limitação: a E1 não teve nenhuma hora registrada (Diagnóstico, lacuna L1). A
 |---|---|
 | Identificador | C2 |
 | Categoria de informação | Recursos e Custos |
+| Tipo de análise (PSM) | Desempenho: quanto cada integrante contribuiu, em várias dimensões |
 | Necessidade de informação | Como o trabalho de cada entrega se distribui entre os integrantes? A Tabela de Contribuição do artigo (Apêndice A) é sustentada pelos dados do repositório? |
 | Conceito mensurável | Esforço da equipe, distribuído por integrante (*Effort*) |
 | Entidades relevantes | Integrantes; commits da `main`; issues concluídas; revisões de pull request; sessões de `esforco.csv` |
@@ -332,6 +350,7 @@ Limitação: o número de commits, sozinho, é uma medida ruim de contribuição
 |---|---|
 | Identificador | C3 |
 | Categoria de informação | Recursos e Custos |
+| Tipo de análise (PSM) | Estimativa: as estimativas de esforço são confiáveis para planejar as próximas fases? |
 | Necessidade de informação | As estimativas de esforço da equipe são precisas o bastante para planejar as próximas fases e entregas? |
 | Conceito mensurável | Acurácia da estimativa (*Estimation Accuracy*) |
 | Entidades relevantes | Issues concluídas com estimativa; fases e entregas |
