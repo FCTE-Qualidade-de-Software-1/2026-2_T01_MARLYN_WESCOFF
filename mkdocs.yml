@@ -7,7 +7,7 @@ repo_name: 2026-2_T01_MARLYN_WESCOFF
 edit_uri: edit/main/docs/
 
 # Versão e data da GitPage. Atualizar a cada entrega ou mudança relevante.
-copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 2 | Versão 2.0 · 11/11/2026"
+copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Ponto de controle 2 | Versão 2.1 · 16/11/2026"
 
 theme:
   name: material
@@ -121,18 +121,22 @@ nav:
       - Rastreabilidade Fase 1 → Fase 2: fase-2/rastreabilidade.md
   - Fase 3:
       - Plano de avaliação: fase-3/plano-de-avaliacao.md
-  - Gestão do Projeto - Métricas PSM/CID:
+      - Preparação do servidor: fase-3/preparacao-do-servidor.md
+  - Fase 4:
+      - Plano de execução: fase-4/plano-de-execucao.md
+  - Gestão do projeto (PSM/CID):
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
       - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
-      - Indicadores e dashboard: metricas/dashboard.md
+      - Dashboard dos indicadores de gestão: metricas/dashboard.md
       - Decisões de gestão: metricas/03-registro-de-decisoes.md
       - Checklist de conformidade: metricas/05-checklist-entrega.md
       - Medições históricas: gestao/registro-medicoes.md
       - Atas: gestao/atas.md
+      - Retrospectiva da E1: gestao/retrospectiva-e1.md
       - Dados brutos: metricas/dados/brutos/README.md
       - Dados consolidados: metricas/dados/consolidados/README.md
       - Termo de consentimento: gestao/termo-consentimento.md

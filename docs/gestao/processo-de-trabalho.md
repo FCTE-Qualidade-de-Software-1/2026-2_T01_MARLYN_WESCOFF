@@ -28,7 +28,7 @@ As labels e os milestones alimentam as medidas da gestão PSM/CID. Toda issue re
 
 <p class="legenda">Tabela 1. Labels das issues e seu uso nas medidas. Fonte: elaboração própria.</p>
 
-Cada milestone corresponde a um marco da disciplina: `E1 - 26/10/2026` (fechado), `PC1`, `E2` e `Apresentação`. Issues abertas sem milestone formam o backlog.
+Cada milestone corresponde a uma entrega da disciplina: `E1 - 26/10/2026` e `PC1` (fechados), `PC2` (15/11/2026) e `E2` (22/11/2026). As apresentações não têm milestone, porque não geram entrega no repositório. Issues abertas sem milestone formam o backlog.
 
 ## Antes de abrir o pull request
 

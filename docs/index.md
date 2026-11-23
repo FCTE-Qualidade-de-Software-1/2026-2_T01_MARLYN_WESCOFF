@@ -10,8 +10,9 @@ hide:
 
 1. **O problema.** Uma instituição de ensino superior que mantém um Moodle precisa decidir se adota ou atualiza para a versão 5.3 LTS. A decisão depende de três perguntas: o núcleo cobre as tarefas acadêmicas essenciais? O Moodle troca dados com os sistemas vizinhos sem perdas? Ele pode ser instalado, atualizado e usado nos ambientes previstos?
 2. **O que fizemos na Entrega 1.** Definimos o propósito, as partes interessadas, o produto, o modelo de qualidade adaptado e o escopo ([Fase 1](fase-1/index.md)). Depois, transformamos as três características em três objetivos GQM, com 11 questões, 11 hipóteses, 12 métricas e critérios de julgamento ([Fase 2](fase-2/index.md)).
-3. **O que vem a seguir.** Na Entrega 2, a equipe instala o ambiente, executa as medições e julga os resultados ([Plano de avaliação da Fase 3](fase-3/plano-de-avaliacao.md) e [Plano de execução da Fase 4](fase-4/plano-de-execucao.md)).
-4. **Como o projeto é acompanhado.** A seção [Gestão do Projeto - Métricas PSM/CID](gestao/index.md) liga necessidades de informação, medidas, indicadores e decisões registradas.
+3. **O que fizemos no Ponto de controle 2.** Planejamos a avaliação: ambiente, massa de dados, procedimentos e cronograma ([Plano de avaliação da Fase 3](fase-3/plano-de-avaliacao.md) e [Preparação do servidor](fase-3/preparacao-do-servidor.md)), e detalhamos como cada métrica será coletada ([Plano de execução da Fase 4](fase-4/plano-de-execucao.md)).
+4. **O que vem a seguir.** Na Entrega 2 (22/11/2026), a equipe executa as medições, julga os resultados e propõe a ação de melhoria.
+5. **Como o projeto é acompanhado.** A seção [Gestão do projeto (PSM/CID)](gestao/index.md) liga necessidades de informação, medidas, indicadores e decisões registradas.
 
 ## Repositório e evidências
 

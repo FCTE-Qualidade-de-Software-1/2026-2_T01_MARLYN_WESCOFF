@@ -42,11 +42,11 @@ GitPage: \url{https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_W
 \end{center}
 
 \begin{abstract}
-This paper reports the first two phases of a product quality evaluation of Moodle 5.3 LTS, an open source learning management system, following the ISO/IEC 25040 evaluation process and the ISO/IEC 25010:2023 product quality model. The evaluation supports a higher education institution deciding whether to upgrade to the new long-term support release. A weighted decision matrix with a feasibility filter and sensitivity analysis prioritized Functional Suitability, Compatibility and Flexibility. Using the Goal--Question--Metric approach, the three characteristics were refined into three measurement goals, eleven questions with hypotheses, and twelve metrics derived from ISO/IEC 25023, each with scoring levels and explicit judgment rules. Project execution is tracked with PSM/CID measures.
+This paper reports the first three phases of a product quality evaluation of Moodle 5.3 LTS, an open source learning management system, following the ISO/IEC 25040 evaluation process and the ISO/IEC 25010:2023 product quality model. The evaluation supports a higher education institution deciding whether to upgrade to the new long-term support release. A weighted decision matrix with a feasibility filter and sensitivity analysis prioritized Functional Suitability, Compatibility and Flexibility. Using the Goal--Question--Metric approach, the three characteristics were refined into three measurement goals, eleven questions with hypotheses, and twelve metrics derived from ISO/IEC 25023, each with scoring levels and explicit judgment rules. Phase 3 designs the evaluation, with environment, synthetic test data, oracle and schedule.
 \end{abstract}
 
 \begin{resumo}
-Este artigo relata as duas primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A execução do projeto é acompanhada com medidas do PSM/CID.
+Este artigo relata as três primeiras fases da avaliação da qualidade de produto do Moodle 5.3 LTS, sistema de gestão da aprendizagem de código aberto, seguindo o processo de avaliação da ISO/IEC 25040 e o modelo de qualidade de produto da ISO/IEC 25010:2023. A avaliação apoia uma instituição de ensino superior na decisão de atualizar para a nova versão de suporte estendido. Uma matriz de decisão ponderada, com filtro de viabilidade e análise de sensibilidade, priorizou Adequação Funcional, Compatibilidade e Flexibilidade. Com o método \textit{Goal--Question--Metric}, as três características foram desdobradas em três objetivos de medição, onze questões com hipóteses e doze métricas derivadas da ISO/IEC 25023, cada uma com níveis de pontuação e regras de julgamento explícitas. A Fase~3 projeta a avaliação, com ambiente, massa de dados fictícia, oráculo e cronograma.
 \end{resumo}
 
 % ======================================================================
@@ -59,7 +59,7 @@ Em 05/10/2026 foi lançado o Moodle 5.3, nova versão de suporte estendido (LTS)
 
 Este trabalho avalia a qualidade de produto do Moodle 5.3 LTS para apoiar essa decisão. A avaliação segue o processo da ISO/IEC 25040~\cite{iso25040}, adota o modelo de qualidade da ISO/IEC 25010:2023~\cite{iso25010} e especifica as medições com o método GQM~\cite{basili1994gqm}. O projeto foi conduzido pelo Grupo Marlyn Wescoff na disciplina Qualidade de Software~1 da FCTE/UnB~\cite{ramos2026trabalho}.
 
-A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia do projeto; a Seção~\ref{sec:resultados-psm}, os resultados da gestão; as Seções~\ref{sec:fase1} e~\ref{sec:fase2}, as Fases~1 e~2; e a Seção~\ref{sec:consideracoes}, as considerações parciais. Os apêndices trazem a contribuição da equipe e a declaração de uso de IA.
+A Seção~\ref{sec:referencial} apresenta o referencial teórico; a Seção~\ref{sec:metodologia}, a metodologia do projeto; as Seções~\ref{sec:fase1}, \ref{sec:fase2} e~\ref{sec:fase3}, as Fases~1 a~3; e a Seção~\ref{sec:consideracoes}, as considerações parciais. Os apêndices trazem a contribuição da equipe e a declaração de uso de IA.
 
 % ======================================================================
 \section{Referencial teórico}
@@ -76,10 +76,6 @@ A ISO/IEC 25040 organiza a avaliação em quatro fases~\cite{iso25040,ramos2026a
 \subsection{Goal--Question--Metric}
 
 O GQM~\cite{basili1994gqm} orienta a medição a objetivos em três níveis: \emph{conceitual} (objetivo), \emph{operacional} (questões) e \emph{quantitativo} (métricas). O objetivo segue um template de cinco elementos: \emph{analisar} um objeto, \emph{para o propósito de} entender, melhorar ou controlar, \emph{com respeito a} um foco de qualidade, \emph{do ponto de vista de} quem deseja a avaliação, \emph{no contexto de} um ambiente. As \emph{abstraction sheets} registram foco de qualidade, hipóteses de \textit{baseline} e fatores de variação~\cite{ramos2026aulas}.
-
-\subsection{PSM e o guia CID}
-
-O PSM (\textit{Practical Software and Systems Measurement}) é uma abordagem de medição dirigida por necessidades de informação, com forte ligação com a gestão de projetos~\cite{mcgarry2002psm}. Seu modelo de informação liga entidades e atributos a medidas básicas, medidas derivadas e indicadores, interpretados por modelos de análise e critérios de decisão. O guia CID (\textit{Continuous Iterative Development Measurement Framework}) adapta o PSM a projetos iterativos e lista, em sua Tabela~5, conceitos mensuráveis e medidas para categorias como Calendário e Progresso, Recursos e Custos e Desempenho dos Processos~\cite{psmcid2021}.
 
 % ======================================================================
 \section{Metodologia de desenvolvimento do projeto}
@@ -111,79 +107,6 @@ O projeto segue as quatro fases da ISO/IEC 25040 (Figura~\ref{fig:processo}). A 
 A equipe tem cinco integrantes. O trabalho foi dividido por característica de qualidade, com um responsável e um revisor para cada uma; as seções transversais (propósito, partes interessadas, ODS, gestão, artigo e GitPage) foram distribuídas entre os integrantes. As decisões coletivas são registradas em atas no repositório.
 
 O repositório Git da disciplina concentra documentos, dados e o código-fonte deste artigo. Cada tarefa é uma \emph{issue} com estimativa e marco. Mudanças de conteúdo são submetidas por \emph{pull request}; o autor solicita a revisão de outro integrante e só integra na \texttt{main} depois da aprovação. Pull requests dependentes são revisados e mesclados na ordem do trabalho. A GitPage, gerada com MkDocs Material a partir de \texttt{docs/}, e o artigo são publicados por \emph{workflows} do GitHub Actions.
-
-\subsection{Gestão com PSM/CID}
-
-A gestão foi instrumentada pelo PSM, abordagem dirigida por necessidades de informação, e pelo \emph{Continuous Iterative Development Measurement Framework} (PSM CID) v2.1~\cite{psmcid2021}. A terminologia foi adaptada: fase da ISO/IEC 25040 equivale a \emph{capability/epic}; produto de trabalho, a \emph{feature}; \emph{issue}, a \emph{story}; semana ISO, a iteração; e marco da disciplina, a \emph{release}. Uma issue conta como concluída quando seu produto está versionado, o critério de pronto foi atendido e, quando aplicável, o pull request foi aprovado por outro integrante.
-
-Os dados vêm do Git, GitHub Issues, \emph{milestones}, pull requests e Project Board, além do apontamento manual de horas em \texttt{docs/metricas/dados/brutos/esforco.csv}. Scripts versionados preservam os dados brutos, geram os consolidados e produzem indicadores. Os limiares da Tabela~\ref{tab:psm} foram declarados antes da análise da E2; ultrapassá-los exige investigar a causa e registrar uma decisão, não representa automaticamente falha do projeto.
-
-\begin{table}[!ht]
-\centering
-\caption{Medidas do PSM/CID usadas na gestão do projeto.}
-\label{tab:psm}
-\footnotesize
-\scriptsize
-\begin{tabularx}{\linewidth}{p{1.9cm}p{2.5cm}p{2.7cm}p{2.3cm}L}
-\toprule
-\textbf{Categoria} & \textbf{Necessidade} & \textbf{Medidas} & \textbf{Indicador} & \textbf{Critério} \\
-\midrule
-Calendário e Progresso & O escopo cabe no prazo e flui sem gargalo? & A1 burndown; A2 comprometido/concluído; A3 fluxo & Linhas, colunas e áreas & A1 $>5\%$; A2 $>5\%$; faixa A3 $>10\%$ \\
-Desempenho dos Processos & Tempo e capacidade são previsíveis? & B1 cycle time; B2 velocidade & Histograma e média móvel & B1 $>5$ dias; B2 $>10\%$ ou além do prazo \\
-Recursos e Custos & Esforço equilibrado e estimativas confiáveis? & C1 esforço; C2 contribuição; C3 estimado/real & Barras e dispersão & C1 $>\pm30\%$; C2 $>30$ p.p.; C3 fora de 0,85--1,25 \\
-\bottomrule
-\end{tabularx}
-\tabfonte{elaboração própria a partir do PSM/CID~\cite{psmcid2021}.}
-\end{table}
-
-\section{Resultados da gestão PSM/CID}
-\label{sec:resultados-psm}
-
-Na semana 2026-W46, oito das nove issues comprometidas estavam concluídas: 88,89\%, diferença de 11,11\%, fora do limiar de A2 (Figura~\ref{fig:a2-artigo}). O cycle time da E2 apresentou mediana de 1 dia e P80/P90 de 2 dias, dentro do limite de B1 (Figura~\ref{fig:b1-artigo}), mas a amostra inclui tarefas abertas perto da conclusão. Em C2, Carlos concentrou issues concluídas; Pedro, revisões e integração; Bernardo e João, horas reconstruídas. A maior divergência individual foi 100 p.p., portanto exige explicação, não ocultação (Figura~\ref{fig:c2-artigo}).
-
-\begin{center}
-\captionsetup{font=scriptsize}
-\begin{minipage}[t]{.32\linewidth}
-\centering
-\includegraphics[width=\linewidth]{../docs/metricas/graficos/fig-a2-comprometido-concluido.png}
-\captionof{figure}{Comprometido e concluído. Fonte: \texttt{comprometido\_concluido.csv}, 11/11/2026.}
-\label{fig:a2-artigo}
-\end{minipage}\hfill
-\begin{minipage}[t]{.32\linewidth}
-\centering
-\includegraphics[width=\linewidth]{../docs/metricas/graficos/fig-b1-cycle-time.png}
-\captionof{figure}{Cycle time da E2. Fonte: \texttt{cycle\_time.csv}, 11/11/2026.}
-\label{fig:b1-artigo}
-\end{minipage}\hfill
-\begin{minipage}[t]{.32\linewidth}
-\centering
-\includegraphics[width=\linewidth]{../docs/metricas/graficos/fig-c2-contribuicao.png}
-\captionof{figure}{Contribuição multidimensional. Fonte: \texttt{contribuicao.csv}, 11/11/2026.}
-\label{fig:c2-artigo}
-\end{minipage}
-\end{center}
-
-\begin{table}[!ht]
-\centering
-\caption{Decisões de gestão selecionadas e seus efeitos.}
-\label{tab:decisoes-psm}
-\scriptsize
-\begin{tabularx}{\linewidth}{p{1.1cm}p{3cm}Lp{2.5cm}}
-\toprule
-\textbf{ID} & \textbf{Evidência} & \textbf{Ação} & \textbf{Efeito} \\
-\midrule
-DG-02 & Duas semanas com 0 h & Apontar por sessão e validar automaticamente & Verificar em 17/11 \\
-DG-04 & Velocidade zero nas W44--W45 & Dividir issues \#15--\#32 em blocos & 25 pontos na W46 \\
-DG-05 & E1 sem PR ou revisão registrada & Exigir PR aprovado por outro integrante & Revisões e não conformidade contida \\
-DG-08 & 100\% das linhas nas 48 h finais & Congelar conteúdo três dias antes do marco & Verificar na E2 \\
-\bottomrule
-\end{tabularx}
-\tabfonte{elaboração própria a partir do registro de decisões PSM/CID.}
-\end{table}
-
-\subsection{Ameaças à validade}
-
-As horas da E1 e os primeiros registros da E2 foram reconstruídos após o trabalho e têm erro de memória; mesmo registros contemporâneos sofrem viés de autoapontamento. Commits e linhas medem integração e tamanho da mudança, não esforço intelectual, por isso C2 mantém cinco dimensões. As poucas semanas instrumentadas e a abertura tardia de issues reduzem a validade de tendências de velocidade e cycle time. Os resultados descrevem este projeto e não devem ser generalizados como produtividade individual.
 
 % ======================================================================
 \section{Fase 1: estabelecimento dos requisitos de avaliação}
@@ -224,7 +147,7 @@ A avaliação tem dois requisitantes: a \emph{docente da disciplina}, que define
 \toprule
 \textbf{Parte interessada (papel)} & \textbf{Critério de sucesso} & \textbf{Influência na avaliação} \\
 \midrule
-Docente (requisitante acadêmica) & Métricas com fonte e procedimento definidos & Exclui usabilidade; exige GQM e PSM \\
+Docente (requisitante acadêmica) & Métricas com fonte e procedimento definidos & Exclui usabilidade; exige GQM \\
 Coordenação de TI (comprador/operador) & Julgamento por característica para decidir D1--D3 & Ponto de vista dos objetivos G1--G3 \\
 Gestão acadêmica (H) & Todas as tarefas essenciais cobertas e corretas & Prioriza adequação funcional \\
 Administradores (H) (operadores) & Instalar e atualizar sem erro bloqueante e sem perda de dados & Prioriza instalabilidade e coexistência \\
@@ -389,7 +312,7 @@ As métricas derivam da ISO/IEC 25023~\cite{iso25023} e são razões de 0 a 1 em
 \scriptsize
 \begin{tabularx}{\linewidth}{p{0.65cm}p{2.25cm}p{1.9cm}p{2.6cm}L}
 \toprule
-\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Medidas básicas e fonte} \\
+\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Elementos de medida e fonte} \\
 \midrule
 M1.1 & Cobertura funcional & $1 - T_f/T_t$ & Functional implementation coverage & $T_t=12$ tarefas; $T_f$ sem função ou com falha; formulário de execução \\
 M1.2 & Correção funcional & $C_c/C_t$ & Correctness & $C_t=20$ casos (questionário, agregação, prazo); oráculo calculado à mão \\
@@ -478,10 +401,30 @@ A Figura~\ref{fig:gqm} mostra a hierarquia nos três níveis: toda métrica resp
 \end{figure}
 
 % ======================================================================
+\section{Fase 3: projeto da avaliação}
+\label{sec:fase3}
+
+\subsection{Método e ambiente}
+
+A avaliação foi projetada como externa, de caixa-preta e orientada a tarefas, sobre o núcleo do Moodle 5.3 LTS com o tema Boost e sem plugins de terceiros. Os critérios de sucesso e os níveis de julgamento da Fase~2 são congelados antes da coleta. Instalações e atualizações têm três execuções cada; nos demais casos faz-se uma execução completa e repete-se qualquer falha para separar defeito do produto de erro do avaliador. Cada caso gera um registro com data, avaliador, resultado e evidência, e um segundo integrante confere o oráculo, uma execução de M3.3 e a lista de preservação de M3.5.
+
+O servidor de referência é uma máquina virtual Ubuntu 24.04 LTS, com 2~vCPU, 4~GB de RAM e 40~GB de disco, Apache~2.4, PostgreSQL~17 e duas instâncias equivalentes com PHP~8.3 e 8.4. Avaliam-se o Moodle~5.3.x e a atualização a partir da versão~4.5.x; um único \emph{snapshot} sem Moodle origina as máquinas limpas. O acesso cobre Windows/Chrome, Windows/Firefox, Ubuntu/Firefox e Android/Chrome. As ferramentas auxiliares incluem \texttt{curl} ou Python para REST, LibreOffice e Thunderbird como receptores, \texttt{script} para logs temporais e \texttt{sha256sum} e consultas SQL para verificação de integridade.
+
+\subsection{Massa de dados e oráculo}
+
+A massa fictícia e reproduzível contém 30 estudantes, um docente, um administrador e dois cursos. O curso principal reúne as 12 tarefas do catálogo e atividades de tarefa, questionário, fórum e arquivo; o segundo curso recebe a restauração. Também são congelados arquivos de importação e comparação, sem dados pessoais reais e com e-mails no domínio reservado \texttt{example.invalid}. A geração por script evita variação entre as instalações e entre as medições anteriores e posteriores à atualização.
+
+O oráculo de M1.2 possui 20 casos calculados manualmente antes da coleta: 10 de pontuação de questionário, 6 de agregação ponderada e 4 de controle de prazo. Cada linha registra configuração, entradas, resultado esperado e tolerância de 0,01 ponto. Para as demais métricas, a documentação oficial e os arquivos de referência congelados funcionam como origem da verdade; qualquer passo não documentado é registrado como contorno, sem ajuste posterior do critério.
+
+\subsection{Cronograma de execução}
+
+O cronograma foi comprimido para a semana anterior à Entrega~2 (ata~02). Em 16 e 17/11, a equipe monta os servidores pelo script de preparação, gera a massa de dados, confere o oráculo, prepara o script de comparação e executa o piloto, que congela os limites de M3.4 e a lista de 40 itens de M3.5. De 18 a 20/11, as 12 métricas são coletadas em paralelo, cada integrante no próprio servidor; em 21/11, os valores são convertidos em notas e no julgamento de G1 a G3; em 22/11, a equipe executa a ação de melhoria e consolida a segunda versão do artigo. O piloto não entra nos resultados, e qualquer alteração posterior de critério é registrada em ata.
+
+% ======================================================================
 \section{Considerações parciais}
 \label{sec:consideracoes}
 
-A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar. As Fases~3 e~4 completam esta avaliação com o plano, a execução das medições, o julgamento e a ação de melhoria.
+A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produto, modelo de qualidade adaptado, priorização por método explícito, escopo e relação com o ODS~4; a Fase~2 desdobrou as três características em 3 objetivos, 11 questões com hipóteses e 12 métricas com níveis e critérios de julgamento ligados às decisões do requisitante. A Fase~3 transformou essa especificação em um plano reprodutível, com método, ambiente, massa fictícia, oráculo e cronograma de coleta. As principais limitações são as necessidades não validadas por entrevistas, a instalação local, que não representa a institucional, a exclusão da segurança pelo filtro de viabilidade e os limites de M3.4 ainda a calibrar no piloto. A Fase~4 completa a avaliação com a execução das medições, o julgamento e a ação de melhoria.
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
@@ -494,29 +437,29 @@ A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produt
 
 \begin{table}[!ht]
 \centering
-\caption{Contribuição multidimensional dos integrantes na E2.}
+\caption{Contribuição dos integrantes nas Entregas 1 e 2.}
 \label{tab:contribuicao}
 \scriptsize
-\begin{tabularx}{\linewidth}{Lp{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.4cm}}
+\begin{tabularx}{\linewidth}{p{2.3cm}LLp{0.75cm}p{0.75cm}}
 \toprule
-\textbf{Integrante} & \textbf{Commits} & \textbf{Linhas} & \textbf{Issues} & \textbf{Revisões} & \textbf{Horas} & \textbf{Índice C2} \\
+\textbf{Integrante} & \textbf{Entrega 1} & \textbf{Entrega 2} & \textbf{\% E1} & \textbf{\% E2} \\
 \midrule
-Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 91,18\% & 18,23\% \\
-Carlos Eduardo Deusdara Motta & 31,82\% & 42,19\% & 66,67\% & 0,00\% & 0,00\% & 28,14\% \\
-João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 8,82\% & 7,17\% \\
-Maykon Junio dos Santos Soares & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% \\
-Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\% \\
+Bernardo Broetto Brun & Primeira versão da Fase 1; propósito e partes interessadas; objetivo G1 e métricas M1.1 a M1.3 & Liderança da E2; gráficos e dashboard da gestão do projeto; oráculo de M1.2 e coleta de G1; relações entre as características; correções do artigo; declaração de IA e release & 20\% & --- \\
+Carlos Eduardo Deusdara Motta & Primeira versão da Fase 1; produto, modelo de qualidade e escopo; objetivo G2 e métricas M2.1 a M2.4; atas & Diagnóstico, instrumentação e medidas da gestão do projeto; ata 02; plano de execução da Fase 4; comparação de M2.2 e coleta de M2.1 e M2.2; cálculo e julgamento & 20\% & --- \\
+João Pedro Sampaio Maciel & Primeira versão da Fase 1; ODS; \emph{abstraction sheets}, diagrama GQM e rastreabilidade & Plano de avaliação da Fase 3; massa de dados; coleta de M3.1 e M3.2; ação de melhoria; página de resultados da Fase 4 & 20\% & --- \\
+Maykon Junio dos Santos Soares & Primeira versão da Fase 1; GitPage; metodologia; artigo em \LaTeX{}; release & Condensação das Fases 1 e 2 do artigo; script de preparação do servidor; coleta de M2.3 e M2.4; questões e hipóteses do GQM; Fase 4 e conclusão do artigo & 20\% & --- \\
+Pedro Goncalves Rocha & Primeira versão da Fase 1; matriz de priorização; objetivo G3 e métricas M3.1 a M3.5 & Extração, consolidação e decisões da gestão do projeto; marcos do PC2; piloto e coleta de M3.3 a M3.5; ação de melhoria; revisão dos \emph{pull requests} & 20\% & --- \\
 \midrule
-\textbf{Total} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} \\
+\textbf{Total} & & & \textbf{100\%} & \textbf{100\%} \\
 \bottomrule
 \end{tabularx}
-\tabfonte{elaboração própria a partir de \texttt{contribuicao.csv}, extraído em 11/11/2026. O índice é a média das cinco participações e totaliza 100\%; as horas são reconstruídas e devem ser substituídas pelos registros reais.}
+\tabfonte{elaboração própria. Na E1, a equipe registrou em 26/10/2026 a divisão igual do esforço. Na E2, as responsabilidades são as das \emph{issues} de cada integrante no GitHub.}
 \end{table}
 
 \section{Declaração de uso de inteligência artificial}
 \label{ap:ia}
 
-
+A equipe usou Claude Code (Anthropic) nas Entregas~1 e~2, Claude (Anthropic) no plano da Fase~3 e na massa de dados, e Codex (OpenAI) na gestão PSM/CID, na GitPage e no artigo da Entrega~2. A Tabela~\ref{tab:ia} reproduz os usos, as tarefas e as formas de conferência da declaração única publicada na GitPage. Nenhum resultado foi aceito sem conferência das fontes, execução dos artefatos aplicáveis e revisão pelo fluxo de pull requests. Pedro e Carlos usaram o Claude Code (Anthropic) em todas as suas tarefas, da abertura de \emph{issues} à revisão de \emph{pull requests}. Em todas houve revisão humana: o próprio integrante conferiu cada issue, commit, pull request e comentário antes de publicá-lo, e as mudanças entraram na \texttt{main} por pull request. Todos os integrantes informaram os seus usos.
 
 \begin{table}[!ht]
 \centering
@@ -527,7 +470,29 @@ Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\
 \toprule
 \textbf{Data, ferramenta e tarefa} & \textbf{Como a equipe conferiu e ajustou} & \textbf{Integrante} \\
 \midrule
-
+25/10/2026; Claude Code: migração e revisão da Fase~1 & Comparação com a versão escrita pela equipe e com a rubrica; revisão nas \emph{issues} \#1 a \#3 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
+25/10/2026; Claude Code: requisitos do Moodle 5.3 LTS & Conferência nas páginas oficiais citadas nas referências & Maykon (uso); Carlos (revisão, \emph{issue} \#2) \\
+25/10/2026; Claude Code: plano GQM, métricas, níveis e julgamento & Conferência com a ISO/IEC 25023 e com a Aula~08; revisão nas \emph{issues} \#4 a \#7 & Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão) \\
+25--26/10/2026; Claude Code: redação, LaTeX e diagramas do artigo & Leitura completa, conferência das referências e do limite de páginas; \emph{issue} \#8 & Maykon (uso); Pedro (revisão) \\
+25--26/10/2026; Claude Code: GitPage, \emph{workflows} e script PSM/CID & Construção estrita, testes de navegação e comparação do script com as \emph{issues}; \emph{issues} \#11 e \#13 & Maykon (uso); João Pedro (revisão) \\
+11/11/2026; Codex: gerador e oito figuras PSM/CID (\#26) & Execução dos scripts; conferência visual dos SVGs e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: dashboard e tabela-resumo (\#27) & Construção estrita, inspeção da página e comparação com os CSVs & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: integração PSM/CID à GitPage (\#29) & Construção estrita e verificação de links, navegação e duplicações & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: texto PSM/CID no artigo (\#30) & Compilação, inspeção visual e conferência das referências e do limite de páginas & Bernardo (uso); revisão solicitada no PR \\
+11/11/2026; Codex: harmonização da declaração de IA (\#31) & Comparação da GitPage com o LaTeX e conferência das tarefas e ferramentas & Bernardo (uso); revisão solicitada no PR \\
+15/11/2026; Codex: Fase~3 e custos no artigo (\#56) & Comparação com o plano, os construtos e o dashboard; compilação e inspeção do PDF & Bernardo (uso); revisão solicitada no PR \\
+15/11/2026; Codex: declaração do PC2 e Apêndice~B (\#57) & Levantamento dos usos, comparação entre GitPage e artigo, construção estrita e compilação & Bernardo (uso); revisão solicitada no PR \\
+15/11/2026; Claude Code: condensação das Fases~1 e~2 e script do servidor (\#55 e \#62) & Compilação e conferência das páginas; execução do script do zero em Ubuntu 24.04 & Maykon (uso); revisão no PR \#88 \\
+10/11/2026; Claude Code: revisão dos PRs \#33 a \#38 & Conferência com as \emph{issues} \#16 a \#22 e com os dados do GitHub; alterações pedidas no PR \#35 & Pedro (uso) \\
+10--11/11/2026; Claude Code: construtos C1 a C3, scripts de extração, consolidação e validação e registro de decisões (\#23 a \#25 e \#28) & Execução dos scripts e do validador; comparação com os dados brutos; construção estrita do site & Pedro (uso) \\
+14/11/2026; Claude Code: custo da hora, DG-02, DG-09 e processo de trabalho (PR \#51) & Conferência na Lei 11.788/2008 e na faixa do Glassdoor; consolidados regenerados; construção estrita & Pedro (uso); Bernardo (revisão) \\
+14/11/2026; Claude Code: issues \#52 a \#78, milestones e quadro (\#58) & Tarefas, responsáveis e estimativas definidos pelo integrante; conferência no GitHub & Pedro (uso) \\
+15/11/2026; Claude Code: revisão dos PRs \#79 e \#83 a \#86 e restauração deste apêndice (PR \#95) & Testes e merge de teste com a \texttt{main}; conferência com a Fase~2 e o plano da Fase~3; compilação (14 páginas) & Pedro (uso); Carlos (revisão) \\
+10--11/11/2026; Claude Code: bloco~1 da gestão PSM/CID (\#15 a \#22; PRs \#33 a \#38) & Revisão humana do integrante antes de cada \emph{commit}; PRs revisados por Pedro, com alterações pedidas no \#35 & Carlos (uso); Pedro (revisão) \\
+15--16/11/2026; Claude Code: ata~02, plano da Fase~4, roteiro do PC2 e scripts de M2.2 e do julgamento (\#53, \#54, \#61, \#65, \#68 e \#72) & Revisão humana do integrante; testes automatizados; PRs revisados por outro integrante, com alteração pedida no \#86 & Carlos (uso); Pedro (revisão) \\
+15/11/2026; Claude: plano final da Fase~3 (\#52; PR \#89) & Comparação com a ata~02, o script do servidor (\#62) e o oráculo (\#64); construção estrita e \emph{merge} de teste & João Pedro (uso) \\
+15/11/2026; Claude: \texttt{gera\_massa.py}, arquivos de referência e testes (\#63; PR \#90) & Massa aplicada no Moodle 4.5.16 local; 20 casos do oráculo, notas e importações GIFT e CSV conferidos; funções conferidas no código da 5.3.1 & João Pedro (uso) \\
+16/11/2026; Claude: registro destes usos na GitPage e neste apêndice & Comparação linha a linha entre a GitPage e o LaTeX; construção estrita e compilação & João Pedro (uso) \\
 \bottomrule
 \end{tabularx}
 \tabfonte{declaração única publicada em \texttt{docs/sobre/uso-de-ia.md}; mesmos usos, tarefas e formas de conferência.}
