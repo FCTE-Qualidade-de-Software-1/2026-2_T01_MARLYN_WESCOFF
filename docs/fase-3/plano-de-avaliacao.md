@@ -185,7 +185,8 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 
 1. Calcular cada métrica na planilha de cálculos e aplicar os níveis de pontuação da Fase 2.
 2. Aplicar as regras métrica → questão → objetivo, e comparar com as hipóteses H1.1 a H3.4 (confirmada ou refutada).
-3. Escolher a **ação de melhoria (D4)** entre os resultados com nota 1 ou 2, de acordo com o tipo de problema encontrado: protótipo (fluxo), alteração de código (falha técnica objetiva), modelo técnico (documentação frágil) ou processo (problema recorrente). A justificativa cita a métrica e a evidência.
+3. Fazer a **sessão de interpretação** do GQM (Aula 08): em reunião da equipe, registrada em ata, o responsável por cada questão apresenta os dados dela, a equipe responde às questões, compara com as hipóteses, explica as refutadas pelas medidas de contexto e confirma o julgamento. A pauta e o plano de análise (uma tabela por objetivo, um gráfico das notas por questão e a árvore GQM de resultados) estão no [Plano de execução da Fase 4](../fase-4/plano-de-execucao.md#do-dado-ao-julgamento).
+4. Escolher, na mesma sessão, a **ação de melhoria (D4)** entre os resultados com nota 1 ou 2, de acordo com o tipo de problema encontrado: protótipo (fluxo), alteração de código (falha técnica objetiva), modelo técnico (documentação frágil) ou processo (problema recorrente). A justificativa cita a métrica e a evidência.
 
 ## 4. Piloto e congelamento
 
