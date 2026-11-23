@@ -1,0 +1,4 @@
+data,sprint,planejadas,concluidas,pct_concluido,horas_estimadas,horas_realizadas,razao_esforco,custo,tempo_ciclo_mediana
+2026-11-23,E1 - 26/10/2026,14,14,100.0,20.5,26.0,1.27,384.02,0.5
+2026-11-23,E2,58,25,43.1,142.0,28.0,0.2,413.56,1.0
+2026-11-23,PC2,11,11,100.0,18.0,14.0,0.78,206.78,1.0
