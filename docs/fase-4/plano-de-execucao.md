@@ -2,7 +2,7 @@
 
 A Fase 4 previa coletar as 12 métricas de 18 a 20/11/2026, julgar os objetivos G1 a G3 em 21/11 e consolidar os resultados e a ação de melhoria até 22/11. A coleta ocorreu entre 15 e 23/11, e o prazo da Entrega 2 passou para **24/11/2026, até 23h59**; o cronograma real está na [Tabela 3](#sequencia-ate-a-entrega-2). Esta página diz quem coleta cada métrica, até quando, com qual evidência e em qual pasta. O **como** executar cada métrica está no [Plano de avaliação da Fase 3](../fase-3/plano-de-avaliacao.md#3-instrucoes-do-avaliador), e o cronograma e os responsáveis foram aprovados na reunião de 14/11/2026 ([ata 02](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md)).
 
-Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no [quadro de tarefas](https://github.com/users/cadumotta/projects/1) e nas [métricas de gestão PSM/CID](../gestao/index.md).
+Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no [quadro de tarefas](https://github.com/users/cadumotta/projects/1) e nos [indicadores de gestão do projeto (PSM/CID)](../gestao/index.md).
 
 ## Métricas, responsáveis e evidências
 
