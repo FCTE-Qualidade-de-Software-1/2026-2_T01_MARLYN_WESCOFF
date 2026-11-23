@@ -126,8 +126,11 @@ nav:
       - Plano de avaliação: fase-3/plano-de-avaliacao.md
       - Preparação do servidor: fase-3/preparacao-do-servidor.md
   - Fase 4:
+      - fase-4/index.md
       - Plano de execução: fase-4/plano-de-execucao.md
+      - Resultados e julgamento: fase-4/resultados.md
       - Árvore GQM de resultados: fase-4/arvore-gqm-resultados.md
+      - Ação de melhoria: fase-4/acao-de-melhoria.md
   - Gestão do Projeto - Métricas PSM/CID:
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
