@@ -1,4 +1,4 @@
-# Gestão do Projeto - Métricas PSM/CID
+# Gestão do projeto (PSM/CID)
 
 Esta seção explica, para um leitor externo, como a equipe acompanha o projeto de avaliação do Moodle 5.3 LTS. O modelo adotado é o **PSM** (*Practical Software and Systems Measurement*), complementado pelo **CID** (*Continuous Iterative Development Measurement Framework*). Cada medida parte de uma necessidade de informação, produz um indicador verificável e apoia uma decisão de gestão.
 
@@ -28,11 +28,11 @@ Cada necessidade segue a ordem do modelo de informação do PSM: necessidade de 
 
 <p class="legenda">Tabela 2. Ligação entre necessidade de informação, medidas, indicador e critério de decisão. Fonte: elaborado pelos autores a partir dos construtos de medição.</p>
 
-As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de [Construtos de medição](../metricas/02-construtos-de-medicao.md). Essa especificação separa as métricas de gestão das métricas de qualidade do produto definidas na [Fase 2](../fase-2/index.md): as primeiras acompanham a execução do projeto; as segundas avaliam o Moodle.
+As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de [Construtos de medição](../metricas/02-construtos-de-medicao.md). Essa especificação separa as medidas de gestão do projeto das métricas de qualidade do produto definidas na [Fase 2](../fase-2/index.md): as primeiras acompanham a execução do projeto; as segundas avaliam o Moodle.
 
 ## 3. Indicadores
 
-O [Dashboard das métricas](../metricas/dashboard.md) apresenta o retrato mais recente das oito medidas, compara cada valor com seu limiar e reúne os gráficos nas três categorias. A página é gerada automaticamente a partir dos CSVs consolidados, evitando que números sejam copiados manualmente.
+O [Dashboard dos indicadores de gestão](../metricas/dashboard.md) apresenta o retrato mais recente das oito medidas, compara cada valor com seu limiar e reúne os gráficos nas três categorias. A página é gerada automaticamente a partir dos CSVs consolidados, evitando que números sejam copiados manualmente.
 
 O caminho de rastreabilidade é:
 
@@ -68,4 +68,4 @@ As [medições históricas](registro-medicoes.md) preservam os retratos anterior
 - A [Fase 3](../fase-3/plano-de-avaliacao.md) planeja a execução e os recursos necessários.
 - A [Fase 4](../fase-4/plano-de-execucao.md) obtém as medidas do produto, julga os objetivos e executa a ação de melhoria.
 
-As métricas PSM/CID acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.
+As medidas e os indicadores do PSM/CID acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.

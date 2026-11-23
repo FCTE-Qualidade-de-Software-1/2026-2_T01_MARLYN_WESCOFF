@@ -124,14 +124,14 @@ nav:
       - Preparação do servidor: fase-3/preparacao-do-servidor.md
   - Fase 4:
       - Plano de execução: fase-4/plano-de-execucao.md
-  - Gestão do Projeto - Métricas PSM/CID:
+  - Gestão do projeto (PSM/CID):
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
       - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
-      - Indicadores e dashboard: metricas/dashboard.md
+      - Dashboard dos indicadores de gestão: metricas/dashboard.md
       - Decisões de gestão: metricas/03-registro-de-decisoes.md
       - Checklist de conformidade: metricas/05-checklist-entrega.md
       - Medições históricas: gestao/registro-medicoes.md
