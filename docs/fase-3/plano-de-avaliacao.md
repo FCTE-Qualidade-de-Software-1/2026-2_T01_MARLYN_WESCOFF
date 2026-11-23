@@ -224,7 +224,7 @@ dados/avaliacao/
 
 ## 6. Cronograma
 
-A Entrega 2 é em **22/11/2026**, e o cronograma foi comprimido para o período de 16 a 22/11 (ata 02, D2). A coleta ocorre em paralelo, cada integrante no próprio servidor.
+A Entrega 2 estava prevista para 22/11/2026, e o cronograma foi comprimido para o período de 16 a 22/11 (ata 02, D2), com a coleta em paralelo, cada integrante no próprio servidor. Depois do PC2, o prazo da Entrega 2 passou para **24/11/2026, até 23h59**. As Tabelas 9 e 10 abaixo são o cronograma aprovado na ata 02 e ficam como referência do planejado. O que de fato ocorreu e o que ainda falta até o prazo novo estão na [Tabela 3 do Plano de execução da Fase 4](../fase-4/plano-de-execucao.md#sequencia-ate-a-entrega-2).
 
 | Data | Atividade | Responsável | Issue | Saída |
 |---|---|---|---|---|
@@ -242,7 +242,7 @@ A Entrega 2 é em **22/11/2026**, e o cronograma foi comprimido para o período 
 | 22/11 | Artigo: Fase 4, resultados e conclusão; tabela de contribuição | Maykon; Pedro | #76, #77 | 2ª versão do artigo |
 | 22/11, até 23h59 | Declaração de IA final, revisão pela rubrica e release E2 | Bernardo | #78 | Release E2 com o PDF |
 
-<p class="legenda">Tabela 9. Cronograma de 16 a 22/11/2026. Fonte: ata 02 e milestone E2.</p>
+<p class="legenda">Tabela 9. Cronograma de 16 a 22/11/2026, aprovado na ata 02 (planejado). Fonte: ata 02 e milestone E2.</p>
 
 | Métrica | Responsável | Issue | Coleta | Dependência |
 |---|---|---|---|---|
