@@ -1,0 +1,13 @@
+# ANTES: instância m53php83, montada pelo preparar_servidor.sh original (2026-11-22T23:26:34-03:00)
+/ -> HTTP 404 
+/my/ -> HTTP 404 
+/course/ -> HTTP 404 
+/lib/exampleshimroute2.php -> HTTP 404 
+/fakefile.php -> HTTP 404 
+## admin/cli/checks.php
+CRITICAL: Router configuration (core_router)
+   Status | Check                                                       
+----------+--------------------------------------------------------------------
+    ERROR | Router configuration (core_router)                          
+          |     The router is not configured.                           
+          |     The router is not configured correctly. For details of how to configure it, see the documentation Configuring the router.

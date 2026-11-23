@@ -1,0 +1,10 @@
+# DEPOIS: instância m53php83, montada pelo preparar_servidor.sh com a ação de melhoria (2026-11-22T23:28:43-03:00)
+/ -> HTTP 303 http://localhost:8080/login/index.php
+/my/ -> HTTP 303 http://localhost:8080/login/index.php
+/course/ -> HTTP 303 http://localhost:8080/login/index.php
+/lib/exampleshimroute2.php -> HTTP 302 http://localhost:8080/core/check/controller/test
+/fakefile.php -> HTTP 404 
+## admin/cli/checks.php
+CRITICAL: Cron running (tool_task_cronrunning)
+ CRITICAL | Cron running (tool_task_cronrunning)                        
+(sem linha core_router = verificação do roteador sem erro)
