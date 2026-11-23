@@ -384,7 +384,7 @@
   
     
   
-  Gestão do Projeto - Métricas PSM/CID
+  Gestão do projeto (PSM/CID)
 
         </a>
       </li>
@@ -1580,7 +1580,7 @@
   <span class="md-ellipsis">
     
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
     
@@ -1602,7 +1602,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
           </label>
@@ -1764,7 +1764,7 @@
   <span class="md-ellipsis">
     
   
-    Indicadores e dashboard
+    Dashboard dos indicadores de gestão
   
 
     
@@ -2561,7 +2561,7 @@
 <td><code>M1.1 = 1 − (Tf / Tt)</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Tt</code> = número de tarefas do catálogo (12); <code>Tf</code> = tarefas sem função no núcleo ou cuja função falha ao executar</td>
 </tr>
 <tr>
@@ -2612,7 +2612,7 @@
 <td><code>M1.2 = Cc / Ct</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Ct</code> = casos de teste executados (20: 10 de pontuação de questionário, 6 de agregação ponderada no livro de notas, 4 de controle de prazo); <code>Cc</code> = casos com resultado igual ao oráculo</td>
 </tr>
 <tr>
@@ -2663,7 +2663,7 @@
 <td><code>M1.3 = 1 − (Tc / Tt)</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Tt</code> = tarefas do catálogo (12); <code>Tc</code> = tarefas que só foram concluídas com contorno</td>
 </tr>
 <tr>
@@ -2719,7 +2719,7 @@
 <td><code>M2.1 = Fs / Ft</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Ft</code> = formatos testados (7): F1 CSV de usuários (importação), F2 CSV de notas (exportação), F3 XLSX de notas (exportação), F4 <abbr title="Formato de texto do Moodle para importação de questões">GIFT</abbr> de questões (importação), F5 Moodle XML de questões (exportação e reimportação), F6 iCal do calendário (exportação para cliente de calendário), F7 backup <code>.mbz</code> (backup e restauração); <code>Fs</code> = formatos em que a operação conclui sem erro e o arquivo é aberto/aceito pelo sistema receptor</td>
 </tr>
 <tr>
@@ -2770,7 +2770,7 @@
 <td><code>M2.2 = Rc / Rt</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Rt</code> = registros esperados nos 7 formatos (por exemplo, 30 usuários, 30 × 3 notas, 15 questões, 6 eventos, itens do curso); <code>Rc</code> = registros idênticos à referência em todos os campos comparados</td>
 </tr>
 <tr>
@@ -2821,7 +2821,7 @@
 <td><code>M2.3 = Ws / Wt</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Wt</code> = funções testadas (6): <code>core_webservice_get_site_info</code>, <code>core_user_get_users_by_field</code>, <code>core_course_get_courses_by_field</code>, <code>core_enrol_get_enrolled_users</code>, <code>mod_assign_get_assignments</code>, <code>gradereport_user_get_grade_items</code>; <code>Ws</code> = funções com resposta HTTP 200, sem campo <code>exception</code> e com valores iguais aos exibidos na interface web</td>
 </tr>
 <tr>
@@ -2872,7 +2872,7 @@
 <td><code>M2.4 = Ec / Et</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Et</code> = entidades vizinhas (3): E1 aplicação web estática em outro <em>virtual host</em> do mesmo Apache; E2 banco de dados de outra aplicação no mesmo PostgreSQL; E3 tarefa agendada de outro usuário no mesmo <code>cron</code>; <code>Ec</code> = entidades sem impacto em todas as verificações</td>
 </tr>
 <tr>
@@ -2924,7 +2924,7 @@
 <td><code>M3.1(Ai) = 1 − (Tfa / Tta)</code>; valor reportado = mínimo entre A1–A4</td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Tta</code> = tarefas testadas por ambiente (8: T02, T03, T04, T05, T06, T08, T09, T11); <code>Tfa</code> = tarefas não concluídas ou com resultado diferente no ambiente</td>
 </tr>
 <tr>
@@ -2975,7 +2975,7 @@
 <td><code>M3.2(PHPi) = 1 − (Tfp / Ttp)</code>; valor reportado = mínimo entre as duas versões</td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Ttp</code> = tarefas do catálogo (12); <code>Tfp</code> = tarefas que falham ou diferem do resultado esperado naquela versão de PHP</td>
 </tr>
 <tr>
@@ -3026,7 +3026,7 @@
 <td><code>M3.3 = Ps / Pt</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>Pt</code> = execuções (6: 3 instalações limpas da 5.3 e 3 atualizações 4.5 → 5.3, cada uma em máquina virtual recém-criada a partir da mesma imagem); <code>Ps</code> = execuções que terminam com a verificação de ambiente sem erro, login do administrador funcionando e sem passo fora da documentação</td>
 </tr>
 <tr>
@@ -3077,7 +3077,7 @@
 <td><code>M3.4 = mediana(tfim − tinício)</code> em minutos, por tipo (instalação limpa / atualização); <code>R</code> = total de retentativas</td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>tinício</code>: primeiro comando do procedimento, com o código já baixado; <code>tfim</code>: login do administrador; retentativa = repetir um passo que falhou</td>
 </tr>
 <tr>
@@ -3128,7 +3128,7 @@
 <td><code>M3.5 = Ip / It</code></td>
 </tr>
 <tr>
-<td>Medidas básicas</td>
+<td>Elementos de medida</td>
 <td><code>It</code> = itens de verificação (40: contagens de usuários, cursos, matrículas, envios de tarefa, tentativas de questionário, posts de fórum, arquivos, e as notas finais de 10 estudantes); <code>Ip</code> = itens iguais após a atualização</td>
 </tr>
 <tr>

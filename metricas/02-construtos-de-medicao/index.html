@@ -384,7 +384,7 @@
   
     
   
-  Gestão do Projeto - Métricas PSM/CID
+  Gestão do projeto (PSM/CID)
 
         </a>
       </li>
@@ -1339,7 +1339,7 @@
   <span class="md-ellipsis">
     
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
     
@@ -1361,7 +1361,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
           </label>
@@ -1520,10 +1520,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo-de-medicao" class="md-nav__link">
+  <a href="#necessidades-de-informacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivo de medição
+        Necessidades de informação
       
     </span>
   </a>
@@ -1546,6 +1546,17 @@
     <span class="md-ellipsis">
       
         Definição de pronto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-de-analise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo de análise
       
     </span>
   </a>
@@ -1786,7 +1797,7 @@
   <span class="md-ellipsis">
     
   
-    Indicadores e dashboard
+    Dashboard dos indicadores de gestão
   
 
     
@@ -2282,10 +2293,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo-de-medicao" class="md-nav__link">
+  <a href="#necessidades-de-informacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivo de medição
+        Necessidades de informação
       
     </span>
   </a>
@@ -2308,6 +2319,17 @@
     <span class="md-ellipsis">
       
         Definição de pronto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipo-de-analise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo de análise
       
     </span>
   </a>
@@ -2543,7 +2565,7 @@
         <a href="../../gestao/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   </span>
 
         </a>
@@ -2573,35 +2595,45 @@
 <h1 id="construtos-de-medicao">Construtos de medição<a class="headerlink" href="#construtos-de-medicao" title="Permanent link">&para;</a></h1>
 <p>Este documento especifica as medidas da gestão do projeto pelo modelo de informação do <abbr title="Practical Software and Systems Measurement">PSM</abbr> e da ISO/IEC/IEEE 15939, com as medidas e os limiares do <em><abbr title="Practical Software and Systems Measurement">PSM</abbr> Continuous Iterative Development Measurement Framework</em> v2.1 (<abbr title="Practical Software and Systems Measurement">PSM</abbr> <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>). Ele amplia as três medidas iniciais do <a href="../../gestao/plano-psm/">Plano de medição</a> e parte das lacunas levantadas no <a href="../01-diagnostico-repositorio/">Diagnóstico do repositório</a>.</p>
 <p>Os limiares de decisão foram <strong>declarados antes da análise</strong> dos dados da E2, em 10/11/2026. Uma mudança posterior de limiar vira uma decisão registrada, com justificativa, e não substitui o valor original.</p>
-<h2 id="objetivo-de-medicao">Objetivo de medição<a class="headerlink" href="#objetivo-de-medicao" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Acompanhar a execução do projeto de avaliação quanto a <strong>progresso</strong>, <strong>eficiência de processo</strong> e <strong>consumo de recursos</strong>, de modo a permitir decisões de gestão tempestivas que assegurem as entregas nos marcos da disciplina.</p>
-</blockquote>
-<p>As três categorias de informação exigidas pela especificação do trabalho são cobertas assim:</p>
+<h2 id="necessidades-de-informacao">Necessidades de informação<a class="headerlink" href="#necessidades-de-informacao" title="Permanent link">&para;</a></h2>
+<p>As medidas partem das necessidades de informação do projeto: os riscos, os problemas e a falta de informação que a gestão precisa acompanhar (Aula 09). Cada uma vem de uma evidência do <a href="../01-diagnostico-repositorio/">Diagnóstico do repositório</a> e levou a uma categoria de informação do <abbr title="Practical Software and Systems Measurement">PSM</abbr> <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>.</p>
 <table>
 <thead>
 <tr>
-<th>Categoria de informação (<abbr title="Practical Software and Systems Measurement">PSM</abbr> <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>)</th>
+<th>Necessidade de informação</th>
+<th>Tipo</th>
+<th>Origem no diagnóstico</th>
+<th>Categoria de informação</th>
 <th>Medidas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><strong>N1.</strong> O trabalho comprometido para cada marco será concluído no prazo? Quais produtos de trabalho estão em risco?</td>
+<td>Risco</td>
+<td>Conteúdo da E1 concentrado na véspera do prazo (seção 2); marcos sem correspondência no GitHub (lacuna L5)</td>
 <td>Calendário e Progresso (<em>Schedule and Progress</em>)</td>
 <td>A1 Burndown da entrega; A2 Comprometido x concluído; A3 Fluxo cumulativo; A4 Conclusão de marcos</td>
 </tr>
 <tr>
+<td><strong>N2.</strong> Quanto tempo uma tarefa leva, o ritmo da equipe basta para o escopo que falta e a revisão interna encontra os problemas antes da docente?</td>
+<td>Problema</td>
+<td>Issues da E1 criadas e fechadas em lote (L3); nenhum PR nem não conformidade registrada (L2 e L8); duas semanas sem progresso (L10)</td>
 <td>Desempenho dos Processos (<em>Process Performance</em>)</td>
 <td>B1 Cycle time e lead time; B2 Velocidade e aceleração; B3 Frequência de entregas; B4 Retrabalho e não conformidades</td>
 </tr>
 <tr>
+<td><strong>N3.</strong> Quanto esforço o projeto consome, como ele se distribui entre os integrantes e as estimativas servem para planejar?</td>
+<td>Falta de informação</td>
+<td>Nenhuma hora registrada na E1 (L1)</td>
 <td>Recursos e Custos (<em>Resources and Cost</em>)</td>
 <td>C1 Esforço da equipe; C2 Distribuição de contribuição; C3 Estimado x real</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 1. Categorias de informação e medidas da gestão do projeto. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5.</p>
+<p class="legenda">Tabela 1. Necessidades de informação, categorias de informação e medidas da gestão do projeto. Fonte: elaborado pelos autores a partir do diagnóstico do repositório, da Aula 09 e do PSM CID v2.1, Parte 1, Tabela 5.</p>
 
+<p>Cada ficha abaixo segue a ordem do modelo de informação: necessidade de informação → categoria → conceito mensurável → medidas básicas e derivadas → indicador → critério de decisão → decisão, esta registrada no <a href="../03-registro-de-decisoes/">Registro de decisões de gestão</a>.</p>
 <h2 id="adaptacao-da-terminologia-do-cid">Adaptação da terminologia do <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr><a class="headerlink" href="#adaptacao-da-terminologia-do-cid" title="Permanent link">&para;</a></h2>
 <p>O <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> foi escrito para o desenvolvimento iterativo de software. Este projeto não desenvolve software: ele executa uma <strong>avaliação de qualidade de produto</strong> (ISO/IEC 25040, Fases 1 a 4), cujo resultado é um artigo, uma GitPage e uma ação de melhoria. Os termos do <abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> foram adaptados assim:</p>
 <table>
@@ -2676,6 +2708,13 @@
 <li>As horas da issue estão lançadas em <code>esforco.csv</code>.</li>
 </ol>
 <p>Uma issue fechada sem esses requisitos é reaberta e conta como retrabalho (B4).</p>
+<h2 id="tipo-de-analise">Tipo de análise<a class="headerlink" href="#tipo-de-analise" title="Permanent link">&para;</a></h2>
+<p>O <abbr title="Practical Software and Systems Measurement">PSM</abbr> classifica a análise que cada medida apoia em três tipos (Aula 09, slide 13). Cada ficha abaixo diz o tipo na linha "Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)":</p>
+<ul>
+<li><strong>Estimativa:</strong> prever o esforço, o custo ou o prazo de um trabalho antes de fazê-lo (C3).</li>
+<li><strong>Viabilidade:</strong> verificar se o plano ainda é alcançável com os recursos e o tempo que restam (A1 e B2).</li>
+<li><strong>Desempenho:</strong> acompanhar o que foi feito em relação ao planejado e a capacidade do processo (A2, A3, A4, B1, B3, B4, C1 e C2).</li>
+</ul>
 <h2 id="calendario-e-progresso">Calendário e Progresso<a class="headerlink" href="#calendario-e-progresso" title="Permanent link">&para;</a></h2>
 <h3 id="a1-burndown-da-entrega">A1. Burndown da entrega<a class="headerlink" href="#a1-burndown-da-entrega" title="Permanent link">&para;</a></h3>
 <table>
@@ -2693,6 +2732,10 @@
 <tr>
 <td>Categoria de informação</td>
 <td>Calendário e Progresso</td>
+</tr>
+<tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Viabilidade: o plano da entrega ainda é alcançável com o trabalho que falta?</td>
 </tr>
 <tr>
 <td>Necessidade de informação</td>
@@ -2781,6 +2824,10 @@
 <td>Calendário e Progresso</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: a equipe entregou o que se comprometeu a entregar na semana?</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>A equipe entrega o que se compromete a entregar em cada iteração?</td>
 </tr>
@@ -2867,6 +2914,10 @@
 <td>Calendário e Progresso</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: o trabalho flui pelos estados ou se acumula em filas?</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>O trabalho flui pelos estados do processo ou se acumula em filas e gargalos?</td>
 </tr>
@@ -2951,6 +3002,10 @@
 <tr>
 <td>Categoria de informação</td>
 <td>Calendário e Progresso</td>
+</tr>
+<tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: o marco foi cumprido na data prevista?</td>
 </tr>
 <tr>
 <td>Necessidade de informação</td>
@@ -3040,6 +3095,10 @@
 <td>Desempenho dos Processos</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: quanto tempo as tarefas levaram e se esse tempo é previsível</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>Quanto tempo a equipe leva para concluir uma tarefa? O tempo de resposta é previsível? Há tarefas paradas?</td>
 </tr>
@@ -3124,6 +3183,10 @@
 <tr>
 <td>Categoria de informação</td>
 <td>Desempenho dos Processos</td>
+</tr>
+<tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Viabilidade: com o ritmo atual, o escopo restante cabe no prazo?</td>
 </tr>
 <tr>
 <td>Necessidade de informação</td>
@@ -3212,6 +3275,10 @@
 <td>Desempenho dos Processos</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: com que cadência o trabalho chega à <code>main</code> antes de cada marco</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>Com que cadência a equipe consolida produtos de trabalho na <code>main</code>? O trabalho se concentra na véspera dos marcos?</td>
 </tr>
@@ -3296,6 +3363,10 @@
 <tr>
 <td>Categoria de informação</td>
 <td>Desempenho dos Processos</td>
+</tr>
+<tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: quanto da qualidade dos produtos de trabalho é garantida pela revisão interna</td>
 </tr>
 <tr>
 <td>Necessidade de informação</td>
@@ -3386,6 +3457,10 @@
 <td>Recursos e Custos</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: quanto esforço foi consumido e como ele se distribui</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>Quanto esforço a equipe está gastando, em que fases e tipos de atividade? O esforço está distribuído entre os integrantes?</td>
 </tr>
@@ -3472,6 +3547,10 @@
 <td>Recursos e Custos</td>
 </tr>
 <tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Desempenho: quanto cada integrante contribuiu, em várias dimensões</td>
+</tr>
+<tr>
 <td>Necessidade de informação</td>
 <td>Como o trabalho de cada entrega se distribui entre os integrantes? A Tabela de Contribuição do artigo (Apêndice A) é sustentada pelos dados do repositório?</td>
 </tr>
@@ -3556,6 +3635,10 @@
 <tr>
 <td>Categoria de informação</td>
 <td>Recursos e Custos</td>
+</tr>
+<tr>
+<td>Tipo de análise (<abbr title="Practical Software and Systems Measurement">PSM</abbr>)</td>
+<td>Estimativa: as estimativas de esforço são confiáveis para planejar as próximas fases?</td>
 </tr>
 <tr>
 <td>Necessidade de informação</td>

@@ -384,7 +384,7 @@
   
     
   
-  Gestão do Projeto - Métricas PSM/CID
+  Gestão do projeto (PSM/CID)
 
         </a>
       </li>
@@ -1347,6 +1347,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Do dado ao julgamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plano-de-analise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plano de análise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1430,7 +1458,7 @@
   <span class="md-ellipsis">
     
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
     
@@ -1452,7 +1480,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
           </label>
@@ -1614,7 +1642,7 @@
   <span class="md-ellipsis">
     
   
-    Indicadores e dashboard
+    Dashboard dos indicadores de gestão
   
 
     
@@ -2151,6 +2179,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Do dado ao julgamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plano-de-analise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plano de análise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2228,7 +2284,7 @@
 
 <h1 id="plano-de-execucao-da-fase-4">Plano de execução da Fase 4<a class="headerlink" href="#plano-de-execucao-da-fase-4" title="Permanent link">&para;</a></h1>
 <p>A Fase 4 coleta as 12 métricas de <strong>18 a 20/11/2026</strong>, calcula e julga os objetivos G1 a G3 em 21/11 e consolida os resultados e a ação de melhoria até a Entrega 2, em <strong>22/11/2026</strong>. Esta página diz quem coleta cada métrica, até quando, com qual evidência e em qual pasta. O <strong>como</strong> executar cada métrica está no <a href="../../fase-3/plano-de-avaliacao/#3-instrucoes-do-avaliador">Plano de avaliação da Fase 3</a>, e o cronograma e os responsáveis foram aprovados na reunião de 14/11/2026 (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md">ata 02</a>).</p>
-<p>Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no <a href="https://github.com/users/cadumotta/projects/1">quadro de tarefas</a> e nas <a href="../../gestao/">métricas de gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></a>.</p>
+<p>Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no <a href="https://github.com/users/cadumotta/projects/1">quadro de tarefas</a> e nos <a href="../../gestao/">indicadores de gestão do projeto (<abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>)</a>.</p>
 <h2 id="metricas-responsaveis-e-evidencias">Métricas, responsáveis e evidências<a class="headerlink" href="#metricas-responsaveis-e-evidencias" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2435,13 +2491,53 @@
 <p class="legenda">Tabela 3. Sequência da Fase 4 até a Entrega 2. Fonte: ata 02 e milestone E2.</p>
 
 <h2 id="do-dado-ao-julgamento">Do dado ao julgamento<a class="headerlink" href="#do-dado-ao-julgamento" title="Permanent link">&para;</a></h2>
+<p>A Fase 4 segue as três etapas finais do <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> (Aula 08): coletar, <strong>interpretar</strong> e relatar. A interpretação vai de baixo para cima: das métricas para as questões e das questões para os objetivos, que é o caminho inverso da definição feita na Fase 2.</p>
+<h3 id="plano-de-analise">Plano de análise<a class="headerlink" href="#plano-de-analise" title="Permanent link">&para;</a></h3>
+<p>Os resultados são organizados por objetivo e por questão, e não por métrica isolada. Cada objetivo é apresentado com três elementos:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Conteúdo</th>
+<th>Fonte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tabela por objetivo</td>
+<td>Para cada questão do objetivo: as métricas que a respondem, o valor medido, a nota, a hipótese (o valor esperado) e se ela foi confirmada ou refutada</td>
+<td><code>dados/avaliacao/julgamento_metricas.csv</code></td>
+</tr>
+<tr>
+<td>Gráfico das notas por questão</td>
+<td>Uma barra por questão, de Q1.1 a Q3.4, com a nota de 1 a 4 e a linha da nota 3 (limite do "Atende")</td>
+<td><code>dados/avaliacao/julgamento_objetivos.csv</code></td>
+</tr>
+<tr>
+<td>Árvore <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> de resultados</td>
+<td>A árvore da Fase 2 lida de baixo para cima, com a nota de cada questão e o julgamento de cada objetivo</td>
+<td>Gerada a partir de <code>dados/avaliacao/calculos.csv</code></td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 4. Plano de análise: como os resultados da Fase 4 são apresentados. Fonte: elaboração própria, a partir da Aula 08 (slide 46).</p>
+
+<p>Uma hipótese refutada é explicada pelas medidas de contexto (versão corretiva do Moodle, versão do PHP, recursos da VM, experiência do avaliador, codificação dos arquivos), e não pelo ajuste do critério.</p>
+<h3 id="etapas">Etapas<a class="headerlink" href="#etapas" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Cada coletor registra os casos no CSV da métrica, inclusive as falhas (regra R4 do plano), e envia um parágrafo de resultado para o artigo.</li>
-<li>Em 21/11, os valores entram em <code>dados/avaliacao/calculos.csv</code>. Cada métrica recebe a nota pelos <a href="../../fase-2/niveis-e-julgamento/#niveis-de-pontuacao-por-metrica">níveis de pontuação</a> congelados na Fase 2.</li>
-<li>As notas viram o julgamento das questões e dos objetivos pelas <a href="../../fase-2/niveis-e-julgamento/#regras-de-julgamento">regras de julgamento</a>, e cada hipótese H1.1 a H3.4 é confirmada ou refutada.</li>
-<li>O julgamento de G1, G2 e G3 responde às decisões D1 a D3 do <a href="../../fase-1/proposito/">Propósito</a>. Um resultado com nota 1 ou 2 é candidato à ação de melhoria (D4).</li>
+<li><strong>Registro.</strong> Cada coletor registra os casos no CSV da métrica, inclusive as falhas (regra R4 do plano), com a evidência correspondente.</li>
+<li><strong>Cálculo.</strong> Os valores entram em <code>dados/avaliacao/calculos.csv</code>, e <code>scripts/calcula_julgamento.py</code> aplica os <a href="../../fase-2/niveis-e-julgamento/#niveis-de-pontuacao-por-metrica">níveis de pontuação</a> e as <a href="../../fase-2/niveis-e-julgamento/#regras-de-julgamento">regras de julgamento</a> congelados na Fase 2.</li>
+<li><strong>Sessão de interpretação.</strong> Uma reunião da equipe inteira, antes do fechamento do artigo, com a pauta abaixo e registrada em ata:<ol>
+<li>o responsável por cada questão apresenta os dados dela (tabela, gráfico e evidências) e propõe a resposta à questão;</li>
+<li>a equipe confere a resposta, compara o valor medido com a hipótese e, se a hipótese foi refutada, aponta a causa nas medidas de contexto ou nas evidências;</li>
+<li>a equipe confirma o julgamento de G1, G2 e G3 pela regra do pior caso e a resposta a cada decisão D1 a D3 do <a href="../../fase-1/proposito/">Propósito</a>;</li>
+<li>a equipe escolhe a ação de melhoria (D4) entre os resultados com nota 1 ou 2, pelo tipo de problema, e define quem a executa;</li>
+<li>um caso que pareça erro do avaliador, e não do produto, volta para repetição (regra R5) antes de entrar no julgamento.</li>
 </ol>
-<p>Os critérios não mudam depois de conhecer os resultados (regra R1). Qualquer desvio do plano durante a coleta é registrado em ata, com o motivo.</p>
+</li>
+<li><strong>Relatório.</strong> As respostas às questões, o julgamento, as relações entre as características e a ação de melhoria vão para a página de resultados da Fase 4 e para o artigo, com as conclusões e as ameaças à validade.</li>
+</ol>
+<p>Os critérios não mudam depois de conhecer os resultados (regra R1). Qualquer desvio do plano durante a coleta ou a interpretação é registrado em ata, com o motivo.</p>
 
 
 

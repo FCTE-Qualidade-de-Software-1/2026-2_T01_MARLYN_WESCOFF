@@ -384,7 +384,7 @@
   
     
   
-  Gestão do Projeto - Métricas PSM/CID
+  Gestão do projeto (PSM/CID)
 
         </a>
       </li>
@@ -1339,7 +1339,7 @@
   <span class="md-ellipsis">
     
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
     
@@ -1361,7 +1361,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
           </label>
@@ -1523,7 +1523,7 @@
   <span class="md-ellipsis">
     
   
-    Indicadores e dashboard
+    Dashboard dos indicadores de gestão
   
 
     
@@ -2133,7 +2133,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   </span>
 
         </a>
@@ -2195,7 +2195,7 @@
 <p class="legenda">Tabela 1. Índice das atas. Fonte: pasta `atas/`.</p>
 
 <h2 id="registro-de-decisoes">Registro de decisões<a class="headerlink" href="#registro-de-decisoes" title="Permanent link">&para;</a></h2>
-<p>Decisões tomadas fora de reunião formal, durante a elaboração e a revisão da Entrega 1.</p>
+<p>Decisões tomadas fora de reunião formal, durante a elaboração e a revisão das Entregas 1 e 2.</p>
 <table>
 <thead>
 <tr>
@@ -2242,9 +2242,15 @@
 <td>Resultado da primeira medição do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></td>
 <td><a href="../registro-medicoes/">Registro de medições</a></td>
 </tr>
+<tr>
+<td>23/11/2026</td>
+<td>Corrigir o instrumento de M2.2 (<code>scripts/compara_registros.py</code>): a célula numérica de XLSX passa a ser comparada como número (10.0 = 10.00), e a resposta numérica de <abbr title="Formato de texto do Moodle para importação de questões">GIFT</abbr>, por peso, valor, tolerância e feedback (<code>#144</code> = <code>=%100%144:0</code>). O critério de M2.2 não muda: só espaços em branco são normalizados, e acentos, maiúsculas, casas decimais em texto e datas continuam contando como divergência</td>
+<td>Na coleta de 22/11 (PR #133), o instrumento marcou como divergentes os 30 registros de F3 e 5 de F4 por diferença de representação, e não de dado: o XLSX guarda o número, e o Moodle exporta o <abbr title="Formato de texto do Moodle para importação de questões">GIFT</abbr> numérico na forma estendida. Com a correção, F3 = 30/30 e F4 = 15/15 nos mesmos arquivos</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/scripts/compara_registros.py"><code>compara_registros.py</code></a>, issue #65</td>
+</tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 2. Registro de decisões da Entrega 1. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 2. Registro de decisões das Entregas 1 e 2. Fonte: elaboração própria.</p>
 
 <p>Cada ata registra data, participantes, pauta, decisões e encaminhamentos e, quando houver, a decisão de gestão tomada a partir das <a href="../registro-medicoes/">medições do <abbr title="Practical Software and Systems Measurement">PSM</abbr></a>.</p>
 

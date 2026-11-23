@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gestao-do-projeto-metricas-psmcid" class="md-skip">
+        <a href="#gestao-do-projeto-psmcid" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -384,7 +384,7 @@
   
     
   
-  Gestão do Projeto - Métricas PSM/CID
+  Gestão do projeto (PSM/CID)
 
         </a>
       </li>
@@ -1339,7 +1339,7 @@
   <span class="md-ellipsis">
     
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
     
@@ -1361,7 +1361,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   
 
           </label>
@@ -1523,7 +1523,7 @@
   <span class="md-ellipsis">
     
   
-    Indicadores e dashboard
+    Dashboard dos indicadores de gestão
   
 
     
@@ -2019,10 +2019,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-objetivo-da-medicao" class="md-nav__link">
+  <a href="#1-necessidades-de-informacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Objetivo da medição
+        1. Necessidades de informação
       
     </span>
   </a>
@@ -2030,10 +2030,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-medidas" class="md-nav__link">
+  <a href="#2-do-modelo-de-informacao-a-decisao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Medidas
+        2. Do modelo de informação à decisão
       
     </span>
   </a>
@@ -2130,7 +2130,7 @@
         <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Gestão do Projeto - Métricas PSM/CID
+    Gestão do projeto (PSM/CID)
   </span>
 
         </a>
@@ -2157,42 +2157,88 @@
   
 
 
-<h1 id="gestao-do-projeto-metricas-psmcid">Gestão do Projeto - Métricas <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr><a class="headerlink" href="#gestao-do-projeto-metricas-psmcid" title="Permanent link">&para;</a></h1>
+<h1 id="gestao-do-projeto-psmcid">Gestão do projeto (<abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>)<a class="headerlink" href="#gestao-do-projeto-psmcid" title="Permanent link">&para;</a></h1>
 <p>Esta seção explica, para um leitor externo, como a equipe acompanha o projeto de avaliação do Moodle 5.3 <abbr title="Long-Term Support (versão de suporte estendido)">LTS</abbr>. O modelo adotado é o <strong><abbr title="Practical Software and Systems Measurement">PSM</abbr></strong> (<em>Practical Software and Systems Measurement</em>), complementado pelo <strong><abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></strong> (<em>Continuous Iterative Development Measurement Framework</em>). Cada medida parte de uma necessidade de informação, produz um indicador verificável e apoia uma decisão de gestão.</p>
-<h2 id="1-objetivo-da-medicao">1. Objetivo da medição<a class="headerlink" href="#1-objetivo-da-medicao" title="Permanent link">&para;</a></h2>
-<p>O objetivo é acompanhar a execução do projeto quanto a <strong>calendário e progresso</strong>, <strong>desempenho dos processos</strong> e <strong>recursos e custos</strong>, permitindo identificar desvios antes dos marcos PC1, E1, E2 e Apresentação. O <a href="../metricas/01-diagnostico-repositorio/">diagnóstico do repositório</a> registra as limitações encontradas; os <a href="../metricas/02-construtos-de-medicao/">construtos de medição</a> definem previamente como cada valor é calculado e interpretado.</p>
-<h2 id="2-medidas">2. Medidas<a class="headerlink" href="#2-medidas" title="Permanent link">&para;</a></h2>
+<h2 id="1-necessidades-de-informacao">1. Necessidades de informação<a class="headerlink" href="#1-necessidades-de-informacao" title="Permanent link">&para;</a></h2>
+<p>No <abbr title="Practical Software and Systems Measurement">PSM</abbr>, a medição não começa por um objetivo nem por uma pergunta: começa pelas <strong>necessidades de informação</strong> do projeto, isto é, os riscos, os problemas e a falta de informação que a gestão precisa acompanhar. Cada necessidade abaixo nasceu de uma evidência do <a href="../metricas/01-diagnostico-repositorio/">diagnóstico do repositório</a> e levou a uma das três categorias de informação exigidas pela especificação do trabalho.</p>
 <table>
 <thead>
 <tr>
+<th>Necessidade de informação</th>
+<th>Tipo</th>
+<th>Origem</th>
 <th>Categoria de informação</th>
-<th>Pergunta de gestão</th>
-<th>Medidas obrigatórias</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><strong>N1.</strong> O trabalho comprometido para cada marco (PC2 e E2) será concluído no prazo? Quais produtos de trabalho estão em risco?</td>
+<td>Risco</td>
+<td>Todo o conteúdo da E1 entrou na <code>main</code> na véspera do prazo, e o PC1 não foi apresentado</td>
 <td>Calendário e Progresso</td>
-<td>O trabalho comprometido será concluído no prazo e está fluindo pelo quadro?</td>
-<td>A1 Burndown; A2 Comprometido × concluído; A3 Fluxo cumulativo</td>
 </tr>
 <tr>
+<td><strong>N2.</strong> Quanto tempo uma tarefa leva, o ritmo da equipe basta para o escopo que falta e a revisão interna encontra os problemas antes da docente?</td>
+<td>Problema</td>
+<td>As issues da E1 foram abertas e fechadas em lote, sem revisão registrada, e houve duas semanas sem progresso entre a E1 e a E2</td>
 <td>Desempenho dos Processos</td>
-<td>A equipe conclui tarefas em tempo previsível e com capacidade suficiente?</td>
-<td>B1 Cycle time; B2 Velocidade</td>
 </tr>
 <tr>
+<td><strong>N3.</strong> Quanto esforço o projeto consome, como ele se distribui entre os integrantes e as estimativas servem para planejar?</td>
+<td>Falta de informação</td>
+<td>Nenhuma hora foi registrada na E1</td>
 <td>Recursos e Custos</td>
-<td>O esforço está equilibrado e as estimativas são confiáveis?</td>
-<td>C1 Esforço; C2 Contribuição; C3 Estimado × real</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 1. Medidas obrigatórias da gestão do projeto. Fonte: elaborado pelos autores a partir dos construtos PSM/CID adotados.</p>
+<p class="legenda">Tabela 1. Necessidades de informação da gestão do projeto, com o tipo, a origem e a categoria. Fonte: elaborado pelos autores a partir do diagnóstico do repositório e da Aula 09.</p>
 
-<p>As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de <a href="../metricas/02-construtos-de-medicao/">Construtos de medição</a>. Essa especificação separa as métricas de gestão das métricas de qualidade do produto definidas na <a href="../fase-2/">Fase 2</a>: as primeiras acompanham a execução do projeto; as segundas avaliam o Moodle.</p>
+<p>Esta seção trata da <strong>gestão do projeto</strong>. A avaliação da qualidade do Moodle segue outro modelo, o <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> da <a href="../fase-2/">Fase 2</a>, que parte de objetivos e questões sobre o produto. Os dois não se misturam.</p>
+<h2 id="2-do-modelo-de-informacao-a-decisao">2. Do modelo de informação à decisão<a class="headerlink" href="#2-do-modelo-de-informacao-a-decisao" title="Permanent link">&para;</a></h2>
+<p>Cada necessidade segue a ordem do modelo de informação do <abbr title="Practical Software and Systems Measurement">PSM</abbr>: necessidade de informação → categoria → conceito mensurável → medidas → indicador → critério de decisão → decisão.</p>
+<table>
+<thead>
+<tr>
+<th>Necessidade de informação</th>
+<th>Categoria</th>
+<th>Conceito mensurável</th>
+<th>Medidas</th>
+<th>Indicador</th>
+<th>Critério de decisão (exemplo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N1</td>
+<td>Calendário e Progresso</td>
+<td>Progresso das unidades de trabalho; conclusão de marcos</td>
+<td>A1 Burndown; A2 Comprometido × concluído; A3 Fluxo cumulativo; A4 Conclusão de marcos</td>
+<td>Burndown por marco e colunas comprometido × concluído por semana</td>
+<td>Diferença maior que 10% entre comprometido e concluído: replanejar a semana seguinte</td>
+</tr>
+<tr>
+<td>N2</td>
+<td>Desempenho dos Processos</td>
+<td>Eficiência do processo (velocidade) e efetividade da revisão</td>
+<td>B1 Cycle time; B2 Velocidade; B3 Frequência de entregas; B4 Retrabalho</td>
+<td>Histograma de cycle time e velocidade com projeção</td>
+<td>Projeção de semanas restantes maior que o prazo: decisão de escopo</td>
+</tr>
+<tr>
+<td>N3</td>
+<td>Recursos e Custos</td>
+<td>Esforço de pessoal e acurácia da estimativa</td>
+<td>C1 Esforço; C2 Contribuição; C3 Estimado × real</td>
+<td>Horas por integrante e por fase; custo estimado × realizado</td>
+<td>Acurácia fora de 0,85 a 1,25: recalibrar as estimativas</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 2. Ligação entre necessidade de informação, medidas, indicador e critério de decisão. Fonte: elaborado pelos autores a partir dos construtos de medição.</p>
+
+<p>As fórmulas, unidades, fontes, limitações e limiares de decisão estão na página de <a href="../metricas/02-construtos-de-medicao/">Construtos de medição</a>. Essa especificação separa as medidas de gestão do projeto das métricas de qualidade do produto definidas na <a href="../fase-2/">Fase 2</a>: as primeiras acompanham a execução do projeto; as segundas avaliam o Moodle.</p>
 <h2 id="3-indicadores">3. Indicadores<a class="headerlink" href="#3-indicadores" title="Permanent link">&para;</a></h2>
-<p>O <a href="../metricas/dashboard/">Dashboard das métricas</a> apresenta o retrato mais recente das oito medidas, compara cada valor com seu limiar e reúne os gráficos nas três categorias. A página é gerada automaticamente a partir dos CSVs consolidados, evitando que números sejam copiados manualmente.</p>
+<p>O <a href="../metricas/dashboard/">Dashboard dos indicadores de gestão</a> apresenta o retrato mais recente das oito medidas, compara cada valor com seu limiar e reúne os gráficos nas três categorias. A página é gerada automaticamente a partir dos CSVs consolidados, evitando que números sejam copiados manualmente.</p>
 <p>O caminho de rastreabilidade é:</p>
 <ol>
 <li><a href="../metricas/dados/brutos/">dados brutos</a>, extraídos do Git, das issues, dos pull requests, do quadro e do apontamento de esforço;</li>
@@ -2242,7 +2288,7 @@
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 2. Pontos de acesso aos artefatos verificáveis da gestão. Fonte: elaborado pelos autores.</p>
+<p class="legenda">Tabela 3. Pontos de acesso aos artefatos verificáveis da gestão. Fonte: elaborado pelos autores.</p>
 
 <h2 id="relacao-com-as-fases-da-avaliacao">Relação com as fases da avaliação<a class="headerlink" href="#relacao-com-as-fases-da-avaliacao" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2251,7 +2297,7 @@
 <li>A <a href="../fase-3/plano-de-avaliacao/">Fase 3</a> planeja a execução e os recursos necessários.</li>
 <li>A <a href="../fase-4/plano-de-execucao/">Fase 4</a> obtém as medidas do produto, julga os objetivos e executa a ação de melhoria.</li>
 </ul>
-<p>As métricas <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.</p>
+<p>As medidas e os indicadores do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> acompanham o trabalho necessário para produzir e revisar os artefatos dessas quatro fases.</p>
 
 
 
