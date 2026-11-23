@@ -69,6 +69,60 @@ class Normalizacao(unittest.TestCase):
             cr.compara([{"a": "1"}], [{"a": "1"}], "username")
 
 
+class EquivalenciaDeRepresentacao(unittest.TestCase):
+    """Casos da coleta de 22/11: o dado é o mesmo, só muda a forma de gravar (#133)."""
+
+    def test_celula_numerica_de_xlsx_comparada_como_numero(self):
+        ref = [{"email": "est01@example.invalid", "Avaliação 1": "10.00", "Participação": "7.50"}]
+        dest = [{"email": "est01@example.invalid", "Avaliação 1": cr.NumeroCelula("10.0"),
+                 "Participação": cr.NumeroCelula("7.5")}]
+        _, resumo = cr.compara(ref, dest, "email")
+        self.assertEqual(resumo["rc"], 1)
+
+    def test_numero_diferente_continua_divergente(self):
+        ref = [{"email": "est01@example.invalid", "Avaliação 1": "10.00"}]
+        dest = [{"email": "est01@example.invalid", "Avaliação 1": cr.NumeroCelula("9.99")}]
+        self.assertEqual(cr.compara(ref, dest, "email")[1]["rc"], 0)
+
+    def test_texto_continua_sem_normalizar_casas(self):
+        """Em CSV e em célula de texto, 7.5 contra 7.50 continua sendo divergência."""
+        self.assertFalse(cr.iguais("7.50", "7.5"))
+        self.assertFalse(cr.iguais("7,50", cr.NumeroCelula("7.5")))
+
+    def test_resposta_numerica_gift_na_forma_do_moodle(self):
+        for referencia, exportada in (("#144", "# =%100%144:0#"), ("#3.14:0.005", "# =%100%3.14:0.005#"),
+                                      ("#7", "#=%100%7:0#")):
+            with self.subTest(referencia=referencia):
+                self.assertEqual(cr.respostas_gift(referencia), cr.respostas_gift(exportada))
+
+    def test_resposta_numerica_gift_diferente(self):
+        self.assertNotEqual(cr.respostas_gift("#144"), cr.respostas_gift("# =%100%145:0#"))
+        self.assertNotEqual(cr.respostas_gift("#3.14:0.005"), cr.respostas_gift("# =%100%3.14:0.01#"))
+        self.assertNotEqual(cr.respostas_gift("#144"), cr.respostas_gift("# =%50%144:0#"))
+
+    def test_resposta_nao_numerica_inalterada(self):
+        self.assertEqual(cr.respostas_gift("=4 ~3 ~5"), "=4 ~3 ~5")
+
+    def test_xlsx_marca_celula_numerica(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            buf = io.BytesIO()
+            with zipfile.ZipFile(buf, "w") as z:
+                z.writestr("xl/sharedStrings.xml",
+                           '<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+                           "<si><t>email</t></si><si><t>P1</t></si><si><t>est01@example.invalid</t></si>"
+                           "<si><t>10.0</t></si></sst>")
+                z.writestr("xl/worksheets/sheet1.xml",
+                           '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>'
+                           '<row r="1"><c r="A1" t="s"><v>0</v></c><c r="B1" t="s"><v>1</v></c></row>'
+                           '<row r="2"><c r="A2" t="s"><v>2</v></c><c r="B2"><v>10.0</v></c></row>'
+                           '<row r="3"><c r="A3" t="s"><v>2</v></c><c r="B3" t="s"><v>3</v></c></row>'
+                           "</sheetData></worksheet>")
+            x = grava(tmp, "notas.xlsx", buf.getvalue())
+            regs = cr.le_registros(x)
+            self.assertIsInstance(regs[0]["P1"], cr.NumeroCelula)
+            self.assertNotIsInstance(regs[1]["P1"], cr.NumeroCelula)
+
+
 class Leitores(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
