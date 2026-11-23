@@ -1,6 +1,6 @@
 # Métricas
 
-Cada métrica responde a uma questão de [Objetivos, questões e hipóteses](objetivos-questoes-hipoteses.md) e foi derivada de uma medida da ISO/IEC 25023 (versão disponibilizada na disciplina), adaptada ao Moodle. As métricas seguem a forma de proporção `X = A / B` ou `X = 1 − A / B`, com escala de 0 a 1, em que **valores mais próximos de 1 são melhores**; a exceção é M3.4 (tempo), em que valores menores são melhores.
+Cada métrica refina uma ou mais questões de [Objetivos, questões e hipóteses](objetivos-questoes-hipoteses.md) e foi derivada de uma medida da ISO/IEC 25023 (versão disponibilizada na disciplina), adaptada ao Moodle. As métricas seguem a forma de proporção `X = A / B` ou `X = 1 − A / B`, com escala de 0 a 1, em que **valores mais próximos de 1 são melhores**; a exceção é M3.4 (tempo), em que valores menores são melhores.
 
 Todas as métricas usam **método de medição objetivo** (contagem ou cronometragem com regra explícita) e são coletadas na Fase 4, na instalação de referência descrita em [Produto avaliado](../fase-1/produto.md). Os registros brutos ficarão em `dados/avaliacao/<ID da métrica>/`.
 
@@ -42,7 +42,7 @@ Princípios aplicados (Aula 08): **simplicidade** (uma contagem por métrica), *
 
 | Campo | Descrição |
 |---|---|
-| Questão | Q1.3 |
+| Questão | Q1.3 e Q1.1 |
 | Subcaracterística | Pertinência funcional |
 | Medida de referência (ISO/IEC 25023) | *Functional appropriateness* |
 | Definição | Proporção das tarefas concluídas que **não** exigiram contorno. Contorno = passo não descrito na documentação oficial da função, ou uso de uma função alheia ao objetivo da tarefa (por exemplo, editar o banco de dados ou mudar uma configuração global para concluir uma tarefa de curso) |
@@ -62,7 +62,7 @@ Princípios aplicados (Aula 08): **simplicidade** (uma contagem por métrica), *
 
 | Campo | Descrição |
 |---|---|
-| Questão | Q2.1 |
+| Questão | Q2.1 e Q2.2 |
 | Subcaracterística | Interoperabilidade |
 | Medida de referência (ISO/IEC 25023) | *Data exchangeability (data format based)* |
 | Definição | Proporção dos formatos de troca de dados em que a operação conclui e o arquivo é aceito pelo outro lado |
@@ -201,8 +201,8 @@ Princípios aplicados (Aula 08): **simplicidade** (uma contagem por métrica), *
 |---|---|---|---|
 | M1.1 | 1 − Tf/Tt | Q1.1 | Completude funcional |
 | M1.2 | Cc/Ct | Q1.2 | Correção funcional |
-| M1.3 | 1 − Tc/Tt | Q1.3 | Pertinência funcional |
-| M2.1 | Fs/Ft | Q2.1 | Interoperabilidade |
+| M1.3 | 1 − Tc/Tt | Q1.3, Q1.1 | Pertinência funcional |
+| M2.1 | Fs/Ft | Q2.1, Q2.2 | Interoperabilidade |
 | M2.2 | Rc/Rt | Q2.2 | Interoperabilidade |
 | M2.3 | Ws/Wt | Q2.3 | Interoperabilidade |
 | M2.4 | Ec/Et | Q2.4 | Coexistência |

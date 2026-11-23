@@ -12,11 +12,11 @@
       id: "G1", nome: "Adequação funcional", decisao: "D1",
       objetivo: "<b>Analisar</b> o núcleo do Moodle 5.3 LTS <b>para o propósito de</b> entender <b>com respeito à</b> adequação funcional das tarefas acadêmicas essenciais <b>do ponto de vista da</b> Coordenação de TI <b>no contexto da</b> decisão de adoção/atualização (D1).",
       questoes: [
-        { id: "Q1.1", q: "Em que medida as funções do núcleo cobrem as tarefas essenciais do catálogo?", h: "H1.1: as 12 tarefas são cobertas (M1.1 = 1,00).",
-          m: [{ id: "M1.1", n: "Cobertura funcional", f: "1 − Tf/Tt" }] },
-        { id: "Q1.2", q: "Os resultados calculados (notas, agregação, prazos) correspondem aos esperados?", h: "H1.2: todos os casos iguais ao oráculo (M1.2 = 1,00).",
+        { id: "Q1.1", q: "O núcleo do Moodle, sem plugins, dá conta das tarefas acadêmicas essenciais da instituição?", h: "H1.1: sim; função para as 12 tarefas (12 de 12) e só uma com contorno.",
+          m: [{ id: "M1.1", n: "Cobertura funcional", f: "1 − Tf/Tt" }, { id: "M1.3", n: "Pertinência funcional", f: "1 − Tc/Tt" }] },
+        { id: "Q1.2", q: "O Moodle calcula notas e controla prazos como a instituição espera?", h: "H1.2: sim; todos os casos iguais ao oráculo.",
           m: [{ id: "M1.2", n: "Correção funcional", f: "Cc/Ct" }] },
-        { id: "Q1.3", q: "As funções permitem concluir as tarefas sem contornos?", h: "H1.3: no máximo 1 contorno (M1.3 ≥ 0,92).",
+        { id: "Q1.3", q: "Docentes e gestão conseguem fazer as tarefas pelo caminho previsto, sem improvisar passos?", h: "H1.3: quase sempre; só a restauração de backup exige contorno (11 de 12).",
           m: [{ id: "M1.3", n: "Pertinência funcional", f: "1 − Tc/Tt" }] }
       ]
     },
@@ -24,13 +24,13 @@
       id: "G2", nome: "Compatibilidade", decisao: "D2",
       objetivo: "<b>Analisar</b> o núcleo do Moodle 5.3 LTS e suas interfaces de troca de dados <b>para o propósito de</b> entender <b>com respeito à</b> compatibilidade (interoperabilidade e coexistência) <b>do ponto de vista da</b> Coordenação de TI <b>no contexto da</b> decisão sobre as integrações (D2).",
       questoes: [
-        { id: "Q2.1", q: "Em que medida os formatos de arquivo são exportados e importados com sucesso?", h: "H2.1: pelo menos 6 de 7 formatos (M2.1 ≥ 0,85).",
+        { id: "Q2.1", q: "A instituição consegue levar dados para o Moodle e tirá-los dele nos arquivos que os outros sistemas usam?", h: "H2.1: sim, com no máximo uma exceção (6 ou 7 de 7 formatos).",
           m: [{ id: "M2.1", n: "Intercâmbio de formatos", f: "Fs/Ft" }] },
-        { id: "Q2.2", q: "Os dados trocados chegam íntegros ao outro lado?", h: "H2.2: todos os registros íntegros (M2.2 = 1,00).",
-          m: [{ id: "M2.2", n: "Integridade dos dados", f: "Rc/Rt" }] },
-        { id: "Q2.3", q: "As funções REST selecionadas atendem corretamente a um cliente externo?", h: "H2.3: 6 de 6 funções (M2.3 = 1,00).",
+        { id: "Q2.2", q: "Os dados que passam entre o Moodle e os outros sistemas chegam ao destino como saíram?", h: "H2.2: sim; todos os registros iguais à referência (risco: acentuação no CSV).",
+          m: [{ id: "M2.1", n: "Intercâmbio de formatos", f: "Fs/Ft" }, { id: "M2.2", n: "Integridade dos dados", f: "Rc/Rt" }] },
+        { id: "Q2.3", q: "Um sistema externo consegue consultar e alterar dados do Moodle pelos serviços web, sem intervenção manual?", h: "H2.3: sim; as 6 funções respondem sem erro (6 de 6).",
           m: [{ id: "M2.3", n: "Conectividade REST", f: "Ws/Wt" }] },
-        { id: "Q2.4", q: "O Moodle opera no mesmo servidor que outras aplicações sem prejudicá-las?", h: "H2.4: nenhuma entidade afetada (M2.4 = 1,00).",
+        { id: "Q2.4", q: "O Moodle pode dividir o servidor com outras aplicações sem atrapalhá-las?", h: "H2.4: sim; nenhuma das 3 entidades vizinhas é afetada (3 de 3).",
           m: [{ id: "M2.4", n: "Coexistência disponível", f: "Ec/Et" }] }
       ]
     },
@@ -38,13 +38,13 @@
       id: "G3", nome: "Flexibilidade", decisao: "D3",
       objetivo: "<b>Analisar</b> o Moodle 5.3 LTS e seus procedimentos oficiais de instalação e atualização <b>para o propósito de</b> entender <b>com respeito à</b> flexibilidade (adaptabilidade e instalabilidade) <b>do ponto de vista da</b> Coordenação de TI <b>no contexto da</b> definição do procedimento de migração (D3).",
       questoes: [
-        { id: "Q3.1", q: "Os fluxos essenciais funcionam em todos os ambientes de acesso previstos?", h: "H3.1: pior ambiente com M3.1 ≥ 0,875.",
+        { id: "Q3.1", q: "Estudantes e docentes conseguem usar o Moodle a partir dos computadores e celulares que já têm?", h: "H3.1: quase todos; desktops 8 de 8 e Android com no máximo uma falha.",
           m: [{ id: "M3.1", n: "Adaptabilidade ao acesso", f: "min(1 − Tfa/Tta)" }] },
-        { id: "Q3.2", q: "O Moodle se comporta igual nas versões de PHP suportadas?", h: "H3.2: sem diferença entre 8.3 e 8.4 (M3.2 = 1,00).",
+        { id: "Q3.2", q: "A TI pode escolher entre as versões de PHP suportadas sem que o Moodle mude de comportamento?", h: "H3.2: sim; mesmo resultado nas 12 tarefas com PHP 8.3 e 8.4.",
           m: [{ id: "M3.2", n: "Adaptabilidade ao PHP", f: "min(1 − Tfp/Ttp)" }] },
-        { id: "Q3.3", q: "Instalação limpa e atualização concluem com êxito e em tempo razoável?", h: "H3.3: M3.3 ≥ 0,83; instalação limpa em até 15 min.",
+        { id: "Q3.3", q: "A TI consegue instalar e atualizar o Moodle seguindo só a documentação oficial, em tempo previsível?", h: "H3.3: sim, com um tropeço; uma atualização falha na 1ª tentativa por causa de public/ (5 de 6); instalação limpa em menos de 15 min.",
           m: [{ id: "M3.3", n: "Sucesso de instalação", f: "Ps/Pt" }, { id: "M3.4", n: "Tempo de instalação", f: "mediana(tfim − tinício)" }] },
-        { id: "Q3.4", q: "A atualização 4.5 → 5.3 preserva os dados acadêmicos?", h: "H3.4: todos os itens preservados (M3.5 = 1,00).",
+        { id: "Q3.4", q: "A atualização da 4.5 para a 5.3 mantém os dados acadêmicos que já existem?", h: "H3.4: sim; os 40 itens iguais antes e depois (40 de 40).",
           m: [{ id: "M3.5", n: "Preservação de dados", f: "Ip/It" }] }
       ]
     }

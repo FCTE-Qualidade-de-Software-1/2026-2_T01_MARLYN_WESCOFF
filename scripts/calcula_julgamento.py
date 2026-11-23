@@ -13,7 +13,8 @@ coletores a partir dos CSVs de cada métrica:
 Regras aplicadas, sem nenhuma alteração (docs/fase-2/niveis-e-julgamento.md):
   - níveis de pontuação da Tabela 2: a nota 4 exige o valor exato de 1,00; os demais degraus comparam o
     valor com 2 casas decimais, como na tabela (por exemplo, 11/12 = 0,9167 vira 0,92 e recebe nota 3);
-  - questão: nota da métrica; Q3.3 = mínimo(nota de M3.3, nota de M3.4);
+  - questão: mínimo das notas das suas métricas (Q1.1 = M1.1 e M1.3; Q2.2 = M2.1 e M2.2; Q3.3 = M3.3 e
+    M3.4; as demais têm uma métrica só, issue #108);
   - objetivo: pior caso (Tabela 4): todas >= 3 Atende; nenhuma 1 e alguma 2 Atende com ressalvas;
     alguma 1 Não atende;
   - hipóteses H1.1 a H3.4 (docs/fase-2/objetivos-questoes-hipoteses.md), na parte numérica.
@@ -51,8 +52,8 @@ NIVEIS_M34 = [(4, 15, 0), (3, 30, 1), (2, 60, 3)]
 
 QUESTAO_DO_OBJETIVO = {"G1": ["Q1.1", "Q1.2", "Q1.3"], "G2": ["Q2.1", "Q2.2", "Q2.3", "Q2.4"],
                        "G3": ["Q3.1", "Q3.2", "Q3.3", "Q3.4"]}
-METRICAS_DA_QUESTAO = {"Q1.1": ["M1.1"], "Q1.2": ["M1.2"], "Q1.3": ["M1.3"], "Q2.1": ["M2.1"],
-                       "Q2.2": ["M2.2"], "Q2.3": ["M2.3"], "Q2.4": ["M2.4"], "Q3.1": ["M3.1"],
+METRICAS_DA_QUESTAO = {"Q1.1": ["M1.1", "M1.3"], "Q1.2": ["M1.2"], "Q1.3": ["M1.3"], "Q2.1": ["M2.1"],
+                       "Q2.2": ["M2.1", "M2.2"], "Q2.3": ["M2.3"], "Q2.4": ["M2.4"], "Q3.1": ["M3.1"],
                        "Q3.2": ["M3.2"], "Q3.3": ["M3.3", "M3.4"], "Q3.4": ["M3.5"]}
 DECISAO = {"G1": "D1", "G2": "D2", "G3": "D3"}
 ACAO = {"Atende": "Prosseguir",
@@ -60,22 +61,24 @@ ACAO = {"Atende": "Prosseguir",
         "Não atende": "Não prosseguir sem correção ou contorno documentado; candidata à ação de melhoria (D4)",
         "incompleto": "Aguardar as métricas pendentes"}
 
-# Parte numérica das hipóteses (H = questão). Texto completo em objetivos-questoes-hipoteses.md.
+# Parte numérica das hipóteses: o valor esperado (baseline), que não é o critério de julgamento (#109).
+# Texto completo em objetivos-questoes-hipoteses.md.
 HIPOTESES = {
-    "M1.1": ("H1.1", "M1.1 = 1,00", lambda v, r: v >= 1.0),
-    "M1.2": ("H1.2", "M1.2 = 1,00", lambda v, r: v >= 1.0),
-    "M1.3": ("H1.3", "M1.3 >= 0,92", lambda v, r: v >= 0.92),
-    "M2.1": ("H2.1", "M2.1 >= 0,85", lambda v, r: v >= 0.85),
-    "M2.2": ("H2.2", "M2.2 = 1,00", lambda v, r: v >= 1.0),
-    "M2.3": ("H2.3", "M2.3 = 1,00", lambda v, r: v >= 1.0),
-    "M2.4": ("H2.4", "M2.4 = 1,00", lambda v, r: v >= 1.0),
-    "M3.1": ("H3.1", "M3.1 >= 0,875 no pior ambiente (conferir também se os 3 desktops concluem tudo)",
-             lambda v, r: v >= 0.875),
-    "M3.2": ("H3.2", "M3.2 = 1,00 nas duas versões", lambda v, r: v >= 1.0),
-    "M3.3": ("H3.3", "M3.3 >= 0,83 (conferir também as 3 limpas e a falha esperada por public/)",
-             lambda v, r: v >= 0.83),
-    "M3.4": ("H3.3", "instalação limpa em até 15 min", lambda v, r: v <= 15),
-    "M3.5": ("H3.4", "M3.5 = 1,00", lambda v, r: v >= 1.0),
+    "M1.1": ("H1.1", "12 de 12 tarefas com função", lambda v, r: v >= 1.0),
+    "M1.2": ("H1.2", "todos os casos iguais ao oráculo", lambda v, r: v >= 1.0),
+    "M1.3": ("H1.3", "11 de 12 tarefas sem contorno (só a restauração de backup)",
+             lambda v, r: abs(v - 11 / 12) < 1e-9),
+    "M2.1": ("H2.1", "6 ou 7 de 7 formatos", lambda v, r: v >= 6 / 7 - 1e-9),
+    "M2.2": ("H2.2", "todos os registros iguais à referência", lambda v, r: v >= 1.0),
+    "M2.3": ("H2.3", "6 de 6 funções", lambda v, r: v >= 1.0),
+    "M2.4": ("H2.4", "3 de 3 entidades vizinhas sem efeito", lambda v, r: v >= 1.0),
+    "M3.1": ("H3.1", "7 ou 8 de 8 no pior ambiente (conferir também se os 3 desktops concluem tudo)",
+             lambda v, r: v >= 7 / 8 - 1e-9),
+    "M3.2": ("H3.2", "mesmo resultado nas 12 tarefas com PHP 8.3 e 8.4", lambda v, r: v >= 1.0),
+    "M3.3": ("H3.3", "5 de 6 (conferir também se as 3 limpas concluem e a falha é por public/)",
+             lambda v, r: abs(v - 5 / 6) < 1e-9),
+    "M3.4": ("H3.3", "instalação limpa em menos de 15 min", lambda v, r: v < 15),
+    "M3.5": ("H3.4", "40 de 40 itens iguais", lambda v, r: v >= 1.0),
 }
 
 
