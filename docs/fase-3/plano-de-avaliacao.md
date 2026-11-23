@@ -127,7 +127,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 2. Aplicar a massa na instância que será usada, com as partes indicadas para a métrica: `sudo python3 scripts/gera_massa.py aplicar --moodle /var/www/<instância> --php php<versão> --partes <partes>` (ver `dados/avaliacao/massa/README.md`).
 3. Rodar a etapa `versoes` e versionar o resultado em `dados/avaliacao/ambiente/versoes-<iniciais>.txt`, acrescentando o virtualizador e a versão dele.
 
-### G1 – Adequação funcional (M1.1, M1.2, M1.3)
+### G1 – Adequação funcional: Q1.1 a Q1.3 (M1.1 a M1.3)
 
 1. Usar a instância `m53php83`, recém-criada pelo script, com as partes `contas` e `oraculo` da massa aplicadas (T01 a T12 criam o próprio curso).
 2. Abrir `dados/avaliacao/M1.1/execucoes.csv` e executar T01 a T12 **na ordem do catálogo**, com o papel indicado em cada tarefa.
@@ -137,7 +137,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 6. Nos quatro casos de prazo, tentar o envio no horário do oráculo e anotar se foi aceito, aceito com atraso ou bloqueado.
 7. Calcular `M1.1 = 1 − Tf/12`, `M1.2 = Cc/20` e `M1.3 = 1 − Tc/12` com a planilha `dados/avaliacao/calculos.csv`.
 
-### G2 – Compatibilidade (M2.1 a M2.4)
+### G2 – Compatibilidade: Q2.1 a Q2.4 (M2.1 a M2.4)
 
 **M2.1 e M2.2 (formatos e integridade)**
 
@@ -159,7 +159,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 3. Executar as 4 operações (instalação, cron, backup de curso, atualização). Antes, durante e depois de cada uma, repetir as verificações e registrar em `verificacoes.csv`.
 4. Uma verificação falha marca a entidade como afetada.
 
-### G3 – Flexibilidade (M3.1 a M3.5)
+### G3 – Flexibilidade: Q3.1 a Q3.4 (M3.1 a M3.5)
 
 **M3.1 (ambientes de acesso)**
 
@@ -185,7 +185,9 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 
 1. Calcular cada métrica na planilha de cálculos e aplicar os níveis de pontuação da Fase 2.
 2. Aplicar as regras métrica → questão → objetivo, e comparar com as hipóteses H1.1 a H3.4 (confirmada ou refutada).
-3. Escolher a **ação de melhoria (D4)** entre os resultados com nota 1 ou 2, de acordo com o tipo de problema encontrado: protótipo (fluxo), alteração de código (falha técnica objetiva), modelo técnico (documentação frágil) ou processo (problema recorrente). A justificativa cita a métrica e a evidência.
+3. **Sessão de interpretação** (Aula 08): cada coletor apresenta os dados da sua questão; a equipe responde às questões, compara com as hipóteses, explica as refutadas pelas medidas de contexto e decide a ação. A sessão é registrada em ata.
+4. **Plano de análise:** os resultados são mostrados em uma tabela por objetivo (notas das questões e julgamento) e na árvore GQM de resultados, que funciona como gráfico das notas por questão.
+5. Escolher a **ação de melhoria (D4)** entre os resultados com nota 1 ou 2, de acordo com o tipo de problema encontrado: protótipo (fluxo), alteração de código (falha técnica objetiva), modelo técnico (documentação frágil) ou processo (problema recorrente). A justificativa cita a métrica e a evidência.
 
 ## 4. Piloto e congelamento
 
@@ -224,7 +226,7 @@ dados/avaliacao/
 
 ## 6. Cronograma
 
-A Entrega 2 é em **22/11/2026**, e o cronograma foi comprimido para o período de 16 a 22/11 (ata 02, D2). A coleta ocorre em paralelo, cada integrante no próprio servidor.
+A Entrega 2 era em 22/11/2026 e foi prorrogada pela docente para **24/11/2026**. O cronograma abaixo é o aprovado na ata 02 (D2); o realizado está na [Tabela 3 do plano de execução](../fase-4/plano-de-execucao.md#sequencia-ate-a-entrega-2): a coleta foi de 15 a 22/11, num servidor compartilhado, e o julgamento, em 22/11.
 
 | Data | Atividade | Responsável | Issue | Saída |
 |---|---|---|---|---|
@@ -242,7 +244,7 @@ A Entrega 2 é em **22/11/2026**, e o cronograma foi comprimido para o período 
 | 22/11 | Artigo: Fase 4, resultados e conclusão; tabela de contribuição | Maykon; Pedro | #76, #77 | 2ª versão do artigo |
 | 22/11, até 23h59 | Declaração de IA final, revisão pela rubrica e release E2 | Bernardo | #78 | Release E2 com o PDF |
 
-<p class="legenda">Tabela 9. Cronograma de 16 a 22/11/2026. Fonte: ata 02 e milestone E2.</p>
+<p class="legenda">Tabela 9. Cronograma aprovado (16 a 22/11/2026); o realizado está no plano de execução da Fase 4. Fonte: ata 02 e milestone E2.</p>
 
 | Métrica | Responsável | Issue | Coleta | Dependência |
 |---|---|---|---|---|
@@ -288,20 +290,20 @@ As 6 execuções de G3 são o trecho mais demorado e começam em 18/11, logo dep
 
 Cada uma das 12 métricas da Fase 2 aparece abaixo com método, recursos principais, evidência, responsável e data de coleta. Nenhuma fórmula, nível de pontuação ou critério de julgamento foi alterado (ata 02, D1).
 
-| Métrica | Método (seção 3) | Recursos principais | Evidência | Responsável | Coleta |
-|---|---|---|---|---|---|
-| M1.1 | Execução T01–T12 | Instância `m53php83`, contas fictícias | `M1.1/execucoes.csv` | Bernardo | 18/11 |
-| M1.2 | Casos do oráculo | Oráculo, questionários e livro de notas | `M1.2/oraculo.csv` | Bernardo | 19–20/11 |
-| M1.3 | Mesma execução de M1.1 | Documentação oficial | `M1.1/execucoes.csv` | Bernardo | 18/11 |
-| M2.1 | 7 formatos | LibreOffice, Thunderbird, 2ª instância | `M2.1/` | Carlos | 18–20/11 |
-| M2.2 | Comparação campo a campo | `compara_registros.py` | `M2.2/` | Carlos | 18–20/11 |
-| M2.3 | 6 funções REST | `curl`/Python, token | `M2.3/` | Maykon | 18–20/11 |
-| M2.4 | 3 entidades × 4 operações | Apache, PostgreSQL, `cron` | `M2.4/verificacoes.csv` | Maykon | 18–20/11 |
-| M3.1 | 8 tarefas × A1–A4 | 4 ambientes de acesso | `M3.1/` | João Pedro | 19–20/11 |
-| M3.2 | T01–T12 × PHP 8.3/8.4 | Instâncias `m53php83` e `m53php84` | `M3.2/` | João Pedro | 18–19/11 |
-| M3.3 | 6 execuções | Clones da imagem-base, `script` | `M3.3/execucoes.csv` | Pedro (uma: Bernardo) | 18–20/11 |
-| M3.4 | Tempos das mesmas 6 | Log com tempos | `M3.4/` | Pedro | 18–20/11 |
-| M3.5 | 40 itens antes/depois | Consultas SQL, massa de dados | `M3.5/` | Pedro | 18–20/11 |
+| Questão | Métrica | Método (seção 3) | Recursos principais | Evidência | Responsável | Coleta |
+|---|---|---|---|---|---|---|
+| Q1.1 | M1.1 | Execução T01–T12 | Instância `m53php83`, contas fictícias | `M1.1/execucoes.csv` | Bernardo | 18/11 |
+| Q1.2 | M1.2 | Casos do oráculo | Oráculo, questionários e livro de notas | `M1.2/oraculo.csv` | Bernardo | 19–20/11 |
+| Q1.3, Q1.1 | M1.3 | Mesma execução de M1.1 | Documentação oficial | `M1.1/execucoes.csv` | Bernardo | 18/11 |
+| Q2.1, Q2.2 | M2.1 | 7 formatos | LibreOffice, Thunderbird, 2ª instância | `M2.1/` | Carlos | 18–20/11 |
+| Q2.2 | M2.2 | Comparação campo a campo | `compara_registros.py` | `M2.2/` | Carlos | 18–20/11 |
+| Q2.3 | M2.3 | 6 funções REST | `curl`/Python, token | `M2.3/` | Maykon | 18–20/11 |
+| Q2.4 | M2.4 | 3 entidades × 4 operações | Apache, PostgreSQL, `cron` | `M2.4/verificacoes.csv` | Maykon | 18–20/11 |
+| Q3.1 | M3.1 | 8 tarefas × A1–A4 | 4 ambientes de acesso | `M3.1/` | João Pedro | 19–20/11 |
+| Q3.2 | M3.2 | T01–T12 × PHP 8.3/8.4 | Instâncias `m53php83` e `m53php84` | `M3.2/` | João Pedro | 18–19/11 |
+| Q3.3 | M3.3 | 6 execuções | Clones da imagem-base, `script` | `M3.3/execucoes.csv` | Pedro (uma: Bernardo) | 18–20/11 |
+| Q3.3 | M3.4 | Tempos das mesmas 6 | Log com tempos | `M3.4/` | Pedro | 18–20/11 |
+| Q3.4 | M3.5 | 40 itens antes/depois | Consultas SQL, massa de dados | `M3.5/` | Pedro | 18–20/11 |
 
 <p class="legenda">Tabela 13. Rastreabilidade entre as métricas da Fase 2 e o plano da Fase 3. Fonte: elaboração própria.</p>
 

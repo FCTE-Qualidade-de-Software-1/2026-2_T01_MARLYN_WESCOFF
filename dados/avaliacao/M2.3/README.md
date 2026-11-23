@@ -1,6 +1,6 @@
 # Coleta de M2.3 (serviços web REST)
 
-Coleta da issue #69, feita em 22/11/2026, seguindo a seção 3 do [plano de avaliação da Fase 3](../../../docs/fase-3/plano-de-avaliacao.md#g2-compatibilidade-m21-a-m24). Responsável: Maykon. A execução foi conduzida com o Claude Code, sob a direção do Maykon (ver [Declaração de uso de IA](../../../docs/sobre/uso-de-ia.md)).
+Coleta da issue #69, feita em 22/11/2026, seguindo a seção 3 do [plano de avaliação da Fase 3](../../../docs/fase-3/plano-de-avaliacao.md#g2-compatibilidade-q21-a-q24-m21-a-m24). Responsável: Maykon. A execução foi conduzida com o Claude Code, sob a direção do Maykon (ver [Declaração de uso de IA](../../../docs/sobre/uso-de-ia.md)).
 
 **Resultado: M2.3 = Ws / Wt = 6 / 6 = 1,00 (nota 4). H2.3 confirmada.**
 

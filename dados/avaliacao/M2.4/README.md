@@ -1,6 +1,6 @@
 # Coleta de M2.4 (coexistência)
 
-Coleta da issue #69, feita em 22/11/2026, seguindo a seção 3 do [plano de avaliação da Fase 3](../../../docs/fase-3/plano-de-avaliacao.md#g2-compatibilidade-m21-a-m24). Responsável: Maykon. A execução foi conduzida com o Claude Code, sob a direção do Maykon (ver [Declaração de uso de IA](../../../docs/sobre/uso-de-ia.md)).
+Coleta da issue #69, feita em 22/11/2026, seguindo a seção 3 do [plano de avaliação da Fase 3](../../../docs/fase-3/plano-de-avaliacao.md#g2-compatibilidade-q21-a-q24-m21-a-m24). Responsável: Maykon. A execução foi conduzida com o Claude Code, sob a direção do Maykon (ver [Declaração de uso de IA](../../../docs/sobre/uso-de-ia.md)).
 
 **Resultado: M2.4 = Ec / Et = 2 / 3 = 0,67 (nota 2, "com recuperação sem intervenção"). H2.4 refutada.**
 
