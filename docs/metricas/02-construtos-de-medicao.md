@@ -4,19 +4,19 @@ Este documento especifica as medidas da gestão do projeto pelo modelo de inform
 
 Os limiares de decisão foram **declarados antes da análise** dos dados da E2, em 10/11/2026. Uma mudança posterior de limiar vira uma decisão registrada, com justificativa, e não substitui o valor original.
 
-## Objetivo de medição
+## Necessidades de informação
 
-> Acompanhar a execução do projeto de avaliação quanto a **progresso**, **eficiência de processo** e **consumo de recursos**, de modo a permitir decisões de gestão tempestivas que assegurem as entregas nos marcos da disciplina.
+As medidas partem das necessidades de informação do projeto: os riscos, os problemas e a falta de informação que a gestão precisa acompanhar (Aula 09). Cada uma vem de uma evidência do [Diagnóstico do repositório](01-diagnostico-repositorio.md) e levou a uma categoria de informação do PSM CID.
 
-As três categorias de informação exigidas pela especificação do trabalho são cobertas assim:
+| Necessidade de informação | Tipo | Origem no diagnóstico | Categoria de informação | Medidas |
+|---|---|---|---|---|
+| **N1.** O trabalho comprometido para cada marco será concluído no prazo? Quais produtos de trabalho estão em risco? | Risco | Conteúdo da E1 concentrado na véspera do prazo (seção 2); marcos sem correspondência no GitHub (lacuna L5) | Calendário e Progresso (*Schedule and Progress*) | A1 Burndown da entrega; A2 Comprometido x concluído; A3 Fluxo cumulativo; A4 Conclusão de marcos |
+| **N2.** Quanto tempo uma tarefa leva, o ritmo da equipe basta para o escopo que falta e a revisão interna encontra os problemas antes da docente? | Problema | Issues da E1 criadas e fechadas em lote (L3); nenhum PR nem não conformidade registrada (L2 e L8); duas semanas sem progresso (L10) | Desempenho dos Processos (*Process Performance*) | B1 Cycle time e lead time; B2 Velocidade e aceleração; B3 Frequência de entregas; B4 Retrabalho e não conformidades |
+| **N3.** Quanto esforço o projeto consome, como ele se distribui entre os integrantes e as estimativas servem para planejar? | Falta de informação | Nenhuma hora registrada na E1 (L1) | Recursos e Custos (*Resources and Cost*) | C1 Esforço da equipe; C2 Distribuição de contribuição; C3 Estimado x real |
 
-| Categoria de informação (PSM CID) | Medidas |
-|---|---|
-| Calendário e Progresso (*Schedule and Progress*) | A1 Burndown da entrega; A2 Comprometido x concluído; A3 Fluxo cumulativo; A4 Conclusão de marcos |
-| Desempenho dos Processos (*Process Performance*) | B1 Cycle time e lead time; B2 Velocidade e aceleração; B3 Frequência de entregas; B4 Retrabalho e não conformidades |
-| Recursos e Custos (*Resources and Cost*) | C1 Esforço da equipe; C2 Distribuição de contribuição; C3 Estimado x real |
+<p class="legenda">Tabela 1. Necessidades de informação, categorias de informação e medidas da gestão do projeto. Fonte: elaborado pelos autores a partir do diagnóstico do repositório, da Aula 09 e do PSM CID v2.1, Parte 1, Tabela 5.</p>
 
-<p class="legenda">Tabela 1. Categorias de informação e medidas da gestão do projeto. Fonte: elaborado pelos autores a partir do PSM CID v2.1, Parte 1, Tabela 5.</p>
+Cada ficha abaixo segue a ordem do modelo de informação: necessidade de informação → categoria → conceito mensurável → medidas básicas e derivadas → indicador → critério de decisão → decisão, esta registrada no [Registro de decisões de gestão](03-registro-de-decisoes.md).
 
 ## Adaptação da terminologia do CID
 
