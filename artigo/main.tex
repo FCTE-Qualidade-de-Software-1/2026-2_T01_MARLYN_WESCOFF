@@ -312,7 +312,7 @@ As métricas derivam da ISO/IEC 25023~\cite{iso25023} e são razões de 0 a 1 em
 \scriptsize
 \begin{tabularx}{\linewidth}{p{0.65cm}p{2.25cm}p{1.9cm}p{2.6cm}L}
 \toprule
-\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Medidas básicas e fonte} \\
+\textbf{ID} & \textbf{Métrica} & \textbf{Fórmula} & \textbf{Medida (25023)} & \textbf{Elementos de medida e fonte} \\
 \midrule
 M1.1 & Cobertura funcional & $1 - T_f/T_t$ & Functional implementation coverage & $T_t=12$ tarefas; $T_f$ sem função ou com falha; formulário de execução \\
 M1.2 & Correção funcional & $C_c/C_t$ & Correctness & $C_t=20$ casos (questionário, agregação, prazo); oráculo calculado à mão \\
@@ -437,23 +437,23 @@ A Fase~1 definiu propósito, requisitantes e partes interessadas, tipo de produt
 
 \begin{table}[!ht]
 \centering
-\caption{Contribuição multidimensional dos integrantes na E2.}
+\caption{Contribuição dos integrantes nas Entregas 1 e 2.}
 \label{tab:contribuicao}
 \scriptsize
-\begin{tabularx}{\linewidth}{Lp{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.25cm}p{1.4cm}}
+\begin{tabularx}{\linewidth}{p{2.3cm}LLp{0.75cm}p{0.75cm}}
 \toprule
-\textbf{Integrante} & \textbf{Commits} & \textbf{Linhas} & \textbf{Issues} & \textbf{Revisões} & \textbf{Horas} & \textbf{Índice C2} \\
+\textbf{Integrante} & \textbf{Entrega 1} & \textbf{Entrega 2} & \textbf{\% E1} & \textbf{\% E2} \\
 \midrule
-Bernardo Broetto Brun & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 91,18\% & 18,23\% \\
-Carlos Eduardo Deusdara Motta & 31,82\% & 42,19\% & 66,67\% & 0,00\% & 0,00\% & 28,14\% \\
-João Pedro Sampaio Maciel & 22,73\% & 4,31\% & 0,00\% & 0,00\% & 8,82\% & 7,17\% \\
-Maykon Junio dos Santos Soares & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% & 0,00\% \\
-Pedro Goncalves Rocha & 45,45\% & 53,50\% & 33,33\% & 100,00\% & 0,00\% & 46,46\% \\
+Bernardo Broetto Brun & Primeira versão da Fase 1; propósito e partes interessadas; objetivo G1 e métricas M1.1 a M1.3 & Liderança da E2; gráficos e dashboard da gestão do projeto; oráculo de M1.2 e coleta de G1; relações entre as características; correções do artigo; declaração de IA e release & 20\% & --- \\
+Carlos Eduardo Deusdara Motta & Primeira versão da Fase 1; produto, modelo de qualidade e escopo; objetivo G2 e métricas M2.1 a M2.4; atas & Diagnóstico, instrumentação e medidas da gestão do projeto; ata 02; plano de execução da Fase 4; comparação de M2.2 e coleta de M2.1 e M2.2; cálculo e julgamento & 20\% & --- \\
+João Pedro Sampaio Maciel & Primeira versão da Fase 1; ODS; \emph{abstraction sheets}, diagrama GQM e rastreabilidade & Plano de avaliação da Fase 3; massa de dados; coleta de M3.1 e M3.2; ação de melhoria; página de resultados da Fase 4 & 20\% & --- \\
+Maykon Junio dos Santos Soares & Primeira versão da Fase 1; GitPage; metodologia; artigo em \LaTeX{}; release & Condensação das Fases 1 e 2 do artigo; script de preparação do servidor; coleta de M2.3 e M2.4; questões e hipóteses do GQM; Fase 4 e conclusão do artigo & 20\% & --- \\
+Pedro Goncalves Rocha & Primeira versão da Fase 1; matriz de priorização; objetivo G3 e métricas M3.1 a M3.5 & Extração, consolidação e decisões da gestão do projeto; marcos do PC2; piloto e coleta de M3.3 a M3.5; ação de melhoria; revisão dos \emph{pull requests} & 20\% & --- \\
 \midrule
-\textbf{Total} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} & \textbf{100,00\%} \\
+\textbf{Total} & & & \textbf{100\%} & \textbf{100\%} \\
 \bottomrule
 \end{tabularx}
-\tabfonte{elaboração própria a partir de \texttt{contribuicao.csv}, extraído em 11/11/2026. O índice é a média das cinco participações e totaliza 100\%; as horas são reconstruídas e devem ser substituídas pelos registros reais.}
+\tabfonte{elaboração própria. Na E1, a equipe registrou em 26/10/2026 a divisão igual do esforço. Na E2, as responsabilidades são as das \emph{issues} de cada integrante no GitHub.}
 \end{table}
 
 \section{Declaração de uso de inteligência artificial}
