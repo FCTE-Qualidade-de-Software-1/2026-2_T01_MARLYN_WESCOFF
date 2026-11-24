@@ -29,7 +29,7 @@ Somente itens comprovados por arquivo versionado ou por uma verificação reexec
 
 - [x] **GitPage atualizada, com versão, data e links funcionais (F2-C10, AG-C4).** O rodapé informa `Entrega 2 | Versão 2.0 · 11/11/2026`; `mkdocs build --strict` concluiu com sucesso em 11/11/2026.
 - [x] **Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2).** O [dashboard](dashboard.md) numera as oito figuras; as tabelas e figuras do artigo estão numeradas e citadas em `artigo/main.tex`, e o PDF foi compilado e inspecionado.
-- [x] **Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).** A tabela de contribuição consta no Apêndice A de `artigo/main.tex`, com os percentuais e as responsabilidades dos integrantes.
+- [ ] **Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).** O Apêndice A de `artigo/main.tex` detalha as responsabilidades dos integrantes, mas os percentuais individuais da E2 ainda estão pendentes e devem ser preenchidos antes da release.
 - [x] **Declaração de uso de IA específica (AG-C3).** A declaração única registra ferramenta, tarefa, conferência, ajuste e integrante em [Uso de IA](../sobre/uso-de-ia.md), coerente com o Apêndice B.
 - [x] **Sem emojis, ícones ou figurinhas no conteúdo.** A busca por caracteres Unicode de emojis nos arquivos Markdown retornou zero ocorrência em 11/11/2026.
 - [x] **Coerência com as Fases 1 e 2 já entregues (F2-C11).** A narrativa da [gestão PSM/CID](../gestao/index.md) liga as medidas às fases, e as páginas de [Fase 1](../fase-1/index.md) e [Fase 2](../fase-2/index.md) possuem links cruzados para a gestão.
