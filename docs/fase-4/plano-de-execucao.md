@@ -2,7 +2,7 @@
 
 A Fase 4 coleta as 12 métricas de **18 a 20/11/2026**, calcula e julga os objetivos G1 a G3 em 21/11 e consolida os resultados e a ação de melhoria até a Entrega 2, em **22/11/2026**. Esta página diz quem coleta cada métrica, até quando, com qual evidência e em qual pasta. O **como** executar cada métrica está no [Plano de avaliação da Fase 3](../fase-3/plano-de-avaliacao.md#3-instrucoes-do-avaliador), e o cronograma e os responsáveis foram aprovados na reunião de 14/11/2026 ([ata 02](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md)).
 
-Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no [quadro de tarefas](https://github.com/users/cadumotta/projects/1) e nas [métricas de gestão PSM/CID](../gestao/index.md).
+Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no [quadro de tarefas](https://github.com/users/cadumotta/projects/1) e nos [indicadores de gestão do projeto (PSM/CID)](../gestao/index.md).
 
 ## Métricas, responsáveis e evidências
 
@@ -53,9 +53,32 @@ A coleta só começa quando a preparação de que ela depende estiver mergeada n
 
 ## Do dado ao julgamento
 
-1. Cada coletor registra os casos no CSV da métrica, inclusive as falhas (regra R4 do plano), e envia um parágrafo de resultado para o artigo.
-2. Em 21/11, os valores entram em `dados/avaliacao/calculos.csv`. Cada métrica recebe a nota pelos [níveis de pontuação](../fase-2/niveis-e-julgamento.md#niveis-de-pontuacao-por-metrica) congelados na Fase 2.
-3. As notas viram o julgamento das questões e dos objetivos pelas [regras de julgamento](../fase-2/niveis-e-julgamento.md#regras-de-julgamento), e cada hipótese H1.1 a H3.4 é confirmada ou refutada.
-4. O julgamento de G1, G2 e G3 responde às decisões D1 a D3 do [Propósito](../fase-1/proposito.md). Um resultado com nota 1 ou 2 é candidato à ação de melhoria (D4).
+A Fase 4 segue as três etapas finais do GQM (Aula 08): coletar, **interpretar** e relatar. A interpretação vai de baixo para cima: das métricas para as questões e das questões para os objetivos, que é o caminho inverso da definição feita na Fase 2.
 
-Os critérios não mudam depois de conhecer os resultados (regra R1). Qualquer desvio do plano durante a coleta é registrado em ata, com o motivo.
+### Plano de análise
+
+Os resultados são organizados por objetivo e por questão, e não por métrica isolada. Cada objetivo é apresentado com três elementos:
+
+| Elemento | Conteúdo | Fonte |
+|---|---|---|
+| Tabela por objetivo | Para cada questão do objetivo: as métricas que a respondem, o valor medido, a nota, a hipótese (o valor esperado) e se ela foi confirmada ou refutada | `dados/avaliacao/julgamento_metricas.csv` |
+| Gráfico das notas por questão | Uma barra por questão, de Q1.1 a Q3.4, com a nota de 1 a 4 e a linha da nota 3 (limite do "Atende") | `dados/avaliacao/julgamento_objetivos.csv` |
+| Árvore GQM de resultados | A árvore da Fase 2 lida de baixo para cima, com a nota de cada questão e o julgamento de cada objetivo | Gerada a partir de `dados/avaliacao/calculos.csv` |
+
+<p class="legenda">Tabela 4. Plano de análise: como os resultados da Fase 4 são apresentados. Fonte: elaboração própria, a partir da Aula 08 (slide 46).</p>
+
+Uma hipótese refutada é explicada pelas medidas de contexto (versão corretiva do Moodle, versão do PHP, recursos da VM, experiência do avaliador, codificação dos arquivos), e não pelo ajuste do critério.
+
+### Etapas
+
+1. **Registro.** Cada coletor registra os casos no CSV da métrica, inclusive as falhas (regra R4 do plano), com a evidência correspondente.
+2. **Cálculo.** Os valores entram em `dados/avaliacao/calculos.csv`, e `scripts/calcula_julgamento.py` aplica os [níveis de pontuação](../fase-2/niveis-e-julgamento.md#niveis-de-pontuacao-por-metrica) e as [regras de julgamento](../fase-2/niveis-e-julgamento.md#regras-de-julgamento) congelados na Fase 2.
+3. **Sessão de interpretação.** Uma reunião da equipe inteira, antes do fechamento do artigo, com a pauta abaixo e registrada em ata:
+    1. o responsável por cada questão apresenta os dados dela (tabela, gráfico e evidências) e propõe a resposta à questão;
+    2. a equipe confere a resposta, compara o valor medido com a hipótese e, se a hipótese foi refutada, aponta a causa nas medidas de contexto ou nas evidências;
+    3. a equipe confirma o julgamento de G1, G2 e G3 pela regra do pior caso e a resposta a cada decisão D1 a D3 do [Propósito](../fase-1/proposito.md);
+    4. a equipe escolhe a ação de melhoria (D4) entre os resultados com nota 1 ou 2, pelo tipo de problema, e define quem a executa;
+    5. um caso que pareça erro do avaliador, e não do produto, volta para repetição (regra R5) antes de entrar no julgamento.
+4. **Relatório.** As respostas às questões, o julgamento, as relações entre as características e a ação de melhoria vão para a página de resultados da Fase 4 e para o artigo, com as conclusões e as ameaças à validade.
+
+Os critérios não mudam depois de conhecer os resultados (regra R1). Qualquer desvio do plano durante a coleta ou a interpretação é registrado em ata, com o motivo.

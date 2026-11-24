@@ -1,0 +1,7 @@
+# Toda issue nasce do modelo "Tarefa", que traz fase, estimativa e critério de pronto,
+# usados pelas métricas do PSM/CID. Issue em branco não tem esses campos.
+blank_issues_enabled: false
+contact_links:
+  - name: Processo de trabalho
+    url: https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/gestao/processo-de-trabalho/
+    about: Como abrir, estimar e fechar uma tarefa, e como lançar as horas.

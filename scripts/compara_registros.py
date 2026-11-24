@@ -8,6 +8,12 @@ Mede a integridade dos dados trocados (Fase 2, M2.2 = Rc / Rt):
 tabulações e quebras de linha viram um espaço). Acentuação, maiúsculas, casas decimais e datas NÃO são
 normalizadas, porque diferenças nelas são perda de integridade.
 
+Equivalências de representação (não são normalizações: o dado é o mesmo, só a forma de gravar muda):
+  - célula numérica de XLSX: o arquivo guarda o número, e não o texto exibido; o valor é comparado como
+    número (10.0 = 10.00). Uma célula de texto continua comparada como texto;
+  - resposta numérica de GIFT: "#144" e a forma que o Moodle exporta, "=%100%144:0", são a mesma resposta
+    (peso 100%, valor 144, tolerância 0); a resposta é comparada por peso, valor, tolerância e feedback.
+
 Formatos lidos (inferidos pela extensão, ou informados com --formato-ref e --formato-dest):
   csv   F1 usuários, F2 notas           um registro por linha; a primeira linha é o cabeçalho
   xlsx  F3 notas                        primeira planilha; a primeira linha é o cabeçalho
@@ -42,6 +48,7 @@ import sys
 import tarfile
 import zipfile
 from datetime import datetime
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from xml.etree import ElementTree
 
@@ -55,11 +62,34 @@ class ErroLeitura(Exception):
     pass
 
 
+class NumeroCelula(str):
+    """Valor de uma célula numérica de XLSX: o arquivo guarda o número, e não o texto formatado."""
+
+
 def normaliza(valor):
     """Única normalização permitida em M2.2: espaços em branco."""
     if valor is None:
         return None
     return ESPACOS.sub(" ", str(valor)).strip()
+
+
+def _decimal(texto):
+    try:
+        return Decimal(texto)
+    except (InvalidOperation, TypeError):
+        return None
+
+
+def iguais(esperado, obtido):
+    """Compara dois valores de campo. Só espaços são normalizados; uma célula numérica de XLSX é
+    comparada como número com a referência, porque o arquivo não guarda casas decimais."""
+    a, b = normaliza(esperado), normaliza(obtido)
+    if a == b:
+        return True
+    if isinstance(esperado, NumeroCelula) or isinstance(obtido, NumeroCelula):
+        da, db = _decimal(a), _decimal(b)
+        return da is not None and db is not None and da == db
+    return False
 
 
 # ---------------------------------------------------------------- leitores (cada um devolve lista de dicts)
@@ -83,7 +113,7 @@ def _coluna(ref_celula):
 
 
 def le_xlsx(caminho):
-    """Lê a primeira planilha sem dependências externas. Números ficam como o texto gravado no arquivo."""
+    """Lê a primeira planilha sem dependências externas. Células numéricas viram NumeroCelula."""
     with zipfile.ZipFile(caminho) as z:
         compartilhadas = []
         if "xl/sharedStrings.xml" in z.namelist():
@@ -103,6 +133,8 @@ def le_xlsx(caminho):
                 valor = compartilhadas[int(v.text)]
             elif tipo == "inlineStr":
                 valor = "".join(t.text or "" for t in c.iter(f"{{{NS_XLSX['m']}}}t"))
+            elif tipo in (None, "n") and v is not None:
+                valor = NumeroCelula(v.text)
             else:
                 valor = v.text if v is not None else ""
             valores[_coluna(c.get("r"))] = valor
@@ -130,8 +162,33 @@ def le_gift(caminho):
         if abre == -1 or fecha < abre:
             raise ErroLeitura(f"questão GIFT sem respostas entre chaves: {bloco[:60]!r}")
         enunciado = re.sub(r"^\[(html|moodle|markdown|plain)\]", "", resto[:abre].strip())
-        registros.append({"nome": nome, "enunciado": enunciado, "respostas": resto[abre + 1:fecha]})
+        registros.append({"nome": nome, "enunciado": enunciado,
+                          "respostas": respostas_gift(resto[abre + 1:fecha])})
     return registros
+
+
+def respostas_gift(bloco):
+    """Respostas de uma questão GIFT. As numéricas ("#...") viram uma forma única, para que "#144" e a forma
+    exportada pelo Moodle, "#=%100%144:0#", sejam a mesma resposta; as demais ficam como estão."""
+    texto = normaliza(bloco)
+    if not texto.startswith("#"):
+        return bloco
+    corpo = texto[1:].strip()
+    partes = [p for p in re.split(r"\s*=\s*", corpo) if p] if corpo.startswith("=") else [corpo]
+    canonicas = []
+    for parte in partes:
+        m = re.fullmatch(r"(?:%(-?[\d.]+)%)?\s*([^:#]+?)\s*(?::\s*([^#]+?))?\s*(?:#(.*))?", parte, re.S)
+        if not m:
+            return bloco
+        peso, valor, tolerancia, feedback = m.groups()
+        canonicas.append(f"{_num(peso or '100')}%{_num(valor)}:{_num(tolerancia or '0')}#{normaliza(feedback or '')}")
+    return "numerica " + " | ".join(canonicas)
+
+
+def _num(texto):
+    """Número de uma resposta GIFT na forma decimal mínima (144, 3.14, 0.005); texto não numérico fica igual."""
+    d = _decimal(texto.strip())
+    return texto.strip() if d is None else format(d.normalize(), "f")
 
 
 def le_moodle_xml(caminho):
@@ -238,9 +295,9 @@ def compara(referencia, destino, chave, campos=None, ignorar=(), mapa=None):
         lista = campos or [c for c in reg if c not in ignorar]
         divergentes, detalhes = [], []
         for campo in lista:
-            esperado = normaliza(reg.get(campo))
-            obtido = normaliza(alvo.get(mapa.get(campo, campo)))
-            if esperado != obtido:
+            bruto_esperado, bruto_obtido = reg.get(campo), alvo.get(mapa.get(campo, campo))
+            esperado, obtido = normaliza(bruto_esperado), normaliza(bruto_obtido)
+            if not iguais(bruto_esperado, bruto_obtido):
                 divergentes.append(campo)
                 detalhes.append(f"{campo}: esperado={esperado!r} obtido={obtido!r}")
         resultados.append({"chave": k, "situacao": "divergente" if divergentes else "identico",

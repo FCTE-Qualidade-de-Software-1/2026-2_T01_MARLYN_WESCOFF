@@ -1,0 +1,33 @@
+# Confere cada pull request antes da revisão: testes dos scripts, dados da gestão e GitPage.
+# Automatiza dois itens do critério de pronto das issues: "mkdocs build --strict sem erros" e
+# horas lançadas em esforco.csv no formato certo (validar_dados.py).
+name: Validar pull request
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validar-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+      - name: Testes dos scripts
+        run: python3 -m unittest discover -s scripts/tests -v
+      - name: Dados da gestão (esforco.csv e consolidados)
+        run: python3 scripts/validar_dados.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: GitPage com mkdocs --strict
+        run: mkdocs build --strict --site-dir "$RUNNER_TEMP/site"

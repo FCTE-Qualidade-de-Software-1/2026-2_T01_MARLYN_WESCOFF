@@ -1,19 +1,19 @@
-# Dashboard das métricas PSM/CID
+# Dashboard dos indicadores de gestão (PSM/CID)
 
-> Retrato gerado automaticamente em **22/11/2026** a partir dos dados consolidados. Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos registros reais quando disponíveis.
+> Retrato gerado automaticamente em **23/11/2026** a partir dos dados consolidados. Os valores de esforço dependem do apontamento da equipe e devem ser substituídos pelos registros reais quando disponíveis.
 
 ## Tabela-resumo
 
 | Medida | Valor atual | Limiar de decisão | Situação | Última atualização |
 |---|---:|---|:---:|:---:|
-| A1 — Burndown | 80 pontos abertos; desvio 228,57% | desvio acima da linha ideal ≤ 5% | **Fora** | 22/11/2026 |
-| A2 — Comprometido × concluído | 3/18 issues; diferença 83,33% | diferença ≤ 5% | **Fora** | 22/11/2026 |
-| A3 — Fluxo cumulativo | WIP atual: 0 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 22/11/2026 |
-| B1 — Cycle time | mediana: 2 dia | mediana ≤ 5 dias | **Dentro** | 22/11/2026 |
-| B2 — Velocidade | projeção: 4,07 semanas; prazo: 0 semana | projeção ≤ semanas até o prazo | **Fora** | 22/11/2026 |
-| C1 — Esforço | maior desvio individual: 400%; custo realizado: R$ 206,78 | desvio individual entre −30% e +30% | **Fora** | 22/11/2026 |
-| C2 — Contribuição | maior divergência: 96,86 p.p. | divergência ≤ 30 p.p. | **Fora** | 22/11/2026 |
-| C3 — Estimado × real | acurácia agregada: 1 | acurácia entre 0,85 e 1,25 | **Dentro** | 22/11/2026 |
+| A1 — Burndown | 75 pontos abertos; desvio 207,14% | desvio acima da linha ideal ≤ 5% | **Fora** | 23/11/2026 |
+| A2 — Comprometido × concluído | 3/18 issues; diferença 83,33% | diferença ≤ 5% | **Fora** | 23/11/2026 |
+| A3 — Fluxo cumulativo | WIP atual: 0 issue | sem crescimento de Em Revisão por 2 semanas | **Dentro** | 23/11/2026 |
+| B1 — Cycle time | mediana: 2 dia | mediana ≤ 5 dias | **Dentro** | 23/11/2026 |
+| B2 — Velocidade | projeção: 3,52 semanas; prazo: 0 semana | projeção ≤ semanas até o prazo | **Fora** | 23/11/2026 |
+| C1 — Esforço | maior desvio individual: 400%; custo realizado: R$ 206,78 | desvio individual entre −30% e +30% | **Fora** | 23/11/2026 |
+| C2 — Contribuição | maior divergência: 93,33 p.p. | divergência ≤ 30 p.p. | **Fora** | 23/11/2026 |
+| C3 — Estimado × real | acurácia agregada: 1 | acurácia entre 0,85 e 1,25 | **Dentro** | 23/11/2026 |
 
 <p class="legenda">Tabela 1. Situação das medidas obrigatórias. Fonte: elaborado pelos autores a partir dos CSVs consolidados e dos limiares dos <a href="02-construtos-de-medicao/">construtos de medição</a>.</p>
 
@@ -59,7 +59,7 @@ A situação indica se o valor atual permanece dentro do limiar de decisão. Um 
 |---|---|---:|---:|---:|---:|
 | E1 | reconstruido | 20,5 h | R$ 302,78 | 57 h | R$ 841,89 |
 | E2 | reconstruido | 142 h | R$ 2.097,34 | 14 h | R$ 206,78 |
-| E2 | registrado | 142 h | R$ 2.097,34 | 10 h | R$ 147,70 |
+| E2 | registrado | 142 h | R$ 2.097,34 | 14 h | R$ 206,78 |
 | PC2 | reconstruido | 18 h | R$ 265,86 | 3 h | R$ 44,31 |
 | PC2 | registrado | 18 h | R$ 265,86 | 14 h | R$ 206,78 |
 

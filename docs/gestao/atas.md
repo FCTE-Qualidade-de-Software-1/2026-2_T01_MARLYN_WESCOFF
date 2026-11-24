@@ -5,14 +5,14 @@ As atas ficam na pasta [`atas/`](https://github.com/FCTE-Qualidade-de-Software-1
 | Nº | Data | Pauta principal | Arquivo |
 |---|---|---|---|
 | 01 | 11/10/2026 (aproximada) | Definição do projeto final: escolha do Moodle e características iniciais | [2026-10-11-ata-01.md](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-11-ata-01.md) |
-| Retrospectiva | 28/10/2026 | Retrospectiva da E1 (facilitador: Bernardo; relator: João Pedro): tópicos priorizados C2 "ausência de liderança" e C3 "pouca atenção aos prazos". As decisões decorrentes estão no [Registro de decisões de gestão](../metricas/03-registro-de-decisoes.md) (DG-06 e DG-07) | [2026-10-28-retrospectiva-e1.pdf](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-28-retrospectiva-e1.pdf) |
+| Retrospectiva | 28/10/2026 | Retrospectiva da E1 (facilitador: Bernardo; relator: João Pedro): tópicos priorizados C2 "ausência de liderança" e C3 "pouca atenção aos prazos". As decisões decorrentes estão no [Registro de decisões de gestão](../metricas/03-registro-de-decisoes.md) (DG-06 e DG-07); transcrição em [Retrospectiva da E1](retrospectiva-e1.md) | [2026-10-28-retrospectiva-e1.pdf](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-10-28-retrospectiva-e1.pdf) |
 | 02 | 14/11/2026 | Aprovação do plano de avaliação da Fase 3: cronograma de 16 a 22/11, um servidor por integrante, manutenção das 6 execuções de M3.3 a M3.5 e responsáveis das issues #52 a #78 | [2026-11-14-ata-02.md](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md) |
 
 <p class="legenda">Tabela 1. Índice das atas. Fonte: pasta `atas/`.</p>
 
 ## Registro de decisões
 
-Decisões tomadas fora de reunião formal, durante a elaboração e a revisão da Entrega 1.
+Decisões tomadas fora de reunião formal, durante a elaboração e a revisão das Entregas 1 e 2.
 
 | Data | Decisão | Justificativa | Onde está |
 |---|---|---|---|
@@ -22,7 +22,8 @@ Decisões tomadas fora de reunião formal, durante a elaboração e a revisão d
 | 25/10/2026 | Migrar a documentação para o repositório da disciplina e para a GitPage em MkDocs | Repositório oficial exigido pela premissa 4 | [Metodologia](../metodologia.md) |
 | 26/10/2026 | Dividir o esforço da E1 igualmente entre os cinco integrantes (20% cada) | Trabalho distribuído e revisado por todos | [Equipe e contribuição](../sobre/equipe.md) |
 | 26/10/2026 | Na E2, abrir as issues no planejamento da sprint e lançar as horas ao fechar cada uma | Resultado da primeira medição do PSM/CID | [Registro de medições](registro-medicoes.md) |
+| 23/11/2026 | Corrigir o instrumento de M2.2 (`scripts/compara_registros.py`): a célula numérica de XLSX passa a ser comparada como número (10.0 = 10.00), e a resposta numérica de GIFT, por peso, valor, tolerância e feedback (`#144` = `=%100%144:0`). O critério de M2.2 não muda: só espaços em branco são normalizados, e acentos, maiúsculas, casas decimais em texto e datas continuam contando como divergência | Na coleta de 22/11 (PR #133), o instrumento marcou como divergentes os 30 registros de F3 e 5 de F4 por diferença de representação, e não de dado: o XLSX guarda o número, e o Moodle exporta o GIFT numérico na forma estendida. Com a correção, F3 = 30/30 e F4 = 15/15 nos mesmos arquivos | [`compara_registros.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/scripts/compara_registros.py), issue #65 |
 
-<p class="legenda">Tabela 2. Registro de decisões da Entrega 1. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 2. Registro de decisões das Entregas 1 e 2. Fonte: elaboração própria.</p>
 
 Cada ata registra data, participantes, pauta, decisões e encaminhamentos e, quando houver, a decisão de gestão tomada a partir das [medições do PSM](registro-medicoes.md).
