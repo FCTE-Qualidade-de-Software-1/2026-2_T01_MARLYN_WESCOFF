@@ -2094,184 +2094,52 @@
 
 
 <h1 id="declaracao-de-uso-de-ia">Declaração de uso de IA<a class="headerlink" href="#declaracao-de-uso-de-ia" title="Permanent link">&para;</a></h1>
-<p>A equipe usou ferramentas de IA como apoio à programação, à redação e à organização das evidências nas Entregas 1 e 2. Nenhum resultado foi aceito apenas por ter sido gerado por IA: os arquivos foram comparados com as fontes do projeto, executados quando aplicável e submetidos à revisão por outro integrante nos pull requests. O relatório e o site não usam emojis, figurinhas nem ícones gerados por IA.</p>
+<p>A equipe usou ferramentas de IA como apoio à programação, à redação e à organização das evidências nas Entregas 1 e 2. A Tabela 1 diz qual ferramenta cada integrante usou, para que a usou e como conferiu o resultado. Nenhum resultado foi aceito apenas por ter sido gerado por IA: cada integrante conferiu o que produziu com as fontes do projeto (aulas, normas, documentação oficial do Moodle e dados do GitHub) e executou os scripts e testes quando aplicável. Na Entrega 1, a revisão foi registrada nas issues; a partir de 10/11/2026, todas as mudanças entraram na <code>main</code> por pull request revisado por outro integrante. O relatório e o site não usam emojis, figurinhas nem ícones gerados por IA.</p>
 <table>
 <thead>
 <tr>
-<th>Data</th>
-<th>Ferramenta</th>
-<th>Tarefa</th>
-<th>Como a equipe conferiu e ajustou</th>
 <th>Integrante</th>
+<th>Ferramenta</th>
+<th>Para que usou</th>
+<th>Como conferiu</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>25/10/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Migração da primeira versão da Fase 1 para o repositório da disciplina e revisão do texto (propósito, partes interessadas, produto, modelo de qualidade, priorização, escopo e <abbr title="Objetivos de Desenvolvimento Sustentável (ONU)">ODS</abbr>)</td>
-<td>Conteúdo comparado com a primeira versão escrita pela equipe e com a rubrica da Fase 1; revisado nas issues #1, #2 e #3</td>
-<td>Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão)</td>
-</tr>
-<tr>
-<td>25/10/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Pesquisa dos requisitos do Moodle 5.3 <abbr title="Long-Term Support (versão de suporte estendido)">LTS</abbr> (PHP, banco de dados, pasta <code>public/</code>)</td>
-<td>Conferido nas páginas oficiais moodledev.io e docs.moodle.org, citadas nas referências</td>
-<td>Maykon (uso); Carlos (revisão, issue #2)</td>
-</tr>
-<tr>
-<td>25/10/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Rascunho do plano <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr>: abstraction sheets, objetivos, questões, hipóteses, fichas das métricas, níveis de pontuação e critérios de julgamento (Fase 2)</td>
-<td>Métricas conferidas com a ISO/IEC 25023 e com o template da Aula 08; revisado nas issues #4 a #7</td>
-<td>Maykon (uso); Bernardo, Carlos, João Pedro e Pedro (revisão)</td>
-</tr>
-<tr>
-<td>25 e 26/10/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Redação e formatação do artigo em LaTeX (modelo SBC), incluindo os diagramas em TikZ</td>
-<td>Leitura completa, conferência das referências e do limite de páginas; revisado na issue #8</td>
-<td>Maykon (uso); Pedro (revisão)</td>
-</tr>
-<tr>
-<td>25 e 26/10/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Código da GitPage (MkDocs, HTML, CSS e JavaScript), dos workflows e do script de coleta do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></td>
-<td>Site gerado com <code>mkdocs build --strict</code> no GitHub Actions; navegação testada no computador e no celular (issue #13); resultado do script conferido com as issues do GitHub (issue #11)</td>
-<td>Maykon (uso); João Pedro (revisão)</td>
-</tr>
-<tr>
-<td>11/11/2026</td>
+<td>Bernardo</td>
 <td>Codex (OpenAI)</td>
-<td>Implementação do gerador e das oito figuras dos indicadores <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> (issue #26)</td>
-<td>Execução dos scripts de consolidação, geração e validação; conferência visual dos oito SVGs, das unidades, fontes, marcos e valores com os CSVs consolidados</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
+<td>Gráficos e dashboard da gestão do projeto, integração da gestão à GitPage, textos do artigo (gestão, Fase 3 e custos), revisão da rubrica e organização desta declaração</td>
+<td>Execução dos scripts, comparação dos valores com os CSVs, construção estrita do site e compilação do artigo</td>
 </tr>
 <tr>
-<td>11/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Implementação do dashboard de métricas e da geração automática da tabela-resumo (issue #27)</td>
-<td><code>mkdocs build --strict</code>, inspeção da página gerada e comparação dos valores e limiares com os CSVs consolidados</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>11/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Integração da gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> à GitPage, incluindo menu, narrativa, links cruzados e rodapé (issue #29)</td>
-<td>Construção estrita da GitPage e verificação dos links, da navegação e da ausência de conteúdo duplicado</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>11/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Redação do texto <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> e transposição para o artigo SBC, com figuras, decisões, ameaças e contribuição (issue #30)</td>
-<td>Compilação do LaTeX, inspeção visual do PDF, conferência das referências e confirmação de 14 páginas de corpo mais apêndices</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>11/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Atualização e harmonização desta declaração de uso de IA entre a GitPage e o Apêndice B do artigo (issue #31)</td>
-<td>Comparação entre esta página e o texto LaTeX, conferência das tarefas e ferramentas registradas e revisão pelo pull request</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>15/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Inclusão da seção da Fase 3 e dos custos estimados e realizados por entrega no artigo (issue #56)</td>
-<td>Comparação com o plano final da Fase 3, com a Tabela 14 dos construtos e com a Tabela 2 do dashboard; compilação LaTeX e inspeção visual do PDF</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>15/11/2026</td>
-<td>Codex (OpenAI)</td>
-<td>Atualização da declaração de IA do PC2 e sincronização com o Apêndice B (issue #57)</td>
-<td>Levantamento dos usos versionados desde a E1, comparação linha a linha entre a GitPage e o artigo, construção estrita do site e compilação LaTeX</td>
-<td>Bernardo (uso); revisão solicitada a outro integrante no PR</td>
-</tr>
-<tr>
-<td>15/11/2026</td>
+<td>Carlos</td>
 <td>Claude Code (Anthropic)</td>
-<td>Condensação das Fases 1 e 2 do artigo (issue #55) e script de preparação do servidor de avaliação com as instruções de uso (issue #62)</td>
-<td>Artigo compilado e conferido página a página (de 15 para 13 páginas, sem referências quebradas); script executado do zero em contêiner Ubuntu 24.04, com três instâncias e verificação das páginas de login; revisão pelo pull request</td>
-<td>Maykon (uso); revisão solicitada a outro integrante no PR</td>
+<td>Gestão do projeto (extração dos dados, diagnóstico, quadro, apontamento de esforço e medidas de calendário e de processo), atas, plano de execução da Fase 4, roteiro do PC2, scripts de comparação de M2.2 e de julgamento e correções apontadas no PC2</td>
+<td>Revisão de cada commit antes de publicá-lo, testes automatizados dos scripts e construção estrita do site</td>
 </tr>
 <tr>
-<td>10/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Revisão dos PRs #33 a #38 do bloco 1 da gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> (extração, labels, milestones, quadro, apontamento de horas e construtos)</td>
-<td>Arquivos conferidos com as issues #16 a #22 e com os dados do GitHub; alterações pedidas no PR #35 por duas não conformidades antes da aprovação</td>
-<td>Pedro (uso)</td>
-</tr>
-<tr>
-<td>10 e 11/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Construtos de C1 a C3, scripts de extração (<code>extrair_git.py</code> e <code>extrair_issues.py</code>), consolidação e validação dos dados e registro de decisões de gestão (issues #23, #24, #25 e #28)</td>
-<td>Scripts executados contra a API do GitHub; consolidados comparados com os dados brutos; <code>validar_dados.py</code> e <code>mkdocs build --strict</code> sem erros; PRs #40 a #43</td>
-<td>Pedro (uso)</td>
-</tr>
-<tr>
-<td>14/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Custo da hora de estagiário com fontes (Tabela 14 dos construtos), DG-02, DG-09, Tabela 2 do dashboard e página Processo de trabalho (PR #51)</td>
-<td>Valores conferidos na Lei 11.788/2008 e na faixa salarial do Glassdoor consultada pelo integrante; consolidados regenerados e comparados com o dashboard; <code>mkdocs build --strict</code></td>
-<td>Pedro (uso); Bernardo (revisão)</td>
-</tr>
-<tr>
-<td>14/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Detalhamento das issues #52 a #78 do PC2 e da E2 (descrição, critério de pronto, estimativa, milestone e Iteração) e ajuste dos milestones e do quadro (issue #58)</td>
-<td>Divisão das tarefas, responsáveis e estimativas definidos pelo integrante antes da criação; issues, milestones e quadro conferidos no GitHub</td>
-<td>Pedro (uso)</td>
-</tr>
-<tr>
-<td>15/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Revisão dos PRs #79 e #83 a #86, correção do PR #79 (conflito, cronograma e tipo de registro) e restauração da declaração de IA no artigo (PR #95)</td>
-<td>Testes executados e merge de teste com a <code>main</code>; conferência com as fichas da Fase 2 e com o plano da Fase 3; artigo compilado no workflow, com 14 páginas</td>
-<td>Pedro (uso); Carlos (revisão do PR #95)</td>
-</tr>
-<tr>
-<td>10 e 11/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Bloco 1 da gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>: issues #15 a #22, extração dos dados brutos, diagnóstico do repositório, labels, milestones, <code>.mailmap</code>, apontamento de esforço, quadro e construtos de A1 a A4 e de B1 a B4 (PRs #33 a #38)</td>
-<td>Revisão humana do integrante antes de cada commit e comentário; PRs revisados por Pedro, com alterações pedidas no PR #35 antes da aprovação</td>
-<td>Carlos (uso); Pedro (revisão)</td>
-</tr>
-<tr>
-<td>15 e 16/11/2026</td>
-<td>Claude Code (Anthropic)</td>
-<td>Ata 02, plano de execução da Fase 4, roteiro do PC2, <code>compara_registros.py</code>, preparação da coleta de M2.1 e M2.2 e cálculo e julgamento de G1 a G3 (issues #53, #54, #61, #65, #68 e #72; PRs #81 a #86 e #92)</td>
-<td>Revisão humana do integrante antes de cada commit; testes automatizados dos scripts; PRs revisados por outro integrante, com alteração pedida no PR #86 (arredondamento da nota 4)</td>
-<td>Carlos (uso); Pedro (revisão)</td>
-</tr>
-<tr>
-<td>15/11/2026</td>
+<td>João Pedro</td>
 <td>Claude (Anthropic)</td>
-<td>Análise das issues e das branches da Fase 3 e redação da versão final do plano de avaliação (issue #52, PR #89)</td>
-<td>Plano comparado com a ata 02, com o script de preparação do servidor (#62) e com o oráculo de M1.2 (#64); <code>mkdocs build --strict</code> e merge de teste com a branch do script do servidor</td>
-<td>João Pedro (uso)</td>
+<td>Plano de avaliação da Fase 3, gerador da massa de dados e arquivos de referência, conferência de M3.1 e M3.2 e checklist do produto</td>
+<td>Massa aplicada numa instância do Moodle e conferida pela API e pelo banco; evidências das coletas comparadas com os CSVs</td>
 </tr>
 <tr>
-<td>15/11/2026</td>
-<td>Claude (Anthropic)</td>
-<td><code>gera_massa.py</code>, executor PHP, arquivos de referência da massa de dados e testes automatizados (issue #63, PR #90)</td>
-<td>Massa aplicada em uma instância local do Moodle 4.5.16; os 20 casos do oráculo, as 90 notas de <code>notas.csv</code> e as importações de <code>questoes.gift</code> e <code>usuarios.csv</code> conferidos pela API e pelo banco; funções usadas conferidas no código-fonte da 5.3.1</td>
-<td>João Pedro (uso)</td>
+<td>Maykon</td>
+<td>Claude Code (Anthropic)</td>
+<td>Migração e revisão da Fase 1, plano <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> da Fase 2, artigo em LaTeX, GitPage e workflows, script de preparação do servidor, correções do <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> apontadas no PC2, execução automatizada das coletas da Fase 4, ação de melhoria e Fase 4 do artigo</td>
+<td>Conferência com as normas e as Aulas 07 e 08, scripts executados em instâncias descartáveis, resultados comparados com o oráculo e as referências congeladas, compilação do artigo</td>
 </tr>
 <tr>
-<td>16/11/2026</td>
-<td>Claude (Anthropic)</td>
-<td>Registro dos usos de João Pedro nesta declaração e no Apêndice B do artigo</td>
-<td>Comparação linha a linha entre esta página e o LaTeX; <code>mkdocs build --strict</code> e compilação do artigo</td>
-<td>João Pedro (uso)</td>
+<td>Pedro</td>
+<td>Claude Code (Anthropic)</td>
+<td>Gestão do projeto, planejamento das issues do PC2 e da E2, revisão de pull requests, materiais da apresentação do PC2 e vistoria dos conceitos depois do PC2</td>
+<td>Scripts executados contra a API do GitHub e validados, testes e merges de teste nas revisões, conferência com as Aulas 07, 08 e 09</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 1. Registro de uso de ferramentas de IA nas Entregas 1 e 2. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 1. Ferramentas de IA usadas por integrante nas Entregas 1 e 2. Fonte: elaboração própria.</p>
 
-<p>Esta é a declaração única do projeto. Não há uma segunda cópia em <code>docs/metricas/DECLARACAO-IA.md</code>; o Apêndice B do artigo apresenta os mesmos usos, tarefas e formas de conferência. Cada integrante deve acrescentar nesta tabela apenas os usos que efetivamente realizou, informando a tarefa específica e a forma de conferência e ajuste. Pedro e Carlos usaram o Claude Code (Anthropic) em todas as suas tarefas, da abertura de issues à revisão de pull requests. Em todas houve revisão humana: o próprio integrante conferiu cada issue, commit, pull request e comentário antes de publicá-lo, e as mudanças entraram na <code>main</code> por pull request. Todos os integrantes informaram os seus usos.</p>
+<p>Esta é a declaração única do projeto, e o Apêndice B do artigo apresenta a mesma tabela. O histórico detalhado, com cada uso, data e issue, continua no histórico do Git desta página.</p>
 
 
 
