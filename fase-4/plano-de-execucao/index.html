@@ -2283,7 +2283,7 @@
 
 
 <h1 id="plano-de-execucao-da-fase-4">Plano de execução da Fase 4<a class="headerlink" href="#plano-de-execucao-da-fase-4" title="Permanent link">&para;</a></h1>
-<p>A Fase 4 coleta as 12 métricas de <strong>18 a 20/11/2026</strong>, calcula e julga os objetivos G1 a G3 em 21/11 e consolida os resultados e a ação de melhoria até a Entrega 2, em <strong>22/11/2026</strong>. Esta página diz quem coleta cada métrica, até quando, com qual evidência e em qual pasta. O <strong>como</strong> executar cada métrica está no <a href="../../fase-3/plano-de-avaliacao/#3-instrucoes-do-avaliador">Plano de avaliação da Fase 3</a>, e o cronograma e os responsáveis foram aprovados na reunião de 14/11/2026 (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md">ata 02</a>).</p>
+<p>A Fase 4 previa coletar as 12 métricas de 18 a 20/11/2026, julgar os objetivos G1 a G3 em 21/11 e consolidar os resultados e a ação de melhoria até 22/11. A coleta ocorreu entre 15 e 23/11, e o prazo da Entrega 2 passou para <strong>24/11/2026, até 23h59</strong>; o cronograma real está na <a href="#sequencia-ate-a-entrega-2">Tabela 3</a>. Esta página diz quem coleta cada métrica, até quando, com qual evidência e em qual pasta. O <strong>como</strong> executar cada métrica está no <a href="../../fase-3/plano-de-avaliacao/#3-instrucoes-do-avaliador">Plano de avaliação da Fase 3</a>, e o cronograma e os responsáveis foram aprovados na reunião de 14/11/2026 (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/atas/2026-11-14-ata-02.md">ata 02</a>).</p>
 <p>Cada integrante coleta no próprio servidor, montado pelo mesmo script de preparação (decisão D3 da ata 02). O andamento de cada tarefa pode ser acompanhado no <a href="https://github.com/users/cadumotta/projects/1">quadro de tarefas</a> e nos <a href="../../gestao/">indicadores de gestão do projeto (<abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>)</a>.</p>
 <h2 id="metricas-responsaveis-e-evidencias">Métricas, responsáveis e evidências<a class="headerlink" href="#metricas-responsaveis-e-evidencias" title="Permanent link">&para;</a></h2>
 <table>
@@ -2292,7 +2292,7 @@
 <th>Métrica</th>
 <th>Responsável</th>
 <th>Issue</th>
-<th>Até</th>
+<th>Prazo (ata 02)</th>
 <th>Evidência</th>
 <th>Pasta em <code>dados/avaliacao/</code></th>
 </tr>
@@ -2407,7 +2407,8 @@
 <th>Item</th>
 <th>Responsável</th>
 <th>Issue</th>
-<th>Até</th>
+<th>Previsto</th>
+<th>Realizado</th>
 <th>Necessário para</th>
 </tr>
 </thead>
@@ -2417,6 +2418,7 @@
 <td>Maykon</td>
 <td>#62</td>
 <td>17/11</td>
+<td>15/11 (PR #88)</td>
 <td>Todas as métricas</td>
 </tr>
 <tr>
@@ -2424,6 +2426,7 @@
 <td>João Pedro</td>
 <td>#63</td>
 <td>17/11</td>
+<td>15/11 (PR #90)</td>
 <td>M1.1 a M1.3, M2.1, M2.2, M3.5</td>
 </tr>
 <tr>
@@ -2431,6 +2434,7 @@
 <td>Bernardo</td>
 <td>#64</td>
 <td>17/11</td>
+<td>15/11 (PR #87)</td>
 <td>M1.2</td>
 </tr>
 <tr>
@@ -2438,6 +2442,7 @@
 <td>Carlos</td>
 <td>#65</td>
 <td>17/11</td>
+<td>Script em 16/11 (PR #84); correção do instrumento em 23/11 (PR #134); referências congeladas na coleta</td>
 <td>M2.2</td>
 </tr>
 <tr>
@@ -2445,50 +2450,92 @@
 <td>Pedro</td>
 <td>#66</td>
 <td>17/11</td>
+<td>Sem registro de conclusão até 23/11</td>
 <td>M3.3, M3.4, M3.5</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 2. Itens de preparação e as métricas que dependem de cada um. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 2. Itens de preparação, previsto e realizado, e as métricas que dependem de cada um. Fonte: issues e pull requests do GitHub, em 23/11/2026.</p>
 
 <h2 id="sequencia-ate-a-entrega-2">Sequência até a Entrega 2<a class="headerlink" href="#sequencia-ate-a-entrega-2" title="Permanent link">&para;</a></h2>
+<p>O prazo da Entrega 2 passou de 22/11 para <strong>24/11/2026, até 23h59</strong>. A tabela compara o previsto na ata 02 com o que ocorreu até 23/11 e mostra o que falta até o prazo novo.</p>
 <table>
 <thead>
 <tr>
-<th>Data</th>
+<th>Previsto (ata 02)</th>
+<th>Data real ou nova</th>
 <th>Atividade</th>
 <th>Issues</th>
+<th>Situação em 23/11</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>16 e 17/11</td>
-<td>Preparação: servidores, massa de dados, oráculo, script de comparação, piloto e congelamento dos limites de M3.4 e da lista de M3.5</td>
-<td>#62 a #66</td>
+<td>15 e 16/11</td>
+<td>Preparação: servidor, massa de dados, oráculo e script de comparação</td>
+<td>#62 a #65</td>
+<td>Concluída (Tabela 2); o piloto (#66) não tem registro de conclusão</td>
 </tr>
 <tr>
 <td>18/11</td>
-<td>Apresentação do PC2 pela GitPage</td>
+<td>18/11</td>
+<td>Apresentação do PC2</td>
 <td>#61</td>
+<td>Realizada, com slides; os apontamentos da docente viraram as issues #102 a #123</td>
 </tr>
 <tr>
 <td>18 a 20/11</td>
-<td>Coleta das 12 métricas, em paralelo, cada integrante no próprio servidor</td>
+<td>15/11</td>
+<td>Coleta de M1.1 e M1.3, antecipada</td>
+<td>#67</td>
+<td>Registrada no PR #98, em revisão</td>
+</tr>
+<tr>
+<td>18 a 20/11</td>
+<td>22 e 23/11</td>
+<td>Coleta de M1.2, M2.1 a M2.4 e M3.1 a M3.5</td>
 <td>#67 a #71</td>
+<td>Registrada nos PRs #129 e #133, em revisão</td>
+</tr>
+<tr>
+<td>—</td>
+<td>23/11</td>
+<td>Correção do instrumento de M2.2 e nova comparação</td>
+<td>#65, #68</td>
+<td>Correção no PR #134; nova comparação depois do merge</td>
+</tr>
+<tr>
+<td>—</td>
+<td>23/11</td>
+<td>Revisão dos PRs das coletas e das correções da vistoria</td>
+<td>#102 a #123</td>
+<td>Em andamento</td>
 </tr>
 <tr>
 <td>21/11</td>
-<td>Cálculo, notas, julgamento de G1 a G3 e relações entre as características</td>
+<td>até 24/11</td>
+<td>Sessão de interpretação; cálculo, notas e julgamento de G1 a G3; relações entre as características</td>
 <td>#72, #73</td>
+<td>A fazer</td>
 </tr>
 <tr>
 <td>22/11</td>
-<td>Ação de melhoria, página de resultados, artigo e release da Entrega 2</td>
-<td>#74 a #78</td>
+<td>até 24/11</td>
+<td>Ação de melhoria, página de resultados e artigo (Fase 4, conclusão e contribuição)</td>
+<td>#74 a #77</td>
+<td>Ação registrada no PR #133; demais a fazer</td>
+</tr>
+<tr>
+<td>22/11</td>
+<td>24/11, até 23h59</td>
+<td>Declaração de IA final, revisão pela rubrica e release da Entrega 2</td>
+<td>#78</td>
+<td>A fazer</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Tabela 3. Sequência da Fase 4 até a Entrega 2. Fonte: ata 02 e milestone E2.</p>
+<p class="legenda">Tabela 3. Sequência da Fase 4: previsto na ata 02, realizado até 23/11/2026 e restante até a Entrega 2. Fonte: ata 02, issues e pull requests do GitHub, em 23/11/2026.</p>
 
 <h2 id="do-dado-ao-julgamento">Do dado ao julgamento<a class="headerlink" href="#do-dado-ao-julgamento" title="Permanent link">&para;</a></h2>
 <p>A Fase 4 segue as três etapas finais do <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr> (Aula 08): coletar, <strong>interpretar</strong> e relatar. A interpretação vai de baixo para cima: das métricas para as questões e das questões para os objetivos, que é o caminho inverso da definição feita na Fase 2.</p>
