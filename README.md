@@ -14,7 +14,7 @@ Avaliação da qualidade de produto do **Moodle 5.3 LTS**, sistema de gestão da
 | **Releases** | [Releases do repositório](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/releases) |
 | **Quadro de tarefas (GitHub Projects)** | <https://github.com/users/cadumotta/projects/1> (fica na conta de um integrante, porque a organização da disciplina não permite criar projetos) |
 | **Issues e milestones** | [Issues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues) · [Milestones](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/milestones) |
-| **Dashboard das métricas PSM/CID** | <https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/metricas/dashboard/> (atualizado todo dia pelo GitHub Actions) |
+| **Dashboard dos indicadores de gestão (PSM/CID)** | <https://fcte-qualidade-de-software-1.github.io/2026-2_T01_MARLYN_WESCOFF/metricas/dashboard/> (atualizado todo dia pelo GitHub Actions) |
 | **Docente** | Profa. Cristiane Soares Ramos |
 
 ## O que está sendo avaliado
@@ -57,7 +57,7 @@ Capacidade de interação (usabilidade) está fora do escopo por regra da discip
 │   ├── gestao/            # Registro de horas e retratos do PSM/CID
 │   └── avaliacao/         # Dados brutos das medições (Fase 4)
 ├── atas/                  # Atas de reunião
-├── scripts/               # Coleta automática das métricas do PSM/CID
+├── scripts/               # Coleta automática das medidas do PSM/CID
 └── .github/               # Workflows, modelos de issue e de pull request
 ```
 
@@ -83,7 +83,7 @@ cp main.pdf ../docs/artigo/artigo-e1.pdf
 
 O workflow `artigo.yml` também compila o artigo a cada alteração em `artigo/` e disponibiliza o PDF como artefato da execução.
 
-### Métricas do PSM/CID
+### Medidas do PSM/CID
 
 ```bash
 python3 scripts/psm_coleta.py --repo FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF
