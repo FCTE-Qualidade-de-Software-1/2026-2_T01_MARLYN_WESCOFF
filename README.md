@@ -36,7 +36,7 @@ Capacidade de interação (usabilidade) está fora do escopo por regra da discip
 | E1 · 26/10/2026 | Fase 1 (requisitos) e Fase 2 (especificação) | Entregue ([release E1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/releases/tag/E1)) |
 | PC1 · 19/10/2026 | Ponto de controle da Fase 1 | Não apresentado ([DG-10](docs/metricas/03-registro-de-decisoes.md)) |
 | PC2 · 15/11/2026 | Fase 3 (plano de avaliação) e plano de execução da Fase 4 | Entregue; apresentação em 18/11/2026 pela GitPage |
-| E2 · 22/11/2026 | Fase 4 (execução, julgamento e ação de melhoria) e artigo completo | Em andamento |
+| E2 · 24/11/2026 | Fase 4 (execução, julgamento e ação de melhoria) e artigo completo | Em andamento |
 
 ## Estrutura do repositório
 
