@@ -5,7 +5,7 @@ Esta página descreve como a equipe organiza o trabalho no repositório: do regi
 ## Fluxo de uma tarefa
 
 1. **Abrir uma issue** com o modelo *Tarefa*: descrição, fase, estimativa em horas e critério de pronto. A issue é associada ao milestone da entrega, recebe as labels da Tabela 1 e é atribuída ao responsável.
-2. **Mover a issue para "Em Progresso"** no [quadro de tarefas](https://github.com/users/cadumotta/projects/1) quando o trabalho começa, e não só quando termina. Essa data é o início do cycle time (B1).
+2. **Mover a issue para "Em Progresso"** no [quadro de tarefas](https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54) quando o trabalho começa, e não só quando termina. Essa data é o início do cycle time (B1).
 3. **Criar um branch** a partir da `main`, com prefixo e assunto: `docs/fase-3-ambiente`, `artigo/resultados`, `fix/link-quebrado`.
 4. **Fazer commits pequenos**, com mensagem no imperativo e em português, por exemplo "Adiciona as fichas das métricas de G2".
 5. **Abrir um pull request** com o modelo do repositório, pedir a revisão de outro integrante e citar a issue com `Closes #N`. O GitHub só fecha a issue automaticamente com palavras-chave em inglês (`Closes`, `Fixes`).

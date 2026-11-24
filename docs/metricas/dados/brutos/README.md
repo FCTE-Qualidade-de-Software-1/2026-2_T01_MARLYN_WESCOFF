@@ -11,7 +11,7 @@ python3 scripts/extrair_git.py --data-ref AAAA-MM-DD
 GITHUB_TOKEN=$(gh auth token) python3 scripts/extrair_issues.py --data-ref AAAA-MM-DD
 ```
 
-Para ler o quadro, defina também `PSM_PROJECT_TOKEN` com um token que tenha o escopo `read:project`. Sem ele, os arquivos do quadro não são alterados. Rodar duas vezes com a mesma data de corte e o mesmo estado do repositório gera arquivos idênticos.
+Para ler o quadro, defina também `PSM_PROJECT_TOKEN` com um token que tenha o escopo `read:project`, de um membro da organização. Em `quadro_eventos.csv`, entram os eventos do quadro anterior até a migração (24/11/2026, 03h30 UTC) e os do quadro da organização depois dela; os eventos gerados pela própria migração ficam de fora (issue #143). Sem ele, os arquivos do quadro não são alterados. Rodar duas vezes com a mesma data de corte e o mesmo estado do repositório gera arquivos idênticos.
 
 | Arquivo | Fonte | Conteúdo | Script e comando ou consulta |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Para ler o quadro, defina também `PSM_PROJECT_TOKEN` com um token que tenha o e
 | `milestones.json` | GitHub Milestones | Milestones, com prazo e contagem de issues | `extrair_issues.py`: `GET /repos/{repo}/milestones?state=all` |
 | `releases.json` | GitHub Releases | Releases das entregas | `extrair_issues.py`: consulta GraphQL equivalente a `gh release list --json tagName,name,createdAt,publishedAt,isLatest` |
 | `quadro_eventos.csv` | Project board (GraphQL) | Entrada de cada issue no quadro e cada mudança de Status, com data e hora | `extrair_issues.py`: `timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT])` |
-| `quadro_retratos.csv` | Project board (GraphQL) | Retrato diário do Status e da Iteração de cada issue; uma linha por issue e por dia | `extrair_issues.py`: `user { projectV2 { items { fieldValues } } }` |
+| `quadro_retratos.csv` | Project board (GraphQL) | Retrato diário do Status e da Iteração de cada issue; uma linha por issue e por dia | `extrair_issues.py`: `repositoryOwner { projectV2 { items { fieldValues } } }`, no projeto 54 da organização desde 24/11/2026 (antes, no projeto 1 da conta cadumotta) |
 | `commits.csv` | git | Commits da `main`: autor canônico, data, arquivos, linhas adicionadas e removidas, diretórios tocados | `extrair_git.py`: `git log main --reverse --no-merges --numstat --date=iso-strict --until=<corte> --pretty=format:@%h\|%aN\|%ad\|%s`, agregado por commit |
 | `tags.csv` | git | Tags e o commit para o qual apontam | `extrair_git.py`: `git for-each-ref refs/tags` |
 | `esforco.csv` | Apontamento manual | Horas por sessão de trabalho (único arquivo preenchido à mão; ver `dados/README.md`) | Preenchido pelos integrantes |
