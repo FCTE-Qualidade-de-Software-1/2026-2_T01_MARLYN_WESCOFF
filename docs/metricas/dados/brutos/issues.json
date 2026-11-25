@@ -14,6 +14,67 @@
    "login": "cadumotta",
    "name": ""
   },
+  "body": "### Descrição\n\n**Apontamento da professora:** o quadro de tarefas (GitHub Projects) precisa estar na organização da disciplina, e não na conta de um integrante, como está hoje (https://github.com/users/cadumotta/projects/1).\n\n**Por que estava fora:** em 10/11/2026, nenhum integrante era membro da organização, e o GitHub só deixa membros criarem projetos nela. Um quadro de usuário também não pode ser ligado a um repositório de organização. Com o Carlos agora membro da organização, a migração é possível.\n\n**O que fazer:**\n- criar o quadro na organização, ligado ao repositório, com as mesmas colunas (Backlog, A Fazer, Em Progresso, Em Revisão, Concluído) e o campo \"Iteração\" semanal;\n- levar todas as issues com a coluna e a semana atuais (issue fechada entra em \"Concluído\");\n- trocar os links do README, do menu da GitPage e das páginas de gestão;\n- fazer o `scripts/extrair_issues.py` ler o quadro da organização;\n- manter o quadro antigo como registro histórico das movimentações até 24/11 e registrar a decisão.\n\nPrazo: 24/11/2026.\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Quadro na organização, ligado ao repositório e com todas as issues\n- [ ] Links e extração apontando para o quadro novo\n- [ ] Decisão registrada\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n",
+  "closedAt": null,
+  "comments": [],
+  "createdAt": "2026-11-24T03:17:17Z",
+  "labels": [
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCOvcng",
+    "name": "entrega-2",
+    "description": "Entrega 2 (Fases 3 e 4)",
+    "color": "0e8a16"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO052Q",
+    "name": "tipo/gestao",
+    "description": "Gestão do projeto e PSM/CID",
+    "color": "bfd4f2"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08Kw",
+    "name": "retrabalho",
+    "description": "Produto revisado após crítica ou issue reaberta (medida B4)",
+    "color": "e99695"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO08eQ",
+    "name": "tamanho/P",
+    "description": "Tamanho pequeno: 1 ponto (estimativa de até 2 h)",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_kwDOVS_JFM8AAAADCO5Iow",
+    "name": "apontamento-docente",
+    "description": "Não conformidade apontada pela docente em entrega ou ponto de controle (escapada, medida B4)",
+    "color": "c2e0c6"
+   }
+  ],
+  "milestone": {
+   "number": 2,
+   "title": "E2",
+   "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
+   "dueOn": "2026-11-24T00:00:00Z"
+  },
+  "number": 143,
+  "state": "OPEN",
+  "title": "[Correção] Quadro de tarefas na organização da disciplina"
+ },
+ {
+  "assignees": [
+   {
+    "id": "U_kgDOB6x8lA",
+    "login": "cadumotta",
+    "name": null,
+    "databaseId": 128744596
+   }
+  ],
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
   "body": "### Descrição\n\n**Item C1 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `overrides/home.html` (\"E2 · 22/11/2026\"), `docs/index.md`, Fase 3 (seção 6), Fase 4 (Tabelas 2 e 3), artigo (seção 7.3) e milestone E2 no GitHub.\n\n**O que está errado:** O prazo da E2 passou para terça, 24/11/2026, 23h59.\n\n**Como corrigir:** Refazer o cronograma real: o que foi coletado de 18 a 20/11, o que ainda falta e a nova data do julgamento. Atualizar as datas na GitPage, no artigo e no milestone, e registrar em ata a mudança de prazo e de cronograma.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
   "closedAt": null,
   "comments": [],
@@ -48,7 +109,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 123,
   "state": "OPEN",
@@ -70,7 +131,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B5 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-3/plano-de-avaliacao.md`, seção \"Preparação do julgamento\"; `docs/fase-4/plano-de-execucao.md`, seção \"Do dado ao julgamento\".\n\n**O que está errado:** Falta a fase de interpretação do GQM (Aula 08, slides 54 a 61): organizar os dados por questão e objetivo, com tabelas e gráficos; fazer uma sessão de feedback em que a equipe interpreta os dados; e escrever o relatório com conclusões e ações. Também falta o plano de análise (slide 46): como os dados serão apresentados.\n\n**Como corrigir:** Acrescentar o passo \"Sessão de interpretação\": cada coletor apresenta os dados da sua questão, a equipe responde às questões, compara com as hipóteses e decide a ação. Dizer em que formato os resultados serão mostrados (uma tabela por objetivo e um gráfico das notas por questão). Ligar à ação de melhoria (#74).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 4\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:22:52Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:20Z",
   "labels": [
@@ -115,10 +176,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 122,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B5] Sessão de interpretação e plano de análise do GQM"
  },
  {
@@ -176,7 +237,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 121,
   "state": "OPEN",
@@ -198,7 +259,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A1b-ap da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\nParte da correção A1b; relacionada à #77.\n\n**Onde:** `artigo/main.tex`, Apêndice A.\n\n**O que está errado:** O Apêndice A usa o \"Índice C2\", que é uma medida do PSM.\n\n**Como corrigir:** O Apêndice A continua, porque a tabela de contribuição é obrigatória, mas como uma tabela simples do que cada um fez, sem o nome \"C2\" e sem as dimensões do PSM. Fazer junto com a tabela de contribuição da E2 (#77).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:23:02Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:13Z",
   "labels": [
@@ -237,10 +298,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 120,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A1b] Apêndice A como tabela de contribuição simples"
  },
  {
@@ -259,7 +320,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item C4 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/gestao/roteiro-apresentacao-pc2.md`; `docs/metricas/04-texto-artigo.md`.\n\n**O que está errado:** O roteiro diz \"sem slides\" e traz outra ordem de apresentadores. O texto para o artigo deixa de valer depois da correção A1.\n\n**Como corrigir:** Marcar as duas páginas como histórico ou tirá-las do menu.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:22:31Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:10Z",
   "labels": [
@@ -292,10 +353,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 119,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção C4] Roteiro do PC2 e texto antigo do artigo como histórico"
  },
  {
@@ -314,7 +375,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B9 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/metricas/02-construtos-de-medicao.md`.\n\n**O que está errado:** O PSM classifica a análise em estimativa, viabilidade e desempenho (Aula 09, slide 13), e as fichas não dizem qual tipo cada medida apoia.\n\n**Como corrigir:** Acrescentar a linha \"Tipo de análise\" em cada ficha. Por exemplo: C3 é estimativa; A1 e B2, viabilidade; B1, desempenho.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:22:21Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:07Z",
   "labels": [
@@ -347,10 +408,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 118,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B9] Tipo de análise nas fichas do PSM"
  },
  {
@@ -369,7 +430,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B3 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** Menu (`mkdocs.yml`), título do dashboard, `README.md`, `docs/index.md` e índices das Fases 1 a 4; fichas da Fase 2 e tabela de métricas do artigo.\n\n**O que está errado:** \"Métricas PSM/CID\": \"métrica\" é o termo do GQM; o PSM fala em medidas e indicadores. Na outra direção, as fichas da Fase 2 e a tabela de métricas do artigo usam \"medidas básicas\", termo do PSM e da ISO 15939.\n\n**Como corrigir:** Renomear para \"Gestão do projeto (PSM/CID)\" e \"Dashboard dos indicadores de gestão\". Nas fichas GQM e na tabela de métricas do artigo, trocar \"Medidas básicas\" por \"Elementos de medida\" (termo da ISO/IEC 25023). Combinar com o Bernardo (A1) e o Maykon (A3b), que mexem nos mesmos arquivos do artigo e da Fase 2.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:22:41Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:02Z",
   "labels": [
@@ -402,10 +463,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 117,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B3] Medidas e indicadores no vocabulário do PSM"
  },
  {
@@ -424,7 +485,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A2 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/gestao/index.md`, seção \"1. Objetivo da medição\" e coluna \"Pergunta de gestão\" da Tabela 1; `docs/metricas/02-construtos-de-medicao.md`, seção \"Objetivo de medição\".\n\n**O que está errado:** Usamos a estrutura do GQM (objetivo e pergunta) para descrever o PSM. No PSM, o ponto de partida é a necessidade de informação (riscos, problemas e falta de informação; Aula 09, slides 5 e 6). Por isso a professora viu os dois \"objetivos\" como se fossem a mesma coisa.\n\n**Como corrigir:** Trocar \"Objetivo da medição\" por \"Necessidades de informação\", listadas por categoria, e \"Pergunta de gestão\" por \"Necessidade de informação\". Na página de construtos, trocar o bloco \"Objetivo de medição\" pela lista de necessidades que levaram às categorias. Seguir a ordem do modelo de informação: necessidade → categoria → conceito mensurável → medidas → indicador → critério de decisão → decisão.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T23:22:10Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:59Z",
   "labels": [
@@ -463,10 +524,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 116,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A2] Necessidades de informação no lugar de objetivo e pergunta no PSM"
  },
  {
@@ -518,7 +579,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 115,
   "state": "OPEN",
@@ -579,7 +640,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 114,
   "state": "OPEN",
@@ -634,7 +695,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 113,
   "state": "OPEN",
@@ -707,7 +768,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 112,
   "state": "OPEN",
@@ -774,7 +835,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 111,
   "state": "OPEN",
@@ -835,7 +896,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 110,
   "state": "OPEN",
@@ -896,7 +957,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 109,
   "state": "OPEN",
@@ -963,7 +1024,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 108,
   "state": "OPEN",
@@ -1018,7 +1079,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 107,
   "state": "OPEN",
@@ -1040,7 +1101,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item C5 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`, tabela de decisões de gestão (DG-04).\n\n**O que está errado:** O artigo diz \"25 pontos na W46\", e o registro de decisões diz 13.\n\n**Como corrigir:** O trecho some junto com a seção 4 (correção A1). Se algum trecho for mantido, usar 13.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T03:27:37Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:25Z",
   "labels": [
@@ -1073,10 +1134,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 106,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção C5] Valor da DG-04 no artigo"
  },
  {
@@ -1134,7 +1195,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 105,
   "state": "OPEN",
@@ -1189,7 +1250,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 104,
   "state": "OPEN",
@@ -1211,7 +1272,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A1b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`, tabela de partes interessadas, linha da docente.\n\n**O que está errado:** A linha diz \"Exige GQM e PSM\", mas o PSM não influencia a avaliação do produto.\n\n**Como corrigir:** Escrever \"Exclui usabilidade; exige GQM\". A parte do Apêndice A deste mesmo apontamento está em outra issue, junto com a #77.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T03:27:35Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:14Z",
   "labels": [
@@ -1256,10 +1317,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 103,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A1b] Partes interessadas sem PSM no artigo"
  },
  {
@@ -1278,7 +1339,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A1 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `artigo/main.tex`: abstract e resumo (frase final), roteiro da Introdução, seção 2.4 \"PSM e o guia CID\", seção 3.3 \"Gestão com PSM/CID\" e Tabela 1, e a seção 4 inteira (custos, 3 figuras, tabela de decisões DG e ameaças da gestão).\n\n**O que está errado:** O artigo relata a **avaliação do Moodle**. A gestão PSM/CID é interna ao grupo e não faz parte desse relato.\n\n**Como corrigir:** Remover todos esses trechos. Na seção 3, manter só o processo da ISO/IEC 25040, a organização da equipe e as ferramentas. Tirar `mcgarry2002psm` e `psmcid2021` do `.bib` se não forem mais citados. Renumerar as referências cruzadas e conferir o limite de 15 páginas. A gestão continua documentada só na GitPage.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n3\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-23T03:27:34Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:10Z",
   "labels": [
@@ -1317,10 +1378,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 102,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A1] Remover a gestão PSM/CID do artigo"
  },
  {
@@ -1440,7 +1501,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 78,
   "state": "OPEN",
@@ -1463,7 +1524,22 @@
   },
   "body": "### Descrição\r\n\r\nAtualizar a Tabela de Contribuição (Apêndice A e `docs/sobre/equipe.md`) com as tarefas de cada integrante e o percentual de esforço somando 100% (critério AG-C5), a partir de `contribuicao.csv` e das horas registradas.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Tarefas de cada integrante descritas\r\n- [ ] Percentuais somando 100%, com a fonte\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
   "closedAt": null,
-  "comments": [],
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABpqs-lA",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Pedro, o Apêndice A virou uma tabela simples no PR #140 (correção A1b, #120). A coluna **\"% E2\"** ficou em aberto (\"---\"), porque o percentual da E2 é decisão da equipe. Para fechar esta issue, falta: preencher essa coluna, que precisa somar 100%, e conferir se a coluna \"Entrega 2\", montada pelas issues atribuídas, corresponde ao que cada um fez de fato.",
+    "createdAt": "2026-11-23T04:01:14Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/77#issuecomment-7091207828"
+   }
+  ],
   "createdAt": "2026-11-14T21:11:17Z",
   "labels": [
    {
@@ -1495,7 +1571,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 77,
   "state": "OPEN",
@@ -1550,7 +1626,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 76,
   "state": "OPEN",
@@ -1605,7 +1681,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 75,
   "state": "OPEN",
@@ -1666,7 +1742,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 74,
   "state": "OPEN",
@@ -1721,7 +1797,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 73,
   "state": "OPEN",
@@ -1776,7 +1852,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 72,
   "state": "OPEN",
@@ -1831,7 +1907,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 71,
   "state": "OPEN",
@@ -1886,7 +1962,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 70,
   "state": "OPEN",
@@ -1941,7 +2017,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 69,
   "state": "OPEN",
@@ -1996,7 +2072,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 68,
   "state": "OPEN",
@@ -2051,7 +2127,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 67,
   "state": "OPEN",
@@ -2106,7 +2182,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 66,
   "state": "OPEN",
@@ -2161,7 +2237,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 65,
   "state": "OPEN",
@@ -2216,7 +2292,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 64,
   "state": "CLOSED",
@@ -2238,8 +2314,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nCriar `scripts/gera_massa.py` com a massa de dados fictícia da Tabela 5 do plano (30 estudantes, docente, administrador, 2 cursos, atividades) e os arquivos `usuarios.csv` e `questoes.gift`, sem nenhum dado real (regra R7).\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Massa gerada por script, sem digitação manual\r\n- [ ] `usuarios.csv` (30 linhas) e `questoes.gift` (15 questões) versionados\r\n- [ ] E-mails no domínio `example.invalid`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-23T22:23:24Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqCDVXA",
+    "author": {
+     "login": "jopesmp"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Entregue no PR #90",
+    "createdAt": "2026-11-23T22:23:24Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/63#issuecomment-7115691356"
+   }
+  ],
   "createdAt": "2026-11-14T21:10:32Z",
   "labels": [
    {
@@ -2271,10 +2362,10 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 63,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] gera_massa.py e arquivos de referência"
  },
  {
@@ -2326,7 +2417,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 62,
   "state": "CLOSED",
@@ -2375,7 +2466,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 61,
   "state": "CLOSED",
@@ -2910,7 +3001,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 32,
   "state": "CLOSED",
@@ -2980,7 +3071,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 31,
   "state": "CLOSED",
@@ -3050,7 +3141,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 30,
   "state": "CLOSED",
@@ -3120,7 +3211,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 29,
   "state": "CLOSED",
@@ -3175,7 +3266,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 28,
   "state": "CLOSED",
@@ -3245,7 +3336,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 27,
   "state": "CLOSED",
@@ -3315,7 +3406,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 26,
   "state": "CLOSED",
@@ -3370,7 +3461,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 25,
   "state": "CLOSED",
@@ -3425,7 +3516,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 24,
   "state": "CLOSED",
@@ -3480,7 +3571,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 23,
   "state": "CLOSED",
@@ -3535,7 +3626,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 22,
   "state": "CLOSED",
@@ -3590,7 +3681,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 21,
   "state": "CLOSED",
@@ -3645,7 +3736,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 20,
   "state": "CLOSED",
@@ -3715,7 +3806,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 19,
   "state": "CLOSED",
@@ -3770,7 +3861,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 18,
   "state": "CLOSED",
@@ -3825,7 +3916,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 17,
   "state": "CLOSED",
@@ -3880,7 +3971,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 16,
   "state": "CLOSED",
@@ -3929,7 +4020,7 @@
    "number": 2,
    "title": "E2",
    "description": "Entrega 2: Fases 3 e 4, ação de melhoria, artigo completo e gestão PSM/CID.",
-   "dueOn": "2026-11-22T00:00:00Z"
+   "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 15,
   "state": "CLOSED",

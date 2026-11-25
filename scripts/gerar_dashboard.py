@@ -1,4 +1,4 @@
-"""Gera o dashboard Markdown das métricas PSM/CID (issue #27)."""
+"""Gera o dashboard Markdown dos indicadores de gestão do PSM/CID (issue #27)."""
 
 import csv
 from pathlib import Path

@@ -1,7 +1,7 @@
 # Texto da gestão PSM/CID para o artigo
 
-!!! note "Histórico"
-    Página mantida só como registro da Entrega 1 e do Ponto de controle 2. Ela não descreve o estado atual do projeto e não aparece no menu; o conteúdo atual está na [Fase 4](../fase-4/index.md) e na [Gestão do projeto](../gestao/index.md).
+!!! note "Página histórica"
+    Este texto foi a base da seção de gestão do artigo até 22/11/2026. Depois do apontamento da professora no PC2, a gestão PSM/CID saiu do artigo, que relata só a avaliação do Moodle (correção A1, PR #125). A gestão do projeto fica documentada apenas na GitPage. A página é mantida para rastreabilidade e não é mais atualizada.
 
 Este texto é a versão enxuta transposta para `artigo/main.tex`. Os valores têm data de corte em 11/11/2026 e são rastreáveis aos CSVs consolidados.
 

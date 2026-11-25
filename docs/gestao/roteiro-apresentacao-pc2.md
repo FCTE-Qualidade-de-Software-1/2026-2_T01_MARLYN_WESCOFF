@@ -1,7 +1,7 @@
 # Roteiro da apresentação do PC2
 
-!!! note "Histórico"
-    Página mantida só como registro da Entrega 1 e do Ponto de controle 2. Ela não descreve o estado atual do projeto e não aparece no menu; o conteúdo atual está na [Fase 4](../fase-4/index.md) e na [Gestão do projeto](../gestao/index.md).
+!!! note "Página histórica"
+    Roteiro preparado em 15/11/2026 para a apresentação do PC2. A apresentação de 18/11/2026 foi feita com slides e numa ordem de apresentadores diferente da prevista aqui. A página é mantida como registro do planejamento e não é mais atualizada.
 
 A apresentação de **18/11/2026** dura **15 minutos** e é feita pela GitPage, sem slides. Cada integrante apresenta uma parte de cerca de 3 minutos, na ordem do menu do site. A tabela abaixo é a ordem de navegação; as seções seguintes dizem o que mostrar e o que falar em cada parte.
 

@@ -1,5 +1,709 @@
 [
  {
+  "additions": 44,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-24T03:26:58Z",
+  "deletions": 22,
+  "mergedAt": null,
+  "number": 144,
+  "reviews": [],
+  "state": "OPEN",
+  "title": "[Correção] Quadro de tarefas na organização da disciplina"
+ },
+ {
+  "additions": 19,
+  "author": {
+   "id": "U_kgDOC5MJug",
+   "is_bot": false,
+   "login": "pedrogrocha13",
+   "name": "Pedro Gonçalves Rocha"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-23T23:37:43Z",
+  "deletions": 55,
+  "mergedAt": null,
+  "number": 142,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ33fPQ",
+    "author": {
+     "login": "copilot-pull-request-reviewer"
+    },
+    "authorAssociation": "NONE",
+    "body": "Copilot was unable to review this pull request because the user who requested the review has insufficient remaining quota. Try requesting a review at a lower effort level.\n\nAn organization owner can choose the repository organization as the billing source for reviews requested by members with a paid Copilot license. [Learn about Copilot code review billing](https://docs.github.com/en/copilot/concepts/agents/code-review#code-review-usage).",
+    "submittedAt": "2026-11-23T23:38:00Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "0a6f500daeba01096a847443b8a06b3630dbd87e"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Gestão] Declaração de IA resumida por integrante"
+ },
+ {
+  "additions": 32,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-23T04:03:04Z",
+  "deletions": 25,
+  "mergedAt": null,
+  "number": 141,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3otEA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. O cronograma agora mostra o previsto, o realizado e o que falta, com as datas tiradas dos PRs e das issues. A Fase 3 ficou como registro do planejado, com um link para o cronograma real, e o prazo de 24/11 está em todas as páginas e no artigo.\n\nConferi a ordem de merge (#134 → #135 → #138 → este) numa cópia da `main` com os oito PRs: nenhum conflito, testes e build estrito passando, e o artigo compilado no workflow com 13 páginas.\n\nA Tabela 3 é um retrato de 23/11. Antes da release, a coluna \"Situação\" precisa ser atualizada, porque a sessão de interpretação e o julgamento acontecem até 24/11.\n",
+    "submittedAt": "2026-11-23T23:14:13Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "248f7f0307cc4b6d18817ecef4853ececd49ac51"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Correção C1] Novo prazo da E2 (24/11) e cronograma real"
+ },
+ {
+  "additions": 10,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:23:00Z",
+  "createdAt": "2026-11-23T04:01:07Z",
+  "deletions": 10,
+  "mergedAt": "2026-11-23T23:23:00Z",
+  "number": 140,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3or0A",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. O apêndice deixa de usar o \"Índice C2\" e as dimensões do PSM, como pedia o apontamento A1b. Baixei o PDF gerado pelo workflow: o artigo ficou com 13 páginas, e a tabela cabe na página.\n\nComo você escreveu, o \"% E2\" e a coluna \"Entrega 2\" fecham na #77, que é minha. Lá eu confiro a linha de cada integrante com o que de fato aconteceu nas coletas do #133, que foram executadas de forma diferente da prevista na ata 02.\n",
+    "submittedAt": "2026-11-23T23:14:12Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "c816ee196e713956f8ad16088ffe2d936eb3403b"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção A1b] Apêndice A como tabela de contribuição simples"
+ },
+ {
+  "additions": 30,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:22:50Z",
+  "createdAt": "2026-11-23T03:39:30Z",
+  "deletions": 6,
+  "mergedAt": "2026-11-23T23:22:50Z",
+  "number": 139,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3oqzg",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. A Fase 4 agora tem a interpretação de baixo para cima e o plano de análise que a Aula 08 pede (slides 46 e 54 a 61): tabela por objetivo, gráfico das notas por questão com a linha da nota 3 e a árvore GQM de resultados. Conferi que os arquivos citados como fonte (`julgamento_metricas.csv` e `julgamento_objetivos.csv`) são os que o `calcula_julgamento.py` gera, e que eles já existem no #133.\n\nFica pendente só a data da sessão de interpretação, que precisa acontecer antes do fechamento do artigo e ter ata (a ata 03 está em rascunho no #133).\n",
+    "submittedAt": "2026-11-23T23:14:10Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "5793943bb688433fdb70f4a70fce1d18e6de27b0"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção B5] Sessão de interpretação e plano de análise do GQM"
+ },
+ {
+  "additions": 61,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:22:39Z",
+  "createdAt": "2026-11-23T03:38:28Z",
+  "deletions": 49,
+  "mergedAt": "2026-11-23T23:22:39Z",
+  "number": 138,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3opjA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. O vocabulário ficou separado: \"medidas e indicadores\" na gestão (menu, dashboard, script do dashboard, índices das fases e README) e \"elementos de medida\" nas fichas GQM e na tabela de métricas do artigo.\n\nSobraram duas menções antigas, que podem ir num commit rápido aqui ou no #141:\n- `README.md`, linha 8: \"A gestão do projeto é acompanhada com métricas do PSM/CID.\"\n- `docs/metodologia.md`, linha 49: \"base das métricas do PSM/CID\" (essa linha também fala em \"sprint\", item C2 da vistoria).\n",
+    "submittedAt": "2026-11-23T23:14:09Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "ac676484a06006c271554eb6cab193ff9bbb345f"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção B3] Medidas e indicadores no vocabulário do PSM"
+ },
+ {
+  "additions": 6,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:22:29Z",
+  "createdAt": "2026-11-23T03:36:34Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-23T23:22:29Z",
+  "number": 137,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3ooZA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. Os dois avisos de página histórica estão claros, e o conteúdo foi mantido para rastreabilidade. As duas páginas não estão no menu, então não há mais nada a mudar.\n",
+    "submittedAt": "2026-11-23T23:14:08Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "a920535730a3304075e9218842bc37abe2c43fc3"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção C4] Roteiro do PC2 e texto antigo do artigo como histórico"
+ },
+ {
+  "additions": 19,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:22:19Z",
+  "createdAt": "2026-11-23T03:35:55Z",
+  "deletions": 0,
+  "mergedAt": "2026-11-23T23:22:19Z",
+  "number": 136,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3onLQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. A classificação está coerente com a Aula 09 (slide 13): C3 é estimativa, A1 e B2 são viabilidade, e os demais são desempenho.\n\nUm detalhe que não bloqueia: o #135 diz que cada ficha segue a ordem \"necessidade de informação → categoria → conceito mensurável → …\", mas a linha \"Tipo de análise (PSM)\" entrou antes da \"Necessidade de informação\". Se der tempo, vale movê-la para depois da necessidade (ou para depois dos critérios de decisão), para a ficha seguir a ordem que o texto anuncia.\n",
+    "submittedAt": "2026-11-23T23:14:06Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "9875c26fc7a5abc24fbb8da356505cdd696e5ac4"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção B9] Tipo de análise nas fichas do PSM"
+ },
+ {
+  "additions": 31,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:22:08Z",
+  "createdAt": "2026-11-23T03:35:12Z",
+  "deletions": 19,
+  "mergedAt": "2026-11-23T23:22:08Z",
+  "number": 135,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3omAA",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. É exatamente o apontamento A2: o PSM agora parte das necessidades de informação (N1 a N3), com tipo, origem no diagnóstico e categoria, e a tabela segue a ordem do modelo de informação da Aula 09. O parágrafo que separa a gestão (PSM) da avaliação do produto (GQM) também ajuda a responder ao que a professora disse no PC2.\n\nConferi o exemplo de critério da N1 (diferença maior que 10%: replanejar) com a ficha de A2, e os dois batem. Testado em conjunto com os demais PRs: sem conflito, e o build estrito passou.\n",
+    "submittedAt": "2026-11-23T23:14:05Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "45e962acf5340518b4d344514cc55f4dfdd3c176"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção A2] Necessidades de informação no lugar de objetivo e pergunta no PSM"
+ },
+ {
+  "additions": 119,
+  "author": {
+   "id": "U_kgDOB6x8lA",
+   "is_bot": false,
+   "login": "cadumotta",
+   "name": ""
+  },
+  "closedAt": "2026-11-23T23:21:58Z",
+  "createdAt": "2026-11-23T03:33:46Z",
+  "deletions": 7,
+  "mergedAt": "2026-11-23T23:21:58Z",
+  "number": 134,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3ok4A",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. Testei este PR junto com os outros sete da vistoria, na ordem da descrição do #141, em cima da `main`: nenhum conflito, 42 testes passando e `mkdocs build --strict` sem erros.\n\nA correção do leitor está certa. A célula XLSX só vira número quando o tipo é numérico, a resposta GIFT numérica é comparada por peso, valor, tolerância e feedback, e os testes cobrem o que precisa continuar divergente (9,99 × 10,00, tolerância e peso diferentes, `7.5` × `7.50` em CSV). Uma data gravada como número serial no XLSX continua divergindo da referência em texto, o que é o comportamento conservador que queremos.\n\nUma observação para os resultados, e não para este PR: a correção entrou depois de vermos os dados, e ela leva M2.2 de 0,73 (nota 1) para 1,00 (nota 4), o que muda o julgamento de G2. Está bem justificada como correção do instrumento, e não do critério, mas a página de resultados e o artigo precisam mostrar os dois valores e citar o registro em ata. Assim, a professora vê que o critério não foi ajustado depois do resultado (regra R1).\n",
+    "submittedAt": "2026-11-23T23:14:04Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "c93add86ab5ac6a57dccbdc5668b6370bd6d3bcb"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Fase 4] Instrumento de M2.2: célula numérica de XLSX e resposta numérica de GIFT"
+ },
+ {
+  "additions": 71792,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-23T02:34:12Z",
+  "deletions": 382,
+  "mergedAt": null,
+  "number": 133,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiI3w",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "O volume de coleta é grande e bem documentado, mas há pontos que precisam ser corrigidos antes do merge. Estão em ordem de prioridade.\n\n**1. Credencial versionada (bloqueia o merge)**\nAs respostas de M2.3 trazem o campo `userprivateaccesskey` com o valor em claro (em `dados/avaliacao/M2.3/`, também no #129 e no #130). Se entrar na `main`, fica no histórico público para sempre.\n- Substituir o valor por `\"REMOVIDO\"` em todos os JSON.\n- Se o servidor ainda existir, invalidar a chave.\n\n**2. Autoria das coletas**\n- O campo `avaliador` de `M2.1/execucoes.csv` e de `M1.2/execucoes.csv` tem um sufixo entre parênteses sobre a forma de execução. Esse campo deve ter **só o nome de quem executou**, sem sufixo. O uso de ferramentas fica registrado só na declaração de uso de IA.\n- O `avaliador` e o `responsavel` do `MANIFESTO.csv` (hoje \"CD\" e \"CDM\") precisam dizer quem de fato executou e congelou. Os commits são do Maykon.\n- O PR fecha issues de outros integrantes (#68, #70, #71 e #74). Trocar por \"Relacionado a\" até o responsável de cada uma confirmar.\n\n**3. M2.2: F3 e F4 são artefatos do instrumento, e não perda de dados**\n- **F3 (XLSX), 0 de 30:** o arquivo guarda o número `10.0`, e a referência tem o texto `10.00`. O valor é o mesmo.\n- **F4 (GIFT), 10 de 15:** o Moodle exporta as numéricas na forma canônica `=%100%144:0`, que equivale a `#144`.\n- O problema está no `compara_registros.py` (#65, Carlos). Vou corrigir o leitor numa PR separada e registrar em ata, porque é correção do instrumento, e não do critério. Depois disso, é preciso **rodar a comparação de novo** e atualizar `M2.2/resumo.csv` e `calculos.csv`. Hoje, M2.2 = 0,73 dá nota 1 e deixa G2 como \"Não atende\" de forma indevida.\n\n**4. A-04 (M1.2)**\nO Moodle mostrou 53,00 (pontos, soma natural) contra 7,57 esperado na escala de 0 a 10. Esse único caso leva M1.2 à nota 1 e G1 a \"Não atende\". Pela regra R5 do plano:\n- repetir o caso;\n- decidir em ata se é falha do produto ou do desenho do caso, já que a soma natural não reescala por definição;\n- só então marcar a condição em `calculos.csv`.\n\n**5. Artigo**\nO PR foi feito sobre o artigo anterior ao #125 (A1, já mergeado):\n- conflita no `artigo/main.tex`;\n- traz de volta 18 menções a \"PSM\" e a seção de gestão;\n- tem 17 páginas.\n\nRefazer a Fase 4 sobre o artigo atual da `main`, sem a gestão, em até 15 páginas.\n\n**6. Coerência com o #127 (A3b e B1)**\nDepois do merge do #127:\n- gerar de novo `julgamento_metricas.csv` e `julgamento_objetivos.csv` com as ligações novas (Q1.1 = M1.1 e M1.3; Q2.2 = M2.1 e M2.2) e as hipóteses novas;\n- resolver o conflito em `M2.1/execucoes.csv`;\n- preencher as medidas de contexto (B2): `dados/avaliacao/contexto.csv` e a coluna `codificacao`.\n\n**7. Conferência cruzada (R6)**\nTodas as coletas foram feitas pela mesma pessoa. O plano exige que um segundo integrante confira o oráculo, uma das execuções de M3.3 e a lista de M3.5. Sugestão: uma auditoria amostral de 10% das evidências, como a equipe Carol Shaw fez.\n\n**8. Ação de melhoria (D4)**\nA falha de M2.4 veio do `restart` do Apache no **nosso** script de preparação. Pela R5, isso pode ser erro do instrumento, e não do produto. A justificativa da D4 fica mais sólida se se apoiar no problema do roteador mal documentado, que é do produto (tipo \"modelo técnico\"), e se discutir a validade de M2.4 nas ameaças.\n\nPedido para revisão de novo depois dos ajustes.\n",
+    "submittedAt": "2026-11-23T03:28:41Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "cd98cfc1efba194eecf31817b5480dfa167c9b7b"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3ovjw",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Maykon, a coleta é grande e muito bem documentada: os READMEs explicam o que foi feito e os desvios aparecem. Ainda assim, os itens da revisão do Carlos continuam abertos (o único commit novo é a conferência de M3.1 e M3.2 do João Pedro), e encontrei mais dois problemas de método em G3. Em ordem de prioridade:\n\n**1. Credencial ainda versionada (bloqueia o merge)**\n`dados/avaliacao/M2.3/1_core_webservice_get_site_info.json` e `M2.3/tentativa-1/` ainda trazem o `userprivateaccesskey` em claro, e o mesmo acontece nas branches do #129 e do #130. O repositório é **público**, então a chave já está exposta nessas branches. Além de trocar o valor por `\"REMOVIDO\"`, é preciso invalidar a chave no servidor. Com o \"Squash and merge\" que o Carlos propôs, o valor não vai para o histórico da `main`.\n\n**2. Quem executou cada coleta**\nO campo `avaliador` ainda atribui as execuções a quem era o responsável na ata 02, com um sufixo entre parênteses: Carlos em M2.1, Bernardo em M1.2 e Pedro em M3.3. Os commits e a declaração de IA mostram que a execução foi feita por você. O campo precisa ter o nome de quem executou, sem sufixo. O desvio em relação à ata 02 (um executor para todas as métricas) vai para a ata 03, e a conferência de cada responsável entra como R6. Os READMEs (\"Responsável: …\") precisam dizer a mesma coisa.\n\n**3. M3.3: as tentativas descartadas mudam o resultado**\nPelo README, a tentativa 1 falhou nas 6 execuções porque o procedimento seguiu só o bloco da página \"Apache\", e o `DirectoryIndex` e o `$CFG->routerconfigured` estão em outra página (\"Configuring the Router\"). Isso não é erro do instrumento. É justamente o que M3.3 mede: instalar e atualizar seguindo **só a documentação oficial** (R3). O próprio README diz que \"o tropeço real foi outro: a documentação do servidor web está dividida\". Descartar essa rodada depois de ver o resultado esbarra nas regras R1 e R4.\n- As tentativas 2 e 3 (verificação do login e `pipefail`) são de fato erro do instrumento, e o descarte delas com registro está certo (R5).\n- Para a tentativa 1, proponho levar à sessão de interpretação e registrar em ata uma de duas saídas: (a) contar a rodada 1 como as primeiras execuções, o que muda M3.3 e confirma em parte a H3.3 (a primeira atualização falha por causa da raiz `public/`, via roteador); ou (b) manter 6/6, mas mostrar no artigo os dois números e tratar a documentação dividida como ameaça à validade.\n\n**4. M3.4 não mede o que a Fase 2 definiu**\nO tempo de 1,18 min é de um procedimento automatizado, e não de um administrador seguindo a página. Os limites de 15, 30 e 60 min foram pensados para uma pessoa, e o piloto que ia calibrá-los (#66) não foi feito. Com a nota 4 nesses termos, o julgamento de Q3.3 fica sem sustentação. Sugiro registrar na ata 03 que M3.4 foi medida de forma diferente do plano e, no artigo, apresentar o valor com essa ressalva (ou como não comparável aos níveis). A decisão é da sessão de interpretação.\n\n**5. Dados que precisam ser refeitos**\n- **M2.2:** depois do merge do #134, rodar a comparação de novo e atualizar `M2.2/resumo.csv` e `calculos.csv`.\n- **A-04 (M1.2):** repetir o caso e decidir em ata se é falha do produto ou do desenho do caso (R5).\n- **M1.1:** o `execucoes.csv` herdado do #98 continua com 5 linhas malformadas (T03, T06, T08, T10 e T11 têm mais colunas que o cabeçalho, por vírgulas sem aspas).\n- **Medidas de contexto (B2):** preencher o `contexto.csv`.\n\n**6. Sobreposição com os PRs do Carlos**\nO #134 e os #135 a #141 já estão testados e aprovados. Como o Carlos pediu, tire daqui as versões duplicadas (commit 6fce927 e as partes de B5 e C1 do fdb234d), e deixe o Apêndice A ficar com a versão do #140.\n\n**7. Conferência R6**\nO João Pedro conferiu M3.1 e M3.2. Ainda falta a conferência por um segundo integrante do oráculo e de M1.2, de uma execução de M3.3 e da lista de M3.5.\n\nDepois dos ajustes, me marca que eu reviso de novo.\n",
+    "submittedAt": "2026-11-23T23:14:16Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "24a5ecb7fb5adbfac475a968b919c12b9f8f1d39"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Entrega final] Fase 4 completa, coletas de G1 a G3, melhoria, correções do PC2, GitPage, artigo e apresentação"
+ },
+ {
+  "additions": 40,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-23T02:28:54Z",
+  "deletions": 10,
+  "mergedAt": null,
+  "number": 132,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiUUw",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "As tabelas novas de critérios das Fases 3 e 4 estão boas, e a renumeração das seções bate com o artigo do #125 (já mergeado). Ajustes antes do merge:\n\n1. **Numeração:** quando a Fase 4 entrar no artigo (#133 e #76), os números das seções e tabelas mudam de novo. Este PR deve ser o último a entrar, com os números conferidos contra o PDF final.\n2. **Links da Fase 4:** os critérios F4-C4 e F4-C5 apontam para o plano de execução e para a preparação do julgamento da Fase 3. Quando houver a página de resultados (#75) e a evidência da ação de melhoria (`dados/avaliacao/D4/`), apontar para elas.\n3. **Base:** a branch contém os commits do #125. Depois de atualizar com a `main`, o diff fica só com o `criterios.md` e o `esforco.csv`.\n",
+    "submittedAt": "2026-11-23T03:29:18Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "9cefdd85e1416cf34f6d02bd25c033f5198374bf"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3owuw",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferi: a branch não teve commits novos depois da revisão do Carlos, então os três pontos dele continuam valendo. Os principais são que este PR entra por último, com a numeração conferida contra o PDF final, e que a Fase 4 deve apontar para a página de resultados e para `dados/avaliacao/D4/`.\n\nPara referência: com os PRs #134 a #141 aprovados, o artigo atual fica com 13 páginas e sem a seção de gestão. A Fase 4 do #133 vai mudar de novo os números das seções e das tabelas.\n",
+    "submittedAt": "2026-11-23T23:14:17Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "9cefdd85e1416cf34f6d02bd25c033f5198374bf"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Correção C3] Critérios de avaliação com as seções novas do artigo"
+ },
+ {
+  "additions": 3,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-23T02:05:49Z",
+  "deletions": 2,
+  "mergedAt": null,
+  "number": 131,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiA3w",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conteúdo conferido e aprovado (correção B7): \"software comercial\" na classificação de Pressman da Aula 07, com a justificativa (organiza dados para operações acadêmicas e decisões administrativas) e a ressalva de que o Moodle é livre e não é vendido, no artigo e em `docs/fase-1/produto.md`.\n\n**Falta só resolver o conflito:** depois do merge do #125, o `docs/metricas/dados/brutos/esforco.csv` conflita, porque os dois PRs acrescentam linhas no fim. Basta atualizar a branch com a `main` e **manter as duas linhas**. Com isso, o PR pode ser mergeado.\n",
+    "submittedAt": "2026-11-23T03:28:15Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "229c01d7714aa08173f2a91dff1d02beeff4a011"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Correção B7] Tipo de produto pela tabela da Aula 07"
+ },
+ {
+  "additions": 6822,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-22T23:42:59Z",
+  "deletions": 10,
+  "mergedAt": null,
+  "number": 130,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiPHA",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "O hook de histórico e o gerador da árvore estão bem feitos: o gerador lê os rótulos do diagrama da Fase 2 e as ligações do `calcula_julgamento.py`, então a página fica certa quando é gerada de novo. Ajustes antes do merge:\n\n1. **Credencial (bloqueia):** este PR inclui os commits do #129, com o `userprivateaccesskey` em claro em `dados/avaliacao/M2.3/`. Mesmo ajuste pedido lá.\n2. **Árvore desatualizada:** `docs/fase-4/arvore-gqm-resultados.md` foi gerada antes do #127 e do #133. Hoje ela mostra 2 de 12 métricas, as ligações antigas e rótulos de questão com o nome da métrica (\"Q1.1 Cobertura das tarefas\"), o que a correção A3b manda tirar. Gerar de novo depois que o #127 e o #133 entrarem.\n3. **Artigo:** conflita com o #125 (A1) no `artigo/main.tex`. Ver o mesmo item no #129.\n4. **Empilhamento:** o PR contém o #128 (já mergeado) e o #129. Depois que o #129 entrar, atualizar com a `main` para o diff mostrar só a árvore e o histórico.\n",
+    "submittedAt": "2026-11-23T03:29:00Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "9801459d8981c0f315acd70a05e8fd6bd2910894"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[GitPage] Árvore GQM de resultados (Fase 4) e histórico de versões automático"
+ },
+ {
+  "additions": 6388,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-22T23:32:14Z",
+  "deletions": 8,
+  "mergedAt": null,
+  "number": 129,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiOmQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Coleta de M2.3 e M2.4 bem documentada, mas há dois ajustes antes do merge.\n\n1. **Credencial versionada (bloqueia):** os JSON de `dados/avaliacao/M2.3/` trazem o campo `userprivateaccesskey` com o valor em claro. Substituir por `\"REMOVIDO\"` e, se o servidor ainda existir, invalidar a chave.\n2. **Artigo:** depois do merge do #125 (A1), o `artigo/main.tex` conflita. A Fase 4 do artigo também está no #133. O melhor é deixá-la num só PR, sobre o artigo atual, e tirar daqui a parte do artigo.\n\nObservação para a análise de M2.4 (2 de 3): a aplicação vizinha ficou sem resposta por causa do `restart` do Apache no nosso script de preparação. Pela regra R5, isso precisa ser discutido como possível erro do instrumento antes de virar nota do produto. Mais detalhes no item 8 da revisão do #133.\n\nComo o #130 e o #133 foram construídos em cima deste PR, a correção da credencial precisa estar em todos.\n",
+    "submittedAt": "2026-11-23T03:28:59Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "9e27ae1f40318b2efc27c210f013e51a5743592e"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Fase 4] Coleta de M2.3 (6/6) e M2.4 (2/3) e Fase 4 adiantada no artigo"
+ },
+ {
+  "additions": 87,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": "2026-11-23T03:28:11Z",
+  "createdAt": "2026-11-22T23:11:31Z",
+  "deletions": 1,
+  "mergedAt": "2026-11-23T03:28:11Z",
+  "number": 128,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZph-bg",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferido e aprovado.\n\n- **`validar-pr.yml`:** roda em `pull_request` com permissão só de leitura e cobre os testes dos scripts, o `validar_dados.py` e o `mkdocs build --strict`.\n- **Issue em branco desativada:** toda issue passa a nascer do modelo Tarefa.\n- **Retrospectiva da E1:** a página transcreve o PDF de `atas/`.\n- **Fase 4 no menu.**\n\nTestado junto com o #125, o #126 e o #131: build estrito, 35 testes e validação dos dados sem erros. O comentário do `config.yml` ainda fala em \"métricas do PSM/CID\"; esse termo vai ser trocado em todo o site pela correção B3 (#117).\n",
+    "submittedAt": "2026-11-23T03:28:08Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "c9ba895f2ba2b84344acddd632a8d7fe024be592"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[GitPage] Fase 4 no menu, validação de PR e retrospectiva da E1"
+ },
+ {
+  "additions": 165,
+  "author": {
+   "id": "MDQ6VXNlcjg5NTk2NjIz",
+   "is_bot": false,
+   "login": "maykonjuso",
+   "name": "Maykon Júnio"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-22T22:55:14Z",
+  "deletions": 116,
+  "mergedAt": null,
+  "number": 127,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiPpw",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conceitualmente está certo e atende à vistoria:\n- **A3b:** as questões agora são sobre o objeto, sem o nome da métrica, e as ligações entre questões e métricas estão certas (Q1.1 = M1.1 e M1.3; Q2.2 = M2.1 e M2.2; Q3.3 = M3.3 e M3.4).\n- **B1:** a hipótese virou a resposta esperada, separada do critério.\n- **B2:** a tabela de medidas de contexto está boa.\n- **Script e testes:** o `calcula_julgamento.py` e os testes foram atualizados junto.\n\nFalta uma parte, antes do merge:\n\n1. **Artigo (A3b e B1):** a vistoria pede as mesmas mudanças no `artigo/main.tex`:\n   - a tabela de objetivos, questões e hipóteses;\n   - o diagrama GQM;\n   - a frase que separa hipótese de nível e critério.\n\n   O PR não mexe no artigo. Como o #125 já entrou, dá para fazer sobre a versão atual, sem conflito.\n2. **Conflito com o #133:** os dois alteram `dados/avaliacao/M2.1/execucoes.csv`. Combinar a ordem com o #133. Sugestão: este entra primeiro, e o #133 se ajusta, gerando o julgamento de novo com as ligações novas.\n\nObservação, sem bloquear: as hipóteses de M1.3 (11 de 12) e M3.3 (5 de 6) são testadas por igualdade. Se o resultado vier melhor que o esperado (12 de 12, 6 de 6), o script marca \"refutada\". Isso está correto pelo conceito, mas vale uma frase na Fase 4 explicando que foi refutada \"para melhor\".\n",
+    "submittedAt": "2026-11-23T03:29:02Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "ec2f6c3f9b0c0b2747765af91b6819245732910f"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Correções A3b, B1 e B2] Questões do GQM, hipóteses e medidas de contexto"
+ },
+ {
+  "additions": 2,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-22T21:21:22Z",
+  "deletions": 1,
+  "mergedAt": null,
+  "number": 126,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiAcQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conteúdo conferido e aprovado (correção B6): o texto da Fase 2 passa a falar em \"detalhe suficiente para que a avaliação seja repetível e reprodutível\", e o da Fase 4 em \"obtendo as medidas, comparando-as com os critérios e julgando os resultados\", exatamente como na vistoria.\n\n**Falta só resolver o conflito:** depois do merge do #125, o `docs/metricas/dados/brutos/esforco.csv` conflita, porque os dois PRs acrescentam linhas no fim. Basta atualizar a branch com a `main` e **manter as duas linhas**. Com isso, o PR pode ser mergeado.\n",
+    "submittedAt": "2026-11-23T03:28:14Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "b67b22336b793ecab2c14836937d7f272a31490a"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3oufw",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Aprovado. O texto agora põe a repetibilidade e a reprodutibilidade na especificação (Fase 2) e acrescenta \"comparar com os critérios\" na Fase 4, como na Aula 07 (slides 15 e 20).\n\nO PR ainda está em conflito com a `main` no `esforco.csv`. Basta atualizar a branch e manter as duas linhas, como o Carlos explicou.\n",
+    "submittedAt": "2026-11-23T23:14:15Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "b67b22336b793ecab2c14836937d7f272a31490a"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Correção B6] Repetível e reprodutível na fase certa"
+ },
+ {
+  "additions": 7,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": "2026-11-23T03:27:32Z",
+  "createdAt": "2026-11-22T21:13:25Z",
+  "deletions": 115,
+  "mergedAt": "2026-11-23T03:27:32Z",
+  "number": 125,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZphybg",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferido e aprovado (correções A1, A1b e C5).\n\n- O PSM saiu do abstract, do resumo, da Introdução e das seções 2.4, 3.3 e 4. Sobra só no Apêndice B (declaração de IA), onde é correto.\n- `mcgarry2002psm` e `psmcid2021` saíram do `.bib` e não são mais citados.\n- A linha da docente diz \"Exclui usabilidade; exige GQM\".\n- O PDF do CI tem 13 páginas.\n- Testado junto com o #126, o #131 e o #128: build estrito e validação dos dados sem erros.\n\nO \"Índice C2\" do Apêndice A, \"três primeiras fases\" e \"22/11\" ficam para as issues #120, #76 e #123.\n",
+    "submittedAt": "2026-11-23T03:27:28Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "APPROVED",
+    "commit": {
+     "oid": "c676fe13eb25314c36b5a8d7cff0e597a6214586"
+    }
+   }
+  ],
+  "state": "MERGED",
+  "title": "[Correção A1] Remover a gestão PSM/CID do artigo"
+ },
+ {
+  "additions": 28,
+  "author": {
+   "id": "U_kgDOCzMkKA",
+   "is_bot": false,
+   "login": "Bercacos",
+   "name": "Bernardo Broetto Brun"
+  },
+  "closedAt": null,
+  "createdAt": "2026-11-22T21:05:02Z",
+  "deletions": 2,
+  "mergedAt": null,
+  "number": 124,
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiT0g",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "A declaração final de IA e a revisão da rubrica estão boas. Dois ajustes pequenos antes do merge:\n\n1. Na tabela de revisão da E2, a linha do artigo cita \"correções #102 a #120\". As correções da vistoria vão até a **#123**.\n2. A tabela é um retrato de 22/11, e a situação vai mudar com o merge dos PRs da Fase 4. Vale deixar esse retrato como está e atualizar a tabela de novo logo antes da release, para que ela reflita o estado final.\n",
+    "submittedAt": "2026-11-23T03:29:16Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "eb2a8d3f78c0ba1b1e92867f0b7c9ad1cb7aeaf5"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3oyIQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferi: a branch não teve commits novos depois da revisão do Carlos. Os dois ajustes dele continuam valendo: citar as correções #102 a #123 e atualizar a tabela de revisão logo antes da release.\n\nAcrescento o que o Carlos anotou no #137: no `docs/metricas/05-checklist-entrega.md`, os itens AG-C2 e AG-C5 ainda citam o `04-texto-artigo.md` e a \"tabela C2\" como evidência no artigo, o que deixou de valer com a correção A1. Vale ajustar aqui, junto com a revisão da rubrica.\n",
+    "submittedAt": "2026-11-23T23:14:19Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "eb2a8d3f78c0ba1b1e92867f0b7c9ad1cb7aeaf5"
+    }
+   }
+  ],
+  "state": "OPEN",
+  "title": "[Gestão] Declaração de IA final e revisão da rubrica E2"
+ },
+ {
   "additions": 15,
   "author": {
    "id": "U_kgDOC5MJug",
@@ -113,7 +817,7 @@
   "title": "Declara o uso de IA de João Pedro na GitPage e no Apêndice B"
  },
  {
-  "additions": 34,
+  "additions": 14,
   "author": {
    "id": "U_kgDOCzMkKA",
    "is_bot": false,
@@ -125,7 +829,38 @@
   "deletions": 0,
   "mergedAt": null,
   "number": 98,
-  "reviews": [],
+  "reviews": [
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZpiTaA",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Este PR tem as evidências de M1.1 e M1.3, as 12 tarefas com captura de tela. São as únicas que sustentam os 12 de 12 usados no `calculos.csv` do #133, então ele precisa entrar. Ajustes antes do merge:\n\n1. **CSV malformado:** em `dados/avaliacao/M1.1/execucoes.csv`, as observações das linhas T03, T06, T08, T10 e T11 têm vírgulas sem aspas, e essas linhas ficam com mais colunas que o cabeçalho. Colocar a coluna `observacoes` entre aspas, ou trocar as vírgulas por ponto e vírgula.\n2. **M1.2:** o `dados/avaliacao/M1.2/execucoes.csv` deste PR tem os 20 casos \"Pendente de execução\" e conflita com o arquivo executado do #133. Tirar o M1.2 deste PR e deixar só o M1.1.\n3. **Atualizar com a `main`:** a branch está 42 commits atrás.\n",
+    "submittedAt": "2026-11-23T03:29:14Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "CHANGES_REQUESTED",
+    "commit": {
+     "oid": "18ca2769f8404c726cd3166188999fdfd4133664"
+    }
+   },
+   {
+    "id": "PRR_kwDOVS_JFM8AAAABZ3ozVQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Conferi: a branch não teve commits novos depois da revisão do Carlos, e os três pontos continuam valendo. Rodei o `execucoes.csv` de M1.1 num leitor de CSV: as linhas T03, T06, T08, T10 e T11 ainda têm mais colunas que o cabeçalho (8).\n\nAtenção: o #133 já incorporou esta branch, com o mesmo CSV malformado. Se a correção for feita aqui, o #133 precisa recebê-la também (ou o contrário), para não entrarem duas versões do arquivo.\n",
+    "submittedAt": "2026-11-23T23:14:20Z",
+    "includesCreatedEdit": false,
+    "reactionGroups": [],
+    "state": "COMMENTED",
+    "commit": {
+     "oid": "18ca2769f8404c726cd3166188999fdfd4133664"
+    }
+   }
+  ],
   "state": "OPEN",
   "title": "docs: registrar coleta parcial de G1 no Moodle"
  },
