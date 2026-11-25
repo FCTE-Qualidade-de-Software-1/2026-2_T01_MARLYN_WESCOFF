@@ -37,7 +37,7 @@ Na Entrega 2, a equipe registrou em 24/11/2026 a mesma divisão igual do esforç
 | Carlos Eduardo Deusdara Motta | Diagnóstico, instrumentação e medidas da gestão do projeto; ata 02; plano de execução da Fase 4; instrumento de comparação de M2.2; cálculo e julgamento; quadro na organização | 20% |
 | João Pedro Sampaio Maciel | Plano de avaliação da Fase 3; massa de dados; responsável por M3.1 e M3.2; correções da GitPage do produto | 20% |
 | Maykon Junio dos Santos Soares | Script do servidor; execução das coletas da Fase 4; ação de melhoria; questões e hipóteses do GQM; Fase 4 do artigo e apresentação final | 20% |
-| Pedro Goncalves Rocha | Extração, consolidação e decisões da gestão do projeto; marcos do PC2; responsável por M3.3 a M3.5; revisão dos pull requests | 20% |
+| Pedro Goncalves Rocha | Extração, consolidação e decisões da gestão do projeto; marcos do PC2 e da E2; responsável por M3.3 a M3.5; revisão dos pull requests; vistoria dos conceitos depois do PC2 | 20% |
 | **Total** | | **100%** |
 
 <p class="legenda">Tabela 3. Contribuição dos integrantes na Entrega 2. Fonte: issues e pull requests do GitHub e decisão de 24/11/2026 no registro de decisões.</p>

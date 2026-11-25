@@ -13,7 +13,7 @@ A Fase 4 executou as 12 métricas planejadas na [Fase 3](../fase-3/plano-de-aval
 
 ## Em uma frase
 
-Pelo critério congelado, **G3 (Flexibilidade) atende** e **G1 (Adequação funcional) e G2 (Compatibilidade) não atendem**, cada um por uma nota 1 que vem de diferença de exibição ou de representação, e não de dado perdido. Numa análise de sensibilidade, G1 atende e G2 atende com ressalvas. A ação de melhoria eliminou a interferência da instalação em aplicações vizinhas do servidor.
+Pelo critério congelado, **G3 (Flexibilidade) atende**, **G2 (Compatibilidade) atende com ressalvas** (nota 2 em M2.4, pela coexistência durante a instalação) e **G1 (Adequação funcional) não atende**, por uma nota 1 em M1.2 que vem da exibição do total em soma natural (caso A-04), e não de cálculo errado. Numa análise de sensibilidade, G1 atende. A ação de melhoria eliminou a interferência da instalação em aplicações vizinhas do servidor.
 
 ## Evidências
 
