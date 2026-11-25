@@ -27,7 +27,7 @@ Somente itens comprovados por arquivo versionado ou por uma verificação reexec
 
 ## Rubrica
 
-- [x] **GitPage atualizada, com versão, data e links funcionais (F2-C10, AG-C4).** O rodapé informa `Entrega 2 | Versão 2.0 · 11/11/2026`; `mkdocs build --strict` concluiu com sucesso em 11/11/2026.
+- [x] **GitPage atualizada, com versão, data e links funcionais (F2-C10, AG-C4).** O rodapé informa `Entrega 2 | Versão 2.2 · 24/11/2026`; `mkdocs build --strict` concluiu com sucesso em 24/11/2026.
 - [x] **Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2).** O [dashboard](dashboard.md) numera as oito figuras; as tabelas e figuras do artigo estão numeradas e citadas em `artigo/main.tex`, e o PDF foi compilado e inspecionado.
 - [ ] **Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).** O Apêndice A de `artigo/main.tex` detalha as responsabilidades dos integrantes, mas os percentuais individuais da E2 ainda estão pendentes e devem ser preenchidos antes da release.
 - [x] **Declaração de uso de IA específica (AG-C3).** A [declaração de uso de IA](../sobre/uso-de-ia.md) e o Apêndice B registram, por integrante, a ferramenta, a finalidade e a forma de conferência.

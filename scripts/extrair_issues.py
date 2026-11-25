@@ -14,9 +14,13 @@ Uso:
 
 Tokens:
   GITHUB_TOKEN        obrigatório (a API GraphQL não aceita acesso anônimo).
-  PSM_PROJECT_TOKEN   opcional, com o escopo read:project. O quadro fica na conta do Carlos, e o
-                      GITHUB_TOKEN do Actions não lê projetos de usuário. Sem ele, os dois arquivos do
-                      quadro não são alterados e o script avisa.
+  PSM_PROJECT_TOKEN   opcional, com o escopo read:project, de um membro da organização. O GITHUB_TOKEN do
+                      Actions não lê projetos (ProjectV2). Sem ele, os dois arquivos do quadro não são
+                      alterados e o script avisa.
+
+Quadro: desde 24/11/2026, o projeto 54 da organização (issue #143). O histórico de Status até a migração vem
+do quadro anterior, o projeto 1 da conta cadumotta; os eventos que a própria migração gerou no quadro novo
+são descartados.
 
 --data-ref é a data de corte (horário de Brasília, fim do dia). Itens criados depois dela são descartados;
 issue ou PR fechado depois dela aparece como aberto; comentários, revisões e eventos posteriores são
@@ -261,8 +265,8 @@ query($owner: String!, $name: String!, $cursor: String) {
         timelineItems(first: 100, itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) {
           nodes {
             __typename
-            ... on AddedToProjectV2Event { createdAt }
-            ... on ProjectV2ItemStatusChangedEvent { createdAt previousStatus status }
+            ... on AddedToProjectV2Event { createdAt project { number owner { ... on Organization { login } ... on User { login } } } }
+            ... on ProjectV2ItemStatusChangedEvent { createdAt previousStatus status project { number owner { ... on Organization { login } ... on User { login } } } }
           }
         }
       }
@@ -271,12 +275,29 @@ query($owner: String!, $name: String!, $cursor: String) {
 }"""
 
 
+QUADRO_ANTIGO = ("cadumotta", 1)
+QUADRO_NOVO = ("FCTE-Qualidade-de-Software-1", 54)
+MIGRACAO = datetime(2026, 11, 24, 3, 30, tzinfo=timezone.utc)
+
+
+def evento_valido(t):
+    """Eventos do quadro anterior até a migração e do quadro novo depois dela (issue #143)."""
+    projeto = t.get("project") or {}
+    chave = ((projeto.get("owner") or {}).get("login"), projeto.get("number"))
+    quando = datetime.fromisoformat(t["createdAt"].replace("Z", "+00:00"))
+    if chave == QUADRO_ANTIGO:
+        return quando <= MIGRACAO
+    if chave == QUADRO_NOVO:
+        return quando > MIGRACAO
+    return False
+
+
 def extrair_transicoes(owner, nome, token, corte):
     """A3 e B1: entrada no quadro e cada mudança de Status, com data (histórico do quadro)."""
     linhas = []
     for i in graphql_paginado(Q_TRANSICOES, {"owner": owner, "name": nome}, token, ["repository", "issues"]):
         for t in i["timelineItems"]["nodes"]:
-            if not t or depois(t.get("createdAt"), corte):
+            if not t or depois(t.get("createdAt"), corte) or not evento_valido(t):
                 continue
             adicionada = t["__typename"] == "AddedToProjectV2Event"
             linhas.append({"issue": i["number"], "data_hora": t["createdAt"],
@@ -288,8 +309,8 @@ def extrair_transicoes(owner, nome, token, corte):
 
 Q_QUADRO = """
 query($login: String!, $numero: Int!, $cursor: String) {
-  user(login: $login) {
-    projectV2(number: $numero) {
+  repositoryOwner(login: $login) {
+    ... on ProjectV2Owner { projectV2(number: $numero) {
       items(first: 100, after: $cursor) {
         pageInfo { hasNextPage endCursor }
         nodes {
@@ -302,7 +323,7 @@ query($login: String!, $numero: Int!, $cursor: String) {
           }
         }
       }
-    }
+    } }
   }
 }"""
 
@@ -311,7 +332,7 @@ def extrair_retrato(repo, login, numero, token, hoje):
     """A2 e A3: Status e Iteração de cada issue do repositório no quadro, hoje."""
     linhas = []
     for item in graphql_paginado(Q_QUADRO, {"login": login, "numero": numero}, token,
-                                 ["user", "projectV2", "items"]):
+                                 ["repositoryOwner", "projectV2", "items"]):
         conteudo = item.get("content") or {}
         if (conteudo.get("repository") or {}).get("nameWithOwner") != repo:
             continue
@@ -360,8 +381,8 @@ def main():
     parser.add_argument("--repo", default="FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF")
     parser.add_argument("--data-ref", type=date.fromisoformat, default=datetime.now(BRASILIA).date(),
                         help="data de corte AAAA-MM-DD (padrão: hoje, em Brasília)")
-    parser.add_argument("--quadro-usuario", default="cadumotta", help="dono do project board")
-    parser.add_argument("--quadro-numero", type=int, default=1, help="número do project board")
+    parser.add_argument("--quadro-dono", default=QUADRO_NOVO[0], help="dono do project board (organização ou usuário)")
+    parser.add_argument("--quadro-numero", type=int, default=QUADRO_NOVO[1], help="número do project board")
     args = parser.parse_args()
 
     token = os.environ.get("GITHUB_TOKEN")
@@ -385,10 +406,10 @@ def main():
                    "GitHub GraphQL (timelineItems)", args.data_ref,
                    "issues { timelineItems(itemTypes: [ADDED_TO_PROJECT_V2_EVENT, PROJECT_V2_ITEM_STATUS_CHANGED_EVENT]) }")
         if args.data_ref == hoje:
-            retrato = extrair_retrato(args.repo, args.quadro_usuario, args.quadro_numero, token_quadro, hoje)
+            retrato = extrair_retrato(args.repo, args.quadro_dono, args.quadro_numero, token_quadro, hoje)
             gravar_csv("quadro_retratos.csv", retrato, ["data", "issue", "status", "iteracao", "iteracao_inicio"],
                        "GitHub GraphQL (projectV2)", args.data_ref,
-                       f"user(login: {args.quadro_usuario}) {{ projectV2(number: {args.quadro_numero}) {{ items {{ fieldValues }} }} }}",
+                       f"repositoryOwner(login: {args.quadro_dono}) {{ projectV2(number: {args.quadro_numero}) {{ items {{ fieldValues }} }} }}",
                        manter=lambda l: l["data"] != hoje.isoformat())
         else:
             print("quadro_retratos.csv: não alterado (o retrato só é gravado com a data de corte de hoje)")

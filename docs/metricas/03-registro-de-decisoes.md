@@ -98,7 +98,7 @@ Consequência para as medidas da E1 (`esforco_consolidado.csv`, linhas com `hist
 - **Interpretação:** sem um compromisso registrado no início da semana, não há como comparar o planejado com o cumprido. A retrospectiva pediu exatamente essa comparação.
 - **Decisão tomada:** iteração = semana ISO, de segunda a domingo. O compromisso da semana é o campo "Iteração" do quadro no retrato de segunda-feira. Os marcos da disciplina viram milestones (E1, PC1, E2 e Apresentação). A issue vai para "Em Progresso" quando o trabalho começa, e não quando termina.
 - **Responsável e prazo:** Carlos (quadro, issue #19; milestones, issue #18); Bernardo (acompanhamento semanal, DG-06), a partir da W47 (16/11/2026).
-- **Evidência da execução:** [quadro do projeto](https://github.com/users/cadumotta/projects/1), [PR #34](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/34) e [Construtos de medição](02-construtos-de-medicao.md), Tabela 2.
+- **Evidência da execução:** [quadro do projeto](https://github.com/users/cadumotta/projects/1) (a partir de 24/11, [na organização](https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54)), [PR #34](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/34) e [Construtos de medição](02-construtos-de-medicao.md), Tabela 2.
 - **Efeito observado posteriormente:** a verificar em 17/11/2026, pelo percentual concluído da W47 em `comprometido_concluido.csv`. Depende do retrato diário do quadro, que precisa do token `PSM_PROJECT_TOKEN` no workflow.
 
 ### DG-10 - PC1 não apresentado

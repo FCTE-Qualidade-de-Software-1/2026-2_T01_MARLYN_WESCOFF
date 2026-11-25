@@ -7,7 +7,7 @@ repo_name: 2026-2_T01_MARLYN_WESCOFF
 edit_uri: edit/main/docs/
 
 # Versão e data da GitPage. Atualizar a cada entrega ou mudança relevante.
-copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Ponto de controle 2 | Versão 2.1 · 16/11/2026"
+copyright: "FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 2 | Versão 2.2 · 24/11/2026"
 
 theme:
   name: material
@@ -134,7 +134,7 @@ nav:
   - Gestão do projeto (PSM/CID):
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
-      - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
+      - Quadro de tarefas (GitHub Projects): https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
