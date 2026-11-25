@@ -29,7 +29,7 @@ jobs:
     env:
       TZ: America/Sao_Paulo
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Token pessoal com o escopo read:project: o quadro fica na conta de um integrante.
+      # Token pessoal com o escopo read:project, de um membro da organização: o GITHUB_TOKEN não lê projetos.
       PSM_PROJECT_TOKEN: ${{ secrets.PSM_PROJECT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
