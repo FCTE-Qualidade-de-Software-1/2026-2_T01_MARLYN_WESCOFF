@@ -57,7 +57,7 @@ As [medições históricas](registro-medicoes.md) preservam os retratos anterior
 | CSVs brutos | [Diretório de dados brutos](../metricas/dados/brutos/README.md) |
 | CSVs consolidados | [Diretório de dados consolidados](../metricas/dados/consolidados/README.md) |
 | Scripts | [Diretório `scripts/`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/tree/main/scripts) |
-| Quadro | [Marlyn Wescoff - Gestão PSM/CID](https://github.com/users/cadumotta/projects/1) |
+| Quadro | [Marlyn Wescoff - Gestão do projeto (PSM/CID)](https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54), na organização da disciplina (visível para a equipe e para a docente; só os donos da organização podem torná-lo público); o [quadro anterior](https://github.com/users/cadumotta/projects/1) guarda as movimentações de 10 a 24/11 |
 
 <p class="legenda">Tabela 3. Pontos de acesso aos artefatos verificáveis da gestão. Fonte: elaborado pelos autores.</p>
 

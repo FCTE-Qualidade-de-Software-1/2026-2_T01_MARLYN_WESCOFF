@@ -134,7 +134,7 @@ nav:
   - Gestão do projeto (PSM/CID):
       - Visão geral: gestao/index.md
       - Processo de trabalho: gestao/processo-de-trabalho.md
-      - Quadro de tarefas (GitHub Projects): https://github.com/users/cadumotta/projects/1
+      - Quadro de tarefas (GitHub Projects): https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54
       - Diagnóstico do repositório: metricas/01-diagnostico-repositorio.md
       - Medidas e limiares: metricas/02-construtos-de-medicao.md
       - Plano inicial da E1 (histórico): gestao/plano-psm.md
