@@ -98,8 +98,8 @@
               </button>
             
             
-  Entrega 1 publicada · Fases 1 e 2 · versão 1.1 de 26/10/2026 ·
-  <a href="../../../artigo/artigo-e1.pdf">baixar o artigo (PDF)</a>
+  Entrega 2 publicada · Fases 1 a 4 · versão 2.2 de 24/11/2026 ·
+  <a href="../../../artigo/artigo-e2.pdf">baixar o artigo (PDF)</a>
 
           </div>
           
@@ -1507,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://github.com/users/cadumotta/projects/1" class="md-nav__link">
+      <a href="https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/54" class="md-nav__link">
         
   
   
@@ -2292,7 +2292,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>scripts/extrair_git.py<span class="w"> </span>--data-ref<span class="w"> </span>AAAA-MM-DD
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">GITHUB_TOKEN</span><span class="o">=</span><span class="k">$(</span>gh<span class="w"> </span>auth<span class="w"> </span>token<span class="k">)</span><span class="w"> </span>python3<span class="w"> </span>scripts/extrair_issues.py<span class="w"> </span>--data-ref<span class="w"> </span>AAAA-MM-DD
 </code></pre></div>
-<p>Para ler o quadro, defina também <code>PSM_PROJECT_TOKEN</code> com um token que tenha o escopo <code>read:project</code>. Sem ele, os arquivos do quadro não são alterados. Rodar duas vezes com a mesma data de corte e o mesmo estado do repositório gera arquivos idênticos.</p>
+<p>Para ler o quadro, defina também <code>PSM_PROJECT_TOKEN</code> com um token que tenha o escopo <code>read:project</code>, de um membro da organização. Em <code>quadro_eventos.csv</code>, entram os eventos do quadro anterior até a migração (24/11/2026, 03h30 UTC) e os do quadro da organização depois dela; os eventos gerados pela própria migração ficam de fora (issue #143). Sem ele, os arquivos do quadro não são alterados. Rodar duas vezes com a mesma data de corte e o mesmo estado do repositório gera arquivos idênticos.</p>
 <table>
 <thead>
 <tr>
@@ -2343,7 +2343,7 @@
 <td><code>quadro_retratos.csv</code></td>
 <td>Project board (GraphQL)</td>
 <td>Retrato diário do Status e da Iteração de cada issue; uma linha por issue e por dia</td>
-<td><code>extrair_issues.py</code>: <code>user { projectV2 { items { fieldValues } } }</code></td>
+<td><code>extrair_issues.py</code>: <code>repositoryOwner { projectV2 { items { fieldValues } } }</code>, no projeto 54 da organização desde 24/11/2026 (antes, no projeto 1 da conta cadumotta)</td>
 </tr>
 <tr>
 <td><code>commits.csv</code></td>
@@ -2384,7 +2384,7 @@
 <hr />
 <details class="note">
 <summary>Histórico de versões</summary>
-<p>Gerado do <code>git log</code> deste arquivo: 3 versões.</p>
+<p>Gerado do <code>git log</code> deste arquivo: 4 versões.</p>
 <table>
 <thead>
 <tr>
@@ -2395,6 +2395,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>4</td>
+<td>24/11/2026</td>
+<td>Passa a usar o quadro de tarefas da organização da disciplina (#144) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/4e6137a9d4fb5fa85638273ecb5e37ccc5170331">4e6137a</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
 <tr>
 <td>3</td>
 <td>10/11/2026</td>
@@ -2493,7 +2499,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Ponto de controle 2 | Versão 2.1 · 16/11/2026
+      FGA0315 Qualidade de Software 1 · 2026.2 · T01 · Grupo Marlyn Wescoff | Entrega 2 | Versão 2.2 · 24/11/2026
     </div>
   
   
