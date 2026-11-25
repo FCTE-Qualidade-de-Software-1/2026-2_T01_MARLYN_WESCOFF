@@ -1,6 +1,6 @@
-# Ata 03 – 2026-11-23 (RASCUNHO, a aprovar pela equipe)
+# Ata 03 – 2026-11-23 (rascunho; sessão não realizada)
 
-> **Rascunho preparado para a reunião.** Os dados das seções 1 e 2 vêm do repositório. Participantes, discussão e decisões só valem depois de preenchidos e aprovados pela equipe. Depois da aprovação, renomear para `2026-11-23-ata-03.md` e retirar esta nota.
+> **Sessão não realizada.** Este rascunho foi preparado para a sessão de interpretação, que não chegou a acontecer antes do prazo da Entrega 2. As decisões que ele previa foram tomadas fora de reunião e estão no [Registro de decisões](../docs/gestao/atas.md#registro-de-decisoes) de 24/11/2026: a D1 (caso A-04, critério mantido) e a divisão igual do esforço da E2. A D2 foi resolvida em 23/11 pela correção do instrumento de M2.2 (PR #134). Os campos em branco abaixo não foram preenchidos.
 
 | Campo | Valor |
 |---|---|

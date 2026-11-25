@@ -31,7 +31,7 @@ Coleta de 15 a 22/11/2026, no servidor de avaliação montado pelo script de pre
 
 <p class="legenda">Tabela 2. Julgamento dos objetivos e decisão para o requisitante. Fonte: elaborado pelos autores, pelas regras de <a href="../../fase-2/niveis-e-julgamento/">Níveis e julgamento</a>.</p>
 
-A única nota 1 (Q1.2, pelo caso A-04) vem da escala de exibição, e não de cálculo errado. Como a regra R1 proíbe mudar o critério depois da coleta, a equipe registra o julgamento pelo critério e a análise de sensibilidade; a decisão sobre o A-04 fica para a ata, com o motivo. M2.2 não entra nessa análise: a divergência de 22/11 era do instrumento de comparação, corrigido antes do julgamento sem mudar o critério (PR #134).
+A única nota 1 (Q1.2, pelo caso A-04) vem da escala de exibição, e não de cálculo errado. Como a regra R1 proíbe mudar o critério depois da coleta, a equipe registra o julgamento pelo critério e a análise de sensibilidade; a decisão de manter o critério no A-04 está no [Registro de decisões](../gestao/atas.md#registro-de-decisoes), de 24/11, com o motivo. M2.2 não entra nessa análise: a divergência de 22/11 era do instrumento de comparação, corrigido antes do julgamento sem mudar o critério (PR #134).
 
 - **Q1.1, O núcleo dá conta das tarefas?** Sim: 12 de 12 tarefas, sem contorno.
 - **Q1.2, Notas e prazos saem certos?** Os cálculos, sim (19 de 20 iguais ao oráculo); a exibição do total em soma natural, não na escala esperada.
