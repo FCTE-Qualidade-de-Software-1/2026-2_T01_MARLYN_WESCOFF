@@ -15,7 +15,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Apontamento da professora:** o quadro de tarefas (GitHub Projects) precisa estar na organização da disciplina, e não na conta de um integrante, como está hoje (https://github.com/users/cadumotta/projects/1).\n\n**Por que estava fora:** em 10/11/2026, nenhum integrante era membro da organização, e o GitHub só deixa membros criarem projetos nela. Um quadro de usuário também não pode ser ligado a um repositório de organização. Com o Carlos agora membro da organização, a migração é possível.\n\n**O que fazer:**\n- criar o quadro na organização, ligado ao repositório, com as mesmas colunas (Backlog, A Fazer, Em Progresso, Em Revisão, Concluído) e o campo \"Iteração\" semanal;\n- levar todas as issues com a coluna e a semana atuais (issue fechada entra em \"Concluído\");\n- trocar os links do README, do menu da GitPage e das páginas de gestão;\n- fazer o `scripts/extrair_issues.py` ler o quadro da organização;\n- manter o quadro antigo como registro histórico das movimentações até 24/11 e registrar a decisão.\n\nPrazo: 24/11/2026.\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Quadro na organização, ligado ao repositório e com todas as issues\n- [ ] Links e extração apontando para o quadro novo\n- [ ] Decisão registrada\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T02:37:04Z",
   "comments": [],
   "createdAt": "2026-11-24T03:17:17Z",
   "labels": [
@@ -57,7 +57,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 143,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção] Quadro de tarefas na organização da disciplina"
  },
  {
@@ -76,7 +76,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item C1 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `overrides/home.html` (\"E2 · 22/11/2026\"), `docs/index.md`, Fase 3 (seção 6), Fase 4 (Tabelas 2 e 3), artigo (seção 7.3) e milestone E2 no GitHub.\n\n**O que está errado:** O prazo da E2 passou para terça, 24/11/2026, 23h59.\n\n**Como corrigir:** Refazer o cronograma real: o que foi coletado de 18 a 20/11, o que ainda falta e a nova data do julgamento. Atualizar as datas na GitPage, no artigo e no milestone, e registrar em ata a mudança de prazo e de cronograma.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-24T17:11:18Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:24Z",
   "labels": [
@@ -112,7 +112,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 123,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção C1] Novo prazo da E2 (24/11) e cronograma real"
  },
  {
@@ -198,7 +198,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A2b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** Slide 13 da apresentação (gestão).\n\n**O que está errado:** O slide vai da categoria direto à medida e ao valor, sem mostrar a necessidade de informação nem o indicador.\n\n**Como corrigir:** Para a apresentação final: uma coluna \"Necessidade de informação\" antes da medida e o modelo de informação da Aula 09 em miniatura. Deixar explícito no título que é **gestão do projeto**, separada da avaliação do produto.\n\n**Fazer depois de:** #116 (correção A2)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGestão\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:50Z",
   "comments": [],
   "createdAt": "2026-11-20T15:42:17Z",
   "labels": [
@@ -240,7 +240,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 121,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A2b] Slide de gestão com necessidade de informação e modelo de informação"
  },
  {
@@ -546,7 +546,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item C2 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/metodologia.md`.\n\n**O que está errado:** A Tabela 1 diz que a Fase 3 está \"Em andamento\" e que a técnica da Fase 4 é \"A definir\". O texto fala em \"sprint\", mas a gestão usa a semana ISO, e em `dados/gestao/horas.csv`, mas o apontamento real é `docs/metricas/dados/brutos/esforco.csv`.\n\n**Como corrigir:** Atualizar a situação das fases e a técnica da Fase 4, trocar \"sprint\" por semana e o caminho do apontamento. A seção \"Gestão com PSM/CID\" deve deixar claro que é gestão do projeto, e não avaliação do produto.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:47Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:56Z",
   "labels": [
@@ -582,7 +582,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 115,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção C2] Metodologia atualizada"
  },
  {
@@ -601,7 +601,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B8 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-1/produto.md`.\n\n**O que está errado:** A Aula 07 (slide 10) pede, na descrição do produto: principais usuários, nível de conhecimento exigido (informática e domínio), funções que merecem mais dedicação, massa de dados disponível e requisitos de hardware e software. Faltam o nível de conhecimento e a massa de dados.\n\n**Como corrigir:** Acrescentar uma tabela curta \"Checklist da Aula 07\" com cada item e a resposta, ou o link para a Fase 3 no caso da massa de dados e do hardware.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:45Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:53Z",
   "labels": [
@@ -643,7 +643,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 114,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B8] Checklist da Aula 07 na descrição do produto"
  },
  {
@@ -662,7 +662,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B4 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `overrides/home.html`, cartões \"O que estamos avaliando\"; `docs/index.md`, item 1 da \"Leitura rápida\".\n\n**O que está errado:** Os objetivos G1 a G3 aparecem escritos como perguntas (\"O núcleo cobre e calcula…?\"), o que mistura objetivo e questão, justamente os níveis que a professora quer ver separados.\n\n**Como corrigir:** Escrever cada cartão como objetivo (\"Entender a adequação funcional do núcleo para a decisão D1\") e listar as questões embaixo. Na Leitura rápida, chamar as três perguntas de \"decisões\".\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:43Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:50Z",
   "labels": [
@@ -698,7 +698,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 113,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B4] Objetivos da página inicial escritos como objetivos"
  },
  {
@@ -717,7 +717,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A3c da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/fase-3/plano-de-avaliacao.md`, seções 3 e 9; `docs/fase-4/plano-de-execucao.md`, Tabela 1.\n\n**O que está errado:** As instruções e as tabelas de rastreabilidade também vão de G direto para M.\n\n**Como corrigir:** Acrescentar a coluna \"Questão\" na tabela de rastreabilidade da Fase 3 e na Tabela 1 da Fase 4, e citar as questões no título de cada bloco de instruções. Exemplo: \"G1 – Q1.1 a Q1.3 (M1.1 a M1.3)\". Seguir as ligações Q → M da correção A3b.\n\n**Fazer depois de:** #108 (correção A3b)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 3\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:40Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:46Z",
   "labels": [
@@ -771,7 +771,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 112,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A3c] Coluna Questão nos planos das Fases 3 e 4"
  },
  {
@@ -790,7 +790,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A3 da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** Slide 6 da apresentação e a fala da Fase 2.\n\n**O que está errado:** Fomos do objetivo direto para as métricas: o slide lista G1 → M1.1, M1.2, M1.3 sem nenhuma questão.\n\n**Como corrigir:** Mostrar a árvore completa G → Q → M, com as hipóteses, como no diagrama GQM do artigo. Na fala, ler pelo menos uma questão de cada objetivo antes de citar a métrica. Usar as questões reescritas pelo Maykon (A3b).\n\n**Fazer depois de:** #108 (correção A3b)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n1.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:38Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:43Z",
   "labels": [
@@ -838,7 +838,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 111,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A3] Apresentação do GQM com a árvore G, Q e M"
  },
  {
@@ -857,7 +857,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B2 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `docs/fase-2/abstraction-sheets.md` e as fichas das métricas da Fase 2.\n\n**O que está errado:** A Aula 08 (slide 38) pede para identificar os fatores que influenciam os resultados e definir esses fatores também como métricas. Os fatores de variação (versão 5.3.x, codificação do CSV, experiência do avaliador, recursos da VM) só aparecem como texto.\n\n**Como corrigir:** Criar uma tabela curta de \"medidas de contexto\" com o fator, o que se registra e onde: versão corretiva, codificação do arquivo, anos de experiência do avaliador com Linux, RAM da VM. Na Fase 4, essa tabela explica as hipóteses refutadas.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:36Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:39Z",
   "labels": [
@@ -899,7 +899,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 110,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B2] Medidas de contexto para os fatores de variação"
  },
  {
@@ -918,7 +918,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B1 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** Hipóteses H1.3, H2.1, H3.1 e H3.3, na Fase 2 e na tabela de objetivos do artigo.\n\n**O que está errado:** Essas hipóteses usam o mesmo número do limite da nota 3 (por exemplo, M1.3 ≥ 0,92), então hipótese e critério de julgamento parecem a mesma coisa. Na Aula 08, a hipótese é a resposta esperada à questão (o baseline); o critério de julgamento é a régua de aceitação da Aula 07.\n\n**Como corrigir:** Escrever cada hipótese como resposta à questão, com o valor esperado. Exemplo: \"esperamos que só a restauração de backup exija contorno (11 de 12)\". Acrescentar na Fase 2 e no artigo uma frase que separe hipótese (o que esperamos) de nível/critério (o que aceitamos). Se o valor esperado mudar, avisar o Carlos (#72), porque o script confere as hipóteses.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n2\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:33Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:36Z",
   "labels": [
@@ -960,7 +960,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 109,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B1] Hipóteses como resposta esperada, separadas do critério"
  },
  {
@@ -979,7 +979,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item A3b da vistoria.** Apontamento da professora no PC2 (18/11/2026), detalhado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/fase-2/objetivos-questoes-hipoteses.md`, `docs/fase-2/diagrama-gqm.md`, explorador em `docs/javascripts/marlyn.js`; no artigo, a tabela de objetivos, questões e hipóteses e o diagrama GQM.\n\n**O que está errado:** Cada questão tem exatamente uma métrica e repete o nome dela (Q1.1 Cobertura → M1.1 Cobertura), o que dá a impressão de que as questões foram escritas a partir das métricas. Na Aula 08 (slides 33, 34 e 38), a questão caracteriza o objeto em relação ao foco, e as métricas refinam a questão: uma questão pode ter várias métricas, e uma métrica pode servir a várias questões.\n\n**Como corrigir:** Reescrever as questões como perguntas sobre o objeto, sem citar o nome da métrica. Onde fizer sentido, ligar uma questão a mais de uma métrica: Q1.1 com M1.1 e M1.3; Q2.2 com M2.1 e M2.2; Q3.3 com M3.3 e M3.4 (já é assim). Atualizar o Mermaid, o explorador, a tabela e o diagrama do artigo. A regra \"nota da questão = mínimo das notas das suas métricas\" continua valendo; avisar o Carlos para ajustar `scripts/calcula_julgamento.py` (#72).\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 2\n\n### Estimativa (horas)\n\n4\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:31Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:32Z",
   "labels": [
@@ -1027,7 +1027,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 108,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção A3b] Questões do GQM sobre o objeto, com ligações Q para M"
  },
  {
@@ -1046,7 +1046,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item C3 da vistoria.** Inconsistência ou texto desatualizado encontrado na vistoria de conceitos de 19/11/2026.\n\n**Onde:** `docs/sobre/criterios.md`.\n\n**O que está errado:** Os números de seção do artigo estão errados (a página diz \"Seção 4.1\", hoje é 5.1, e depois da correção A1 volta a ser 4.x). Faltam as tabelas de critérios da Fase 3 e da Fase 4.\n\n**Como corrigir:** Atualizar depois da reestruturação do artigo (correção A1) e acrescentar as tabelas de critérios das Fases 3 e 4.\n\n**Fazer depois de:** #102 (correção A1)\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nGitPage\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T02:39:02Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:27Z",
   "labels": [
@@ -1082,7 +1082,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 107,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção C3] Critérios de avaliação com as seções novas do artigo"
  },
  {
@@ -1156,7 +1156,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B7 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `artigo/main.tex`, seção 5.3; `docs/fase-1/produto.md`, tabela \"Tipo de produto\".\n\n**O que está errado:** \"Aplicação web de sistema de informação\" não está na tabela de Pressman da Aula 07 (slide 12): básico, tempo real, comercial, científico e de engenharia, embarcado, computador pessoal e inteligência artificial.\n\n**Como corrigir:** Usar uma categoria da tabela, com justificativa. A mais próxima é \"comercial\": organiza dados para operações e decisões administrativas. Comentar a ressalva de que o Moodle é livre, e não vendido.\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nFase 1\n\n### Estimativa (horas)\n\n1\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-24T21:29:17Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:21Z",
   "labels": [
@@ -1198,7 +1198,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 105,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B7] Tipo de produto pela tabela da Aula 07"
  },
  {
@@ -1217,7 +1217,7 @@
    "name": ""
   },
   "body": "### Descrição\n\n**Item B6 da vistoria.** Erro de conceito encontrado na vistoria de conceitos de 19/11/2026 (recomendado).\n\n**Onde:** `artigo/main.tex`, seção 2.2.\n\n**O que está errado:** \"Repetível e reprodutível\" aparece como característica da Fase 4. Na Aula 07 (slide 15), é a exigência do nível de detalhe da **especificação** (Fase 2). A Fase 4 também deixa de fora \"comparar com critérios\".\n\n**Como corrigir:** Fase 2: \"com detalhe suficiente para que a avaliação seja repetível e reprodutível\". Fase 4: \"obter as medidas, comparar com os critérios e julgar os resultados\".\n\nPrazo: 22/11/2026 (revisão em 23/11; E2 em 24/11).\n\n### Fase\n\nArtigo\n\n### Estimativa (horas)\n\n0.5\n\n### Critério de pronto\n\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\n- [ ] `mkdocs build --strict` sem erros e, se alterar o artigo, compilação com no máximo 15 páginas\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\n",
-  "closedAt": null,
+  "closedAt": "2026-11-24T19:02:51Z",
   "comments": [],
   "createdAt": "2026-11-20T15:41:18Z",
   "labels": [
@@ -1253,7 +1253,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 104,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Correção B6] Repetível e reprodutível na fase certa"
  },
  {
@@ -1474,8 +1474,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nFechar a declaração de uso de IA com os usos da semana, conferir os critérios da Fase 3, da Fase 4 e da avaliação geral e publicar a release E2 com o PDF do artigo até 22/11, 23h59.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nGestão\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Declaração de IA completa\r\n- [ ] Checklist da rubrica conferido\r\n- [ ] Release E2 publicada com o PDF\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-25T02:54:51Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqkD1VQ",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "Release E2 publicada: https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/releases/tag/E2, no commit fc5ceb9 da `main`. Estão anexados o `artigo-e2.pdf` (15 páginas, idêntico ao PDF gerado pelo workflow `artigo.yml`) e o `apresentacao-e2.pdf`. A declaração de IA está completa e igual na GitPage e no Apêndice B (#142 e #145). O checklist da rubrica foi conferido no #147.",
+    "createdAt": "2026-11-25T02:54:51Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/78#issuecomment-7151351125"
+   }
+  ],
   "createdAt": "2026-11-14T21:11:20Z",
   "labels": [
    {
@@ -1504,7 +1519,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 78,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Gestão] Declaração de IA final, release E2 e revisão pela rubrica"
  },
  {
@@ -1523,7 +1538,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nAtualizar a Tabela de Contribuição (Apêndice A e `docs/sobre/equipe.md`) com as tarefas de cada integrante e o percentual de esforço somando 100% (critério AG-C5), a partir de `contribuicao.csv` e das horas registradas.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n1\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Tarefas de cada integrante descritas\r\n- [ ] Percentuais somando 100%, com a fonte\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:29Z",
   "comments": [
    {
     "id": "IC_kwDOVS_JFM8AAAABpqs-lA",
@@ -1574,7 +1589,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 77,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Artigo] Tabela de contribuição da E2"
  },
  {
@@ -1593,8 +1608,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nConsolidar no artigo a Fase 4, os resultados, as relações entre as características, a ação de melhoria e a conclusão, a partir dos parágrafos de cada coletor, dentro do limite de 15 páginas.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nArtigo\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Seções exigidas na E2 presentes\r\n- [ ] PDF com no máximo 15 páginas, sem contar a tabela de contribuição\r\n- [ ] Artigo compila no workflow `artigo.yml`\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-25T02:40:17Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqjv9OA",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "A Fase 4, os resultados e a conclusão entraram no artigo pelo #145 (Seções 7 e 8, artigo com 15 páginas).",
+    "createdAt": "2026-11-25T02:40:16Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/76#issuecomment-7151025464"
+   }
+  ],
   "createdAt": "2026-11-14T21:11:14Z",
   "labels": [
    {
@@ -1629,7 +1659,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 76,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Artigo] Fase 4, resultados e conclusão"
  },
  {
@@ -1648,8 +1678,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nPublicar os resultados da Fase 4 na GitPage: métricas, notas, julgamento, relações entre as características e ação de melhoria, com links para os dados brutos.\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nGitPage\r\n\r\n### Estimativa (horas)\r\n\r\n2\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Tabelas e figuras numeradas, com legenda e fonte\r\n- [ ] Links para `dados/avaliacao/`\r\n- [ ] `mkdocs build --strict` sem erros\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-25T02:40:15Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqjv5rw",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "A página de resultados da Fase 4 ([resultados.md](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/docs/fase-4/resultados.md)) entrou na `main` pelo #145.",
+    "createdAt": "2026-11-25T02:40:14Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/75#issuecomment-7151024559"
+   }
+  ],
   "createdAt": "2026-11-14T21:11:11Z",
   "labels": [
    {
@@ -1684,7 +1729,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 75,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[GitPage] Página de resultados da Fase 4"
  },
  {
@@ -1709,7 +1754,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nEscolher a ação de melhoria entre os resultados com nota 1 ou 2, pelo tipo de problema (protótipo, alteração de código, modelo técnico ou processo), justificar com a métrica e a evidência e executá-la (entrega obrigatória da E2).\r\n\r\nPrazo: 22/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Ação justificada por métrica e evidência\r\n- [ ] Ação executada e versionada no repositório\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:26Z",
   "comments": [],
   "createdAt": "2026-11-14T21:11:07Z",
   "labels": [
@@ -1745,7 +1790,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 74,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Ação de melhoria (D4)"
  },
  {
@@ -1764,7 +1809,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nDiscutir as relações entre adequação funcional, compatibilidade e flexibilidade com base nos resultados, com as evidências, as limitações e os casos em que os dados não permitem estabelecer relação (premissa 1 da especificação).\r\n\r\nPrazo: 21/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n2\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Relações apoiadas em resultados da Fase 4\r\n- [ ] Limitações e casos sem relação declarados\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:24Z",
   "comments": [],
   "createdAt": "2026-11-14T21:11:05Z",
   "labels": [
@@ -1800,7 +1845,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 73,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Relações entre as características avaliadas"
  },
  {
@@ -1819,7 +1864,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nPreencher `dados/avaliacao/calculos.csv`, aplicar os níveis de pontuação da Fase 2, as regras métrica, questão e objetivo, e confirmar ou refutar as hipóteses H1.1 a H3.4.\r\n\r\nPrazo: 21/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 12 métricas calculadas e pontuadas\r\n- [ ] Hipóteses confirmadas ou refutadas com a evidência\r\n- [ ] Julgamento de G1, G2 e G3 respondendo às decisões D1 a D3\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:22Z",
   "comments": [],
   "createdAt": "2026-11-14T21:11:02Z",
   "labels": [
@@ -1855,7 +1900,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 72,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Cálculo, níveis de pontuação e julgamento de G1 a G3"
  },
  {
@@ -1874,7 +1919,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nExecutar as 6 execuções do plano (3 instalações limpas e 3 atualizações 4.5 para 5.3), cada uma em VM nova, com log e tempo (`script`), e a comparação dos 40 itens de M3.5 nas atualizações. Uma das execuções é feita por Bernardo (regra R6).\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 6 execuções registradas em `dados/avaliacao/M3.3/execucoes.csv`\r\n- [ ] Tempos de M3.4 e comparação de M3.5 registrados\r\n- [ ] Uma execução feita por Bernardo\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:20Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:59Z",
   "labels": [
@@ -1910,7 +1955,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 71,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Coleta de G3: M3.3, M3.4 e M3.5"
  },
  {
@@ -1929,7 +1974,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nM3.1: executar as 8 tarefas nos ambientes A1 a A4, registrando sistema, navegador e resolução. M3.2: executar T01 a T12 nas instâncias com PHP 8.3 e 8.4.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n6\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 4 ambientes registrados com versões\r\n- [ ] T01 a T12 nas duas versões de PHP\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:17Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:55Z",
   "labels": [
@@ -1965,7 +2010,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 70,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Coleta de G3: M3.1 e M3.2"
  },
  {
@@ -1984,7 +2029,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nExecutar as 6 funções REST de M2.3 (o token nunca é versionado) e as 3 entidades x 4 operações de M2.4, registrando em `dados/avaliacao/M2.3/` e `M2.4/verificacoes.csv`.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 6 funções com resposta salva e sem token\r\n- [ ] Verificações antes, durante e depois de cada operação\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:15Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:51Z",
   "labels": [
@@ -2020,7 +2065,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 69,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Coleta de G2: M2.3 e M2.4"
  },
  {
@@ -2039,7 +2084,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nExecutar os 7 formatos (F1 a F7) de M2.1 e a comparação de M2.2 com `compara_registros.py`, guardando entrada, saída e relatório em `dados/avaliacao/M2.1/` e `M2.2/`.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n4\r\n\r\n### Critério de pronto\r\n\r\n- [ ] 7 formatos registrados com conclui e aceito pelo receptor\r\n- [ ] Relatórios de comparação versionados\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:13Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:48Z",
   "labels": [
@@ -2075,7 +2120,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 68,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Coleta de G2: M2.1 e M2.2"
  },
  {
@@ -2094,7 +2139,7 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nExecutar o roteiro de G1 do plano: tarefas T01 a T12, casos do oráculo e casos de prazo. Registrar cada caso em `dados/avaliacao/M1.1/execucoes.csv` e `M1.2/`, com evidência nomeada pela regra da seção 5.\r\n\r\nPrazo: 20/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n5\r\n\r\n### Critério de pronto\r\n\r\n- [ ] T01 a T12 e os 20 casos registrados, inclusive as falhas\r\n- [ ] Cada linha aponta para a evidência\r\n- [ ] Parágrafo de resultado enviado para o artigo\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
+  "closedAt": "2026-11-25T01:22:09Z",
   "comments": [],
   "createdAt": "2026-11-14T21:10:45Z",
   "labels": [
@@ -2130,7 +2175,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 67,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Coleta de G1: M1.1, M1.2 e M1.3"
  },
  {
@@ -2149,8 +2194,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nExecutar a instalação piloto da seção 4 do plano, que não entra no cálculo, para confirmar os limites de tempo de M3.4 e a lista dos 40 itens de M3.5. Congelar os dois em ata antes da primeira execução oficial e ajustar os roteiros ambíguos.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Limites de M3.4 e `dados/avaliacao/M3.5/itens.csv` congelados em ata\r\n- [ ] Roteiros ajustados no plano, se necessário\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-25T01:08:47Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqiDtYQ",
+    "author": {
+     "login": "pedrogrocha13"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "O piloto não foi realizado. Não há log nem anotação de uma instalação de treino antes da coleta: a primeira instalação registrada é a tentativa 1 de M3.3, em 22/11, já como coleta oficial. As coletas de M3.3 a M3.5 foram executadas por script em 22/11, num contêiner novo para cada execução.\n\nDesvio em relação à seção 4 do plano da Fase 3:\n\n- **M3.5:** a lista dos 40 itens foi congelada em `scripts/m35_itens.php` antes da primeira atualização medida (regra R1), e não no piloto. Ela não passou pela conferência de outro integrante prevista no plano. Na revisão do #145, a comparação antes e depois foi conferida: os 40 itens batem nas 3 atualizações.\n- **M3.4:** os limites de tempo ficaram os valores candidatos da Fase 2, sem calibração e sem ata de congelamento. O tempo medido foi de um procedimento automatizado (mediana de 1,18 min na instalação limpa), muito abaixo do limite da nota 4 (15 min), então uma calibração razoável não mudaria a nota.\n\nO desvio está registrado na Seção 6.3 do artigo, no README de M3.5 e no cronograma real do plano de execução da Fase 4 (PRs #141 e #145).",
+    "createdAt": "2026-11-25T01:08:47Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/66#issuecomment-7149251937"
+   }
+  ],
   "createdAt": "2026-11-14T21:10:42Z",
   "labels": [
    {
@@ -2185,7 +2245,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 66,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] Piloto de instalação e congelamento de M3.4 e M3.5"
  },
  {
@@ -2204,8 +2264,23 @@
    "name": "Pedro Gonçalves Rocha"
   },
   "body": "### Descrição\r\n\r\nCriar `scripts/compara_registros.py` para a comparação campo a campo de M2.2 (só espaços em branco normalizados) e congelar os arquivos de entrada dos 7 formatos em `dados/avaliacao/M2.1/referencia/` antes da primeira troca.\r\n\r\nPrazo: 17/11/2026.\r\n\r\n### Fase\r\n\r\nFase 4\r\n\r\n### Estimativa (horas)\r\n\r\n3\r\n\r\n### Critério de pronto\r\n\r\n- [ ] Script testado com um par de arquivos conhecido\r\n- [ ] Arquivos de referência congelados e versionados\r\n- [ ] Revisado por outro integrante (PR com `Closes #N`)\r\n- [ ] Horas lançadas em `docs/metricas/dados/brutos/esforco.csv`\r\n",
-  "closedAt": null,
-  "comments": [],
+  "closedAt": "2026-11-25T02:40:20Z",
+  "comments": [
+   {
+    "id": "IC_kwDOVS_JFM8AAAABqjwApg",
+    "author": {
+     "login": "cadumotta"
+    },
+    "authorAssociation": "COLLABORATOR",
+    "body": "O `compara_registros.py` (corrigido no #134) e as referências congeladas de M2.1 em `dados/avaliacao/M2.1/referencia/` estão na `main`. A comparação de M2.2 foi refeita com ele (132/132).",
+    "createdAt": "2026-11-25T02:40:19Z",
+    "includesCreatedEdit": false,
+    "isMinimized": false,
+    "minimizedReason": "",
+    "reactionGroups": [],
+    "url": "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/issues/65#issuecomment-7151026342"
+   }
+  ],
   "createdAt": "2026-11-14T21:10:38Z",
   "labels": [
    {
@@ -2240,7 +2315,7 @@
    "dueOn": "2026-11-24T00:00:00Z"
   },
   "number": 65,
-  "state": "OPEN",
+  "state": "CLOSED",
   "title": "[Fase 4] compara_registros.py e arquivos de referência de M2.1"
  },
  {

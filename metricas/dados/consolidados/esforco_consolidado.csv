@@ -1,116 +1,143 @@
 entrega,tipo_registro,nivel,chave,horas,percentual,desvio_pct,previsto_h,estimado_h,acuracia,erro_pct,custo_rs,custo_estimado_rs,observacao,historico,fonte,data_extracao,comando_ou_query
-E1,reconstruido,membro,Bernardo Broetto Brun,8.5,14.91,-25.44,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,membro,Carlos Eduardo Deusdara Motta,10,17.54,-12.28,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,membro,João Pedro Sampaio Maciel,10,17.54,-12.28,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,membro,Maykon Junio dos Santos Soares,18,31.58,57.89,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,membro,Pedro Goncalves Rocha,10.5,18.42,-7.89,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,fase,1,26,45.61,420,5,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,fase,2,9,15.79,28.57,7,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,fase,transversal,22,38.6,158.82,8.5,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,tipo_atividade,artigo,3,5.26,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,tipo_atividade,documentacao,26,45.61,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,tipo_atividade,gestao,5,8.77,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,tipo_atividade,reuniao,5,8.77,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,tipo_atividade,revisao,18,31.58,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#1,1.5,,,,1.5,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#2,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#3,2.5,,,,1.5,1.67,66.67,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#4,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#5,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#6,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#7,3,,,,1,3,200,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#8,5,,,,3,1.67,66.67,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#9,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#11,2,,,,1.5,1.33,33.33,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#12,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#13,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,issue,#14,1,,,,0.5,2,100,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,reconstruido,total,total,57,,,20.5,20,1.3,35.9,841.89,302.78,acurácia e erro percentual médio só com as issues que têm estimativa e horas,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,membro,Bernardo Broetto Brun,14,100,400,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,membro,Carlos Eduardo Deusdara Motta,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,membro,João Pedro Sampaio Maciel,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,fase,gestao,14,100,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,tipo_atividade,desenvolvimento,6,42.86,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,tipo_atividade,documentacao,7,50,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,tipo_atividade,revisao,1,7.14,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#26,4,,,,4,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#27,2,,,,2,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#29,1,,,,2,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#30,5,,,,4,1.25,25,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#31,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,issue,#32,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,reconstruido,total,total,14,,,144,14,1,12.5,206.78,2126.88,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,membro,Bernardo Broetto Brun,7,50,150,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,membro,Carlos Eduardo Deusdara Motta,5,35.71,78.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,membro,João Pedro Sampaio Maciel,2,14.29,-28.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,fase,4,9.5,67.86,-84.92,63,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,fase,artigo,4,28.57,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,fase,gestao,0.5,3.57,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,tipo_atividade,analise,1.5,10.71,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,tipo_atividade,coleta,5,35.71,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,tipo_atividade,documentacao,7,50,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,tipo_atividade,gestao,0.5,3.57,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#61,0.5,,,,1,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#63,2,,,,4,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#64,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#65,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#68,1.5,,,,4,0.38,62.5,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#72,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#102,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#103,0.5,,,,0.5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,issue,#106,0.5,,,,0.5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,registrado,total,total,14,,,144,22,0.64,29.17,206.78,2126.88,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,membro,Bernardo Broetto Brun,1.5,50,150,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,membro,Carlos Eduardo Deusdara Motta,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,membro,João Pedro Sampaio Maciel,1.5,50,150,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,fase,transversal,3,100,-62.5,8,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,tipo_atividade,gestao,3,100,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,reconstruido,total,total,3,,,18,,,,44.31,265.86,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,membro,Bernardo Broetto Brun,4,28.57,42.86,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,membro,Carlos Eduardo Deusdara Motta,2,14.29,-28.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,membro,João Pedro Sampaio Maciel,2,14.29,-28.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,membro,Pedro Goncalves Rocha,6,42.86,114.29,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,fase,3,5.5,39.29,-21.43,7,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,fase,4,1.5,10.71,-50,3,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,fase,gestao,7,50,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,tipo_atividade,documentacao,11.5,82.14,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,tipo_atividade,gestao,2.5,17.86,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#52,2,,,,3,0.67,33.33,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#53,0.5,,,,1,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#54,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#56,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#57,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#58,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#59,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,issue,#60,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,registrado,total,total,14,,,18,14,1,54.17,206.78,265.86,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E1,,issue_sem_horas,#10,,,,,0.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,sim,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#15,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#16,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#17,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#18,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#19,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#20,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#21,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#22,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#23,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#24,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#25,,,,,5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#28,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,,issue_sem_horas,#55,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#62,,,,,5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,,issue_sem_horas,#94,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-PC2,,issue_sem_horas,#96,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#116,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#117,,,,,1.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#118,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#119,,,,,0.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#120,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
-E2,,issue_sem_horas,#122,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-24,python3 scripts/consolidar_metricas.py --data-ref 2026-11-24
+E1,reconstruido,membro,Bernardo Broetto Brun,8.5,14.91,-25.44,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,membro,Carlos Eduardo Deusdara Motta,10,17.54,-12.28,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,membro,João Pedro Sampaio Maciel,10,17.54,-12.28,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,membro,Maykon Junio dos Santos Soares,18,31.58,57.89,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,membro,Pedro Goncalves Rocha,10.5,18.42,-7.89,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,fase,1,26,45.61,420,5,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,fase,2,9,15.79,28.57,7,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,fase,transversal,22,38.6,158.82,8.5,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,tipo_atividade,artigo,3,5.26,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,tipo_atividade,documentacao,26,45.61,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,tipo_atividade,gestao,5,8.77,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,tipo_atividade,reuniao,5,8.77,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,tipo_atividade,revisao,18,31.58,,,,,,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#1,1.5,,,,1.5,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#2,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#3,2.5,,,,1.5,1.67,66.67,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#4,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#5,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#6,2,,,,2,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#7,3,,,,1,3,200,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#8,5,,,,3,1.67,66.67,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#9,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#11,2,,,,1.5,1.33,33.33,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#12,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#13,1,,,,1,1,0,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,issue,#14,1,,,,0.5,2,100,,,,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,reconstruido,total,total,57,,,20.5,20,1.3,35.9,841.89,302.78,acurácia e erro percentual médio só com as issues que têm estimativa e horas,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,membro,Bernardo Broetto Brun,14,100,400,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,membro,Carlos Eduardo Deusdara Motta,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,membro,João Pedro Sampaio Maciel,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,fase,gestao,14,100,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,tipo_atividade,desenvolvimento,6,42.86,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,tipo_atividade,documentacao,7,50,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,tipo_atividade,revisao,1,7.14,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#26,4,,,,4,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#27,2,,,,2,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#29,1,,,,2,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#30,5,,,,4,1.25,25,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#31,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,issue,#32,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,reconstruido,total,total,14,,,144,14,1,12.5,206.78,2126.88,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,membro,Bernardo Broetto Brun,20.5,74.55,272.73,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,membro,Carlos Eduardo Deusdara Motta,5,18.18,-9.09,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,membro,João Pedro Sampaio Maciel,2,7.27,-63.64,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,fase,1,1,3.64,-66.67,3,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,fase,4,14.5,52.73,-76.98,63,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,fase,artigo,4.5,16.36,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,fase,gestao,7.5,27.27,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,tipo_atividade,analise,1.5,5.45,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,tipo_atividade,coleta,5,18.18,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,tipo_atividade,documentacao,9.5,34.55,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,tipo_atividade,execucao,5,18.18,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,tipo_atividade,gestao,6.5,23.64,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#61,0.5,,,,1,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#63,2,,,,4,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#64,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#65,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#67,5,,,,5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#68,1.5,,,,4,0.38,62.5,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#72,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#78,6,,,,3,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#102,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#103,0.5,,,,0.5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#104,0.5,,,,0.5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#105,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#106,0.5,,,,0.5,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,issue,#107,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,registrado,total,total,27.5,,,144,32.5,0.85,25.89,406.18,2126.88,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,membro,Bernardo Broetto Brun,1.5,50,150,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,membro,Carlos Eduardo Deusdara Motta,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,membro,João Pedro Sampaio Maciel,1.5,50,150,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,membro,Pedro Goncalves Rocha,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,fase,transversal,3,100,-62.5,8,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,tipo_atividade,gestao,3,100,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,reconstruido,total,total,3,,,18,,,,44.31,265.86,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,membro,Bernardo Broetto Brun,4,28.57,42.86,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,membro,Carlos Eduardo Deusdara Motta,2,14.29,-28.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,membro,João Pedro Sampaio Maciel,2,14.29,-28.57,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,membro,Maykon Junio dos Santos Soares,0,0,-100,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,membro,Pedro Goncalves Rocha,6,42.86,114.29,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,fase,3,5.5,39.29,-21.43,7,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,fase,4,1.5,10.71,-50,3,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,fase,gestao,7,50,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,tipo_atividade,documentacao,11.5,82.14,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,tipo_atividade,gestao,2.5,17.86,,,,,,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#52,2,,,,3,0.67,33.33,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#53,0.5,,,,1,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#54,1.5,,,,3,0.5,50,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#56,3,,,,3,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#57,1,,,,1,1,0,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#58,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#59,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,issue,#60,2,,,,1,2,100,,,,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,registrado,total,total,14,,,18,14,1,54.17,206.78,265.86,acurácia e erro percentual médio só com as issues que têm estimativa e horas,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E1,,issue_sem_horas,#10,,,,,0.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,sim,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#15,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#16,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#17,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#18,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#19,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#20,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#21,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#22,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#23,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#24,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#25,,,,,5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#28,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,,issue_sem_horas,#55,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#62,,,,,5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#66,,,,,3,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#69,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#70,,,,,6,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#71,,,,,6,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#73,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#74,,,,,6,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#75,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#76,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#77,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,,issue_sem_horas,#94,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+PC2,,issue_sem_horas,#96,,,,,,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#108,,,,,4,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#109,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#110,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#111,,,,,1.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#112,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#113,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#114,,,,,1.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#115,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#116,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#117,,,,,1.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#118,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#119,,,,,0.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#120,,,,,1,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#121,,,,,1.5,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#122,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#123,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+E2,,issue_sem_horas,#143,,,,,2,,,,,issue concluída sem horas lançadas em esforco.csv: fora da acurácia,nao,esforco.csv; issues.json; milestones.json,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
