@@ -1,7 +1,14 @@
 [
  {
-  "createdAt": "2026-11-16T04:59:26Z",
+  "createdAt": "2026-11-25T02:40:10Z",
   "isLatest": true,
+  "name": "Entrega 2 - Fases 3 e 4, artigo final",
+  "publishedAt": "2026-11-25T02:54:39Z",
+  "tagName": "E2"
+ },
+ {
+  "createdAt": "2026-11-16T04:59:26Z",
+  "isLatest": false,
   "name": "Ponto de controle 2 - Fase 3",
   "publishedAt": "2026-11-16T05:04:30Z",
   "tagName": "PC2"

@@ -805,3 +805,85 @@ data,issue,status,iteracao,iteracao_inicio,fonte,data_extracao,comando_ou_query
 2026-11-24,121,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-24,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-24,122,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-24,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
 2026-11-24,123,A Fazer,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-24,user(login: cadumotta) { projectV2(number: 1) { items { fieldValues } } }
+2026-11-25,1,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,2,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,3,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,4,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,5,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,6,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,7,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,8,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,9,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,10,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,11,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,12,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,13,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,14,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,15,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,16,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,17,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,18,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,19,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,20,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,21,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,22,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,23,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,24,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,25,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,26,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,27,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,28,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,29,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,30,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,31,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,32,Concluído,,,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,52,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,53,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,54,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,55,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,56,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,57,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,58,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,59,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,60,Concluído,Semana 2026-W46,2026-11-09,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,61,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,62,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,63,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,64,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,65,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,66,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,67,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,68,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,69,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,70,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,71,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,72,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,73,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,74,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,75,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,76,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,77,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,78,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,102,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,103,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,104,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,105,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,106,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,107,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,108,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,109,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,110,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,111,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,112,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,113,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,114,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,115,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,116,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,117,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,118,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,119,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,120,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,121,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,122,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,123,Concluído,Semana 2026-W47,2026-11-16,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
+2026-11-25,143,Concluído,Semana 2026-W48,2026-11-23,GitHub GraphQL (projectV2),2026-11-25,repositoryOwner(login: FCTE-Qualidade-de-Software-1) { projectV2(number: 54) { items { fieldValues } } }
