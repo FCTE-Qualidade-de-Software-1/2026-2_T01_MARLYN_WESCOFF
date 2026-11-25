@@ -1055,7 +1055,8 @@ L 620.378182 146.919273
 L 636.987273 63.019636
 L 653.596364 63.019636
 L 670.205455 63.019636
-L 686.814545 79.154182
+L 686.814545 108.196364
+L 703.423636 104.969455
 " clip-path="url(#pf1fa0f74cc)" style="fill: none; stroke: #38b2ac; stroke-width: 2; stroke-linecap: square"/>
     <defs>
      <path id="mf77e10dfff" d="M -3 3
@@ -1079,7 +1080,8 @@ z
      <use xlink:href="#mf77e10dfff" x="636.987273" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
      <use xlink:href="#mf77e10dfff" x="653.596364" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
      <use xlink:href="#mf77e10dfff" x="670.205455" y="63.019636" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
-     <use xlink:href="#mf77e10dfff" x="686.814545" y="79.154182" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
+     <use xlink:href="#mf77e10dfff" x="686.814545" y="108.196364" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
+     <use xlink:href="#mf77e10dfff" x="703.423636" y="104.969455" style="fill: #38b2ac; stroke: #38b2ac; stroke-linejoin: miter"/>
     </g>
    </g>
    <g id="line2d_32">
@@ -1097,6 +1099,7 @@ L 636.987273 288.903273
 L 653.596364 296.970545
 L 670.205455 305.037818
 L 686.814545 313.105091
+L 703.423636 321.172364
 " clip-path="url(#pf1fa0f74cc)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #38b2ac; stroke-width: 1.5"/>
     <defs>
      <path id="m9d0fa2505c" d="M -3 3
@@ -1120,6 +1123,7 @@ L 3 3
      <use xlink:href="#m9d0fa2505c" x="653.596364" y="296.970545" style="fill: #38b2ac; stroke: #38b2ac"/>
      <use xlink:href="#m9d0fa2505c" x="670.205455" y="305.037818" style="fill: #38b2ac; stroke: #38b2ac"/>
      <use xlink:href="#m9d0fa2505c" x="686.814545" y="313.105091" style="fill: #38b2ac; stroke: #38b2ac"/>
+     <use xlink:href="#m9d0fa2505c" x="703.423636" y="321.172364" style="fill: #38b2ac; stroke: #38b2ac"/>
     </g>
    </g>
    <g id="line2d_33">
@@ -1943,7 +1947,7 @@ L 432.11375 96.592625
    </g>
   </g>
   <g id="text_32">
-   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-23. Linhas ideais aparecem somente quando o milestone possui prazo. -->
+   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-24. Linhas ideais aparecem somente quando o milestone possui prazo. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -2277,7 +2281,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4216.734375 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4280.359375 0)"/>
     <use xlink:href="#DejaVuSans-15" transform="translate(4316.4375 0)"/>
-    <use xlink:href="#DejaVuSans-16" transform="translate(4380.0625 0)"/>
+    <use xlink:href="#DejaVuSans-17" transform="translate(4380.0625 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4443.6875 0)"/>
     <use xlink:href="#DejaVuSans-3" transform="translate(4475.46875 0)"/>
     <use xlink:href="#DejaVuSans-2f" transform="translate(4507.25 0)"/>

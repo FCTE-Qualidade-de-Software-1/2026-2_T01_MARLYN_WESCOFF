@@ -19,7 +19,7 @@
 
 | Classificação | Enquadramento do Moodle | Implicação para a avaliação |
 |---|---|---|
-| Pressman | Aplicação web (WebApp) de sistema de informação | Acesso por navegador; o comportamento depende do servidor e do cliente, o que motiva avaliar **adaptabilidade** |
+| Pressman | **Software comercial**: organiza dados para apoiar operações acadêmicas e decisões administrativas | A categoria descreve a finalidade do sistema, não seu modelo de venda: o Moodle é software livre e gratuito. Como atende operações institucionais, a avaliação prioriza tarefas acadêmicas e trocas de dados |
 | IEEE 1062 | **COTS** (*Commercial Off-The-Shelf*): o mesmo produto é distribuído para todas as instituições; ao receber plugins e customizações locais, uma instalação pode se tornar **MOTS** | A avaliação usa **apenas o núcleo** (COTS), para que o resultado não dependa de customizações de uma instituição |
 | Arquitetura | Cliente-servidor, monolito modular em PHP, extensível por plugins | Cada subsistema é avaliado pelo seu comportamento externo (caixa-preta) |
 | Modelo de negócio | Código aberto, gratuito, com parceiros que vendem hospedagem e suporte | Documentação pública permite derivar requisitos de referência |
