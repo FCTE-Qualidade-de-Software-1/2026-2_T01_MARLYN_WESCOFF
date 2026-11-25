@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../../fase-4/" class="md-tabs__link">
           
   
   
@@ -1284,6 +1284,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1301,8 +1311,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1316,8 +1327,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1329,6 +1346,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1345,6 +1364,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2228,7 +2331,8 @@
 
 <h1 id="objetivos-questoes-e-hipoteses">Objetivos, questões e hipóteses<a class="headerlink" href="#objetivos-questoes-e-hipoteses" title="Permanent link">&para;</a></h1>
 <p>Cada característica priorizada na <a href="../../fase-1/caracteristicas/">Fase 1</a> gera um objetivo de medição no template da Aula 08. Os três objetivos compartilham o <strong>objeto</strong> (Moodle 5.3 <abbr title="Long-Term Support (versão de suporte estendido)">LTS</abbr> na instalação de referência), o <strong>propósito</strong> (entender o nível de qualidade para apoiar uma decisão) e o <strong>ponto de vista</strong> (Coordenação de TI, requisitante no cenário). O <strong>foco de qualidade</strong> vem da característica e de suas subcaracterísticas no <a href="../../fase-1/modelo-de-qualidade/">modelo adaptado</a>.</p>
-<p>As hipóteses vêm das <a href="../abstraction-sheets/">abstraction sheets</a> e são escritas como valores esperados das métricas, para que possam ser confirmadas ou refutadas na Fase 4.</p>
+<p>As questões caracterizam o objeto em relação ao foco de qualidade (Aula 08): perguntam sobre o Moodle, e não sobre a métrica. Cada questão é refinada por uma ou mais métricas, e uma métrica pode servir a mais de uma questão (coluna <strong>Métricas</strong>).</p>
+<p>As hipóteses vêm das <a href="../abstraction-sheets/">abstraction sheets</a> e são a <strong>resposta que a equipe espera</strong> para cada questão (o <em>baseline</em>), com o valor esperado. Elas não são o critério de aceitação: a régua que diz se o resultado é aceitável são os <a href="../niveis-e-julgamento/">níveis de pontuação e o critério de julgamento</a>, definidos à parte. Por isso, uma hipótese pode ser refutada sem que a nota caia, e o contrário também. H3.3, por exemplo, espera que uma atualização falhe na primeira tentativa: se as 6 execuções derem certo, a hipótese é refutada e M3.3 ainda recebe nota 4.</p>
 <h2 id="g1-adequacao-funcional">G1 – Adequação funcional<a class="headerlink" href="#g1-adequacao-funcional" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2264,21 +2368,25 @@
 <thead>
 <tr>
 <th>Questão</th>
-<th>Hipótese</th>
+<th>Métricas</th>
+<th>Hipótese (resposta esperada)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Q1.1</strong> (completude) Em que medida as funções do núcleo cobrem as tarefas acadêmicas essenciais do catálogo?</td>
-<td><strong>H1.1</strong> O núcleo oferece função para as 12 tarefas do catálogo (M1.1 = 1,00).</td>
+<td><strong>Q1.1</strong> (completude) O núcleo do Moodle, sem plugins, dá conta das tarefas acadêmicas essenciais da instituição?</td>
+<td>M1.1, M1.3</td>
+<td><strong>H1.1</strong> Sim. Esperamos que o núcleo tenha função para as 12 tarefas do catálogo (12 de 12) e que só uma delas peça contorno (ver H1.3).</td>
 </tr>
 <tr>
-<td><strong>Q1.2</strong> (correção) Os resultados calculados pelo Moodle (notas automáticas, agregação do livro de notas e controle de prazos) correspondem aos resultados esperados?</td>
-<td><strong>H1.2</strong> Todos os casos de teste produzem o resultado do oráculo (M1.2 = 1,00).</td>
+<td><strong>Q1.2</strong> (correção) O Moodle calcula notas e controla prazos como a instituição espera?</td>
+<td>M1.2</td>
+<td><strong>H1.2</strong> Sim. Esperamos que todos os casos de teste deem o resultado do oráculo, sem nenhuma divergência em notas ou prazos.</td>
 </tr>
 <tr>
-<td><strong>Q1.3</strong> (pertinência) As funções disponíveis permitem concluir as tarefas sem recorrer a contornos?</td>
-<td><strong>H1.3</strong> No máximo uma tarefa exige contorno (M1.3 ≥ 0,92).</td>
+<td><strong>Q1.3</strong> (pertinência) Docentes e gestão conseguem fazer as tarefas pelo caminho previsto, sem improvisar passos?</td>
+<td>M1.3</td>
+<td><strong>H1.3</strong> Quase sempre. Esperamos que só a restauração de backup como novo curso exija contorno (11 de 12 tarefas sem contorno).</td>
 </tr>
 </tbody>
 </table>
@@ -2319,25 +2427,30 @@
 <thead>
 <tr>
 <th>Questão</th>
-<th>Hipótese</th>
+<th>Métricas</th>
+<th>Hipótese (resposta esperada)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Q2.1</strong> (interoperabilidade) Em que medida os formatos de arquivo oferecidos pelo núcleo são exportados e importados com sucesso entre o Moodle e outro sistema?</td>
-<td><strong>H2.1</strong> Pelo menos 6 dos 7 formatos são trocados com sucesso (M2.1 ≥ 0,85).</td>
+<td><strong>Q2.1</strong> (interoperabilidade) A instituição consegue levar dados para o Moodle e tirá-los dele nos arquivos que os outros sistemas usam?</td>
+<td>M2.1</td>
+<td><strong>H2.1</strong> Sim, com no máximo uma exceção. Esperamos que 6 ou 7 dos 7 formatos sejam trocados sem erro.</td>
 </tr>
 <tr>
-<td><strong>Q2.2</strong> (interoperabilidade) Os dados trocados chegam íntegros ao outro lado, sem perda nem alteração?</td>
-<td><strong>H2.2</strong> Todos os registros chegam íntegros (M2.2 = 1,00).</td>
+<td><strong>Q2.2</strong> (interoperabilidade) Os dados que passam entre o Moodle e os outros sistemas chegam ao destino como saíram?</td>
+<td>M2.1, M2.2</td>
+<td><strong>H2.2</strong> Sim. Esperamos todos os registros idênticos à referência; o risco conhecido é a acentuação no CSV.</td>
 </tr>
 <tr>
-<td><strong>Q2.3</strong> (interoperabilidade) As funções de serviço web <abbr title="Representational State Transfer">REST</abbr> selecionadas atendem corretamente a um cliente externo?</td>
-<td><strong>H2.3</strong> As 6 funções respondem sem erro e com dados coerentes (M2.3 = 1,00).</td>
+<td><strong>Q2.3</strong> (interoperabilidade) Um sistema externo consegue consultar e alterar dados do Moodle pelos serviços web, sem intervenção manual?</td>
+<td>M2.3</td>
+<td><strong>H2.3</strong> Sim. Esperamos que as 6 funções respondam sem erro e com dados coerentes (6 de 6).</td>
 </tr>
 <tr>
-<td><strong>Q2.4</strong> (coexistência) O Moodle opera no mesmo servidor que outras aplicações sem prejudicá-las?</td>
-<td><strong>H2.4</strong> Nenhuma das 3 entidades vizinhas é afetada (M2.4 = 1,00).</td>
+<td><strong>Q2.4</strong> (coexistência) O Moodle pode dividir o servidor com outras aplicações sem atrapalhá-las?</td>
+<td>M2.4</td>
+<td><strong>H2.4</strong> Sim. Esperamos que nenhuma das 3 entidades vizinhas seja afetada (3 de 3).</td>
 </tr>
 </tbody>
 </table>
@@ -2378,25 +2491,30 @@
 <thead>
 <tr>
 <th>Questão</th>
-<th>Hipótese</th>
+<th>Métricas</th>
+<th>Hipótese (resposta esperada)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Q3.1</strong> (adaptabilidade) Os fluxos essenciais funcionam em todos os ambientes de acesso previstos?</td>
-<td><strong>H3.1</strong> Os 3 ambientes de desktop concluem todas as tarefas; o Android falha em no máximo uma (M3.1 ≥ 0,875 no pior ambiente).</td>
+<td><strong>Q3.1</strong> (adaptabilidade) Estudantes e docentes conseguem usar o Moodle a partir dos computadores e celulares que já têm?</td>
+<td>M3.1</td>
+<td><strong>H3.1</strong> Quase todos. Esperamos que os 3 ambientes de desktop concluam as 8 tarefas e que o Android falhe em no máximo uma (7 ou 8 de 8 no pior ambiente).</td>
 </tr>
 <tr>
-<td><strong>Q3.2</strong> (adaptabilidade) O Moodle se comporta da mesma forma nas versões de PHP suportadas?</td>
-<td><strong>H3.2</strong> Não há diferença entre PHP 8.3 e 8.4 (M3.2 = 1,00 nas duas).</td>
+<td><strong>Q3.2</strong> (adaptabilidade) A TI pode escolher entre as versões de PHP suportadas sem que o Moodle mude de comportamento?</td>
+<td>M3.2</td>
+<td><strong>H3.2</strong> Sim. Esperamos o mesmo resultado nas 12 tarefas com PHP 8.3 e com PHP 8.4.</td>
 </tr>
 <tr>
-<td><strong>Q3.3</strong> (instalabilidade) A instalação limpa e a atualização, seguindo a documentação oficial, concluem com êxito e em tempo razoável?</td>
-<td><strong>H3.3</strong> As 3 instalações limpas concluem; ao menos uma atualização falha na primeira tentativa por causa da raiz web <code>public/</code> (M3.3 ≥ 0,83); a instalação limpa leva até 15 min (M3.4).</td>
+<td><strong>Q3.3</strong> (instalabilidade) A TI consegue instalar e atualizar o Moodle seguindo só a documentação oficial, em tempo previsível?</td>
+<td>M3.3, M3.4</td>
+<td><strong>H3.3</strong> Sim, com um tropeço. Esperamos que as 3 instalações limpas concluam e que uma atualização falhe na primeira tentativa por causa da nova raiz web <code>public/</code> (5 de 6); a instalação limpa deve levar menos de 15 min.</td>
 </tr>
 <tr>
-<td><strong>Q3.4</strong> (instalabilidade) A atualização 4.5 → 5.3 preserva os dados acadêmicos existentes?</td>
-<td><strong>H3.4</strong> Todos os itens de verificação são preservados (M3.5 = 1,00).</td>
+<td><strong>Q3.4</strong> (instalabilidade) A atualização da 4.5 para a 5.3 mantém os dados acadêmicos que já existem?</td>
+<td>M3.5</td>
+<td><strong>H3.4</strong> Sim. Esperamos os 40 itens de verificação iguais antes e depois da atualização (40 de 40).</td>
 </tr>
 </tbody>
 </table>
@@ -2406,9 +2524,39 @@
 <p>Seguindo a Aula 08 ("respondendo esta questão vou poder concluir algo sobre o meu objetivo?"), a equipe conferiu que:</p>
 <ul>
 <li>cada subcaracterística do modelo adaptado tem pelo menos uma questão;</li>
-<li>nenhuma questão é a própria métrica reescrita: as questões perguntam sobre a <strong>característica do objeto</strong> (cobertura, correção, integridade, preservação), e as métricas definem <strong>como contar</strong>;</li>
-<li>todas as questões têm hipótese numérica, o que permite comparar o esperado com o observado na Fase 4.</li>
+<li>nenhuma questão é a própria métrica reescrita nem cita o nome dela: as questões perguntam sobre o <strong>Moodle visto pela Coordenação de TI</strong>, e as métricas definem <strong>como contar</strong>;</li>
+<li>onde uma contagem só não responde à questão, ela tem mais de uma métrica: Q1.1 usa M1.1 (há função?) e M1.3 (a função serve sem contorno?); Q2.2 usa M2.1 (o arquivo chegou?) e M2.2 (chegou igual?); Q3.3 usa M3.3 (concluiu?) e M3.4 (em quanto tempo?);</li>
+<li>todas as questões têm hipótese com valor esperado, o que permite comparar o esperado com o observado na Fase 4.</li>
 </ul>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 2 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>24/11/2026</td>
+<td>[Entrega final] Fase 4 completa, com as correções da revisão do #133 (#145) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/0e21b10cea9b02e0258e3ab952bf7270eae78bb2">0e21b10</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25/10/2026</td>
+<td>Entrega 1: Fases 1 e 2, artigo SBC e GitPage (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/d64b70e72f0574c7beb4f1c369b8caf22e0373ae">d64b70e</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 

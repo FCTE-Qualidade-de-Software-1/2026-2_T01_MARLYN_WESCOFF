@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../fase-4/" class="md-tabs__link">
           
   
   
@@ -614,10 +614,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gestao-com-psmcid" class="md-nav__link">
+  <a href="#gestao-do-projeto-com-psmcid" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gestão com PSM/CID
+        Gestão do projeto com PSM/CID
       
     </span>
   </a>
@@ -1312,6 +1312,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1329,8 +1339,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1344,8 +1355,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1357,6 +1374,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1373,6 +1392,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2193,10 +2296,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gestao-com-psmcid" class="md-nav__link">
+  <a href="#gestao-do-projeto-com-psmcid" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gestão com PSM/CID
+        Gestão do projeto com PSM/CID
       
     </span>
   </a>
@@ -2293,14 +2396,14 @@
 <tr>
 <td>3</td>
 <td>Produzir o plano de avaliação (método, instruções, recursos, cronograma)</td>
-<td>Em andamento</td>
-<td><a href="../fase-3/plano-de-avaliacao/">Plano de avaliação</a></td>
+<td>Avaliação externa de caixa-preta orientada a tarefas; servidor de referência reproduzível por script; massa fictícia gerada por script; oráculo calculado antes da coleta</td>
+<td><a href="../fase-3/plano-de-avaliacao/">Plano de avaliação</a> e <a href="../fase-3/preparacao-do-servidor/">Preparação do servidor</a></td>
 </tr>
 <tr>
 <td>4</td>
 <td>Obter as medidas; comparar com os critérios; julgar os resultados; executar uma ação de melhoria</td>
-<td>A definir na Entrega 2</td>
-<td>Relatório de resultados</td>
+<td>Coleta automatizada por scripts versionados (Playwright, API do Moodle, <code>faketime</code>, contêineres da imagem-base); julgamento pelo pior caso (<code>calcula_julgamento.py</code>); ação de melhoria medida antes e depois</td>
+<td><a href="../fase-4/resultados/">Resultados e julgamento</a> e <a href="../fase-4/acao-de-melhoria/">Ação de melhoria</a></td>
 </tr>
 </tbody>
 </table>
@@ -2324,7 +2427,7 @@
 </tr>
 <tr>
 <td>GitHub Issues e Milestones</td>
-<td>Unidade de trabalho do projeto; cada milestone corresponde a uma sprint; base das métricas do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></td>
+<td>Unidade de trabalho do projeto; cada milestone corresponde a um marco da disciplina (E1, PC1, PC2, E2), e a iteração é a semana do quadro; base das medidas da gestão do projeto (<abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>)</td>
 </tr>
 <tr>
 <td>GitHub Pages + MkDocs Material</td>
@@ -2340,7 +2443,7 @@
 </tr>
 <tr>
 <td>Planilha/CSV</td>
-<td>Registro de horas (<code>dados/gestao/horas.csv</code>) e, na Fase 4, das medições</td>
+<td>Registro de horas (<code>docs/metricas/dados/brutos/esforco.csv</code>) e, na Fase 4, das medições (<code>dados/avaliacao/</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -2348,18 +2451,18 @@
 
 <h2 id="fluxo-de-trabalho-no-repositorio">Fluxo de trabalho no repositório<a class="headerlink" href="#fluxo-de-trabalho-no-repositorio" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Cada tarefa é aberta como <strong>issue</strong> a partir do modelo "Tarefa", com responsável, estimativa de horas e milestone (sprint).</li>
+<li>Cada tarefa é aberta como <strong>issue</strong> a partir do modelo "Tarefa", com responsável, estimativa de horas, milestone (marco) e a semana no quadro.</li>
 <li>O trabalho é feito em um <strong>branch</strong> próprio (<code>docs/fase-2-compatibilidade</code>, por exemplo).</li>
 <li>A integração na <code>main</code> acontece por <strong>pull request</strong> revisado por outro integrante.</li>
-<li>Ao fechar a issue, o responsável registra as <strong>horas reais</strong> no campo da issue e em <code>dados/gestao/horas.csv</code>.</li>
+<li>Ao fechar a issue, o responsável registra as <strong>horas reais</strong> em <code>docs/metricas/dados/brutos/esforco.csv</code>.</li>
 <li>Cada push na <code>main</code> publica a GitPage automaticamente (workflow <code>deploy.yml</code>); alterações no artigo são compiladas pelo workflow <code>artigo.yml</code>.</li>
 <li>Ao fim de cada entrega, é criada uma <strong>release</strong> com a tag da entrega (<code>E1</code>, <code>E2</code>) e o PDF do artigo anexado.</li>
 </ol>
 <h2 id="como-reproduzir-o-site-e-o-artigo">Como reproduzir o site e o artigo<a class="headerlink" href="#como-reproduzir-o-site-e-o-artigo" title="Permanent link">&para;</a></h2>
 <div class="termy" data-termynal data-ty-macos data-ty-title="terminal"><span data-ty="input" data-ty-prompt="$">git clone https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF.git</span><span data-ty="input" data-ty-prompt="$">cd 2026-2_T01_MARLYN_WESCOFF</span><span data-ty="input" data-ty-prompt="$">pip install -r requirements.txt</span><span data-ty="input" data-ty-prompt="$">mkdocs serve</span><span data-ty>INFO    -  Serving on http://127.0.0.1:8000/</span><span data-ty="input" data-ty-prompt="$">cd artigo &amp;&amp; latexmk -pdf main.tex</span><span data-ty>Output written on main.pdf<br></span></div>
 
-<h2 id="gestao-com-psmcid">Gestão com <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr><a class="headerlink" href="#gestao-com-psmcid" title="Permanent link">&para;</a></h2>
-<p>O andamento do projeto é medido em três categorias de informação do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>: <strong>Calendário e Progresso</strong>, <strong>Recursos e Custos</strong> e <strong>Desempenho dos Processos</strong>. As medidas, os critérios de decisão e as decisões tomadas estão em <a href="../gestao/">Gestão do projeto</a>.</p>
+<h2 id="gestao-do-projeto-com-psmcid">Gestão do projeto com <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr><a class="headerlink" href="#gestao-do-projeto-com-psmcid" title="Permanent link">&para;</a></h2>
+<p>Esta seção trata da <strong>gestão do projeto da equipe</strong>, e não da avaliação do produto (que usa o <abbr title="Goal–Question–Metric (Basili et al., 1994)">GQM</abbr>, acima). O andamento do projeto é medido em três categorias de informação do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr>: <strong>Calendário e Progresso</strong>, <strong>Recursos e Custos</strong> e <strong>Desempenho dos Processos</strong>. As medidas, os critérios de decisão e as decisões tomadas estão em <a href="../gestao/">Gestão do projeto</a>.</p>
 <h2 id="rastreabilidade-dos-dados">Rastreabilidade dos dados<a class="headerlink" href="#rastreabilidade-dos-dados" title="Permanent link">&para;</a></h2>
 <p>Todo dado usado no artigo deve poder ser rastreado até um arquivo do repositório:</p>
 <ul>
@@ -2369,6 +2472,59 @@
 <li><code>artigo/</code>: código-fonte do artigo.</li>
 </ul>
 <p>Quando houver dados de participantes, os nomes serão substituídos por códigos (P1, P2, ...) e o termo de consentimento será aplicado antes de qualquer gravação.</p>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 6 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>24/11/2026</td>
+<td>[Entrega final] Fase 4 completa, com as correções da revisão do #133 (#145) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/0e21b10cea9b02e0258e3ab952bf7270eae78bb2">0e21b10</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+<tr>
+<td>5</td>
+<td>11/11/2026</td>
+<td>Gera os indicadores gráficos do <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/51823a9e8c950c834658517bbc71ecb8ddec216b">51823a9</a>)</td>
+<td>Bernardo Broetto Brun</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10/11/2026</td>
+<td>atualiza tabela fase 3 (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/75826fa348dca84ac386739bcc9b6694bfd720dd">75826fa</a>)</td>
+<td>João Pedro Sampaio Maciel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>25/10/2026</td>
+<td>Inclui João Pedro Sampaio Maciel na equipe e redistribui as tarefas (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/020a338ecf700577be54a57a8b267a3de307241e">020a338</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+<tr>
+<td>2</td>
+<td>25/10/2026</td>
+<td>Atualiza a composição da equipe (quatro integrantes) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/6865ddb9b2d5550c170368e89cc6dac3a784454f">6865ddb</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25/10/2026</td>
+<td>Entrega 1: Fases 1 e 2, artigo SBC e GitPage (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/d64b70e72f0574c7beb4f1c369b8caf22e0373ae">d64b70e</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 

@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../../fase-4/" class="md-tabs__link">
           
   
   
@@ -1273,6 +1273,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1290,8 +1300,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1305,8 +1316,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1318,6 +1335,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1334,6 +1353,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2218,17 +2321,17 @@
         G3["G3 · Flexibilidade"]
     end
     subgraph O["Nível operacional"]
-        Q11["Q1.1 Cobertura das tarefas"]
-        Q12["Q1.2 Correção dos resultados"]
-        Q13["Q1.3 Conclusão sem contorno"]
-        Q21["Q2.1 Formatos trocados"]
-        Q22["Q2.2 Integridade dos dados"]
-        Q23["Q2.3 Serviços web"]
-        Q24["Q2.4 Coexistência"]
-        Q31["Q3.1 Ambientes de acesso"]
-        Q32["Q3.2 Versões de PHP"]
-        Q33["Q3.3 Instalação e atualização"]
-        Q34["Q3.4 Preservação na atualização"]
+        Q11["Q1.1 O núcleo dá conta das tarefas?"]
+        Q12["Q1.2 Notas e prazos saem certos?"]
+        Q13["Q1.3 As tarefas saem sem improviso?"]
+        Q21["Q2.1 Os dados entram e saem por arquivo?"]
+        Q22["Q2.2 Os dados chegam como saíram?"]
+        Q23["Q2.3 Um sistema externo consegue usar o Moodle?"]
+        Q24["Q2.4 Divide o servidor sem atrapalhar?"]
+        Q31["Q3.1 Funciona nos dispositivos dos usuários?"]
+        Q32["Q3.2 A TI pode escolher o PHP?"]
+        Q33["Q3.3 Instala e atualiza pela documentação?"]
+        Q34["Q3.4 A atualização mantém os dados?"]
     end
     subgraph M["Nível quantitativo"]
         M11["M1.1 Cobertura funcional"]
@@ -2247,25 +2350,55 @@
     G1 --&gt; Q11 &amp; Q12 &amp; Q13
     G2 --&gt; Q21 &amp; Q22 &amp; Q23 &amp; Q24
     G3 --&gt; Q31 &amp; Q32 &amp; Q33 &amp; Q34
-    Q11 --&gt; M11
+    Q11 --&gt; M11 &amp; M13
     Q12 --&gt; M12
     Q13 --&gt; M13
     Q21 --&gt; M21
-    Q22 --&gt; M22
+    Q22 --&gt; M21 &amp; M22
     Q23 --&gt; M23
     Q24 --&gt; M24
     Q31 --&gt; M31
     Q32 --&gt; M32
     Q33 --&gt; M33 &amp; M34
     Q34 --&gt; M35</code></pre>
-<p class="legenda">Figura 1. Diagrama GQM com os três objetivos, 11 questões e 12 métricas, organizados pelos níveis conceitual, operacional e quantitativo. Fonte: elaboração própria.</p>
+<p class="legenda">Figura 1. Diagrama GQM com os três objetivos, 11 questões e 12 métricas, com 14 ligações entre questões e métricas, organizados pelos níveis conceitual, operacional e quantitativo. Fonte: elaboração própria.</p>
 
 <h2 id="leitura-do-diagrama">Leitura do diagrama<a class="headerlink" href="#leitura-do-diagrama" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Cada objetivo corresponde a uma característica priorizada na Fase 1 e a uma decisão (G1 → D1, G2 → D2, G3 → D3).</li>
-<li>Toda métrica responde a exatamente uma questão; Q3.3 é respondida por duas métricas complementares (sucesso e tempo).</li>
+<li>As questões perguntam sobre o objeto, e as métricas refinam cada questão (Aula 08). Três questões precisam de duas métricas: Q1.1 (M1.1, há função, e M1.3, serve sem contorno), Q2.2 (M2.1, o arquivo chegou, e M2.2, chegou igual) e Q3.3 (M3.3, sucesso, e M3.4, tempo).</li>
+<li>Duas métricas servem a duas questões: M1.3 a Q1.1 e Q1.3; M2.1 a Q2.1 e Q2.2. A nota de uma questão é o mínimo das notas das suas métricas (<a href="../niveis-e-julgamento/#da-metrica-para-a-questao">Níveis e julgamento</a>).</li>
 <li>Não há métrica "solta": a <a href="../rastreabilidade/">Rastreabilidade</a> confere a ligação de cada métrica até a necessidade da parte interessada.</li>
 </ul>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 2 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>24/11/2026</td>
+<td>[Entrega final] Fase 4 completa, com as correções da revisão do #133 (#145) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/0e21b10cea9b02e0258e3ab952bf7270eae78bb2">0e21b10</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25/10/2026</td>
+<td>Entrega 1: Fases 1 e 2, artigo SBC e GitPage (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/d64b70e72f0574c7beb4f1c369b8caf22e0373ae">d64b70e</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 

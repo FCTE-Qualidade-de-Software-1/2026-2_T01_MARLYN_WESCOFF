@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../../fase-4/" class="md-tabs__link">
           
   
   
@@ -1340,6 +1340,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1357,8 +1367,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1372,8 +1383,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1385,6 +1402,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1401,6 +1420,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2483,6 +2586,7 @@
 </ul>
 <h2 id="regras-de-julgamento">Regras de julgamento<a class="headerlink" href="#regras-de-julgamento" title="Permanent link">&para;</a></h2>
 <h3 id="da-metrica-para-a-questao">Da métrica para a questão<a class="headerlink" href="#da-metrica-para-a-questao" title="Permanent link">&para;</a></h3>
+<p>A nota da questão é o <strong>mínimo</strong> das notas das métricas que a refinam, pelo mesmo motivo do pior caso usado nos objetivos.</p>
 <table>
 <thead>
 <tr>
@@ -2493,7 +2597,7 @@
 <tbody>
 <tr>
 <td>Q1.1</td>
-<td>nota(M1.1)</td>
+<td>mínimo(nota(M1.1), nota(M1.3))</td>
 </tr>
 <tr>
 <td>Q1.2</td>
@@ -2509,7 +2613,7 @@
 </tr>
 <tr>
 <td>Q2.2</td>
-<td>nota(M2.2)</td>
+<td>mínimo(nota(M2.1), nota(M2.2))</td>
 </tr>
 <tr>
 <td>Q2.3</td>
@@ -2570,9 +2674,38 @@
 <p class="legenda">Tabela 4. Critério de julgamento dos objetivos e ação correspondente. Fonte: elaboração própria.</p>
 
 <h3 id="exemplo-de-aplicacao">Exemplo de aplicação<a class="headerlink" href="#exemplo-de-aplicacao" title="Permanent link">&para;</a></h3>
-<p>Suponha que, na Fase 4, M2.1 = 6/7 = 0,86 (nota 3), M2.2 = 0,97 (nota 2, por perda de acentuação na exportação CSV), M2.3 = 1,00 (nota 4) e M2.4 = 1,00 (nota 4). As notas das questões são Q2.1 = 3, Q2.2 = 2, Q2.3 = 4 e Q2.4 = 4. Não há nota 1 e há uma nota 2, então <strong>G2 = Atende com ressalvas</strong>. A ação recomendada à Coordenação de TI seria documentar a codificação correta para a exportação de notas e incluir a verificação no teste de regressão da migração.</p>
+<p>Suponha que, na Fase 4, M2.1 = 6/7 = 0,86 (nota 3), M2.2 = 0,97 (nota 2, por perda de acentuação na exportação CSV), M2.3 = 1,00 (nota 4) e M2.4 = 1,00 (nota 4). As notas das questões são Q2.1 = 3, Q2.2 = mínimo(3, 2) = 2, Q2.3 = 4 e Q2.4 = 4. Não há nota 1 e há uma nota 2, então <strong>G2 = Atende com ressalvas</strong>. A ação recomendada à Coordenação de TI seria documentar a codificação correta para a exportação de notas e incluir a verificação no teste de regressão da migração.</p>
 <h3 id="comparacao-com-as-hipoteses">Comparação com as hipóteses<a class="headerlink" href="#comparacao-com-as-hipoteses" title="Permanent link">&para;</a></h3>
-<p>Na Fase 4, cada valor medido também será comparado à hipótese da questão (H1.1 a H3.4). A hipótese é <strong>confirmada</strong> quando o valor está dentro do esperado e <strong>refutada</strong> quando não está; hipóteses refutadas serão explicadas usando os fatores de variação das <a href="../abstraction-sheets/">abstraction sheets</a>.</p>
+<p>Na Fase 4, cada valor medido também será comparado à hipótese da questão (H1.1 a H3.4). A hipótese é a resposta esperada (o que a equipe acha que vai encontrar); os níveis e o critério desta página são o que a Coordenação de TI aceita. A hipótese é <strong>confirmada</strong> quando o valor observado é o esperado e <strong>refutada</strong> quando não é, independentemente da nota; hipóteses refutadas serão explicadas usando os fatores de variação das <a href="../abstraction-sheets/">abstraction sheets</a>.</p>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 2 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>24/11/2026</td>
+<td>[Entrega final] Fase 4 completa, com as correções da revisão do #133 (#145) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/0e21b10cea9b02e0258e3ab952bf7270eae78bb2">0e21b10</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25/10/2026</td>
+<td>Entrega 1: Fases 1 e 2, artigo SBC e GitPage (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/d64b70e72f0574c7beb4f1c369b8caf22e0373ae">d64b70e</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 

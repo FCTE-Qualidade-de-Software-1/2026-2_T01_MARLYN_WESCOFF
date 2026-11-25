@@ -354,7 +354,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../../../fase-4/" class="md-tabs__link">
           
   
   
@@ -1188,6 +1188,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1205,8 +1215,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1220,8 +1231,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1233,6 +1250,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1249,6 +1268,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2278,6 +2381,41 @@
 <li>A API não devolve o estado passado do quadro. O histórico de Status vem dos eventos da linha do tempo de cada issue (<code>quadro_eventos.csv</code>). O de Iteração vem dos retratos diários (<code>quadro_retratos.csv</code>), que só são gravados quando a data de corte é o dia da execução.</li>
 <li>Os CSVs trazem as colunas <code>fonte</code>, <code>data_extracao</code> e <code>comando_ou_query</code> em todas as linhas, como pedem as regras de integridade dos dados.</li>
 </ul>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 3 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>10/11/2026</td>
+<td>Inclui o corpo das issues na extração para ler a estimativa de horas (C3) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/ff33ee46007e8a6e9b8ca82076c8394aa428ff75">ff33ee4</a>)</td>
+<td>Pedro Goncalves Rocha</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10/11/2026</td>
+<td>Automatiza a extração dos dados brutos com extrair_git.py e extrair_issues.py (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/3966e59e573ff48645ae1a4dea5571ad22b82e56">3966e59</a>)</td>
+<td>Pedro Goncalves Rocha</td>
+</tr>
+<tr>
+<td>1</td>
+<td>10/11/2026</td>
+<td>Extrai os dados brutos do repositório para a gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr> (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/5a86a3bf0024485dc9603915a4e9c570ff16ec8f">5a86a3b</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 

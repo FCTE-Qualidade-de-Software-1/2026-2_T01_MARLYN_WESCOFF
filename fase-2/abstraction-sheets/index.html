@@ -356,7 +356,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase-4/plano-de-execucao/" class="md-tabs__link">
+        <a href="../../fase-4/" class="md-tabs__link">
           
   
   
@@ -986,6 +986,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#medidas-de-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medidas de contexto
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1273,6 +1284,16 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
     
     
@@ -1290,8 +1311,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../fase-4/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1305,8 +1327,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
@@ -1318,6 +1346,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1334,6 +1364,90 @@
     
   
     Plano de execução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resultados e julgamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/arvore-gqm-resultados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvore GQM de resultados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-4/acao-de-melhoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ação de melhoria
   
 
     
@@ -2131,6 +2245,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#medidas-de-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medidas de contexto
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2358,6 +2483,103 @@
 </tbody>
 </table>
 <p class="legenda">Tabela 3. Abstraction sheet de G3. Fonte: elaboração própria a partir do modelo da Aula 08.</p>
+
+<h2 id="medidas-de-contexto">Medidas de contexto<a class="headerlink" href="#medidas-de-contexto" title="Permanent link">&para;</a></h2>
+<p>A Aula 08 (slide 38) pede que os fatores que influenciam os resultados também sejam definidos como métricas. Os fatores de variação das três <em>abstraction sheets</em> viram, por isso, <strong>medidas de contexto</strong>: não recebem nota nem entram no julgamento, mas são registradas em toda coleta. Como cada integrante coleta no próprio servidor (ata 02, D3), elas também mostram se os servidores eram de fato equivalentes. Na Fase 4, são o primeiro lugar onde procurar a explicação de uma hipótese refutada.</p>
+<table>
+<thead>
+<tr>
+<th>Fator de variação</th>
+<th>Medida de contexto</th>
+<th>Escala / unidade</th>
+<th>Como se registra</th>
+<th>Onde</th>
+<th>Objetivos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Versão corretiva do Moodle</td>
+<td>Versão exata instalada (por exemplo, 5.3.2)</td>
+<td>Nominal</td>
+<td><code>$release</code> de <code>version.php</code>, ou <em>Administração do site &gt; Notificações</em></td>
+<td><code>dados/avaliacao/contexto.csv</code></td>
+<td>G1, G2, G3</td>
+</tr>
+<tr>
+<td>Versão do PHP</td>
+<td>Versão exata do PHP da instância (por exemplo, 8.3.6)</td>
+<td>Nominal</td>
+<td><code>php -v</code> no servidor</td>
+<td><code>dados/avaliacao/contexto.csv</code></td>
+<td>G1, G2, G3</td>
+</tr>
+<tr>
+<td>Recursos da máquina virtual</td>
+<td>RAM e vCPU da VM</td>
+<td>Razão / GB e núcleos</td>
+<td><code>free -g</code> e <code>nproc</code></td>
+<td><code>dados/avaliacao/contexto.csv</code></td>
+<td>G2 (M2.4), G3</td>
+</tr>
+<tr>
+<td>Experiência do avaliador</td>
+<td>Anos de uso de Linux pelo avaliador</td>
+<td>Razão / anos</td>
+<td>Declarada pelo avaliador antes da coleta</td>
+<td><code>dados/avaliacao/contexto.csv</code></td>
+<td>G3 (M3.3, M3.4)</td>
+</tr>
+<tr>
+<td>Codificação dos arquivos trocados</td>
+<td>Codificação de cada arquivo exportado ou importado (UTF-8, ISO-8859-1)</td>
+<td>Nominal</td>
+<td><code>file -bi &lt;arquivo&gt;</code></td>
+<td>Coluna <code>codificacao</code> de <code>dados/avaliacao/M2.1/execucoes.csv</code></td>
+<td>G2 (M2.1, M2.2)</td>
+</tr>
+<tr>
+<td>Fuso horário</td>
+<td>Fuso do servidor e do navegador do avaliador</td>
+<td>Nominal</td>
+<td><code>timedatectl</code> no servidor e configuração do perfil no Moodle</td>
+<td><code>dados/avaliacao/contexto.csv</code></td>
+<td>G1 (M1.2, prazos)</td>
+</tr>
+</tbody>
+</table>
+<p class="legenda">Tabela 4. Medidas de contexto dos fatores de variação. Fonte: elaboração própria, a partir das abstraction sheets e da Aula 08.</p>
+
+<p>Ficam só como texto os fatores que o procedimento já controla: a configuração padrão do site e os dados de teste (fixados pelo <code>gera_massa.py</code> e pelo oráculo), o programa que abre os arquivos (fixado na coluna <code>receptor</code> de M2.1), a velocidade da rede (o código é baixado antes de iniciar o cronômetro de M3.4) e a ordem de leitura da documentação (regra R3 do plano da Fase 3).</p>
+<hr />
+<details class="note">
+<summary>Histórico de versões</summary>
+<p>Gerado do <code>git log</code> deste arquivo: 2 versões.</p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>24/11/2026</td>
+<td>[Entrega final] Fase 4 completa, com as correções da revisão do #133 (#145) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/0e21b10cea9b02e0258e3ab952bf7270eae78bb2">0e21b10</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25/10/2026</td>
+<td>Entrega 1: Fases 1 e 2, artigo SBC e GitPage (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/d64b70e72f0574c7beb4f1c369b8caf22e0373ae">d64b70e</a>)</td>
+<td>Maykon Junio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 
