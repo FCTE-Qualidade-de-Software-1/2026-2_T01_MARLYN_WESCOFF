@@ -2401,7 +2401,7 @@
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>GitPage atualizada, com versão, data e links funcionais (F2-C10, AG-C4).</strong> O rodapé informa <code>Entrega 2 | Versão 2.2 · 24/11/2026</code>; <code>mkdocs build --strict</code> concluiu com sucesso em 24/11/2026.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2).</strong> O <a href="../dashboard/">dashboard</a> numera as oito figuras; as tabelas e figuras do artigo estão numeradas e citadas em <code>artigo/main.tex</code>, e o PDF foi compilado e inspecionado.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).</strong> O Apêndice A de <code>artigo/main.tex</code> detalha as responsabilidades dos integrantes, mas os percentuais individuais da E2 ainda estão pendentes e devem ser preenchidos antes da release.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).</strong> O Apêndice A de <code>artigo/main.tex</code> e a Tabela 3 de <a href="../../sobre/equipe/">Equipe e contribuição</a> detalham as responsabilidades da E2, com 20% para cada integrante (divisão igual registrada em 24/11/2026 no <a href="../../gestao/atas/#registro-de-decisoes">Registro de decisões</a>).</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Declaração de uso de IA específica (AG-C3).</strong> A <a href="../../sobre/uso-de-ia/">declaração de uso de IA</a> e o Apêndice B registram, por integrante, a ferramenta, a finalidade e a forma de conferência.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Sem emojis, ícones ou figurinhas no conteúdo.</strong> A busca por caracteres Unicode de emojis nos arquivos Markdown retornou zero ocorrência em 11/11/2026.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <strong>Coerência com as Fases 1 e 2 já entregues (F2-C11).</strong> A narrativa da <a href="../../gestao/">gestão <abbr title="Practical Software and Systems Measurement">PSM</abbr>/<abbr title="Continuous Iterative Development Measurement Framework">CID</abbr></a> liga as medidas às fases, e as páginas de <a href="../../fase-1/">Fase 1</a> e <a href="../../fase-2/">Fase 2</a> possuem links cruzados para a gestão.</li>
@@ -2417,13 +2417,14 @@
 <h2 id="revisao-da-entrega-2">Revisão da Entrega 2<a class="headerlink" href="#revisao-da-entrega-2" title="Permanent link">&para;</a></h2>
 <p><strong>Data da revisão:</strong> 22/11/2026. <strong>Escopo:</strong> estado da <code>main</code>, das issues da milestone E2 e das releases do GitHub. O prazo da E2 foi alterado para 24/11/2026 na issue #123.</p>
 <p>Um item só aparece como concluído quando há evidência versionada. Os itens pendentes identificam a issue responsável, para que a release E2 não seja publicada com conteúdo incompleto.</p>
-<p>Esta tabela preserva o retrato de 22/11/2026. Ela deve ser revisada novamente, após o merge dos PRs da Fase 4 e das correções abertas, imediatamente antes da publicação da release E2, para refletir o estado final da entrega.</p>
+<p>A coluna "Situação em 22/11" preserva o retrato daquela data. A coluna "Situação em 24/11" registra a revisão feita depois do merge da Fase 4 e das correções (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/145">PR #145</a>), imediatamente antes da publicação da release E2.</p>
 <table>
 <thead>
 <tr>
 <th>Grupo da rubrica</th>
 <th>Evidência conferida</th>
 <th>Situação em 22/11</th>
+<th>Situação em 24/11</th>
 </tr>
 </thead>
 <tbody>
@@ -2431,50 +2432,58 @@
 <td>Fase 3 — plano de avaliação</td>
 <td><a href="../../fase-3/plano-de-avaliacao/">Plano de avaliação</a>, ambiente, métodos, recursos, oráculo, repetição, riscos, cronograma e rastreabilidade das 12 métricas</td>
 <td>Concluído; correções conceituais da vistoria seguem nas issues #104, #110 e #112</td>
+<td>Concluído; #104, #110 e #112 fechadas</td>
 </tr>
 <tr>
 <td>Fase 4 — obtenção das medidas e evidências</td>
 <td>Pastas <code>dados/avaliacao/</code> e <a href="../../fase-4/plano-de-execucao/">plano de execução</a></td>
 <td>Pendente: coletas e consolidação nas issues #67 a #72</td>
+<td>Concluído: 12 métricas coletadas e consolidadas (#67 a #72 fechadas)</td>
 </tr>
 <tr>
 <td>Fase 4 — julgamento e relações entre características</td>
 <td><code>dados/avaliacao/calculos.csv</code> e regras congeladas da Fase 2</td>
 <td>Pendente: julgamento final e relações na issue #73</td>
+<td>Concluído: G1 não atende, G2 atende com ressalvas, G3 atende; relações na Seção 7.4 do artigo (#73 fechada)</td>
 </tr>
 <tr>
 <td>Fase 4 — ação de melhoria e página de resultados</td>
 <td>Evidência da ação D4 e página final da Fase 4</td>
 <td>Pendente: issues #74 e #75</td>
+<td>Concluído: <a href="../../fase-4/acao-de-melhoria/">ação de melhoria</a> e <a href="../../fase-4/resultados/">resultados</a> (#74 e #75)</td>
 </tr>
 <tr>
 <td>Avaliação geral — artigo completo e contribuição</td>
 <td><code>artigo/main.tex</code>, PDF E2 e Apêndice A</td>
 <td>Pendente: issues #76, #77 e correções #102 a #123</td>
+<td>Concluído: artigo com 15 páginas e Apêndice A com 20% por integrante (#76, #77 e #102 a #123)</td>
 </tr>
 <tr>
 <td>Avaliação geral — declaração de IA</td>
 <td><a href="../../sobre/uso-de-ia/">Declaração de uso de IA</a> e Apêndice B de <code>artigo/main.tex</code></td>
 <td>Declaração registrada em 22/11. Versão resumida por integrante no <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/142">PR #142</a>.</td>
+<td>Concluído: GitPage e Apêndice B iguais</td>
 </tr>
 <tr>
 <td>Avaliação geral — GitPage e rastreabilidade</td>
 <td>Site navegável, links, datas, critérios e versão da entrega</td>
 <td>Parcial; revisão dos critérios na issue #107 e novo prazo na issue #123</td>
+<td>Concluído: versão 2.2 de 24/11 (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/146">PR #146</a>) e critérios conferidos com o artigo final (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/132">PR #132</a>)</td>
 </tr>
 <tr>
 <td>Avaliação geral — release E2</td>
 <td>Tag E2 e PDF final anexado à release</td>
 <td>Pendente; publicar somente após o merge das dependências acima</td>
+<td>Pendente: publicação da tag E2 com o PDF do artigo (#78)</td>
 </tr>
 </tbody>
 </table>
-<p class="legenda">Checklist 2. Revisão da rubrica e das dependências da Entrega 2. Fonte: artefatos versionados e estado das issues e releases do GitHub em 22/11/2026.</p>
+<p class="legenda">Checklist 2. Revisão da rubrica e das dependências da Entrega 2. Fonte: artefatos versionados e estado das issues e releases do GitHub em 22/11/2026 e 24/11/2026.</p>
 
 <hr />
 <details class="note">
 <summary>Histórico de versões</summary>
-<p>Gerado do <code>git log</code> deste arquivo: 5 versões.</p>
+<p>Gerado do <code>git log</code> deste arquivo: 6 versões.</p>
 <table>
 <thead>
 <tr>
@@ -2485,6 +2494,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>6</td>
+<td>24/11/2026</td>
+<td>Revisa o checklist da Entrega 2 antes da release (#147) (<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/commit/fc5ceb9c2149933daedf8a2c1ac8476a3b1b28c1">fc5ceb9</a>)</td>
+<td>Carlos Eduardo Deusdara Motta</td>
+</tr>
 <tr>
 <td>5</td>
 <td>24/11/2026</td>
