@@ -1,0 +1,42 @@
+instantiating backup controller c97d529eee69e3eaa54630fa820067b6
+setting controller status to 100
+loading controller plan
+setting controller status to 300
+applying plan defaults
+setting controller status to 400
+setting file inclusion to 
+checking plan security
+setting controller status to 700
+saving controller to db
+calculating controller checksum 2df4d167cb6dac1029780f2a071b81b0
+loading controller from db
+setting file inclusion to 1
+setting controller status to 800
+saving controller to db
+calculating controller checksum 2075251ef4d9f95ada65922dedc0c35f
+loading controller from db
+setting controller status to 1000
+saving controller to db
+instantiating restore controller 89397df93b365d19b2b8f752bb8ddf20
+setting controller status to 100
+loading backup info
+loading controller plan
+setting controller status to 300
+applying restore defaults
+setting controller status to 400
+checking plan security
+setting controller status to 600
+saving controller to db
+calculating controller checksum 5045dc3fe3d9475b239bfd3676624e20
+loading controller from db
+setting controller status to 700
+saving controller to db
+calculating controller checksum 64f523bdcb4291868140ddbf018669fd
+loading controller from db
+setting controller status to 800
+saving controller to db
+calculating controller checksum 94a1c9863c7d2f785705b53db4c3cb5b
+loading controller from db
+processing file aliases queue. 0 entries.
+setting controller status to 1000
+saving controller to db

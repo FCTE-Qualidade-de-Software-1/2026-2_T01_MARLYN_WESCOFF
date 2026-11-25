@@ -1,0 +1,8 @@
+formato,chave,situacao,campos_divergentes,detalhe
+F7,Material da disciplina,identico,,
+F7,Tarefa dentro do prazo (T04),identico,,
+F7,Tarefa com data limite vencida (T05),identico,,
+F7,Questionário da massa (T08),identico,,
+F7,Fórum de dúvidas (T09),identico,,
+F7,System shared question bank,identico,,
+F7,System shared question bank,chave_duplicada_dest,,

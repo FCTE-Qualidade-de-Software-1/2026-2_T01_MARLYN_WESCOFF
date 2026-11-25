@@ -1,0 +1,971 @@
+{
+  "funcao": "core_enrol_get_enrolled_users",
+  "parametros": {
+    "courseid": 2
+  },
+  "http": 200,
+  "data_hora": "2026-11-22T20:28:10-03:00",
+  "resposta": [
+    {
+      "id": 3,
+      "username": "est01",
+      "firstname": "Estudante",
+      "lastname": "01",
+      "initials": "E0",
+      "fullname": "Estudante 01",
+      "email": "est01@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST01",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "username": "est02",
+      "firstname": "Estudante",
+      "lastname": "02",
+      "initials": "E0",
+      "fullname": "Estudante 02",
+      "email": "est02@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST02",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "username": "est03",
+      "firstname": "Estudante",
+      "lastname": "03",
+      "initials": "E0",
+      "fullname": "Estudante 03",
+      "email": "est03@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST03",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "username": "est04",
+      "firstname": "Estudante",
+      "lastname": "04",
+      "initials": "E0",
+      "fullname": "Estudante 04",
+      "email": "est04@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST04",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "username": "est05",
+      "firstname": "Estudante",
+      "lastname": "05",
+      "initials": "E0",
+      "fullname": "Estudante 05",
+      "email": "est05@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST05",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "username": "est06",
+      "firstname": "Estudante",
+      "lastname": "06",
+      "initials": "E0",
+      "fullname": "Estudante 06",
+      "email": "est06@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST06",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "username": "est07",
+      "firstname": "Estudante",
+      "lastname": "07",
+      "initials": "E0",
+      "fullname": "Estudante 07",
+      "email": "est07@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST07",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "username": "est08",
+      "firstname": "Estudante",
+      "lastname": "08",
+      "initials": "E0",
+      "fullname": "Estudante 08",
+      "email": "est08@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST08",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "username": "est09",
+      "firstname": "Estudante",
+      "lastname": "09",
+      "initials": "E0",
+      "fullname": "Estudante 09",
+      "email": "est09@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST09",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "username": "est10",
+      "firstname": "Estudante",
+      "lastname": "10",
+      "initials": "E1",
+      "fullname": "Estudante 10",
+      "email": "est10@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST10",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "username": "est11",
+      "firstname": "Estudante",
+      "lastname": "11",
+      "initials": "E1",
+      "fullname": "Estudante 11",
+      "email": "est11@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST11",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "username": "est12",
+      "firstname": "Estudante",
+      "lastname": "12",
+      "initials": "E1",
+      "fullname": "Estudante 12",
+      "email": "est12@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST12",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "username": "est13",
+      "firstname": "Estudante",
+      "lastname": "13",
+      "initials": "E1",
+      "fullname": "Estudante 13",
+      "email": "est13@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST13",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "username": "est14",
+      "firstname": "Estudante",
+      "lastname": "14",
+      "initials": "E1",
+      "fullname": "Estudante 14",
+      "email": "est14@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST14",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "username": "est15",
+      "firstname": "Estudante",
+      "lastname": "15",
+      "initials": "E1",
+      "fullname": "Estudante 15",
+      "email": "est15@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST15",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "username": "est16",
+      "firstname": "Estudante",
+      "lastname": "16",
+      "initials": "E1",
+      "fullname": "Estudante 16",
+      "email": "est16@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST16",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "username": "est17",
+      "firstname": "Estudante",
+      "lastname": "17",
+      "initials": "E1",
+      "fullname": "Estudante 17",
+      "email": "est17@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST17",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "username": "est18",
+      "firstname": "Estudante",
+      "lastname": "18",
+      "initials": "E1",
+      "fullname": "Estudante 18",
+      "email": "est18@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST18",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "username": "est19",
+      "firstname": "Estudante",
+      "lastname": "19",
+      "initials": "E1",
+      "fullname": "Estudante 19",
+      "email": "est19@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST19",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "username": "est20",
+      "firstname": "Estudante",
+      "lastname": "20",
+      "initials": "E2",
+      "fullname": "Estudante 20",
+      "email": "est20@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST20",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "username": "est21",
+      "firstname": "Estudante",
+      "lastname": "21",
+      "initials": "E2",
+      "fullname": "Estudante 21",
+      "email": "est21@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST21",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "username": "est22",
+      "firstname": "Estudante",
+      "lastname": "22",
+      "initials": "E2",
+      "fullname": "Estudante 22",
+      "email": "est22@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST22",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "username": "est23",
+      "firstname": "Estudante",
+      "lastname": "23",
+      "initials": "E2",
+      "fullname": "Estudante 23",
+      "email": "est23@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST23",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "username": "est24",
+      "firstname": "Estudante",
+      "lastname": "24",
+      "initials": "E2",
+      "fullname": "Estudante 24",
+      "email": "est24@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST24",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "username": "est25",
+      "firstname": "Estudante",
+      "lastname": "25",
+      "initials": "E2",
+      "fullname": "Estudante 25",
+      "email": "est25@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST25",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "username": "est26",
+      "firstname": "Estudante",
+      "lastname": "26",
+      "initials": "E2",
+      "fullname": "Estudante 26",
+      "email": "est26@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST26",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "username": "est27",
+      "firstname": "Estudante",
+      "lastname": "27",
+      "initials": "E2",
+      "fullname": "Estudante 27",
+      "email": "est27@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST27",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "username": "est28",
+      "firstname": "Estudante",
+      "lastname": "28",
+      "initials": "E2",
+      "fullname": "Estudante 28",
+      "email": "est28@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST28",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "username": "est29",
+      "firstname": "Estudante",
+      "lastname": "29",
+      "initials": "E2",
+      "fullname": "Estudante 29",
+      "email": "est29@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST29",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "username": "est30",
+      "firstname": "Estudante",
+      "lastname": "30",
+      "initials": "E3",
+      "fullname": "Estudante 30",
+      "email": "est30@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-EST30",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 5,
+          "name": "",
+          "shortname": "student",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "username": "docente01",
+      "firstname": "Docente",
+      "lastname": "01",
+      "initials": "D0",
+      "fullname": "Docente 01",
+      "email": "docente01@example.invalid",
+      "department": "",
+      "idnumber": "AVAL-DOC01",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "lastcourseaccess": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1",
+      "roles": [
+        {
+          "roleid": 3,
+          "name": "",
+          "shortname": "editingteacher",
+          "sortorder": 0
+        }
+      ],
+      "enrolledcourses": [
+        {
+          "id": 2,
+          "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+          "shortname": "AVAL-CAT"
+        }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,9 @@ exige_ubuntu_2404() {
 
 # 'service' funciona com systemd (VM) e sem ele (contêiner de teste).
 reinicia() { service "$1" restart >/dev/null; }
+# Ação de melhoria D4 (#74): numa instância nova, o Apache é recarregado (reload, gracioso), e não
+# reiniciado. O restart derrubava por um instante os outros virtual hosts do servidor (M2.4, E1).
+recarrega() { service "$1" reload >/dev/null; }
 
 # Lê uma quantidade fixa de bytes: 'tr </dev/urandom | head' morre com SIGPIPE sob pipefail.
 senha_aleatoria() { local s; s=$(head -c 18 /dev/urandom | base64); echo "${s//[^A-Za-z0-9]/x}"; }
@@ -151,7 +154,7 @@ etapa_instancia() {
   for sapi in fpm cli; do
     echo "max_input_vars = 5000" > "/etc/php/$php/$sapi/conf.d/99-moodle.ini"
   done
-  reinicia "php${php}-fpm"
+  recarrega "php${php}-fpm"
 
   log "Virtual host na porta $porta, raiz $raiz_web"
   grep -qx "Listen $porta" /etc/apache2/ports.conf || echo "Listen $porta" >> /etc/apache2/ports.conf
@@ -162,17 +165,23 @@ etapa_instancia() {
         Options -Indexes +FollowSymLinks
         AllowOverride None
         Require all granted
+        DirectoryIndex index.php
         FallbackResource /r.php
     </Directory>
+    # Ação de melhoria D4 (#74): só arquivos .php que existem vão para o PHP-FPM; os outros caem no
+    # FallbackResource (roteador). Sem o <If>, um caminho .php inexistente dava 404 do FPM e
+    # admin/cli/checks.php acusava "A routed page with path ending in .php did not respond correctly".
     <FilesMatch \.php$>
-        SetHandler "proxy:unix:/run/php/php${php}-fpm.sock|fcgi://localhost"
+        <If "-f %{REQUEST_FILENAME}">
+            SetHandler "proxy:unix:/run/php/php${php}-fpm.sock|fcgi://localhost"
+        </If>
     </FilesMatch>
     ErrorLog \${APACHE_LOG_DIR}/$nome-error.log
     CustomLog \${APACHE_LOG_DIR}/$nome-access.log combined
 </VirtualHost>
 EOF
   a2ensite -q "$nome" >/dev/null
-  reinicia apache2
+  recarrega apache2
 
   log "Instalação pela CLI (contas fictícias, domínio example.invalid)"
   chown www-data "$dir"   # install.php grava o config.php na raiz do código
@@ -188,6 +197,10 @@ EOF
   [[ -f $config ]] || erro "config.php não foi criado"
   log "R8: noemailever no config.php"
   sed -i "/lib\/setup.php/i \$CFG->noemailever = true;" "$config"
+  # Ação de melhoria D4 (#74): roteador configurado como na página oficial "Configuring the Router"
+  # (DirectoryIndex no virtual host, acima, e esta declaração). Sem isso, "/" e "/my/" davam 404 e
+  # admin/cli/checks.php acusava "Router configuration (core_router)".
+  [[ -d $dir/public ]] && sed -i "/lib\/setup.php/i \$CFG->routerconfigured = true;" "$config"
   chown root:www-data "$config"
   chmod 0640 "$config"
 

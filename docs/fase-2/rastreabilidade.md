@@ -18,11 +18,11 @@ Esta página explicita que os objetivos de medição foram **derivados** da Fase
 
 | Parte interessada e necessidade (Fase 1) | Decisão | Característica / subcaracterística | Questão | Métrica | Meta do ODS |
 |---|---|---|---|---|---|
-| Gestão acadêmica: tarefas essenciais cobertas | D1 | Adequação funcional / completude | Q1.1 | M1.1 | 4.3 |
+| Gestão acadêmica: tarefas essenciais cobertas | D1 | Adequação funcional / completude | Q1.1 | M1.1, M1.3 | 4.3 |
 | Docentes e tutores: notas e prazos corretos | D1 | Adequação funcional / correção | Q1.2 | M1.2 | 4.3 |
 | Gestão acadêmica: sem customização para tarefas básicas | D1 | Adequação funcional / pertinência | Q1.3 | M1.3 | — |
 | Integradores: importar usuários e exportar notas | D2 | Compatibilidade / interoperabilidade | Q2.1 | M2.1 | 4.4 |
-| Integradores: dados sem retrabalho manual | D2 | Compatibilidade / interoperabilidade | Q2.2 | M2.2 | — |
+| Integradores: dados sem retrabalho manual | D2 | Compatibilidade / interoperabilidade | Q2.2 | M2.1, M2.2 | — |
 | Integradores: consumir serviços web | D2 | Compatibilidade / interoperabilidade | Q2.3 | M2.3 | — |
 | Administradores: servidor compartilhado sem interferência | D2 | Compatibilidade / coexistência | Q2.4 | M2.4 | — |
 | Estudantes: acesso por navegadores e celular | D3 | Flexibilidade / adaptabilidade | Q3.1 | M3.1 | 4.a |
@@ -38,8 +38,9 @@ Esta página explicita que os objetivos de medição foram **derivados** da Fase
 |---|---|
 | Toda característica priorizada tem um objetivo GQM | Sim (3/3) |
 | Toda subcaracterística mantida no modelo adaptado tem ao menos uma questão | Sim (7/7) |
-| Toda questão tem hipótese | Sim (11/11) |
-| Toda métrica responde a uma questão | Sim (12/12) |
+| Toda questão tem hipótese com valor esperado, separada do critério | Sim (11/11) |
+| Toda métrica responde a ao menos uma questão | Sim (12/12; M1.3 e M2.1 servem a duas) |
+| Nenhuma questão repete o nome de sua métrica | Sim (11/11) |
 | Toda métrica tem níveis de pontuação | Sim (12/12) |
 | Todo objetivo tem critério de julgamento ligado a uma decisão | Sim (3/3) |
 | Nenhuma métrica mede capacidade de interação (usabilidade) | Sim |

@@ -1,0 +1,293 @@
+% Apresentação final (20 min) do Grupo Marlyn Wescoff, QS1 2026/2. Compilar: tectonic apresentacao.tex
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{booktabs,tabularx,array,xcolor,tikz}
+\usetikzlibrary{positioning,arrows.meta}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\hfill\scriptsize\textcolor{gray}{Marlyn Wescoff \textperiodcentered{} Moodle 5.3 LTS \textperiodcentered{} \insertframenumber}\hspace{1em}\vspace{0.6em}}
+\definecolor{mw}{HTML}{C2410C}
+\setbeamercolor{frametitle}{fg=mw}
+\setbeamercolor{title}{fg=mw}
+\setbeamerfont{frametitle}{series=\bfseries}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\title{Avaliação da qualidade do Moodle 5.3 LTS}
+\subtitle{ISO/IEC 25040, ISO/IEC 25010:2023 e GQM}
+\author{Bernardo Broetto Brun \textperiodcentered{} Carlos Eduardo Deusdara Motta \textperiodcentered{} João Pedro Sampaio Maciel\\Maykon Junio dos Santos Soares \textperiodcentered{} Pedro Goncalves Rocha}
+\institute{Grupo Marlyn Wescoff \textperiodcentered{} Qualidade de Software 1 \textperiodcentered{} FCTE/UnB \textperiodcentered{} 2026/2}
+\date{github.com/FCTE-Qualidade-de-Software-1/2026-2\_T01\_MARLYN\_WESCOFF}
+\begin{document}
+
+\begin{frame}\titlepage\end{frame}
+
+\begin{frame}{Fase 1 \textperiodcentered{} Requisitos da avaliação}
+\begin{columns}[T]
+\column{0.5\textwidth}
+\textbf{Produto:} Moodle 5.3 LTS (núcleo, sem plugins), WebApp COTS de código aberto.\\[0.5em]
+\textbf{Propósito:} entender a qualidade para apoiar a Coordenação de TI de uma instituição de ensino superior em três decisões:
+\begin{itemize}\small
+\item D1 adotar o núcleo para as tarefas acadêmicas;
+\item D2 manter ou adaptar as integrações;
+\item D3 definir o procedimento de migração 4.5 $\rightarrow$ 5.3.
+\end{itemize}
+\column{0.5\textwidth}
+\textbf{Partes interessadas:} docente (requisitante acadêmica), Coordenação de TI (ponto de vista), estudantes, docentes, gestão acadêmica, integradores e administradores.\\[0.5em]
+\textbf{Características priorizadas} (matriz ponderada e análise de sensibilidade): \textbf{Adequação funcional}, \textbf{Compatibilidade} e \textbf{Flexibilidade}.\\[0.5em]
+\textbf{Escopo:} catálogo de 12 tarefas essenciais, instalação local de referência e dados fictícios.
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Fase 2 \textperiodcentered{} GQM: objetivo $\rightarrow$ questões $\rightarrow$ métricas}
+\centering
+\begin{tikzpicture}[
+  g/.style={draw, rounded corners, fill=orange!15, font=\scriptsize\bfseries, align=center, minimum width=2.3cm, minimum height=0.7cm},
+  q/.style={draw, rounded corners, fill=blue!6, font=\tiny, align=left, text width=4.6cm, minimum height=0.36cm},
+  m/.style={draw, rounded corners, fill=green!7, font=\tiny, align=center, minimum width=1.9cm, minimum height=0.36cm}]
+\matrix[row sep=0.04cm, column sep=0.5cm] {
+ & \node[q] (q11) {Q1.1 O núcleo, sem plugins, dá conta das tarefas?}; & \node[m] (m11) {M1.1 Cobertura}; \\
+ \node[g] (g1) {G1 Adequação\\funcional (D1)}; & \node[q] (q12) {Q1.2 Notas e prazos saem como a instituição espera?}; & \node[m] (m12) {M1.2 Correção}; \\
+ & \node[q] (q13) {Q1.3 As tarefas saem pelo caminho previsto, sem improviso?}; & \node[m] (m13) {M1.3 Pertinência}; \\[0.1cm]
+ & \node[q] (q21) {Q2.1 Os dados entram e saem pelos arquivos dos outros sistemas?}; & \node[m] (m21) {M2.1 Intercâmbio}; \\
+ \node[g] (g2) {G2 Compati-\\bilidade (D2)}; & \node[q] (q22) {Q2.2 Os dados chegam como saíram?}; & \node[m] (m22) {M2.2 Integridade}; \\
+ & \node[q] (q23) {Q2.3 Um sistema externo consegue usar o Moodle?}; & \node[m] (m23) {M2.3 REST}; \\
+ & \node[q] (q24) {Q2.4 Divide o servidor sem atrapalhar?}; & \node[m] (m24) {M2.4 Coexistência}; \\[0.1cm]
+ & \node[q] (q31) {Q3.1 Funciona nos dispositivos dos usuários?}; & \node[m] (m31) {M3.1 Acesso}; \\
+ \node[g] (g3) {G3 Flexi-\\bilidade (D3)}; & \node[q] (q32) {Q3.2 A TI pode escolher a versão de PHP?}; & \node[m] (m32) {M3.2 PHP}; \\
+ & \node[q] (q33) {Q3.3 Instala e atualiza pela documentação, em tempo previsível?}; & \node[m] (m33) {M3.3 Sucesso \textperiodcentered{} M3.4 Tempo}; \\
+ & \node[q] (q34) {Q3.4 A atualização mantém os dados?}; & \node[m] (m35) {M3.5 Preservação}; \\
+};
+\foreach \g/\qs in {g1/{q11,q12,q13}, g2/{q21,q22,q23,q24}, g3/{q31,q32,q33,q34}}
+  \foreach \q in \qs \draw[-{Stealth}] (\g.east) -- (\q.west);
+\foreach \q/\m in {q11/m11,q11/m13,q12/m12,q13/m13,q21/m21,q22/m21,q22/m22,q23/m23,q24/m24,q31/m31,q32/m32,q33/m33,q34/m35}
+  \draw[-{Stealth}] (\q.east) -- (\m.west);
+\end{tikzpicture}\\[0.2em]
+{\scriptsize Cada questão tem hipótese (resposta esperada), separada do critério de julgamento (o que se aceita).}
+\end{frame}
+\note{Ler uma questão de cada objetivo antes da métrica: ``Q1.2: notas e prazos saem como a instituição espera? Medimos com M1.2, os 20 casos do oráculo.'' ``Q2.2: os dados chegam como saíram? Medimos com M2.1 e M2.2.'' ``Q3.1: funciona nos dispositivos dos usuários? Medimos com M3.1, as 8 tarefas nos 4 ambientes.''}
+
+\begin{frame}{Fase 2 \textperiodcentered{} Hipóteses: a resposta esperada por questão}
+\scriptsize
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Questão} & \textbf{Hipótese (resposta esperada)} & \textbf{Métrica} \\
+\midrule
+Q1.1 O núcleo dá conta das tarefas? & H1.1 Sim: 12 de 12, só uma com contorno & M1.1, M1.3 \\
+Q1.2 Notas e prazos saem certos? & H1.2 Sim: os 20 casos iguais ao oráculo & M1.2 \\
+Q1.3 As tarefas saem sem improviso? & H1.3 Quase sempre: 11 de 12 sem contorno & M1.3 \\
+\midrule
+Q2.1 Os dados entram e saem por arquivo? & H2.1 Sim: 6 ou 7 dos 7 formatos & M2.1 \\
+Q2.2 Os dados chegam como saíram? & H2.2 Sim: registros iguais à referência & M2.1, M2.2 \\
+Q2.3 Um sistema externo usa o Moodle? & H2.3 Sim: 6 de 6 funções & M2.3 \\
+Q2.4 Divide o servidor sem atrapalhar? & H2.4 Sim: 3 de 3 vizinhas intactas & M2.4 \\
+\midrule
+Q3.1 Funciona nos dispositivos? & H3.1 Quase todos: Android falha em no máximo 1 & M3.1 \\
+Q3.2 A TI pode escolher o PHP? & H3.2 Sim: mesmo resultado em 8.3 e 8.4 & M3.2 \\
+Q3.3 Instala e atualiza pela documentação? & H3.3 Sim, com uma falha na 1ª atualização & M3.3, M3.4 \\
+Q3.4 A atualização mantém os dados? & H3.4 Sim: 40 de 40 itens & M3.5 \\
+\bottomrule
+\end{tabular}\\[0.5em]
+O critério de julgamento (o que se aceita) é separado e está no próximo slide.
+\end{frame}
+
+\begin{frame}{Fase 2 \textperiodcentered{} Níveis de pontuação e critério de julgamento}
+\begin{columns}[T]
+\column{0.48\textwidth}
+\textbf{Escala de notas}\\[0.3em]
+\small
+\begin{tabular}{@{}cl@{}}
+\toprule
+4 & Excelente: nenhuma ação \\
+3 & Bom: desvio pequeno, com contorno \\
+2 & Insuficiente: ação antes da migração \\
+1 & Crítico: bloqueia a migração \\
+\bottomrule
+\end{tabular}\\[0.6em]
+Limites por métrica fixados \textbf{antes} da coleta (ex.: M2.3: 6/6 $\rightarrow$ 4; 5/6 $\rightarrow$ 3; 4/6 $\rightarrow$ 2).
+\column{0.5\textwidth}
+\textbf{Regras}
+\begin{itemize}\small
+\item Questão = \textbf{mínimo} das notas das suas métricas.
+\item Objetivo = \textbf{pior caso} entre as questões:
+  \begin{itemize}\scriptsize
+  \item todas $\geq 3$: \textbf{atende} $\rightarrow$ prosseguir;
+  \item alguma 2 e nenhuma 1: \textbf{atende com ressalvas};
+  \item alguma 1: \textbf{não atende} $\rightarrow$ candidata à melhoria.
+  \end{itemize}
+\item Hipóteses confirmadas ou refutadas à parte da nota.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Fase 3 \textperiodcentered{} Planejamento da avaliação}
+\small
+\begin{columns}[T]
+\column{0.5\textwidth}
+\textbf{Procedimentos:} avaliação externa, de caixa-preta e orientada a tarefas; instruções por métrica; regras R1 a R8 (critério antes da coleta, sessão limpa, só a documentação, registrar sempre, conferência por segundo integrante, dados fictícios).\\[0.5em]
+\textbf{Instrumentos:} formulários CSV por métrica, oráculo de 20 casos para M1.2, referências congeladas com sha256 para M2.2, lista de 40 itens para M3.5.
+\column{0.5\textwidth}
+\textbf{Recursos e ambiente:} servidor Ubuntu 24.04, Apache 2.4, PHP 8.3 e 8.4, PostgreSQL 17, montado pelo \texttt{preparar\_servidor.sh}; massa fictícia gerada por script (30 estudantes, 3 cursos); 4 ambientes de acesso.\\[0.5em]
+\textbf{Organização:} uma issue por métrica com responsável, prazo e evidência; cronograma de 16 a 22/11 (realizado de 15 a 22/11; E2 prorrogada para 24/11).
+\end{columns}
+\end{frame}
+
+\begin{frame}{Fase 4 \textperiodcentered{} Execução e evidências}
+\small
+\begin{itemize}
+\item Coleta automatizada por \textbf{scripts versionados}, executada numa máquina compartilhada; cada responsável confere a sua métrica.
+\item \textbf{Playwright} na interface: Chrome e Firefox do Windows, Firefox do Ubuntu, Android emulado (M3.1) e PHP 8.3 $\times$ 8.4 (M3.2).
+\item \textbf{API do Moodle} e \texttt{faketime}: 20 casos do oráculo (M1.2), relógio em D 23:58, D+1 00:01…
+\item \textbf{Contêiner novo da imagem-base} em cada uma das 6 execuções de M3.3, com o \texttt{script} gravando log e tempos.
+\item \textbf{Evidências:} CSV, JSON, logs e capturas em \texttt{dados/avaliacao/}, com um README por métrica; tentativas descartadas guardadas com a causa (3 em M3.3, 1 em M2.3).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fase 4 \textperiodcentered{} Métricas calculadas e comparação com os critérios}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{2.6cm}p{2.3cm}p{0.6cm}p{1.8cm}L}
+\toprule
+Métrica & Valor & Nota & Hipótese & Observação \\
+\midrule
+M1.1 Cobertura & 12/12 = 1,00 & 4 & confirmada & as 12 tarefas com função do núcleo \\
+M1.2 Correção & 19/20 = 0,95 & \textcolor{red}{\textbf{1}} & refutada & A-04: exibe 53,00 de 70; oráculo espera 7,57 \\
+M1.3 Pertinência & 12/12 = 1,00 & 4 & refutada & nenhum contorno (esperava 1) \\
+M2.1 Intercâmbio & 7/7 = 1,00 & 4 & confirmada & 7 formatos trocados \\
+M2.2 Integridade & 132/132 = 1,00 & 4 & confirmada & acentuação íntegra; instrumento corrigido \\
+M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & cliente com permissões mínimas \\
+M2.4 Coexistência & 2/3 = 0,67 & \textcolor{orange}{\textbf{2}} & refutada & vizinha web sem resposta na instalação \\
+M3.1 Acesso & 8/8 = 1,00 & 4 & confirmada & 4 ambientes \\
+M3.2 PHP & 12/12 = 1,00 & 4 & confirmada & 8.3 e 8.4 iguais \\
+M3.3 Instalação & 6/6 = 1,00 & 4 & refutada & nenhuma falha por \texttt{public/} \\
+M3.4 Tempo & 1,18 min; R = 0 & 4 & confirmada & procedimento automatizado \\
+M3.5 Preservação & 40/40 = 1,00 & 4 & confirmada & 3 atualizações \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Fase 4 \textperiodcentered{} Respostas aos objetivos e decisões}
+\small
+\begin{tabularx}{\linewidth}{p{2.6cm}p{2.6cm}p{2.6cm}L}
+\toprule
+Objetivo & Critério congelado & Sensibilidade & Decisão recomendada \\
+\midrule
+G1 Adequação funcional & \textcolor{red}{\textbf{Não atende}} (Q1.2 = 1) & Atende & D1: adotar só com o contorno documentado (conferir totais em soma natural) \\
+G2 Compatibilidade & \textbf{Atende com ressalvas} (Q2.4 = 2) & Atende com ressalvas & D2: manter as integrações, publicando virtual hosts com \texttt{reload} \\
+G3 Flexibilidade & \textcolor{green!50!black}{\textbf{Atende}} & Atende & D3: migrar pelo procedimento documentado, lendo ``Configuring the Router'' \\
+\bottomrule
+\end{tabularx}\\[0.8em]
+A única nota 1 (Q1.2, caso A-04) vem da \textbf{escala de exibição} da soma natural, e não de cálculo errado. Pela regra R1, o critério não muda depois da coleta: a leitura do A-04 como diferença de escala é apresentada como análise de sensibilidade, e a decisão de manter o critério está no registro de decisões.
+\end{frame}
+
+\begin{frame}{Problemas encontrados no produto}
+\small
+\begin{tabularx}{\linewidth}{p{5.2cm}L}
+\toprule
+Problema e evidência & Consequência para os usuários \\
+\midrule
+Documentação do servidor web dividida: o bloco das páginas ``Apache'' e ``Upgrading'' não tem o \texttt{DirectoryIndex} de ``Configuring the Router'' (M3.3, tentativa 1) & Quem segue a página ``Apache'' fica com a raiz do site e o \texttt{/my/} em 404 \\
+Total em soma natural exibido só em pontos e porcentagem (M1.2, A-04) & O docente não vê o total na escala de 0 a 10 \\
+Exportação de notas pendente de recálculo mostra ``grades/gradesneedregrading'' (M2.1) & Mensagem incompreensível para o docente \\
+PHP-FPM por \texttt{FilesMatch} quebra as rotas \texttt{.php} do roteador (\texttt{checks.php}) & Páginas do roteador podem não abrir \\
+\bottomrule
+\end{tabularx}\\[0.6em]
+\textbf{Relações entre características:} compatibilidade $\times$ instalabilidade (a falha de coexistência veio do procedimento de instalação); correção $\times$ interoperabilidade (o mesmo valor aparece como 53,00, 75,71\% ou \texttt{10.0}). \textbf{Sem dados} para relacionar adaptabilidade e adequação funcional: tudo funcionou em todos os ambientes.
+\end{frame}
+
+\begin{frame}{Melhoria priorizada e executada}
+\begin{columns}[T]
+\column{0.42\textwidth}
+\small
+\textbf{Problema:} publicação no servidor compartilhado (M2.4 = 2; roteador com 404).\\[0.3em]
+\textbf{Prioridade:} menor nota de G2 ligada ao produto em operação; atinge todo servidor montado pelo script; correção objetiva e verificável.\\[0.3em]
+\textbf{Ação} (no \texttt{preparar\_servidor.sh}, incorporada ao repositório):
+\begin{itemize}\scriptsize
+\item \texttt{reload} em vez de \texttt{restart};
+\item \texttt{DirectoryIndex} e \texttt{\$CFG->routerconfigured};
+\item só \texttt{.php} existente vai para o PHP-FPM.
+\end{itemize}
+\column{0.56\textwidth}
+\scriptsize
+\begin{tabularx}{\linewidth}{Lp{1.8cm}p{1.8cm}}
+\toprule
+Medida & Antes & Depois \\
+\midrule
+Vizinha E1 durante a instalação & 1 de 52 sem resposta & 0 de 44 \\
+M2.4 na instalação & 2/3 & 3/3 \\
+\texttt{/}, \texttt{/my/}, \texttt{/course/} & 404 & 303 (login) \\
+\texttt{checks.php} core\_router & ERROR & OK \\
+\bottomrule
+\end{tabularx}\\[0.4em]
+Medido com os mesmos instrumentos da coleta, num servidor novo da mesma imagem-base.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Dificuldades e limitações}
+\small
+\begin{itemize}
+\item \textbf{Depurar o próprio instrumento:} 3 tentativas de M3.3 descartadas (procedimento sem \texttt{DirectoryIndex}; verificação de login; \texttt{pipefail} transformando sucesso em falha), todas guardadas com a causa.
+\item \textbf{Relógio do oráculo:} \texttt{faketime} congelado travou um caso; refeito com o relógio deslocado.
+\item \textbf{Firefox no Windows:} 3 tarefas passaram só na repetição prevista no plano.
+\item \textbf{Sem resposta:} Android em aparelho real; tempo de instalação por uma pessoa (M3.4 mede um procedimento automatizado); conferência independente (R6) depende da revisão dos PRs.
+\item \textbf{Piloto não feito:} a lista de 40 itens de M3.5 foi congelada antes da primeira atualização.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gestão do projeto \textperiodcentered{} modelo de informação do PSM}
+\scriptsize
+\begin{tabularx}{\linewidth}{p{4.1cm}p{2.3cm}p{2.8cm}L}
+\toprule
+Necessidade de informação & Categoria & Medidas $\rightarrow$ indicador & Decisões tomadas \\
+\midrule
+O trabalho comprometido termina até cada marco? & Calendário e Progresso & A2 comprometido $\times$ concluído; A4 marcos & DG-07 iteração semanal; DG-10 PC1 não apresentado $\rightarrow$ PC2 pela GitPage \\
+As tarefas fluem? A revisão acha problemas antes da docente? & Desempenho dos Processos & B1 cycle time; B4 retrabalho & DG-03 issues no planejamento; DG-05 revisão em PR; DG-08 congelamento \\
+O esforço é equilibrado? As estimativas são confiáveis? & Recursos e Custos & C1 esforço; C3 estimado $\times$ real & DG-02 horas da E1; DG-09 custo da hora (E1: R\$ 841,89 realizado $\times$ R\$ 302,78 estimado) \\
+\bottomrule
+\end{tabularx}\\[0.6em]
+{\tiny necessidade $\rightarrow$ categoria $\rightarrow$ conceito mensurável $\rightarrow$ medidas $\rightarrow$ indicador $\rightarrow$ critério de decisão $\rightarrow$ decisão}
+\end{frame}
+
+\begin{frame}{Gestão do projeto \textperiodcentered{} evolução e retrospectiva}
+\small
+\begin{columns}[T]
+\column{0.5\textwidth}
+\textbf{O que mudou ao longo do semestre}
+\begin{itemize}\scriptsize
+\item E1: 0 PRs e 100\% das linhas nas 48 h finais.
+\item PC2: 37 PRs mergeados, 16,5\% das linhas nas 48 h finais; 18 PRs com revisão registrada.
+\item Comprometido $\times$ concluído: W46 9/9; \textbf{W47 3/18}: a coleta atrasou e se concentrou em 22/11.
+\end{itemize}
+\textbf{Compromissos da retrospectiva}
+\begin{itemize}\scriptsize
+\item C2 liderança $\rightarrow$ Bernardo líder da E2 (DG-06): \textbf{executado}.
+\item C3 prazos $\rightarrow$ iteração semanal medida por A2 (DG-07): \textbf{executado}; o prazo de coleta não foi cumprido.
+\end{itemize}
+\column{0.48\textwidth}
+\textbf{As mudanças melhoraram a avaliação?} Em parte:
+\begin{itemize}\scriptsize
+\item \textbf{Sim:} rastreabilidade entre dados e conclusões (scripts, READMEs, sha256 das referências, tentativas guardadas) e revisão registrada em PR.
+\item \textbf{Não:} o cronograma da coleta escorregou (W47), e a conferência por segundo integrante ficou para a revisão final.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Relatos dos integrantes}
+\scriptsize
+Cada integrante, em cerca de 1 minuto: \textbf{contribuição}, \textbf{o que aprendeu} sobre avaliação de qualidade de produto, \textbf{uma dificuldade} e como lidou, \textbf{o que faria diferente}.\\[0.6em]
+\begin{tabularx}{\linewidth}{p{3.6cm}L}
+\toprule
+Bernardo Broetto Brun & Liderança da E2, G1, oráculo de M1.2 e coleta de M1.1/M1.3, gestão na GitPage, correções do artigo \\
+Carlos Eduardo Deusdara Motta & G2, construtos e dados da gestão, plano de execução, comparação de registros e julgamento automático \\
+João Pedro Sampaio Maciel & Abstraction sheets e diagrama GQM, plano da Fase 3, gerador da massa de dados, M3.1 e M3.2 \\
+Maykon Junio dos Santos Soares & GitPage e artigo, script do servidor, M2.3/M2.4, correções do GQM, automação das coletas e ação de melhoria \\
+Pedro Goncalves Rocha & G3, construtos de custos e scripts da gestão, decisões de gestão, M3.3 a M3.5 \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Obrigado}
+\centering
+\Large GitPage: \texttt{fcte-qualidade-de-software-1.github.io/2026-2\_T01\_MARLYN\_WESCOFF}\\[1em]
+\normalsize Evidências: \texttt{dados/avaliacao/} \textperiodcentered{} Artigo: release E2 \textperiodcentered{} Ação de melhoria: \texttt{scripts/preparar\_servidor.sh}
+\end{frame}
+\end{document}

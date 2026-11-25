@@ -1,4 +1,4 @@
-# Compila o artigo LaTeX (modelo SBC) e disponibiliza o PDF como artefato da execução.
+# Compila o artigo LaTeX (modelo SBC) e a apresentação (beamer) e disponibiliza os PDFs como artefatos da execução.
 name: Compilar artigo
 
 on:
@@ -6,10 +6,12 @@ on:
     branches: [main]
     paths:
       - "artigo/**"
+      - "apresentacao/**"
       - ".github/workflows/artigo.yml"
   pull_request:
     paths:
       - "artigo/**"
+      - "apresentacao/**"
   workflow_dispatch:
 
 permissions:
@@ -29,4 +31,19 @@ jobs:
         with:
           name: artigo-pdf
           path: artigo/main.pdf
+          if-no-files-found: error
+
+  apresentacao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: apresentacao
+          root_file: apresentacao.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apresentacao-pdf
+          path: apresentacao/apresentacao.pdf
           if-no-files-found: error

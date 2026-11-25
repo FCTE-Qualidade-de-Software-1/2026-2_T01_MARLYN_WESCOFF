@@ -1,6 +1,6 @@
 # Fase 2: Especificar a avaliação
 
-A Fase 2 transforma as três características priorizadas na [Fase 1](../fase-1/caracteristicas.md) em medições, pelo método **GQM** (*Goal–Question–Metric*; Basili, Caldiera e Rombach, 1994). Cada característica gera um objetivo de medição no template da Aula 08; cada objetivo se desdobra em questões, cada questão recebe uma hipótese e as métricas respondem às questões. Por fim, cada métrica recebe níveis de pontuação e cada objetivo recebe um critério de julgamento, que será aplicado na Fase 4.
+A Fase 2 transforma as três características priorizadas na [Fase 1](../fase-1/caracteristicas.md) em medições, pelo método **GQM** (*Goal–Question–Metric*; Basili, Caldiera e Rombach, 1994). Cada característica gera um objetivo de medição no template da Aula 08; cada objetivo se desdobra em questões, cada questão recebe uma hipótese (a resposta esperada) e uma ou mais métricas refinam cada questão. Por fim, cada métrica recebe níveis de pontuação e cada objetivo recebe um critério de julgamento, que será aplicado na Fase 4.
 
 Estas são métricas da qualidade do produto. A execução e a entrega dos artefatos da avaliação são acompanhadas separadamente pelas [medidas e indicadores de gestão do projeto (PSM/CID)](../gestao/index.md).
 

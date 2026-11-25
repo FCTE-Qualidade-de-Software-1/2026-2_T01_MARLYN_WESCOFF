@@ -5,8 +5,8 @@
 | Item | Valor |
 |---|---|
 | Nome | Moodle LMS |
-| Versão-alvo | 5.3 LTS (lançada em 05/10/2026); a versão corretiva exata (5.3.x) e o *build* serão registrados na Fase 3 |
-| Versão de origem para o teste de atualização | 4.5 LTS (última versão corretiva disponível) |
+| Versão-alvo | 5.3 LTS (lançada em 05/10/2026); a avaliação usou a **5.3.1+ (Build: 20261117)**, registrada em cada coleta da Fase 4 |
+| Versão de origem para o teste de atualização | 4.5 LTS; a avaliação usou a 4.5.16+ (Build: 20261117) |
 | Fornecedor | Moodle HQ e comunidade Moodle |
 | Licença | GNU GPL v3 ou posterior |
 | Domínio de aplicação | Educação: gestão da aprendizagem em cursos presenciais, híbridos e a distância |
@@ -15,16 +15,35 @@
 
 <p class="legenda">Tabela 1. Identificação do produto. Fonte: elaboração própria a partir de Moodle (2026).</p>
 
+## Checklist da Aula 07
+
+| Item da descrição do produto | Resposta ou onde está |
+|---|---|
+| Nome, versão e fornecedor | Moodle LMS 5.3 LTS (5.3.1+), Moodle HQ e comunidade; tabela [Identificação](#identificacao) |
+| Licença e modelo de negócio | GNU GPL v3; código aberto com parceiros de hospedagem ([Tipo de produto](#tipo-de-produto)) |
+| Tipo de produto | WebApp de sistema de informação; COTS que pode virar MOTS ([Tipo de produto](#tipo-de-produto)) |
+| Domínio e usuários | Educação; estudantes, docentes, gestão acadêmica, administradores e integradores ([Partes interessadas](partes-interessadas.md)) |
+| Nível de conhecimento exigido | Informática: estudantes e docentes usam só o navegador e o envio de arquivos (nível básico); administradores precisam de Linux, Apache, PHP e PostgreSQL (nível avançado). Domínio: docentes precisam conhecer a avaliação acadêmica (pesos, prazos e agregação de notas), e integradores, os formatos dos sistemas vizinhos ([Partes interessadas](partes-interessadas.md)) |
+| Funções que merecem mais dedicação | As 12 tarefas do [catálogo de tarefas essenciais](escopo.md#recorte-operacional-catalogo-de-tarefas-essenciais), com prioridade para o cálculo de notas e o controle de prazos; depois, a troca de dados com os sistemas vizinhos e a atualização 4.5 → 5.3, na ordem das [características priorizadas](caracteristicas.md#resultado) |
+| Arquitetura e componentes | Cliente-servidor, monolito modular em PHP; módulos na [Descrição estruturada](#descricao-estruturada) |
+| Interfaces externas | Arquivos (CSV, XLSX, GIFT, Moodle XML, iCal, `.mbz`) e serviços web REST ([Descrição estruturada](#descricao-estruturada)) |
+| Plataforma de software | PHP 8.3 ou 8.4, PostgreSQL 17, Apache 2.4 com a raiz em `public/` ([Plano de avaliação](../fase-3/plano-de-avaliacao.md#2-recursos-e-ambiente)) |
+| Hardware | Máquina virtual de 2 vCPU, 4 GB de RAM e 40 GB de disco ([Plano de avaliação](../fase-3/plano-de-avaliacao.md#servidor-de-referencia)) |
+| Dados para a avaliação | Massa fictícia gerada por script ([Massa de dados](../fase-3/plano-de-avaliacao.md#massa-de-dados-ficticia)) |
+| Documentação disponível | docs.moodle.org/503 e moodledev.io, usadas como referência dos procedimentos ([Identificação](#identificacao)) |
+
+<p class="legenda">Tabela 2. Checklist da Aula 07 para a descrição do produto. Fonte: elaboração própria.</p>
+
 ## Tipo de produto
 
 | Classificação | Enquadramento do Moodle | Implicação para a avaliação |
 |---|---|---|
-| Pressman | Aplicação web (WebApp) de sistema de informação | Acesso por navegador; o comportamento depende do servidor e do cliente, o que motiva avaliar **adaptabilidade** |
+| Pressman | **Software comercial**: organiza dados para apoiar operações acadêmicas e decisões administrativas | A categoria descreve a finalidade do sistema, não seu modelo de venda: o Moodle é software livre e gratuito. Como atende operações institucionais, a avaliação prioriza tarefas acadêmicas e trocas de dados |
 | IEEE 1062 | **COTS** (*Commercial Off-The-Shelf*): o mesmo produto é distribuído para todas as instituições; ao receber plugins e customizações locais, uma instalação pode se tornar **MOTS** | A avaliação usa **apenas o núcleo** (COTS), para que o resultado não dependa de customizações de uma instituição |
 | Arquitetura | Cliente-servidor, monolito modular em PHP, extensível por plugins | Cada subsistema é avaliado pelo seu comportamento externo (caixa-preta) |
 | Modelo de negócio | Código aberto, gratuito, com parceiros que vendem hospedagem e suporte | Documentação pública permite derivar requisitos de referência |
 
-<p class="legenda">Tabela 2. Classificação do tipo de produto (Aula 07). Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 3. Classificação do tipo de produto (Aula 07). Fonte: elaboração própria.</p>
 
 ## Descrição estruturada
 
@@ -45,7 +64,7 @@
 | Instalação e atualização | `admin/cli/install.php`, `admin/cli/upgrade.php` | Instalar e atualizar pela linha de comando ou pelo navegador | G3 |
 | Tarefas agendadas | `admin/cli/cron.php`, Task API | Processamento periódico (notificações, limpeza, relatórios) | G2, G3 |
 
-<p class="legenda">Tabela 3. Módulos do Moodle relevantes para a avaliação e objetivo GQM que os utiliza. Fonte: elaboração própria a partir de Moodle (2026) e Hunt (2012).</p>
+<p class="legenda">Tabela 4. Módulos do Moodle relevantes para a avaliação e objetivo GQM que os utiliza. Fonte: elaboração própria a partir de Moodle (2026) e Hunt (2012).</p>
 
 ### Interfaces
 
@@ -57,7 +76,7 @@
 | Linha de comando (CLI) | Operador–sistema | Administradores |
 | Banco de dados e `moodledata` | Sistema–infraestrutura | Moodle (acesso interno) |
 
-<p class="legenda">Tabela 4. Interfaces do produto. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 5. Interfaces do produto. Fonte: elaboração própria.</p>
 
 ### Diagrama de contexto e arquitetura
 
@@ -114,11 +133,11 @@ flowchart TB
 | Navegador | Qualquer navegador compatível com padrões; testados Chrome, Firefox, Safari, Edge, MobileSafari e Chrome Android | Ver [Escopo](escopo.md) |
 | Sistema operacional do servidor | Não restrito pela documentação | Ubuntu Server 24.04 LTS em máquina virtual ou contêiner |
 
-<p class="legenda">Tabela 5. Dependências do Moodle 5.3 LTS e configuração de referência. Fonte: Moodle (2026); configuração proposta pela equipe.</p>
+<p class="legenda">Tabela 6. Dependências do Moodle 5.3 LTS e configuração de referência. Fonte: Moodle (2026); configuração proposta pela equipe.</p>
 
 ![Página oficial "Moodle 5.3" no site moodledev.io, mostrando a data de lançamento de 5 de outubro de 2026 e os requisitos de servidor: atualização a partir do Moodle 4.4, PHP mínimo 8.3.0 com suporte a 8.4, extensão sodium obrigatória, max_input_vars maior ou igual a 5000, apenas PHP de 64 bits e PostgreSQL 17 como versão mínima](../assets/evidencias/moodle-5-3-release.png){ width="760" loading="lazy" }
 
-<p class="legenda">Figura 2. Evidência dos requisitos do Moodle 5.3 LTS usados na Tabela 5. Fonte: Moodle (2026), página <a href="https://moodledev.io/general/releases/5.3">moodledev.io/general/releases/5.3</a>, capturada em 25/10/2026.</p>
+<p class="legenda">Figura 2. Evidência dos requisitos do Moodle 5.3 LTS usados na Tabela 6. Fonte: Moodle (2026), página <a href="https://moodledev.io/general/releases/5.3">moodledev.io/general/releases/5.3</a>, capturada em 25/10/2026.</p>
 
 A configuração de referência é uma **proposta** e será confirmada na Fase 3, com o registro das versões efetivamente instaladas. Os dados usados serão fictícios (usuários, cursos e notas gerados para o teste).
 
@@ -132,6 +151,6 @@ A configuração de referência é uma **proposta** e será confirmada na Fase 3
 | Instalação limpa e atualização 4.5 → 5.3 com dados fictícios | Uso contínuo ao longo de um semestre letivo |
 | Execução dos fluxos em navegadores e dispositivos selecionados | Conformidade legal (LGPD) ou auditoria de segurança |
 
-<p class="legenda">Tabela 6. O que dá e o que não dá para medir com os recursos da equipe. Fonte: elaboração própria.</p>
+<p class="legenda">Tabela 7. O que dá e o que não dá para medir com os recursos da equipe. Fonte: elaboração própria.</p>
 
 Essas limitações explicam por que eficiência de desempenho, confiabilidade e segurança não foram priorizadas (ver [Seleção e priorização](caracteristicas.md)).

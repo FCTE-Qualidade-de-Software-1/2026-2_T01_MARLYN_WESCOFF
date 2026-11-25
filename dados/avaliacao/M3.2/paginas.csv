@@ -1,0 +1,11 @@
+php,pagina,url,http,erro_moodle,detalhe,evidencia
+"php83","ambiente","/admin/environment.php","200","não","todas as verificações do servidor com status OK; em Other checks, avisos de Composer e HTTPS iguais nas duas versões (ver captura)","M3.2_pagina_ambiente_php83_2026-11-22_JPSM.png"
+"php83","T01","/course/view.php?id=6","200","não","","M3.2_pagina_T01_php83_2026-11-22_JPSM.png"
+"php83","T07","/mod/quiz/view.php?id=11","200","não","","M3.2_pagina_T07_php83_2026-11-22_JPSM.png"
+"php83","T10","/grade/edit/tree/index.php?id=6","200","não","","M3.2_pagina_T10_php83_2026-11-22_JPSM.png"
+"php83","T12","/course/view.php?id=7","200","não","","M3.2_pagina_T12_php83_2026-11-22_JPSM.png"
+"php84","ambiente","/admin/environment.php","200","não","todas as verificações do servidor com status OK; em Other checks, avisos de Composer e HTTPS iguais nas duas versões (ver captura)","M3.2_pagina_ambiente_php84_2026-11-22_JPSM.png"
+"php84","T01","/course/view.php?id=6","200","não","","M3.2_pagina_T01_php84_2026-11-22_JPSM.png"
+"php84","T07","/mod/quiz/view.php?id=11","200","não","","M3.2_pagina_T07_php84_2026-11-22_JPSM.png"
+"php84","T10","/grade/edit/tree/index.php?id=6","200","não","","M3.2_pagina_T10_php84_2026-11-22_JPSM.png"
+"php84","T12","/course/view.php?id=7","200","não","","M3.2_pagina_T12_php84_2026-11-22_JPSM.png"

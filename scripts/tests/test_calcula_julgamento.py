@@ -104,18 +104,44 @@ class Julgamento(unittest.TestCase):
         self.assertEqual(cj.julga_objetivo([4, 2, 1]), "Não atende")
         self.assertEqual(cj.julga_objetivo([4, None]), "incompleto")
 
+    def test_q11_e_q22_usam_duas_metricas(self):
+        """Issue #108: Q1.1 = mínimo(M1.1, M1.3) e Q2.2 = mínimo(M2.1, M2.2)."""
+        linhas = [linha("M1.1", 12, 12), linha("M1.3", 9, 12), linha("M2.1", 5, 7), linha("M2.2", 100, 100)]
+        _, questoes, _ = cj.calcula(linhas + [linha(m) for m in cj.HIPOTESES
+                                              if m not in ("M1.1", "M1.3", "M2.1", "M2.2")])
+        self.assertEqual(questoes["Q1.1"], 2)
+        self.assertEqual(questoes["Q1.3"], 2)
+        self.assertEqual(questoes["Q2.1"], 2)
+        self.assertEqual(questoes["Q2.2"], 2)
+
+    def test_hipotese_separada_da_nota(self):
+        """Issue #109: 12 de 12 sem contorno dá nota 4 a M1.3 e refuta H1.3, que espera 11 de 12."""
+        metricas, _, _ = cj.calcula([linha("M1.3", 12, 12)] + [linha(m) for m in cj.HIPOTESES if m != "M1.3"])
+        self.assertEqual(metricas["M1.3"]["nota"], 4)
+        self.assertEqual(metricas["M1.3"]["resultado_hipotese"], "refutada")
+        metricas, _, _ = cj.calcula([linha("M1.3", 11, 12)] + [linha(m) for m in cj.HIPOTESES if m != "M1.3"])
+        self.assertEqual(metricas["M1.3"]["resultado_hipotese"], "confirmada")
+
     def test_q33_e_o_minimo_de_m33_e_m34(self):
         linhas = [linha("M3.3", 6, 6), linha("M3.4", valor=25, r=0)]
         _, questoes, _ = cj.calcula(linhas + [linha(m) for m in cj.HIPOTESES if m not in ("M3.3", "M3.4")])
         self.assertEqual(questoes["Q3.3"], 3)
 
-    def test_planilha_versionada_ainda_pendente(self):
+    def test_planilha_versionada_valida(self):
+        """A planilha tem as 12 métricas e cada uma está pendente ou tem nota de 1 a 4 (a coleta é parcial)."""
         with open(RAIZ / "dados" / "avaliacao" / "calculos.csv", encoding="utf-8-sig") as f:
             linhas = list(csv.DictReader(f))
         self.assertEqual(sorted(l["metrica"] for l in linhas), sorted(cj.HIPOTESES))
         metricas, _, objetivos = cj.calcula(linhas)
-        self.assertTrue(all(m["resultado_hipotese"] == "pendente" for m in metricas.values()))
-        self.assertTrue(all(o["julgamento"] == "incompleto" for o in objetivos.values()))
+        for m in metricas.values():
+            with self.subTest(metrica=m["metrica"]):
+                if m["resultado_hipotese"] == "pendente":
+                    self.assertIsNone(m["nota"])
+                else:
+                    self.assertIn(m["nota"], (1, 2, 3, 4))
+                    self.assertIn(m["resultado_hipotese"], ("confirmada", "refutada"))
+        self.assertTrue(all(o["julgamento"] in ("Atende", "Atende com ressalvas", "Não atende", "incompleto")
+                            for o in objetivos.values()))
 
 
 if __name__ == "__main__":

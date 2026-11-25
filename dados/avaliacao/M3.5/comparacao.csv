@@ -1,0 +1,121 @@
+atualizacao,item,descricao,antes,depois,igual
+1,I01,usuários não excluídos,33,33,sim
+1,I02,usuários com e-mail @example.invalid,32,32,sim
+1,I03,cursos (sem o site),3,3,sim
+1,I04,categorias de curso,1,1,sim
+1,I05,matrículas em AVAL-CAT,31,31,sim
+1,I06,matrículas em AVAL-ORACULO,6,6,sim
+1,I07,matrículas em AVAL-REST,0,0,sim
+1,I08,atribuições de papel,37,37,sim
+1,I09,módulos de atividade em AVAL-CAT,5,5,sim
+1,I10,módulos de atividade em AVAL-ORACULO,13,13,sim
+1,I11,seções de AVAL-CAT,5,5,sim
+1,I12,tarefas (assign),4,4,sim
+1,I13,envios de tarefa com status submitted,10,10,sim
+1,I14,envios de texto online,10,10,sim
+1,I15,questionários (quiz),12,12,sim
+1,I16,tentativas de questionário,0,0,sim
+1,I17,questões,74,74,sim
+1,I18,fóruns,1,1,sim
+1,I19,discussões de fórum,1,1,sim
+1,I20,posts de fórum,4,4,sim
+1,I21,recursos (resource),1,1,sim
+1,I22,arquivos de mod_resource (sem diretórios),1,1,sim
+1,I23,arquivos de envio de tarefa (sem diretórios),0,0,sim
+1,I24,itens de nota em AVAL-CAT,7,7,sim
+1,I25,itens de nota em AVAL-ORACULO,38,38,sim
+1,I26,categorias de nota em AVAL-ORACULO,9,9,sim
+1,I27,notas com finalgrade em itens manuais de AVAL-CAT,90,90,sim
+1,I28,soma das notas dos itens manuais de AVAL-CAT,674.5,674.5,sim
+1,I29,eventos de calendário de AVAL-CAT,6,6,sim
+1,I30,módulos de tarefa em AVAL-ORACULO,2,2,sim
+1,I31,nota final de est01 em AVAL-CAT,23.5,23.5,sim
+1,I32,nota final de est02 em AVAL-CAT,23,23,sim
+1,I33,nota final de est03 em AVAL-CAT,22.5,22.5,sim
+1,I34,nota final de est04 em AVAL-CAT,22,22,sim
+1,I35,nota final de est05 em AVAL-CAT,21.5,21.5,sim
+1,I36,nota final de est06 em AVAL-CAT,21,21,sim
+1,I37,nota final de est07 em AVAL-CAT,20.5,20.5,sim
+1,I38,nota final de est08 em AVAL-CAT,25.5,25.5,sim
+1,I39,nota final de est09 em AVAL-CAT,19.5,19.5,sim
+1,I40,nota final de est10 em AVAL-CAT,24.5,24.5,sim
+2,I01,usuários não excluídos,33,33,sim
+2,I02,usuários com e-mail @example.invalid,32,32,sim
+2,I03,cursos (sem o site),3,3,sim
+2,I04,categorias de curso,1,1,sim
+2,I05,matrículas em AVAL-CAT,31,31,sim
+2,I06,matrículas em AVAL-ORACULO,6,6,sim
+2,I07,matrículas em AVAL-REST,0,0,sim
+2,I08,atribuições de papel,37,37,sim
+2,I09,módulos de atividade em AVAL-CAT,5,5,sim
+2,I10,módulos de atividade em AVAL-ORACULO,13,13,sim
+2,I11,seções de AVAL-CAT,5,5,sim
+2,I12,tarefas (assign),4,4,sim
+2,I13,envios de tarefa com status submitted,10,10,sim
+2,I14,envios de texto online,10,10,sim
+2,I15,questionários (quiz),12,12,sim
+2,I16,tentativas de questionário,0,0,sim
+2,I17,questões,74,74,sim
+2,I18,fóruns,1,1,sim
+2,I19,discussões de fórum,1,1,sim
+2,I20,posts de fórum,4,4,sim
+2,I21,recursos (resource),1,1,sim
+2,I22,arquivos de mod_resource (sem diretórios),1,1,sim
+2,I23,arquivos de envio de tarefa (sem diretórios),0,0,sim
+2,I24,itens de nota em AVAL-CAT,7,7,sim
+2,I25,itens de nota em AVAL-ORACULO,38,38,sim
+2,I26,categorias de nota em AVAL-ORACULO,9,9,sim
+2,I27,notas com finalgrade em itens manuais de AVAL-CAT,90,90,sim
+2,I28,soma das notas dos itens manuais de AVAL-CAT,674.5,674.5,sim
+2,I29,eventos de calendário de AVAL-CAT,6,6,sim
+2,I30,módulos de tarefa em AVAL-ORACULO,2,2,sim
+2,I31,nota final de est01 em AVAL-CAT,23.5,23.5,sim
+2,I32,nota final de est02 em AVAL-CAT,23,23,sim
+2,I33,nota final de est03 em AVAL-CAT,22.5,22.5,sim
+2,I34,nota final de est04 em AVAL-CAT,22,22,sim
+2,I35,nota final de est05 em AVAL-CAT,21.5,21.5,sim
+2,I36,nota final de est06 em AVAL-CAT,21,21,sim
+2,I37,nota final de est07 em AVAL-CAT,20.5,20.5,sim
+2,I38,nota final de est08 em AVAL-CAT,25.5,25.5,sim
+2,I39,nota final de est09 em AVAL-CAT,19.5,19.5,sim
+2,I40,nota final de est10 em AVAL-CAT,24.5,24.5,sim
+3,I01,usuários não excluídos,33,33,sim
+3,I02,usuários com e-mail @example.invalid,32,32,sim
+3,I03,cursos (sem o site),3,3,sim
+3,I04,categorias de curso,1,1,sim
+3,I05,matrículas em AVAL-CAT,31,31,sim
+3,I06,matrículas em AVAL-ORACULO,6,6,sim
+3,I07,matrículas em AVAL-REST,0,0,sim
+3,I08,atribuições de papel,37,37,sim
+3,I09,módulos de atividade em AVAL-CAT,5,5,sim
+3,I10,módulos de atividade em AVAL-ORACULO,13,13,sim
+3,I11,seções de AVAL-CAT,5,5,sim
+3,I12,tarefas (assign),4,4,sim
+3,I13,envios de tarefa com status submitted,10,10,sim
+3,I14,envios de texto online,10,10,sim
+3,I15,questionários (quiz),12,12,sim
+3,I16,tentativas de questionário,0,0,sim
+3,I17,questões,74,74,sim
+3,I18,fóruns,1,1,sim
+3,I19,discussões de fórum,1,1,sim
+3,I20,posts de fórum,4,4,sim
+3,I21,recursos (resource),1,1,sim
+3,I22,arquivos de mod_resource (sem diretórios),1,1,sim
+3,I23,arquivos de envio de tarefa (sem diretórios),0,0,sim
+3,I24,itens de nota em AVAL-CAT,7,7,sim
+3,I25,itens de nota em AVAL-ORACULO,38,38,sim
+3,I26,categorias de nota em AVAL-ORACULO,9,9,sim
+3,I27,notas com finalgrade em itens manuais de AVAL-CAT,90,90,sim
+3,I28,soma das notas dos itens manuais de AVAL-CAT,674.5,674.5,sim
+3,I29,eventos de calendário de AVAL-CAT,6,6,sim
+3,I30,módulos de tarefa em AVAL-ORACULO,2,2,sim
+3,I31,nota final de est01 em AVAL-CAT,23.5,23.5,sim
+3,I32,nota final de est02 em AVAL-CAT,23,23,sim
+3,I33,nota final de est03 em AVAL-CAT,22.5,22.5,sim
+3,I34,nota final de est04 em AVAL-CAT,22,22,sim
+3,I35,nota final de est05 em AVAL-CAT,21.5,21.5,sim
+3,I36,nota final de est06 em AVAL-CAT,21,21,sim
+3,I37,nota final de est07 em AVAL-CAT,20.5,20.5,sim
+3,I38,nota final de est08 em AVAL-CAT,25.5,25.5,sim
+3,I39,nota final de est09 em AVAL-CAT,19.5,19.5,sim
+3,I40,nota final de est10 em AVAL-CAT,24.5,24.5,sim

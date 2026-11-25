@@ -36,7 +36,7 @@ O caminho de cada função na interface segue a documentação oficial da 5.3 (r
 
 Para cada formato:
 
-1. Preencher `data`, `avaliador`, `conclui`, `aceito_receptor`, `sucesso` e os nomes dos arquivos na linha do formato em `execucoes.csv`. Uma falha também é registrada, com a mensagem de erro em `observacao` (R4 e R5).
+1. Preencher `data`, `avaliador`, `conclui`, `aceito_receptor`, `sucesso` e os nomes dos arquivos na linha do formato em `execucoes.csv`. Uma falha também é registrada, com a mensagem de erro em `observacao` (R4 e R5). Em `codificacao`, anotar a saída de `file -bi` do arquivo trocado (medida de contexto da Fase 2).
 2. Guardar os arquivos de entrada e de saída em `dados/avaliacao/M2.1/` e a captura em `dados/avaliacao/evidencias/`, com o nome `M2.1_<formato>_<AAAA-MM-DD>_<iniciais>.png`.
 3. Rodar a comparação:
 
@@ -50,6 +50,16 @@ Para cada formato:
 
 ## Resultado
 
-- `M2.1 = Fs / 7`, a partir de `execucoes.csv`.
-- `M2.2 = soma de Rc / soma de Rt` nos 7 formatos, a partir de `dados/avaliacao/M2.2/resumo.csv`. Nos formatos que falharam em M2.1 e não geraram arquivo, todos os registros esperados contam como não íntegros.
-- Os dois valores entram em `dados/avaliacao/calculos.csv` (#72), e um parágrafo de resultado vai para o artigo (#76).
+Coleta feita em 22/11/2026, numa instância própria (`m21`, Moodle 5.3.1+, PHP 8.3) do servidor de avaliação. Responsável pela issue: Carlos. A execução foi feita pelo Maykon, com scripts versionados, numa máquina compartilhada pela equipe; a conferência é feita na revisão do pull request.
+
+**M2.1 = 7 / 7 = 1,00 (nota 4). H2.1 confirmada.** O detalhe de cada formato está em [`execucoes.csv`](execucoes.csv); os arquivos, em `saida/`; e as referências, congeladas antes de cada troca, em `referencia/`.
+
+Desvios e tentativas, todos registrados em `execucoes.csv`:
+
+- **F1:** importação pelo `uploaduser` da linha de comando (30 criados, 0 erros); a lista de usuários foi exportada direto do banco, com as colunas da exportação em massa. A massa foi aplicada depois e reconheceu as 30 contas importadas.
+- **F2 e F3:** na tentativa 1, a exportação parou com a mensagem "grades/gradesneedregrading", que mostra o identificador do texto em vez da mensagem traduzida. A causa foi a massa, que grava notas pela API sem recalcular o livro de notas. Pelo caminho da interface (relatório de notas e depois Exportar), o recálculo é feito; F3 exportou na tentativa 2, e F2 na tentativa 3, porque o script da tentativa 2 saiu do relatório antes do fim do recálculo. O receptor foi o LibreOffice Calc, sem interface (`soffice --headless`), que abriu os dois arquivos sem conversão manual.
+- **F4 e F5:** importação e exportação pelas classes de formato do Moodle (`qformat_gift` e `qformat_xml`), no banco de questões compartilhado do curso (na 5.x, uma atividade `mod_qbank`).
+- **F6:** exportação pela URL de exportação do calendário; sem Thunderbird na máquina, o receptor foi substituído por validação estrutural do iCal (10 eventos completos) e pela leitura do `compara_registros.py`.
+- **F7:** backup pela linha de comando, restauração no curso vazio pela API de restauração (precheck ok) e backup do curso restaurado.
+
+A integridade (M2.2) está em [`../M2.2/README.md`](../M2.2/README.md).
