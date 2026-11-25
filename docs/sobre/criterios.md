@@ -9,8 +9,8 @@ Esta página liga cada critério de avaliação da disciplina ao lugar do site e
 | 1. Propósito e uso pretendido | Por que avaliar, para quem, decisões e quem decide | [Propósito](../fase-1/proposito.md) | Seção 4.1, Tabela 1 | Concluído |
 | 2. Requisitante e partes interessadas | Papéis, necessidades, critérios de sucesso, influência | [Partes interessadas](../fase-1/partes-interessadas.md) | Seção 4.2, Tabela 2 | Concluído |
 | 3. Tipo de produto e descrição | Classificação, módulos, interfaces, dependências, diagrama, implicações | [Produto avaliado](../fase-1/produto.md) | Seção 4.3, Figura 2 | Concluído |
-| 4. Modelo de qualidade | Adaptação justificada e diagrama ligado às subcaracterísticas | [Modelo de qualidade](../fase-1/modelo-de-qualidade.md) | Seção 4.4, Figura 3 | Concluído |
-| 5. Seleção e priorização | 2 a 4 características (sem usabilidade), método explícito, trade-offs | [Seleção e priorização](../fase-1/caracteristicas.md) | Seção 4.5, Tabela 3 | Concluído |
+| 4. Modelo de qualidade | Adaptação justificada e diagrama ligado às subcaracterísticas | [Modelo de qualidade](../fase-1/modelo-de-qualidade.md) | Seção 4.4, Tabela 3 | Concluído |
+| 5. Seleção e priorização | 2 a 4 características (sem usabilidade), método explícito, trade-offs | [Seleção e priorização](../fase-1/caracteristicas.md) | Seção 4.5, Tabela 4 | Concluído |
 | 6. Escopo e profundidade | Objetos, cortes justificados, limites de validade | [Escopo](../fase-1/escopo.md) | Seção 4.6 | Concluído |
 | 7. ODS | Metas, indicadores e pertinência ao software | [ODS](../fase-1/ods.md) | Seção 4.7 | Concluído |
 | 8. Organização lógica | Sumário, hierarquia, referências cruzadas | Menu e índice de cada fase | Sumário e referências cruzadas | Concluído |
@@ -24,12 +24,12 @@ Esta página liga cada critério de avaliação da disciplina ao lugar do site e
 
 | Critério | O que pede | Onde está no site | Onde está no artigo | Situação |
 |---|---|---|---|---|
-| F2-C1 Objetivos de medição | Template GQM completo | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md) | Seção 5.1, Tabela 4 | Concluído |
-| F2-C2 Questões | Questões que cobrem os atributos do foco | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md) | Tabela 4 | Concluído |
-| F2-C3 Hipóteses | Hipótese clara para todas as questões | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md), [Abstraction sheets](../fase-2/abstraction-sheets.md) | Tabela 4 | Concluído |
-| F2-C4 Métricas | Métricas que respondem às questões, simples, objetivas e válidas | [Métricas](../fase-2/metricas.md) | Seção 5.2, Tabela 5 | Concluído |
-| F2-C5 Níveis e critérios de julgamento | Níveis para todas as métricas e regras explícitas | [Níveis e julgamento](../fase-2/niveis-e-julgamento.md) | Seção 5.3, Tabela 6 | Concluído |
-| F2-C6 Diagrama GQM | Hierarquia completa com os níveis identificados | [Diagrama GQM](../fase-2/diagrama-gqm.md) | Seção 5.4, Figura 4 | Concluído |
+| F2-C1 Objetivos de medição | Template GQM completo | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md) | Seção 5.1, Tabela 5 | Concluído |
+| F2-C2 Questões | Questões que cobrem os atributos do foco | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md) | Tabela 5 | Concluído |
+| F2-C3 Hipóteses | Hipótese clara para todas as questões | [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md), [Abstraction sheets](../fase-2/abstraction-sheets.md) | Tabela 5 | Concluído |
+| F2-C4 Métricas | Métricas que respondem às questões, simples, objetivas e válidas | [Métricas](../fase-2/metricas.md) | Seção 5.2, Tabela 6 | Concluído |
+| F2-C5 Níveis e critérios de julgamento | Níveis para todas as métricas e regras explícitas | [Níveis e julgamento](../fase-2/niveis-e-julgamento.md) | Seção 5.3, Tabela 7 | Concluído |
+| F2-C6 Diagrama GQM | Hierarquia completa com os níveis identificados | [Diagrama GQM](../fase-2/diagrama-gqm.md) | Seção 5.4, Figura 3 | Concluído |
 | F2-C7 Organização lógica | Sumário, hierarquia, referências cruzadas | Menu e índice da Fase 2 | Sumário | Concluído |
 | F2-C8 Português e padronização | Figuras e tabelas numeradas, com legenda e fonte | Todas as páginas | Todo o artigo | Concluído |
 | F2-C9 Uso de IA | Declaração completa | [Declaração de uso de IA](uso-de-ia.md) | Apêndice B | Concluído |
@@ -57,14 +57,14 @@ Esta página liga cada critério de avaliação da disciplina ao lugar do site e
 
 | Critério | O que pede | Onde está no site | Onde está no artigo | Situação |
 |---|---|---|---|---|
-| F4-C1 Obtenção das medidas | Executar as 12 métricas conforme o plano e registrar inclusive as falhas | [Plano de execução](../fase-4/plano-de-execucao.md#metricas-responsaveis-e-evidencias), `dados/avaliacao/` | Seção de resultados da Fase 4 | Em execução nas issues #67 a #71 |
-| F4-C2 Rastreabilidade dos dados | Ligar cada registro bruto e evidência à métrica correspondente | [Registro e rastreabilidade](../fase-3/plano-de-avaliacao.md#5-registro-e-rastreabilidade), `dados/avaliacao/` | Seção de resultados da Fase 4 | Em execução nas issues #67 a #71 |
-| F4-C3 Pontuação e julgamento | Comparar medidas com níveis, julgar questões e objetivos e testar hipóteses | [Do dado ao julgamento](../fase-4/plano-de-execucao.md#do-dado-ao-julgamento), `dados/avaliacao/calculos.csv` | Seção de resultados da Fase 4 | Pendente da issue #72 |
-| F4-C4 Relações entre características | Interpretar como os resultados das três características se relacionam | [Plano de execução](../fase-4/plano-de-execucao.md#sequencia-ate-a-entrega-2) | Seção de resultados da Fase 4 | Pendente da issue #73 |
-| F4-C5 Ação de melhoria | Selecionar, justificar e executar uma melhoria apoiada pelos resultados | [Preparação do julgamento](../fase-3/plano-de-avaliacao.md#preparacao-do-julgamento-fase-4) | Seção de resultados da Fase 4 | Pendente da issue #74 |
-| F4-C6 Resultados, limitações e conclusão | Apresentar resultados, ameaças, decisão e conclusão da avaliação | Página de resultados da Fase 4 | Fase 4 e conclusão | Pendente das issues #75 e #76 |
-| F4-C7 Contribuição e IA | Contribuição totalizando 100% e declaração específica de uso de IA | [Equipe e contribuição](equipe.md), [Declaração de IA](uso-de-ia.md) | Apêndices A e B | Parcial; contribuição final na issue #77 |
-| F4-C8 GitPage, artigo e release | Site atualizado, artigo com até 15 páginas e release E2 com PDF | [Início](../index.md), [Entregas](entregas.md) | Artigo completo | Pendente da issue #78 |
+| F4-C1 Obtenção das medidas | Executar as 12 métricas conforme o plano e registrar inclusive as falhas | [Plano de execução](../fase-4/plano-de-execucao.md#metricas-responsaveis-e-evidencias), `dados/avaliacao/` | Seções 7.1 e 7.2, Tabela 8 | Concluído (#67 a #71) |
+| F4-C2 Rastreabilidade dos dados | Ligar cada registro bruto e evidência à métrica correspondente | [Registro e rastreabilidade](../fase-3/plano-de-avaliacao.md#5-registro-e-rastreabilidade), `dados/avaliacao/` | Seções 7.1 e 7.2, Tabela 8 | Concluído (#67 a #71) |
+| F4-C3 Pontuação e julgamento | Comparar medidas com níveis, julgar questões e objetivos e testar hipóteses | [Resultados e julgamento](../fase-4/resultados.md#respostas-as-questoes-e-julgamento), [Árvore GQM de resultados](../fase-4/arvore-gqm-resultados.md), `dados/avaliacao/calculos.csv` | Seções 7.2 e 7.3, Tabela 8 | Concluído (#72) |
+| F4-C4 Relações entre características | Interpretar como os resultados das três características se relacionam | [Resultados da Fase 4](../fase-4/resultados.md#relacoes-entre-as-caracteristicas) | Seção 7.4 | Concluído (#73) |
+| F4-C5 Ação de melhoria | Selecionar, justificar e executar uma melhoria apoiada pelos resultados | [Ação de melhoria](../fase-4/acao-de-melhoria.md), [evidências de D4](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/tree/main/dados/avaliacao/D4) | Seção 7.5 | Concluído (#74) |
+| F4-C6 Resultados, limitações e conclusão | Apresentar resultados, ameaças, decisão e conclusão da avaliação | [Resultados e julgamento](../fase-4/resultados.md), [Dificuldades e limitações](../fase-4/resultados.md#dificuldades-e-limitacoes) | Seções 7.2 a 7.6 e 8 | Concluído (#75 e #76) |
+| F4-C7 Contribuição e IA | Contribuição totalizando 100% e declaração específica de uso de IA | [Equipe e contribuição](equipe.md), [Declaração de IA](uso-de-ia.md) | Apêndices A e B (Tabelas 9 e 10) | Concluído (#77) |
+| F4-C8 GitPage, artigo e release | Site atualizado, artigo com até 15 páginas e release E2 com PDF | [Início](../index.md), [Entregas](entregas.md) | Artigo completo, 15 páginas ([artigo-e2.pdf](../artigo/artigo-e2.pdf)) | Release E2 na issue #78 |
 
 <p class="legenda">Tabela 4. Critérios da Fase 4 e onde são atendidos. Fonte: elaboração própria a partir da rubrica da Fase 4.</p>
 
