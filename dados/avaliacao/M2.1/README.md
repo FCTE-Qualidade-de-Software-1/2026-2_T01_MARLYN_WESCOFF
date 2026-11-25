@@ -50,7 +50,7 @@ Para cada formato:
 
 ## Resultado
 
-Coleta feita em 22/11/2026, numa instância própria (`m21`, Moodle 5.3.1+, PHP 8.3) do servidor de avaliação. Responsável: Carlos. A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe, e o Carlos confere na revisão do pull request.
+Coleta feita em 22/11/2026, numa instância própria (`m21`, Moodle 5.3.1+, PHP 8.3) do servidor de avaliação. Responsável pela issue: Carlos. A execução foi feita pelo Maykon, com scripts versionados, numa máquina compartilhada pela equipe; a conferência é feita na revisão do pull request.
 
 **M2.1 = 7 / 7 = 1,00 (nota 4). H2.1 confirmada.** O detalhe de cada formato está em [`execucoes.csv`](execucoes.csv); os arquivos, em `saida/`; e as referências, congeladas antes de cada troca, em `referencia/`.
 

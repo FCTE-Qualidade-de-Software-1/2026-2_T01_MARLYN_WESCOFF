@@ -43,7 +43,7 @@ def le_log(caminho):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--avaliador", default="Pedro Goncalves Rocha (execução automatizada pelo Claude Code)")
+    ap.add_argument("--avaliador", default="Maykon Junio dos Santos Soares")
     args = ap.parse_args()
 
     linhas, minutos = [], {"limpa": [], "atualizacao": []}

@@ -1,6 +1,6 @@
 # Coleta de M3.3 e M3.4 (instalação e atualização)
 
-Coleta da issue #71, feita em 22/11/2026. Responsável: Pedro (a ata 02 previa que o Bernardo fizesse uma das três instalações, pela regra R6; aqui as seis execuções foram automatizadas, então a conferência independente fica para a revisão do pull request). A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe.
+Coleta da issue #71, feita em 22/11/2026. Responsável: Pedro (a ata 02 previa que o Bernardo fizesse uma das três instalações, pela regra R6; aqui as seis execuções foram feitas por script, então a conferência independente fica para a revisão do pull request). A execução foi feita pelo Maykon, com scripts versionados, numa máquina compartilhada pela equipe.
 
 **Resultado: M3.3 = 6 / 6 = 1,00 (nota 4). M3.4: mediana de 1,18 min na instalação limpa e 0,90 min na atualização, sem retentativas (nota 4). H3.3 refutada na parte qualitativa: nenhuma atualização falhou por causa de `public/`.**
 

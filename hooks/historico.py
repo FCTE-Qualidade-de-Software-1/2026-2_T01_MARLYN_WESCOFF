@@ -46,10 +46,11 @@ def _commits(caminho):
         saida = subprocess.run(
             ["git", "log", "--follow", "--no-merges", "--date=format:%d/%m/%Y",
              "--format=%H%x1f%ad%x1f%an%x1f%s", "--", caminho],
-            cwd=RAIZ, capture_output=True, text=True, timeout=30, check=True).stdout
+            cwd=RAIZ, capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=30, check=True).stdout
     except (OSError, subprocess.SubprocessError):
         return []
-    return [l.split("\x1f") for l in saida.splitlines() if l.count("\x1f") == 3]
+    return [l.split("\x1f") for l in (saida or "").splitlines() if l.count("\x1f") == 3]
 
 
 def on_page_markdown(markdown, page, config, files, **kwargs):

@@ -1,31 +1,31 @@
 formato,chave,situacao,campos_divergentes,detalhe
-F3,est01@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='10.00' obtido='10.0' | Avaliação 2: esperado='6.00' obtido='6.0' | Participação: esperado='7.50' obtido='7.5'
-F3,est02@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='8.00' obtido='8.0' | Avaliação 2: esperado='9.50' obtido='9.5' | Participação: esperado='5.50' obtido='5.5'
-F3,est03@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='6.00' obtido='6.0' | Avaliação 2: esperado='7.50' obtido='7.5' | Participação: esperado='9.00' obtido='9.0'
-F3,est04@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.50' obtido='9.5' | Avaliação 2: esperado='5.50' obtido='5.5' | Participação: esperado='7.00' obtido='7.0'
-F3,est05@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.50' obtido='7.5' | Avaliação 2: esperado='9.00' obtido='9.0' | Participação: esperado='5.00' obtido='5.0'
-F3,est06@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='5.50' obtido='5.5' | Avaliação 2: esperado='7.00' obtido='7.0' | Participação: esperado='8.50' obtido='8.5'
-F3,est07@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.00' obtido='9.0' | Avaliação 2: esperado='5.00' obtido='5.0' | Participação: esperado='6.50' obtido='6.5'
-F3,est08@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.00' obtido='7.0' | Avaliação 2: esperado='8.50' obtido='8.5' | Participação: esperado='10.00' obtido='10.0'
-F3,est09@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='5.00' obtido='5.0' | Avaliação 2: esperado='6.50' obtido='6.5' | Participação: esperado='8.00' obtido='8.0'
-F3,est10@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='8.50' obtido='8.5' | Avaliação 2: esperado='10.00' obtido='10.0' | Participação: esperado='6.00' obtido='6.0'
-F3,est11@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='6.50' obtido='6.5' | Avaliação 2: esperado='8.00' obtido='8.0' | Participação: esperado='9.50' obtido='9.5'
-F3,est12@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='10.00' obtido='10.0' | Avaliação 2: esperado='6.00' obtido='6.0' | Participação: esperado='7.50' obtido='7.5'
-F3,est13@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='8.00' obtido='8.0' | Avaliação 2: esperado='9.50' obtido='9.5' | Participação: esperado='5.50' obtido='5.5'
-F3,est14@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='6.00' obtido='6.0' | Avaliação 2: esperado='7.50' obtido='7.5' | Participação: esperado='9.00' obtido='9.0'
-F3,est15@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.50' obtido='9.5' | Avaliação 2: esperado='5.50' obtido='5.5' | Participação: esperado='7.00' obtido='7.0'
-F3,est16@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.50' obtido='7.5' | Avaliação 2: esperado='9.00' obtido='9.0' | Participação: esperado='5.00' obtido='5.0'
-F3,est17@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='5.50' obtido='5.5' | Avaliação 2: esperado='7.00' obtido='7.0' | Participação: esperado='8.50' obtido='8.5'
-F3,est18@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.00' obtido='9.0' | Avaliação 2: esperado='5.00' obtido='5.0' | Participação: esperado='6.50' obtido='6.5'
-F3,est19@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.00' obtido='7.0' | Avaliação 2: esperado='8.50' obtido='8.5' | Participação: esperado='10.00' obtido='10.0'
-F3,est20@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='5.00' obtido='5.0' | Avaliação 2: esperado='6.50' obtido='6.5' | Participação: esperado='8.00' obtido='8.0'
-F3,est21@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='8.50' obtido='8.5' | Avaliação 2: esperado='10.00' obtido='10.0' | Participação: esperado='6.00' obtido='6.0'
-F3,est22@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='6.50' obtido='6.5' | Avaliação 2: esperado='8.00' obtido='8.0' | Participação: esperado='9.50' obtido='9.5'
-F3,est23@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='10.00' obtido='10.0' | Avaliação 2: esperado='6.00' obtido='6.0' | Participação: esperado='7.50' obtido='7.5'
-F3,est24@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='8.00' obtido='8.0' | Avaliação 2: esperado='9.50' obtido='9.5' | Participação: esperado='5.50' obtido='5.5'
-F3,est25@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='6.00' obtido='6.0' | Avaliação 2: esperado='7.50' obtido='7.5' | Participação: esperado='9.00' obtido='9.0'
-F3,est26@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.50' obtido='9.5' | Avaliação 2: esperado='5.50' obtido='5.5' | Participação: esperado='7.00' obtido='7.0'
-F3,est27@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.50' obtido='7.5' | Avaliação 2: esperado='9.00' obtido='9.0' | Participação: esperado='5.00' obtido='5.0'
-F3,est28@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='5.50' obtido='5.5' | Avaliação 2: esperado='7.00' obtido='7.0' | Participação: esperado='8.50' obtido='8.5'
-F3,est29@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='9.00' obtido='9.0' | Avaliação 2: esperado='5.00' obtido='5.0' | Participação: esperado='6.50' obtido='6.5'
-F3,est30@example.invalid,divergente,Avaliação 1;Avaliação 2;Participação,Avaliação 1: esperado='7.00' obtido='7.0' | Avaliação 2: esperado='8.50' obtido='8.5' | Participação: esperado='10.00' obtido='10.0'
+F3,est01@example.invalid,identico,,
+F3,est02@example.invalid,identico,,
+F3,est03@example.invalid,identico,,
+F3,est04@example.invalid,identico,,
+F3,est05@example.invalid,identico,,
+F3,est06@example.invalid,identico,,
+F3,est07@example.invalid,identico,,
+F3,est08@example.invalid,identico,,
+F3,est09@example.invalid,identico,,
+F3,est10@example.invalid,identico,,
+F3,est11@example.invalid,identico,,
+F3,est12@example.invalid,identico,,
+F3,est13@example.invalid,identico,,
+F3,est14@example.invalid,identico,,
+F3,est15@example.invalid,identico,,
+F3,est16@example.invalid,identico,,
+F3,est17@example.invalid,identico,,
+F3,est18@example.invalid,identico,,
+F3,est19@example.invalid,identico,,
+F3,est20@example.invalid,identico,,
+F3,est21@example.invalid,identico,,
+F3,est22@example.invalid,identico,,
+F3,est23@example.invalid,identico,,
+F3,est24@example.invalid,identico,,
+F3,est25@example.invalid,identico,,
+F3,est26@example.invalid,identico,,
+F3,est27@example.invalid,identico,,
+F3,est28@example.invalid,identico,,
+F3,est29@example.invalid,identico,,
+F3,est30@example.invalid,identico,,

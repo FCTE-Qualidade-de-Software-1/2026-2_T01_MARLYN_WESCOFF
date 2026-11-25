@@ -135,7 +135,7 @@ Limites por métrica fixados \textbf{antes} da coleta (ex.: M2.3: 6/6 $\rightarr
 \begin{frame}{Fase 4 \textperiodcentered{} Execução e evidências}
 \small
 \begin{itemize}
-\item Coleta automatizada por \textbf{scripts versionados}, executada pelo Claude Code numa máquina compartilhada; cada responsável confere a sua métrica.
+\item Coleta automatizada por \textbf{scripts versionados}, executada numa máquina compartilhada; cada responsável confere a sua métrica.
 \item \textbf{Playwright} na interface: Chrome e Firefox do Windows, Firefox do Ubuntu, Android emulado (M3.1) e PHP 8.3 $\times$ 8.4 (M3.2).
 \item \textbf{API do Moodle} e \texttt{faketime}: 20 casos do oráculo (M1.2), relógio em D 23:58, D+1 00:01…
 \item \textbf{Contêiner novo da imagem-base} em cada uma das 6 execuções de M3.3, com o \texttt{script} gravando log e tempos.
@@ -153,7 +153,7 @@ M1.1 Cobertura & 12/12 = 1,00 & 4 & confirmada & as 12 tarefas com função do n
 M1.2 Correção & 19/20 = 0,95 & \textcolor{red}{\textbf{1}} & refutada & A-04: exibe 53,00 de 70; oráculo espera 7,57 \\
 M1.3 Pertinência & 12/12 = 1,00 & 4 & refutada & nenhum contorno (esperava 1) \\
 M2.1 Intercâmbio & 7/7 = 1,00 & 4 & confirmada & 7 formatos trocados \\
-M2.2 Integridade & 97/132 = 0,73 & \textcolor{red}{\textbf{1}} & refutada & estrito; por valor, 132/132 \\
+M2.2 Integridade & 132/132 = 1,00 & 4 & confirmada & acentuação íntegra; instrumento corrigido \\
 M2.3 Serviços web & 6/6 = 1,00 & 4 & confirmada & cliente com permissões mínimas \\
 M2.4 Coexistência & 2/3 = 0,67 & \textcolor{orange}{\textbf{2}} & refutada & vizinha web sem resposta na instalação \\
 M3.1 Acesso & 8/8 = 1,00 & 4 & confirmada & 4 ambientes \\
@@ -172,11 +172,11 @@ M3.5 Preservação & 40/40 = 1,00 & 4 & confirmada & 3 atualizações \\
 Objetivo & Critério congelado & Sensibilidade & Decisão recomendada \\
 \midrule
 G1 Adequação funcional & \textcolor{red}{\textbf{Não atende}} (Q1.2 = 1) & Atende & D1: adotar, conferindo a exibição de totais em soma natural \\
-G2 Compatibilidade & \textcolor{red}{\textbf{Não atende}} (Q2.2 = 1) & Atende com ressalvas & D2: manter as integrações, publicando virtual hosts com \texttt{reload} \\
+G2 Compatibilidade & \textbf{Atende com ressalvas} (Q2.4 = 2) & Atende com ressalvas & D2: manter as integrações, publicando virtual hosts com \texttt{reload} \\
 G3 Flexibilidade & \textcolor{green!50!black}{\textbf{Atende}} & Atende & D3: migrar pelo procedimento documentado, lendo ``Configuring the Router'' \\
 \bottomrule
 \end{tabularx}\\[0.8em]
-As duas notas 1 vêm da \textbf{comparação} (escala de exibição e representação de números), e não de dado perdido ou cálculo errado. Pela regra R1, o critério não muda depois da coleta: a leitura por valor é apresentada como análise de sensibilidade, e a decisão vai para a ata.
+A única nota 1 (Q1.2, caso A-04) vem da \textbf{escala de exibição} da soma natural, e não de cálculo errado. Pela regra R1, o critério não muda depois da coleta: a leitura do A-04 como diferença de escala é apresentada como análise de sensibilidade, e a decisão vai para a ata.
 \end{frame}
 
 \begin{frame}{Problemas encontrados no produto}

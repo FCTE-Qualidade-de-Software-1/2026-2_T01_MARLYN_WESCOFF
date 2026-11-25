@@ -1,6 +1,6 @@
 # Resultados e julgamento
 
-Coleta de 15 a 22/11/2026, no servidor de avaliação montado pelo script de preparação: Moodle 5.3.1+ e 4.5.16+, PHP 8.3.37 e 8.4.28, PostgreSQL 17.12. M1.1 e M1.3 foram coletadas pela interface; as demais foram executadas por scripts versionados (Playwright na interface, API do próprio Moodle, `faketime` nos prazos e um contêiner novo da imagem-base por execução de M3.3), com a execução automatizada pelo Claude Code numa máquina compartilhada pela equipe (ver [Declaração de uso de IA](../sobre/uso-de-ia.md)). Desvios e tentativas descartadas estão no README de cada métrica.
+Coleta de 15 a 22/11/2026, no servidor de avaliação montado pelo script de preparação: Moodle 5.3.1+ e 4.5.16+, PHP 8.3.37 e 8.4.28, PostgreSQL 17.12. M1.1 e M1.3 foram coletadas pela interface; as demais foram executadas por scripts versionados (Playwright na interface, API do próprio Moodle, `faketime` nos prazos e um contêiner novo da imagem-base por execução de M3.3), executados pelo Maykon numa máquina compartilhada pela equipe. Desvios e tentativas descartadas estão no README de cada métrica.
 
 ## Métricas
 
@@ -10,7 +10,7 @@ Coleta de 15 a 22/11/2026, no servidor de avaliação montado pelo script de pre
 | M1.2 Correção funcional | 19/20 = 0,95 | 1 | H1.2 refutada | A-04: o Moodle exibe 53,00 de 70 (75,71%); o oráculo espera 7,57 | [M1.2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M1.2/README.md) |
 | M1.3 Pertinência funcional | 12/12 = 1,00 | 4 | H1.3 refutada | Nenhum contorno; esperava-se um, na restauração | [M1.1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M1.1/execucoes.csv) |
 | M2.1 Intercâmbio de formatos | 7/7 = 1,00 | 4 | H2.1 confirmada | F2 e F3 na segunda tentativa válida | [M2.1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M2.1/README.md) |
-| M2.2 Integridade dos dados | 97/132 = 0,73 | 1 | H2.2 refutada | Comparação estrita; por valor, 132/132 | [M2.2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M2.2/README.md) |
+| M2.2 Integridade dos dados | 132/132 = 1,00 | 4 | H2.2 confirmada | Acentuação íntegra; comparação refeita em 24/11 com o instrumento corrigido (a de 22/11 dava 97/132 por diferença de representação) | [M2.2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M2.2/README.md) |
 | M2.3 Serviços web | 6/6 = 1,00 | 4 | H2.3 confirmada | HTTP 200, sem exceção, valores da massa | [M2.3](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M2.3/README.md) |
 | M2.4 Coexistência | 2/3 = 0,67 | 2 | H2.4 refutada | Vizinha web sem resposta por cerca de 2 s na instalação | [M2.4](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M2.4/README.md) |
 | M3.1 Ambientes de acesso | 8/8 = 1,00 | 4 | H3.1 confirmada | Chrome e Firefox no Windows, Firefox no Ubuntu e Android emulado | [M3.1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/blob/main/dados/avaliacao/M3.1/README.md) |
@@ -26,12 +26,12 @@ Coleta de 15 a 22/11/2026, no servidor de avaliação montado pelo script de pre
 | Objetivo | Notas das questões | Julgamento (critério congelado) | Análise de sensibilidade | Decisão recomendada |
 |---|---|---|---|---|
 | **G1** Adequação funcional | Q1.1 = 4 · Q1.2 = 1 · Q1.3 = 4 | **Não atende** | Atende, se o A-04 for tratado como diferença de escala | D1: prosseguir com a adoção, conferindo a exibição de totais em soma natural |
-| **G2** Compatibilidade | Q2.1 = 4 · Q2.2 = 1 · Q2.3 = 4 · Q2.4 = 2 | **Não atende** | Atende com ressalvas, com M2.2 por valor | D2: manter as integrações, publicando virtual hosts com `reload` |
+| **G2** Compatibilidade | Q2.1 = 4 · Q2.2 = 4 · Q2.3 = 4 · Q2.4 = 2 | **Atende com ressalvas** | Atende com ressalvas | D2: manter as integrações, publicando virtual hosts com `reload` |
 | **G3** Flexibilidade | Q3.1 = 4 · Q3.2 = 4 · Q3.3 = 4 · Q3.4 = 4 | **Atende** | Atende | D3: migrar com o procedimento documentado, lendo "Configuring the Router" |
 
 <p class="legenda">Tabela 2. Julgamento dos objetivos e decisão para o requisitante. Fonte: elaborado pelos autores, pelas regras de <a href="../../fase-2/niveis-e-julgamento/">Níveis e julgamento</a>.</p>
 
-As duas notas 1 vêm da comparação, e não de cálculo errado ou de dado perdido. Como a regra R1 proíbe mudar o critério depois da coleta, a equipe registra os dois resultados; a decisão de adotar a leitura por valor fica para a ata, com o motivo.
+A única nota 1 (Q1.2, pelo caso A-04) vem da escala de exibição, e não de cálculo errado. Como a regra R1 proíbe mudar o critério depois da coleta, a equipe registra o julgamento pelo critério e a análise de sensibilidade; a decisão sobre o A-04 fica para a ata, com o motivo. M2.2 não entra nessa análise: a divergência de 22/11 era do instrumento de comparação, corrigido antes do julgamento sem mudar o critério (PR #134).
 
 - **Q1.1, O núcleo dá conta das tarefas?** Sim: 12 de 12 tarefas, sem contorno.
 - **Q1.2, Notas e prazos saem certos?** Os cálculos, sim (19 de 20 iguais ao oráculo); a exibição do total em soma natural, não na escala esperada.

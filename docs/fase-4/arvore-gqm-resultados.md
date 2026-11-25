@@ -18,10 +18,10 @@ flowchart BT
     Q12 --> G1
     Q13["<b>Q1.3</b> As tarefas saem sem improviso?<br/>nota 4"]:::n4
     Q13 --> G1
-    G2["<b>G2 · Compatibilidade</b><br/>Não atende"]:::n1
+    G2["<b>G2 · Compatibilidade</b><br/>Atende com ressalvas"]:::n2
     Q21["<b>Q2.1</b> Os dados entram e saem por arquivo?<br/>nota 4"]:::n4
     Q21 --> G2
-    Q22["<b>Q2.2</b> Os dados chegam como saíram?<br/>nota 1"]:::n1
+    Q22["<b>Q2.2</b> Os dados chegam como saíram?<br/>nota 4"]:::n4
     Q22 --> G2
     Q23["<b>Q2.3</b> Um sistema externo consegue usar o Moodle?<br/>nota 4"]:::n4
     Q23 --> G2
@@ -40,7 +40,7 @@ flowchart BT
     M12["<b>M1.2</b> Correção funcional<br/>0,95 · nota 1<br/>H1.2 refutada"]:::n1
     M13["<b>M1.3</b> Pertinência funcional<br/>1,00 · nota 4<br/>H1.3 refutada"]:::n4
     M21["<b>M2.1</b> Intercâmbio de formatos<br/>1,00 · nota 4<br/>H2.1 confirmada"]:::n4
-    M22["<b>M2.2</b> Integridade<br/>0,73 · nota 1<br/>H2.2 refutada"]:::n1
+    M22["<b>M2.2</b> Integridade<br/>1,00 · nota 4<br/>H2.2 confirmada"]:::n4
     M23["<b>M2.3</b> Conectividade REST<br/>1,00 · nota 4<br/>H2.3 confirmada"]:::n4
     M24["<b>M2.4</b> Coexistência disponível<br/>0,67 · nota 2<br/>H2.4 refutada"]:::n2
     M31["<b>M3.1</b> Adaptab. acesso<br/>1,00 · nota 4<br/>H3.1 confirmada"]:::n4
@@ -87,12 +87,12 @@ flowchart BT
 
 ### G2 – Compatibilidade
 
-**Julgamento: Não atende.** Decisão D2: Não prosseguir sem correção ou contorno documentado; candidata à ação de melhoria (D4).
+**Julgamento: Atende com ressalvas.** Decisão D2: Prosseguir com as ações de mitigação listadas no relatório.
 
 | Questão | Métricas (valor · nota) | Nota da questão | Hipóteses |
 |---|---|---|---|
 | **Q2.1** Os dados entram e saem por arquivo? | M2.1 1,00 · 4 | 4 (Excelente) | H2.1: confirmada |
-| **Q2.2** Os dados chegam como saíram? | M2.1 1,00 · 4<br>M2.2 0,73 · 1 | 1 (Crítico) | H2.1: confirmada<br>H2.2: refutada |
+| **Q2.2** Os dados chegam como saíram? | M2.1 1,00 · 4<br>M2.2 1,00 · 4 | 4 (Excelente) | H2.1: confirmada<br>H2.2: confirmada |
 | **Q2.3** Um sistema externo consegue usar o Moodle? | M2.3 1,00 · 4 | 4 (Excelente) | H2.3: confirmada |
 | **Q2.4** Divide o servidor sem atrapalhar? | M2.4 0,67 · 2 | 2 (Insuficiente) | H2.4: refutada |
 

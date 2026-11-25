@@ -3,7 +3,7 @@ M1.1,1.0,4,H1.1,12 de 12 tarefas com função,confirmada
 M1.2,0.95,1,H1.2,todos os casos iguais ao oráculo,refutada
 M1.3,1.0,4,H1.3,11 de 12 tarefas sem contorno (só a restauração de backup),refutada
 M2.1,1.0,4,H2.1,6 ou 7 de 7 formatos,confirmada
-M2.2,0.7348,1,H2.2,todos os registros iguais à referência,refutada
+M2.2,1.0,4,H2.2,todos os registros iguais à referência,confirmada
 M2.3,1.0,4,H2.3,6 de 6 funções,confirmada
 M2.4,0.6667,2,H2.4,3 de 3 entidades vizinhas sem efeito,refutada
 M3.1,1.0,4,H3.1,7 ou 8 de 8 no pior ambiente (conferir também se os 3 desktops concluem tudo),confirmada

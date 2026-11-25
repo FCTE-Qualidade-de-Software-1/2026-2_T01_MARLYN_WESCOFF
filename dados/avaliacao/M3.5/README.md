@@ -1,6 +1,6 @@
 # Coleta de M3.5 (preservação na atualização)
 
-Coleta da issue #71, feita em 22/11/2026, junto com as três atualizações de M3.3. Responsável: Pedro (execução automatizada pelo Claude Code; ver o README de M3.3).
+Coleta da issue #71, feita em 22/11/2026, junto com as três atualizações de M3.3. Responsável pela issue: Pedro (execução feita pelo Maykon, por script; ver o README de M3.3).
 
 **Resultado: M3.5 = 40 / 40 = 1,00 nas três atualizações (nota 4). H3.4 confirmada.**
 

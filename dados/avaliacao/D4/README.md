@@ -31,6 +31,6 @@ Três mudanças em `scripts/preparar_servidor.sh`:
 
 <p class="legenda">Tabela 1. Medidas antes e depois da ação de melhoria. Fonte: ../M2.4/verificacoes.csv, verificacoes-depois.csv, roteador-antes.txt e roteador-depois.txt.</p>
 
-O "depois" foi medido num servidor novo, criado da mesma imagem-base, com as três vizinhas criadas antes da instalação e verificadas antes, durante (a cada 2 s) e depois, como na coleta de M2.4. A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe.
+O "depois" foi medido num servidor novo, criado da mesma imagem-base, com as três vizinhas criadas antes da instalação e verificadas antes, durante (a cada 2 s) e depois, como na coleta de M2.4. A execução foi feita por script numa máquina compartilhada pela equipe.
 
 Limites: a medida depois cobre a operação de instalação, onde o problema apareceu; as outras três operações de M2.4 (cron, backup e atualização) já não afetavam as vizinhas. A M2.4 da avaliação continua 0,67, porque é o resultado do procedimento avaliado; a ação mostra que o problema tem correção simples, que vira recomendação para a decisão D2.

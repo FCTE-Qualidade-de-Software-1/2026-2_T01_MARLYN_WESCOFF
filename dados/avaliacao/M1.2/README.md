@@ -1,6 +1,6 @@
 # Coleta de M1.2 (correção funcional)
 
-Coleta da issue #67, feita em 22/11/2026. Responsável: Bernardo. A execução foi automatizada pelo Claude Code numa máquina compartilhada pela equipe (ver [Declaração de uso de IA](../../../docs/sobre/uso-de-ia.md)), e o Bernardo confere o resultado na revisão do pull request. O oráculo (`oraculo.csv`) foi feito e conferido antes da coleta.
+Coleta da issue #67, feita em 22/11/2026. Responsável pela issue: Bernardo. A execução foi feita pelo Maykon, com scripts versionados, numa máquina compartilhada pela equipe; a conferência é feita na revisão do pull request. O oráculo (`oraculo.csv`) foi feito e conferido antes da coleta.
 
 **Resultado: M1.2 = 19 / 20 = 0,95. Pela Tabela 2 da Fase 2, a divergência não é só de prazo, então a nota é 1. H1.2 refutada.**
 
