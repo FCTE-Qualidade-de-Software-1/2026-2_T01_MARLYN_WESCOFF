@@ -30,8 +30,8 @@ flowchart LR
 |---|---|---|---|
 | 1 | Estabelecer o propósito; identificar o tipo de produto; especificar o modelo de qualidade | ISO/IEC 25010:2023; classificação de Pressman e IEEE 1062; matriz de decisão ponderada | [Requisitos de avaliação](fase-1/index.md) |
 | 2 | Selecionar métricas; estabelecer níveis de pontuação; estabelecer critérios de julgamento | GQM (Basili et al., 1994), *abstraction sheets*, medidas da ISO/IEC 25023 | [Especificação da avaliação](fase-2/index.md) |
-| 3 | Produzir o plano de avaliação (método, instruções, recursos, cronograma) | Em andamento | [Plano de avaliação](fase-3/plano-de-avaliacao.md) |
-| 4 | Obter as medidas; comparar com os critérios; julgar os resultados; executar uma ação de melhoria | A definir na Entrega 2 | Relatório de resultados |
+| 3 | Produzir o plano de avaliação (método, instruções, recursos, cronograma) | Avaliação externa de caixa-preta orientada a tarefas; servidor de referência reproduzível por script; massa fictícia gerada por script; oráculo calculado antes da coleta | [Plano de avaliação](fase-3/plano-de-avaliacao.md) e [Preparação do servidor](fase-3/preparacao-do-servidor.md) |
+| 4 | Obter as medidas; comparar com os critérios; julgar os resultados; executar uma ação de melhoria | Coleta automatizada por scripts versionados (Playwright, API do Moodle, `faketime`, contêineres da imagem-base); julgamento pelo pior caso (`calcula_julgamento.py`); ação de melhoria medida antes e depois | [Resultados e julgamento](fase-4/resultados.md) e [Ação de melhoria](fase-4/acao-de-melhoria.md) |
 
 <p class="legenda">Tabela 1. Atividades, técnicas e produtos de cada fase. Fonte: elaboração própria.</p>
 
@@ -46,20 +46,20 @@ As decisões coletivas (escolha do produto, das características, dos critérios
 | Ferramenta | Uso no projeto |
 |---|---|
 | GitHub (repositório da disciplina) | Versionamento dos documentos, dos dados e do artigo; issues, milestones e releases |
-| GitHub Issues e Milestones | Unidade de trabalho do projeto; cada milestone corresponde a uma sprint; base das métricas do PSM/CID |
+| GitHub Issues e Milestones | Unidade de trabalho do projeto; cada milestone corresponde a um marco da disciplina (E1, PC1, PC2, E2), e a iteração é a semana do quadro; base das medidas da gestão do projeto (PSM/CID) |
 | GitHub Pages + MkDocs Material | Publicação desta GitPage a partir da pasta `docs/` |
 | LaTeX (modelo SBC) | Elaboração do artigo, na pasta `artigo/` |
 | Mermaid | Diagramas versionados como texto (contexto, modelo de qualidade, GQM) |
-| Planilha/CSV | Registro de horas (`dados/gestao/horas.csv`) e, na Fase 4, das medições |
+| Planilha/CSV | Registro de horas (`docs/metricas/dados/brutos/esforco.csv`) e, na Fase 4, das medições (`dados/avaliacao/`) |
 
 <p class="legenda">Tabela 2. Ferramentas e seus usos. Fonte: elaboração própria.</p>
 
 ## Fluxo de trabalho no repositório
 
-1. Cada tarefa é aberta como **issue** a partir do modelo "Tarefa", com responsável, estimativa de horas e milestone (sprint).
+1. Cada tarefa é aberta como **issue** a partir do modelo "Tarefa", com responsável, estimativa de horas, milestone (marco) e a semana no quadro.
 2. O trabalho é feito em um **branch** próprio (`docs/fase-2-compatibilidade`, por exemplo).
 3. A integração na `main` acontece por **pull request** revisado por outro integrante.
-4. Ao fechar a issue, o responsável registra as **horas reais** no campo da issue e em `dados/gestao/horas.csv`.
+4. Ao fechar a issue, o responsável registra as **horas reais** em `docs/metricas/dados/brutos/esforco.csv`.
 5. Cada push na `main` publica a GitPage automaticamente (workflow `deploy.yml`); alterações no artigo são compiladas pelo workflow `artigo.yml`.
 6. Ao fim de cada entrega, é criada uma **release** com a tag da entrega (`E1`, `E2`) e o PDF do artigo anexado.
 
@@ -77,9 +77,9 @@ $ cd artigo && latexmk -pdf main.tex
 Output written on main.pdf
 ```
 
-## Gestão com PSM/CID
+## Gestão do projeto com PSM/CID
 
-O andamento do projeto é medido em três categorias de informação do PSM/CID: **Calendário e Progresso**, **Recursos e Custos** e **Desempenho dos Processos**. As medidas, os critérios de decisão e as decisões tomadas estão em [Gestão do projeto](gestao/index.md).
+Esta seção trata da **gestão do projeto da equipe**, e não da avaliação do produto (que usa o GQM, acima). O andamento do projeto é medido em três categorias de informação do PSM/CID: **Calendário e Progresso**, **Recursos e Custos** e **Desempenho dos Processos**. As medidas, os critérios de decisão e as decisões tomadas estão em [Gestão do projeto](gestao/index.md).
 
 ## Rastreabilidade dos dados
 

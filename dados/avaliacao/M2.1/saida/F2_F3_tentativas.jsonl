@@ -1,0 +1,5 @@
+{"formato":"F2","tentativa":1,"conclui":"não","mensagem":"grades/gradesneedregrading More information about this error"}
+{"formato":"F2","tentativa":2,"conclui":"não","mensagem":"grades/gradesneedregrading More information about this error"}
+{"formato":"F3","tentativa":1,"conclui":"não","mensagem":"grades/gradesneedregrading More information about this error"}
+{"formato":"F3","tentativa":2,"conclui":"sim","arquivo":"F3_notas_exportadas.xlsx","sugerido":"AVAL-CAT Grades.xlsx"}
+{"formato":"F2","tentativa":3,"conclui":"sim","arquivo":"F2_notas_exportadas.csv","sugerido":"AVAL-CAT Grades-20261123_0224-comma_separated.csv","observacao":"depois do recálculo do livro de notas concluído (a tentativa 2 saiu do relatório de notas antes do fim do recálculo)"}

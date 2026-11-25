@@ -43,13 +43,15 @@
 
 ### Da métrica para a questão
 
+A nota da questão é o **mínimo** das notas das métricas que a refinam, pelo mesmo motivo do pior caso usado nos objetivos.
+
 | Questão | Regra |
 |---|---|
-| Q1.1 | nota(M1.1) |
+| Q1.1 | mínimo(nota(M1.1), nota(M1.3)) |
 | Q1.2 | nota(M1.2) |
 | Q1.3 | nota(M1.3) |
 | Q2.1 | nota(M2.1) |
-| Q2.2 | nota(M2.2) |
+| Q2.2 | mínimo(nota(M2.1), nota(M2.2)) |
 | Q2.3 | nota(M2.3) |
 | Q2.4 | nota(M2.4) |
 | Q3.1 | nota(M3.1) |
@@ -73,8 +75,8 @@ O julgamento de cada objetivo usa o **pior caso** entre as questões, porque uma
 
 ### Exemplo de aplicação
 
-Suponha que, na Fase 4, M2.1 = 6/7 = 0,86 (nota 3), M2.2 = 0,97 (nota 2, por perda de acentuação na exportação CSV), M2.3 = 1,00 (nota 4) e M2.4 = 1,00 (nota 4). As notas das questões são Q2.1 = 3, Q2.2 = 2, Q2.3 = 4 e Q2.4 = 4. Não há nota 1 e há uma nota 2, então **G2 = Atende com ressalvas**. A ação recomendada à Coordenação de TI seria documentar a codificação correta para a exportação de notas e incluir a verificação no teste de regressão da migração.
+Suponha que, na Fase 4, M2.1 = 6/7 = 0,86 (nota 3), M2.2 = 0,97 (nota 2, por perda de acentuação na exportação CSV), M2.3 = 1,00 (nota 4) e M2.4 = 1,00 (nota 4). As notas das questões são Q2.1 = 3, Q2.2 = mínimo(3, 2) = 2, Q2.3 = 4 e Q2.4 = 4. Não há nota 1 e há uma nota 2, então **G2 = Atende com ressalvas**. A ação recomendada à Coordenação de TI seria documentar a codificação correta para a exportação de notas e incluir a verificação no teste de regressão da migração.
 
 ### Comparação com as hipóteses
 
-Na Fase 4, cada valor medido também será comparado à hipótese da questão (H1.1 a H3.4). A hipótese é **confirmada** quando o valor está dentro do esperado e **refutada** quando não está; hipóteses refutadas serão explicadas usando os fatores de variação das [abstraction sheets](abstraction-sheets.md).
+Na Fase 4, cada valor medido também será comparado à hipótese da questão (H1.1 a H3.4). A hipótese é a resposta esperada (o que a equipe acha que vai encontrar); os níveis e o critério desta página são o que a Coordenação de TI aceita. A hipótese é **confirmada** quando o valor observado é o esperado e **refutada** quando não é, independentemente da nota; hipóteses refutadas serão explicadas usando os fatores de variação das [abstraction sheets](abstraction-sheets.md).

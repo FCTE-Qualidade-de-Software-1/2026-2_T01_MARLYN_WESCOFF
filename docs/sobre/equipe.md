@@ -26,3 +26,18 @@ A tabela detalha as tarefas de cada integrante e o percentual do esforço total 
 | **Total** | | — | **100%** |
 
 <p class="legenda">Tabela 2. Contribuição dos integrantes na Entrega 1. Fonte: divisão de esforço registrada pela equipe.</p>
+
+## Tabela de contribuição – Entrega 2
+
+Na Entrega 2, a equipe registrou em 24/11/2026 a mesma divisão igual do esforço da Entrega 1 ([Registro de decisões](../gestao/atas.md#registro-de-decisoes)). As tarefas de cada integrante são as das issues dos milestones PC2 e E2; as horas registradas estão no [dashboard dos indicadores de gestão](../metricas/dashboard.md).
+
+| Integrante | Principais tarefas na E2 | % do esforço |
+|---|---|---:|
+| Bernardo Broetto Brun | Liderança da E2; gráficos e dashboard da gestão do projeto; oráculo de M1.2 e coleta de M1.1 e M1.3; correções do artigo; declaração de IA e release | 20% |
+| Carlos Eduardo Deusdara Motta | Diagnóstico, instrumentação e medidas da gestão do projeto; ata 02; plano de execução da Fase 4; instrumento de comparação de M2.2; cálculo e julgamento; quadro na organização | 20% |
+| João Pedro Sampaio Maciel | Plano de avaliação da Fase 3; massa de dados; responsável por M3.1 e M3.2; correções da GitPage do produto | 20% |
+| Maykon Junio dos Santos Soares | Script do servidor; execução das coletas da Fase 4; ação de melhoria; questões e hipóteses do GQM; Fase 4 do artigo e apresentação final | 20% |
+| Pedro Goncalves Rocha | Extração, consolidação e decisões da gestão do projeto; marcos do PC2 e da E2; responsável por M3.3 a M3.5; revisão dos pull requests; vistoria dos conceitos depois do PC2 | 20% |
+| **Total** | | **100%** |
+
+<p class="legenda">Tabela 3. Contribuição dos integrantes na Entrega 2. Fonte: issues e pull requests do GitHub e decisão de 24/11/2026 no registro de decisões.</p>

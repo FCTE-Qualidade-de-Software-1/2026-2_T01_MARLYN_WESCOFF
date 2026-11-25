@@ -1,0 +1,35 @@
+{
+  "funcao": "core_user_get_users_by_field",
+  "parametros": {
+    "field": "username",
+    "values": [
+      "est01"
+    ]
+  },
+  "http": 200,
+  "data_hora": "2026-11-22T20:27:44-03:00",
+  "resposta": [
+    {
+      "id": 3,
+      "username": "est01",
+      "firstname": "Estudante",
+      "lastname": "01",
+      "fullname": "Estudante 01",
+      "initials": "E0",
+      "department": "",
+      "idnumber": "AVAL-EST01",
+      "firstaccess": 0,
+      "lastaccess": 0,
+      "auth": "manual",
+      "suspended": false,
+      "confirmed": true,
+      "lang": "en",
+      "theme": "",
+      "timezone": "America/Sao_Paulo",
+      "mailformat": 1,
+      "trackforums": 0,
+      "profileimageurlsmall": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f2",
+      "profileimageurl": "http://localhost:8080/theme/image.php/boost/core/1795389669/u/f1"
+    }
+  ]
+}

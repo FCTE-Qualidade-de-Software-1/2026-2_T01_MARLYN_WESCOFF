@@ -6,6 +6,7 @@
 | `gestao/horas.csv` | Registro de horas da E1, **descontinuado** (as atividades foram migradas para `esforco.csv`) |
 | `gestao/psm-AAAA-MM-DD.csv` | Retratos gerados por `scripts/psm_coleta.py` |
 | `avaliacao/` | Dados brutos das medições da Fase 4, uma subpasta por métrica (`M1.1/`, `M2.3/`, ...) |
+| `avaliacao/contexto.csv` | Medidas de contexto de cada avaliador e servidor (versão do Moodle e do PHP, RAM, vCPU, fuso, experiência com Linux), uma linha por servidor; definidas em [Abstraction sheets](../docs/fase-2/abstraction-sheets.md#medidas-de-contexto) |
 
 ## Apontamento de esforço
 

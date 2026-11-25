@@ -1,0 +1,10 @@
+data_hora,operacao,momento,entidade,verificacao,esperado,observado,resultado,amostras,avaliador,evidencia,observacao
+2026-11-22T23:27:04-03:00,instalacao,antes,E1,"aplicação estática: HTTP e hash do conteúdo","HTTP 200, hash 4bbecf15a9ecd577","HTTP 200, hash 4bbecf15a9ecd577",ok,1,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:27:04-03:00,instalacao,antes,E2,"banco outraapp: checksum das tabelas clientes e pedidos","checksum a1821723e3ede073","checksum a1821723e3ede073",ok,1,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:27:04-03:00,instalacao,antes,E3,"tarefa do usuário outraapp: execução no horário","última execução há no máximo 90 s","última execução há 3 s",ok,1,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,durante,E1,"aplicação estática: HTTP e hash do conteúdo","HTTP 200, hash 4bbecf15a9ecd577","44 de 44 amostras ok",ok,44,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,durante,E2,"banco outraapp: checksum das tabelas clientes e pedidos","checksum a1821723e3ede073","44 de 44 amostras ok",ok,44,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,durante,E3,"tarefa do usuário outraapp: execução no horário","última execução há no máximo 90 s","44 de 44 amostras ok",ok,44,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,depois,E1,"aplicação estática: HTTP e hash do conteúdo","HTTP 200, hash 4bbecf15a9ecd577","HTTP 200, hash 4bbecf15a9ecd577",ok,1,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,depois,E2,"banco outraapp: checksum das tabelas clientes e pedidos","checksum a1821723e3ede073","checksum a1821723e3ede073",ok,1,MS,M2.4/logs/instalacao.log,""
+2026-11-22T23:28:36-03:00,instalacao,depois,E3,"tarefa do usuário outraapp: execução no horário","última execução há no máximo 90 s","última execução há 35 s",ok,1,MS,M2.4/logs/instalacao.log,""

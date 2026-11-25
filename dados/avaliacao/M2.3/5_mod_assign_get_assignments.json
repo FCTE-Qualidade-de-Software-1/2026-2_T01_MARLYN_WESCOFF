@@ -1,0 +1,212 @@
+{
+  "funcao": "mod_assign_get_assignments",
+  "parametros": {
+    "courseids": [
+      2
+    ],
+    "includenotenrolledcourses": 1
+  },
+  "http": 200,
+  "data_hora": "2026-11-22T20:28:10-03:00",
+  "resposta": {
+    "courses": [
+      {
+        "id": 2,
+        "fullname": "Curso completo da avaliação (catálogo T01 a T12)",
+        "shortname": "AVAL-CAT",
+        "timemodified": 1795389668,
+        "assignments": [
+          {
+            "id": 1,
+            "coursemodule": 2,
+            "course": 2,
+            "name": "Tarefa dentro do prazo (T04)",
+            "intro": "Test assign 1",
+            "introformat": 1,
+            "introfiles": [],
+            "lang": "",
+            "cmid": 2,
+            "nosubmissions": 0,
+            "submissiondrafts": 0,
+            "sendnotifications": 0,
+            "sendlatenotifications": 0,
+            "sendstudentnotifications": 1,
+            "duedate": 1796007540,
+            "allowsubmissionsfromdate": 1795230000,
+            "grade": 10,
+            "gradepenalty": 0,
+            "timemodified": 1795389668,
+            "completionsubmit": 0,
+            "cutoffdate": 1796180340,
+            "gradingduedate": 0,
+            "teamsubmission": 0,
+            "requireallteammemberssubmit": 0,
+            "teamsubmissiongroupingid": 0,
+            "blindmarking": 0,
+            "hidegrader": 0,
+            "revealidentities": 0,
+            "attemptreopenmethod": "untilpass",
+            "maxattempts": 1,
+            "markingworkflow": 0,
+            "markingallocation": 0,
+            "markercount": 0,
+            "optionalmarkercount": 0,
+            "multimarkmethod": null,
+            "multimarkrounding": null,
+            "markinganonymous": 0,
+            "requiresubmissionstatement": 0,
+            "preventsubmissionnotingroup": 0,
+            "configs": [
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "1"
+              },
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "wordlimit",
+                "value": "0"
+              },
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "wordlimitenabled",
+                "value": "0"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "1"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "maxfilesubmissions",
+                "value": "1"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "maxsubmissionsizebytes",
+                "value": "2097152"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "filetypeslist",
+                "value": ""
+              },
+              {
+                "plugin": "comments",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "0"
+              }
+            ],
+            "introattachments": [],
+            "timelimit": 0,
+            "submissionattachments": 0
+          },
+          {
+            "id": 2,
+            "coursemodule": 3,
+            "course": 2,
+            "name": "Tarefa com data limite vencida (T05)",
+            "intro": "Test assign 2",
+            "introformat": 1,
+            "introfiles": [],
+            "lang": "",
+            "cmid": 3,
+            "nosubmissions": 0,
+            "submissiondrafts": 0,
+            "sendnotifications": 0,
+            "sendlatenotifications": 0,
+            "sendstudentnotifications": 1,
+            "duedate": 1795143540,
+            "allowsubmissionsfromdate": 1794452400,
+            "grade": 10,
+            "gradepenalty": 0,
+            "timemodified": 1795389668,
+            "completionsubmit": 0,
+            "cutoffdate": 1795316340,
+            "gradingduedate": 0,
+            "teamsubmission": 0,
+            "requireallteammemberssubmit": 0,
+            "teamsubmissiongroupingid": 0,
+            "blindmarking": 0,
+            "hidegrader": 0,
+            "revealidentities": 0,
+            "attemptreopenmethod": "untilpass",
+            "maxattempts": 1,
+            "markingworkflow": 0,
+            "markingallocation": 0,
+            "markercount": 0,
+            "optionalmarkercount": 0,
+            "multimarkmethod": null,
+            "multimarkrounding": null,
+            "markinganonymous": 0,
+            "requiresubmissionstatement": 0,
+            "preventsubmissionnotingroup": 0,
+            "configs": [
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "1"
+              },
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "wordlimit",
+                "value": "0"
+              },
+              {
+                "plugin": "onlinetext",
+                "subtype": "assignsubmission",
+                "name": "wordlimitenabled",
+                "value": "0"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "1"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "maxfilesubmissions",
+                "value": "1"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "maxsubmissionsizebytes",
+                "value": "2097152"
+              },
+              {
+                "plugin": "file",
+                "subtype": "assignsubmission",
+                "name": "filetypeslist",
+                "value": ""
+              },
+              {
+                "plugin": "comments",
+                "subtype": "assignsubmission",
+                "name": "enabled",
+                "value": "0"
+              }
+            ],
+            "introattachments": [],
+            "timelimit": 0,
+            "submissionattachments": 0
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

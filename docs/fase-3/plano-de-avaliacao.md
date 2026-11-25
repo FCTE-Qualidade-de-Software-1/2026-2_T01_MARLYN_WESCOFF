@@ -127,7 +127,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 2. Aplicar a massa na instância que será usada, com as partes indicadas para a métrica: `sudo python3 scripts/gera_massa.py aplicar --moodle /var/www/<instância> --php php<versão> --partes <partes>` (ver `dados/avaliacao/massa/README.md`).
 3. Rodar a etapa `versoes` e versionar o resultado em `dados/avaliacao/ambiente/versoes-<iniciais>.txt`, acrescentando o virtualizador e a versão dele.
 
-### G1 – Adequação funcional (M1.1, M1.2, M1.3)
+### G1 – Adequação funcional: Q1.1 a Q1.3 (M1.1 a M1.3)
 
 1. Usar a instância `m53php83`, recém-criada pelo script, com as partes `contas` e `oraculo` da massa aplicadas (T01 a T12 criam o próprio curso).
 2. Abrir `dados/avaliacao/M1.1/execucoes.csv` e executar T01 a T12 **na ordem do catálogo**, com o papel indicado em cada tarefa.
@@ -137,7 +137,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 6. Nos quatro casos de prazo, tentar o envio no horário do oráculo e anotar se foi aceito, aceito com atraso ou bloqueado.
 7. Calcular `M1.1 = 1 − Tf/12`, `M1.2 = Cc/20` e `M1.3 = 1 − Tc/12` com a planilha `dados/avaliacao/calculos.csv`.
 
-### G2 – Compatibilidade (M2.1 a M2.4)
+### G2 – Compatibilidade: Q2.1 a Q2.4 (M2.1 a M2.4)
 
 **M2.1 e M2.2 (formatos e integridade)**
 
@@ -159,7 +159,7 @@ Cada bloco abaixo é um roteiro. O formato de cada métrica (fórmula, definiç�
 3. Executar as 4 operações (instalação, cron, backup de curso, atualização). Antes, durante e depois de cada uma, repetir as verificações e registrar em `verificacoes.csv`.
 4. Uma verificação falha marca a entidade como afetada.
 
-### G3 – Flexibilidade (M3.1 a M3.5)
+### G3 – Flexibilidade: Q3.1 a Q3.4 (M3.1 a M3.5)
 
 **M3.1 (ambientes de acesso)**
 
@@ -289,20 +289,20 @@ As 6 execuções de G3 são o trecho mais demorado e começam em 18/11, logo dep
 
 Cada uma das 12 métricas da Fase 2 aparece abaixo com método, recursos principais, evidência, responsável e data de coleta. Nenhuma fórmula, nível de pontuação ou critério de julgamento foi alterado (ata 02, D1).
 
-| Métrica | Método (seção 3) | Recursos principais | Evidência | Responsável | Coleta |
-|---|---|---|---|---|---|
-| M1.1 | Execução T01–T12 | Instância `m53php83`, contas fictícias | `M1.1/execucoes.csv` | Bernardo | 18/11 |
-| M1.2 | Casos do oráculo | Oráculo, questionários e livro de notas | `M1.2/oraculo.csv` | Bernardo | 19–20/11 |
-| M1.3 | Mesma execução de M1.1 | Documentação oficial | `M1.1/execucoes.csv` | Bernardo | 18/11 |
-| M2.1 | 7 formatos | LibreOffice, Thunderbird, 2ª instância | `M2.1/` | Carlos | 18–20/11 |
-| M2.2 | Comparação campo a campo | `compara_registros.py` | `M2.2/` | Carlos | 18–20/11 |
-| M2.3 | 6 funções REST | `curl`/Python, token | `M2.3/` | Maykon | 18–20/11 |
-| M2.4 | 3 entidades × 4 operações | Apache, PostgreSQL, `cron` | `M2.4/verificacoes.csv` | Maykon | 18–20/11 |
-| M3.1 | 8 tarefas × A1–A4 | 4 ambientes de acesso | `M3.1/` | João Pedro | 19–20/11 |
-| M3.2 | T01–T12 × PHP 8.3/8.4 | Instâncias `m53php83` e `m53php84` | `M3.2/` | João Pedro | 18–19/11 |
-| M3.3 | 6 execuções | Clones da imagem-base, `script` | `M3.3/execucoes.csv` | Pedro (uma: Bernardo) | 18–20/11 |
-| M3.4 | Tempos das mesmas 6 | Log com tempos | `M3.4/` | Pedro | 18–20/11 |
-| M3.5 | 40 itens antes/depois | Consultas SQL, massa de dados | `M3.5/` | Pedro | 18–20/11 |
+| Questão | Métrica | Método (seção 3) | Recursos principais | Evidência | Responsável | Coleta |
+|---|---|---|---|---|---|---|
+| Q1.1 | M1.1 | Execução T01–T12 | Instância `m53php83`, contas fictícias | `M1.1/execucoes.csv` | Bernardo | 18/11 |
+| Q1.2 | M1.2 | Casos do oráculo | Oráculo, questionários e livro de notas | `M1.2/oraculo.csv` | Bernardo | 19–20/11 |
+| Q1.3, Q1.1 | M1.3 | Mesma execução de M1.1 | Documentação oficial | `M1.1/execucoes.csv` | Bernardo | 18/11 |
+| Q2.1, Q2.2 | M2.1 | 7 formatos | LibreOffice, Thunderbird, 2ª instância | `M2.1/` | Carlos | 18–20/11 |
+| Q2.2 | M2.2 | Comparação campo a campo | `compara_registros.py` | `M2.2/` | Carlos | 18–20/11 |
+| Q2.3 | M2.3 | 6 funções REST | `curl`/Python, token | `M2.3/` | Maykon | 18–20/11 |
+| Q2.4 | M2.4 | 3 entidades × 4 operações | Apache, PostgreSQL, `cron` | `M2.4/verificacoes.csv` | Maykon | 18–20/11 |
+| Q3.1 | M3.1 | 8 tarefas × A1–A4 | 4 ambientes de acesso | `M3.1/` | João Pedro | 19–20/11 |
+| Q3.2 | M3.2 | T01–T12 × PHP 8.3/8.4 | Instâncias `m53php83` e `m53php84` | `M3.2/` | João Pedro | 18–19/11 |
+| Q3.3 | M3.3 | 6 execuções | Clones da imagem-base, `script` | `M3.3/execucoes.csv` | Pedro (uma: Bernardo) | 18–20/11 |
+| Q3.3 | M3.4 | Tempos das mesmas 6 | Log com tempos | `M3.4/` | Pedro | 18–20/11 |
+| Q3.4 | M3.5 | 40 itens antes/depois | Consultas SQL, massa de dados | `M3.5/` | Pedro | 18–20/11 |
 
 <p class="legenda">Tabela 13. Rastreabilidade entre as métricas da Fase 2 e o plano da Fase 3. Fonte: elaboração própria.</p>
 
