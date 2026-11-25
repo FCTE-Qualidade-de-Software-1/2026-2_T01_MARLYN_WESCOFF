@@ -29,7 +29,7 @@ Somente itens comprovados por arquivo versionado ou por uma verificação reexec
 
 - [x] **GitPage atualizada, com versão, data e links funcionais (F2-C10, AG-C4).** O rodapé informa `Entrega 2 | Versão 2.2 · 24/11/2026`; `mkdocs build --strict` concluiu com sucesso em 24/11/2026.
 - [x] **Figuras e tabelas numeradas, com legenda e fonte, citadas no texto (AG-C2).** O [dashboard](dashboard.md) numera as oito figuras; as tabelas e figuras do artigo estão numeradas e citadas em `artigo/main.tex`, e o PDF foi compilado e inspecionado.
-- [ ] **Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).** O Apêndice A de `artigo/main.tex` detalha as responsabilidades dos integrantes, mas os percentuais individuais da E2 ainda estão pendentes e devem ser preenchidos antes da release.
+- [x] **Tabela de Contribuição totalizando 100% e detalhando responsabilidades (AG-C5).** O Apêndice A de `artigo/main.tex` e a Tabela 3 de [Equipe e contribuição](../sobre/equipe.md) detalham as responsabilidades da E2, com 20% para cada integrante (divisão igual registrada em 24/11/2026 no [Registro de decisões](../gestao/atas.md#registro-de-decisoes)).
 - [x] **Declaração de uso de IA específica (AG-C3).** A [declaração de uso de IA](../sobre/uso-de-ia.md) e o Apêndice B registram, por integrante, a ferramenta, a finalidade e a forma de conferência.
 - [x] **Sem emojis, ícones ou figurinhas no conteúdo.** A busca por caracteres Unicode de emojis nos arquivos Markdown retornou zero ocorrência em 11/11/2026.
 - [x] **Coerência com as Fases 1 e 2 já entregues (F2-C11).** A narrativa da [gestão PSM/CID](../gestao/index.md) liga as medidas às fases, e as páginas de [Fase 1](../fase-1/index.md) e [Fase 2](../fase-2/index.md) possuem links cruzados para a gestão.
@@ -52,17 +52,17 @@ Resultado em 11/11/2026: dados sem erros, GitPage construída em modo estrito e 
 
 Um item só aparece como concluído quando há evidência versionada. Os itens pendentes identificam a issue responsável, para que a release E2 não seja publicada com conteúdo incompleto.
 
-Esta tabela preserva o retrato de 22/11/2026. Ela deve ser revisada novamente, após o merge dos PRs da Fase 4 e das correções abertas, imediatamente antes da publicação da release E2, para refletir o estado final da entrega.
+A coluna "Situação em 22/11" preserva o retrato daquela data. A coluna "Situação em 24/11" registra a revisão feita depois do merge da Fase 4 e das correções ([PR #145](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/145)), imediatamente antes da publicação da release E2.
 
-| Grupo da rubrica | Evidência conferida | Situação em 22/11 |
-|---|---|---|
-| Fase 3 — plano de avaliação | [Plano de avaliação](../fase-3/plano-de-avaliacao.md), ambiente, métodos, recursos, oráculo, repetição, riscos, cronograma e rastreabilidade das 12 métricas | Concluído; correções conceituais da vistoria seguem nas issues #104, #110 e #112 |
-| Fase 4 — obtenção das medidas e evidências | Pastas `dados/avaliacao/` e [plano de execução](../fase-4/plano-de-execucao.md) | Pendente: coletas e consolidação nas issues #67 a #72 |
-| Fase 4 — julgamento e relações entre características | `dados/avaliacao/calculos.csv` e regras congeladas da Fase 2 | Pendente: julgamento final e relações na issue #73 |
-| Fase 4 — ação de melhoria e página de resultados | Evidência da ação D4 e página final da Fase 4 | Pendente: issues #74 e #75 |
-| Avaliação geral — artigo completo e contribuição | `artigo/main.tex`, PDF E2 e Apêndice A | Pendente: issues #76, #77 e correções #102 a #123 |
-| Avaliação geral — declaração de IA | [Declaração de uso de IA](../sobre/uso-de-ia.md) e Apêndice B de `artigo/main.tex` | Declaração registrada em 22/11. Versão resumida por integrante no [PR #142](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/142). |
-| Avaliação geral — GitPage e rastreabilidade | Site navegável, links, datas, critérios e versão da entrega | Parcial; revisão dos critérios na issue #107 e novo prazo na issue #123 |
-| Avaliação geral — release E2 | Tag E2 e PDF final anexado à release | Pendente; publicar somente após o merge das dependências acima |
+| Grupo da rubrica | Evidência conferida | Situação em 22/11 | Situação em 24/11 |
+|---|---|---|---|
+| Fase 3 — plano de avaliação | [Plano de avaliação](../fase-3/plano-de-avaliacao.md), ambiente, métodos, recursos, oráculo, repetição, riscos, cronograma e rastreabilidade das 12 métricas | Concluído; correções conceituais da vistoria seguem nas issues #104, #110 e #112 | Concluído; #104, #110 e #112 fechadas |
+| Fase 4 — obtenção das medidas e evidências | Pastas `dados/avaliacao/` e [plano de execução](../fase-4/plano-de-execucao.md) | Pendente: coletas e consolidação nas issues #67 a #72 | Concluído: 12 métricas coletadas e consolidadas (#67 a #72 fechadas) |
+| Fase 4 — julgamento e relações entre características | `dados/avaliacao/calculos.csv` e regras congeladas da Fase 2 | Pendente: julgamento final e relações na issue #73 | Concluído: G1 não atende, G2 atende com ressalvas, G3 atende; relações na Seção 7.4 do artigo (#73 fechada) |
+| Fase 4 — ação de melhoria e página de resultados | Evidência da ação D4 e página final da Fase 4 | Pendente: issues #74 e #75 | Concluído: [ação de melhoria](../fase-4/acao-de-melhoria.md) e [resultados](../fase-4/resultados.md) (#74 e #75) |
+| Avaliação geral — artigo completo e contribuição | `artigo/main.tex`, PDF E2 e Apêndice A | Pendente: issues #76, #77 e correções #102 a #123 | Concluído: artigo com 15 páginas e Apêndice A com 20% por integrante (#76, #77 e #102 a #123) |
+| Avaliação geral — declaração de IA | [Declaração de uso de IA](../sobre/uso-de-ia.md) e Apêndice B de `artigo/main.tex` | Declaração registrada em 22/11. Versão resumida por integrante no [PR #142](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/142). | Concluído: GitPage e Apêndice B iguais |
+| Avaliação geral — GitPage e rastreabilidade | Site navegável, links, datas, critérios e versão da entrega | Parcial; revisão dos critérios na issue #107 e novo prazo na issue #123 | Concluído: versão 2.2 de 24/11 ([PR #146](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/146)) e critérios conferidos com o artigo final ([PR #132](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T01_MARLYN_WESCOFF/pull/132)) |
+| Avaliação geral — release E2 | Tag E2 e PDF final anexado à release | Pendente; publicar somente após o merge das dependências acima | Pendente: publicação da tag E2 com o PDF do artigo (#78) |
 
-<p class="legenda">Checklist 2. Revisão da rubrica e das dependências da Entrega 2. Fonte: artefatos versionados e estado das issues e releases do GitHub em 22/11/2026.</p>
+<p class="legenda">Checklist 2. Revisão da rubrica e das dependências da Entrega 2. Fonte: artefatos versionados e estado das issues e releases do GitHub em 22/11/2026 e 24/11/2026.</p>
