@@ -1,7 +1,7 @@
 semana,inicio,fim,entrega,historico,comprometidos,concluidos,pc_pct,diferenca_pct,pc_acumulado_pct,fonte_compromisso,fonte,data_extracao,comando_ou_query
-2026-W43,2026-10-19,2026-10-25,E1,sim,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
-2026-W44,2026-10-26,2026-11-01,PC2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
-2026-W45,2026-11-02,2026-11-08,PC2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
-2026-W46,2026-11-09,2026-11-15,PC2,nao,9,9,100,0,100,retrato do quadro de 2026-11-11,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
-2026-W47,2026-11-16,2026-11-22,E2,nao,18,3,16.67,83.33,44.44,retrato do quadro de 2026-11-16,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
-2026-W48,2026-11-23,2026-11-29,E2,nao,0,0,,,44.44,retrato do quadro de 2026-11-23,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-25,python3 scripts/consolidar_metricas.py --data-ref 2026-11-25
+2026-W43,2026-10-19,2026-10-25,E1,sim,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
+2026-W44,2026-10-26,2026-11-01,PC2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
+2026-W45,2026-11-02,2026-11-08,PC2,nao,,,,,,sem registro de compromisso,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
+2026-W46,2026-11-09,2026-11-15,PC2,nao,9,9,100,0,100,retrato do quadro de 2026-11-11,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
+2026-W47,2026-11-16,2026-11-22,E2,nao,18,3,16.67,83.33,44.44,retrato do quadro de 2026-11-16,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
+2026-W48,2026-11-23,2026-11-29,E2,nao,0,0,,,44.44,retrato do quadro de 2026-11-23,quadro_retratos.csv; issues.json; issue_events.jsonl,2026-11-26,python3 scripts/consolidar_metricas.py --data-ref 2026-11-26
