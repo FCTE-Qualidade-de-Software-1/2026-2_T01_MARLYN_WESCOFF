@@ -1947,7 +1947,7 @@ L 432.11375 96.592625
    </g>
   </g>
   <g id="text_32">
-   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-26. Linhas ideais aparecem somente quando o milestone possui prazo. -->
+   <!-- Fonte: elaborado pelos autores a partir de progresso_diario.csv, extraído em 2026-11-27. Linhas ideais aparecem somente quando o milestone possui prazo. -->
    <g style="fill: #374151" transform="translate(75.6 401.062125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -2281,7 +2281,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4216.734375 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4280.359375 0)"/>
     <use xlink:href="#DejaVuSans-15" transform="translate(4316.4375 0)"/>
-    <use xlink:href="#DejaVuSans-19" transform="translate(4380.0625 0)"/>
+    <use xlink:href="#DejaVuSans-1a" transform="translate(4380.0625 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4443.6875 0)"/>
     <use xlink:href="#DejaVuSans-3" transform="translate(4475.46875 0)"/>
     <use xlink:href="#DejaVuSans-2f" transform="translate(4507.25 0)"/>

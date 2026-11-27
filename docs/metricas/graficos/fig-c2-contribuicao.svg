@@ -2415,7 +2415,7 @@ z
    </g>
   </g>
   <g id="text_25">
-   <!-- Fonte: elaborado pelos autores a partir de contribuicao.csv, extraído em 2026-11-26. Dimensões sem observação, como horas, permanecem ausentes. -->
+   <!-- Fonte: elaborado pelos autores a partir de contribuicao.csv, extraído em 2026-11-27. Dimensões sem observação, como horas, permanecem ausentes. -->
    <g style="fill: #374151" transform="translate(82.8 428.854125) scale(0.08 -0.08)">
     <defs>
      <path id="DejaVuSans-29" d="M 628 4666
@@ -2524,6 +2524,16 @@ L 313 1497
 L 313 2009
 z
 " transform="scale(0.015625)"/>
+     <path id="DejaVuSans-1a" d="M 525 4666
+L 3525 4666
+L 3525 4397
+L 1831 0
+L 1172 0
+L 2766 4134
+L 525 4134
+L 525 4666
+z
+" transform="scale(0.015625)"/>
      <path id="DejaVuSans-27" d="M 1259 4147
 L 1259 519
 L 2022 519
@@ -2626,7 +2636,7 @@ z
     <use xlink:href="#DejaVuSans-14" transform="translate(4010.96875 0)"/>
     <use xlink:href="#DejaVuSans-10" transform="translate(4074.59375 0)"/>
     <use xlink:href="#DejaVuSans-15" transform="translate(4110.671875 0)"/>
-    <use xlink:href="#DejaVuSans-19" transform="translate(4174.296875 0)"/>
+    <use xlink:href="#DejaVuSans-1a" transform="translate(4174.296875 0)"/>
     <use xlink:href="#DejaVuSans-11" transform="translate(4237.921875 0)"/>
     <use xlink:href="#DejaVuSans-3" transform="translate(4269.703125 0)"/>
     <use xlink:href="#DejaVuSans-27" transform="translate(4301.484375 0)"/>
