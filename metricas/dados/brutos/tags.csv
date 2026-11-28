@@ -1,4 +1,4 @@
 tag,commit,data_tag,fonte,data_extracao,comando_ou_query
-E1,172e1af,2026-10-25,git for-each-ref,2026-11-27,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
-E2,fc5ceb9,2026-11-24,git for-each-ref,2026-11-27,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
-PC2,ebe6376,2026-11-16,git for-each-ref,2026-11-27,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
+E1,172e1af,2026-10-25,git for-each-ref,2026-11-28,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
+E2,fc5ceb9,2026-11-24,git for-each-ref,2026-11-28,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
+PC2,ebe6376,2026-11-16,git for-each-ref,2026-11-28,git for-each-ref refs/tags --format=%(refname:short)|%(objectname:short)|%(*objectname:short)|%(creatordate:short)
